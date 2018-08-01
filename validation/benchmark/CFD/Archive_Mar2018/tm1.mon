@@ -1,0 +1,37 @@
+
+ITIME =  1
+
+ DFS - Monitoring of residuals & variables
+
+   ITER        U          V          W          P          T          K       Eps.
+
+      1    0.545E+00  0.602E-01  0.386E-01  0.315E+01  0.203E+00  0.622E-01  0.364E+03
+           0.437E-02  0.185E-04  0.497E-03 -0.557E-02  0.163E+02  0.163E-02  0.167E-02
+      2    0.134E+01  0.625E+00  0.663E+00  0.667E+01  0.217E+00  0.132E-01  0.126E+03
+           0.149E-01 -0.501E-03 -0.115E-02  0.206E-02  0.218E+02  0.516E-03  0.545E-03
+    100    0.111E-01  0.286E-02  0.525E-02  0.188E-01  0.688E-05  0.543E-06  0.621E-03
+           0.182E+00 -0.589E-02 -0.276E-02  0.752E-04  0.250E+02  0.135E-03  0.184E-04
+    200    0.185E-02  0.453E-03  0.101E-02  0.337E-02  0.324E-05  0.866E-07  0.106E-03
+           0.180E+00 -0.624E-02 -0.357E-02  0.109E-03  0.250E+02  0.143E-03  0.191E-04
+    300    0.142E-03  0.323E-04  0.794E-04  0.243E-03  0.332E-05  0.721E-08  0.869E-05
+           0.179E+00 -0.632E-02 -0.366E-02  0.111E-03  0.250E+02  0.143E-03  0.191E-04
+    332    0.566E-04  0.124E-04  0.325E-04  0.987E-04  0.333E-05  0.299E-08  0.356E-05
+           0.179E+00 -0.632E-02 -0.366E-02  0.111E-03  0.250E+02  0.143E-03  0.191E-04
+
+ CFD-predicted Surface Convection and Coefficients:
+
+Wwall_1      Qwall->air(W) =        -0.0 HC-CFD =    0.00 Tsurf =    0.00 Tair =   20.00    
+Wwall_2      Qwall->air(W) =        -0.0 HC-CFD =    0.00 Tsurf =    0.00 Tair =   20.00    
+Wwall_3      Qwall->air(W) =        -0.0 HC-CFD =    0.00 Tsurf =    0.00 Tair =   20.00    
+Wwall_4      Qwall->air(W) =        -0.0 HC-CFD =    0.00 Tsurf =    0.00 Tair =   20.00    
+Ewall_5      Qwall->air(W) =        -0.0 HC-CFD =    0.00 Tsurf =    0.00 Tair =   20.00    
+Swall_6      Qwall->air(W) =        -0.0 HC-CFD =    0.00 Tsurf =    0.00 Tair =   20.00    
+Nwall_7      Qwall->air(W) =        -0.0 HC-CFD =    0.00 Tsurf =    0.00 Tair =   20.00    
+Lwall_8      Qwall->air(W) =        -0.0 HC-CFD =    0.00 Tsurf =    0.00 Tair =   20.00    
+Hwall_9      Qwall->air(W) =        -0.0 HC-CFD =    0.00 Tsurf =    0.00 Tair =   20.00    
+Hwall_10     Qwall->air(W) =        -0.0 HC-CFD =    0.00 Tsurf =    0.00 Tair =   20.00    
+Hwall_11     Qwall->air(W) =        -0.0 HC-CFD =    0.00 Tsurf =    0.00 Tair =   20.00    
+Hwall_12     Qwall->air(W) =        -0.0 HC-CFD =    0.00 Tsurf =    0.00 Tair =   20.00    
+
+ If 1-way surface conflation (indicated by **) is in use the heat transfer results given here are
+ for information purposes only; they will not be used by BSim.

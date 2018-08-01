@@ -1,0 +1,12 @@
+*connections for box_network
+*Date Tue Apr 24 15:44:04 2018
+      9   # number of connections
+   1   1   0   0   0  #    1 front in box is External
+   1   2   0   0   0  #    2 right_frm in box is External
+   1   3   0   0   0  #    3 back in box is External
+   1   4   0   0   0  #    4 left in box is External
+   1   5   0   0   0  #    5 top in box is External
+   1   6   4   1   0  #    6 floor in box >|< ground profile 1
+   1   7   0   0   0  #    7 door in box is External
+   1   8   0   0   0  #    8 grill in box is External
+   1   9   0   0   0  #    9 glazing in box is External

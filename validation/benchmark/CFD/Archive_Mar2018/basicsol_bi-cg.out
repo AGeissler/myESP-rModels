@@ -1,0 +1,101 @@
+ESP-r Domain Flow Solver
+This is a development copy of dfs, based on ESP-r release 12.7.
+ 
+Copyright resides with the member organisations of the ESP-r
+development consortium as listed at:
+http://www.esru.strath.ac.uk/Programs/ESP-r_central.htm.
+and https://github.com/ESP-rCommunity.
+ 
+Build information:
+  SVN source -       @rRevision: 1480 (locally modified)
+  Platform -         x86_64:Linux:4.13.0-36-generic
+  Compilers -        gcc/g++/gfortran
+  Graphics library - X11
+  XML output -       Unsupported
+  Preferences (.esprc) file - users version.
+ the input file is: basicsol.dfd
+
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?> 
+ Simulation toggles: a Solver>> default
+                     b Buoy/Turb>> SingleGDH
+                      ___________________
+                     ? help
+                     - Exit
+
+ Simulation toggles:?> 
+ Simulation toggles: a Solver>> bi-c-grad
+                     b Buoy/Turb>> SingleGDH
+                      ___________________
+                     ? help
+                     - Exit
+
+ Simulation toggles:?> 
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?> 
+ Initiating CFD sim with following parameters:
+   U-momentum active
+   V-momentum active
+   W-momentum active
+   k-epsilon turb model active
+   Convergence criteria:          500   9.99999975E-05
+   Relaxation factors:   0.500000000      0.500000000      0.500000000       1.00000000       1.00000000      0.699999988      0.699999988       1.00000000       1.00000000    
+
+ DFS - Monitoring of residuals & variables
+
+   ITER        U          V          W          P          T          K       Eps.
+
+    100    0.624E-02  0.148E-01  0.452E-02  0.291E-01  0.000E+00  0.680E-06  0.778E-03
+          -0.241E-02  0.181E+00 -0.574E-02  0.614E-04  0.200E+02  0.126E-03  0.170E-04
+    200    0.133E-02  0.247E-02  0.639E-03  0.539E-02  0.000E+00  0.109E-06  0.131E-03
+          -0.343E-02  0.177E+00 -0.610E-02  0.102E-03  0.200E+02  0.137E-03  0.181E-04
+    300    0.122E-03  0.219E-03  0.511E-04  0.429E-03  0.000E+00  0.106E-07  0.125E-04
+          -0.356E-02  0.176E+00 -0.620E-02  0.106E-03  0.200E+02  0.138E-03  0.181E-04
+Solution converged in   352 iterations, for day no.   0 at  0.000 elapsed      0.
+    352    0.296E-04  0.508E-04  0.115E-04  0.990E-04  0.000E+00  0.264E-08  0.306E-05
+          -0.357E-02  0.176E+00 -0.620E-02  0.106E-03  0.200E+02  0.138E-03  0.181E-04
+ Warning: Simulation complete.
+
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?> 
+  results:  a ASCII format file      d ParaView format file
+            b PHOTON analysis        e TECPLOT format file 
+            c MATLAB analysis        f Flow visualization  
+         :  - Exit
+
+  results:?> 
+  results:  a ASCII format file      d ParaView format file
+            b PHOTON analysis        e TECPLOT format file 
+            c MATLAB analysis        f Flow visualization  
+         :  - Exit
+
+  results:?> 
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?>  
+Delete results file before exiting? [Y]es (default) or [N]o ?
+ 
+Delete temporary file before exiting? [Y]es (default) or [N]o ?

@@ -1,0 +1,10 @@
+*ESP-r visualisation scene configuration file.
+Fri Nov 17 15:34:37 2017 # latest file modification.
+  1 # No. of scenes
+# Scene number  1
+*rnm 3BR_wch_obj1819_Extern.rif                      # Rif name
+*srt 3BR_wch_obj1819_Extern                          # Scene root
+*rde Scene of 3BR_wch_obj1819 for External analysis. # Description
+*rpu External                                        # Intended use
+*sceneEND
+*end

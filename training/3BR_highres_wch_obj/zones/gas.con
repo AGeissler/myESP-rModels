@@ -1,0 +1,25 @@
+# thermophysical properties of gas defined in ../zones/gas.con
+# no of |air |surface(from geo)| multilayer construction
+# layers|gaps|number &  name   | database name 
+     1,     0  #   1 c-left       steel_pl_3mm
+     1,     0  #   2 c_front      steel_pl_3mm
+     1,     0  #   3 c_right      steel_pl_3mm
+     1,     0  #   4 c_back       steel_pl_3mm
+     1,     0  #   5 c_top        steel_pl_3mm
+     1,     0  #   6 c_base       steel_pl_3mm
+# conduc-  |  density | specific | thick- |dpnd|  ref. |  temp. |moisture| surf|lyr
+# tivity   |          | heat     |ness(m) |type|  temp | factor | factor |     |  
+    40.0000,    7800.0,     502.0,  0.0030,   0,   0.00, 0.00000, 0.00000  #   1   1
+    40.0000,    7800.0,     502.0,  0.0030,   0,   0.00, 0.00000, 0.00000  #   2   1
+    40.0000,    7800.0,     502.0,  0.0030,   0,   0.00, 0.00000, 0.00000  #   3   1
+    40.0000,    7800.0,     502.0,  0.0030,   0,   0.00, 0.00000, 0.00000  #   4   1
+    40.0000,    7800.0,     502.0,  0.0030,   0,   0.00, 0.00000, 0.00000  #   5   1
+    40.0000,    7800.0,     502.0,  0.0030,   0,   0.00, 0.00000, 0.00000  #   6   1
+# for each surface: inside face emissivity
+ 0.8200,0.8200,0.8200,0.8200,0.8200,0.8200
+# for each surface: outside face emissivity
+ 0.8200,0.8200,0.8200,0.8200,0.8200,0.8200
+# for each surface: inside face solar absorptivity
+ 0.3000,0.3000,0.3000,0.3000,0.3000,0.3000
+# for each surface: outside face solar absorptivity
+ 0.3000,0.3000,0.3000,0.3000,0.3000,0.3000

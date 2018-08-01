@@ -1,0 +1,10 @@
+*HC_CTL for zone water_jacket
+*Date,Tue Oct  3 14:37:18 2017
+  1 # number control intervals
+ 12 # number of surfaces
+# (j_left j_front j_right j_back j_top j_base c-left c_front c_right c_back c_top c_base)
+  0.00    24.00 # start and end time of interval
+  1 # fixed coefficients calculation control type
+*Doc,Water filled convection coefficients
+ 999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00
+ -1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000

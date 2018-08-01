@@ -1,0 +1,335 @@
+# Radiance glazing definitions
+# (first line of file must not be edited)
+  
+void  glass  unknown_glz
+0 
+0 
+3    0.87    0.87    0.87
+  
+void glass d_glz
+0 
+0 
+3    0.83  0.83  0.83
+  
+void glass dbl_glz
+0 
+0 
+3    0.83  0.83  0.83
+  
+void glass Not_DisplayG
+0 
+0 
+3    0.75  0.75  0.75
+  
+void glass window_Not_G
+0 
+0 
+3    0.75  0.75  0.75
+  
+void glass window_Typ_G
+0 
+0 
+3    0.59  0.59  0.59
+  
+void glass internal_glz
+0 
+0 
+3    0.75  0.75  0.75
+  
+void glass switched_gl
+0 
+0 
+3    0.83  0.83  0.83
+  
+void glass fictitious
+0 
+0 
+3    1.08  1.08  1.08
+  
+void glass single_glaz
+0 
+0 
+3    0.95  0.95  0.95
+  
+void glass tripglz_1.8
+0 
+0 
+3    0.77  0.77  0.77
+  
+void glass tripglz_1.08
+0 
+0 
+3    0.67  0.67  0.67
+  
+void glass tripglz_089
+0 
+0 
+3    0.67  0.67  0.67
+  
+void glass PV_constr
+0 
+0 
+3    0.02  0.02  0.02
+  
+# hall Surface defs..
+  
+# skipping fict surface: hall:fict_ov_rail                                                                                  
+  
+# skipping fict surface: hall:fict_to_st                                                                                    
+  
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  hall:fr_door_glz
+0 
+0 
+ 12
+    2.12000    1.30000    2.18000
+    2.78000    1.30000    2.18000
+    2.78000    1.30000    0.32000
+    2.12000    1.30000    0.32000
+# living Surface defs..
+  
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  living:glaz_a
+0 
+0 
+ 12
+    4.40000    1.22000    2.22000
+    4.40000    0.73000    2.22000
+    4.40000    0.73000    0.98000
+    4.40000    1.22000    0.98000
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  living:glaz_b
+0 
+0 
+ 12
+    4.52000    0.65000    2.18000
+    6.08000    0.65000    2.18000
+    6.08000    0.65000    1.02000
+    4.52000    0.65000    1.02000
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  living:glaz_c
+0 
+0 
+ 12
+    6.20000    0.73000    2.22000
+    6.20000    1.22000    2.22000
+    6.20000    1.22000    0.98000
+    6.20000    0.73000    0.98000
+# dining Surface defs..
+  
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  dining:side_a
+0 
+0 
+ 12
+    6.10000    8.50000    2.30000
+    5.70000    8.50000    2.30000
+    5.70000    8.50000    0.20000
+    6.10000    8.50000    0.20000
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  dining:side_b
+0 
+0 
+ 12
+    4.80000    8.50000    2.30000
+    4.40000    8.50000    2.30000
+    4.40000    8.50000    0.20000
+    4.80000    8.50000    0.20000
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  dining:fr_glaze
+0 
+0 
+ 12
+    5.60000    8.50000    2.20000
+    4.90000    8.50000    2.20000
+    4.90000    8.50000    0.30000
+    5.60000    8.50000    0.30000
+# kitchen Surface defs..
+  
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  kitchen:bk_glaz
+0 
+0 
+ 12
+    3.32000    8.50000    2.22000
+    2.68000    8.50000    2.22000
+    2.68000    8.50000    1.48000
+    3.32000    8.50000    1.48000
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  kitchen:bk_door_gl
+0 
+0 
+ 12
+    2.40000    8.50000    2.10000
+    2.00000    8.50000    2.10000
+    2.00000    8.50000    0.40000
+    2.40000    8.50000    0.40000
+# upper_hall Surface defs..
+  
+# skipping fict surface: upper_hall:fict_rail                                                                               
+  
+# skipping fict surface: upper_hall:entr_st                                                                                 
+  
+# bedroom1 Surface defs..
+  
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  bedroom1:glaz_a
+0 
+0 
+ 12
+    4.40000    1.22000    4.82000
+    4.40000    0.73000    4.82000
+    4.40000    0.73000    3.58000
+    4.40000    1.22000    3.58000
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  bedroom1:glaz_b
+0 
+0 
+ 12
+    4.52000    0.65000    4.78000
+    6.08000    0.65000    4.78000
+    6.08000    0.65000    3.62000
+    4.52000    0.65000    3.62000
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  bedroom1:glaz_c
+0 
+0 
+ 12
+    6.20000    0.73000    4.82000
+    6.20000    1.22000    4.82000
+    6.20000    1.22000    3.58000
+    6.20000    0.73000    3.58000
+# bedroom3 Surface defs..
+  
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  bedroom3:fr_glaz
+0 
+0 
+ 12
+    2.10000    1.30000    4.80000
+    2.80000    1.30000    4.80000
+    2.80000    1.30000    3.80000
+    2.10000    1.30000    3.80000
+# bedroom2 Surface defs..
+  
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  bedroom2:bk_glaz
+0 
+0 
+ 12
+    5.98000    8.50000    4.78000
+    4.52000    8.50000    4.78000
+    4.52000    8.50000    3.62000
+    5.98000    8.50000    3.62000
+# bath Surface defs..
+  
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  bath:bk_glaze
+0 
+0 
+ 12
+    2.52000    8.50000    4.82000
+    1.88000    8.50000    4.82000
+    1.88000    8.50000    4.08000
+    2.52000    8.50000    4.08000
+# attic Surface defs..
+  
+# equipment Surface defs..
+  
+# crawl Surface defs..
+  
+# tnk_lo_160 Surface defs..
+  
+# tnk_md_160 Surface defs..
+  
+# tnk_hi_160 Surface defs..
+  
+# rad_bath Surface defs..
+  
+# rad_br3 Surface defs..
+  
+# boiler_case Surface defs..
+  
+# rad_br2 Surface defs..
+  
+# rad_dining Surface defs..
+  
+# rad-mbr Surface defs..
+  
+# rad_lounge Surface defs..
+  
+# rad_kit Surface defs..
+  
+# rad-hall Surface defs..
+  
+# collec_low Surface defs..
+  
+# collec_mid Surface defs..
+  
+# collec_hi Surface defs..
+  
+# air_low Surface defs..
+  
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  air_low:glass
+0 
+0 
+ 12
+    3.65933    1.54104    5.96005
+    4.85926    1.52896    5.96022
+    4.85211    0.83322    5.50165
+    3.65218    0.84555    5.50165
+# skipping fict surface: air_low:to-mid                                                                                     
+  
+# air_mid Surface defs..
+  
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  air_mid:glass
+0 
+0 
+ 12
+    3.66647    2.23653    6.41845
+    4.86641    2.22470    6.41879
+    4.85926    1.52896    5.96022
+    3.65933    1.54104    5.96005
+# skipping fict surface: air_mid:to_low                                                                                     
+  
+# skipping fict surface: air_mid:to-top                                                                                     
+  
+# air_hi Surface defs..
+  
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  air_hi:glass
+0 
+0 
+ 12
+    4.86650    2.23295    6.40627
+    3.66655    2.24478    6.40593
+    3.67371    2.94111    6.86489
+    4.87365    2.92877    6.86489
+# skipping fict surface: air_hi:to-mid                                                                                      
+  
+# water_jacket Surface defs..
+  
+# gas Surface defs..
+  
+# mixer Surface defs..
+  

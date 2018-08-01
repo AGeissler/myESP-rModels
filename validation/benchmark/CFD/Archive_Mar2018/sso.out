@@ -1,0 +1,79 @@
+ESP-r Domain Flow Solver
+This is a development copy of dfs, based on ESP-r release 12.7.
+ 
+Copyright resides with the member organisations of the ESP-r
+development consortium as listed at:
+http://www.esru.strath.ac.uk/Programs/ESP-r_central.htm.
+and https://github.com/ESP-rCommunity.
+ 
+Build information:
+  SVN source -       @rRevision: 1480 (locally modified)
+  Platform -         x86_64:Linux:4.13.0-36-generic
+  Compilers -        gcc/g++/gfortran
+  Graphics library - X11
+  XML output -       Unsupported
+  Preferences (.esprc) file - users version.
+ the input file is: sso.dfd
+Boundary cell # y=  4 and cell # z=  1 are not defined as boundary
+conditions facing West or defined more than once
+
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?> 
+ Initiating CFD sim with following parameters:
+   U-momentum active
+   V-momentum active
+   W-momentum active
+   k-epsilon turb model active
+   Convergence criteria:         1000   9.99999975E-05
+   Relaxation factors:   0.500000000      0.500000000      0.500000000       1.00000000       1.00000000      0.699999988      0.699999988       1.00000000       1.00000000    
+
+ DFS - Monitoring of residuals & variables
+
+   ITER        U          V          W          P          T          K       Eps.
+
+    100    0.401E-01  0.138E-01  0.130E-01  0.562E-01  0.000E+00  0.323E-05  0.139E-02
+           0.180E+00 -0.472E-02  0.165E-03  0.762E-03  0.200E+02  0.191E-03  0.265E-04
+    200    0.499E-03  0.181E-03  0.201E-03  0.968E-03  0.000E+00  0.278E-07  0.207E-04
+           0.185E+00 -0.522E-02 -0.154E-04  0.769E-03  0.200E+02  0.160E-03  0.216E-04
+Solution converged in   257 iterations, for day no.   0 at  0.000 elapsed      0.
+    257    0.531E-04  0.207E-04  0.216E-04  0.998E-04  0.000E+00  0.279E-08  0.198E-05
+           0.185E+00 -0.523E-02 -0.385E-05  0.770E-03  0.200E+02  0.159E-03  0.215E-04
+ Warning: Simulation complete.
+
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?> 
+  results:  a ASCII format file      d ParaView format file
+            b PHOTON analysis        e TECPLOT format file 
+            c MATLAB analysis        f Flow visualization  
+         :  - Exit
+
+  results:?> 
+  results:  a ASCII format file      d ParaView format file
+            b PHOTON analysis        e TECPLOT format file 
+            c MATLAB analysis        f Flow visualization  
+         :  - Exit
+
+  results:?> 
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?>  
+Delete results file before exiting? [Y]es (default) or [N]o ?
+ 
+Delete temporary file before exiting? [Y]es (default) or [N]o ?

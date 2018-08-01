@@ -1,0 +1,108 @@
+ESP-r Domain Flow Solver
+This is a development copy of dfs, based on ESP-r release 12.7.
+ 
+Copyright resides with the member organisations of the ESP-r
+development consortium as listed at:
+http://www.esru.strath.ac.uk/Programs/ESP-r_central.htm.
+and https://github.com/ESP-rCommunity.
+ 
+Build information:
+  SVN source -       @rRevision: 1480 (locally modified)
+  Platform -         x86_64:Linux:4.13.0-36-generic
+  Compilers -        gcc/g++/gfortran
+  Graphics library - X11
+  XML output -       Unsupported
+  Preferences (.esprc) file - users version.
+ the input file is: bi-cg.dfd
+
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?> 
+ Simulation toggles: a Solver>> default
+                     b Buoy/Turb>> SingleGDH
+                      ___________________
+                     ? help
+                     - Exit
+
+ Simulation toggles:?> 
+ Simulation toggles: a Solver>> bi-c-grad
+                     b Buoy/Turb>> SingleGDH
+                      ___________________
+                     ? help
+                     - Exit
+
+ Simulation toggles:?> 
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?> 
+ Initiating CFD sim with following parameters:
+   U-momentum active
+   V-momentum active
+   W-momentum active
+   k-epsilon turb model active
+   Convergence criteria:          200   9.99999975E-05
+   Relaxation factors:   0.250000000      0.250000000      0.250000000      0.250000000       1.00000000      0.250000000      0.250000000       1.00000000       1.00000000    
+
+ DFS - Monitoring of residuals & variables
+
+   ITER        U          V          W          P          T          K       Eps.
+
+    100    0.516E+00  0.117E+01  0.773E+00  0.854E+00  0.000E+00  0.124E-02  0.111E+05
+          -0.644E-03  0.857E-03 -0.192E-02  0.399E-04  0.200E+02  0.399E-14  0.999E+00
+    200    0.300E+00  0.634E+00  0.380E+00  0.396E+00  0.000E+00  0.340E-06  0.745E-01
+          -0.971E-03  0.221E-02 -0.493E-03  0.484E-04  0.200E+02  0.128E-26  0.100E+01
+ 
+Convergence has not been achieved after    200 iterations.
+ Current residual values:
+  Mass =  0.396E+00
+  X momentum =  0.300E+00
+  Y momentum =  0.634E+00
+  Z momentum =  0.380E+00
+  Turbulent energy =  0.340E-06
+  Energy dissipation =  0.745E-01
+Do you accept it as converged solution?
+  [Y]es (default) or [N]o ?
+Solution did NOT converge at   200 iterations, for day no.   0 at  0.000
+ Warning: Simulation complete.
+
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?> 
+  results:  a ASCII format file      d ParaView format file
+            b PHOTON analysis        e TECPLOT format file 
+            c MATLAB analysis        f Flow visualization  
+         :  - Exit
+
+  results:?> 
+  results:  a ASCII format file      d ParaView format file
+            b PHOTON analysis        e TECPLOT format file 
+            c MATLAB analysis        f Flow visualization  
+         :  - Exit
+
+  results:?> 
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?>  
+Delete results file before exiting? [Y]es (default) or [N]o ?
+ 
+Delete temporary file before exiting? [Y]es (default) or [N]o ?

@@ -1,0 +1,299 @@
+* CONFIGURATION4.0
+# ESRU system configuration defined by file 
+# 3BR_wch_obj1819.cfg
+*date Thu Oct  5 15:51:06 2017  # latest file modification 
+*root 3BR_wch_obj1819
+*zonpth  ../zones                  # path to zones
+*netpth  ../nets                   # path to networks
+*ctlpth  ../ctl                    # path to controls
+*aimpth ../aim2                   # path to aim2 files
+*radpth ../rad                    # path to radiance files
+*imgpth  ../images                 # path to project images
+*docpth  ../doc                    # path to project documents
+*dbspth  ../dbs                    # path to local databases
+*hvacpth ../hvac                   # path to hvac files
+*bsmpth ../bsm                    # path to BASESIMP files
+*radcore  1  # number of cores available to Radiance
+*indx    1 # Building only
+ 55.900   -4.100   # Latitude & Longitude (diff from time meridian)
+      1   0.200   # Site exposure & ground reflectivity
+* DATABASES
+*mat  ../dbs/3BR_detached.materialdb
+*stdcfcdb  CFClayers.db1.a
+*mlc  ../dbs/3BR_detached.constrdb
+*stdopt  optics.db2
+*stdprs  pressc.db1
+*stdevn  profiles.db2.a
+*stdclm  clm67
+*stdmscldb  mscomp.db2
+*stdmould  mould.db1 # mould isopleths
+*stdpdb  plantc.db1
+*stdsbem  SBEM.db1
+*predef  ../dbs/predefined.db3
+*slr_half_hr   0  # solar timing hour centred
+*quick_run   0  # no
+*ctl  ../ctl/3BR_wch_obj_18-19.ctl
+*contents ../doc/3BR_wch_obj1819.contents
+*vew    -40.1  -161.6    43.6     4.2     4.9     3.6 40.0
+*calename standard weekday Sat Sun hol
+*calentag weekdays, weekdays (all year), 260
+*calentag saturday, Saturdays (all year),  52
+*calentag sunday, Sundays (all year),  52
+*calentag holiday, holiday,   1
+*list    4
+ 4,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1, 
+ 2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1, 
+ 1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1, 
+ 1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2, 
+ 3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1, 
+ 1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1, 
+ 1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3, 
+ 1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1,1,1,1,1,2,3,1
+*end_list
+*year  2007 # assessment year
+*water_in_zones 0.6  998.2 4190.0    0.0 # water cond density spec ht shortwave abs
+*ipv  4,1,i5t     # IPV data follows
+*title,An 88m2 3BR detached house for carpet st
+*version,Version 3BR_det_1960                    
+*date,Thu Oct  5 15:51:06 2017
+*synop,:The 3BR_det_1960
+*images,0
+*simulations,5
+*period,37,43,1st winter run                          
+*period,107,113,spring run                              
+*period,184,190,summer run                              
+*period,275,281,autumn run                              
+*period,324,330,2nd winter run                          
+*display_days,5,38,108,185,276,325
+season multipliers: heating|cooling|lights|fans|smallp|DWH
+*win1,10.000,10.000,10.000,10.000,10.000,10.000
+*spr,9.000,9.000,9.000,9.000,9.000,9.000
+*sum,23.467,16.000,16.000,16.000,16.000,16.000
+*aut,8.419,8.000,8.000,8.000,8.000,8.000
+*win2,9.000,9.000,9.000,9.000,9.000,9.000
+*metrics,2
+# metric data: metric index, nb zones, 2 miscel , floor area
+*metric_1,6,1,1,4,43.7,1.000,1.000,comfort,grnd_zones,Resultant T (degC)
+ 1,2,3,4
+*metric_2,6,1,1,4,41.9,1.000,1.000,comfort,up_zones,Resultant T (degC)
+ 6,7,8,9
+*demand_sets, 1  # number of energy demand sets
+# nb. zones, 2 miscel, aggregate_toggle floor area, scaling descrip
+*energy_1,0,0,0,0,1.0,1.000,zones
+# non-specific demands: occup/light/sm pwr/fans/pumps/lifts/dhw
+*dmds,0,0,0,0,0,0,0
+*end_ipv
+*rif  ../rad/3BR_wch_obj.rcf
+# sim setup: no. sets startup zone_ts plant_ts save_lv @ each ts
+*sps    6   5  20  10   4   0
+   6   2  12   2  win1 # period & name
+*sblr 3BR_wch_obj1819_win1.res
+*sflr 3BR_wch_obj1819_win1.mfr
+*end_set
+  23   4  29   4  spr # period & name
+*sblr 3BR_wch_obj1819_sprb.res
+*sflr 3BR_wch_obj1819_sprb.mfr
+*end_set
+   3   7   9   7  sum # period & name
+*sblr 3BR_wch_obj1819_sum.res
+*sflr 3BR_wch_obj1819_sum.mfr
+*end_set
+   2  10   8  10  aut # period & name
+*sblr 3BR_wch_obj1819_aut.res
+*sflr 3BR_wch_obj1819_aut.mfr
+*end_set
+  20  11  26  11  win2 # period & name
+*sblr 3BR_wch_obj1819_win2.res
+*sflr 3BR_wch_obj1819_win2.mfr
+*end_set
+   3   1  31  12  annual # period & name
+*sblr 3BR_wch_obj1819_annual.res
+*sflr 3BR_wch_obj1819_annual.mfr
+*end_set
+*end_sps
+*intipv 3BR_wch_obj1819_ipv.rep
+# Name and address of building
+*B-NAME not yet defined
+*B-ADDRESS not yet defined
+*B-CITY not yet defined
+*B-POSTCODE not yet defined
+# Contact information for building owner
+*O-NAME not yet defined
+*O-ADDRESS not yet defined
+*O-CITY not yet defined
+*O-POSTCODE not yet defined
+*O-TELEPHONE not yet defined
+# Contact information for simulation team
+*C-NAME not yet defined
+*C-ADDRESS not yet defined
+*C-CITY not yet defined
+*C-POSTCODE not yet defined
+*C-TELEPHONE not yet defined
+* PROJ LOG
+../doc/3BR_det_1960.log
+* Building
+An high resolution 88m2 3BR detached house (WCH 18-19C).
+     24  # no of zones
+*zon   1   # reference for hall        
+*opr ../zones/passages.opr  # schedules
+*geo ../zones/hall.geo  # geometry
+*con ../zones/hall.con  # construction
+*tmc ../zones/hall.tmc  # transparent constr
+*ivf ../zones/hall.vwf # viewfactors
+*isi ../zones/hall.shd  # shading db 
+*zend 
+*zon   2   # reference for living      
+*opr ../zones/living.opr  # schedules
+*geo ../zones/living.geo  # geometry
+*con ../zones/living.con  # construction
+*tmc ../zones/living.tmc  # transparent constr
+*ivf ../zones/living.vwf # viewfactors
+*isi ../zones/living.shd  # shading db 
+*zend 
+*zon   3   # reference for dining      
+*opr ../zones/dining.opr  # schedules
+*geo ../zones/dining.geo  # geometry
+*con ../zones/dining.con  # construction
+*tmc ../zones/dining.tmc  # transparent constr
+*ivf ../zones/dining.vwf # viewfactors
+*isi ../zones/dining.shd  # shading db 
+*zend 
+*zon   4   # reference for kitchen     
+*opr ../zones/kitchen.opr  # schedules
+*geo ../zones/kitchen.geo  # geometry
+*con ../zones/kitchen.con  # construction
+*tmc ../zones/kitchen.tmc  # transparent constr
+*ivf ../zones/kitchen.vwf # viewfactors
+*isi ../zones/kitchen.shd  # shading db 
+*zend 
+*zon   5   # reference for upper_hall  
+*opr ../zones/passages.opr  # schedules
+*geo ../zones/upper_hall.geo  # geometry
+*con ../zones/upper_hall.con  # construction
+*tmc ../zones/upper_hall.tmc  # transparent constr
+*zend 
+*zon   6   # reference for bedroom1    
+*opr ../zones/main_br.opr  # schedules
+*geo ../zones/bedroom1.geo  # geometry
+*con ../zones/bedroom1.con  # construction
+*tmc ../zones/bedroom1.tmc  # transparent constr
+*ivf ../zones/bedroom1.vwf # viewfactors
+*isi ../zones/bedroom1.shd  # shading db 
+*zend 
+*zon   7   # reference for bedroom3    
+*opr ../zones/small_br.opr  # schedules
+*geo ../zones/bedroom3.geo  # geometry
+*con ../zones/bedroom3.con  # construction
+*tmc ../zones/bedroom3.tmc  # transparent constr
+*ivf ../zones/bedroom3.vwf # viewfactors
+*isi ../zones/bedroom3.shd  # shading db 
+*zend 
+*zon   8   # reference for bedroom2    
+*opr ../zones/small_br.opr  # schedules
+*geo ../zones/bedroom2.geo  # geometry
+*con ../zones/bedroom2.con  # construction
+*tmc ../zones/bedroom2.tmc  # transparent constr
+*ivf ../zones/bedroom2.vwf # viewfactors
+*isi ../zones/bedroom2.shd  # shading db 
+*zend 
+*zon   9   # reference for bath        
+*opr ../zones/main_bath.opr  # schedules
+*geo ../zones/bath.geo  # geometry
+*con ../zones/bath.con  # construction
+*tmc ../zones/bath.tmc  # transparent constr
+*ivf ../zones/bath.vwf # viewfactors
+*isi ../zones/bath.shd  # shading db 
+*zend 
+*zon  10   # reference for attic       
+*opr ../zones/attic.opr  # schedules
+*geo ../zones/attic.geo  # geometry
+*con ../zones/attic.con  # construction
+*ivf ../zones/attic.vwf # viewfactors
+*zend 
+*zon  11   # reference for equipment   
+*opr ../zones/equipment.opr  # schedules
+*geo ../zones/equipment.geo  # geometry
+*con ../zones/equipment.con  # construction
+*ivf ../zones/equipment.vwf # viewfactors
+*zend 
+*zon  12   # reference for crawl       
+*opr ../zones/crawl.opr  # schedules
+*geo ../zones/crawl.geo  # geometry
+*con ../zones/crawl.con  # construction
+*zend 
+*zon  13 Water  # reference for rad_bath    
+*opr ../zones/radiator.opr  # schedules
+*geo ../zones/rad_bath.geo  # geometry
+*con ../zones/radiator.con  # construction
+*ihc ../zones/rad_bath.htc  # convective hc coef
+*zend 
+*zon  14 Water  # reference for rad_br3     
+*opr ../zones/radiator.opr  # schedules
+*geo ../zones/rad_br3.geo  # geometry
+*con ../zones/radiator.con  # construction
+*ihc ../zones/rad_br3.htc  # convective hc coef
+*zend 
+*zon  15   # reference for boiler_case 
+*opr ../zones/boiler_case.opr  # schedules
+*geo ../zones/boiler_case.geo  # geometry
+*con ../zones/boiler_case.con  # construction
+*ivf ../zones/boiler_case.vwf # viewfactors
+*zend 
+*zon  16 Water  # reference for rad_br2     
+*opr ../zones/radiator.opr  # schedules
+*geo ../zones/rad_br2.geo  # geometry
+*con ../zones/rad_br2.con  # construction
+*ihc ../zones/rad_br2.htc  # convective hc coef
+*zend 
+*zon  17 Water  # reference for rad_dining  
+*opr ../zones/radiator.opr  # schedules
+*geo ../zones/rad_dining.geo  # geometry
+*con ../zones/rad_dining.con  # construction
+*ihc ../zones/rad_dining.htc  # convective hc coef
+*zend 
+*zon  18 Water  # reference for rad-mbr     
+*opr ../zones/radiator.opr  # schedules
+*geo ../zones/rad-mbr.geo  # geometry
+*con ../zones/rad-mbr.con  # construction
+*ihc ../zones/rad-mbr.htc  # convective hc coef
+*zend 
+*zon  19 Water  # reference for rad_lounge  
+*opr ../zones/radiator.opr  # schedules
+*geo ../zones/rad_lounge.geo  # geometry
+*con ../zones/rad_lounge.con  # construction
+*ihc ../zones/rad_lounge.htc  # convective hc coef
+*zend 
+*zon  20 Water  # reference for rad_kit     
+*opr ../zones/radiator.opr  # schedules
+*geo ../zones/rad_kit.geo  # geometry
+*con ../zones/rad_kit.con  # construction
+*ihc ../zones/rad_kit.htc  # convective hc coef
+*zend 
+*zon  21 Water  # reference for rad-hall    
+*opr ../zones/radiator.opr  # schedules
+*geo ../zones/rad-hall.geo  # geometry
+*con ../zones/rad-hall.con  # construction
+*ihc ../zones/rad-hall.htc  # convective hc coef
+*zend 
+*zon  22 Water  # reference for water_jacket
+*opr ../zones/water_jacket.opr  # schedules
+*geo ../zones/water_jacket.geo  # geometry
+*con ../zones/water_jacket.con  # construction
+*ihc ../zones/water_jacket.htc  # convective hc coef
+*zend 
+*zon  23   # reference for gas         
+*opr ../zones/gas.opr  # schedules
+*geo ../zones/gas.geo  # geometry
+*con ../zones/gas.con  # construction
+*ihc ../zones/gas.htc  # convective hc coef
+*zend 
+*zon  24   # reference for mixer       
+*opr ../zones/mixer.opr  # schedules
+*geo ../zones/mixer.geo  # geometry
+*con ../zones/mixer.con  # construction
+*zend 
+*cnn 3BR_wch_obj1819.cnn  # connections
+   1   # fluid flow network:
+../nets/3BR_wch_obja.afn    # leakage description
+ hall,living,dining,kitchen,upper_hall,bedroom1,bedroom3,bedroom2,bath,attic,equipment,crawl,rad_bath,rad_br3,boiler_case, 
+ rad_br2,rad_dining,rad-mbr,rad_lounge,rad_kit,rad-hall,water_jacket,gas,mixer

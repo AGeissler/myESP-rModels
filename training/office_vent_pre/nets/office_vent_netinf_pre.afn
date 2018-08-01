@@ -1,0 +1,65 @@
+   21   11   18    1.000    (nodes, components, connections, wind reduction)
+ Node         Fld. Type   Height    Temperature    Data_1       Data_2
+ manager         1    0   1.5000       20.000       0.0000       40.501    
+ general         1    0   1.5000       20.000       0.0000       175.50    
+ conference      1    0   1.5000       20.000       0.0000       141.75    
+ reception       1    0   1.5000       20.000       0.0000       182.25    
+ ceil_void       1    0   3.2500       20.000       0.0000       90.000    
+ mixing_box      1    0   3.2500       20.000       0.0000       9.0002    
+ north           1    3  0.70000       0.0000       1.0000       0.0000    
+ east            1    3  0.70000       0.0000       1.0000       90.000    
+ east_recep      1    3  0.70000       0.0000       1.0000       90.000    
+ east_gener      1    3  0.70000       0.0000       1.0000       90.000    
+ south_gen       1    3  0.70000       0.0000       1.0000       180.00    
+ south_man       1    3  0.70000       0.0000       1.0000       180.00    
+ west_mix        1    3   3.2500       0.0000       1.0000       270.00    
+ floor_void      1    0 -0.10000       20.000       0.0000       36.000    
+ ceiling_belo    1    0 -0.30000       20.000       0.0000       36.000    
+ south_flvd      1    3 -0.10000       0.0000       1.0000       180.00    
+ north_flvd      1    3 -0.10000       0.0000       1.0000       0.0000    
+ south_clbel     1    3 -0.30000       0.0000       1.0000       180.00    
+ north_clbel     1    3 -0.30000       0.0000       1.0000       0.0000    
+ south_ceil      1    3   3.1880       0.0000       1.0000       180.00    
+ north_ceil      1    3   3.1880       0.0000       1.0000       0.0000    
+ Component    Type C+ L+ Description
+ crack_1       120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       3.99999972E-03   9.00000000    
+ crack_2       120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       3.99999972E-03   18.0000000    
+ crack_3       120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       3.99999972E-03   27.0000000    
+ door_man      130  5  0 Specific air flow door              m = rho.f(W,H,dP)       
+   1.00000000      0.500000000       2.09999990       1.29999995      0.600000024    
+ door_g-r      130  5  0 Specific air flow door              m = rho.f(W,H,dP)       
+   1.00000000       3.00000000       2.09999990       1.20000005      0.600000024    
+ door_r-c      130  5  0 Specific air flow door              m = rho.f(W,H,dP)       
+   1.00000000       2.00000000       2.09999990       1.20000005      0.600000024    
+ fac_vent_1    110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000      0.100000001    
+ fac_vent_2    110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000      0.200000003    
+ fac_vent_3    110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000      0.300000012    
+ mix_crack     120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       4.99999989E-03   2.00000000    
+ supply_grl    210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   1.00000000      0.300000012       9.00000036E-02   5.00000000       9.99999975E-05   6.00000005E-03
+ +Node         dHght   -Node         dHght   via Component
+ manager       0.000   general       0.000   door_man       
+ general       0.000   reception     0.000   door_g-r       
+ conference    0.000   reception     0.000   door_r-c       
+ south_man     0.000   manager      -0.800   crack_1        
+ south_gen     0.000   general      -0.800   crack_3        
+ east_gener    0.000   general      -0.800   crack_2        
+ east_recep    0.000   reception    -0.800   crack_2        
+ east          0.000   conference   -0.800   crack_2        
+ north         0.000   conference   -0.800   crack_3        
+ west_mix      0.000   mixing_box    0.000   mix_crack      
+ south_ceil    0.000   ceil_void    -0.000   crack_1        
+ north_ceil    0.000   ceil_void    -0.000   crack_1        
+ south_clbel   0.000   ceiling_belo  0.000   crack_1        
+ north_clbel   0.000   ceiling_belo  0.000   crack_1        
+ south_flvd    0.000   floor_void    0.000   crack_1        
+ north_flvd    0.000   floor_void    0.000   crack_1        
+ floor_void    0.100   reception    -1.500   crack_3        
+ reception     1.600   ceil_void    -0.150   crack_3        

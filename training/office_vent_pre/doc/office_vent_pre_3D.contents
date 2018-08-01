@@ -1,0 +1,2510 @@
+Synopsis
+ 
+Synopsis of the model Office model populated with predefined entities - 3D
+network infiltratio defined in office_vent_pre_3D.cfg generated on Tue Apr 10
+10:36:27 2018. Associated notes are in ../doc/office_vent.log
+ 
+The model is located at latitude   46.00 with a longitude difference of   0.00
+from the local time meridian (east +ve). The year used in simulations is 1997
+and weekends occur on Saturday and Sunday.
+ 
+The site exposure is typical city centre and the ground reflectance is 0.20.
+ 
+ 
+Simulationist name: not yet defined
+Simulationist telephone: not yet defined
+Simulationist address: not yet defined
+Simulationist city: not yet defined
+Simulationist postcode: not yet defined
+ 
+The climate is: Ottawa Intl ON CAN and is held in: can_ottawa with hour
+centred solar data.
+ standard annual weather: can_ottawa
+Calculated ground temp at 0.5m depth
+-7.3239 -8.6098 -6.3292 -2.7603 6.5748 13.779 18.638 20.117 17.597 12.004 4.5294 -2.4058
+Calculated ground temp at 1.0m depth
+-5.5667 -7.3286 -5.7900 -2.8690 5.3395 12.038 16.869 18.802 17.103 12.437 5.7987 -0.66126
+Calculated ground temp at 2.0m depth
+-2.5922 -4.8835 -4.4157 -2.5199 3.7264 9.3732 13.890 16.314 15.797 12.626 7.4760 2.0155
+Calculated ground temp at 4.0m depth
+1.3245 -1.0252 -1.5390 -0.82819 2.7073 6.5116 9.9991 12.427 12.995 11.620 8.5955 4.9014
+ 
+Primary energy conversions (demand kWhr to primary kWhr) are:
+ heating   : 1.530
+ cooling   : 1.440
+ lighting  : 3.600
+ fans&pumps: 3.600
+ small powr: 3.600
+ hot water : 1.530
+ 
+ Emissions (g/kWh) co2  nox  sox
+ heating :  190.00   0.30   0.20
+ cooling :  612.00   2.06   7.57
+ lighting:  612.00   2.06   7.57
+ fan_pump:  612.00   2.06   7.57
+ small pr:  612.00   2.06   7.57
+ hot water: 190.00   0.30   0.20
+An Integrated Performance View has been defined:
+Title : Office model for network flow studies -
+Version   : Version office_vent_empty
+synopsis:
+:The office_vent_bc
+Images    :   0
+ 
+Simulations to be undertaken:
+____simulations ( 5)____________days descrip___
+1st win Wed-01-Jan to Thu-03-Apr  93 1st winter sea
+spring  Fri-04-Apr to Thu-08-May  35 spring sea
+summer  Fri-09-May to Thu-28-Aug 112 summer sea
+autumn  Fri-29-Aug to Thu-16-Oct  49 autumn sea
+2nd win Fri-17-Oct to Wed-31-Dec  76 2nd winter sea
+ 
+display day Thu-02-Jan.
+display day Sat-05-Apr.
+display day Sat-10-May.
+display day Sat-30-Aug.
+display day Sat-18-Oct.
+ 
+Seasons (as found in climatelist file):
+         winter  spring  summer  autumn  winter
+  start  01-Jan  04-Apr  09-May  29-Aug  17-Oct
+  finish 03-Apr  08-May  28-Aug  16-Oct  31-Dec
+  days     93       35     112      49      76
+ 
+ Ratios for:  winter spring summer autumn winter
+ heating       1.00   1.00   1.00   1.00   1.00
+ cooling       1.00   1.00   1.00   1.00   1.00
+ lighting      1.00   1.00   1.00   1.00   1.00
+ small power   1.00   1.00   1.00   1.00   1.00
+ fans&pumps    1.00   1.00   1.00   1.00   1.00
+ DHW           1.00   1.00   1.00   1.00   1.00
+ 
+Metric                zones area scaling weight  type name
+ 1 Resultant T (degC)    4  180.00 1.000 1.000 comfort ocup_zones
+Zones: manager general conference reception
+ 
+Demand set,  nb zones, floor area, scaling factor
+ 1 zones          4  180.00 1.000
+Zones: manager general conference reception
+ 
+ 
+Databases associated with the model:
+ standard pressure distr: pressc.db1
+ standard materials     : material.db4.a
+ constructions          : ../dbs/office_vent_constr.db4
+ standard plant comp    : plantc.db1
+ standard event profiles: profiles.db2.a
+ standard optical prop  : optics.db2
+ standard UK NCM data   : SBEM.db1
+ predefined objects     : ../dbs/office_vent_bc.predef.c
+ standard mould isopleth: mould.db1
+ 
+ ____________________________________________________________
+ 
+The model includes ideal controls as follows:
+Control description:
+office environmental controls - base case heat 20 cool 24
+ 
+Zones control includes  2 functions.
+using zone controls only and forcing ceiling_below to be same as ceiling
+Details of control loops referenced in the model:
+ 
+ The sensor for function  1 senses the temperature of the current zone.
+ The actuator for function  1 is air point of the current zone
+ The following day types are defined:
+weekday     saturday    sunday
+ Day type weekday control has  3 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 db temp   > flux      basic control: max heating capacity 20000.0W min
+heating capacity 0.0W max cooling capacity 20000.0W min cooling capacity 0.0W. Heating
+setpoint 16.00C cooling setpoint 26.00C.
+   2  8.00 db temp   > flux      basic control: max heating capacity 20000.0W min
+heating capacity 0.0W max cooling capacity 20000.0W min cooling capacity 0.0W. Heating
+setpoint 20.00C cooling setpoint 24.00C.
+   3 18.00 db temp   > flux      basic control: max heating capacity 20000.0W min
+heating capacity 0.0W max cooling capacity 20000.0W min cooling capacity 0.0W. Heating
+setpoint 16.00C cooling setpoint 26.00C.
+ Day type saturday control has  3 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 db temp   > flux      basic control: max heating capacity 20000.0W min
+heating capacity 0.0W max cooling capacity 20000.0W min cooling capacity 0.0W. Heating
+setpoint 16.00C cooling setpoint 26.00C.
+   2  9.00 db temp   > flux      basic control: max heating capacity 20000.0W min
+heating capacity 0.0W max cooling capacity 20000.0W min cooling capacity 0.0W. Heating
+setpoint 20.00C cooling setpoint 24.00C.
+   3 18.00 db temp   > flux      basic control: max heating capacity 20000.0W min
+heating capacity 0.0W max cooling capacity 20000.0W min cooling capacity 0.0W. Heating
+setpoint 16.00C cooling setpoint 26.00C.
+ Day type sunday control has  1 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 db temp   > flux      basic control: max heating capacity 20000.0W min
+heating capacity 0.0W max cooling capacity 20000.0W min cooling capacity 0.0W. Heating
+setpoint 16.00C cooling setpoint 26.00C.
+ 
+ The sensor for function  2 senses dry bulb temperature in ceiling_belo.
+ The actuator for function  2 is air point of the current zone
+ The following day types are defined:
+weekday     saturday    sunday
+ Day type weekday control has  1 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 db temp   > flux      match temperature (ideal): max heat cp 6000.W min heat
+cp 0.W max cool cp 6000.W min heat cp 0.W Aux sensors 1. mean value @senses dry bulb T
+in ceil_void. scale 1.00 offset 0.00
+ Day type saturday control has  1 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 db temp   > flux      match temperature (ideal): max heat cp 6000.W min heat
+cp 0.W max cool cp 6000.W min heat cp 0.W Aux sensors 1. mean value @senses dry bulb T
+in ceil_void. scale 1.00 offset 0.00
+ Day type sunday control has  1 periods.
+ Per|Start|Sensing  |Actuating  | Control law description
+   1  0.00 db temp   > flux      match temperature (ideal): max heat cp 6000.W min heat
+cp 0.W max cool cp 6000.W min heat cp 0.W Aux sensors 1. mean value @senses dry bulb T
+in ceil_void. scale 1.00 offset 0.00
+ 
+ Zone to contol loop linkages:
+ zone ( 1) manager      << control  1
+ zone ( 2) general      << control  1
+ zone ( 3) conference   << control  1
+ zone ( 4) reception    << control  1
+ zone ( 5) ceil_void    << control  0
+ zone ( 6) mixing_box   << control  0
+ zone ( 7) floor_void   << control  0
+ zone ( 8) ceiling_belo << control  2
+ ____________________________________________________________
+ 
+The model includes an air flow network.
+ 
+ Flow network description.
+ 
+  21 nodes,  21 components,  18 connections;     wind reduction =  1.000
+   # Node       Fluid   Node Type              X Y Z Position      Temperature    Data_1        Data_2
+   1 manager      air   internal & unknown    1.5000  2.2500  1.5000   20.000     (-)     0.000  vol   40.501
+   2 general      air   internal & unknown    6.0000  3.0000  1.5000   20.000     (-)     0.000  vol  175.500
+   3 conference   air   internal & unknown    7.5000 15.0000  1.5000   20.000     (-)     0.000  vol  141.750
+   4 reception    air   internal & unknown    7.5000  9.7500  1.5000   20.000     (-)     0.000  vol  182.250
+   5 ceil_void    air   internal & unknown    6.0000  9.0000  3.2500   20.000     (-)     0.000  vol   90.002
+   6 mixing_box   air   internal & unknown    1.5000  9.0000  3.2500   20.000     (-)     0.000  vol    9.000
+   7 north        air   boundary & wind ind   7.5000 18.9000  0.9000   0.0000     coef    1.000  azim   0.000
+   8 east         air   boundary & wind ind  12.9000 10.5000  0.9000   0.0000     coef    1.000  azim  90.000
+   9 east_recep   air   boundary & wind ind  12.9000  7.5000  0.9000   0.0000     coef    1.000  azim  90.000
+  10 east_gener   air   boundary & wind ind  12.9000  5.5000  0.9000   0.0000     coef    1.000  azim  90.000
+  11 south_gen    air   boundary & wind ind   7.5000 -0.9000  0.9000   0.0000     coef    1.000  azim 180.000
+  12 south_man    air   boundary & wind ind   1.5000 -0.9000  0.9000   0.0000     coef    1.000  azim 180.000
+  13 west_mix     air   boundary & wind ind  -0.9000  9.0000  3.2500   0.0000     coef    1.000  azim 270.000
+  14 floor_void   air   internal & unknown    6.0000  9.0000 -0.1000   20.000     (-)     0.000  vol   36.000
+  15 ceil_below   air   internal & unknown    6.0000  9.0000 -0.3000   20.000     (-)     0.000  vol   36.000
+  16 south_ceil   air   boundary & wind ind   6.6250 -0.9000  3.1880   0.0000     coef    1.000  azim 180.000
+  17 north_ceil   air   boundary & wind ind   7.5000 18.9000  3.1670   0.0000     coef    1.000  azim   0.000
+  18 south_flvd   air   boundary & wind ind   6.6250 -0.9000 -0.0750   0.0000     coef    1.000  azim 180.000
+  19 north_flvd   air   boundary & wind ind   6.5000 18.9000 -0.0670   0.0000     coef    1.000  azim   0.000
+  20 south_clbel  air   boundary & wind ind   5.0000 -0.9000 -0.3000   0.0000     coef    1.000  azim 180.000
+  21 north_clbel  air   boundary & wind ind   7.5000 18.9000 -0.3000   0.0000     coef    1.000  azim   0.000
+ 
+ Component    Type C+ L+ X Y Z Position Description
+ 
+ crack_1       120  3  0   1.5   0.0   0.9 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with -:-
+ Fluid  1.0 crack width(m)  0.0050 crack length(m)  2.000
+ 
+ crack_2       120  3  0  12.0   7.5   0.9 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with -:-
+ Fluid  1.0 crack width(m)  0.0050 crack length(m)  4.000
+ 
+ crack_3       120  3  0   7.5   0.0   0.9 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with -:-
+ Fluid  1.0 crack width(m)  0.0050 crack length(m)  6.000
+ 
+ door_man      130  5  0   0.5   4.5   1.5 Specific air flow door              m = rho.f(W,H,dP)
+ Associated with -:-
+ Fluid  1.0 width  0.500 height 2.100 ref ht  1.300 discharge factor 0.600
+ 
+ door_g-r      130  5  0   6.0   6.0   1.5 Specific air flow door              m = rho.f(W,H,dP)
+ Associated with -:-
+ Fluid  1.0 width  3.000 height 2.100 ref ht  1.200 discharge factor 0.600
+ 
+ door_r-c      130  5  0   7.5  12.8   1.5 Specific air flow door              m = rho.f(W,H,dP)
+ Associated with -:-
+ Fluid  1.0 width  2.000 height 2.100 ref ht  1.200 discharge factor 0.600
+ 
+ fac_vent_1    110  2  0   1.5   0.0   0.7 Specific air flow opening           m = rho.f(A,dP)
+ Associated with -:-
+ Fluid  1.0 opening area(m)  0.100
+ 
+ fac_vent_2    110  2  0  12.0  10.5   0.7 Specific air flow opening           m = rho.f(A,dP)
+ Associated with -:-
+ Fluid  1.0 opening area(m)  0.200
+ 
+ fac_vent_3    110  2  0   7.5  18.0   0.7 Specific air flow opening           m = rho.f(A,dP)
+ Associated with -:-
+ Fluid  1.0 opening area(m)  0.300
+ 
+ mix_crack     120  3  0   0.0   9.0   3.2 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with -:-
+ Fluid  1.0 crack width(m)  0.0050 crack length(m)  1.000
+ 
+ supply_grl    210  6  0   3.0   9.0   3.2 General flow conduit component      m = rho.f(D,A,L,k,SCi)
+ Associated with -:-
+   Fluid, hydr diam, x-sect, conduit ln, roughness, loss fac.
+  1.0    0.300    0.090    5.000    0.000    0.006
+ 
+ flr_void_s    120  3  0   6.6   0.0  -0.1 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with floor_void:front
+ Fluid  1.0 crack width(m)  0.0040 crack length(m) 27.000
+ 
+ flr_void_n    120  3  0   6.5  18.0  -0.1 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with floor_void:back
+ Fluid  1.0 crack width(m)  0.0040 crack length(m) 27.000
+ 
+ ceil_bel_s    120  3  0   5.0   0.0  -0.3 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with ceiling_belo:front
+ Fluid  1.0 crack width(m)  0.0040 crack length(m)  9.000
+ 
+ ceil_bel_n    120  3  0   7.5  18.0  -0.3 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with ceiling_belo:back
+ Fluid  1.0 crack width(m)  0.0040 crack length(m)  9.000
+ 
+ ceil_vd_s     120  3  0   6.6   0.0   3.2 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with ceil_void:south_edge
+ Fluid  1.0 crack width(m)  0.0040 crack length(m)  9.000
+ 
+ ceil_vd_n     120  3  0   7.5  18.0   3.2 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with ceil_void:north_edge
+ Fluid  1.0 crack width(m)  0.0040 crack length(m)  9.000
+ 
+ flr_crack     120  3  0   8.2   9.8   0.0 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with floor_void:front
+ Fluid  1.0 crack width(m)  0.0040 crack length(m) 27.000
+ 
+ ceil_crack    120  3  0   8.2   9.8   3.0 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with floor_void:back
+ Fluid  1.0 crack width(m)  0.0040 crack length(m) 27.000
+ 
+ crack_2eg     120  3  0  12.0   4.5   0.9 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with general:spandral_d
+ Fluid  1.0 crack width(m)  0.0050 crack length(m)  4.000
+ 
+ crack_2ec     120  3  0  12.0  13.5   0.9 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with conference:spandral_d
+ Fluid  1.0 crack width(m)  0.0050 crack length(m)  4.000
+ 
+    # +Node         dHght   -Node         dHght   Component       Z @+    Z @-
+    1 manager       0.000   general       0.000   door_man        1.500   1.500
+    2 general       0.000   reception     0.000   door_g-r        1.500   1.500
+    3 conference    0.000   reception     0.000   door_r-c        1.500   1.500
+    4 south_man     0.000   manager      -0.800   crack_1         0.900   0.700
+    5 south_gen     0.000   general      -0.800   crack_3         0.900   0.700
+    6 east_gener    0.000   general      -0.600   crack_2eg       0.900   0.900
+    7 east_recep    0.000   reception    -0.800   crack_2         0.900   0.700
+    8 east          0.000   conference   -0.600   crack_2ec       0.900   0.900
+    9 north         0.000   conference   -0.800   fac_vent_3      0.900   0.700
+   10 west_mix      0.000   mixing_box    0.000   mix_crack       3.250   3.250
+   11 south_ceil   -0.001   ceil_void    -0.062   ceil_vd_s       3.187   3.188
+   12 north_ceil   -0.000   ceil_void    -0.083   ceil_vd_n       3.167   3.167
+   13 south_clbel   0.000   ceil_below    0.000   ceil_bel_s     -0.300  -0.300
+   14 north_clbel   0.000   ceil_below    0.000   ceil_bel_n     -0.300  -0.300
+   15 south_flvd    0.000   floor_void    0.025   flr_void_s     -0.075  -0.075
+   16 north_flvd    0.000   floor_void    0.033   flr_void_n     -0.067  -0.067
+   17 floor_void    0.100   reception    -1.500   flr_crack       0.000   0.000
+   18 reception     1.500   ceil_void    -0.250   ceil_crack      3.000   3.000
+thermal zone to air flow node mapping:
+thermal zone -> air flow node
+manager      -> manager
+general      -> general
+conference   -> conference
+reception    -> reception
+ceil_void    -> ceil_void
+mixing_box   -> mixing_box
+floor_void   -> floor_void
+ceiling_belo -> ceil_below
+ 
+ 
+ ____________________________________________________________
+ 
+ID Zone         Volume|          Surface
+   Name         m^3   | No. Opaque  Transp  ~Floor
+ 1 manager        40.5  43    82.6    10.4    13.5  manager describes cellular office
+ 2 general       175.5  90   218.4    49.6    58.5  general describes an open plan with 4 desks
+ 3 conference    141.8  68   178.1    36.7    47.2  conference describes a conference room for 10-12
+ 4 reception     182.3  74   216.1    38.7    60.8  reception of office group adj to conference room
+ 5 ceil_void      90.0  11   390.0     0.0   180.0  ceil_void is a 0.5m ceiling void over offices
+ 6 mixing_box      9.0   6    45.0     0.0    18.0  mixing_box is a zonal representation of ahu
+ 7 floor_void     36.0  11   372.0     0.0   180.0  floor_void is a 200mm floor void
+ 8 ceiling_belo   36.0   8   372.0     0.0   180.0  ceil_below is ceiling below floor void as boundary condition
+   all           711.  311   1874.    135.    738.
+ 
+ 
+ Zone manager ( 1) is composed of 43 surfaces and 88 vertices.
+ It encloses a volume of 40.5m^3 of space, with a total surface
+ area of 92.9m^2 & user list floor area of 13.5m^2
+ manager describes cellular office
+ There is 9.0000m2 of exposed surface area, 9.0000m2 of which is vertical.
+ Facade opaque is 3.6800m2 & 27.259 % of floor area & average U of 0.307 & UA of 1.1280
+ Facade glazing is 5.3200m2 & 39.407 % of floor & 59.111 % facade with average U of 2.811 & UA of 14.953
+ Opaque partitions:ceiling:floor 65.382m2 & trasparent partitions:ceiling:floor 5.0400m2.
+ 
+ A summary of the surfaces in manager( 1) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  13.5     90.   0. pt_general   OPAQUE   VERT -        -        gyp_gyp_ptn ||< pt_mgrs:general
+  2  0.960   360.   0. part_frame   OPAQUE   VERT -        -        insul_frame ||< part_frame:general
+  3  3.00      0.   0. door         OPAQUE   VERT -        -        door ||< door:general
+  4  13.5    270.   0. pt_other     OPAQUE   VERT -        -        gyp_gyp_ptn ||< identical environment
+  5  13.5      0.  90. ceiling      OPAQUE   CEIL -        -        ceiling ||< Surf-6:ceil_void
+  6  13.5      0. -90. floor        OPAQUE   FLOR -        -        flr_ov_pln ||< man_floor:floor_void
+  7  2.30    180.   0. spandral     OPAQUE   VERT -        -        extern_wall ||< external
+  8  0.400   180.   0. vent         OPAQUE   VERT -        -        insul_frame ||< external
+  9  0.980   180.   0. frame        OPAQUE   VERT -        -        insul_frame ||< external
+ 10  5.32    180.   0. glazing      DCF7671_ VERT -        -        dbl_glz ||< external
+ 11  5.04      0.   0. part_glaz    DCF7671_ VERT -        -        dbl_glz ||< part_glaz:general
+ 12  1.17      0.  90. adesk_t      OPAQUE   CEIL FURNI    -        door ||< adesk_t_:manager
+ 13  1.17      0. -90. adesk_t_     OPAQUE   FLOR FURNI    -        door ||< adesk_t:manager
+ 14  1.17      0.  90. bdesk_t      OPAQUE   CEIL FURNI    -        door ||< bdesk_t_:manager
+ 15  1.17      0. -90. bdesk_t_     OPAQUE   FLOR FURNI    -        door ||< bdesk_t:manager
+ 16  0.207     0.  90. aseat        OPAQUE   CEIL FURNI    -        upholstery ||< aseat_:manager
+ 17  0.207     0. -90. aseat_       OPAQUE   FLOR FURNI    -        upholstery ||< aseat:manager
+ 18  0.231   200.   6. astback      OPAQUE   SLOP FURNI    -        upholstery ||< astback_:manager
+ 19  0.231    20.  -6. astback_     OPAQUE   SLOP FURNI    -        upholstery ||< astback:manager
+ 20  0.814     0.  90. cseat_mass   OPAQUE   CEIL FURNI    -        upholstery ||< cseat_mass_:manager
+ 21  0.814     0. -90. cseat_mass_  OPAQUE   FLOR FURNI    -        upholstery ||< cseat_mass:manager
+ 22  0.324   180.   0. carm_mass_l  OPAQUE   VERT FURNI    -        upholstery ||< carm_mass_l_:manager
+ 23  0.324   360.   0. carm_mass_l_ OPAQUE   VERT FURNI    -        upholstery ||< carm_mass_l:manager
+ 24  0.324   180.   0. carm_mass_r  OPAQUE   VERT FURNI    -        upholstery ||< carm_mass_r_:manager
+ 25  0.324     0.   0. carm_mass_r_ OPAQUE   VERT FURNI    -        upholstery ||< carm_mass_r:manager
+ 26  0.515     0.  90. dt_top       OPAQUE   CEIL FURNI    -        shelves_20mm ||< dt_top_:manager
+ 27  0.515     0. -90. dt_top_      OPAQUE   FLOR FURNI    -        shelves_20mm ||< dt_top:manager
+ 28  0.271     0.  90. dct_shelf    OPAQUE   CEIL FURNI    -        furn_wd10mm ||< dct_shelf_:manager
+ 29  0.271     0. -90. dct_shelf_   OPAQUE   FLOR FURNI    -        furn_wd10mm ||< dct_shelf:manager
+ 30  0.500   180.   0. abil_lft     OPAQUE   VERT FURNI    -        furn_wd10mm ||< abil_lft_:manager
+ 31  0.500   360.   0. abil_lft_    OPAQUE   VERT FURNI    -        furn_wd10mm ||< abil_lft:manager
+ 32  0.500   180.   0. abil_rt      OPAQUE   VERT FURNI    -        furn_wd10mm ||< abil_rt_:manager
+ 33  0.500     0.   0. abil_rt_     OPAQUE   VERT FURNI    -        furn_wd10mm ||< abil_rt:manager
+ 34  1.55    270.   0. abooks       OPAQUE   VERT FURNI    -        stuffonshelf ||< abooks_:manager
+ 35  1.55     90.   0. abooks_      OPAQUE   VERT FURNI    -        stuffonshelf ||< abooks:manager
+ 36  0.484   180.   0. ccab_lf      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< ccab_lf_:manager
+ 37  0.484     0.   0. ccab_lf_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< ccab_lf:manager
+ 38  0.484   180.  -0. ccab_rt      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< ccab_rt_:manager
+ 39  0.484     0.   0. ccab_rt_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< ccab_rt:manager
+ 40  0.955    90.   0. ccab_fr      OPAQUE   VERT FURNI    -        steel_gr_3mm ||< ccab_fr_:manager
+ 41  0.955   270.   0. ccab_fr_     OPAQUE   VERT FURNI    -        steel_gr_3mm ||< ccab_fr:manager
+ 42  0.955    90.   0. cpaper_fr    OPAQUE   VERT FURNI    -        file_papers ||< cpaper_fr_:manager
+ 43  0.955   270.   0. cpaper_fr_   OPAQUE   VERT FURNI    -        file_papers ||< cpaper_fr:manager
+ 
+ Vertices ( index X Y Z) in the zone...
+vertex   1    0.00000    0.00000    0.00000   vertex  45    2.22000    4.18000    0.21500
+vertex   2    3.00000    0.00000    0.00000   vertex  46    2.94000    4.18000    0.21500
+vertex   3    3.00000    4.50000    0.00000   vertex  47    2.94000    4.18000    0.66500
+vertex   4    1.00000    4.50000    0.00000   vertex  48    2.22000    4.18000    0.66500
+vertex   5    0.00000    4.50000    0.00000   vertex  49    2.22000    3.06000    0.21500
+vertex   6    0.00000    0.00000    3.00000   vertex  50    2.94000    3.06000    0.21500
+vertex   7    3.00000    0.00000    3.00000   vertex  51    2.94000    3.06000    0.66500
+vertex   8    3.00000    4.50000    3.00000   vertex  52    2.22000    3.06000    0.66500
+vertex   9    1.00000    4.50000    3.00000   vertex  53    1.50500    3.20500    0.32500
+vertex  10    0.00000    4.50000    3.00000   vertex  54    2.00500    3.20500    0.32500
+vertex  11    0.00000    0.00000    0.90000   vertex  55    2.00500    4.23500    0.32500
+vertex  12    3.00000    0.00000    0.90000   vertex  56    1.50500    4.23500    0.32500
+vertex  13    1.00000    0.00000    0.90000   vertex  57    1.59500    3.31500    0.10500
+vertex  14    2.00000    0.00000    0.90000   vertex  58    1.92500    3.31500    0.10500
+vertex  15    1.00000    0.00000    0.50000   vertex  59    1.92500    4.13500    0.10500
+vertex  16    2.00000    0.00000    0.50000   vertex  60    1.59500    4.13500    0.10500
+vertex  17    0.10000    0.00000    1.00000   vertex  61    2.70500    2.59500    0.00500
+vertex  18    2.90000    0.00000    1.00000   vertex  62    2.95500    2.59500    0.00500
+vertex  19    2.90000    0.00000    2.90000   vertex  63    2.95500    2.59500    2.00500
+vertex  20    0.10000    0.00000    2.90000   vertex  64    2.70500    2.59500    2.00500
+vertex  21    2.90000    4.50000    0.10000   vertex  65    2.70500    1.80500    0.00500
+vertex  22    1.10000    4.50000    0.10000   vertex  66    2.95500    1.80500    0.00500
+vertex  23    1.10000    4.50000    2.90000   vertex  67    2.95500    1.80500    2.00500
+vertex  24    2.90000    4.50000    2.90000   vertex  68    2.70500    1.80500    2.00500
+vertex  25    0.20500    0.20500    0.69500   vertex  69    2.95500    2.58500    0.00500
+vertex  26    0.79500    0.20500    0.69500   vertex  70    2.95500    2.58500    2.00500
+vertex  27    0.79500    2.19500    0.69500   vertex  71    2.95500    1.81000    0.00500
+vertex  28    0.20500    2.19500    0.69500   vertex  72    2.95500    1.81000    2.00500
+vertex  29    0.80500    0.69500    0.69500   vertex  73    0.09500    2.30500    0.00500
+vertex  30    0.80500    0.10500    0.69500   vertex  74    0.48500    2.30500    0.00500
+vertex  31    2.79500    0.10500    0.69500   vertex  75    0.48500    2.30500    1.24500
+vertex  32    2.79500    0.69500    0.69500   vertex  76    0.09500    2.30500    1.24500
+vertex  33    1.31877    0.96319    0.50500   vertex  77    0.09500    3.09500    0.00500
+vertex  34    1.76043    0.80244    0.50500   vertex  78    0.48500    3.09500    0.00500
+vertex  35    1.91092    1.21590    0.50500   vertex  79    0.48500    3.09500    1.24500
+vertex  36    1.46926    1.37665    0.50500   vertex  80    0.09500    3.09500    1.24500
+vertex  37    1.47268    1.38605    0.56500   vertex  81    0.48500    2.31500    0.00500
+vertex  38    1.91434    1.22530    0.56500   vertex  82    0.48500    3.08500    0.00500
+vertex  39    1.93110    1.27134    1.05500   vertex  83    0.48500    3.08500    1.24500
+vertex  40    1.48944    1.43209    1.05500   vertex  84    0.48500    2.31500    1.24500
+vertex  41    2.29000    4.11000    0.22000   vertex  85    0.09500    2.31500    0.00500
+vertex  42    2.29000    3.01000    0.22000   vertex  86    0.09500    3.08500    0.00500
+vertex  43    3.03000    3.01000    0.22000   vertex  87    0.09500    3.08500    1.24500
+vertex  44    3.03000    4.11000    0.22000   vertex  88    0.09500    2.31500    1.24500
+ Number of vertices followed by list, name & perimeter length
+*edges,5,2,3,8,7,12   pt_general  15.000m perimeter
+*edges,10,3,4,9,8,3,21,24,23,22,21   part_frame  19.483m perimeter
+*edges,4,4,5,10,9   door   8.000m perimeter
+*edges,5,5,1,11,6,10   pt_other  15.000m perimeter
+*edges,5,6,7,8,9,10   ceiling  15.000m perimeter
+*edges,5,1,5,4,3,2   floor  15.000m perimeter
+*edges,8,1,2,12,14,16,15,13,11   spandral   8.600m perimeter
+*edges,4,15,16,14,13   vent   2.800m perimeter
+*edges,12,11,13,14,12,7,6,11,17,20,19,18,17   frame  19.883m perimeter
+*edges,4,17,18,19,20   glazing   9.400m perimeter
+*edges,4,21,22,23,24   part_glaz   9.200m perimeter
+*edges,4,25,26,27,28   adesk_t   5.160m perimeter
+*edges,4,26,25,28,27   adesk_t_   5.160m perimeter
+*edges,4,29,30,31,32   bdesk_t   5.160m perimeter
+*edges,4,30,29,32,31   bdesk_t_   5.160m perimeter
+*edges,4,33,34,35,36   aseat   1.820m perimeter
+*edges,4,34,33,36,35   aseat_   1.820m perimeter
+*edges,4,37,38,39,40   astback   1.925m perimeter
+*edges,4,38,37,40,39   astback_   1.925m perimeter
+*edges,4,41,42,43,44   cseat_mass   3.680m perimeter
+*edges,4,42,41,44,43   cseat_mass_   3.680m perimeter
+*edges,4,45,46,47,48   carm_mass_l   2.340m perimeter
+*edges,4,46,45,48,47   carm_mass_l_   2.340m perimeter
+*edges,4,49,50,51,52   carm_mass_r   2.340m perimeter
+*edges,4,50,49,52,51   carm_mass_r_   2.340m perimeter
+*edges,4,53,54,55,56   dt_top   3.060m perimeter
+*edges,4,54,53,56,55   dt_top_   3.060m perimeter
+*edges,4,57,58,59,60   dct_shelf   2.300m perimeter
+*edges,4,58,57,60,59   dct_shelf_   2.300m perimeter
+*edges,4,61,62,63,64   abil_lft   4.500m perimeter
+*edges,4,62,61,64,63   abil_lft_   4.500m perimeter
+*edges,4,65,66,67,68   abil_rt   4.500m perimeter
+*edges,4,66,65,68,67   abil_rt_   4.500m perimeter
+*edges,4,69,71,72,70   abooks   5.550m perimeter
+*edges,4,71,69,70,72   abooks_   5.550m perimeter
+*edges,4,73,74,75,76   ccab_lf   3.260m perimeter
+*edges,4,74,73,76,75   ccab_lf_   3.260m perimeter
+*edges,4,77,78,79,80   ccab_rt   3.260m perimeter
+*edges,4,78,77,80,79   ccab_rt_   3.260m perimeter
+*edges,4,81,82,83,84   ccab_fr   4.020m perimeter
+*edges,4,82,81,84,83   ccab_fr_   4.020m perimeter
+*edges,4,85,86,87,88   cpaper_fr   4.020m perimeter
+*edges,4,86,85,88,87   cpaper_fr_   4.020m perimeter
+ 
+ An hourly solar radiation distribution is used for this zone.
+ Surfaces (all applicable) for shading analysis:
+spandral vent frame glazing
+ Insolation sources (all applicable):
+glazing
+ 
+ 
+ Explicit viewfactors have been derived for this zone.
+Block X- Y- Z- coords DX- DY- DZ- values Orient Opacity
+  1     0.0    -0.1     3.1     3.0     0.0     0.3     0.0     0.0 1.00 ob1 NONE
+  2     0.0    -0.3     3.1     3.0     0.0     0.2     0.0     0.0 1.00 ob2 NONE
+  3     0.0    -0.5     3.1     3.0     0.0     0.2     0.0     0.0 1.00 ob3 NONE
+  4     0.0    -0.7     3.1     3.0     0.0     0.2     0.0     0.0 1.00 ob4 NONE
+  5     0.0    -0.9     3.1     3.0     0.0     0.2     0.0     0.0 1.00 ob5 NONE
+  6     0.0    -1.1     3.1     3.0     0.0     0.2     0.0     0.0 1.00 ob6 NONE
+ 
+visual type name    composition
+ vis 1rot  adesk_top door
+ vis 1rot  adesk_leg_a steel_pl_3mm
+ vis 1rot  adesk_leg_b steel_pl_3mm
+ vis 1rot  adesk_leg_c steel_pl_3mm
+ vis 1rot  adesk_leg_d steel_pl_3mm
+ vis 1rot  bdesk_top door
+ vis 1rot  bdesk_leg_a steel_pl_3mm
+ vis 1rot  bdesk_leg_b steel_pl_3mm
+ vis 1rot  bdesk_leg_c steel_pl_3mm
+ vis 1rot  bdesk_leg_d steel_pl_3mm
+ vis 1rot  aseat upholstery
+ vis 1rot  ar_arm upholstery
+ vis 1rot  al_arm upholstery
+ vis poly  aseat_bk upholstery
+ vis 1rot  across_a steel_gr_3mm
+ vis 1rot  across_b steel_gr_3mm
+ vis 1rot  apost PH_alu_frame
+ vis 1rot  ar_arm_rest steel_gr_3mm
+ vis 1rot  al_arm_rest steel_gr_3mm
+ vis 1rot  aroller_a sensor_case
+ vis 1rot  aroller_b sensor_case
+ vis 1rot  aroller_c sensor_case
+ vis 1rot  aroller_d sensor_case
+ vis 1rot  carm_r upholstery
+ vis 1rot  cleg_a steel_gr_3mm
+ vis 1rot  cleg_b steel_gr_3mm
+ vis 1rot  cleg_c steel_gr_3mm
+ vis 1rot  cleg_d steel_gr_3mm
+ vis poly  cback upholstery
+ vis poly  cseat upholstery
+ vis 1rot  dtbl_top shelves_20mm
+ vis 1rot  dtbl_shelf furn_wd10mm
+ vis 1rot  dleg_a shelves_20mm
+ vis 1rot  dleg_b shelves_20mm
+ vis 1rot  dleg_c shelves_20mm
+ vis 1rot  dleg_d shelves_20mm
+ vis 1rot  aleft_ver furn_wd10mm
+ vis 1rot  aright_ver furn_wd10mm
+ vis 1rot  abil_bk furn_wd10mm
+ vis 1rot  ashelf_a furn_wd10mm
+ vis 1rot  ashelf_b furn_wd10mm
+ vis 1rot  ashelf_c furn_wd10mm
+ vis 1rot  ashelf_d furn_wd10mm
+ vis 1rot  ashelf_e furn_wd10mm
+ vis 1rot  abil_top furn_wd10mm
+ vis 1rot  akick furn_wd10mm
+ vis 1rot  alow_books stuffonshelf
+ vis 1rot  a2nd_books stuffonshelf
+ vis 1rot  a3rd_books booksonshlf
+ vis 1rot  a4th_books booksonshlf
+ vis 1rot  atop_books booksonshlf
+ vis 1rot  cf_cabinet steel_pl_3mm
+ vis 1rot  cdrw_a steel_gr_3mm
+ vis 1rot  cdrw_b steel_gr_3mm
+ vis 1rot  cdrw_c steel_gr_3mm
+ vis 1rot  cdrw_d steel_gr_3mm
+ vis 1rot  cdrw_e steel_gr_3mm
+ vis 1rot  cdrw_f steel_gr_3mm
+ vis 1rot  cdrw_g steel_gr_3mm
+ vis 1rot  cdrw_h steel_gr_3mm
+ 
+ Shading patterns have been calculated for this zone.
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: manager
+ 
+Notes:
+manager a has some diversity of occupancy  lights at 10W/m2 and small
+power on weekdays at 5W/m2
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekday     1 Occupt     people    W    0- 7      0.0      0.0       0.50       0.50
+weekday     2 Occupt     people    W    7- 8     20.0     10.0       0.60       0.40
+weekday     3 Occupt     people    W    8- 9     60.0     30.0       0.60       0.40
+weekday     4 Occupt     people    W    9-12    100.0     50.0       0.60       0.40
+weekday     5 Occupt     people    W   12-14     65.0     32.5       0.60       0.40
+weekday     6 Occupt     people    W   14-17    100.0     50.0       0.60       0.40
+weekday     7 Occupt     people    W   17-24      0.0      0.0       0.50       0.50
+weekday     8 Lights     lighting  Wm2  0- 8      0.0      0.0       0.50       0.50
+weekday     9 Lights     lighting  Wm2  8-18     10.0      0.0       0.30       0.70
+weekday    10 Lights     lighting  Wm2 18-24      0.0      0.0       0.50       0.50
+weekday    11 Equipt     equipment Wm2  0- 8      0.0      0.0       0.50       0.50
+weekday    12 Equipt     equipment Wm2  8-18      5.0      0.0       0.40       0.60
+weekday    13 Equipt     equipment Wm2 18-24      0.0      0.0       0.50       0.50
+saturday    1 Occupt     people    W    0- 7      0.0      0.0       0.50       0.50
+saturday    2 Occupt     people    W    7- 8     20.0     10.0       0.50       0.50
+saturday    3 Occupt     people    W    8- 9     60.0     30.0       0.50       0.50
+saturday    4 Occupt     people    W    9-12    100.0     50.0       0.50       0.50
+saturday    5 Occupt     people    W   12-14     65.0     32.5       0.50       0.50
+saturday    6 Occupt     people    W   14-17    100.0     50.0       0.50       0.50
+saturday    7 Occupt     people    W   17-24      0.0      0.0       0.50       0.50
+saturday    8 Lights     lighting  Wm2  0- 8      0.0      0.0       0.50       0.50
+saturday    9 Lights     lighting  Wm2  8-12     10.0      0.0       0.30       0.70
+saturday   10 Lights     lighting  Wm2 12-24      0.0      0.0       0.50       0.50
+saturday   11 Equipt     equipment Wm2  0-24      0.0      0.0       0.50       0.50
+sunday      1 Lights     lighting  Wm2  0-24      0.0      0.0       0.50       0.50
+sunday      2 Equipt     equipment Wm2  0-24      0.0      0.0       0.50       0.50
+ 
+ ____________________________________________________________
+ 
+ Zone general ( 2) is composed of 90 surfaces and 194 vertices.
+ It encloses a volume of 176.m^3 of space, with a total surface
+ area of 268.m^2 & user list floor area of 58.5m^2
+ general describes an open plan with 4 desks
+ There is 45.000m2 of exposed surface area, 45.000m2 of which is vertical.
+ Facade opaque is 18.400m2 & 31.453 % of floor area & average U of 0.307 & UA of 5.6401
+ Facade glazing is 26.600m2 & 45.470 % of floor & 59.111 % facade with average U of 2.811 & UA of 74.763
+ Opaque partitions:ceiling:floor 186.50m2 & trasparent partitions:ceiling:floor 23.040m2.
+ 
+ A summary of the surfaces in general( 2) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  3.00    180.   0. door         OPAQUE   VERT -        -        door ||< door:manager
+  2  13.5    270.   0. pt_mgrs      OPAQUE   VERT -        -        gyp_gyp_ptn ||< pt_general:manager
+  3  9.00      0.   0. pt_rec_a     OPAQUE   VERT -        -        gyp_gyp_ptn ||< pt_rec_a:reception
+  4  18.0      0.   0. fict_rec     SC_ficti VERT -        -        fict ||< fict_rec:reception
+  5  9.00      0.   0. pt_core_a    OPAQUE   VERT -        -        gyp_blk_ptn ||< identical environment
+  6  4.50    270.   0. fire_door    OPAQUE   VERT -        -        door ||< identical environment
+  7  58.5      0.  90. ceiling      OPAQUE   CEIL -        -        ceiling ||< ceiling:ceil_void
+  8  58.5      0. -90. floor        OPAQUE   FLOR -        -        flr_ov_pln ||< gen_floor:floor_void
+  9  2.30    180.   0. spandral     OPAQUE   VERT -        -        extern_wall ||< external
+ 10  0.400   180.   0. vent         OPAQUE   VERT -        -        insul_frame ||< external
+ 11  0.980   180.   0. frame        OPAQUE   VERT -        -        insul_frame ||< external
+ 12  5.32    180.   0. glazing      DCF7671_ VERT -        -        dbl_glz ||< external
+ 13  0.960   180.   0. part_frame   OPAQUE   VERT -        -        insul_frame ||< part_frame:manager
+ 14  5.04    180.  -0. part_glaz    DCF7671_ VERT -        -        dbl_glz ||< part_glaz:manager
+ 15  2.30    180.   0. spandral_a   OPAQUE   VERT -        -        extern_wall ||< external
+ 16  0.400   180.   0. vent_a       OPAQUE   VERT -        -        insul_frame ||< external
+ 17  0.980   180.   0. frame_a      OPAQUE   VERT -        -        insul_frame ||< external
+ 18  5.32    180.   0. glazing_a    DCF7671_ VERT -        -        dbl_glz ||< external
+ 19  2.30    180.   0. spandral_b   OPAQUE   VERT -        -        extern_wall ||< external
+ 20  0.400   180.   0. vent_b       OPAQUE   VERT -        -        insul_frame ||< external
+ 21  0.980   180.   0. frame_b      OPAQUE   VERT -        -        insul_frame ||< external
+ 22  5.32    180.   0. glazing_b    DCF7671_ VERT -        -        dbl_glz ||< external
+ 23  2.30     90.   0. spandral_c   OPAQUE   VERT -        -        extern_wall ||< external
+ 24  0.400    90.   0. vent_c       OPAQUE   VERT -        -        insul_frame ||< external
+ 25  0.980    90.   0. frame_c      OPAQUE   VERT -        -        insul_frame ||< external
+ 26  5.32     90.   0. glazing_c    DCF7671_ VERT -        -        dbl_glz ||< external
+ 27  2.30     90.   0. spandral_d   OPAQUE   VERT -        -        extern_wall ||< external
+ 28  0.400    90.   0. vent_d       OPAQUE   VERT -        -        insul_frame ||< external
+ 29  0.980    90.   0. frame_d      OPAQUE   VERT -        -        insul_frame ||< external
+ 30  5.32     90.   0. glazing_d    DCF7671_ VERT -        -        dbl_glz ||< external
+ 31  1.17      0.  90. adesk_t      OPAQUE   CEIL FURNI    -        door ||< adesk_t_:general
+ 32  1.17      0. -90. adesk_t_     OPAQUE   FLOR FURNI    -        door ||< adesk_t:general
+ 33  1.17      0.  90. bdesk_t      OPAQUE   CEIL FURNI    -        door ||< bdesk_t_:general
+ 34  1.17      0. -90. bdesk_t_     OPAQUE   FLOR FURNI    -        door ||< bdesk_t:general
+ 35  1.17      0.  90. cdesk_t      OPAQUE   CEIL FURNI    -        door ||< cdesk_t_:general
+ 36  1.17      0. -90. cdesk_t_     OPAQUE   FLOR FURNI    -        door ||< cdesk_t:general
+ 37  1.17      0.  90. ddesk_t      OPAQUE   CEIL FURNI    -        door ||< ddesk_t_:general
+ 38  1.17      0. -90. ddesk_t_     OPAQUE   FLOR FURNI    -        door ||< ddesk_t:general
+ 39  1.17      0.  90. edesk_t      OPAQUE   CEIL FURNI    -        door ||< edesk_t_:general
+ 40  1.17      0. -90. edesk_t_     OPAQUE   FLOR FURNI    -        door ||< edesk_t:general
+ 41  1.17      0.  90. fdesk_t      OPAQUE   CEIL FURNI    -        door ||< fdesk_t_:general
+ 42  1.17      0. -90. fdesk_t_     OPAQUE   FLOR FURNI    -        door ||< fdesk_t:general
+ 43  1.17      0.  90. gdesk_t      OPAQUE   CEIL FURNI    -        door ||< gdesk_t_:general
+ 44  1.17      0. -90. gdesk_t_     OPAQUE   FLOR FURNI    -        door ||< gdesk_t:general
+ 45  0.207     0.  90. aseat        OPAQUE   CEIL FURNI    -        upholstery ||< aseat_:general
+ 46  0.207     0. -90. aseat_       OPAQUE   FLOR FURNI    -        upholstery ||< aseat:general
+ 47  0.231   180.   6. astback      OPAQUE   SLOP FURNI    -        upholstery ||< astback_:general
+ 48  0.231     0.  -6. astback_     OPAQUE   SLOP FURNI    -        upholstery ||< astback:general
+ 49  0.207     0.  90. bseat        OPAQUE   CEIL FURNI    -        upholstery ||< bseat_:general
+ 50  0.207     0. -90. bseat_       OPAQUE   FLOR FURNI    -        upholstery ||< bseat:general
+ 51  0.231   200.   6. bstback      OPAQUE   SLOP FURNI    -        upholstery ||< bstback_:general
+ 52  0.231    20.  -6. bstback_     OPAQUE   SLOP FURNI    -        upholstery ||< bstback:general
+ 53  0.207     0.  90. cseat        OPAQUE   CEIL FURNI    -        upholstery ||< cseat_:general
+ 54  0.207     0. -90. cseat_       OPAQUE   FLOR FURNI    -        upholstery ||< cseat:general
+ 55  0.231   160.   6. cstback      OPAQUE   SLOP FURNI    -        upholstery ||< cstback_:general
+ 56  0.231   340.  -6. cstback_     OPAQUE   SLOP FURNI    -        upholstery ||< cstback:general
+ 57  0.207     0.  90. dseat        OPAQUE   CEIL FURNI    -        upholstery ||< dseat_:general
+ 58  0.207     0. -90. dseat_       OPAQUE   FLOR FURNI    -        upholstery ||< dseat:general
+ 59  0.231   150.   6. dstback      OPAQUE   SLOP FURNI    -        upholstery ||< dstback_:general
+ 60  0.231   330.  -6. dstback_     OPAQUE   SLOP FURNI    -        upholstery ||< dstback:general
+ 61  1.17      0.  90. hdesk_t      OPAQUE   CEIL FURNI    -        door ||< hdesk_t_:general
+ 62  1.17      0. -90. hdesk_t_     OPAQUE   FLOR FURNI    -        door ||< hdesk_t:general
+ 63  0.207     0.  90. eseat        OPAQUE   CEIL FURNI    -        upholstery ||< eseat_:general
+ 64  0.207     0. -90. eseat_       OPAQUE   FLOR FURNI    -        upholstery ||< eseat:general
+ 65  0.231   180.   6. estback      OPAQUE   SLOP FURNI    -        upholstery ||< estback_:general
+ 66  0.231     0.  -6. estback_     OPAQUE   SLOP FURNI    -        upholstery ||< estback:general
+ 67  0.484   180.   0. acab_lf      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< acab_lf_:general
+ 68  0.484   360.   0. acab_lf_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< acab_lf:general
+ 69  0.484   180.   0. acab_rt      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< acab_rt_:general
+ 70  0.484     0.   0. acab_rt_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< acab_rt:general
+ 71  1.45     90.   0. acab_fr      OPAQUE   VERT FURNI    -        steel_gr_3mm ||< acab_fr_:general
+ 72  1.45    270.   0. acab_fr_     OPAQUE   VERT FURNI    -        steel_gr_3mm ||< acab_fr:general
+ 73  0.500    90.   0. abil_lft     OPAQUE   VERT FURNI    -        furn_wd10mm ||< abil_lft_:general
+ 74  0.500   270.   0. abil_lft_    OPAQUE   VERT FURNI    -        furn_wd10mm ||< abil_lft:general
+ 75  0.500    90.   0. abil_rt      OPAQUE   VERT FURNI    -        furn_wd10mm ||< abil_rt_:general
+ 76  0.500   270.   0. abil_rt_     OPAQUE   VERT FURNI    -        furn_wd10mm ||< abil_rt:general
+ 77  1.55    180.   0. abooks       OPAQUE   VERT FURNI    -        stuffonshelf ||< abooks_:general
+ 78  1.55      0.   0. abooks_      OPAQUE   VERT FURNI    -        stuffonshelf ||< abooks:general
+ 79  0.500    90.   0. bbil_lft     OPAQUE   VERT FURNI    -        furn_wd10mm ||< bbil_lft_:general
+ 80  0.500   270.   0. bbil_lft_    OPAQUE   VERT FURNI    -        furn_wd10mm ||< bbil_lft:general
+ 81  0.500    90.   0. bbil_rt      OPAQUE   VERT FURNI    -        furn_wd10mm ||< bbil_rt_:general
+ 82  0.500   270.   0. bbil_rt_     OPAQUE   VERT FURNI    -        furn_wd10mm ||< bbil_rt:general
+ 83  1.55    180.   0. bbooks       OPAQUE   VERT FURNI    -        stuffonshelf ||< bbooks_:general
+ 84  1.55      0.   0. bbooks_      OPAQUE   VERT FURNI    -        stuffonshelf ||< bbooks:general
+ 85  0.484   270.   0. bcab_lf      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< bcab_lf_:general
+ 86  0.484    90.   0. bcab_lf_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< bcab_lf:general
+ 87  0.484   270.   0. bcab_rt      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< bcab_rt_:general
+ 88  0.484    90.   0. bcab_rt_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< bcab_rt:general
+ 89  1.45    180.   0. bcab_fr      OPAQUE   VERT FURNI    -        steel_gr_3mm ||< bcab_fr_:general
+ 90  1.45    360.   0. bcab_fr_     OPAQUE   VERT FURNI    -        steel_gr_3mm ||< bcab_fr:general
+ 
+ Vertices ( index X Y Z) in the zone...
+vertex   1    0.00000    4.50000    0.00000   vertex  98   11.29500    0.69500    0.69500
+vertex   2    1.00000    4.50000    0.00000   vertex  99   11.30500    3.00500    0.69500
+vertex   3    3.00000    4.50000    0.00000   vertex 100   11.89500    3.00500    0.69500
+vertex   4    3.00000    0.00000    0.00000   vertex 101   11.89500    4.99500    0.69500
+vertex   5    6.00000    0.00000    0.00000   vertex 102   11.30500    4.99500    0.69500
+vertex   6    9.00000    0.00000    0.00000   vertex 103    4.09000    1.70000    0.50500
+vertex   7   12.00000    0.00000    0.00000   vertex 104    4.56000    1.70000    0.50500
+vertex   8   12.00000    3.00000    0.00000   vertex 105    4.56000    2.14000    0.50500
+vertex   9   12.00000    6.00000    0.00000   vertex 106    4.09000    2.14000    0.50500
+vertex  10    9.00000    6.00000    0.00000   vertex 107    4.09000    2.15000    0.56500
+vertex  11    3.00000    6.00000    0.00000   vertex 108    4.56000    2.15000    0.56500
+vertex  12    0.00000    6.00000    0.00000   vertex 109    4.56000    2.19900    1.05500
+vertex  13    0.00000    4.50000    3.00000   vertex 110    4.09000    2.19900    1.05500
+vertex  14    1.00000    4.50000    3.00000   vertex 111    7.11877    1.36319    0.50500
+vertex  15    3.00000    4.50000    3.00000   vertex 112    7.56043    1.20244    0.50500
+vertex  16    3.00000    0.00000    3.00000   vertex 113    7.71092    1.61590    0.50500
+vertex  17    6.00000    0.00000    3.00000   vertex 114    7.26926    1.77665    0.50500
+vertex  18    9.00000    0.00000    3.00000   vertex 115    7.27268    1.78605    0.56500
+vertex  19   12.00000    0.00000    3.00000   vertex 116    7.71434    1.62530    0.56500
+vertex  20   12.00000    3.00000    3.00000   vertex 117    7.73110    1.67134    1.05500
+vertex  21   12.00000    6.00000    3.00000   vertex 118    7.28944    1.83209    1.05500
+vertex  22    9.00000    6.00000    3.00000   vertex 119    8.05037    1.52475    0.50500
+vertex  23    3.00000    6.00000    3.00000   vertex 120    8.49203    1.68550    0.50500
+vertex  24    0.00000    6.00000    3.00000   vertex 121    8.34154    2.09897    0.50500
+vertex  25    6.00000    0.00000    0.90000   vertex 122    7.89988    1.93822    0.50500
+vertex  26    5.00000    0.00000    0.90000   vertex 123    7.89646    1.94761    0.56500
+vertex  27    5.00000    0.00000    0.50000   vertex 124    8.33812    2.10836    0.56500
+vertex  28    4.00000    0.00000    0.50000   vertex 125    8.32136    2.15441    1.05500
+vertex  29    4.00000    0.00000    0.90000   vertex 126    7.87970    1.99366    1.05500
+vertex  30    3.00000    0.00000    0.90000   vertex 127   10.02794    1.33160    0.50500
+vertex  31    3.10000    0.00000    1.00000   vertex 128   10.43497    1.56660    0.50500
+vertex  32    3.10000    0.00000    2.90000   vertex 129   10.21497    1.94765    0.50500
+vertex  33    5.90000    0.00000    2.90000   vertex 130    9.80794    1.71265    0.50500
+vertex  34    5.90000    0.00000    1.00000   vertex 131    9.80294    1.72131    0.56500
+vertex  35    2.90000    4.50000    0.10000   vertex 132   10.20997    1.95631    0.56500
+vertex  36    2.90000    4.50000    2.90000   vertex 133   10.18547    1.99875    1.05500
+vertex  37    1.10000    4.50000    2.90000   vertex 134    9.77844    1.76375    1.05500
+vertex  38    1.10000    4.50000    0.10000   vertex 135    9.20500    3.59500    0.69500
+vertex  39    9.00000    0.00000    0.90000   vertex 136    9.20500    3.00500    0.69500
+vertex  40    8.00000    0.00000    0.90000   vertex 137   11.19500    3.00500    0.69500
+vertex  41    8.00000    0.00000    0.50000   vertex 138   11.19500    3.59500    0.69500
+vertex  42    7.00000    0.00000    0.50000   vertex 139    9.89000    4.00000    0.50500
+vertex  43    7.00000    0.00000    0.90000   vertex 140   10.36000    4.00000    0.50500
+vertex  44    6.10000    0.00000    1.00000   vertex 141   10.36000    4.44000    0.50500
+vertex  45    6.10000    0.00000    2.90000   vertex 142    9.89000    4.44000    0.50500
+vertex  46    8.90000    0.00000    2.90000   vertex 143    9.89000    4.45000    0.56500
+vertex  47    8.90000    0.00000    1.00000   vertex 144   10.36000    4.45000    0.56500
+vertex  48   12.00000    0.00000    0.90000   vertex 145   10.36000    4.49900    1.05500
+vertex  49   11.00000    0.00000    0.90000   vertex 146    9.89000    4.49900    1.05500
+vertex  50   11.00000    0.00000    0.50000   vertex 147    3.10500    2.60500    0.00500
+vertex  51   10.00000    0.00000    0.50000   vertex 148    3.49500    2.60500    0.00500
+vertex  52   10.00000    0.00000    0.90000   vertex 149    3.49500    2.60500    1.24500
+vertex  53    9.10000    0.00000    1.00000   vertex 150    3.10500    2.60500    1.24500
+vertex  54    9.10000    0.00000    2.90000   vertex 151    3.10500    3.79500    0.00500
+vertex  55   11.90000    0.00000    2.90000   vertex 152    3.49500    3.79500    0.00500
+vertex  56   11.90000    0.00000    1.00000   vertex 153    3.49500    3.79500    1.24500
+vertex  57   12.00000    3.00000    0.90000   vertex 154    3.10500    3.79500    1.24500
+vertex  58   12.00000    2.00000    0.90000   vertex 155    3.49500    2.61500    0.00500
+vertex  59   12.00000    2.00000    0.50000   vertex 156    3.49500    3.78500    0.00500
+vertex  60   12.00000    1.00000    0.50000   vertex 157    3.49500    3.78500    1.24500
+vertex  61   12.00000    1.00000    0.90000   vertex 158    3.49500    2.61500    1.24500
+vertex  62   12.00000    0.10000    1.00000   vertex 159    9.10500    5.70500    0.00500
+vertex  63   12.00000    2.90000    1.00000   vertex 160    9.10500    5.95500    0.00500
+vertex  64   12.00000    2.90000    2.90000   vertex 161    9.10500    5.95500    2.00500
+vertex  65   12.00000    0.10000    2.90000   vertex 162    9.10500    5.70500    2.00500
+vertex  66   12.00000    6.00000    0.90000   vertex 163    9.89500    5.70500    0.00500
+vertex  67   12.00000    5.00000    0.90000   vertex 164    9.89500    5.95500    0.00500
+vertex  68   12.00000    5.00000    0.50000   vertex 165    9.89500    5.95500    2.00500
+vertex  69   12.00000    4.00000    0.50000   vertex 166    9.89500    5.70500    2.00500
+vertex  70   12.00000    4.00000    0.90000   vertex 167    9.11500    5.95500    0.00500
+vertex  71   12.00000    3.10000    1.00000   vertex 168    9.11500    5.95500    2.00500
+vertex  72   12.00000    3.10000    2.90000   vertex 169    9.89000    5.95500    0.00500
+vertex  73   12.00000    5.90000    2.90000   vertex 170    9.89000    5.95500    2.00500
+vertex  74   12.00000    5.90000    1.00000   vertex 171   10.00500    5.70500    0.00500
+vertex  75    3.10500    0.69500    0.69500   vertex 172   10.00500    5.95500    0.00500
+vertex  76    3.10500    0.10500    0.69500   vertex 173   10.00500    5.95500    2.00500
+vertex  77    5.09500    0.10500    0.69500   vertex 174   10.00500    5.70500    2.00500
+vertex  78    5.09500    0.69500    0.69500   vertex 175   10.79500    5.70500    0.00500
+vertex  79    5.10500    0.10500    0.69500   vertex 176   10.79500    5.95500    0.00500
+vertex  80    5.69500    0.10500    0.69500   vertex 177   10.79500    5.95500    2.00500
+vertex  81    5.69500    2.09500    0.69500   vertex 178   10.79500    5.70500    2.00500
+vertex  82    5.10500    2.09500    0.69500   vertex 179   10.01500    5.95500    0.00500
+vertex  83    6.00500    0.10500    0.69500   vertex 180   10.01500    5.95500    2.00500
+vertex  84    6.59500    0.10500    0.69500   vertex 181   10.79000    5.95500    0.00500
+vertex  85    6.59500    2.09500    0.69500   vertex 182   10.79000    5.95500    2.00500
+vertex  86    6.00500    2.09500    0.69500   vertex 183    7.00500    3.40500    0.00500
+vertex  87    6.60500    0.69500    0.69500   vertex 184    7.00500    3.01500    0.00500
+vertex  88    6.60500    0.10500    0.69500   vertex 185    7.00500    3.01500    1.24500
+vertex  89    8.59500    0.10500    0.69500   vertex 186    7.00500    3.40500    1.24500
+vertex  90    8.59500    0.69500    0.69500   vertex 187    8.19500    3.40500    0.00500
+vertex  91   11.30500    0.10500    0.69500   vertex 188    8.19500    3.01500    0.00500
+vertex  92   11.89500    0.10500    0.69500   vertex 189    8.19500    3.01500    1.24500
+vertex  93   11.89500    2.09500    0.69500   vertex 190    8.19500    3.40500    1.24500
+vertex  94   11.30500    2.09500    0.69500   vertex 191    7.01500    3.01500    0.00500
+vertex  95    9.30500    0.69500    0.69500   vertex 192    8.18500    3.01500    0.00500
+vertex  96    9.30500    0.10500    0.69500   vertex 193    8.18500    3.01500    1.24500
+vertex  97   11.29500    0.10500    0.69500   vertex 194    7.01500    3.01500    1.24500
+ Number of vertices followed by list, name & perimeter length
+*edges,4,1,2,14,13   door   8.000m perimeter
+*edges,5,3,4,30,16,15   pt_mgrs  15.000m perimeter
+*edges,5,9,10,22,21,66   pt_rec_a  12.000m perimeter
+*edges,4,10,11,23,22   fict_rec  18.000m perimeter
+*edges,4,11,12,24,23   pt_core_a  12.000m perimeter
+*edges,4,12,1,13,24   fire_door   9.000m perimeter
+*edges,12,13,14,15,16,17,18,19,20,21,22,23,24   ceiling  36.000m perimeter
+*edges,12,1,12,11,10,9,8,7,6,5,4,3,2   floor  36.000m perimeter
+*edges,8,4,5,25,26,27,28,29,30   spandral   8.600m perimeter
+*edges,4,28,27,26,29   vent   2.800m perimeter
+*edges,12,30,29,26,25,17,16,30,31,32,33,34,31   frame  19.883m perimeter
+*edges,4,31,34,33,32   glazing   9.400m perimeter
+*edges,10,2,3,35,38,37,36,35,3,15,14   part_frame  19.483m perimeter
+*edges,4,38,35,36,37   part_glaz   9.200m perimeter
+*edges,8,5,6,39,40,41,42,43,25   spandral_a   8.600m perimeter
+*edges,4,42,41,40,43   vent_a   2.800m perimeter
+*edges,12,25,43,40,39,18,17,25,44,45,46,47,44   frame_a  19.883m perimeter
+*edges,4,44,47,46,45   glazing_a   9.400m perimeter
+*edges,8,6,7,48,49,50,51,52,39   spandral_b   8.600m perimeter
+*edges,4,51,50,49,52   vent_b   2.800m perimeter
+*edges,12,39,52,49,48,19,18,39,53,54,55,56,53   frame_b  19.883m perimeter
+*edges,4,53,56,55,54   glazing_b   9.400m perimeter
+*edges,8,7,8,57,58,59,60,61,48   spandral_c   8.600m perimeter
+*edges,4,60,59,58,61   vent_c   2.800m perimeter
+*edges,12,48,61,58,57,20,19,48,62,65,64,63,62   frame_c  19.883m perimeter
+*edges,4,62,63,64,65   glazing_c   9.400m perimeter
+*edges,8,8,9,66,67,68,69,70,57   spandral_d   8.600m perimeter
+*edges,4,69,68,67,70   vent_d   2.800m perimeter
+*edges,12,57,70,67,66,21,20,57,71,72,73,74,71   frame_d  19.883m perimeter
+*edges,4,71,74,73,72   glazing_d   9.400m perimeter
+*edges,4,75,76,77,78   adesk_t   5.160m perimeter
+*edges,4,76,75,78,77   adesk_t_   5.160m perimeter
+*edges,4,79,80,81,82   bdesk_t   5.160m perimeter
+*edges,4,80,79,82,81   bdesk_t_   5.160m perimeter
+*edges,4,83,84,85,86   cdesk_t   5.160m perimeter
+*edges,4,84,83,86,85   cdesk_t_   5.160m perimeter
+*edges,4,87,88,89,90   ddesk_t   5.160m perimeter
+*edges,4,88,87,90,89   ddesk_t_   5.160m perimeter
+*edges,4,91,92,93,94   edesk_t   5.160m perimeter
+*edges,4,92,91,94,93   edesk_t_   5.160m perimeter
+*edges,4,95,96,97,98   fdesk_t   5.160m perimeter
+*edges,4,96,95,98,97   fdesk_t_   5.160m perimeter
+*edges,4,99,100,101,102   gdesk_t   5.160m perimeter
+*edges,4,100,99,102,101   gdesk_t_   5.160m perimeter
+*edges,4,103,104,105,106   aseat   1.820m perimeter
+*edges,4,104,103,106,105   aseat_   1.820m perimeter
+*edges,4,107,108,109,110   astback   1.925m perimeter
+*edges,4,108,107,110,109   astback_   1.925m perimeter
+*edges,4,111,112,113,114   bseat   1.820m perimeter
+*edges,4,112,111,114,113   bseat_   1.820m perimeter
+*edges,4,115,116,117,118   bstback   1.925m perimeter
+*edges,4,116,115,118,117   bstback_   1.925m perimeter
+*edges,4,119,120,121,122   cseat   1.820m perimeter
+*edges,4,120,119,122,121   cseat_   1.820m perimeter
+*edges,4,123,124,125,126   cstback   1.925m perimeter
+*edges,4,124,123,126,125   cstback_   1.925m perimeter
+*edges,4,127,128,129,130   dseat   1.820m perimeter
+*edges,4,128,127,130,129   dseat_   1.820m perimeter
+*edges,4,131,132,133,134   dstback   1.925m perimeter
+*edges,4,132,131,134,133   dstback_   1.925m perimeter
+*edges,4,135,136,137,138   hdesk_t   5.160m perimeter
+*edges,4,136,135,138,137   hdesk_t_   5.160m perimeter
+*edges,4,139,140,141,142   eseat   1.820m perimeter
+*edges,4,140,139,142,141   eseat_   1.820m perimeter
+*edges,4,143,144,145,146   estback   1.925m perimeter
+*edges,4,144,143,146,145   estback_   1.925m perimeter
+*edges,4,147,148,149,150   acab_lf   3.260m perimeter
+*edges,4,148,147,150,149   acab_lf_   3.260m perimeter
+*edges,4,151,152,153,154   acab_rt   3.260m perimeter
+*edges,4,152,151,154,153   acab_rt_   3.260m perimeter
+*edges,4,155,156,157,158   acab_fr   4.820m perimeter
+*edges,4,156,155,158,157   acab_fr_   4.820m perimeter
+*edges,4,159,160,161,162   abil_lft   4.500m perimeter
+*edges,4,160,159,162,161   abil_lft_   4.500m perimeter
+*edges,4,163,164,165,166   abil_rt   4.500m perimeter
+*edges,4,164,163,166,165   abil_rt_   4.500m perimeter
+*edges,4,167,169,170,168   abooks   5.550m perimeter
+*edges,4,169,167,168,170   abooks_   5.550m perimeter
+*edges,4,171,172,173,174   bbil_lft   4.500m perimeter
+*edges,4,172,171,174,173   bbil_lft_   4.500m perimeter
+*edges,4,175,176,177,178   bbil_rt   4.500m perimeter
+*edges,4,176,175,178,177   bbil_rt_   4.500m perimeter
+*edges,4,179,181,182,180   bbooks   5.550m perimeter
+*edges,4,181,179,180,182   bbooks_   5.550m perimeter
+*edges,4,183,184,185,186   bcab_lf   3.260m perimeter
+*edges,4,184,183,186,185   bcab_lf_   3.260m perimeter
+*edges,4,187,188,189,190   bcab_rt   3.260m perimeter
+*edges,4,188,187,190,189   bcab_rt_   3.260m perimeter
+*edges,4,191,192,193,194   bcab_fr   4.820m perimeter
+*edges,4,192,191,194,193   bcab_fr_   4.820m perimeter
+ 
+ An hourly solar radiation distribution is used for this zone.
+ Surfaces (all applicable) for shading analysis:
+9 10 11 12 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30
+ Insolation sources (all applicable):
+glazing glazing_a glazing_b glazing_c glazing_d
+ 
+ 
+ Explicit viewfactors have been derived for this zone.
+Block X- Y- Z- coords DX- DY- DZ- values Orient Opacity
+  1     3.0    -0.1     3.1     9.0     0.0     0.3     0.0     0.0 1.00 sen_01 NONE
+  2     3.0    -0.3     3.1     9.0     0.0     0.2     0.0     0.0 1.00 sen_02 NONE
+  3     3.0    -0.5     3.1     9.0     0.0     0.2     0.0     0.0 1.00 sen_03 NONE
+  4     3.0    -0.7     3.1     9.0     0.0     0.2     0.0     0.0 1.00 sen_04 NONE
+  5     3.0    -0.9     3.1     9.0     0.0     0.2     0.0     0.0 1.00 sen_05 NONE
+  6     3.0    -1.1     3.1     9.0     0.0     0.2     0.0     0.0 1.00 sen_06 NONE
+  7    12.1     0.1     3.1     6.0     0.0     0.3    90.0     0.0 1.00 eob1 NONE
+  8    12.3     0.1     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob2 NONE
+  9    12.5     0.1     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob3 NONE
+ 10    12.7     0.1     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob4 NONE
+ 11    12.9     0.1     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob5 NONE
+ 12    13.1     0.1     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob6 NONE
+ 
+visual type name    composition
+ vis 1rot  adesk_top door
+ vis 1rot  adesk_leg_a steel_pl_3mm
+ vis 1rot  adesk_leg_b steel_pl_3mm
+ vis 1rot  adesk_leg_c steel_pl_3mm
+ vis 1rot  adesk_leg_d steel_pl_3mm
+ vis 1rot  bdesk_top door
+ vis 1rot  bdesk_leg_a steel_pl_3mm
+ vis 1rot  bdesk_leg_b steel_pl_3mm
+ vis 1rot  bdesk_leg_c steel_pl_3mm
+ vis 1rot  bdesk_leg_d steel_pl_3mm
+ vis 1rot  cdesk_top door
+ vis 1rot  cdesk_leg_a steel_pl_3mm
+ vis 1rot  cdesk_leg_b steel_pl_3mm
+ vis 1rot  cdesk_leg_c steel_pl_3mm
+ vis 1rot  cdesk_leg_d steel_pl_3mm
+ vis 1rot  ddesk_top door
+ vis 1rot  ddesk_leg_a steel_pl_3mm
+ vis 1rot  ddesk_leg_b steel_pl_3mm
+ vis 1rot  ddesk_leg_c steel_pl_3mm
+ vis 1rot  ddesk_leg_d steel_pl_3mm
+ vis 1rot  edesk_top door
+ vis 1rot  edesk_leg_a steel_pl_3mm
+ vis 1rot  edesk_leg_b steel_pl_3mm
+ vis 1rot  edesk_leg_c steel_pl_3mm
+ vis 1rot  edesk_leg_d steel_pl_3mm
+ vis 1rot  fdesk_top door
+ vis 1rot  fdesk_leg_a steel_pl_3mm
+ vis 1rot  fdesk_leg_b steel_pl_3mm
+ vis 1rot  fdesk_leg_c steel_pl_3mm
+ vis 1rot  fdesk_leg_d steel_pl_3mm
+ vis 1rot  gdesk_top door
+ vis 1rot  gdesk_leg_a steel_pl_3mm
+ vis 1rot  gdesk_leg_b steel_pl_3mm
+ vis 1rot  gdesk_leg_c steel_pl_3mm
+ vis 1rot  gdesk_leg_d steel_pl_3mm
+ vis 1rot  aseat upholstery
+ vis 1rot  ar_arm upholstery
+ vis 1rot  al_arm upholstery
+ vis poly  aseat_bk upholstery
+ vis 1rot  across_a steel_gr_3mm
+ vis 1rot  across_b steel_gr_3mm
+ vis 1rot  apost PH_alu_frame
+ vis 1rot  ar_arm_rest steel_gr_3mm
+ vis 1rot  al_arm_rest steel_gr_3mm
+ vis 1rot  aroller_a sensor_case
+ vis 1rot  aroller_b sensor_case
+ vis 1rot  aroller_c sensor_case
+ vis 1rot  aroller_d sensor_case
+ vis 1rot  bseat upholstery
+ vis 1rot  br_arm upholstery
+ vis 1rot  bl_arm upholstery
+ vis poly  bseat_bk upholstery
+ vis 1rot  bcross_a steel_gr_3mm
+ vis 1rot  bcross_b steel_gr_3mm
+ vis 1rot  bpost PH_alu_frame
+ vis 1rot  br_arm_rest steel_gr_3mm
+ vis 1rot  bl_arm_rest steel_gr_3mm
+ vis 1rot  broller_a sensor_case
+ vis 1rot  broller_b sensor_case
+ vis 1rot  broller_c sensor_case
+ vis 1rot  broller_d sensor_case
+ vis 1rot  cseat upholstery
+ vis 1rot  cr_arm upholstery
+ vis 1rot  cl_arm upholstery
+ vis poly  cseat_bk upholstery
+ vis 1rot  ccross_a steel_gr_3mm
+ vis 1rot  ccross_b steel_gr_3mm
+ vis 1rot  cpost PH_alu_frame
+ vis 1rot  cr_arm_rest steel_gr_3mm
+ vis 1rot  cl_arm_rest steel_gr_3mm
+ vis 1rot  croller_a sensor_case
+ vis 1rot  croller_b sensor_case
+ vis 1rot  croller_c sensor_case
+ vis 1rot  croller_d sensor_case
+ vis 1rot  dseat upholstery
+ vis 1rot  dr_arm upholstery
+ vis 1rot  dl_arm upholstery
+ vis poly  dseat_bk upholstery
+ vis 1rot  dcross_a steel_gr_3mm
+ vis 1rot  dcross_b steel_gr_3mm
+ vis 1rot  dpost PH_alu_frame
+ vis 1rot  dr_arm_rest steel_gr_3mm
+ vis 1rot  dl_arm_rest steel_gr_3mm
+ vis 1rot  droller_a sensor_case
+ vis 1rot  droller_b sensor_case
+ vis 1rot  droller_c sensor_case
+ vis 1rot  droller_d sensor_case
+ vis 1rot  gdesk_top door
+ vis 1rot  gdesk_leg_a steel_pl_3mm
+ vis 1rot  gdesk_leg_b steel_pl_3mm
+ vis 1rot  gdesk_leg_c steel_pl_3mm
+ vis 1rot  gdesk_leg_d steel_pl_3mm
+ vis 1rot  eseat upholstery
+ vis 1rot  er_arm upholstery
+ vis 1rot  el_arm upholstery
+ vis poly  eseat_bk upholstery
+ vis 1rot  ecross_a steel_gr_3mm
+ vis 1rot  ecross_b steel_gr_3mm
+ vis 1rot  epost PH_alu_frame
+ vis 1rot  er_arm_rest steel_gr_3mm
+ vis 1rot  el_arm_rest steel_gr_3mm
+ vis 1rot  eroller_a sensor_case
+ vis 1rot  eroller_b sensor_case
+ vis 1rot  eroller_c sensor_case
+ vis 1rot  eroller_d sensor_case
+ vis 1rot  af_cabinet steel_pl_3mm
+ vis 1rot  adrw_a steel_gr_3mm
+ vis 1rot  adrw_b steel_gr_3mm
+ vis 1rot  adrw_c steel_gr_3mm
+ vis 1rot  adrw_d steel_gr_3mm
+ vis 1rot  adrw_e steel_gr_3mm
+ vis 1rot  adrw_f steel_gr_3mm
+ vis 1rot  adrw_g steel_gr_3mm
+ vis 1rot  adrw_h steel_gr_3mm
+ vis 1rot  adrw_i steel_gr_3mm
+ vis 1rot  adrw_j steel_gr_3mm
+ vis 1rot  adrw_k steel_gr_3mm
+ vis 1rot  adrw_l steel_gr_3mm
+ vis 1rot  aleft_ver furn_wd10mm
+ vis 1rot  aright_ver furn_wd10mm
+ vis 1rot  abil_bk furn_wd10mm
+ vis 1rot  ashelf_a furn_wd10mm
+ vis 1rot  ashelf_b furn_wd10mm
+ vis 1rot  ashelf_c furn_wd10mm
+ vis 1rot  ashelf_d furn_wd10mm
+ vis 1rot  ashelf_e furn_wd10mm
+ vis 1rot  abil_top furn_wd10mm
+ vis 1rot  akick furn_wd10mm
+ vis 1rot  alow_books stuffonshelf
+ vis 1rot  a2nd_books stuffonshelf
+ vis 1rot  a3rd_books booksonshlf
+ vis 1rot  a4th_books booksonshlf
+ vis 1rot  atop_books booksonshlf
+ vis 1rot  bleft_ver furn_wd10mm
+ vis 1rot  bright_ver furn_wd10mm
+ vis 1rot  bbil_bk furn_wd10mm
+ vis 1rot  bshelf_a furn_wd10mm
+ vis 1rot  bshelf_b furn_wd10mm
+ vis 1rot  bshelf_c furn_wd10mm
+ vis 1rot  bshelf_d furn_wd10mm
+ vis 1rot  bshelf_e furn_wd10mm
+ vis 1rot  bbil_top furn_wd10mm
+ vis 1rot  bkick furn_wd10mm
+ vis 1rot  blow_books stuffonshelf
+ vis 1rot  b2nd_books stuffonshelf
+ vis 1rot  b3rd_books booksonshlf
+ vis 1rot  b4th_books booksonshlf
+ vis 1rot  btop_books booksonshlf
+ vis 1rot  bf_cabinet steel_pl_3mm
+ vis 1rot  bdrw_a steel_gr_3mm
+ vis 1rot  bdrw_b steel_gr_3mm
+ vis 1rot  bdrw_c steel_gr_3mm
+ vis 1rot  bdrw_d steel_gr_3mm
+ vis 1rot  bdrw_e steel_gr_3mm
+ vis 1rot  bdrw_f steel_gr_3mm
+ vis 1rot  bdrw_g steel_gr_3mm
+ vis 1rot  bdrw_h steel_gr_3mm
+ vis 1rot  bdrw_i steel_gr_3mm
+ vis 1rot  bdrw_j steel_gr_3mm
+ vis 1rot  bdrw_k steel_gr_3mm
+ vis 1rot  bdrw_l steel_gr_3mm
+ 
+ Shading patterns have been calculated for this zone.
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: general
+ 
+Notes:
+5 people std occup ramping up from 7-9am half occupants on saturday,
+8Wm2 lights 10Wm2 small power weekdays and Saturdays, nothing Sunday
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekday     1 Occupt     people    W    0- 7      0.0      0.0       0.50       0.50
+weekday     2 Occupt     people    W    7- 8    100.0     60.0       0.50       0.50
+weekday     3 Occupt     people    W    8- 9    300.0    180.0       0.50       0.50
+weekday     4 Occupt     people    W    9-12    500.0    300.0       0.50       0.50
+weekday     5 Occupt     people    W   12-14    325.0    195.0       0.50       0.50
+weekday     6 Occupt     people    W   14-17    500.0    300.0       0.50       0.50
+weekday     7 Occupt     people    W   17-24      0.0      0.0       0.50       0.50
+weekday     8 Lights     lighting  Wm2  0- 8      0.0      0.0       0.50       0.50
+weekday     9 Lights     lighting  Wm2  8-18      8.0      0.0       0.50       0.50
+weekday    10 Lights     lighting  Wm2 18-24      0.0      0.0       0.50       0.50
+weekday    11 Equipt     equipment Wm2  0- 8      0.0      0.0       0.50       0.50
+weekday    12 Equipt     equipment Wm2  8-18     10.0      0.0       0.50       0.50
+weekday    13 Equipt     equipment Wm2 18-24      0.0      0.0       0.50       0.50
+saturday    1 Occupt     people    W    0- 7      0.0      0.0       0.50       0.50
+saturday    2 Occupt     people    W    7- 8     40.0      0.0       0.50       0.50
+saturday    3 Occupt     people    W    8- 9    120.0      0.0       0.50       0.50
+saturday    4 Occupt     people    W    9-12    200.0      0.0       0.50       0.50
+saturday    5 Occupt     people    W   12-14    130.0      0.0       0.50       0.50
+saturday    6 Occupt     people    W   14-17    200.0      0.0       0.50       0.50
+saturday    7 Occupt     people    W   17-24      0.0      0.0       0.50       0.50
+saturday    8 Lights     lighting  Wm2  0- 8      0.0      0.0       0.50       0.50
+saturday    9 Lights     lighting  Wm2  8-18      8.0      0.0       0.50       0.50
+saturday   10 Lights     lighting  Wm2 18-24      0.0      0.0       0.50       0.50
+saturday   11 Equipt     equipment Wm2  0- 8      0.0      0.0       0.50       0.50
+saturday   12 Equipt     equipment Wm2  8-18      5.0      0.0       0.50       0.50
+saturday   13 Equipt     equipment Wm2 18-24      0.0      0.0       0.50       0.50
+ 
+ ____________________________________________________________
+ 
+ Zone conference ( 3) is composed of 68 surfaces and 148 vertices.
+ It encloses a volume of 142.m^3 of space, with a total surface
+ area of 215.m^2 & user list floor area of 47.3m^2
+ conference describes a conference room for 10-12
+ There is 45.000m2 of exposed surface area, 45.000m2 of which is vertical.
+ Facade opaque is 18.400m2 & 38.942 % of floor area & average U of 0.307 & UA of 5.6401
+ Facade glazing is 26.600m2 & 56.296 % of floor & 59.111 % facade with average U of 2.811 & UA of 74.763
+ Opaque partitions:ceiling:floor 146.22m2 & trasparent partitions:ceiling:floor 10.062m2.
+ 
+ A summary of the surfaces in conference( 3) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  13.5    270.   0. pt_next_off  OPAQUE   VERT -        -        gyp_gyp_ptn ||< identical environment
+  2  9.00    180.   0. pt_recp_b    OPAQUE   VERT -        -        gyp_gyp_ptn ||< pt_recp_b:reception
+  3  10.1    207.   0. fict_open    SC_ficti VERT -        -        fict ||< fict_open:reception
+  4  9.00    180.   0. pt_recp_a    OPAQUE   VERT -        -        gyp_gyp_ptn ||< pt_recp_a:reception
+  5  47.3      0.  90. ceiling      OPAQUE   CEIL -        -        ceiling ||< ceil_conff:ceil_void
+  6  47.3      0. -90. floor        OPAQUE   FLOR -        -        flr_ov_pln ||< conf_floor:floor_void
+  7  2.30      0.   0. spandral     OPAQUE   VERT -        -        extern_wall ||< external
+  8  0.400     0.   0. vent         OPAQUE   VERT -        -        insul_frame ||< external
+  9  0.980   360.   0. frame        OPAQUE   VERT -        -        insul_frame ||< external
+ 10  5.32      0.   0. glazing      DCF7671_ VERT -        -        dbl_glz ||< external
+ 11  2.30      0.   0. spandral_a   OPAQUE   VERT -        -        extern_wall ||< external
+ 12  0.400     0.   0. vent_a       OPAQUE   VERT -        -        insul_frame ||< external
+ 13  0.980   360.   0. frame_a      OPAQUE   VERT -        -        insul_frame ||< external
+ 14  5.32      0.   0. glazing_a    DCF7671_ VERT -        -        dbl_glz ||< external
+ 15  2.30      0.   0. spandral_b   OPAQUE   VERT -        -        extern_wall ||< external
+ 16  0.400     0.   0. vent_b       OPAQUE   VERT -        -        insul_frame ||< external
+ 17  0.980   360.   0. frame_b      OPAQUE   VERT -        -        insul_frame ||< external
+ 18  5.32      0.   0. glazing_b    DCF7671_ VERT -        -        dbl_glz ||< external
+ 19  2.30     90.   0. spandral_c   OPAQUE   VERT -        -        extern_wall ||< external
+ 20  0.400    90.   0. vent_c       OPAQUE   VERT -        -        insul_frame ||< external
+ 21  0.980    90.   0. frame_c      OPAQUE   VERT -        -        insul_frame ||< external
+ 22  5.32     90.   0. glazing_c    DCF7671_ VERT -        -        dbl_glz ||< external
+ 23  2.30     90.   0. spandral_d   OPAQUE   VERT -        -        extern_wall ||< external
+ 24  0.400    90.   0. vent_d       OPAQUE   VERT -        -        insul_frame ||< external
+ 25  0.980    90.   0. frame_d      OPAQUE   VERT -        -        insul_frame ||< external
+ 26  5.32     90.   0. glazing_d    DCF7671_ VERT -        -        dbl_glz ||< external
+ 27  0.207     0.  90. aseat        OPAQUE   CEIL FURNI    -        upholstery ||< aseat_:conference
+ 28  0.207     0. -90. aseat_       OPAQUE   FLOR FURNI    -        upholstery ||< aseat:conference
+ 29  0.231   180.   6. astback      OPAQUE   SLOP FURNI    -        upholstery ||< astback_:conference
+ 30  0.231     0.  -6. astback_     OPAQUE   SLOP FURNI    -        upholstery ||< astback:conference
+ 31  0.207     0.  90. bseat        OPAQUE   CEIL FURNI    -        upholstery ||< bseat_:conference
+ 32  0.207     0. -90. bseat_       OPAQUE   FLOR FURNI    -        upholstery ||< bseat:conference
+ 33  0.231   180.   6. bstback      OPAQUE   SLOP FURNI    -        upholstery ||< bstback_:conference
+ 34  0.231     0.  -6. bstback_     OPAQUE   SLOP FURNI    -        upholstery ||< bstback:conference
+ 35  0.207     0.  90. cseat        OPAQUE   CEIL FURNI    -        upholstery ||< cseat_:conference
+ 36  0.207     0. -90. cseat_       OPAQUE   FLOR FURNI    -        upholstery ||< cseat:conference
+ 37  0.231   170.   6. cstback      OPAQUE   SLOP FURNI    -        upholstery ||< cstback_:conference
+ 38  0.231   350.  -6. cstback_     OPAQUE   SLOP FURNI    -        upholstery ||< cstback:conference
+ 39  0.207     0.  90. dseat        OPAQUE   CEIL FURNI    -        upholstery ||< dseat_:conference
+ 40  0.207     0. -90. dseat_       OPAQUE   FLOR FURNI    -        upholstery ||< dseat:conference
+ 41  0.231   200.   6. dstback      OPAQUE   SLOP FURNI    -        upholstery ||< dstback_:conference
+ 42  0.231    20.  -6. dstback_     OPAQUE   SLOP FURNI    -        upholstery ||< dstback:conference
+ 43  6.08      0.  90. table        OPAQUE   CEIL FURNI    -        door ||< table_:conference
+ 44  6.08      0. -90. table_       OPAQUE   FLOR FURNI    -        door ||< table:conference
+ 45  0.207     0.  90. eseat        OPAQUE   CEIL FURNI    -        upholstery ||< eseat_:conference
+ 46  0.207     0. -90. eseat_       OPAQUE   FLOR FURNI    -        upholstery ||< eseat:conference
+ 47  0.231   280.   6. estback      OPAQUE   SLOP FURNI    -        upholstery ||< estback_:conference
+ 48  0.231   100.  -6. estback_     OPAQUE   SLOP FURNI    -        upholstery ||< estback:conference
+ 49  0.938     0.  90. fdesk_t      OPAQUE   CEIL FURNI    -        corian_count ||< fdesk_t_:conference
+ 50  0.938     0. -90. fdesk_t_     OPAQUE   FLOR FURNI    -        corian_count ||< fdesk_t:conference
+ 51  0.500     0.   0. abil_lft     OPAQUE   VERT FURNI    -        furn_wd10mm ||< abil_lft_:conference
+ 52  0.500   180.   0. abil_lft_    OPAQUE   VERT FURNI    -        furn_wd10mm ||< abil_lft:conference
+ 53  0.500     0.   0. abil_rt      OPAQUE   VERT FURNI    -        furn_wd10mm ||< abil_rt_:conference
+ 54  0.500   180.   0. abil_rt_     OPAQUE   VERT FURNI    -        furn_wd10mm ||< abil_rt:conference
+ 55  1.55     90.   0. abooks       OPAQUE   VERT FURNI    -        stuffonshelf ||< abooks_:conference
+ 56  1.55    270.   0. abooks_      OPAQUE   VERT FURNI    -        stuffonshelf ||< abooks:conference
+ 57  0.500     0.   0. bbil_lft     OPAQUE   VERT FURNI    -        furn_wd10mm ||< bbil_lft_:conference
+ 58  0.500   180.   0. bbil_lft_    OPAQUE   VERT FURNI    -        furn_wd10mm ||< bbil_lft:conference
+ 59  0.500   360.   0. bbil_rt      OPAQUE   VERT FURNI    -        furn_wd10mm ||< bbil_rt_:conference
+ 60  0.500   180.   0. bbil_rt_     OPAQUE   VERT FURNI    -        furn_wd10mm ||< bbil_rt:conference
+ 61  1.55     90.   0. bbooks       OPAQUE   VERT FURNI    -        stuffonshelf ||< bbooks_:conference
+ 62  1.55    270.   0. bbooks_      OPAQUE   VERT FURNI    -        stuffonshelf ||< bbooks:conference
+ 63  0.500     0.   0. cbil_lft     OPAQUE   VERT FURNI    -        furn_wd10mm ||< cbil_lft_:conference
+ 64  0.500   180.   0. cbil_lft_    OPAQUE   VERT FURNI    -        furn_wd10mm ||< cbil_lft:conference
+ 65  0.500   360.   0. cbil_rt      OPAQUE   VERT FURNI    -        furn_wd10mm ||< cbil_rt_:conference
+ 66  0.500   180.   0. cbil_rt_     OPAQUE   VERT FURNI    -        furn_wd10mm ||< cbil_rt:conference
+ 67  1.55     90.   0. cbooks       OPAQUE   VERT FURNI    -        stuffonshelf ||< cbooks_:conference
+ 68  1.55    270.   0. cbooks_      OPAQUE   VERT FURNI    -        stuffonshelf ||< cbooks:conference
+ 
+ Vertices ( index X Y Z) in the zone...
+vertex   1    3.00000   13.50000    0.00000   vertex  75    7.76000   17.74000    0.50500
+vertex   2    3.00000   18.00000    0.00000   vertex  76    7.29000   17.74000    0.50500
+vertex   3    6.00000   18.00000    0.00000   vertex  77    7.29000   17.75000    0.56500
+vertex   4    9.00000   18.00000    0.00000   vertex  78    7.76000   17.75000    0.56500
+vertex   5   12.00000   18.00000    0.00000   vertex  79    7.76000   17.79900    1.05500
+vertex   6   12.00000   15.00000    0.00000   vertex  80    7.29000   17.79900    1.05500
+vertex   7   12.00000   12.00000    0.00000   vertex  81    8.47127   17.21411    0.50500
+vertex   8    9.00000   12.00000    0.00000   vertex  82    8.93413   17.29572    0.50500
+vertex   9    6.00000   13.50000    0.00000   vertex  83    8.85772   17.72904    0.50500
+vertex  10    3.00000   13.50000    3.00000   vertex  84    8.39486   17.64743    0.50500
+vertex  11    3.00000   18.00000    3.00000   vertex  85    8.39313   17.65727    0.56500
+vertex  12    6.00000   18.00000    3.00000   vertex  86    8.85599   17.73889    0.56500
+vertex  13    9.00000   18.00000    3.00000   vertex  87    8.84748   17.78714    1.05500
+vertex  14   12.00000   18.00000    3.00000   vertex  88    8.38462   17.70553    1.05500
+vertex  15   12.00000   15.00000    3.00000   vertex  89    9.71877   17.06319    0.50500
+vertex  16   12.00000   12.00000    3.00000   vertex  90   10.16043   16.90244    0.50500
+vertex  17    9.00000   12.00000    3.00000   vertex  91   10.31092   17.31590    0.50500
+vertex  18    6.00000   13.50000    3.00000   vertex  92    9.86926   17.47665    0.50500
+vertex  19    6.00000   18.00000    0.90000   vertex  93    9.87268   17.48605    0.56500
+vertex  20    5.00000   18.00000    0.90000   vertex  94   10.31434   17.32530    0.56500
+vertex  21    5.00000   18.00000    0.50000   vertex  95   10.33110   17.37134    1.05500
+vertex  22    4.00000   18.00000    0.50000   vertex  96    9.88944   17.53209    1.05500
+vertex  23    4.00000   18.00000    0.90000   vertex  97    6.00000   15.50000    0.70000
+vertex  24    3.00000   18.00000    0.90000   vertex  98    9.80000   15.50000    0.70000
+vertex  25    3.10000   18.00000    1.00000   vertex  99    9.80000   17.10000    0.70000
+vertex  26    3.10000   18.00000    2.90000   vertex 100    6.00000   17.10000    0.70000
+vertex  27    5.90000   18.00000    2.90000   vertex 101    9.68285   14.89400    0.50500
+vertex  28    5.90000   18.00000    1.00000   vertex 102    9.60124   14.43114    0.50500
+vertex  29    9.00000   18.00000    0.90000   vertex 103   10.03455   14.35474    0.50500
+vertex  30    8.00000   18.00000    0.90000   vertex 104   10.11617   14.81760    0.50500
+vertex  31    8.00000   18.00000    0.50000   vertex 105   10.12602   14.81586    0.56500
+vertex  32    7.00000   18.00000    0.50000   vertex 106   10.04440   14.35300    0.56500
+vertex  33    7.00000   18.00000    0.90000   vertex 107   10.09266   14.34449    1.05500
+vertex  34    6.10000   18.00000    1.00000   vertex 108   10.17427   14.80735    1.05500
+vertex  35    6.10000   18.00000    2.90000   vertex 109    9.20500   12.69500    0.69500
+vertex  36    8.90000   18.00000    2.90000   vertex 110    9.20500   12.10500    0.69500
+vertex  37    8.90000   18.00000    1.00000   vertex 111   10.79500   12.10500    0.69500
+vertex  38   12.00000   18.00000    0.90000   vertex 112   10.79500   12.69500    0.69500
+vertex  39   11.00000   18.00000    0.90000   vertex 113    3.39500   13.60500    0.00500
+vertex  40   11.00000   18.00000    0.50000   vertex 114    3.14500   13.60500    0.00500
+vertex  41   10.00000   18.00000    0.50000   vertex 115    3.14500   13.60500    2.00500
+vertex  42   10.00000   18.00000    0.90000   vertex 116    3.39500   13.60500    2.00500
+vertex  43    9.10000   18.00000    1.00000   vertex 117    3.39500   14.39500    0.00500
+vertex  44    9.10000   18.00000    2.90000   vertex 118    3.14500   14.39500    0.00500
+vertex  45   11.90000   18.00000    2.90000   vertex 119    3.14500   14.39500    2.00500
+vertex  46   11.90000   18.00000    1.00000   vertex 120    3.39500   14.39500    2.00500
+vertex  47   12.00000   15.00000    0.90000   vertex 121    3.14500   13.61500    0.00500
+vertex  48   12.00000   16.00000    0.90000   vertex 122    3.14500   13.61500    2.00500
+vertex  49   12.00000   16.00000    0.50000   vertex 123    3.14500   14.39000    0.00500
+vertex  50   12.00000   17.00000    0.50000   vertex 124    3.14500   14.39000    2.00500
+vertex  51   12.00000   17.00000    0.90000   vertex 125    3.39500   14.50500    0.00500
+vertex  52   12.00000   17.90000    1.00000   vertex 126    3.14500   14.50500    0.00500
+vertex  53   12.00000   15.10000    1.00000   vertex 127    3.14500   14.50500    2.00500
+vertex  54   12.00000   15.10000    2.90000   vertex 128    3.39500   14.50500    2.00500
+vertex  55   12.00000   17.90000    2.90000   vertex 129    3.39500   15.29500    0.00500
+vertex  56   12.00000   12.00000    0.90000   vertex 130    3.14500   15.29500    0.00500
+vertex  57   12.00000   13.00000    0.90000   vertex 131    3.14500   15.29500    2.00500
+vertex  58   12.00000   13.00000    0.50000   vertex 132    3.39500   15.29500    2.00500
+vertex  59   12.00000   14.00000    0.50000   vertex 133    3.14500   14.51500    0.00500
+vertex  60   12.00000   14.00000    0.90000   vertex 134    3.14500   14.51500    2.00500
+vertex  61   12.00000   14.90000    1.00000   vertex 135    3.14500   15.29000    0.00500
+vertex  62   12.00000   14.90000    2.90000   vertex 136    3.14500   15.29000    2.00500
+vertex  63   12.00000   12.10000    2.90000   vertex 137    3.39500   15.40500    0.00500
+vertex  64   12.00000   12.10000    1.00000   vertex 138    3.14500   15.40500    0.00500
+vertex  65    6.29000   17.30000    0.50500   vertex 139    3.14500   15.40500    2.00500
+vertex  66    6.76000   17.30000    0.50500   vertex 140    3.39500   15.40500    2.00500
+vertex  67    6.76000   17.74000    0.50500   vertex 141    3.39500   16.19500    0.00500
+vertex  68    6.29000   17.74000    0.50500   vertex 142    3.14500   16.19500    0.00500
+vertex  69    6.29000   17.75000    0.56500   vertex 143    3.14500   16.19500    2.00500
+vertex  70    6.76000   17.75000    0.56500   vertex 144    3.39500   16.19500    2.00500
+vertex  71    6.76000   17.79900    1.05500   vertex 145    3.14500   15.41500    0.00500
+vertex  72    6.29000   17.79900    1.05500   vertex 146    3.14500   15.41500    2.00500
+vertex  73    7.29000   17.30000    0.50500   vertex 147    3.14500   16.19000    0.00500
+vertex  74    7.76000   17.30000    0.50500   vertex 148    3.14500   16.19000    2.00500
+ Number of vertices followed by list, name & perimeter length
+*edges,5,2,1,10,11,24   pt_next_off  15.000m perimeter
+*edges,5,8,7,56,16,17   pt_recp_b  12.000m perimeter
+*edges,4,9,8,17,18   fict_open  12.708m perimeter
+*edges,4,1,9,18,10   pt_recp_a  12.000m perimeter
+*edges,9,18,17,16,15,14,13,12,11,10   ceiling  28.854m perimeter
+*edges,9,1,2,3,4,5,6,7,8,9   floor  28.854m perimeter
+*edges,8,3,2,24,23,22,21,20,19   spandral   8.600m perimeter
+*edges,4,21,22,23,20   vent   2.800m perimeter
+*edges,12,23,24,25,28,27,26,25,24,11,12,19,20   frame  19.883m perimeter
+*edges,4,28,25,26,27   glazing   9.400m perimeter
+*edges,8,4,3,19,33,32,31,30,29   spandral_a   8.600m perimeter
+*edges,4,31,32,33,30   vent_a   2.800m perimeter
+*edges,12,33,19,34,37,36,35,34,19,12,13,29,30   frame_a  19.883m perimeter
+*edges,4,37,34,35,36   glazing_a   9.400m perimeter
+*edges,8,5,4,29,42,41,40,39,38   spandral_b   8.600m perimeter
+*edges,4,40,41,42,39   vent_b   2.800m perimeter
+*edges,12,42,29,43,46,45,44,43,29,13,14,38,39   frame_b  19.883m perimeter
+*edges,4,46,43,44,45   glazing_b   9.400m perimeter
+*edges,8,6,5,38,51,50,49,48,47   spandral_c   8.600m perimeter
+*edges,4,49,50,51,48   vent_c   2.800m perimeter
+*edges,12,51,38,52,53,54,55,52,38,14,15,47,48   frame_c  19.883m perimeter
+*edges,4,53,52,55,54   glazing_c   9.400m perimeter
+*edges,8,7,6,47,60,59,58,57,56   spandral_d   8.600m perimeter
+*edges,4,58,59,60,57   vent_d   2.800m perimeter
+*edges,12,60,47,61,64,63,62,61,47,15,16,56,57   frame_d  19.883m perimeter
+*edges,4,64,61,62,63   glazing_d   9.400m perimeter
+*edges,4,65,66,67,68   aseat   1.820m perimeter
+*edges,4,66,65,68,67   aseat_   1.820m perimeter
+*edges,4,69,70,71,72   astback   1.925m perimeter
+*edges,4,70,69,72,71   astback_   1.925m perimeter
+*edges,4,73,74,75,76   bseat   1.820m perimeter
+*edges,4,74,73,76,75   bseat_   1.820m perimeter
+*edges,4,77,78,79,80   bstback   1.925m perimeter
+*edges,4,78,77,80,79   bstback_   1.925m perimeter
+*edges,4,81,82,83,84   cseat   1.820m perimeter
+*edges,4,82,81,84,83   cseat_   1.820m perimeter
+*edges,4,85,86,87,88   cstback   1.925m perimeter
+*edges,4,86,85,88,87   cstback_   1.925m perimeter
+*edges,4,89,90,91,92   dseat   1.820m perimeter
+*edges,4,90,89,92,91   dseat_   1.820m perimeter
+*edges,4,93,94,95,96   dstback   1.925m perimeter
+*edges,4,94,93,96,95   dstback_   1.925m perimeter
+*edges,4,97,98,99,100   table  10.800m perimeter
+*edges,4,98,97,100,99   table_  10.800m perimeter
+*edges,4,101,102,103,104   eseat   1.820m perimeter
+*edges,4,102,101,104,103   eseat_   1.820m perimeter
+*edges,4,105,106,107,108   estback   1.925m perimeter
+*edges,4,106,105,108,107   estback_   1.925m perimeter
+*edges,4,109,110,111,112   fdesk_t   4.360m perimeter
+*edges,4,110,109,112,111   fdesk_t_   4.360m perimeter
+*edges,4,113,114,115,116   abil_lft   4.500m perimeter
+*edges,4,114,113,116,115   abil_lft_   4.500m perimeter
+*edges,4,117,118,119,120   abil_rt   4.500m perimeter
+*edges,4,118,117,120,119   abil_rt_   4.500m perimeter
+*edges,4,121,123,124,122   abooks   5.550m perimeter
+*edges,4,123,121,122,124   abooks_   5.550m perimeter
+*edges,4,125,126,127,128   bbil_lft   4.500m perimeter
+*edges,4,126,125,128,127   bbil_lft_   4.500m perimeter
+*edges,4,129,130,131,132   bbil_rt   4.500m perimeter
+*edges,4,130,129,132,131   bbil_rt_   4.500m perimeter
+*edges,4,133,135,136,134   bbooks   5.550m perimeter
+*edges,4,135,133,134,136   bbooks_   5.550m perimeter
+*edges,4,137,138,139,140   cbil_lft   4.500m perimeter
+*edges,4,138,137,140,139   cbil_lft_   4.500m perimeter
+*edges,4,141,142,143,144   cbil_rt   4.500m perimeter
+*edges,4,142,141,144,143   cbil_rt_   4.500m perimeter
+*edges,4,145,147,148,146   cbooks   5.550m perimeter
+*edges,4,147,145,146,148   cbooks_   5.550m perimeter
+ 
+ An hourly solar radiation distribution is used for this zone.
+ Surfaces (all applicable) for shading analysis:
+7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26
+ Insolation sources (all applicable):
+glazing glazing_a glazing_b glazing_c glazing_d
+ 
+ 
+ Explicit viewfactors have been derived for this zone.
+Block X- Y- Z- coords DX- DY- DZ- values Orient Opacity
+  1    12.1    12.0     3.1     6.0     0.0     0.3    90.0     0.0 1.00 eob1 NONE
+  2    12.3    12.0     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob2 NONE
+  3    12.5    12.0     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob3 NONE
+  4    12.7    12.0     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob4 NONE
+  5    12.9    12.0     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob5 NONE
+  6    13.1    12.0     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob6 NONE
+ 
+visual type name    composition
+ vis 1rot  aseat upholstery
+ vis 1rot  ar_arm upholstery
+ vis 1rot  al_arm upholstery
+ vis poly  aseat_bk upholstery
+ vis 1rot  across_a steel_gr_3mm
+ vis 1rot  across_b steel_gr_3mm
+ vis 1rot  apost PH_alu_frame
+ vis 1rot  ar_arm_rest steel_gr_3mm
+ vis 1rot  al_arm_rest steel_gr_3mm
+ vis 1rot  aroller_a sensor_case
+ vis 1rot  aroller_b sensor_case
+ vis 1rot  aroller_c sensor_case
+ vis 1rot  aroller_d sensor_case
+ vis 1rot  bseat upholstery
+ vis 1rot  br_arm upholstery
+ vis 1rot  bl_arm upholstery
+ vis poly  bseat_bk upholstery
+ vis 1rot  bcross_a steel_gr_3mm
+ vis 1rot  bcross_b steel_gr_3mm
+ vis 1rot  bpost PH_alu_frame
+ vis 1rot  br_arm_rest steel_gr_3mm
+ vis 1rot  bl_arm_rest steel_gr_3mm
+ vis 1rot  broller_a sensor_case
+ vis 1rot  broller_b sensor_case
+ vis 1rot  broller_c sensor_case
+ vis 1rot  broller_d sensor_case
+ vis 1rot  cseat upholstery
+ vis 1rot  cr_arm upholstery
+ vis 1rot  cl_arm upholstery
+ vis poly  cseat_bk upholstery
+ vis 1rot  ccross_a steel_gr_3mm
+ vis 1rot  ccross_b steel_gr_3mm
+ vis 1rot  cpost PH_alu_frame
+ vis 1rot  cr_arm_rest steel_gr_3mm
+ vis 1rot  cl_arm_rest steel_gr_3mm
+ vis 1rot  croller_a sensor_case
+ vis 1rot  croller_b sensor_case
+ vis 1rot  croller_c sensor_case
+ vis 1rot  croller_d sensor_case
+ vis 1rot  dseat upholstery
+ vis 1rot  dr_arm upholstery
+ vis 1rot  dl_arm upholstery
+ vis poly  dseat_bk upholstery
+ vis 1rot  dcross_a steel_gr_3mm
+ vis 1rot  dcross_b steel_gr_3mm
+ vis 1rot  dpost PH_alu_frame
+ vis 1rot  dr_arm_rest steel_gr_3mm
+ vis 1rot  dl_arm_rest steel_gr_3mm
+ vis 1rot  droller_a sensor_case
+ vis 1rot  droller_b sensor_case
+ vis 1rot  droller_c sensor_case
+ vis 1rot  droller_d sensor_case
+ vis 1rot  conf_table door
+ vis 1rot  eseat upholstery
+ vis 1rot  er_arm upholstery
+ vis 1rot  el_arm upholstery
+ vis poly  eseat_bk upholstery
+ vis 1rot  ecross_a steel_gr_3mm
+ vis 1rot  ecross_b steel_gr_3mm
+ vis 1rot  epost PH_alu_frame
+ vis 1rot  er_arm_rest steel_gr_3mm
+ vis 1rot  el_arm_rest steel_gr_3mm
+ vis 1rot  eroller_a sensor_case
+ vis 1rot  eroller_b sensor_case
+ vis 1rot  eroller_c sensor_case
+ vis 1rot  eroller_d sensor_case
+ vis 1rot  fdesk_top corian_count
+ vis 1rot  fdesk_leg_a steel_pl_3mm
+ vis 1rot  fdesk_leg_b steel_pl_3mm
+ vis 1rot  fdesk_leg_c steel_pl_3mm
+ vis 1rot  fdesk_leg_d steel_pl_3mm
+ vis 1rot  aleft_ver furn_wd10mm
+ vis 1rot  aright_ver furn_wd10mm
+ vis 1rot  abil_bk furn_wd10mm
+ vis 1rot  ashelf_a furn_wd10mm
+ vis 1rot  ashelf_b furn_wd10mm
+ vis 1rot  ashelf_c furn_wd10mm
+ vis 1rot  ashelf_d furn_wd10mm
+ vis 1rot  ashelf_e furn_wd10mm
+ vis 1rot  abil_top furn_wd10mm
+ vis 1rot  akick furn_wd10mm
+ vis 1rot  alow_books stuffonshelf
+ vis 1rot  a2nd_books stuffonshelf
+ vis 1rot  a3rd_books booksonshlf
+ vis 1rot  a4th_books booksonshlf
+ vis 1rot  atop_books booksonshlf
+ vis 1rot  bleft_ver furn_wd10mm
+ vis 1rot  bright_ver furn_wd10mm
+ vis 1rot  bbil_bk furn_wd10mm
+ vis 1rot  bshelf_a furn_wd10mm
+ vis 1rot  bshelf_b furn_wd10mm
+ vis 1rot  bshelf_c furn_wd10mm
+ vis 1rot  bshelf_d furn_wd10mm
+ vis 1rot  bshelf_e furn_wd10mm
+ vis 1rot  bbil_top furn_wd10mm
+ vis 1rot  bkick furn_wd10mm
+ vis 1rot  blow_books stuffonshelf
+ vis 1rot  b2nd_books stuffonshelf
+ vis 1rot  b3rd_books booksonshlf
+ vis 1rot  b4th_books booksonshlf
+ vis 1rot  btop_books booksonshlf
+ vis 1rot  cleft_ver furn_wd10mm
+ vis 1rot  cright_ver furn_wd10mm
+ vis 1rot  cbil_bk furn_wd10mm
+ vis 1rot  cshelf_a furn_wd10mm
+ vis 1rot  cshelf_b furn_wd10mm
+ vis 1rot  cshelf_c furn_wd10mm
+ vis 1rot  cshelf_d furn_wd10mm
+ vis 1rot  cshelf_e furn_wd10mm
+ vis 1rot  cbil_top furn_wd10mm
+ vis 1rot  ckick furn_wd10mm
+ vis 1rot  clow_books stuffonshelf
+ vis 1rot  c2nd_books stuffonshelf
+ vis 1rot  c3rd_books booksonshlf
+ vis 1rot  c4th_books booksonshlf
+ vis 1rot  ctop_books booksonshlf
+ 
+ Shading patterns have been calculated for this zone.
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: conference
+ 
+Notes:
+morning and afternoon meetings 8 people on weekdays, nothing on
+weekends
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekday     1 Occupt     people    W    0-10      0.0      0.0       0.50       0.50
+weekday     2 Occupt     people    W   10-12    800.0    400.0       0.50       0.50
+weekday     3 Occupt     people    W   12-14      0.0      0.0       0.50       0.50
+weekday     4 Occupt     people    W   14-16    700.0    350.0       0.50       0.50
+weekday     5 Occupt     people    W   16-24      0.0      0.0       0.50       0.50
+weekday     6 Lights     lighting  Wm2  0- 9      0.0      0.0       0.50       0.50
+weekday     7 Lights     lighting  Wm2  9-17      8.0      0.0       0.50       0.50
+weekday     8 Lights     lighting  Wm2 17-24      0.0      0.0       0.50       0.50
+weekday     9 Equipt     equipment W    0-24    100.0      0.0       0.50       0.50
+ 
+ ____________________________________________________________
+ 
+ Zone reception ( 4) is composed of 74 surfaces and 151 vertices.
+ It encloses a volume of 182.m^3 of space, with a total surface
+ area of 255.m^2 & user list floor area of 60.8m^2
+ reception of office group adj to conference room
+ There is 18.000m2 of exposed surface area, 18.000m2 of which is vertical.
+ Facade opaque is 7.3600m2 & 12.115 % of floor area & average U of 0.307 & UA of 2.2560
+ Facade glazing is 10.640m2 & 17.514 % of floor & 59.111 % facade with average U of 2.811 & UA of 29.905
+ Opaque partitions:ceiling:floor 186.21m2 & trasparent partitions:ceiling:floor 28.062m2.
+ 
+ A summary of the surfaces in reception( 4) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  22.5    270.   0. pt_core_a    OPAQUE   VERT -        -        gyp_blk_ptn ||< identical environment
+  2  18.0    180.   0. fict_rec     SC_ficti VERT -        -        fict ||< fict_rec:general
+  3  9.00    180.   0. pt_rec_a     OPAQUE   VERT -        -        gyp_gyp_ptn ||< pt_rec_a:general
+  4  9.00      0.   0. pt_recp_a    OPAQUE   VERT -        -        gyp_gyp_ptn ||< pt_recp_a:conference
+  5  10.1     27.   0. fict_open    SC_ficti VERT -        -        fict ||< fict_open:conference
+  6  9.00      0.   0. pt_recp_b    OPAQUE   VERT -        -        gyp_gyp_ptn ||< pt_recp_b:conference
+  7  2.30     90.   0. spandral     OPAQUE   VERT -        -        extern_wall ||< external
+  8  0.400    90.   0. vent         OPAQUE   VERT -        -        insul_frame ||< external
+  9  0.980    90.   0. frame        OPAQUE   VERT -        -        insul_frame ||< external
+ 10  5.32     90.   0. glazing      DCF7671_ VERT -        -        dbl_glz ||< external
+ 11  2.30     90.   0. spandral_a   OPAQUE   VERT -        -        extern_wall ||< external
+ 12  0.400    90.   0. vent_a       OPAQUE   VERT -        -        insul_frame ||< external
+ 13  0.980    90.   0. frame_a      OPAQUE   VERT -        -        insul_frame ||< external
+ 14  5.32     90.   0. glazing_a    DCF7671_ VERT -        -        dbl_glz ||< external
+ 15  60.8      0.  90. ceiling      OPAQUE   CEIL -        -        ceiling ||< ceil_rec:ceil_void
+ 16  60.8      0. -90. floor        OPAQUE   FLOR -        -        flr_ov_pln ||< recep_floor:floor_void
+ 17  0.814     0.  90. aseat_mass   OPAQUE   CEIL FURNI    -        upholstery ||< aseat_mass_:reception
+ 18  0.814     0. -90. aseat_mass_  OPAQUE   FLOR FURNI    -        upholstery ||< aseat_mass:reception
+ 19  0.324    90.   0. aarm_mass_l  OPAQUE   VERT FURNI    -        upholstery ||< aarm_mass_l_:reception
+ 20  0.324   270.   0. aarm_mass_l_ OPAQUE   VERT FURNI    -        upholstery ||< aarm_mass_l:reception
+ 21  0.324    90.   0. aarm_mass_r  OPAQUE   VERT FURNI    -        upholstery ||< aarm_mass_r_:reception
+ 22  0.324   270.   0. aarm_mass_r_ OPAQUE   VERT FURNI    -        upholstery ||< aarm_mass_r:reception
+ 23  0.814     0.  90. bseat_mass   OPAQUE   CEIL FURNI    -        upholstery ||< bseat_mass_:reception
+ 24  0.814     0. -90. bseat_mass_  OPAQUE   FLOR FURNI    -        upholstery ||< bseat_mass:reception
+ 25  0.324    90.   0. barm_mass_l  OPAQUE   VERT FURNI    -        upholstery ||< barm_mass_l_:reception
+ 26  0.324   270.   0. barm_mass_l_ OPAQUE   VERT FURNI    -        upholstery ||< barm_mass_l:reception
+ 27  0.324    90.   0. barm_mass_r  OPAQUE   VERT FURNI    -        upholstery ||< barm_mass_r_:reception
+ 28  0.324   270.   0. barm_mass_r_ OPAQUE   VERT FURNI    -        upholstery ||< barm_mass_r:reception
+ 29  0.515     0.  90. at_top       OPAQUE   CEIL FURNI    -        shelves_20mm ||< at_top_:reception
+ 30  0.515     0. -90. at_top_      OPAQUE   FLOR FURNI    -        shelves_20mm ||< at_top:reception
+ 31  0.271     0.  90. act_shelf    OPAQUE   CEIL FURNI    -        furn_wd10mm ||< act_shelf_:reception
+ 32  0.271     0. -90. act_shelf_   OPAQUE   FLOR FURNI    -        furn_wd10mm ||< act_shelf:reception
+ 33  1.17      0.  90. adesk_t      OPAQUE   CEIL FURNI    -        door ||< adesk_t_:reception
+ 34  1.17      0. -90. adesk_t_     OPAQUE   FLOR FURNI    -        door ||< adesk_t:reception
+ 35  1.17      0.  90. bdesk_t      OPAQUE   CEIL FURNI    -        door ||< bdesk_t_:reception
+ 36  1.17      0. -90. bdesk_t_     OPAQUE   FLOR FURNI    -        door ||< bdesk_t:reception
+ 37  0.207     0.  90. aseat        OPAQUE   CEIL FURNI    -        upholstery ||< aseat_:reception
+ 38  0.207     0. -90. aseat_       OPAQUE   FLOR FURNI    -        upholstery ||< aseat:reception
+ 39  0.231   220.   6. astback      OPAQUE   SLOP FURNI    -        upholstery ||< astback_:reception
+ 40  0.231    40.  -6. astback_     OPAQUE   SLOP FURNI    -        upholstery ||< astback:reception
+ 41  0.148    90.   0. acase        OPAQUE   VERT FURNI    -        IT_case ||< acase_:reception
+ 42  0.148   270.   0. acase_       OPAQUE   VERT FURNI    -        IT_case ||< acase:reception
+ 43  0.123    90.   0. acircuit     OPAQUE   VERT FURNI    -        circuit_bd ||< acircuit_:reception
+ 44  0.123   270.   0. acircuit_    OPAQUE   VERT FURNI    -        circuit_bd ||< acircuit:reception
+ 45  0.484   270.   0. acab_lf      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< acab_lf_:reception
+ 46  0.484    90.   0. acab_lf_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< acab_lf:reception
+ 47  0.484   270.   0. acab_rt      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< acab_rt_:reception
+ 48  0.484    90.   0. acab_rt_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< acab_rt:reception
+ 49  1.45    180.   0. acab_fr      OPAQUE   VERT FURNI    -        steel_gr_3mm ||< acab_fr_:reception
+ 50  1.45    360.   0. acab_fr_     OPAQUE   VERT FURNI    -        steel_gr_3mm ||< acab_fr:reception
+ 51  0.484   270.   0. bcab_lf      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< bcab_lf_:reception
+ 52  0.484    90.   0. bcab_lf_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< bcab_lf:reception
+ 53  0.484   270.   0. bcab_rt      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< bcab_rt_:reception
+ 54  0.484    90.   0. bcab_rt_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< bcab_rt:reception
+ 55  1.45    180.   0. bcab_fr      OPAQUE   VERT FURNI    -        steel_gr_3mm ||< bcab_fr_:reception
+ 56  1.45    360.   0. bcab_fr_     OPAQUE   VERT FURNI    -        steel_gr_3mm ||< bcab_fr:reception
+ 57  0.484   270.   0. ccab_lf      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< ccab_lf_:reception
+ 58  0.484    90.   0. ccab_lf_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< ccab_lf:reception
+ 59  0.484   270.   0. ccab_rt      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< ccab_rt_:reception
+ 60  0.484    90.   0. ccab_rt_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< ccab_rt:reception
+ 61  1.45    180.   0. ccab_fr      OPAQUE   VERT FURNI    -        steel_gr_3mm ||< ccab_fr_:reception
+ 62  1.45    360.   0. ccab_fr_     OPAQUE   VERT FURNI    -        steel_gr_3mm ||< ccab_fr:reception
+ 63  0.484   270.   0. dcab_lf      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< dcab_lf_:reception
+ 64  0.484    90.   0. dcab_lf_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< dcab_lf:reception
+ 65  0.484   270.   0. dcab_rt      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< dcab_rt_:reception
+ 66  0.484    90.   0. dcab_rt_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< dcab_rt:reception
+ 67  1.45    180.   0. dcab_fr      OPAQUE   VERT FURNI    -        steel_gr_3mm ||< dcab_fr_:reception
+ 68  1.45      0.   0. dcab_fr_     OPAQUE   VERT FURNI    -        steel_gr_3mm ||< dcab_fr:reception
+ 69  0.484   270.   0. ecab_lf      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< ecab_lf_:reception
+ 70  0.484    90.   0. ecab_lf_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< ecab_lf:reception
+ 71  0.484   270.   0. ecab_rt      OPAQUE   VERT FURNI    -        steel_pl_3mm ||< ecab_rt_:reception
+ 72  0.484    90.   0. ecab_rt_     OPAQUE   VERT FURNI    -        steel_pl_3mm ||< ecab_rt:reception
+ 73  1.45    180.   0. ecab_fr      OPAQUE   VERT FURNI    -        steel_gr_3mm ||< ecab_fr_:reception
+ 74  1.45      0.   0. ecab_fr_     OPAQUE   VERT FURNI    -        steel_gr_3mm ||< ecab_fr:reception
+ 
+ Vertices ( index X Y Z) in the zone...
+vertex   1    3.00000    6.00000    0.00000   vertex  76   10.53322    7.21875    0.50500
+vertex   2    3.00000    6.00000    3.00000   vertex  77   10.89326    6.91664    0.50500
+vertex   3    9.00000    6.00000    0.00000   vertex  78   11.17609    7.25370    0.50500
+vertex   4    9.00000    6.00000    3.00000   vertex  79   10.81605    7.55581    0.50500
+vertex   5   12.00000    6.00000    0.00000   vertex  80   10.82248    7.56347    0.56500
+vertex   6   12.00000    6.00000    3.00000   vertex  81   11.18252    7.26136    0.56500
+vertex   7   12.00000    6.00000    0.90000   vertex  82   11.21402    7.29890    1.05500
+vertex   8    3.00000   13.50000    0.00000   vertex  83   10.85397    7.60101    1.05500
+vertex   9    6.00000   13.50000    0.00000   vertex  84    9.36400    7.00500    0.90500
+vertex  10    6.00000   13.50000    3.00000   vertex  85    9.36400    7.51500    0.90500
+vertex  11    3.00000   13.50000    3.00000   vertex  86    9.36400    7.51500    1.19500
+vertex  12    9.00000   12.00000    0.00000   vertex  87    9.36400    7.00500    1.19500
+vertex  13    9.00000   12.00000    3.00000   vertex  88    9.34000    7.03000    0.92500
+vertex  14   12.00000   12.00000    0.00000   vertex  89    9.34000    7.49500    0.92500
+vertex  15   12.00000   12.00000    0.90000   vertex  90    9.34000    7.49500    1.19000
+vertex  16   12.00000   12.00000    3.00000   vertex  91    9.34000    7.03000    1.19000
+vertex  17   12.00000    9.00000    0.00000   vertex  92    3.10500    6.60500    0.00500
+vertex  18   12.00000    9.00000    0.90000   vertex  93    3.10500    6.21500    0.00500
+vertex  19   12.00000    8.00000    0.90000   vertex  94    3.10500    6.21500    1.24500
+vertex  20   12.00000    8.00000    0.50000   vertex  95    3.10500    6.60500    1.24500
+vertex  21   12.00000    7.00000    0.50000   vertex  96    4.29500    6.60500    0.00500
+vertex  22   12.00000    7.00000    0.90000   vertex  97    4.29500    6.21500    0.00500
+vertex  23   12.00000    9.00000    3.00000   vertex  98    4.29500    6.21500    1.24500
+vertex  24   12.00000    6.10000    1.00000   vertex  99    4.29500    6.60500    1.24500
+vertex  25   12.00000    6.10000    2.90000   vertex 100    3.11500    6.21500    0.00500
+vertex  26   12.00000    8.90000    2.90000   vertex 101    4.28500    6.21500    0.00500
+vertex  27   12.00000    8.90000    1.00000   vertex 102    4.28500    6.21500    1.24500
+vertex  28   12.00000   11.00000    0.90000   vertex 103    3.11500    6.21500    1.24500
+vertex  29   12.00000   11.00000    0.50000   vertex 104    4.35500    6.60500    0.00500
+vertex  30   12.00000   10.00000    0.50000   vertex 105    4.35500    6.21500    0.00500
+vertex  31   12.00000   10.00000    0.90000   vertex 106    4.35500    6.21500    1.24500
+vertex  32   12.00000    9.10000    1.00000   vertex 107    4.35500    6.60500    1.24500
+vertex  33   12.00000    9.10000    2.90000   vertex 108    5.54500    6.60500    0.00500
+vertex  34   12.00000   11.90000    2.90000   vertex 109    5.54500    6.21500    0.00500
+vertex  35   12.00000   11.90000    1.00000   vertex 110    5.54500    6.21500    1.24500
+vertex  36    9.29000   11.29000    0.22000   vertex 111    5.54500    6.60500    1.24500
+vertex  37   10.39000   11.29000    0.22000   vertex 112    4.36500    6.21500    0.00500
+vertex  38   10.39000   12.03000    0.22000   vertex 113    5.53500    6.21500    0.00500
+vertex  39    9.29000   12.03000    0.22000   vertex 114    5.53500    6.21500    1.24500
+vertex  40    9.22000   11.22000    0.21500   vertex 115    4.36500    6.21500    1.24500
+vertex  41    9.22000   11.94000    0.21500   vertex 116    5.60500    6.60500    0.00500
+vertex  42    9.22000   11.94000    0.66500   vertex 117    5.60500    6.21500    0.00500
+vertex  43    9.22000   11.22000    0.66500   vertex 118    5.60500    6.21500    1.24500
+vertex  44   10.34000   11.22000    0.21500   vertex 119    5.60500    6.60500    1.24500
+vertex  45   10.34000   11.94000    0.21500   vertex 120    6.79500    6.60500    0.00500
+vertex  46   10.34000   11.94000    0.66500   vertex 121    6.79500    6.21500    0.00500
+vertex  47   10.34000   11.22000    0.66500   vertex 122    6.79500    6.21500    1.24500
+vertex  48   10.59000   11.29000    0.22000   vertex 123    6.79500    6.60500    1.24500
+vertex  49   11.69000   11.29000    0.22000   vertex 124    5.61500    6.21500    0.00500
+vertex  50   11.69000   12.03000    0.22000   vertex 125    6.78500    6.21500    0.00500
+vertex  51   10.59000   12.03000    0.22000   vertex 126    6.78500    6.21500    1.24500
+vertex  52   10.52000   11.22000    0.21500   vertex 127    5.61500    6.21500    1.24500
+vertex  53   10.52000   11.94000    0.21500   vertex 128    3.10500   13.40500    0.00500
+vertex  54   10.52000   11.94000    0.66500   vertex 129    3.10500   13.01500    0.00500
+vertex  55   10.52000   11.22000    0.66500   vertex 130    3.10500   13.01500    1.24500
+vertex  56   11.64000   11.22000    0.21500   vertex 131    3.10500   13.40500    1.24500
+vertex  57   11.64000   11.94000    0.21500   vertex 132    4.29500   13.40500    0.00500
+vertex  58   11.64000   11.94000    0.66500   vertex 133    4.29500   13.01500    0.00500
+vertex  59   11.64000   11.22000    0.66500   vertex 134    4.29500   13.01500    1.24500
+vertex  60   10.00500   10.59500    0.32500   vertex 135    4.29500   13.40500    1.24500
+vertex  61   10.00500   10.09500    0.32500   vertex 136    3.11500   13.01500    0.00500
+vertex  62   11.03500   10.09500    0.32500   vertex 137    4.28500   13.01500    0.00500
+vertex  63   11.03500   10.59500    0.32500   vertex 138    4.28500   13.01500    1.24500
+vertex  64   10.11500   10.50500    0.10500   vertex 139    3.11500   13.01500    1.24500
+vertex  65   10.11500   10.17500    0.10500   vertex 140    4.35500   13.40500    0.00500
+vertex  66   10.93500   10.17500    0.10500   vertex 141    4.35500   13.01500    0.00500
+vertex  67   10.93500   10.50500    0.10500   vertex 142    4.35500   13.01500    1.24500
+vertex  68    9.20500    6.10500    0.69500   vertex 143    4.35500   13.40500    1.24500
+vertex  69    9.79500    6.10500    0.69500   vertex 144    5.54500   13.40500    0.00500
+vertex  70    9.79500    8.09500    0.69500   vertex 145    5.54500   13.01500    0.00500
+vertex  71    9.20500    8.09500    0.69500   vertex 146    5.54500   13.01500    1.24500
+vertex  72    9.80500    6.79500    0.69500   vertex 147    5.54500   13.40500    1.24500
+vertex  73    9.80500    6.20500    0.69500   vertex 148    4.36500   13.01500    0.00500
+vertex  74   11.79500    6.20500    0.69500   vertex 149    5.53500   13.01500    0.00500
+vertex  75   11.79500    6.79500    0.69500   vertex 150    5.53500   13.01500    1.24500
+                                              vertex 151    4.36500   13.01500    1.24500
+ Number of vertices followed by list, name & perimeter length
+*edges,4,8,1,2,11   pt_core_a  21.000m perimeter
+*edges,4,1,3,4,2   fict_rec  18.000m perimeter
+*edges,5,3,5,7,6,4   pt_rec_a  12.000m perimeter
+*edges,4,9,8,11,10   pt_recp_a  12.000m perimeter
+*edges,4,12,9,10,13   fict_open  12.708m perimeter
+*edges,5,14,12,13,16,15   pt_recp_b  12.000m perimeter
+*edges,8,5,17,18,19,20,21,22,7   spandral   8.600m perimeter
+*edges,4,21,20,19,22   vent   2.800m perimeter
+*edges,12,7,22,19,18,23,6,7,24,25,26,27,24   frame  19.883m perimeter
+*edges,4,24,27,26,25   glazing   9.400m perimeter
+*edges,8,17,14,15,28,29,30,31,18   spandral_a   8.600m perimeter
+*edges,4,30,29,28,31   vent_a   2.800m perimeter
+*edges,12,18,31,28,15,16,23,18,32,33,34,35,32   frame_a  19.883m perimeter
+*edges,4,32,35,34,33   glazing_a   9.400m perimeter
+*edges,8,2,4,6,23,16,13,10,11   ceiling  31.854m perimeter
+*edges,8,5,3,1,8,9,12,14,17   floor  31.854m perimeter
+*edges,4,36,37,38,39   aseat_mass   3.680m perimeter
+*edges,4,37,36,39,38   aseat_mass_   3.680m perimeter
+*edges,4,40,41,42,43   aarm_mass_l   2.340m perimeter
+*edges,4,41,40,43,42   aarm_mass_l_   2.340m perimeter
+*edges,4,44,45,46,47   aarm_mass_r   2.340m perimeter
+*edges,4,45,44,47,46   aarm_mass_r_   2.340m perimeter
+*edges,4,48,49,50,51   bseat_mass   3.680m perimeter
+*edges,4,49,48,51,50   bseat_mass_   3.680m perimeter
+*edges,4,52,53,54,55   barm_mass_l   2.340m perimeter
+*edges,4,53,52,55,54   barm_mass_l_   2.340m perimeter
+*edges,4,56,57,58,59   barm_mass_r   2.340m perimeter
+*edges,4,57,56,59,58   barm_mass_r_   2.340m perimeter
+*edges,4,60,61,62,63   at_top   3.060m perimeter
+*edges,4,61,60,63,62   at_top_   3.060m perimeter
+*edges,4,64,65,66,67   act_shelf   2.300m perimeter
+*edges,4,65,64,67,66   act_shelf_   2.300m perimeter
+*edges,4,68,69,70,71   adesk_t   5.160m perimeter
+*edges,4,69,68,71,70   adesk_t_   5.160m perimeter
+*edges,4,72,73,74,75   bdesk_t   5.160m perimeter
+*edges,4,73,72,75,74   bdesk_t_   5.160m perimeter
+*edges,4,76,77,78,79   aseat   1.820m perimeter
+*edges,4,77,76,79,78   aseat_   1.820m perimeter
+*edges,4,80,81,82,83   astback   1.925m perimeter
+*edges,4,81,80,83,82   astback_   1.925m perimeter
+*edges,4,84,85,86,87   acase   1.600m perimeter
+*edges,4,85,84,87,86   acase_   1.600m perimeter
+*edges,4,88,89,90,91   acircuit   1.460m perimeter
+*edges,4,89,88,91,90   acircuit_   1.460m perimeter
+*edges,4,92,93,94,95   acab_lf   3.260m perimeter
+*edges,4,93,92,95,94   acab_lf_   3.260m perimeter
+*edges,4,96,97,98,99   acab_rt   3.260m perimeter
+*edges,4,97,96,99,98   acab_rt_   3.260m perimeter
+*edges,4,100,101,102,103   acab_fr   4.820m perimeter
+*edges,4,101,100,103,102   acab_fr_   4.820m perimeter
+*edges,4,104,105,106,107   bcab_lf   3.260m perimeter
+*edges,4,105,104,107,106   bcab_lf_   3.260m perimeter
+*edges,4,108,109,110,111   bcab_rt   3.260m perimeter
+*edges,4,109,108,111,110   bcab_rt_   3.260m perimeter
+*edges,4,112,113,114,115   bcab_fr   4.820m perimeter
+*edges,4,113,112,115,114   bcab_fr_   4.820m perimeter
+*edges,4,116,117,118,119   ccab_lf   3.260m perimeter
+*edges,4,117,116,119,118   ccab_lf_   3.260m perimeter
+*edges,4,120,121,122,123   ccab_rt   3.260m perimeter
+*edges,4,121,120,123,122   ccab_rt_   3.260m perimeter
+*edges,4,124,125,126,127   ccab_fr   4.820m perimeter
+*edges,4,125,124,127,126   ccab_fr_   4.820m perimeter
+*edges,4,128,129,130,131   dcab_lf   3.260m perimeter
+*edges,4,129,128,131,130   dcab_lf_   3.260m perimeter
+*edges,4,132,133,134,135   dcab_rt   3.260m perimeter
+*edges,4,133,132,135,134   dcab_rt_   3.260m perimeter
+*edges,4,136,137,138,139   dcab_fr   4.820m perimeter
+*edges,4,137,136,139,138   dcab_fr_   4.820m perimeter
+*edges,4,140,141,142,143   ecab_lf   3.260m perimeter
+*edges,4,141,140,143,142   ecab_lf_   3.260m perimeter
+*edges,4,144,145,146,147   ecab_rt   3.260m perimeter
+*edges,4,145,144,147,146   ecab_rt_   3.260m perimeter
+*edges,4,148,149,150,151   ecab_fr   4.820m perimeter
+*edges,4,149,148,151,150   ecab_fr_   4.820m perimeter
+ 
+ An hourly solar radiation distribution is used for this zone.
+ Surfaces (all applicable) for shading analysis:
+spandral vent frame glazing spandral_a vent_a frame_a glazing_a
+ Insolation sources (all applicable):
+glazing glazing_a
+ 
+ 
+ Explicit viewfactors have been derived for this zone.
+Block X- Y- Z- coords DX- DY- DZ- values Orient Opacity
+  1    12.1     6.0     3.1     6.0     0.0     0.3    90.0     0.0 1.00 eob1 NONE
+  2    12.3     6.0     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob2 NONE
+  3    12.5     6.0     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob3 NONE
+  4    12.7     6.0     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob4 NONE
+  5    12.9     6.0     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob5 NONE
+  6    13.1     6.0     3.1     6.0     0.0     0.2    90.0     0.0 1.00 eob6 NONE
+ 
+visual type name    composition
+ vis 1rot  aarm_l upholstery
+ vis 1rot  aarm_r upholstery
+ vis 1rot  aleg_a steel_gr_3mm
+ vis 1rot  aleg_b steel_gr_3mm
+ vis 1rot  aleg_c steel_gr_3mm
+ vis 1rot  aleg_d steel_gr_3mm
+ vis poly  aback upholstery
+ vis poly  aseat upholstery
+ vis 1rot  barm_l upholstery
+ vis 1rot  barm_r upholstery
+ vis 1rot  bleg_a steel_gr_3mm
+ vis 1rot  bleg_b steel_gr_3mm
+ vis 1rot  bleg_c steel_gr_3mm
+ vis 1rot  bleg_d steel_gr_3mm
+ vis poly  bback upholstery
+ vis poly  bseat upholstery
+ vis 1rot  atbl_top shelves_20mm
+ vis 1rot  atbl_shelf furn_wd10mm
+ vis 1rot  aleg_a shelves_20mm
+ vis 1rot  aleg_b shelves_20mm
+ vis 1rot  aleg_c shelves_20mm
+ vis 1rot  aleg_d shelves_20mm
+ vis 1rot  adesk_top door
+ vis 1rot  adesk_leg_a steel_pl_3mm
+ vis 1rot  adesk_leg_b steel_pl_3mm
+ vis 1rot  adesk_leg_c steel_pl_3mm
+ vis 1rot  adesk_leg_d steel_pl_3mm
+ vis 1rot  bdesk_top door
+ vis 1rot  bdesk_leg_a steel_pl_3mm
+ vis 1rot  bdesk_leg_b steel_pl_3mm
+ vis 1rot  bdesk_leg_c steel_pl_3mm
+ vis 1rot  bdesk_leg_d steel_pl_3mm
+ vis 1rot  aseat upholstery
+ vis 1rot  ar_arm upholstery
+ vis 1rot  al_arm upholstery
+ vis poly  aseat_bk upholstery
+ vis 1rot  across_a steel_gr_3mm
+ vis 1rot  across_b steel_gr_3mm
+ vis 1rot  apost PH_alu_frame
+ vis 1rot  ar_arm_rest steel_gr_3mm
+ vis 1rot  al_arm_rest steel_gr_3mm
+ vis 1rot  aroller_a sensor_case
+ vis 1rot  aroller_b sensor_case
+ vis 1rot  aroller_c sensor_case
+ vis 1rot  aroller_d sensor_case
+ vis 1rot  adbase IT_case
+ vis 1rot  adstand steel_pl_3mm
+ vis 1rot  adlow_edge IT_case
+ vis 1rot  adup_edge IT_case
+ vis 1rot  adlft_edge IT_case
+ vis 1rot  adrt_edge IT_case
+ vis 1rot  adscreen collector_pl
+ vis 1rot  af_cabinet steel_pl_3mm
+ vis 1rot  adrw_a steel_gr_3mm
+ vis 1rot  adrw_b steel_gr_3mm
+ vis 1rot  adrw_c steel_gr_3mm
+ vis 1rot  adrw_d steel_gr_3mm
+ vis 1rot  adrw_e steel_gr_3mm
+ vis 1rot  adrw_f steel_gr_3mm
+ vis 1rot  adrw_g steel_gr_3mm
+ vis 1rot  adrw_h steel_gr_3mm
+ vis 1rot  adrw_i steel_gr_3mm
+ vis 1rot  adrw_j steel_gr_3mm
+ vis 1rot  adrw_k steel_gr_3mm
+ vis 1rot  adrw_l steel_gr_3mm
+ vis 1rot  bf_cabinet steel_pl_3mm
+ vis 1rot  bdrw_a steel_gr_3mm
+ vis 1rot  bdrw_b steel_gr_3mm
+ vis 1rot  bdrw_c steel_gr_3mm
+ vis 1rot  bdrw_d steel_gr_3mm
+ vis 1rot  bdrw_e steel_gr_3mm
+ vis 1rot  bdrw_f steel_gr_3mm
+ vis 1rot  bdrw_g steel_gr_3mm
+ vis 1rot  bdrw_h steel_gr_3mm
+ vis 1rot  bdrw_i steel_gr_3mm
+ vis 1rot  bdrw_j steel_gr_3mm
+ vis 1rot  bdrw_k steel_gr_3mm
+ vis 1rot  bdrw_l steel_gr_3mm
+ vis 1rot  cf_cabinet steel_pl_3mm
+ vis 1rot  cdrw_a steel_gr_3mm
+ vis 1rot  cdrw_b steel_gr_3mm
+ vis 1rot  cdrw_c steel_gr_3mm
+ vis 1rot  cdrw_d steel_gr_3mm
+ vis 1rot  cdrw_e steel_gr_3mm
+ vis 1rot  cdrw_f steel_gr_3mm
+ vis 1rot  cdrw_g steel_gr_3mm
+ vis 1rot  cdrw_h steel_gr_3mm
+ vis 1rot  cdrw_i steel_gr_3mm
+ vis 1rot  cdrw_j steel_gr_3mm
+ vis 1rot  cdrw_k steel_gr_3mm
+ vis 1rot  cdrw_l steel_gr_3mm
+ vis 1rot  df_cabinet steel_pl_3mm
+ vis 1rot  ddrw_a steel_gr_3mm
+ vis 1rot  ddrw_b steel_gr_3mm
+ vis 1rot  ddrw_c steel_gr_3mm
+ vis 1rot  ddrw_d steel_gr_3mm
+ vis 1rot  ddrw_e steel_gr_3mm
+ vis 1rot  ddrw_f steel_gr_3mm
+ vis 1rot  ddrw_g steel_gr_3mm
+ vis 1rot  ddrw_h steel_gr_3mm
+ vis 1rot  ddrw_i steel_gr_3mm
+ vis 1rot  ddrw_j steel_gr_3mm
+ vis 1rot  ddrw_k steel_gr_3mm
+ vis 1rot  ddrw_l steel_gr_3mm
+ vis 1rot  ef_cabinet steel_pl_3mm
+ vis 1rot  edrw_a steel_gr_3mm
+ vis 1rot  edrw_b steel_gr_3mm
+ vis 1rot  edrw_c steel_gr_3mm
+ vis 1rot  edrw_d steel_gr_3mm
+ vis 1rot  edrw_e steel_gr_3mm
+ vis 1rot  edrw_f steel_gr_3mm
+ vis 1rot  edrw_g steel_gr_3mm
+ vis 1rot  edrw_h steel_gr_3mm
+ vis 1rot  edrw_i steel_gr_3mm
+ vis 1rot  edrw_j steel_gr_3mm
+ vis 1rot  edrw_k steel_gr_3mm
+ vis 1rot  edrw_l steel_gr_3mm
+ 
+ Shading patterns have been calculated for this zone.
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: reception
+ 
+Notes:
+2 people most hours, 8Wm2 lights  5Wm2 small power weekdays, no gains
+on weekends, 0.33 ach infil all days all hours.
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekday     1 Occupt     people    W    0- 9      0.0      0.0       0.50       0.50
+weekday     2 Occupt     people    W    9-18    200.0    100.0       0.50       0.50
+weekday     3 Occupt     people    W   18-24      0.0      0.0       0.50       0.50
+weekday     4 Lights     lighting  Wm2  0- 8      0.0      0.0       0.50       0.50
+weekday     5 Lights     lighting  Wm2  8-18      8.0      0.0       0.50       0.50
+weekday     6 Lights     lighting  Wm2 18-24      0.0      0.0       0.50       0.50
+weekday     7 Equipt     equipment Wm2  0- 8      0.0      0.0       0.50       0.50
+weekday     8 Equipt     equipment Wm2  8-18      5.0      0.0       0.50       0.50
+weekday     9 Equipt     equipment Wm2 18-24      0.0      0.0       0.50       0.50
+ 
+ ____________________________________________________________
+ 
+ Zone ceil_void ( 5) is composed of 11 surfaces and 33 vertices.
+ It encloses a volume of 90.0m^3 of space, with a total surface
+ area of 390.m^2 & approx floor area of 180.m^2
+ ceil_void is a 0.5m ceiling void over offices
+ There is 19.500m2 of exposed surface area, 19.500m2 of which is vertical.
+ Facade opaque is 19.500m2 & 10.833 % of floor area & average U of 0.214 & UA of 4.1720
+ Opaque partitions:ceiling:floor 181.50m2 & trasparent partitions:ceiling:floor 0.00m2.
+ 
+ A summary of the surfaces in ceil_void( 5) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  13.5      0. -90. Surf-6       OPAQUE   FLOR -        -        ceiling_rev ||< ceiling:manager
+  2  58.5      0. -90. ceiling      OPAQUE   FLOR -        -        ceiling_rev ||< ceiling:general
+  3  47.3      0. -90. ceil_conff   OPAQUE   FLOR -        -        ceiling_rev ||< ceiling:conference
+  4  60.8      0. -90. ceil_rec     OPAQUE   FLOR -        -        ceiling_rev ||< ceiling:reception
+  5  180.      0.  90. structure    OPAQUE   CEIL -        -        conc_250 ||< identical environment
+  6  6.00    180.   0. south_edge   OPAQUE   VERT -        -        extern_wall ||< external
+  7  9.00     90.   0. east_edge    OPAQUE   VERT -        -        extern_wall ||< external
+  8  4.50      0.   0. north_edge   OPAQUE   VERT -        -        extern_wall ||< external
+  9  6.00    270.   0. core_b       OPAQUE   VERT -        -        gyp_blk_ptn ||< identical environment
+ 10  1.50      0.   0. core_a       OPAQUE   VERT -        -        gyp_blk_ptn ||< Surf-1:mixing_box
+ 11  3.00    270.   0. core_c       OPAQUE   VERT -        -        gyp_blk_ptn ||< identical environment
+ 
+ Vertices ( index X Y Z) in the zone...
+vertex   1    0.00000    0.00000    3.00000   vertex  17   12.00000   15.00000    3.00000
+vertex   2    3.00000    0.00000    3.00000   vertex  18   12.00000   18.00000    3.00000
+vertex   3    3.00000    4.50000    3.00000   vertex  19    9.00000   18.00000    3.00000
+vertex   4    1.00000    4.50000    3.00000   vertex  20    6.00000   18.00000    3.00000
+vertex   5    0.00000    4.50000    3.00000   vertex  21    3.00000   18.00000    3.00000
+vertex   6    6.00000    0.00000    3.00000   vertex  22    3.00000   13.50000    3.00000
+vertex   7    9.00000    0.00000    3.00000   vertex  23   12.00000    9.00000    3.00000
+vertex   8   12.00000    0.00000    3.00000   vertex  24    0.00000    0.00000    3.50000
+vertex   9   12.00000    3.00000    3.00000   vertex  25    3.00000    0.00000    3.50000
+vertex  10   12.00000    6.00000    3.00000   vertex  26   12.00000    0.00000    3.50000
+vertex  11    9.00000    6.00000    3.00000   vertex  27   12.00000    6.00000    3.50000
+vertex  12    3.00000    6.00000    3.00000   vertex  28   12.00000   12.00000    3.50000
+vertex  13    0.00000    6.00000    3.00000   vertex  29   12.00000   18.00000    3.50000
+vertex  14    6.00000   13.50000    3.00000   vertex  30    3.00000   18.00000    3.50000
+vertex  15    9.00000   12.00000    3.00000   vertex  31    3.00000   13.50000    3.50000
+vertex  16   12.00000   12.00000    3.00000   vertex  32    3.00000    6.00000    3.50000
+                                              vertex  33    0.00000    6.00000    3.50000
+ Number of vertices followed by list, name & perimeter length
+*edges,5,2,1,5,4,3   Surf-6  15.000m perimeter
+*edges,12,4,5,13,12,11,10,9,8,7,6,2,3   ceiling  36.000m perimeter
+*edges,9,15,14,22,21,20,19,18,17,16   ceil_conff  28.854m perimeter
+*edges,8,11,12,22,14,15,16,23,10   ceil_rec  31.854m perimeter
+*edges,10,24,25,26,27,28,29,30,31,32,33   structure  60.000m perimeter
+*edges,8,1,2,6,7,8,26,25,24   south_edge  25.000m perimeter
+*edges,11,8,9,10,23,16,17,18,29,28,27,26   east_edge  37.000m perimeter
+*edges,6,18,19,20,21,30,29   north_edge  19.000m perimeter
+*edges,6,21,22,12,32,31,30   core_b  25.000m perimeter
+*edges,4,12,13,33,32   core_a   7.000m perimeter
+*edges,5,13,5,1,24,33   core_c  13.000m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ Explicit viewfactors have been derived for this zone.
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: ceil_void
+ 
+Notes:
+the ceiling void has 0.33 ach infil and no casual gains.
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+ 
+ ____________________________________________________________
+ 
+ Zone mixing_box ( 6) is composed of 6 surfaces and 8 vertices.
+ It encloses a volume of 9.00m^3 of space, with a total surface
+ area of 45.0m^2 & approx floor area of 18.0m^2
+ mixing_box is a zonal representation of ahu
+ Opaque partitions:ceiling:floor 1.5000m2 & trasparent partitions:ceiling:floor 0.00m2.
+ 
+ A summary of the surfaces in mixing_box( 6) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  1.50    180.   0. Surf-1       OPAQUE   VERT -        -        gyp_blk_ptn ||< core_a:ceil_void
+  2  3.00     90.   0. Surf-2       OPAQUE   VERT -        -        gyp_blk_ptn ||< adiabatic
+  3  1.50      0.   0. Surf-3       OPAQUE   VERT -        -        gyp_blk_ptn ||< adiabatic
+  4  3.00    270.   0. Surf-4       OPAQUE   VERT -        -        gyp_blk_ptn ||< adiabatic
+  5  18.0      0.  90. Surf-5       OPAQUE   CEIL -        -        gyp_blk_ptn ||< adiabatic
+  6  18.0      0. -90. Surf-6       OPAQUE   FLOR -        -        gyp_blk_ptn ||< adiabatic
+ 
+ Vertices ( index X Y Z) in the zone...
+*vertex   1     0.00000     6.00000     3.00000
+*vertex   2     3.00000     6.00000     3.00000
+*vertex   3     3.00000    12.00000     3.00000
+*vertex   4     0.00000    12.00000     3.00000
+*vertex   5     0.00000     6.00000     3.50000
+*vertex   6     3.00000     6.00000     3.50000
+*vertex   7     3.00000    12.00000     3.50000
+*vertex   8     0.00000    12.00000     3.50000
+ Number of vertices followed by list, name & perimeter length
+*edges,4,1,2,6,5   Surf-1   7.000m perimeter
+*edges,4,2,3,7,6   Surf-2  13.000m perimeter
+*edges,4,3,4,8,7   Surf-3   7.000m perimeter
+*edges,4,4,1,5,8   Surf-4  13.000m perimeter
+*edges,4,5,6,7,8   Surf-5  18.000m perimeter
+*edges,4,1,4,3,2   Surf-6  18.000m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: mixing_box
+ 
+Notes:
+nothing happens in the mixing box
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+ 
+ ____________________________________________________________
+ 
+ Zone floor_void ( 7) is composed of 11 surfaces and 34 vertices.
+ It encloses a volume of 36.0m^3 of space, with a total surface
+ area of 372.m^2 & approx floor area of 180.m^2
+ floor_void is a 200mm floor void
+ There is 7.8000m2 of exposed surface area, 7.8000m2 of which is vertical.
+ Facade opaque is 7.8000m2 & 4.3333 % of floor area & average U of 0.214 & UA of 1.6688
+ Opaque partitions:ceiling:floor 360.00m2 & trasparent partitions:ceiling:floor 0.00m2.
+ 
+ A summary of the surfaces in floor_void( 7) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  13.5      0.  90. man_floor    OPAQUE   CEIL -        -        top_pln ||< floor:manager
+  2  58.5      0.  90. gen_floor    OPAQUE   CEIL -        -        top_pln ||< floor:general
+  3  47.3      0.  90. conf_floor   OPAQUE   CEIL -        -        top_pln ||< floor:conference
+  4  60.8      0.  90. recep_floor  OPAQUE   CEIL -        -        top_pln ||< floor:reception
+  5  2.40    180.   0. front        OPAQUE   VERT -        -        extern_wall ||< external
+  6  3.60     90.   0. right        OPAQUE   VERT -        -        extern_wall ||< external
+  7  1.80      0.   0. back         OPAQUE   VERT -        -        extern_wall ||< external
+  8  2.40    270.   0. left_a       OPAQUE   VERT -        -        gyp_gyp_ptn ||< identical environment
+  9  0.600     0.   0. back_a       OPAQUE   VERT -        -        gyp_gyp_ptn ||< identical environment
+ 10  1.20    270.   0. left_b       OPAQUE   VERT -        -        gyp_gyp_ptn ||< identical environment
+ 11  180.      0. -90. Base         OPAQUE   FLOR -        -        conc_250 ||< structure:ceiling_belo
+ 
+ Vertices ( index X Y Z) in the zone...
+vertex   1    0.00000    0.00000    0.00000   vertex  18   12.00000   18.00000    0.00000
+vertex   2    0.00000    4.50000    0.00000   vertex  19   12.00000   15.00000    0.00000
+vertex   3    1.00000    4.50000    0.00000   vertex  20   12.00000   12.00000    0.00000
+vertex   4    3.00000    4.50000    0.00000   vertex  21    9.00000   12.00000    0.00000
+vertex   5    3.00000    0.00000    0.00000   vertex  22    6.00000   13.50000    0.00000
+vertex   6    0.00000    6.00000    0.00000   vertex  23   12.00000    9.00000    0.00000
+vertex   7    3.00000    6.00000    0.00000   vertex  24    0.00000    0.00000   -0.20000
+vertex   8    9.00000    6.00000    0.00000   vertex  25    3.00000    0.00000   -0.20000
+vertex   9   12.00000    6.00000    0.00000   vertex  26   12.00000    0.00000   -0.20000
+vertex  10   12.00000    3.00000    0.00000   vertex  27   12.00000    6.00000   -0.20000
+vertex  11   12.00000    0.00000    0.00000   vertex  28   12.00000   12.00000   -0.20000
+vertex  12    9.00000    0.00000    0.00000   vertex  29   12.00000   18.00000   -0.20000
+vertex  13    6.00000    0.00000    0.00000   vertex  30    3.00000   18.00000   -0.20000
+vertex  14    3.00000   13.50000    0.00000   vertex  31    3.00000   13.50000   -0.20000
+vertex  15    3.00000   18.00000    0.00000   vertex  32    3.00000    6.00000   -0.20000
+vertex  16    6.00000   18.00000    0.00000   vertex  33    0.00000    6.00000   -0.20000
+vertex  17    9.00000   18.00000    0.00000   vertex  34    0.00000    4.50000   -0.20000
+ Number of vertices followed by list, name & perimeter length
+*edges,5,2,1,5,4,3   man_floor  15.000m perimeter
+*edges,12,6,2,3,4,5,13,12,11,10,9,8,7   gen_floor  36.000m perimeter
+*edges,9,15,14,22,21,20,19,18,17,16   conf_floor  28.854m perimeter
+*edges,8,8,9,23,20,21,22,14,7   recep_floor  31.854m perimeter
+*edges,8,25,26,11,12,13,5,1,24   front  24.400m perimeter
+*edges,11,28,29,18,19,20,23,9,10,11,26,27   right  36.400m perimeter
+*edges,6,29,30,15,16,17,18   back  18.400m perimeter
+*edges,6,31,32,7,14,15,30   left_a  24.400m perimeter
+*edges,4,32,33,6,7   back_a   6.400m perimeter
+*edges,6,34,24,1,2,6,33   left_b  12.400m perimeter
+*edges,11,26,25,24,34,33,32,31,30,29,28,27   Base  60.000m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ Explicit viewfactors have been derived for this zone.
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: floor_void
+ 
+Notes:
+Nothing happens in this zone in terms of occupants lights and small
+power. Initial period of 0-24 hour for each.
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekday     1 Occupants  people    W    0-24      0.0      0.0       0.60       0.40
+weekday     2 Lights     lighting  W    0-24      0.0      0.0       0.30       0.70
+weekday     3 SmallPower equipment W    0-24      0.0      0.0       0.40       0.60
+saturday    1 Occupants  people    W    0-24      0.0      0.0       0.60       0.40
+saturday    2 Lights     lighting  W    0-24      0.0      0.0       0.30       0.70
+saturday    3 SmallPower equipment W    0-24      0.0      0.0       0.40       0.60
+sunday      1 Occupants  people    W    0-24      0.0      0.0       0.60       0.40
+sunday      2 Lights     lighting  W    0-24      0.0      0.0       0.30       0.70
+sunday      3 SmallPower equipment W    0-24      0.0      0.0       0.40       0.60
+ 
+ ____________________________________________________________
+ 
+ Zone ceiling_belo ( 8) is composed of 8 surfaces and 22 vertices.
+ It encloses a volume of 36.0m^3 of space, with a total surface
+ area of 372.m^2 & approx floor area of 180.m^2
+ ceil_below is ceiling below floor void as boundary condition
+ There is 7.8000m2 of exposed surface area, 7.8000m2 of which is vertical.
+ Facade opaque is 7.8000m2 & 4.3333 % of floor area & average U of 0.214 & UA of 1.6688
+ Opaque partitions:ceiling:floor 180.00m2 & trasparent partitions:ceiling:floor 0.00m2.
+ 
+ A summary of the surfaces in ceiling_belo( 8) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
+  1  180.      0.  90. structure    OPAQUE   CEIL -        -        conc_250 ||< Base:floor_void
+  2  2.40    180.   0. front        OPAQUE   VERT -        -        extern_wall ||< external
+  3  3.60     90.   0. right        OPAQUE   VERT -        -        extern_wall ||< external
+  4  1.80      0.   0. back         OPAQUE   VERT -        -        extern_wall ||< external
+  5  2.40    270.   0. left_a       OPAQUE   VERT -        -        gyp_gyp_ptn ||< identical environment
+  6  0.600     0.   0. back_a       OPAQUE   VERT -        -        gyp_gyp_ptn ||< identical environment
+  7  1.20    270.   0. left_b       OPAQUE   VERT -        -        gyp_gyp_ptn ||< identical environment
+  8  180.      0. -90. Base         OPAQUE   FLOR -        -        ceiling_rev ||< identical environment
+ 
+ Vertices ( index X Y Z) in the zone...
+vertex   1    0.00000    0.00000   -0.20000   vertex  12    0.00000    0.00000   -0.40000
+vertex   2    0.00000    4.50000   -0.20000   vertex  13    3.00000    0.00000   -0.40000
+vertex   3    3.00000    0.00000   -0.20000   vertex  14   12.00000    0.00000   -0.40000
+vertex   4    0.00000    6.00000   -0.20000   vertex  15   12.00000    6.00000   -0.40000
+vertex   5    3.00000    6.00000   -0.20000   vertex  16   12.00000   12.00000   -0.40000
+vertex   6   12.00000    6.00000   -0.20000   vertex  17   12.00000   18.00000   -0.40000
+vertex   7   12.00000    0.00000   -0.20000   vertex  18    3.00000   18.00000   -0.40000
+vertex   8    3.00000   13.50000   -0.20000   vertex  19    3.00000   13.50000   -0.40000
+vertex   9    3.00000   18.00000   -0.20000   vertex  20    3.00000    6.00000   -0.40000
+vertex  10   12.00000   18.00000   -0.20000   vertex  21    0.00000    6.00000   -0.40000
+vertex  11   12.00000   12.00000   -0.20000   vertex  22    0.00000    4.50000   -0.40000
+ Number of vertices followed by list, name & perimeter length
+*edges,11,2,1,3,7,6,11,10,9,8,5,4   structure  60.000m perimeter
+*edges,6,13,14,7,3,1,12   front  24.400m perimeter
+*edges,8,16,17,10,11,6,7,14,15   right  36.400m perimeter
+*edges,4,17,18,9,10   back  18.400m perimeter
+*edges,6,19,20,5,8,9,18   left_a  24.400m perimeter
+*edges,4,20,21,4,5   back_a   6.400m perimeter
+*edges,6,22,12,1,2,4,21   left_b  12.400m perimeter
+*edges,11,14,13,12,22,21,20,19,18,17,16,15   Base  60.000m perimeter
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ Explicit viewfactors have been derived for this zone.
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: ceil_below
+ 
+Notes:
+Nothing happens in this zone in terms of occupants lights and small
+power. Initial period of 0-24 hour for each.
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekday     1 Occupants  people    W    0-24      0.0      0.0       0.60       0.40
+weekday     2 Lights     lighting  W    0-24      0.0      0.0       0.30       0.70
+weekday     3 SmallPower equipment W    0-24      0.0      0.0       0.40       0.60
+saturday    1 Occupants  people    W    0-24      0.0      0.0       0.60       0.40
+saturday    2 Lights     lighting  W    0-24      0.0      0.0       0.30       0.70
+saturday    3 SmallPower equipment W    0-24      0.0      0.0       0.40       0.60
+sunday      1 Occupants  people    W    0-24      0.0      0.0       0.60       0.40
+sunday      2 Lights     lighting  W    0-24      0.0      0.0       0.30       0.70
+sunday      3 SmallPower equipment W    0-24      0.0      0.0       0.40       0.60
+ 
+ ____________________________________________________________
+ 
+ Project floor area is 738.00m2, wall area is 82.940m2, window area is 69.160m2.
+ Sloped roof area is 0.00m2, flat roof area is 0.00m2, skylight area is 0.00m2.
+ In contact with ground 0.00m2.
+ There is 152.10m2 of outside surface area, 152.10m2 of which is vertical.
+ 
+ Outside walls are 11.238 % of floor area & average U of 0.267 & UA of 22.174 & max MLC thickness 0.412
+ Glazing is 9.3713 % of floor & 45.470 % facade with average U of 2.811 & UA of 194.38
+ 
+ ____________________________________________________________
+ Multi-layer constructions used:
+ 
+ Details of opaque construction: extern_wall and overall thickness  0.412
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   100.0     0.960  2000.   650. 0.90 0.70    25.  0.10 200.0 Lt brown brick : Light brown brick (inorganic-porous)
+    2  150.0     0.040   250.   840. 0.90 0.30     4.  3.75  37.5 glasswool : Glasswool (generic) (non-hygroscopic)
+    3   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+    4  100.0     0.240   750.  1000. 0.90 0.65    10.  0.42  75.0 aerated conc block : Aerated concrete block (inorganic-porous)
+ Int    12.0     0.190   950.   840. 0.91 0.22    11.  0.06  11.4 white gypboard : White painted Gypboard (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.214  0.215  0.212 (partition)  0.210
+ Weight per m^2 of this construction 323.96
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.21
+ External surface admittance Y=  2.85  w=  2.24 decrement factor f=  0.74  phi=  0.99 surface factor f=  0.74  phi=  0.99
+ Partition admittance Y=  2.87  w=  2.19 surface factor f=  0.73  phi=  0.98
+ Total area of extern_wall is     65.00
+ 
+ Details of opaque construction: insul_frame and overall thickness  0.088
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     4.0   210.000  2700.   880. 0.82 0.72 19200.  0.00  10.8 grey cotd alum : Grey coated aluminium
+    2   80.0     0.040    12.   840. 0.90 0.65    30.  2.00   1.0 glass fibre quilt : Glass Fibre Quilt (non-hygroscopic)
+ Int     4.0   210.000  2700.   880. 0.82 0.72 19200.  0.00  10.8 grey cotd alum : Grey coated aluminium
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.461  0.467  0.452 (partition)  0.442
+ Weight per m^2 of this construction  22.56
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.46
+ External surface admittance Y=  0.81  w=  3.41 decrement factor f=  0.94  phi=  0.31 surface factor f=  0.94  phi=  0.31
+ Partition admittance Y=  0.70  w=  5.68 surface factor f=  1.00  phi=  0.32
+ Total area of insul_frame is     19.86
+ 
+ Details of opaque construction: door and overall thickness  0.025
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1   25.0     0.190   700.  2390. 0.90 0.65    12.  0.13  17.5 oak : Oak (radial cut)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  3.316  3.682  2.928 (partition)  2.554
+ Weight per m^2 of this construction  17.50
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  3.21
+ External surface admittance Y=  3.33  w=  0.61 decrement factor f=  0.61  phi=  0.40 surface factor f=  0.61  phi=  0.40
+ Partition admittance Y=  1.21  w=  5.38 surface factor f=  0.99  phi=  0.56
+ Total area of door is     50.84
+ 
+ Details of transparent construction: fict with SC_fictit optics and overall thickness  0.006
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1    6.0    20.000    10.    10. 0.99 0.01 19200.  0.00   0.1 fict : fictitious material (almost not there) with matching single layer optics
+ ISO 6946 U values (horiz/upward/downward heat flow)=  5.872  7.128  4.755 (partition)  3.842
+ Weight per m^2 of this construction   0.06
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  5.55
+ External surface admittance Y=  5.55  w=  0.00 decrement factor f=  0.33  phi=  0.00 surface factor f=  0.33  phi=  0.00
+ Partition admittance Y=  0.00  w=  6.00 surface factor f=  1.00  phi=  0.00
+ 
+ Fictitious 99/99,      4mm, no blind: with id of: SC_fictit
+ with 1 layers [including air gaps] and visible trn: 0.99
+ Direct transmission @ 0, 40, 55, 70, 80 deg
+   0.998 0.987 0.986 0.985 0.984
+ Layer| absorption @ 0, 40, 55, 70, 80 deg
+    1  0.001 0.001 0.001 0.001 0.001
+ Total area of fict is     56.12
+ 
+ Details of transparent construction: dbl_glz with DCF7671_06nb optics and overall thickness  0.024
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     6.0     0.760  2710.   837. 0.83 0.05 19200.  0.01  16.3 plate glass : Plate glass with placeholder single layer optics
+    2   12.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.0 air  0.17 0.17 0.17
+ Int     6.0     0.760  2710.   837. 0.83 0.05 19200.  0.01  16.3 plate glass : Plate glass with placeholder single layer optics
+ ISO 6946 U values (horiz/upward/downward heat flow)=  2.811  3.069  2.527 (partition)  2.243
+ Weight per m^2 of this construction  32.53
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.73
+ External surface admittance Y=  2.81  w=  0.63 decrement factor f=  0.67  phi=  0.31 surface factor f=  0.67  phi=  0.31
+ Partition admittance Y=  0.82  w=  5.64 surface factor f=  1.00  phi=  0.38
+ 
+ Clear float 76/71,     6mm, no blind: with id of: DCF7671_06nb
+ with 3 layers [including air gaps] and visible trn: 0.76
+ Direct transmission @ 0, 40, 55, 70, 80 deg
+   0.611 0.583 0.534 0.384 0.170
+ Layer| absorption @ 0, 40, 55, 70, 80 deg
+    1  0.157 0.172 0.185 0.201 0.202
+    2  0.001 0.002 0.003 0.004 0.005
+    3  0.117 0.124 0.127 0.112 0.077
+ Total area of dbl_glz is     79.24
+ 
+ Details of opaque construction: ceiling linked to ceiling_rev & with overall thickness  0.110
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   100.0     0.040   250.   840. 0.90 0.30     4.  2.50  25.0 glasswool : Glasswool (generic) (non-hygroscopic)
+ Int    10.0     0.030   290.  2000. 0.90 0.60     8.  0.33   2.9 ceiling mineral : Ceiling acoustic tile (mineral fibre based)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.333  0.336  0.329 (partition)  0.323
+ Weight per m^2 of this construction  27.90
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.33
+ External surface admittance Y=  0.82  w=  3.17 decrement factor f=  0.94  phi=  0.30 surface factor f=  0.94  phi=  0.30
+ Partition admittance Y=  0.92  w=  4.35 surface factor f=  0.96  phi=  0.40
+ Total area of ceiling is    180.00
+ 
+ Details of opaque construction: ceiling_rev linked to ceiling & with overall thickness  0.110
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    10.0     0.030   290.  2000. 0.90 0.60     8.  0.33   2.9 ceiling mineral : Ceiling acoustic tile (mineral fibre based)
+ Int   100.0     0.040   250.   840. 0.90 0.30     4.  2.50  25.0 glasswool : Glasswool (generic) (non-hygroscopic)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.333  0.336  0.329 (partition)  0.323
+ Weight per m^2 of this construction  27.90
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.33
+ External surface admittance Y=  0.68  w=  2.79 decrement factor f=  0.94  phi=  0.22 surface factor f=  0.94  phi=  0.22
+ Partition admittance Y=  0.75  w=  4.26 surface factor f=  0.96  phi=  0.32
+ Total area of ceiling_rev is    360.00
+ 
+ Details of opaque construction: gyp_blk_ptn and overall thickness  0.226
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    13.0     0.190   950.   840. 0.91 0.22    11.  0.07  12.4 white gypboard : White painted Gypboard (inorganic-porous)
+    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+    3  100.0     0.510  1400.  1000. 0.90 0.65    10.  0.20 140.0 block inner : Block inner (3% mc)
+    4   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+ Int    13.0     0.190   950.   840. 0.91 0.22    11.  0.07  12.4 white gypboard : White painted Gypboard (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  1.186  1.230  1.133 (partition)  1.072
+ Weight per m^2 of this construction 164.82
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.17
+ External surface admittance Y=  2.38  w=  1.44 decrement factor f=  0.74  phi=  0.54 surface factor f=  0.74  phi=  0.54
+ Partition admittance Y=  2.59  w=  2.21 surface factor f=  0.76  phi=  0.86
+ Total area of gyp_blk_ptn is     87.00
+ 
+ Details of opaque construction: gyp_gyp_ptn and overall thickness  0.074
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    12.0     0.190   950.   840. 0.91 0.22    11.  0.06  11.4 white gypboard : White painted Gypboard (inorganic-porous)
+    2   50.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.1 air  0.17 0.17 0.17
+ Int    12.0     0.190   950.   840. 0.91 0.22    11.  0.06  11.4 white gypboard : White painted Gypboard (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  2.144  2.292  1.975 (partition)  1.798
+ Weight per m^2 of this construction  22.86
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.10
+ External surface admittance Y=  2.15  w=  0.62 decrement factor f=  0.75  phi=  0.21 surface factor f=  0.75  phi=  0.21
+ Partition admittance Y=  0.61  w=  5.69 surface factor f=  1.00  phi=  0.28
+ Total area of gyp_gyp_ptn is    116.40
+ 
+ Details of opaque construction: top_pln linked to flr_ov_pln & with overall thickness  0.037
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     5.0     0.060   160.  2500. 0.90 0.85    10.  0.08   0.8 grey loop pile : Grey loop pile synthetic carpet (non-hygroscopic)
+    2    2.0    50.000  7800.   502. 0.12 0.20 19200.  0.00  15.6 steel : Steel
+    3   28.0     0.170  1000.  1300. 0.90 0.70    55.  0.16  28.0 HighDensityParticleBd : HDF based on info in Handbook of Heat Transfer by Thomas I
+ Int     2.0    50.000  7800.   502. 0.12 0.20 19200.  0.00  15.6 steel : Steel
+ ISO 6946 U values (horiz/upward/downward heat flow)=  2.392  2.577  2.183 (partition)  1.968
+ Weight per m^2 of this construction  60.00
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.34
+ External surface admittance Y=  2.82  w=  1.47 decrement factor f=  0.70  phi=  0.70 surface factor f=  0.70  phi=  0.70
+ Partition admittance Y=  1.96  w=  4.97 surface factor f=  0.96  phi=  0.90
+ Total area of top_pln is    180.00
+ 
+ Details of opaque construction: flr_ov_pln linked to top_pln & with overall thickness  0.037
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     2.0    50.000  7800.   502. 0.12 0.20 19200.  0.00  15.6 steel : Steel
+    2   28.0     0.170  1000.  1300. 0.90 0.70    55.  0.16  28.0 HighDensityParticleBd : HDF based on info in Handbook of Heat Transfer by Thomas I
+    3    2.0    50.000  7800.   502. 0.12 0.20 19200.  0.00  15.6 steel : Steel
+ Int     5.0     0.060   160.  2500. 0.90 0.85    10.  0.08   0.8 grey loop pile : Grey loop pile synthetic carpet (non-hygroscopic)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  2.392  2.577  2.183 (partition)  1.968
+ Weight per m^2 of this construction  60.00
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.34
+ External surface admittance Y=  2.51  w=  0.80 decrement factor f=  0.71  phi=  0.34 surface factor f=  0.71  phi=  0.34
+ Partition admittance Y=  1.31  w=  5.06 surface factor f=  0.97  phi=  0.60
+ Total area of flr_ov_pln is    180.00
+ 
+ Details of opaque construction: conc_250 and overall thickness  0.250
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1  250.0     1.400  2100.   653. 0.90 0.21    19.  0.18 525.0 white ptd concrete : White painted heavy mix concrete
+ ISO 6946 U values (horiz/upward/downward heat flow)=  2.869  3.139  2.574 (partition)  2.280
+ Weight per m^2 of this construction 525.00
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.79
+ External surface admittance Y=  5.26  w=  1.30 decrement factor f=  0.46  phi=  1.84 surface factor f=  0.46  phi=  1.84
+ Partition admittance Y=  5.84  w=  2.27 surface factor f=  0.57  phi=  2.87
+ Total area of conc_250 is    540.00
+ 
+ Details of opaque construction: steel_pl_3mm and overall thickness  0.003
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1    3.0    40.000  7800.   502. 0.82 0.30 19200.  0.00  23.4 white ptd steel : White painted steel
+ ISO 6946 U values (horiz/upward/downward heat flow)=  5.880  7.139  4.760 (partition)  3.845
+ Weight per m^2 of this construction  23.40
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  5.55
+ External surface admittance Y=  5.56  w=  0.07 decrement factor f=  0.33  phi=  0.13 surface factor f=  0.33  phi=  0.13
+ Partition admittance Y=  0.28  w=  5.87 surface factor f=  1.00  phi=  0.13
+ Total area of steel_pl_3mm is     15.48
+ 
+ Details of opaque construction: circuit_bd and overall thickness  0.002
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1    1.7     0.323  1770.   695. 0.90 0.75   200.  0.01   3.0 pcb-board : pcb-board based on FR4 with a thin layer of copper from Solidworks tut
+ ISO 6946 U values (horiz/upward/downward heat flow)=  5.706  6.884  4.645 (partition)  3.770
+ Weight per m^2 of this construction   3.01
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  5.40
+ External surface admittance Y=  5.40  w=  0.01 decrement factor f=  0.35  phi=  0.02 surface factor f=  0.35  phi=  0.02
+ Partition admittance Y=  0.05  w=  5.98 surface factor f=  1.00  phi=  0.02
+ Total area of circuit_bd is      0.25
+ 
+ Details of opaque construction: upholstery and overall thickness  0.035
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     5.0     0.040   160.  1360. 0.90 0.65    10.  0.12   0.8 wool felt underlay : Wool felt underlay (organic-hygroscopic)
+    2   25.0     0.060   198.  1360. 0.90 0.60    10.  0.42   5.0 sheeps wool : Sheeps wool (simulated)
+ Int     5.0     0.040   160.  1360. 0.90 0.65    10.  0.12   0.8 wool felt underlay : Wool felt underlay (organic-hygroscopic)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  1.195  1.240  1.141 (partition)  1.079
+ Weight per m^2 of this construction   6.55
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.18
+ External surface admittance Y=  1.20  w=  0.53 decrement factor f=  0.86  phi=  0.09 surface factor f=  0.86  phi=  0.09
+ Partition admittance Y=  0.30  w=  5.72 surface factor f=  1.00  phi=  0.14
+ Total area of upholstery is     19.29
+ 
+ Details of opaque construction: corian_count and overall thickness  0.020
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1   20.0     1.012  1750.   771. 0.80 0.40  1920.  0.02  35.0 corian : corian is a solid homogeneous non-porous surfacing of natural minerals an
+ ISO 6946 U values (horiz/upward/downward heat flow)=  5.270  6.259  4.352 (partition)  3.574
+ Weight per m^2 of this construction  35.00
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  5.01
+ External surface admittance Y=  5.03  w=  0.18 decrement factor f=  0.40  phi=  0.28 surface factor f=  0.40  phi=  0.28
+ Partition admittance Y=  0.68  w=  5.68 surface factor f=  1.00  phi=  0.31
+ Total area of corian_count is      1.88
+ 
+ Details of opaque construction: shelves_20mm and overall thickness  0.020
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1   20.0     0.190   700.  2390. 0.90 0.45    12.  0.11  14.0 oak_light_stained : oak_light_stained (copy of oak)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  3.633  4.077  3.172 (partition)  2.738
+ Weight per m^2 of this construction  14.00
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  3.51
+ External surface admittance Y=  3.58  w=  0.43 decrement factor f=  0.58  phi=  0.32 surface factor f=  0.58  phi=  0.32
+ Partition admittance Y=  0.95  w=  5.52 surface factor f=  0.99  phi=  0.44
+ Total area of shelves_20mm is      2.06
+ 
+ Details of opaque construction: IT_case and overall thickness  0.003
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1    2.7     0.250  1020.  1400. 0.90 0.90 19200.  0.01   2.8 dark_abs_case : dark_abs_case dark grey ABS (Acrylonitrile Butadiene Styrene www.m
+ ISO 6946 U values (horiz/upward/downward heat flow)=  5.531  6.631  4.529 (partition)  3.693
+ Weight per m^2 of this construction   2.75
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  5.24
+ External surface admittance Y=  5.24  w=  0.02 decrement factor f=  0.37  phi=  0.04 surface factor f=  0.37  phi=  0.04
+ Partition admittance Y=  0.10  w=  5.96 surface factor f=  1.00  phi=  0.04
+ Total area of IT_case is      0.30
+ 
+ Details of opaque construction: furn_wd10mm and overall thickness  0.010
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1   10.0     0.190   700.  2390. 0.90 0.65    12.  0.05   7.0 oak : Oak (radial cut)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  4.492  5.191  3.808 (partition)  3.199
+ Weight per m^2 of this construction   7.00
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  4.30
+ External surface admittance Y=  4.31  w=  0.15 decrement factor f=  0.48  phi=  0.16 surface factor f=  0.48  phi=  0.16
+ Partition admittance Y=  0.45  w=  5.79 surface factor f=  1.00  phi=  0.21
+ Total area of furn_wd10mm is     13.08
+ 
+ Details of opaque construction: steel_gr_3mm and overall thickness  0.003
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1    3.0    40.000  7800.   502. 0.82 0.45 19200.  0.00  23.4 beige ptd steel : Beige painted steel
+ ISO 6946 U values (horiz/upward/downward heat flow)=  5.880  7.139  4.760 (partition)  3.845
+ Weight per m^2 of this construction  23.40
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  5.55
+ External surface admittance Y=  5.56  w=  0.07 decrement factor f=  0.33  phi=  0.13 surface factor f=  0.33  phi=  0.13
+ Partition admittance Y=  0.28  w=  5.87 surface factor f=  1.00  phi=  0.13
+ Total area of steel_gr_3mm is     22.22
+ 
+ Details of opaque construction: file_papers and overall thickness  0.300
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   100.0     0.100   720.  1300. 0.90 0.65    12.  1.00  72.0 book_paper : book_paper .72 g/cc from paperonweb.com engineering toolbox other att
+    2  100.0     0.060   620.  1300. 0.90 0.60    12.  1.67  62.0 news_paper : news_paper .62g/cc on paperonweb.com engineering toolbox other attrib
+ Int   100.0     0.100   720.  1300. 0.90 0.65    12.  1.00  72.0 book_paper : book_paper .72 g/cc from paperonweb.com engineering toolbox other att
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.261  0.263  0.258 (partition)  0.255
+ Weight per m^2 of this construction 206.00
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.26
+ External surface admittance Y=  2.11  w=  2.30 decrement factor f=  0.80  phi=  0.69 surface factor f=  0.80  phi=  0.69
+ Partition admittance Y=  2.10  w=  2.29 surface factor f=  0.80  phi=  0.68
+ Total area of file_papers is      1.91
+ 
+ Details of opaque construction: stuffonshelf and overall thickness  0.210
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1  210.0     0.100   480.  1300. 0.90 0.60    12.  2.10 100.8 shelf_clutter : shelf_clutter mix of books magazines papers on typical shelf (meas
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.441  0.446  0.433 (partition)  0.424
+ Weight per m^2 of this construction 100.80
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.44
+ External surface admittance Y=  1.79  w=  2.42 decrement factor f=  0.84  phi=  0.58 surface factor f=  0.84  phi=  0.58
+ Partition admittance Y=  1.92  w=  2.39 surface factor f=  0.82  phi=  0.63
+ Total area of stuffonshelf is     18.60

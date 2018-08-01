@@ -1,0 +1,89 @@
+ESP-r Domain Flow Solver
+This is a development copy of dfs, based on ESP-r release 12.7.
+ 
+Copyright resides with the member organisations of the ESP-r
+development consortium as listed at:
+http://www.esru.strath.ac.uk/Programs/ESP-r_central.htm.
+and https://github.com/ESP-rCommunity.
+ 
+Build information:
+  SVN source -       @rRevision: 1480 (locally modified)
+  Platform -         x86_64:Linux:4.13.0-36-generic
+  Compilers -        gcc/g++/gfortran
+  Graphics library - X11
+  XML output -       Unsupported
+  Preferences (.esprc) file - users version.
+ the input file is: tst33vol.dfd
+
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?> 
+ Initiating CFD sim with following parameters:
+   U-momentum active
+   V-momentum active
+   W-momentum active
+   k-epsilon turb model active
+   Convergence criteria:         1000   9.99999975E-05
+   Relaxation factors:   0.119999997      0.119999997      0.119999997       1.00000000       1.00000000      0.100000001      0.100000001       1.00000000       1.00000000    
+
+ DFS - Monitoring of residuals & variables
+
+   ITER        U          V          W          P          T          K       Eps.
+
+    100    0.203E+00  0.743E-01  0.914E-01  0.316E-01  0.000E+00  0.339E-04  0.677E-01
+          -0.135E-01  0.121E-02  0.167E-02  0.341E-03  0.200E+02  0.328E-06  0.172E-06
+    200    0.439E-01  0.162E-01  0.238E-01  0.453E-02  0.000E+00  0.611E-05  0.481E-02
+          -0.209E-01  0.184E-02  0.230E-02  0.214E-03  0.200E+02  0.255E-04  0.404E-06
+    300    0.193E-01  0.784E-02  0.997E-02  0.164E-02  0.000E+00  0.813E-06  0.825E-03
+          -0.225E-01  0.238E-02  0.422E-05  0.128E-03  0.200E+02  0.350E-04  0.608E-06
+    400    0.611E-02  0.358E-02  0.391E-02  0.703E-03  0.000E+00  0.246E-06  0.304E-03
+          -0.226E-01  0.230E-02 -0.444E-03  0.998E-04  0.200E+02  0.383E-04  0.681E-06
+    500    0.287E-02  0.149E-02  0.144E-02  0.228E-03  0.000E+00  0.124E-06  0.112E-03
+          -0.227E-01  0.223E-02 -0.390E-03  0.100E-03  0.200E+02  0.382E-04  0.679E-06
+    600    0.819E-03  0.447E-03  0.492E-03  0.651E-04  0.000E+00  0.318E-07  0.307E-04
+          -0.228E-01  0.226E-02 -0.366E-03  0.102E-03  0.200E+02  0.387E-04  0.687E-06
+    700    0.375E-03  0.270E-03  0.176E-03  0.352E-04  0.000E+00  0.143E-07  0.149E-04
+          -0.228E-01  0.226E-02 -0.381E-03  0.102E-03  0.200E+02  0.388E-04  0.691E-06
+    800    0.157E-03  0.856E-04  0.704E-04  0.146E-04  0.000E+00  0.582E-08  0.517E-05
+          -0.228E-01  0.226E-02 -0.391E-03  0.101E-03  0.200E+02  0.389E-04  0.692E-06
+Solution converged in   840 iterations, for day no.   0 at  0.000 elapsed      3.
+    840    0.993E-04  0.670E-04  0.499E-04  0.115E-04  0.000E+00  0.414E-08  0.396E-05
+          -0.228E-01  0.226E-02 -0.390E-03  0.101E-03  0.200E+02  0.389E-04  0.692E-06
+ Warning: Simulation complete.
+
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?> 
+  results:  a ASCII format file      d ParaView format file
+            b PHOTON analysis        e TECPLOT format file 
+            c MATLAB analysis        f Flow visualization  
+         :  - Exit
+
+  results:?> 
+  results:  a ASCII format file      d ParaView format file
+            b PHOTON analysis        e TECPLOT format file 
+            c MATLAB analysis        f Flow visualization  
+         :  - Exit
+
+  results:?> 
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?>  
+Delete results file before exiting? [Y]es (default) or [N]o ?
+ 
+Delete temporary file before exiting? [Y]es (default) or [N]o ?

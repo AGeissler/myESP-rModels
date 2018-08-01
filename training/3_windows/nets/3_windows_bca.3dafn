@@ -1,0 +1,78 @@
+*Flow_network 1.0
+*Date,Thu Apr  5 15:59:08 2018
+*Doc,3D representation of flow through different window types
+*Domain,Flow,2  # domain for this network
+*windpressure,0.000  # wind speed reduction
+# tag name fluid type assoc zone & surface
+# position & data
+*node,manager,1,0,manager,-   # internal unknown pressure
+1.5000,2.2500,1.5000,20.0000,0.0000,40.5008  # position temp data
+*node,manager_t_b,1,0,manager_t_b,-   # internal unknown pressure
+5.5000,2.2500,1.5000,20.0000,0.0000,40.5008  # position temp data
+*node,manager_bi,1,0,manager_bi,-   # internal unknown pressure
+9.5000,2.2500,1.5000,20.0000,0.0000,40.5008  # position temp data
+*node,BW-Ve01:008,1,3,manager,frame   # boundary wind pressure
+1.2583,-0.9000,3.0000,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Cr01:009,1,3,manager,glazing   # boundary wind pressure
+1.5000,-0.9000,1.9500,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Cr02:008,1,3,manager_t_b,frame   # boundary wind pressure
+5.3187,-0.9000,1.6937,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Op02:011,1,3,manager_t_b,low_glz   # boundary wind pressure
+5.5000,-0.9000,1.1500,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Op02:012,1,3,manager_t_b,high_glz   # boundary wind pressure
+5.5000,-0.9000,2.7500,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Cr03:008,1,3,manager_bi,frame   # boundary wind pressure
+9.3666,-0.9000,1.6571,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Bi03:011,1,3,manager_bi,bi-glaz   # boundary wind pressure
+10.4580,-0.9000,1.9500,0.0000,1.0000,180.0000  # position temp data
+*node,adjacent,1,0,-,-   # internal unknown pressure
+6.0000,6.0000,0.1000,manager     ,0.0000,40.5008  # position ref node data
+# tag name assoc zone & surface type C+ L+
+start&end positions  description
+# data
+*cmp,DoCrz01:003,manager,door,120,3,0
+0,0.5000,4.5000,0.0000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,1.00000000  # Fluid crack width(m) crack length(m)
+*cmp,FrVez01:008,manager,frame,110,2,0
+0,1.2583,0.0000,3.0000,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,1.67999995  # Fluid opening area(m)
+*cmp,WiCrz01:009,manager,glazing,120,3,0
+0,1.5000,0.0000,1.9500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,1.00000005E-03,2.80000019  # Fluid crack width(m) crack length(m)
+*cmp,DoCrz02:003,manager_t_b,door,120,3,0
+0,4.5000,4.5000,0.0000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,1.00000000  # Fluid crack width(m) crack length(m)
+*cmp,FrCrz02:008,manager_t_b,frame,120,3,0
+0,5.3187,0.0000,1.6937,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,1.00000005E-03,9.94142056  # Fluid crack width(m) crack length(m)
+*cmp,WiOpz02:011,manager_t_b,low_glz,110,2,0
+0,5.5000,0.0000,1.1500,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,0.839999974  # Fluid opening area(m)
+*cmp,WiOpz02:012,manager_t_b,high_glz,110,2,0
+0,5.5000,0.0000,2.7500,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,0.839999974  # Fluid opening area(m)
+*cmp,DoCrz03:003,manager_bi,door,120,3,0
+0,8.5000,4.5000,0.0000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,1.00000000  # Fluid crack width(m) crack length(m)
+*cmp,FrCrz03:008,manager_bi,frame,120,3,0
+0,9.3666,0.0000,1.6571,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,1.00000005E-03,9.94142151  # Fluid crack width(m) crack length(m)
+*cmp,WiBiz03:011,manager_bi,bi-glaz,130,5,0
+0,10.4580,0.0000,1.9500,Specific air flow door              m = rho.f(W,H,dP)       
+1.00000000,0.883999825,1.90000010,0.500000000,0.600000024  # Fluid width height ref ht discharge factor
+# connection +node deltaZ  -node deltaZ via component
+*cnn,BW-Ve01:008,  0.000,manager,  1.500,FrVez01:008
+*cnn,BW-Cr01:009,  0.000,manager,  1.500,WiCrz01:009
+*cnn,BW-Cr02:008,  0.000,manager_t_b,  0.194,FrCrz02:008
+*cnn,BW-Op02:011,  0.000,manager_t_b, -0.350,WiOpz02:011
+*cnn,BW-Op02:012,  0.000,manager_t_b,  1.250,WiOpz02:012
+*cnn,BW-Cr03:008,  0.000,manager_bi, -0.350,FrCrz03:008
+*cnn,BW-Bi03:011,  0.000,manager_bi,  1.250,WiBiz03:011
+*cnn,adjacent, -0.100,manager, -1.500,DoCrz01:003
+*cnn,adjacent, -0.100,manager_t_b, -1.500,DoCrz02:003
+*cnn,adjacent, -0.100,manager_bi, -1.500,DoCrz03:003
+*IPSMOD 0  # stack calc
+*MFBSNC 0  # timing
+*MSLVTP 0  # flow solution
+*MFTRAC 0  # trace level
+*End_network

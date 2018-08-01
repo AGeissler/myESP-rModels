@@ -1,0 +1,99 @@
+ESP-r Domain Flow Solver
+This is a development copy of dfs, based on ESP-r release 12.7.
+ 
+Copyright resides with the member organisations of the ESP-r
+development consortium as listed at:
+http://www.esru.strath.ac.uk/Programs/ESP-r_central.htm.
+and https://github.com/ESP-rCommunity.
+ 
+Build information:
+  SVN source -       @rRevision: 1480 (locally modified)
+  Platform -         x86_64:Linux:4.13.0-36-generic
+  Compilers -        gcc/g++/gfortran
+  Graphics library - X11
+  XML output -       Unsupported
+  Preferences (.esprc) file - users version.
+ the input file is: lma.dfd
+
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?> 
+ Initiating CFD sim with following parameters:
+   U-momentum active
+   V-momentum active
+   W-momentum active
+   k-epsilon turb model active
+   Convergence criteria:          350   9.99999975E-05
+   Relaxation factors:   0.500000000      0.500000000      0.500000000       1.00000000       1.00000000      0.699999988      0.699999988       1.00000000       1.00000000    
+
+ DFS - Monitoring of residuals & variables
+
+   ITER        U          V          W          P          T          K       Eps.
+
+    100    0.273E-02  0.386E-02  0.716E-02  0.148E-01  0.000E+00  0.274E-06  0.263E-03
+          -0.596E-02 -0.341E-02  0.177E+00  0.103E-03  0.200E+02  0.139E-03  0.184E-04
+    200    0.139E-03  0.205E-03  0.372E-03  0.735E-03  0.000E+00  0.173E-07  0.195E-04
+          -0.619E-02 -0.356E-02  0.176E+00  0.106E-03  0.200E+02  0.138E-03  0.181E-04
+Solution converged in   278 iterations, for day no.   0 at  0.000 elapsed      1.
+    278    0.176E-04  0.248E-04  0.434E-04  0.991E-04  0.000E+00  0.186E-08  0.221E-05
+          -0.620E-02 -0.357E-02  0.176E+00  0.106E-03  0.200E+02  0.138E-03  0.181E-04
+Initiating calculation of local mean age of air
+
+ DFS - Monitoring of residuals & variables (LMA)
+
+   ITER  1-aver/aver  resid/LMA_mon
+
+      7    0.589E+00  0.117E-01
+           0.411E+00  0.154E+00
+     14    0.314E+00  0.623E-02
+           0.686E+00  0.228E+00
+     21    0.168E+00  0.330E-02
+           0.832E+00  0.267E+00
+     28    0.908E-01  0.175E-02
+           0.909E+00  0.288E+00
+     35    0.499E-01  0.929E-03
+           0.950E+00  0.299E+00
+     42    0.281E-01  0.493E-03
+           0.972E+00  0.305E+00
+     49    0.166E-01  0.261E-03
+           0.983E+00  0.308E+00
+     56    0.105E-01  0.139E-03
+           0.990E+00  0.310E+00
+ Warning: Simulation complete.
+
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?> 
+  results:  a ASCII format file      d ParaView format file
+            b PHOTON analysis        e TECPLOT format file 
+            c MATLAB analysis        f Flow visualization  
+         :  - Exit
+
+  results:?> 
+  results:  a ASCII format file      d ParaView format file
+            b PHOTON analysis        e TECPLOT format file 
+            c MATLAB analysis        f Flow visualization  
+         :  - Exit
+
+  results:?> 
+  dfs:  a Problem definition     ____________________
+        b Grid visualisation    e Results analysis   
+         ____________________    ____________________
+        c Simulation toggles    f Model details      
+        d Initiate simulation   ? Help               
+     :  - Quit
+
+  dfs:?>  
+Delete results file before exiting? [Y]es (default) or [N]o ?
+ 
+Delete temporary file before exiting? [Y]es (default) or [N]o ?

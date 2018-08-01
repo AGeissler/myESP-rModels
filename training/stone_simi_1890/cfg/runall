@@ -1,0 +1,73 @@
+#!/bin/csh
+# run a sequence of simulations 1 week 2 months 4 months and annuall
+# and use extract.
+echo $1
+echo "spring week simulation with stone_simi_1890_jan-feb_s2.cfg"
+date
+&>/dev/null time bps -mode text -file stone_simi_1890_jan-feb_s2.cfg -p spr silent
+echo "starting extact..."
+date
+./extract stone_simi_1890_spr_s2.res
+echo "finished spring week"
+rm stone_simi_1890_spr_s2.res
+echo "jan-feb simulation with stone_simi_1890_jan-feb_s2.cfg"
+date
+&>/dev/null time bps -mode text -file stone_simi_1890_jan-feb_s2.cfg -p win1 silent
+echo "starting extact..."
+date
+./extract stone_simi_1890_jan-feb_s2.res
+date
+echo "finished jan-feb months"
+rm stone_simi_1890_jan-feb_s2.res
+echo "summer simulation with stone_simi_1890_jan-feb_s2.cfg"
+&>/dev/null time bps -mode text -file stone_simi_1890_jan-feb_s2.cfg -p sum silent
+date
+echo "starting extact..."
+./extract stone_simi_1890_sum_s2.res
+echo "finished summer"
+rm stone_simi_1890_sum_s2.res
+echo "annual simulation with stone_simi_1890_jan-feb_s2.cfg"
+date
+&>/dev/null time bps -mode text -file stone_simi_1890_jan-feb_s2.cfg -p annual silent
+date
+echo "starting extact..."
+./extract stone_simi_1890_annual_s2.res
+date
+echo "finished annual"
+rm stone_simi_1890_annual_s2.res
+echo $1
+echo "spring week simulation with stone_simi_1890_jan-feb.cfg"
+date
+&>/dev/null time bps -mode text -file stone_simi_1890_jan-feb.cfg -p spr silent
+echo "starting extact..."
+date
+./extract stone_simi_1890_spr_s4.res
+echo "finished spring week"
+rm stone_simi_1890_spr_s4.res
+echo "jan-feb simulation with stone_simi_1890_jan-feb.cfg"
+date
+&>/dev/null time bps -mode text -file stone_simi_1890_jan-feb.cfg -p win1 silent
+echo "starting extact..."
+date
+./extract stone_simi_1890_jan-feb_s4.res
+date
+echo "finished jan-feb months"
+rm stone_simi_1890_jan-feb_s4.res
+echo "summer simulation with stone_simi_1890_jan-feb.cfg"
+&>/dev/null time bps -mode text -file stone_simi_1890_jan-feb.cfg -p sum silent
+date
+echo "starting extact..."
+./extract stone_simi_1890_sum_s4.res
+echo "finished summer"
+rm stone_simi_1890_sum_s4.res
+# echo "annual simulation with stone_simi_1890_jan-feb.cfg"
+# date
+# &>/dev/null time bps -mode text -file stone_simi_1890_jan-feb.cfg -p annual silent
+# date
+# echo "starting extact..."
+# ./extract stone_simi_1890_annual_s4.res
+# date
+# rm stone_simi_1890_annual_s4.res
+echo "finished"
+
+

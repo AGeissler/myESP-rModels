@@ -1,0 +1,92 @@
+#!/bin/bash
+# run sequential & parallel of simulations may june july august and extract in
+# sequence and use extract.
+echo $1
+echo $1 >$1
+echo "seq may simulation with stone_simi_1890_monthly.cfg"
+echo "seq may simulation with stone_simi_1890_monthly.cfg" >>$1
+date
+date >>$1
+/usr/bin/time bps -mode text -file stone_simi_1890_monthly.cfg -p may silent >/dev/null
+date
+date >>$1
+echo "starting sequential may extact..."
+echo "starting sequential may extact..." >>$1
+./extractmonthly stone_simi_1890_may.res
+date
+date >>$1
+echo "seq june simulation with stone_simi_1890_monthly.cfg"
+echo "seq june simulation with stone_simi_1890_monthly.cfg" >>$1
+/usr/bin/time bps -mode text -file stone_simi_1890_monthly.cfg -p june silent >/dev/null
+date
+date >>$1
+echo "starting june extact..."
+echo "starting june extact..." >>$1
+./extractmonthly stone_simi_1890_june.res
+date
+date >>$1
+echo "seq july simulation with stone_simi_1890_monthly.cfg"
+echo "seq july simulation with stone_simi_1890_monthly.cfg" >>$1
+/usr/bin/time bps -mode text -file stone_simi_1890_monthly.cfg -p july silent >/dev/null
+date
+date >>$1
+echo "starting july extact..."
+echo "starting july extact..." >>$1
+./extractmonthly stone_simi_1890_july.res
+date
+date >>$1
+echo "seq august..."
+echo "seq august..." >>$1
+/usr/bin/time bps -mode text -file stone_simi_1890_monthly.cfg -p august silent >/dev/null
+date
+date >>$1
+echo "starting august extact..."
+echo "starting august extact..." >>$1
+./extractmonthly stone_simi_1890_august.res
+date
+date >>$1
+echo "pausing 10 seconds"
+echo "pausing 10 seconds" >>$1
+sleep 10
+rm *.res
+date
+date >>$1
+echo "seq summer simulation with stone_simi_1890_monthly.cfg"
+echo "seq summer simulation with stone_simi_1890_monthly.cfg" >>$1
+date
+date >>$1
+/usr/bin/time bps -mode text -file stone_simi_1890_monthly.cfg -p summer silent >/dev/null
+date
+date >>$1
+echo "pausing 10 seconds"
+echo "pausing 10 seconds" >>$1
+rm *.res
+sleep 10
+date
+date >>$1
+echo "par may simulation with stone_simi_1890_monthly.cfg"
+echo "par may simulation with stone_simi_1890_monthly.cfg" >>$1
+date
+date >>$1
+/usr/bin/time bps -mode text -file stone_simi_1890_monthly.cfg -p may silent & >/dev/null
+date
+date >>$1
+echo "par june simulation with stone_simi_1890_monthly.cfg"
+echo "par june simulation with stone_simi_1890_monthly.cfg" >>$1
+/usr/bin/time bps -mode text -file stone_simi_1890_monthly.cfg -p june silent & >/dev/null
+date
+date >>$1
+echo "par july simulation with stone_simi_1890_monthly.cfg"
+echo "par july simulation with stone_simi_1890_monthly.cfg" >>$1
+/usr/bin/time bps -mode text -file stone_simi_1890_monthly.cfg -p july silent & >/dev/null
+echo "august not done in background..."
+echo "august not done in background..." >>$1
+date
+date >>$1
+/usr/bin/time bps -mode text -file stone_simi_1890_monthly.cfg -p august silent >/dev/null
+date
+date >>$1
+echo "finished sequential extracts"
+echo "finished sequential extracts" >>$1
+
+

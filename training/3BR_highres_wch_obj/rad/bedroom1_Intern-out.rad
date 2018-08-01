@@ -1,0 +1,1383 @@
+# Radiance exterior composition
+# xform -e
+# Radiance exterior composition file
+# (first line of file must not be edited)
+# standard sky and ground
+# BEWARE: the RGB figures in the glow
+# definitions must integrate to one.
+# define sky...
+
+skyfunc glow sky_glow
+0
+0
+4 0.986 0.986 1.202 0
+
+sky_glow source sky
+0
+0
+4 0 0 1 180
+# define ground...
+
+skyfunc glow ground_glow
+0
+0
+4 1.276 0.957 0.319 0
+
+ground_glow source ground
+0
+0
+4 0 0 -1 180
+
+void brightfunc mud
+4 dirt dirt.cal -s 0.5
+0
+1 0.3
+
+mud plastic ground_mat
+0
+0
+5 0.052 0.115 0.05 0 0.02
+
+ground_mat ring groundplane
+0
+0
+8
+4.2 4.9 -0.01
+0 0 1
+0 30
+# other definitions of outside follow...
+# hall Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_cavity_brick polygon hall:fr_facade
+0
+0
+30
+1.3 1.297 0.2
+2 1.297 0.2
+2 1.297 2.3
+2.9 1.297 2.3
+2.9 1.297 0.2
+3.4 1.297 0.2
+3.4 1.297 2.4
+2.9 1.297 2.4
+2 1.297 2.4
+1.3 1.297 2.4
+
+rc_ex_frame_notion polygon hall:fr_door_fr
+0
+0
+30
+2 1.297 0.2
+2.9 1.297 0.2
+2.9 1.297 2.3
+2 1.297 2.3
+2 1.297 0.2
+2.12 1.297 0.32
+2.12 1.297 2.18
+2.78 1.297 2.18
+2.78 1.297 0.32
+2.12 1.297 0.32
+
+rc_ex_cavity_brick polygon hall:left_facade
+0
+0
+15
+1.297 2.7 0.2
+1.297 1.3 0.2
+1.297 1.3 2.4
+1.297 2.7 2.4
+1.297 2.7 0.4
+# living Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_cavity_brick polygon living:facade_a
+0
+0
+21
+3.4 1.297 0.2
+4.4 1.297 0.2
+4.4 1.297 0.9
+4.4 1.297 2.3
+4.4 1.297 2.7
+3.4 1.297 2.7
+3.4 1.297 2.4
+
+rc_ex_cavity_brick polygon living:sill_a
+0
+0
+12
+4.397 1.3 0.2
+4.397 0.65 0.2
+4.397 0.65 0.9
+4.397 1.3 0.9
+
+rc_ex_cavity_brick polygon living:sill_b
+0
+0
+12
+4.4 0.647 0.2
+6.2 0.647 0.2
+6.2 0.647 0.9
+4.4 0.647 0.9
+
+rc_ex_cavity_brick polygon living:sill_c
+0
+0
+12
+6.203 0.65 0.2
+6.203 1.3 0.2
+6.203 1.3 0.9
+6.203 0.65 0.9
+
+rc_ex_cavity_brick polygon living:facade_d
+0
+0
+18
+6.2 1.297 0.2
+7.2 1.297 0.2
+7.2 1.297 2.7
+6.2 1.297 2.7
+6.2 1.297 2.3
+6.2 1.297 0.9
+
+rc_ex_cavity_brick polygon living:right_a
+0
+0
+12
+7.203 1.3 0.2
+7.203 2.3 0.2
+7.203 2.3 2.7
+7.203 1.3 2.7
+
+rc_ex_cavity_brick polygon living:right_b
+0
+0
+12
+7.2 2.303 0.2
+7 2.303 0.2
+7 2.303 2.7
+7.2 2.303 2.7
+
+rc_ex_cavity_brick polygon living:right_c
+0
+0
+12
+7.003 2.3 0.2
+7.003 3.8 0.2
+7.003 3.8 2.7
+7.003 2.3 2.7
+
+rc_ex_cavity_brick polygon living:right_d
+0
+0
+12
+7 3.797 0.2
+7.2 3.797 0.2
+7.2 3.797 2.7
+7 3.797 2.7
+
+rc_ex_cavity_brick polygon living:right_e
+0
+0
+12
+7.203 3.8 0.2
+7.203 4.8 0.2
+7.203 4.8 2.7
+7.203 3.8 2.7
+
+rc_ex_cavity_brick polygon living:head_b
+0
+0
+12
+4.397 1.3 2.3
+4.397 0.65 2.3
+4.397 0.65 2.7
+4.397 1.3 2.7
+
+rc_ex_cavity_brick polygon living:head_c
+0
+0
+12
+4.4 0.647 2.3
+6.2 0.647 2.3
+6.2 0.647 2.7
+4.4 0.647 2.7
+
+rc_ex_cavity_brick polygon living:head_d
+0
+0
+12
+6.203 0.65 2.3
+6.203 1.3 2.3
+6.203 1.3 2.7
+6.203 0.65 2.7
+
+rc_ex_sash_fr74mm polygon living:frame_c
+0
+0
+30
+6.203 0.65 0.9
+6.203 1.3 0.9
+6.203 1.3 2.3
+6.203 0.65 2.3
+6.203 0.65 0.9
+6.203 0.73 0.98
+6.203 0.73 2.22
+6.203 1.22 2.22
+6.203 1.22 0.98
+6.203 0.73 0.98
+
+rc_ex_sash_fr74mm polygon living:frame_a
+0
+0
+30
+4.397 1.3 0.9
+4.397 0.65 0.9
+4.397 0.65 2.3
+4.397 1.3 2.3
+4.397 1.3 0.9
+4.397 1.22 0.98
+4.397 1.22 2.22
+4.397 0.73 2.22
+4.397 0.73 0.98
+4.397 1.22 0.98
+
+rc_ex_sash_fr74mm polygon living:frame_b
+0
+0
+30
+4.4 0.647 0.9
+6.2 0.647 0.9
+6.2 0.647 2.3
+4.4 0.647 2.3
+4.4 0.647 0.9
+4.52 0.647 1.02
+4.52 0.647 2.18
+6.08 0.647 2.18
+6.08 0.647 1.02
+4.52 0.647 1.02
+# dining Surface defs..
+# Obstruction defs...
+# xform -rz 0.000 -t 4.800 5.800 0.200
+# xform -rz 0.000 -t 5.500 5.800 0.200
+# xform -rz 0.000 -t 4.800 7.700 0.200
+# xform -rz 0.000 -t 5.500 7.700 0.200
+# xform -rz 0.000 -t 4.500 6.200 0.750
+# xform -rz 0.000 -t 4.450 6.200 0.200
+# xform -rz 0.000 -t 4.500 7.000 0.850
+# xform -rz 0.000 -t 4.450 7.000 0.200
+# xform -rz 0.000 -t 5.500 6.200 0.750
+# xform -rz 0.000 -t 5.900 6.200 0.200
+# xform -rz 0.000 -t 5.500 7.000 0.750
+# xform -rz 0.000 -t 5.900 7.000 0.200
+# xform -rz 0.000 -t 6.900 4.900 0.450
+# Outside zone Surface defs...
+
+rc_ex_cavity_brick polygon dining:right_a
+0
+0
+12
+7.203 4.8 0.2
+7.203 5.9 0.2
+7.203 5.9 2.7
+7.203 4.8 2.7
+
+rc_ex_cavity_brick polygon dining:right_b
+0
+0
+12
+7.2 5.903 0.2
+6.9 5.903 0.2
+6.9 5.903 2.7
+7.2 5.903 2.7
+
+rc_ex_cavity_brick polygon dining:right_c
+0
+0
+12
+6.903 5.9 0.2
+6.903 7.3 0.2
+6.903 7.3 2.7
+6.903 5.9 2.7
+
+rc_ex_cavity_brick polygon dining:rightr_d
+0
+0
+12
+6.9 7.297 0.2
+7.2 7.297 0.2
+7.2 7.297 2.7
+6.9 7.297 2.7
+
+rc_ex_cavity_brick polygon dining:right_e
+0
+0
+12
+7.203 7.3 0.2
+7.203 8.5 0.2
+7.203 8.5 2.7
+7.203 7.3 2.7
+
+rc_ex_cavity_brick polygon dining:facade_bk
+0
+0
+42
+7.2 8.503 0.2
+6.1 8.503 0.2
+6.1 8.503 2.3
+5.7 8.503 2.3
+4.8 8.503 2.3
+4.4 8.503 2.3
+4.4 8.503 0.2
+3.8 8.503 0.2
+3.8 8.503 2.7
+4.4 8.503 2.7
+4.8 8.503 2.7
+5.7 8.503 2.7
+6.1 8.503 2.7
+7.2 8.503 2.7
+
+rc_ex_sash_fr74mm polygon dining:french
+0
+0
+30
+5.7 8.503 0.2
+4.8 8.503 0.2
+4.8 8.503 2.3
+5.7 8.503 2.3
+5.7 8.503 0.2
+5.6 8.503 0.3
+5.6 8.503 2.2
+4.9 8.503 2.2
+4.9 8.503 0.3
+5.6 8.503 0.3
+# kitchen Surface defs..
+# Obstruction defs...
+# xform -rz 0.000 -t 1.300 7.000 0.220
+# xform -rz 0.000 -t 3.510 6.500 1.600
+# xform -rz 0.000 -t 3.210 6.500 0.370
+# xform -rz 0.000 -t 1.330 6.050 0.300
+# Outside zone Surface defs...
+
+rc_ex_cavity_brick polygon kitchen:sill_a
+0
+0
+27
+3.8 8.503 0.2
+2.6 8.503 0.2
+2.6 8.503 1.4
+3.4 8.503 1.4
+3.4 8.503 2.3
+3.4 8.503 2.7
+3.8 8.503 2.7
+3.8 8.503 2.3
+3.8 8.503 1.4
+
+rc_ex_sash_fr74mm polygon kitchen:door_fr
+0
+0
+33
+2.6 8.503 0.2
+1.8 8.503 0.2
+1.8 8.503 2.3
+2.6 8.503 2.3
+2.6 8.503 1.4
+2.6 8.503 0.2
+2.4 8.503 0.4
+2.4 8.503 2.1
+2 8.503 2.1
+2 8.503 0.4
+2.4 8.503 0.4
+
+rc_ex_cavity_brick polygon kitchen:facade_bk
+0
+0
+27
+1.8 8.503 0.2
+1.3 8.503 0.2
+1.3 8.503 2.7
+1.8 8.503 2.7
+2.6 8.503 2.7
+3.4 8.503 2.7
+3.4 8.503 2.3
+2.6 8.503 2.3
+1.8 8.503 2.3
+
+rc_ex_cavity_brick polygon kitchen:facade_left
+0
+0
+12
+1.297 8.5 0.2
+1.297 6 0.2
+1.297 6 2.7
+1.297 8.5 2.7
+
+rc_ex_sash_fr74mm polygon kitchen:frame_glz
+0
+0
+30
+3.4 8.503 1.4
+2.6 8.503 1.4
+2.6 8.503 2.3
+3.4 8.503 2.3
+3.4 8.503 1.4
+3.32 8.503 1.48
+3.32 8.503 2.22
+2.68 8.503 2.22
+2.68 8.503 1.48
+3.32 8.503 1.48
+# upper_hall Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_cavity_brick polygon upper_hall:upper_left
+0
+0
+15
+1.297 6 2.8
+1.297 3.7 2.8
+1.297 3.7 3.8
+1.297 3.7 5.3
+1.297 6 5.3
+
+rc_ex_cavity_brick polygon upper_hall:left_wall
+0
+0
+54
+1.297 3.7 2.4
+1.297 3.7 2.8
+1.297 6 2.8
+1.297 6 2.6
+1.297 6 2.4
+1.297 5.2 2.4
+1.297 5.2 2.2
+1.297 4.95 2.2
+1.297 4.95 2
+1.297 4.7 2
+1.297 4.7 1.8
+1.297 4.45 1.8
+1.297 4.45 1.6
+1.297 4.2 1.6
+1.297 4.2 1.4
+1.297 3.95 1.4
+1.297 3.95 1.2
+1.297 3.7 1.2
+
+rc_ex_cavity_brick polygon upper_hall:lower_left
+0
+0
+39
+1.297 2.95 0.4
+1.297 2.7 0.4
+1.297 2.7 2.4
+1.297 2.98571 2.8
+1.297 3.7 2.8
+1.297 3.7 2.4
+1.297 3.7 1.2
+1.297 3.7 1
+1.297 3.45 1
+1.297 3.45 0.8
+1.297 3.2 0.8
+1.297 3.2 0.6
+1.297 2.95 0.6
+
+rc_ex_cavity_brick polygon upper_hall:left_slope
+0
+0
+9
+1.297 3.7 2.8
+1.297 2.98571 2.8
+1.297 3.7 3.8
+# bedroom1 Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_cavity_brick polygon bedroom1:facade_a
+0
+0
+18
+3.4 1.297 2.8
+4.4 1.297 2.8
+4.4 1.297 3.5
+4.4 1.297 4.9
+4.4 1.297 5.3
+3.4 1.297 5.3
+
+rc_ex_cavity_brick polygon bedroom1:sill_a
+0
+0
+12
+4.397 1.3 2.8
+4.397 0.65 2.8
+4.397 0.65 3.5
+4.397 1.3 3.5
+
+rc_ex_cavity_brick polygon bedroom1:sill_b
+0
+0
+12
+4.4 0.647 2.8
+6.2 0.647 2.8
+6.2 0.647 3.5
+4.4 0.647 3.5
+
+rc_ex_cavity_brick polygon bedroom1:sill_c
+0
+0
+12
+6.203 0.65 2.8
+6.203 1.3 2.8
+6.203 1.3 3.5
+6.203 0.65 3.5
+
+rc_ex_cavity_brick polygon bedroom1:facade_d
+0
+0
+18
+6.2 1.297 2.8
+7.2 1.297 2.8
+7.2 1.297 5.3
+6.2 1.297 5.3
+6.2 1.297 4.9
+6.2 1.297 3.5
+
+rc_ex_cavity_brick polygon bedroom1:right_a
+0
+0
+12
+7.203 1.3 2.8
+7.203 2.3 2.8
+7.203 2.3 5.3
+7.203 1.3 5.3
+
+rc_ex_cavity_brick polygon bedroom1:right_b
+0
+0
+12
+7.2 2.303 2.8
+7 2.303 2.8
+7 2.303 5.3
+7.2 2.303 5.3
+
+rc_ex_cavity_brick polygon bedroom1:right_c
+0
+0
+12
+7.003 2.3 2.8
+7.003 3.8 2.8
+7.003 3.8 5.3
+7.003 2.3 5.3
+
+rc_ex_cavity_brick polygon bedroom1:right_d
+0
+0
+12
+7 3.797 2.8
+7.2 3.797 2.8
+7.2 3.797 5.3
+7 3.797 5.3
+
+rc_ex_cavity_brick polygon bedroom1:right_e
+0
+0
+12
+7.203 3.8 2.8
+7.203 4.8 2.8
+7.203 4.8 5.3
+7.203 3.8 5.3
+
+rc_ex_cavity_brick polygon bedroom1:head_a
+0
+0
+12
+4.397 1.3 4.9
+4.397 0.65 4.9
+4.397 0.65 5.3
+4.397 1.3 5.3
+
+rc_ex_cavity_brick polygon bedroom1:head_b
+0
+0
+12
+4.4 0.647 4.9
+6.2 0.647 4.9
+6.2 0.647 5.3
+4.4 0.647 5.3
+
+rc_ex_cavity_brick polygon bedroom1:head_c
+0
+0
+12
+6.203 0.65 4.9
+6.203 1.3 4.9
+6.203 1.3 5.3
+6.203 0.65 5.3
+
+rc_ex_sash_fr74mm polygon bedroom1:frame_a
+0
+0
+30
+4.397 1.3 3.5
+4.397 0.65 3.5
+4.397 0.65 4.9
+4.397 1.3 4.9
+4.397 1.3 3.5
+4.397 1.22 3.58
+4.397 1.22 4.82
+4.397 0.73 4.82
+4.397 0.73 3.58
+4.397 1.22 3.58
+
+rc_ex_sash_fr74mm polygon bedroom1:frame_b
+0
+0
+30
+4.4 0.647 3.5
+6.2 0.647 3.5
+6.2 0.647 4.9
+4.4 0.647 4.9
+4.4 0.647 3.5
+4.52 0.647 3.62
+4.52 0.647 4.78
+6.08 0.647 4.78
+6.08 0.647 3.62
+4.52 0.647 3.62
+
+rc_ex_sash_fr74mm polygon bedroom1:frame_c
+0
+0
+30
+6.203 0.65 3.5
+6.203 1.3 3.5
+6.203 1.3 4.9
+6.203 0.65 4.9
+6.203 0.65 3.5
+6.203 0.73 3.58
+6.203 0.73 4.82
+6.203 1.22 4.82
+6.203 1.22 3.58
+6.203 0.73 3.58
+# bedroom3 Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_cavity_brick polygon bedroom3:fr_facade
+0
+0
+36
+1.3 1.297 2.8
+2 1.297 2.8
+2 1.297 3.7
+2 1.297 4.9
+2.9 1.297 4.9
+2.9 1.297 3.7
+2.9 1.297 2.8
+3.4 1.297 2.8
+3.4 1.297 5.3
+2.9 1.297 5.3
+2 1.297 5.3
+1.3 1.297 5.3
+
+rc_ex_cavity_brick polygon bedroom3:sill
+0
+0
+12
+2 1.297 2.8
+2.9 1.297 2.8
+2.9 1.297 3.7
+2 1.297 3.7
+
+rc_ex_cavity_brick polygon bedroom3:left_facade
+0
+0
+12
+1.297 2.98571 2.8
+1.297 1.3 2.8
+1.297 1.3 5.3
+1.297 2.98571 5.3
+
+rc_ex_cavity_brick polygon bedroom3:closet_left
+0
+0
+12
+1.297 3.7 3.8
+1.297 2.98571 2.8
+1.297 2.98571 5.3
+1.297 3.7 5.3
+
+rc_ex_sash_fr74mm polygon bedroom3:fr_frame
+0
+0
+30
+2 1.297 3.7
+2.9 1.297 3.7
+2.9 1.297 4.9
+2 1.297 4.9
+2 1.297 3.7
+2.1 1.297 3.8
+2.1 1.297 4.8
+2.8 1.297 4.8
+2.8 1.297 3.8
+2.1 1.297 3.8
+# bedroom2 Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_cavity_brick polygon bedroom2:right_a
+0
+0
+12
+7.203 4.8 2.8
+7.203 5.9 2.8
+7.203 5.9 5.3
+7.203 4.8 5.3
+
+rc_ex_cavity_brick polygon bedroom2:right_b
+0
+0
+12
+7.2 5.903 2.8
+6.9 5.903 2.8
+6.9 5.903 5.3
+7.2 5.903 5.3
+
+rc_ex_cavity_brick polygon bedroom2:right_c
+0
+0
+12
+6.903 5.9 2.8
+6.903 7.3 2.8
+6.903 7.3 5.3
+6.903 5.9 5.3
+
+rc_ex_cavity_brick polygon bedroom2:right_d
+0
+0
+12
+6.9 7.297 2.8
+7.2 7.297 2.8
+7.2 7.297 5.3
+6.9 7.297 5.3
+
+rc_ex_cavity_brick polygon bedroom2:right_e
+0
+0
+12
+7.203 7.3 2.8
+7.203 8.5 2.8
+7.203 8.5 5.3
+7.203 7.3 5.3
+
+rc_ex_cavity_brick polygon bedroom2:bk_facade_a
+0
+0
+18
+7.2 8.503 2.8
+6.1 8.503 2.8
+6.1 8.503 3.5
+6.1 8.503 4.9
+6.1 8.503 5.3
+7.2 8.503 5.3
+
+rc_ex_cavity_brick polygon bedroom2:bk_sill
+0
+0
+12
+6.1 8.503 2.8
+4.4 8.503 2.8
+4.4 8.503 3.5
+6.1 8.503 3.5
+
+rc_ex_cavity_brick polygon bedroom2:bk_facade_b
+0
+0
+18
+4.4 8.503 2.8
+3.4 8.503 2.8
+3.4 8.503 5.3
+4.4 8.503 5.3
+4.4 8.503 4.9
+4.4 8.503 3.5
+
+rc_ex_cavity_brick polygon bedroom2:head_glz
+0
+0
+12
+6.1 8.503 4.9
+4.4 8.503 4.9
+4.4 8.503 5.3
+6.1 8.503 5.3
+
+rc_ex_sash_fr74mm polygon bedroom2:frm_glaz
+0
+0
+30
+6.1 8.503 3.5
+4.4 8.503 3.5
+4.4 8.503 4.9
+6.1 8.503 4.9
+6.1 8.503 3.5
+5.98 8.503 3.62
+5.98 8.503 4.78
+4.52 8.503 4.78
+4.52 8.503 3.62
+5.98 8.503 3.62
+# bath Surface defs..
+# Obstruction defs...
+# xform -rz 0.000 -t 1.340 6.040 2.840
+# xform -rz 0.000 -t 2.600 8.150 2.800
+# Outside zone Surface defs...
+
+rc_ex_cavity_brick polygon bath:bk_facade_a
+0
+0
+18
+3.4 8.503 2.8
+2.6 8.503 2.8
+2.6 8.503 4
+2.6 8.503 4.9
+2.6 8.503 5.3
+3.4 8.503 5.3
+
+rc_ex_cavity_brick polygon bath:bk_sill
+0
+0
+12
+2.6 8.503 2.8
+1.8 8.503 2.8
+1.8 8.503 4
+2.6 8.503 4
+
+rc_ex_cavity_brick polygon bath:bk_facade_b
+0
+0
+18
+1.8 8.503 2.8
+1.3 8.503 2.8
+1.3 8.503 5.3
+1.8 8.503 5.3
+1.8 8.503 4.9
+1.8 8.503 4
+
+rc_ex_cavity_brick polygon bath:facade_lft
+0
+0
+12
+1.297 8.5 2.8
+1.297 6 2.8
+1.297 6 5.3
+1.297 8.5 5.3
+
+rc_ex_cavity_brick polygon bath:head
+0
+0
+12
+2.6 8.503 4.9
+1.8 8.503 4.9
+1.8 8.503 5.3
+2.6 8.503 5.3
+
+rc_ex_sash_fr74mm polygon bath:frame_glz
+0
+0
+30
+2.6 8.503 4
+1.8 8.503 4
+1.8 8.503 4.9
+2.6 8.503 4.9
+2.6 8.503 4
+2.52 8.503 4.08
+2.52 8.503 4.82
+1.88 8.503 4.82
+1.88 8.503 4.08
+2.52 8.503 4.08
+# attic Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_tile_rfcold polygon attic:fr_slope
+0
+0
+51
+6.20016 0.64829 5.30246
+6.20016 0.69829 5.30246
+7.85016 0.64829 5.30246
+4.25016 3.56829 7.20246
+0.65016 0.64829 5.30246
+3.40016 0.64829 5.30246
+4.40016 0.64829 5.30246
+6.20016 0.64829 5.30246
+3.6527 0.8796 5.44984
+3.65985 1.57509 5.90824
+3.66699 2.27058 6.36664
+3.67415 2.96691 6.8256
+4.87409 2.95457 6.8256
+4.86694 2.25875 6.36698
+4.85978 1.56301 5.90841
+4.85263 0.86727 5.44984
+3.6527 0.8796 5.44984
+
+rc_ex_tile_rfcold polygon attic:right_slope
+0
+0
+12
+7.8514 0.65 5.30265
+7.8514 9.15 5.30265
+4.2514 6.2 7.20265
+4.2514 3.57 7.20265
+
+rc_ex_tile_rfcold polygon attic:bk_slope
+0
+0
+9
+7.85 9.15162 5.30252
+0.65 9.15162 5.30252
+4.25 6.20162 7.20252
+
+rc_ex_tile_rfcold polygon attic:left_slope
+0
+0
+12
+0.6486 9.15 5.30265
+0.6486 0.65 5.30265
+4.2486 3.57 7.20265
+4.2486 6.2 7.20265
+
+rc_ex_susp_ceil polygon attic:soffit_right
+0
+0
+36
+7.85 9.15 5.297
+7.85 0.65 5.297
+6.2 0.7 5.297
+6.2 0.65 5.297
+6.2 1.3 5.297
+7.2 1.3 5.297
+7.2 2.3 5.297
+7.2 3.8 5.297
+7.2 4.8 5.297
+7.2 5.9 5.297
+7.2 7.3 5.297
+7.2 8.5 5.297
+
+rc_ex_susp_ceil polygon attic:soffit_bk
+0
+0
+21
+0.65 9.15 5.297
+7.85 9.15 5.297
+7.2 8.5 5.297
+6.1 8.5 5.297
+4.4 8.5 5.297
+3.4 8.5 5.297
+1.3 8.5 5.297
+
+rc_ex_susp_ceil polygon attic:soffit_left
+0
+0
+39
+0.65 0.65 5.297
+0.65 9.15 5.297
+1.3 8.5 5.297
+1.3 6 5.297
+1.3 3.7 5.297
+1.3 2.98571 5.297
+1.3 1.3 5.297
+2 1.3 5.297
+2.9 1.3 5.297
+3.4 1.3 5.297
+4.4 1.3 5.297
+4.4 0.65 5.297
+3.4 0.65 5.297
+# equipment Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_cavity_brick polygon equipment:left_fac
+0
+0
+12
+1.297 2.7 2.4
+1.297 1.3 2.4
+1.297 1.3 2.8
+1.297 2.98571 2.8
+
+rc_ex_cavity_brick polygon equipment:front_facade
+0
+0
+27
+2.9 1.297 2.4
+3.4 1.297 2.4
+3.4 1.297 2.7
+3.4 1.297 2.8
+2.9 1.297 2.8
+2 1.297 2.8
+1.3 1.297 2.8
+1.3 1.297 2.4
+2 1.297 2.4
+
+rc_ex_cavity_brick polygon equipment:left_facade
+0
+0
+72
+1.297 6 0.2
+1.297 2.7 0.2
+1.297 2.7 0.4
+1.297 2.95 0.4
+1.297 2.95 0.6
+1.297 3.2 0.6
+1.297 3.2 0.8
+1.297 3.45 0.8
+1.297 3.45 1
+1.297 3.7 1
+1.297 3.7 1.2
+1.297 3.95 1.2
+1.297 3.95 1.4
+1.297 4.2 1.4
+1.297 4.2 1.6
+1.297 4.45 1.6
+1.297 4.45 1.8
+1.297 4.7 1.8
+1.297 4.7 2
+1.297 4.95 2
+1.297 4.95 2.2
+1.297 5.2 2.2
+1.297 5.2 2.4
+1.297 6 2.4
+# crawl Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_cavity_brick polygon crawl:edge_fr_a
+0
+0
+18
+3.4 1.297 0
+4.4 1.297 0
+4.4 1.297 0.2
+3.4 1.297 0.2
+1.3 1.297 0.2
+1.3 1.297 0
+
+rc_ex_cavity_brick polygon crawl:edge_fr_b
+0
+0
+12
+4.397 1.3 0
+4.397 0.65 0
+4.397 0.65 0.2
+4.397 1.3 0.2
+
+rc_ex_cavity_brick polygon crawl:edge_fr_c
+0
+0
+12
+4.4 0.647 0
+6.2 0.647 0
+6.2 0.647 0.2
+4.4 0.647 0.2
+
+rc_ex_cavity_brick polygon crawl:edge_fr_d
+0
+0
+12
+6.203 0.65 0
+6.203 1.3 0
+6.203 1.3 0.2
+6.203 0.65 0.2
+
+rc_ex_cavity_brick polygon crawl:edge_fr_e
+0
+0
+12
+6.2 1.297 0
+7.2 1.297 0
+7.2 1.297 0.2
+6.2 1.297 0.2
+
+rc_ex_cavity_brick polygon crawl:edge_right_a
+0
+0
+12
+7.203 1.3 0
+7.203 2.3 0
+7.203 2.3 0.2
+7.203 1.3 0.2
+
+rc_ex_cavity_brick polygon crawl:edge_right_b
+0
+0
+12
+7.2 2.303 0
+7 2.303 0
+7 2.303 0.2
+7.2 2.303 0.2
+
+rc_ex_cavity_brick polygon crawl:edge_right_e
+0
+0
+18
+7.203 3.8 0
+7.203 4.8 0
+7.203 5.9 0
+7.203 5.9 0.2
+7.203 4.8 0.2
+7.203 3.8 0.2
+
+rc_ex_cavity_brick polygon crawl:edge_right_c
+0
+0
+12
+7.003 2.3 0
+7.003 3.8 0
+7.003 3.8 0.2
+7.003 2.3 0.2
+
+rc_ex_cavity_brick polygon crawl:edge_right_d
+0
+0
+12
+7 3.797 0
+7.2 3.797 0
+7.2 3.797 0.2
+7 3.797 0.2
+
+rc_ex_cavity_brick polygon crawl:edge_right_f
+0
+0
+12
+7.2 5.903 0
+6.9 5.903 0
+6.9 5.903 0.2
+7.2 5.903 0.2
+
+rc_ex_cavity_brick polygon crawl:edge_right_g
+0
+0
+12
+6.903 5.9 0
+6.903 7.3 0
+6.903 7.3 0.2
+6.903 5.9 0.2
+
+rc_ex_cavity_brick polygon crawl:edge_right_h
+0
+0
+12
+6.9 7.297 0
+7.2 7.297 0
+7.2 7.297 0.2
+6.9 7.297 0.2
+
+rc_ex_cavity_brick polygon crawl:edge_right_i
+0
+0
+12
+7.203 7.3 0
+7.203 8.5 0
+7.203 8.5 0.2
+7.203 7.3 0.2
+
+rc_ex_cavity_brick polygon crawl:edge_bk
+0
+0
+18
+3.4 8.503 0
+1.3 8.503 0
+1.3 8.503 0.2
+3.4 8.503 0.2
+7.2 8.503 0.2
+7.2 8.503 0
+
+rc_ex_cavity_brick polygon crawl:edge_left
+0
+0
+24
+1.297 2.7 0
+1.297 1.3 0
+1.297 1.3 0.2
+1.297 2.7 0.2
+1.297 6 0.2
+1.297 8.5 0.2
+1.297 8.5 0
+1.297 6 0
+# tnk_lo_160 Surface defs..
+# Outside zone Surface defs...
+# tnk_md_160 Surface defs..
+# Outside zone Surface defs...
+# tnk_hi_160 Surface defs..
+# Outside zone Surface defs...
+# rad_bath Surface defs..
+# Outside zone Surface defs...
+# rad_br3 Surface defs..
+# Outside zone Surface defs...
+# boiler_case Surface defs..
+# Outside zone Surface defs...
+# rad_br2 Surface defs..
+# Outside zone Surface defs...
+# rad_dining Surface defs..
+# Outside zone Surface defs...
+# rad-mbr Surface defs..
+# Outside zone Surface defs...
+# rad_lounge Surface defs..
+# Outside zone Surface defs...
+# rad_kit Surface defs..
+# Outside zone Surface defs...
+# rad-hall Surface defs..
+# Outside zone Surface defs...
+# collec_low Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_tank_i_50mmi polygon collec_low:edg_left
+0
+0
+12
+3.65669 1.57683 5.90578
+3.64954 0.88134 5.44738
+3.64946 0.87309 5.4599
+3.65661 1.56858 5.9183
+
+rc_ex_tank_i_50mmi polygon collec_low:base_edge
+0
+0
+12
+3.65251 0.87881 5.44573
+4.85244 0.86648 5.44573
+4.85236 0.85823 5.45825
+3.65243 0.87056 5.45825
+
+rc_ex_tank_i_50mmi polygon collec_low:right
+0
+0
+12
+4.85547 0.86895 5.44738
+4.86262 1.56469 5.90595
+4.86254 1.55644 5.91847
+4.85539 0.8607 5.4599
+# collec_mid Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_tank_i_50mmi polygon collec_mid:left
+0
+0
+12
+3.66383 2.27232 6.36418
+3.65669 1.57683 5.90578
+3.65661 1.56858 5.9183
+3.66375 2.26407 6.3767
+
+rc_ex_tank_i_50mmi polygon collec_mid:right
+0
+0
+12
+4.86262 1.56469 5.90595
+4.86978 2.26043 6.36452
+4.86969 2.25218 6.37704
+4.86254 1.55644 5.91847
+# collec_hi Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_tank_i_50mmi polygon collec_hi:top_edge
+0
+0
+12
+4.87396 2.95878 6.82479
+3.67402 2.97112 6.82479
+3.67394 2.96287 6.83731
+4.87388 2.95053 6.83731
+
+rc_ex_tank_i_50mmi polygon collec_hi:left
+0
+0
+12
+3.67099 2.96865 6.82314
+3.66383 2.27232 6.36418
+3.66375 2.26407 6.3767
+3.67091 2.9604 6.83566
+
+rc_ex_tank_i_50mmi polygon collec_hi:right
+0
+0
+12
+4.86978 2.26043 6.36452
+4.87693 2.95625 6.82314
+4.87685 2.948 6.83566
+4.86969 2.25218 6.37704
+# air_low Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_tank_i_50mmi polygon air_low:low_edge
+0
+0
+12
+3.65243 0.87056 5.45825
+4.85236 0.85823 5.45825
+4.85208 0.83072 5.5
+3.65215 0.84305 5.5
+
+rc_ex_tank_i_50mmi polygon air_low:right
+0
+0
+12
+4.85539 0.8607 5.4599
+4.86254 1.55644 5.91847
+4.86226 1.52893 5.96022
+4.85511 0.83319 5.50165
+
+rc_ex_tank_i_50mmi polygon air_low:left
+0
+0
+12
+3.65661 1.56858 5.9183
+3.64946 0.87309 5.4599
+3.64918 0.84558 5.50165
+3.65633 1.54107 5.96005
+# air_mid Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_tank_i_50mmi polygon air_mid:right
+0
+0
+12
+4.86254 1.55644 5.91847
+4.86969 2.25218 6.37704
+4.86941 2.22467 6.41879
+4.86226 1.52893 5.96022
+
+rc_ex_tank_i_50mmi polygon air_mid:left
+0
+0
+12
+3.66375 2.26407 6.3767
+3.65661 1.56858 5.9183
+3.65633 1.54107 5.96005
+3.66347 2.23656 6.41845
+# air_hi Surface defs..
+# Outside zone Surface defs...
+
+rc_ex_tank_i_50mmi polygon air_hi:top_edge
+0
+0
+12
+4.87396 2.95878 6.82479
+3.67402 2.97112 6.82479
+3.67374 2.94361 6.86654
+4.87368 2.93127 6.86654
+
+rc_ex_tank_i_50mmi polygon air_hi:left
+0
+0
+12
+3.67099 2.96865 6.82314
+3.66383 2.27232 6.36418
+3.66355 2.24481 6.40593
+3.67071 2.94114 6.86489
+
+rc_ex_tank_i_50mmi polygon air_hi:right
+0
+0
+12
+4.86978 2.26043 6.36452
+4.87693 2.95625 6.82314
+4.87665 2.92874 6.86489
+4.8695 2.23292 6.40627
+# water_jacket Surface defs..
+# Outside zone Surface defs...
+# gas Surface defs..
+# Outside zone Surface defs...
+# mixer Surface defs..
+# Outside zone Surface defs...

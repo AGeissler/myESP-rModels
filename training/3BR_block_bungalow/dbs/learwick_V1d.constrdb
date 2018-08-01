@@ -1,0 +1,538 @@
+*CONSTRUCTIONS,1.0 # multilayer constructions
+*Text
+A mix of constructions typical of northern UK maritime regions
+including traditional and refurbished and new-build.
+A V1 format constructions file imported from a legacy file and
+based on material.db4.a and CFClayers db CFClayers.db1.a
+*End_text
+*date,Thu Nov 24 17:43:30 2016
+*Category,walls,opaque facade constructions,opaque facades representing different ages & performance
+*Category,partitions,internal partitions,partitions between zones (some have matching mirror versions)
+*Category,doors,inside and outside doors,doors of different ages types and performance characteristics
+*Category,glazing,glazing (transparent construc),transparent constructions (using TMC optical properties)
+*Category,frames,frames for doors & windows,frames of various types for use with windows and doors
+*Category,roofs,flat and sloped roofs,roof constructions various ages & performances & orientations
+*Category,ceil_floor,internal ceilings and floors,internal ceilings and floors (& matched mirror constructions)
+*Category,ground,ground floors & crawl-spaces,floors & earth - crawl spaces & ground contact floors & walls
+*Category,fittings,equipment cases furniture etc.,collection of cases for equipment and furnature or fittings
+*Category,legacy,legacy constructions & models,collection of legacy constructions for training & validation
+*Category,UK_code,constructions for UK compliance,collection of constructions taken from UK SBEM
+*Category,project,constructions unique for project,collection of constructions for this project
+#
+*item,Extwall_ti,timber kit w/ rainscreen U0.23 # tag name menu entry
+*itemdoc,Extwall_ti is a timber kit wall system with rainscreen 140mm insul and U=0.23
+*incat,walls
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,68,0.0210,weatherboard : Weatherboard (source does not clarify what it is)
+*layer,0,0.0500,gap  0.170 0.170 0.170
+*layer,76,0.0095,plywood sheathing : Plywood sheathing (UK code)
+*layer,294,0.1400,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*layer,0,0.0250,gap  0.170 0.170 0.170
+*layer,112,0.0125,Plasterboard (UK code) : Plasterboard (UK code)
+*end_item
+*item,Partywall_ti,timber kit acoustic party wall # tag name menu entry
+*itemdoc,Partywall_ti is an air-gapped acoustic party wall between timber kit bui ldings with doubled gypboard
+*incat,partitions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,112,0.0300,Plasterboard (UK code) : Plasterboard (UK code)
+*layer,293,0.0500,Min wool quilt betwnstuds : Min wool quilt between studwork
+*layer,0,0.0760,gap  0.170 0.170 0.170
+*layer,293,0.0500,Min wool quilt betwnstuds : Min wool quilt between studwork
+*layer,112,0.0300,Plasterboard (UK code) : Plasterboard (UK code)
+*end_item
+*item,Parttim,stud & plasterboard partition # tag name menu entry
+*itemdoc,Parttim is a plaster board stud partition 113mm thick
+*incat,partitions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,112,0.0125,Plasterboard (UK code) : Plasterboard (UK code)
+*layer,0,0.0880,gap  0.170 0.170 0.170
+*layer,112,0.0125,Plasterboard (UK code) : Plasterboard (UK code)
+*end_item
+*item,Floorti_low,wood floor exposed batt rm->crawl # tag name menu entry
+*itemdoc,Floorti_low could be used over a crawl space wood over mineral wool
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Ceilti_crl
+*layer,294,0.1600,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*layer,0,0.0270,gap  0.170 0.170 0.170
+*layer,67,0.0190,chipboard : Chipboard
+*layer,65,0.0100,flooring : Flooring (source does not clarify what it is)
+*end_item
+*item,Floorti_up,acoustic intermediate flr->ceil # tag name menu entry
+*itemdoc,Floorti_up is a wooden acoustic intermediate floor for use in room above.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Ceilti_low
+*layer,111,0.0125,Plasterboard (ceiling) : Plasterboard Gypsum ceiling (UK code)
+*layer,0,0.1800,gap  0.170 0.170 0.170
+*layer,293,0.0500,Min wool quilt betwnstuds : Min wool quilt between studwork
+*layer,303,0.0150,fibreboard 250kg : Porous wood fiberboard 250 kg/m3 from IBO PassivHaus
+*layer,293,0.0600,Min wool quilt betwnstuds : Min wool quilt between studwork
+*layer,67,0.0190,chipboard : Chipboard
+*layer,65,0.0100,flooring : Flooring (source does not clarify what it is)
+*end_item
+*item,Floorti_int,non-acostic intermediate flr->ceil # tag name menu entry
+*itemdoc,Floorti_int is a non-acoustic intermediate wood floor for use in room above.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Ceilti_int
+*layer,111,0.0125,Plasterboard (ceiling) : Plasterboard Gypsum ceiling (UK code)
+*layer,0,0.2000,gap  0.170 0.170 0.170
+*layer,67,0.0190,chipboard : Chipboard
+*layer,65,0.0100,flooring : Flooring (source does not clarify what it is)
+*end_item
+*item,Roof,concrete tile cold roof over attic # tag name menu entry
+*itemdoc,Roof is a concrete tile cold roof for use over an attic.
+*incat,roofs
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,142,0.0127,concrete tile : Concrete tile (inorganic-porous)
+*layer,76,0.0180,plywood sheathing : Plywood sheathing (UK code)
+*end_item
+*item,Window_ext,Window_ext double glazed air filled # tag name menu entry
+*itemdoc,Window_ext is a minimally performing double glazed window.
+*incat,glazing
+*type,TRAN,DC_8074_04nb,SYMMETRIC
+*layer,243,0.0040,clear float : clear float glass with optics from UK national method dat
+*layer,0,0.0160,gap  0.170 0.170 0.170
+*layer,243,0.0040,clear float : clear float glass with optics from UK national method dat
+*end_item
+*item,Window_frme,Window_frme 60mm larch # tag name menu entry
+*itemdoc,Window_frme is a wood (larch) window frame 60mm thick.
+*incat,frames
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,92,0.0600,western larch : Wester Larch from simetric.co.uk and matbase specific h
+*end_item
+*item,Glazint_glas,single glass partition # tag name menu entry
+*itemdoc,Glazint_glas is a single glass for use as a transparent partition
+*incat,glazing
+*type,TRAN,SCF8783_06nb,SYMMETRIC
+*layer,243,0.0060,clear float : clear float glass with optics from UK national method dat
+*end_item
+*item,Door_ext,Door_ext 40mm larch # tag name menu entry
+*itemdoc,Door_ext is a solid wood (larch) door.
+*incat,doors
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,92,0.0400,western larch : Wester Larch from simetric.co.uk and matbase specific h
+*end_item
+*item,Doorfrm_ext,Doorfrm_ext 94mm larch  # tag name menu entry
+*itemdoc,Doorfrm_ext is the architrave for an exterior door.
+*incat,frames
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,92,0.0940,western larch : Wester Larch from simetric.co.uk and matbase specific h
+*end_item
+*item,Doorint_sol,hollow interior door # tag name menu entry
+*itemdoc,Doorint_sol is a hollow core interior door.
+*incat,doors
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,63,0.0030,Hardboard std : Hardboard (standard density)
+*layer,0,0.0290,gap  0.170 0.170 0.170
+*layer,63,0.0030,Hardboard std : Hardboard (standard density)
+*end_item
+*item,Door_fire,Interior fire door  # tag name menu entry
+*itemdoc,Door_fire approximates a fire door composed of 44mm MDF.
+*incat,doors
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,80,0.0440,MDF : MDF based on info in IBO PassivHaus (diffusion guessed)
+*end_item
+*item,Extwall_st,render on 600mm stone inside ins # tag name menu entry
+*itemdoc,Extwall_st is traditional stone wall rendered outside with air gap and 75mm infil insulation & plasterboard U=0.285
+*incat,walls
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,127,0.0150,rendering not-dry : Rendering (8% mc) (inorganic-porous)
+*layer,82,0.3000,red granite : Red granite (inorganic-porous)
+*layer,82,0.3000,red granite : Red granite (inorganic-porous)
+*layer,0,0.0750,gap  0.170 0.170 0.170
+*layer,296,0.0750,PUR : notional floor UK material
+*layer,112,0.0127,Plasterboard (UK code) : Plasterboard (UK code)
+*end_item
+*item,Partywall_st,concrete block & gyp party wall # tag name menu entry
+*itemdoc,Partywall_st is a pair of air gapped concrete block walls formingg ar party wall between dwellings with gyp board over battens finish
+*incat,partitions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,112,0.0127,Plasterboard (UK code) : Plasterboard (UK code)
+*layer,0,0.0380,gap  0.170 0.170 0.170
+*layer,102,0.0120,light plaster : Light weight plaster (inorganic-porous)
+*layer,36,0.1000,concrete block : concrete block (milton keynes)
+*layer,0,0.0500,gap  0.170 0.170 0.170
+*layer,36,0.1000,concrete block : concrete block (milton keynes)
+*layer,102,0.0120,light plaster : Light weight plaster (inorganic-porous)
+*layer,0,0.0380,gap  0.170 0.170 0.170
+*layer,112,0.0127,Plasterboard (UK code) : Plasterboard (UK code)
+*end_item
+*item,Partstone,lightweight partition w/in trad # tag name menu entry
+*itemdoc,Partstone is a lightweight partition for use in traditional stone bldg
+*incat,partitions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,112,0.0127,Plasterboard (UK code) : Plasterboard (UK code)
+*layer,0,0.0700,gap  0.170 0.170 0.170
+*layer,112,0.0127,Plasterboard (UK code) : Plasterboard (UK code)
+*end_item
+*item,Ceiling_st,concrete intermediate ceil->flr # tag name menu entry
+*itemdoc,Ceiling_st is a structural floor with surface on battons and gyp board on battens.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,65,0.0100,flooring : Flooring (source does not clarify what it is)
+*layer,67,0.0220,chipboard : Chipboard
+*layer,0,0.0670,gap  0.170 0.170 0.170
+*layer,40,0.1500,Concrete med density (1800) : Blockwork (UK code)
+*layer,0,0.0500,gap  0.170 0.170 0.170
+*layer,111,0.0127,Plasterboard (ceiling) : Plasterboard Gypsum ceiling (UK code)
+*end_item
+*item,Floor_st,insul slab-on-grade finish on battons # tag name menu entry
+*itemdoc,Floor_st is slab-on-grade with 50mm insulation with surface raised on battons.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,205,0.0500,Polyurethane foam bd : Polyurethane foam board (non-hygroscopic)
+*layer,40,0.1500,Concrete med density (1800) : Blockwork (UK code)
+*layer,0,0.0500,gap  0.170 0.170 0.170
+*layer,67,0.0220,chipboard : Chipboard
+*layer,65,0.0100,flooring : Flooring (source does not clarify what it is)
+*end_item
+*item,fict,fictitious opening# tag name menu entry
+*itemdoc,fict is used to represent an opening (max light transfer).
+*incat,glazing
+*type,TRAN,SC_fictit,SYMMETRIC
+*layer,245,0.0040,fict : fictitious material (almost not there) with matching single laye
+*end_item
+*item,ground,1.5m of ground below crawl space # tag name menu entry
+*itemdoc,ground is used at the base of a craw space and includes 1.5m of earth with a hard core layer
+*incat,ground
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,263,0.2500,earth std : Common_earth
+*layer,263,0.2500,earth std : Common_earth
+*layer,263,0.2500,earth std : Common_earth
+*layer,263,0.2500,earth std : Common_earth
+*layer,263,0.2500,earth std : Common_earth
+*layer,263,0.2500,earth std : Common_earth
+*layer,262,0.1000,gravel based : Gravel based (non-hygroscopic)
+*end_item
+*item,Parttim_wet,acoustic gyp board partition # tag name menu entry
+*itemdoc,Parttim_wet is a lightweight partition with acoustic batt
+*incat,partitions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,112,0.0125,Plasterboard (UK code) : Plasterboard (UK code)
+*layer,293,0.0880,Min wool quilt betwnstuds : Min wool quilt between studwork
+*layer,112,0.0125,Plasterboard (UK code) : Plasterboard (UK code)
+*end_item
+*item,Roof_stairs,Roof over stairs # tag name menu entry
+*itemdoc,Roof_stairs is a lightly insulated concrete tile roof section with interior plasterboard.
+*incat,roofs
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,142,0.0127,concrete tile : Concrete tile (inorganic-porous)
+*layer,76,0.0180,plywood sheathing : Plywood sheathing (UK code)
+*layer,294,0.1500,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*layer,0,0.0380,gap  0.170 0.170 0.170
+*layer,111,0.0125,Plasterboard (ceiling) : Plasterboard Gypsum ceiling (UK code)
+*end_item
+*item,Extwall_stw,rendered stone adj to wet room # tag name menu entry
+*itemdoc,Extwall_stw is a rendered stone wall with inside insul for a wet room
+*incat,walls
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,127,0.0150,rendering not-dry : Rendering (8% mc) (inorganic-porous)
+*layer,82,0.3000,red granite : Red granite (inorganic-porous)
+*layer,82,0.3000,red granite : Red granite (inorganic-porous)
+*layer,0,0.0750,gap  0.170 0.170 0.170
+*layer,296,0.0750,PUR : notional floor UK material
+*layer,76,0.0180,plywood sheathing : Plywood sheathing (UK code)
+*layer,112,0.0127,Plasterboard (UK code) : Plasterboard (UK code)
+*end_item
+*item,Partst_wet_i,acoustic partition wet rm->other # tag name menu entry
+*itemdoc,Partst_wet_i is a lightweight partition with one side backing for wet rm
+*incat,partitions
+*type,OPAQ,OPAQUE,Partst_wet_o
+*layer,112,0.0127,Plasterboard (UK code) : Plasterboard (UK code)
+*layer,0,0.0150,gap  0.170 0.170 0.170
+*layer,295,0.0600,Min wool quilt 1030spht : Insulation (Min wool quilt with 1030 sp. ht.)
+*layer,76,0.0180,plywood sheathing : Plywood sheathing (UK code)
+*layer,112,0.0127,Plasterboard (UK code) : Plasterboard (UK code)
+*end_item
+*item,Partst_wet_o,acoustic partition wet other->wet rm # tag name menu entry
+*itemdoc,Partst_wet_o is reverse of Partst_wet_i
+*incat,partitions
+*type,OPAQ,OPAQUE,Partst_wet_i
+*layer,112,0.0127,Plasterboard (UK code) : Plasterboard (UK code)
+*layer,76,0.0180,plywood sheathing : Plywood sheathing (UK code)
+*layer,295,0.0600,Min wool quilt 1030spht : Insulation (Min wool quilt with 1030 sp. ht.)
+*layer,0,0.0150,gap  0.170 0.170 0.170
+*layer,112,0.0127,Plasterboard (UK code) : Plasterboard (UK code)
+*end_item
+*item,Floor_stc,carpeted insulated slab-on-grade # tag name menu entry
+*itemdoc,Floor_stc is a carpeted above battons concrete slab-on-grade with 50mm insulation below
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,205,0.0500,Polyurethane foam bd : Polyurethane foam board (non-hygroscopic)
+*layer,40,0.1500,Concrete med density (1800) : Blockwork (UK code)
+*layer,0,0.0500,gap  0.170 0.170 0.170
+*layer,67,0.0220,chipboard : Chipboard
+*layer,224,0.0100,cellular rub underlay : Cellular rubber carpet underlay (non-hygroscopi
+*layer,225,0.0050,synthetic carpet : Synthetic carpet (non-hygroscopic)
+*end_item
+*item,Floorti_lowc,carpeted wood floor room->crawl # tag name menu entry
+*itemdoc,Floorti_lowc is a carpeted wood floor with exposed batts used in room over a crawl space
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Ceilti_crlc
+*layer,294,0.1600,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*layer,0,0.0270,gap  0.170 0.170 0.170
+*layer,67,0.0190,chipboard : Chipboard
+*layer,224,0.0100,cellular rub underlay : Cellular rubber carpet underlay (non-hygroscopi
+*layer,225,0.0050,synthetic carpet : Synthetic carpet (non-hygroscopic)
+*end_item
+*item,Ceilti_crl,wood floor with exposed batt crawl->rm # tag name menu entry
+*itemdoc,Ceilti_crl could be used over a crawl space (wood over exposed mineral wool)
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Floorti_low
+*layer,65,0.0100,flooring : Flooring (source does not clarify what it is)
+*layer,67,0.0190,chipboard : Chipboard
+*layer,0,0.0270,gap  0.170 0.170 0.170
+*layer,294,0.1600,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*end_item
+*item,Ceilti_crlc,carpeted floor above crawl space # tag name menu entry
+*itemdoc,Ceilti_crlc is a carpeted wood floor with exposed batts over a crawl space.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Floorti_lowc
+*layer,225,0.0050,synthetic carpet : Synthetic carpet (non-hygroscopic)
+*layer,224,0.0100,cellular rub underlay : Cellular rubber carpet underlay (non-hygroscopi
+*layer,67,0.0190,chipboard : Chipboard
+*layer,0,0.0270,gap  0.170 0.170 0.170
+*layer,294,0.1600,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*end_item
+*item,Floorti_upc,carpeted acoustic floor flr->ceil # tag name menu entry
+*itemdoc,Floorti_upc is a carpeted wooden acoustic intermediate floor for use in room above.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Ceilti_lowc
+*layer,111,0.0125,Plasterboard (ceiling) : Plasterboard Gypsum ceiling (UK code)
+*layer,0,0.1800,gap  0.170 0.170 0.170
+*layer,293,0.0500,Min wool quilt betwnstuds : Min wool quilt between studwork
+*layer,303,0.0150,fibreboard 250kg : Porous wood fiberboard 250 kg/m3 from IBO PassivHaus
+*layer,293,0.0600,Min wool quilt betwnstuds : Min wool quilt between studwork
+*layer,67,0.0190,chipboard : Chipboard
+*layer,224,0.0100,cellular rub underlay : Cellular rubber carpet underlay (non-hygroscopi
+*layer,225,0.0050,synthetic carpet : Synthetic carpet (non-hygroscopic)
+*end_item
+*item,Ceilti_low,acoustic intermediate ceil->flr # tag name menu entry
+*itemdoc,Ceilti_low is a wooden acoustic intermediate floor for use in room below.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Floorti_up
+*layer,65,0.0100,flooring : Flooring (source does not clarify what it is)
+*layer,67,0.0190,chipboard : Chipboard
+*layer,293,0.0600,Min wool quilt betwnstuds : Min wool quilt between studwork
+*layer,303,0.0150,fibreboard 250kg : Porous wood fiberboard 250 kg/m3 from IBO PassivHaus
+*layer,293,0.0500,Min wool quilt betwnstuds : Min wool quilt between studwork
+*layer,0,0.1800,gap  0.170 0.170 0.170
+*layer,111,0.0125,Plasterboard (ceiling) : Plasterboard Gypsum ceiling (UK code)
+*end_item
+*item,Ceilti_lowc,carpeted acoustic floor ceil->floor # tag name menu entry
+*itemdoc,Ceilti_lowc is a carpeted wooden acoustic intermediate floor for use in room below.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Floorti_upc
+*layer,225,0.0050,synthetic carpet : Synthetic carpet (non-hygroscopic)
+*layer,224,0.0100,cellular rub underlay : Cellular rubber carpet underlay (non-hygroscopi
+*layer,67,0.0190,chipboard : Chipboard
+*layer,293,0.0600,Min wool quilt betwnstuds : Min wool quilt between studwork
+*layer,303,0.0150,fibreboard 250kg : Porous wood fiberboard 250 kg/m3 from IBO PassivHaus
+*layer,293,0.0500,Min wool quilt betwnstuds : Min wool quilt between studwork
+*layer,0,0.1800,gap  0.170 0.170 0.170
+*layer,111,0.0125,Plasterboard (ceiling) : Plasterboard Gypsum ceiling (UK code)
+*end_item
+*item,Ceilti_up,ceiling at attic 300mm ins rm->attic # tag name menu entry
+*itemdoc,Ceilti_up is an insulated (300mm) ceiling use this in room just below attic
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Floorti_rf
+*layer,294,0.3000,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*layer,111,0.0125,Plasterboard (ceiling) : Plasterboard Gypsum ceiling (UK code)
+*end_item
+*item,Floorti_intc,Floorti_intc # tag name menu entry
+*itemdoc,Floorti_intc is a ...
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Ceilti_intc
+*layer,111,0.0125,Plasterboard (ceiling) : Plasterboard Gypsum ceiling (UK code)
+*layer,0,0.2000,gap  0.170 0.170 0.170
+*layer,67,0.0190,chipboard : Chipboard
+*layer,224,0.0100,cellular rub underlay : Cellular rubber carpet underlay (non-hygroscopi
+*layer,225,0.0050,synthetic carpet : Synthetic carpet (non-hygroscopic)
+*end_item
+*item,Ceilti_int,non-acostic intermediate ceil->flr # tag name menu entry
+*itemdoc,Ceilti_int is a non-acoustic intermediate wood floor for use in room below.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Floorti_int
+*layer,65,0.0100,flooring : Flooring (source does not clarify what it is)
+*layer,67,0.0190,chipboard : Chipboard
+*layer,0,0.2000,gap  0.170 0.170 0.170
+*layer,111,0.0125,Plasterboard (ceiling) : Plasterboard Gypsum ceiling (UK code)
+*end_item
+*item,Ceilti_intc,Ceilti_intc # tag name menu entry
+*itemdoc,Ceilti_intc  is a ...
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Floorti_intc
+*layer,225,0.0050,synthetic carpet : Synthetic carpet (non-hygroscopic)
+*layer,224,0.0100,cellular rub underlay : Cellular rubber carpet underlay (non-hygroscopi
+*layer,67,0.0190,chipboard : Chipboard
+*layer,0,0.2000,gap  0.170 0.170 0.170
+*layer,111,0.0125,Plasterboard (ceiling) : Plasterboard Gypsum ceiling (UK code)
+*end_item
+*item,Floorti_rf,ceiling at attic 300mm ins attic->rm # tag name menu entry
+*itemdoc,Floorti_rf is an insulated (300mm) ceiling use this in attic
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Ceilti_up
+*layer,111,0.0125,Plasterboard (ceiling) : Plasterboard Gypsum ceiling (UK code)
+*layer,294,0.3000,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*end_item
+*item,Crawl_wall,perimeter wall for crawl space # tag name menu entry
+*itemdoc,Crawl_wall is a block wall suitable to perimeter of a crawl space.
+*incat,walls
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,36,0.1200,concrete block : concrete block (milton keynes)
+*end_item
+*item,conc_blck_rn,rendered conc block wall plastd # tag name menu entry
+*itemdoc,conc_blck_rn is a rendered concrete block wall with plaster over gap on inside face.
+*incat,walls
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,128,0.0300,aged rendering : Aged Rendering (inorganic-porous)
+*layer,36,0.2250,concrete block : concrete block (milton keynes)
+*layer,0,0.0130,gap  0.170 0.170 0.170
+*layer,101,0.0300,dense plaster : Dense plaster (inorganic-porous)
+*end_item
+*item,conc_mu_rn,rendered conc wall hard plasterr # tag name menu entry
+*itemdoc,conc_mu_rn is a rendered concrete wall with hard plaster inside
+*incat,walls
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,128,0.0300,aged rendering : Aged Rendering (inorganic-porous)
+*layer,294,0.0500,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*layer,32,0.2550,heavy mix concrete : Heavy mix concrete
+*layer,101,0.0300,dense plaster : Dense plaster (inorganic-porous)
+*end_item
+*item,pwcon_blck_r,rendered cav conc blk plasteredr # tag name menu entry
+*itemdoc,pwcon_blck_r is a rendered cavity conc block wall with inside plaster over dabs
+*incat,walls
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,128,0.0300,aged rendering : Aged Rendering (inorganic-porous)
+*layer,36,0.1120,concrete block : concrete block (milton keynes)
+*layer,0,0.0600,gap  0.170 0.170 0.170
+*layer,36,0.1120,concrete block : concrete block (milton keynes)
+*layer,0,0.0130,gap  0.170 0.170 0.170
+*layer,101,0.0300,dense plaster : Dense plaster (inorganic-porous)
+*end_item
+*item,incon_blck_r,rendered cavity fill conc blockk # tag name menu entry
+*itemdoc,incon_blck_r is a rendered filled cavity conc block wall  plast inside
+*incat,walls
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,128,0.0300,aged rendering : Aged Rendering (inorganic-porous)
+*layer,36,0.1120,concrete block : concrete block (milton keynes)
+*layer,211,0.0850,glasswool : Glasswool (generic) (non-hygroscopic)
+*layer,36,0.1120,concrete block : concrete block (milton keynes)
+*layer,0,0.0130,gap  0.170 0.170 0.170
+*layer,101,0.0300,dense plaster : Dense plaster (inorganic-porous)
+*end_item
+*item,intcnc_block,internal conc block hard plaster # tag name menu entry
+*itemdoc,intcnc_block is a hard plastered concrete block partition wall
+*incat,partitions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,101,0.0300,dense plaster : Dense plaster (inorganic-porous)
+*layer,36,0.1120,concrete block : concrete block (milton keynes)
+*layer,101,0.0300,dense plaster : Dense plaster (inorganic-porous)
+*end_item
+*item,tk_block_rn,timber kit inside a block wall # tag name menu entry
+*itemdoc,tk_block_rn is a rendered concrete block over timber studs and gyp bd
+*incat,walls
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,128,0.0280,aged rendering : Aged Rendering (inorganic-porous)
+*layer,36,0.1020,concrete block : concrete block (milton keynes)
+*layer,70,0.0180,plywood 560d : Plywood (generic 560 density)
+*layer,0,0.0500,gap  0.190 0.190 0.190
+*layer,108,0.0180,white gypboard : White painted Gypboard (inorganic-porous)
+*end_item
+*item,tk_block_et,insulated timber kit wblock face # tag name menu entry
+*itemdoc,tk_block_et is an insulated timber kit with rendered conc block facing.
+*incat,walls
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,128,0.0280,aged rendering : Aged Rendering (inorganic-porous)
+*layer,36,0.1020,concrete block : concrete block (milton keynes)
+*layer,70,0.0180,plywood 560d : Plywood (generic 560 density)
+*layer,294,0.0500,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*layer,108,0.0180,white gypboard : White painted Gypboard (inorganic-porous)
+*end_item
+*item,Floortk_rf,ceiling at attic 150mm ins attic->rm # tag name menu entry
+*itemdoc,Floortk_rf is an insulated (150mm) ceiling use this in attic.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Ceiltk_up
+*layer,111,0.0125,Plasterboard (ceiling) : Plasterboard Gypsum ceiling (UK code)
+*layer,294,0.1500,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*end_item
+*item,Ceiltk_up,ceiling at attic 150mm ins rm->attic # tag name menu entry
+*itemdoc,Ceiltk_up is an insulated (150mm) ceiling use this in room just below attic
+*incat,project
+*type,OPAQ,OPAQUE,Floortk_rf
+*layer,294,0.1500,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*layer,111,0.0125,Plasterboard (ceiling) : Plasterboard Gypsum ceiling (UK code)
+*end_item
+*item,Floortk_lowc,open carpeted floor upper->lower # tag name menu entry
+*itemdoc,Floortk_lowc is a carpeted uninsulated exposed wood floor structure use as floor in upper room.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Ceiltk_crlc
+*layer,67,0.0190,chipboard : Chipboard
+*layer,224,0.0100,cellular rub underlay : Cellular rubber carpet underlay (non-hygroscopi
+*layer,225,0.0050,synthetic carpet : Synthetic carpet (non-hygroscopic)
+*end_item
+*item,Floortk_low,open hard floor upper->lower # tag name menu entry
+*itemdoc,Floortk_low is a non-carpeted floor with exposed structure below. Use in room above.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Ceiltk_crl
+*layer,67,0.0190,chipboard : Chipboard
+*layer,65,0.0100,flooring : Flooring (source does not clarify what it is)
+*end_item
+*item,Ceiltk_crl,open hard floor lower->upper # tag name menu entry
+*itemdoc,Ceiltk_crl is a non-carpeted floor with exposed structure below. Use as ceiling in room below.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Floortk_low
+*layer,65,0.0100,flooring : Flooring (source does not clarify what it is)
+*layer,67,0.0190,chipboard : Chipboard
+*end_item
+*item,Ceiltk_crlc,open carpeted floor lower->upper # tag name menu entry
+*itemdoc,Ceiltk_crlc is a carpeted uninsulated exposed wood floor structure use as ceiling in lower room
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Floortk_lowc
+*layer,225,0.0050,synthetic carpet : Synthetic carpet (non-hygroscopic)
+*layer,224,0.0100,cellular rub underlay : Cellular rubber carpet underlay (non-hygroscopi
+*layer,67,0.0190,chipboard : Chipboard
+*end_item
+*item,Flrettk_lowc,carpeted floor exp batt rm->crawl # tag name menu entry
+*itemdoc,Flrettk_lowc is a carpeted wood floor structure with exposed batts below use as floor in room above a crawl space.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Clettk_crlc
+*layer,294,0.1000,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*layer,67,0.0190,chipboard : Chipboard
+*layer,224,0.0100,cellular rub underlay : Cellular rubber carpet underlay (non-hygroscopi
+*layer,225,0.0050,synthetic carpet : Synthetic carpet (non-hygroscopic)
+*end_item
+*item,Flrettk_low,hard floor exp batt rm->crawl # tag name menu entry
+*itemdoc,Flrettk_low is a hard surface wood floor with exposed insulating batt use as floor in room above crawl space.
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Cltetk_crl
+*layer,294,0.1000,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*layer,67,0.0190,chipboard : Chipboard
+*layer,65,0.0100,flooring : Flooring (source does not clarify what it is)
+*end_item
+*item,Clettk_crl,hard floor exp batt crawl-rm # tag name menu entry
+*itemdoc,Clettk_crl is a hard surface wood floor with exposed insulating batt use as ceiling of crawl space
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Flrettk_low
+*layer,65,0.0100,flooring : Flooring (source does not clarify what it is)
+*layer,67,0.0190,chipboard : Chipboard
+*layer,294,0.1000,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*end_item
+*item,Cltetk_crlc,carpeted floor exp batt crawl->rm # tag name menu entry
+*itemdoc,Cltetk_crlc is a carpeted wood floor structure with exposed batts below use as ceiling of crawl space
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,Flrettk_lowc
+*layer,225,0.0050,synthetic carpet : Synthetic carpet (non-hygroscopic)
+*layer,224,0.0100,cellular rub underlay : Cellular rubber carpet underlay (non-hygroscopi
+*layer,67,0.0190,chipboard : Chipboard
+*layer,294,0.1000,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*end_item
+*item,Cltetk_crlc_copy,Cltetk_crlc_copy # tag name menu entry
+*itemdoc,no documentation yet for Cltetk_crlc_copy
+*incat,ceil_floor
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,225,0.0050,synthetic carpet : Synthetic carpet (non-hygroscopic)
+*layer,224,0.0100,cellular rub underlay : Cellular rubber carpet underlay (non-hygroscopi
+*layer,67,0.0190,chipboard : Chipboard
+*layer,294,0.1000,Mineral wool batt : Insulation (Mineral wool batt k=0.04) (non-hygrosco
+*end_item
+*db_end

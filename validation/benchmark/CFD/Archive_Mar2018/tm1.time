@@ -1,0 +1,3 @@
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+0.69user 0.00system 0:00.69elapsed 100%CPU (0avgtext+0avgdata 10464maxresident)k
+0inputs+408outputs (0major+1497minor)pagefaults 0swaps

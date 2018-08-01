@@ -1,0 +1,22 @@
+# Radiance RIF file: 3BR_wch_obj1819_Extern.rif
+#e2r_gen_view   0 -1
+#e2r_glaz_type   1
+view= def -vtv -vp  -40.1 -161.6   43.6 -vd  0.251  0.941 -0.226 -vu  0.00 0.00 1.00 -vh   4.1 -vv   4.1 -vs 0 -vl 0 -vo 0 -va 0
+scene= 3BR_wch_obj1819_Extern.sky
+scene= 3BR_wch_obj1819_Extern-glz.rad
+scene= 3BR_wch_obj1819_Extern.mat
+scene= 3BR_wch_obj1819_Extern-out.rad
+scene= 3BR_wch_obj1819_Extern-in.rad
+UP= Z
+QUALITY= Medium
+DETAIL= Medium
+VARIABILITY= High  
+RESOLUTION=   500
+INDIRECT=  1
+PENUMBRAS= False
+REPORT=    1
+render= -av 10.6000 10.6000 10.6000
+ZONE= Exterior   -12.46   20.96  -11.81   21.61    0.00   16.71
+OPTFILE= 3BR_wch_obj1819_Extern.opt
+OCTREE= 3BR_wch_obj1819_Extern.oct
+PICTURE= 3BR_wch_obj1819_Extern
