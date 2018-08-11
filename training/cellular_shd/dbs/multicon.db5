@@ -13,7 +13,7 @@ Tags are:
 - *layer layer data... mat ref, thickness,mat name: mat description
 - *Text ... *End_text  markers for database documentation
 *End_text
-*date,Fri Nov  4 10:34:08 2016
+*date,Tue Oct 17 10:24:00 2017
 *Category,walls,opaque facade constructions,opaque facades representing different ages and performance (mostly UK based)
 *Category,partitions,internal partitions,partitions between zones (some have matching mirror versions)
 *Category,doors,inside and outside doors,doors of different ages types and performance characteristics
@@ -1132,5 +1132,13 @@ Tags are:
 *incat,fittings
 *type,OPAQ,OPAQUE,SYMMETRIC
 *layer,311,0.2100,shelf_clutter : shelf_clutter mix of books magazines papers on typical
+*end_item
+*item,insul_frc_facade,insul GFRC facade ov Fermacell # tag name menu entry
+*itemdoc,insul_frc_facade GFR concrete over insulation and fermacell
+*incat,walls
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,31,0.0200,Glass reinf conc : Glass fibre reinforced concrete
+*layer,281,0.0800,glass fibre quilt : Glass Fibre Quilt (non-hygroscopic)
+*layer,115,0.0120,gypsum_fibreboard : Fermacell gypsum fibreboard IBR report 3001-100 gyp
 *end_item
 *db_end

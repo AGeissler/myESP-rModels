@@ -1,6 +1,6 @@
 *DFS V2.2 # Zone air movement description.
-*conflation 0  # conflation type (not applicable to cfd-only)
-*title A room with a CFD domain at double the grid resolution, not coupled                                                                  
+*conflation 1  # conflation type
+*title A room with a CFD domain at double the grid resolution, not coup        
 # user supplied notes for this domain
 *thermal_geom
 *vrts    1   2   4   5
@@ -63,16 +63,16 @@ Turbulence 3 # MIT
 Buoyancy 0 # ignored
 # Equations to be solved:
 *solution_equations
-#  Type  Initial value  Relaxation type and factor
-Pressure    0.000 Linear  1.000
-Vel U  0.100E-02 Linear  0.500
-Vel V  0.100E-02 Linear  0.500
-Vel W  0.100E-02 Linear  0.500
-Ted  0.500E-02 Linear  0.700    
-Epd  0.500E-02 Linear  0.700    
+#  Type  Initial value  Relaxation type and factors
+Pressure    0.000 Linear  1.000  0.050
+Vel U  0.100E-02 Linear  0.500  0.050
+Vel V  0.100E-02 Linear  0.500  0.050
+Vel W  0.100E-02 Linear  0.500  0.050
+Ted  0.500E-02 Linear  0.700      0.500E-01
+Epd  0.500E-02 Linear  0.700      0.500E-01
 # Iteration control.
 *iteration 
-   500  0.1000E-01 No
+  4000  0.200E-01 No
 *monitor    6   4   5  CFD.mon
 *reint  NO
 *svf  1  # frequency of results writing

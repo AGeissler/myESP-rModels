@@ -57,8 +57,8 @@ else
   endif
 endif
 echo "Which tests?"
-echo " (1) Fast (23 simulations; run time: ~15 minutes & <2hrs on a slow computer)"
-echo " (2) Slow (3 simulations; run time: 12x time for fast tests)"
+echo " (1) Fast (24 simulations; run time: ~3 minutes, <2hrs on a slow computer)"
+echo " (2) Slow (2 simulations; run time: ~2x time for fast tests)"
 echo " (3) All (26 simulations)"
 @ A=0
 while ( $A<1 || $A>3 )
@@ -71,9 +71,11 @@ end
 if ( $A == 1 || $A == 3 ) then
   foreach i (basic block block2 block3 blockc blockh \
              blocklma basiclma co2_so hum_so lma sso \
-             tm1 porous tst33vol)
+             tm1 porous tst33vol tm1a tm1b blockt)
     @ test ++
     echo "Test "$test": "$i".dfd with the default solver."
+# Debug: echo invocation command
+#    echo "./dfs_basic.sh $DFS $i"
     cd Models; ./dfs_basic.sh $DFS $i; cd ..
   end
 endif
@@ -84,7 +86,21 @@ if ( $A == 1 || $A == 3 ) then
   foreach i (basicsol)
     @ test ++
     echo "Test "$test": "$i".dfd with the bi-cg solver."
+# Debug: echo invocation command
+#    echo "./dfs_bi-cg.sh $DFS $i"
     cd Models; ./dfs_bi-cg.sh $DFS $i; cd ..
+  end
+endif
+#
+# Fast not converging tests
+#
+if ( $A == 1 || $A == 3 ) then
+  foreach i (displ displ_si tm1_so tm2_so)
+    @ test ++
+    echo "Test "$test": "$i".dfd with the default solver."
+# Debug: echo invocation command
+#    echo "./dfs_not_conv.sh $DFS $i"
+    cd Models; ./dfs_not_conv.sh $DFS $i; cd ..
   end
 endif
 #
@@ -94,37 +110,21 @@ if ( $A == 1 || $A == 3 ) then
   foreach i (displ)
     @ test ++
     echo "Test "$test": "$i".dfd with the ggdh solver."
+# Debug: echo invocation command
+#    echo "./dfs_ggdh_not_conv.sh $DFS $i"
     cd Models; ./dfs_ggdh_not_conv.sh $DFS $i; cd ..
-  end
-endif
-#
-# Fast not converging tests
-#
-if ( $A == 1 || $A == 3 ) then
-  foreach i (displ displ_si tm1_so tm2_so tm1a tm1b)
-    @ test ++
-    echo "Test "$test": "$i".dfd with the default solver."
-    cd Models; ./dfs_not_conv.sh $DFS $i; cd ..
   end
 endif
 #
 # Slow not converging tests
 #
 if ( $A == 2 || $A == 3 ) then
-  foreach i (blockt)
-    @ test ++
-    echo "Test "$test": "$i".dfd with the default solver."
-    cd Models; ./dfs_not_conv.sh $DFS $i; cd ..
-  end
-endif
-#
-# Slow converging tests
-#
-if ( $A == 2 || $A == 3 ) then
   foreach i (bi-cg)
     @ test ++
     echo "Test "$test": "$i".dfd with the default solver."
-    cd Models; ./dfs_basic.sh $DFS $i; cd ..
+# Debug: echo invocation command
+#    echo "./dfs_not_conv.sh $DFS $i"
+    cd Models; ./dfs_not_conv.sh $DFS $i; cd ..
   end
 endif
 #
@@ -134,6 +134,8 @@ if ( $A == 2 || $A == 3 ) then
   foreach i (bi-cg)
     @ test ++
     echo "Test "$test": "$i".dfd with the bi-cg solver."
-    cd Models; ./dfs_bi-cg.sh $DFS $i; cd ..
+# Debug: echo invocation command
+#    echo "./dfs_bi-cg.sh $DFS $i"
+    cd Models; ./dfs_bi-cg_not_conv.sh $DFS $i; cd ..
   end
 endif

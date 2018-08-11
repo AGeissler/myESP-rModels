@@ -13,7 +13,7 @@ echo "   Creating QA report $QAFILE ... "
 
 prj -file ${CONFIG}.cfg -mode text >> /dev/null <<XXX
 m  # browse/edit/simulate
-t  # results & QA reporting
+u  # results & QA reporting
 g  # zone selection
 *  # all items
 -  # exit menu

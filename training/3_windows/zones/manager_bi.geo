@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,manager_bi # tag version, format, zone name
-*date Thu Aug 23 17:51:32 2007  # latest file modification 
+*date Fri Mar 16 12:28:18 2018  # latest file modification 
 manager_bi describes an office with bi-directional opening
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,8.00000,0.00000,0.00000  #   1
@@ -28,34 +28,34 @@ manager_bi describes an office with bi-directional opening
 *vertex,10.01600,0.00000,2.90000  #  24
 # 
 # tag, number of vertices followed by list of associated vert
-*edges,5,2,3,8,7,12  #  1
-*edges,10,3,4,9,8,3,19,22,21,20,19  #  2
-*edges,4,4,5,10,9  #  3
-*edges,5,5,1,11,6,10  #  4
-*edges,5,6,7,8,9,10  #  5
-*edges,5,1,5,4,3,2  #  6
-*edges,6,1,2,12,14,13,11  #  7
-*edges,14,11,13,14,12,7,6,11,15,18,24,17,16,23,15  #  8
-*edges,4,15,23,24,18  #  9
-*edges,4,19,20,21,22  # 10
-*edges,4,23,16,17,24  # 11
+*edges,5,2,3,8,7,12  #   1
+*edges,10,3,4,9,8,3,19,22,21,20,19  #   2
+*edges,4,4,5,10,9  #   3
+*edges,5,5,1,11,6,10  #   4
+*edges,5,6,7,8,9,10  #   5
+*edges,5,1,5,4,3,2  #   6
+*edges,6,1,2,12,14,13,11  #   7
+*edges,14,11,13,14,12,7,6,11,15,18,24,17,16,23,15  #   8
+*edges,4,15,23,24,18  #   9
+*edges,4,19,20,21,22  #  10
+*edges,4,23,16,17,24  #  11
 # 
 # surf attributes:
-#  surf name, surf position VERT/CIIL/FLOR/SLOP/UNKN
+#  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
 *surf,pt_general,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,SIMILAR,00,00  #   1 ||< identical environment
 *surf,part_frame,VERT,-,-,-,insul_frame,OPAQUE,SIMILAR,00,00  #   2 ||< identical environment
-*surf,door,VERT,-,-,-,door,OPAQUE,SIMILAR,00,00  #   3 ||< identical environment
+*surf,door,VERT,-,DOOR,UNDERCUT,door,OPAQUE,SIMILAR,00,00  #   3 ||< identical environment
 *surf,pt_other,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,SIMILAR,00,00  #   4 ||< identical environment
 *surf,ceiling,CEIL,-,-,-,ceiling,OPAQUE,SIMILAR,00,00  #   5 ||< identical environment
 *surf,floor,FLOR,-,-,-,susp_flr_re,OPAQUE,SIMILAR,00,00  #   6 ||< identical environment
-*surf,spandral,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   7 ||< external
-*surf,frame,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   8 ||< external
-*surf,glazing,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #   9 ||< external
+*surf,spandral,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,00,000  #   7 ||< external
+*surf,frame,VERT,-,F-FRAME,CRACK,insul_frame,OPAQUE,EXTERIOR,00,000  #   8 ||< external
+*surf,glazing,VERT,-,C-WINDOW,CLOSED,dbl_glz,DCF7671_06nb,EXTERIOR,00,000  #   9 ||< external
 *surf,part_glaz,VERT,-,-,-,dbl_glz,DCF7671_06nb,SIMILAR,00,00  #  10 ||< identical environment
-*surf,bi-glaz,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  11 ||< external
+*surf,bi-glaz,VERT,-,C-WINDOW,BIDIR,dbl_glz,DCF7671_06nb,EXTERIOR,00,000  #  11 ||< external
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

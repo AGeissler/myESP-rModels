@@ -177,7 +177,7 @@
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-surfaces insolated by source  1 glazing      # hourly columns, ranking via rows
+surfaces insolated by source   1 glazing      # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 4 4 4 4 6 6 1 1 1 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 0 37 41 6 11 11 31 35 33 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 0 13 37 3 3 1 33 31 35 -1 -1 -1 -1 -1 -1 -1 -1
@@ -376,7 +376,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-surfaces insolated by source  1 glazing      # hourly columns, ranking via rows
+surfaces insolated by source   1 glazing      # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 4 4 4 6 6 6 1 1 1 1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 13 13 41 4 13 1 6 35 33 0 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 0 37 13 13 37 13 35 19 0 0 -1 -1 -1 -1 -1 -1 -1
@@ -575,7 +575,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-surfaces insolated by source  1 glazing      # hourly columns, ranking via rows
+surfaces insolated by source   1 glazing      # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 4 4 4 4 6 6 6 6 1 1 1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 0 13 13 13 13 13 15 1 15 15 15 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 0 15 15 6 4 15 13 15 35 0 0 -1 -1 -1 -1 -1 -1 -1
@@ -774,7 +774,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-surfaces insolated by source  1 glazing      # hourly columns, ranking via rows
+surfaces insolated by source   1 glazing      # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 0 4 4 13 15 15 15 15 15 15 1 1 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 0 15 15 15 4 13 13 13 1 1 15 15 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 0 0 13 4 6 6 6 1 6 6 0 0 0 -1 -1 -1 -1 -1 -1
@@ -973,7 +973,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-surfaces insolated by source  1 glazing      # hourly columns, ranking via rows
+surfaces insolated by source   1 glazing      # hourly columns, ranking via rows
 -1 -1 -1 -1 0 0 0 4 15 15 15 15 15 15 15 1 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 15 4 4 6 6 6 1 1 15 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 13 13 13 13 13 13 6 6 6 0 0 0 -1 -1 -1 -1 -1
@@ -1172,7 +1172,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-surfaces insolated by source  1 glazing      # hourly columns, ranking via rows
+surfaces insolated by source   1 glazing      # hourly columns, ranking via rows
 -1 -1 -1 -1 0 0 0 4 15 15 15 15 15 15 15 1 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 6 4 4 13 6 13 1 1 6 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 15 13 13 4 13 6 6 6 15 0 0 0 -1 -1 -1 -1 -1
@@ -1371,7 +1371,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-surfaces insolated by source  1 glazing      # hourly columns, ranking via rows
+surfaces insolated by source   1 glazing      # hourly columns, ranking via rows
 -1 -1 -1 -1 0 0 0 4 15 15 15 15 15 15 15 1 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 6 4 4 6 6 6 1 1 15 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 15 13 13 13 13 13 6 6 6 0 0 0 -1 -1 -1 -1 -1
@@ -1570,7 +1570,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-surfaces insolated by source  1 glazing      # hourly columns, ranking via rows
+surfaces insolated by source   1 glazing      # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 0 4 4 15 15 15 15 15 15 15 1 1 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 0 0 15 4 4 6 6 13 1 1 15 6 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 0 0 13 13 6 13 13 6 6 6 6 0 0 0 -1 -1 -1 -1 -1
@@ -1769,7 +1769,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-surfaces insolated by source  1 glazing      # hourly columns, ranking via rows
+surfaces insolated by source   1 glazing      # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 0 4 4 4 6 6 6 6 1 1 1 1 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 0 13 13 13 4 15 15 15 6 15 15 15 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 0 15 15 15 15 13 13 1 15 6 0 0 0 -1 -1 -1 -1 -1 -1
@@ -1968,7 +1968,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-surfaces insolated by source  1 glazing      # hourly columns, ranking via rows
+surfaces insolated by source   1 glazing      # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 4 4 4 4 6 6 6 1 1 1 1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 0 13 13 6 13 13 1 6 33 0 0 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 0 0 37 13 4 15 15 35 35 0 0 -1 -1 -1 -1 -1 -1 -1
@@ -2167,7 +2167,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-surfaces insolated by source  1 glazing      # hourly columns, ranking via rows
+surfaces insolated by source   1 glazing      # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 4 4 4 6 6 1 1 1 1 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 13 37 3 4 33 6 33 35 0 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 0 41 6 3 11 33 35 33 0 -1 -1 -1 -1 -1 -1 -1 -1
@@ -2366,7 +2366,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-surfaces insolated by source  1 glazing      # hourly columns, ranking via rows
+surfaces insolated by source   1 glazing      # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 4 4 4 4 11 11 1 1 1 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 0 37 3 3 6 1 31 35 33 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 0 41 41 6 3 6 33 33 35 -1 -1 -1 -1 -1 -1 -1 -1

@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,manager # tag version, format, zone name
-*date Fri Jul 17 11:05:01 2009  # latest file modification 
+*date Fri Sep  4 13:29:13 2015  # latest file modification 
 manager describes cellular office
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,0.00000,0.00000,0.00000  #   1
@@ -47,15 +47,15 @@ manager describes cellular office
 #  boundary condition tag followed by two data items
 *surf,pt_general,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,02,02  #   1 ||< pt_mgrs:general
 *surf,part_frame,VERT,-,-,-,insul_frame,OPAQUE,ANOTHER,02,13  #   2 ||< part_frame:general
-*surf,door,VERT,-,-,-,door,OPAQUE,ANOTHER,02,01  #   3 ||< door:general
+*surf,door,VERT,-,DOOR,UNDERCUT,door,OPAQUE,ANOTHER,02,01  #   3 ||< door:general
 *surf,pt_other,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,SIMILAR,00,00  #   4 ||< identical environment
 *surf,ceiling,CEIL,-,-,-,ceiling,OPAQUE,ANOTHER,05,01  #   5 ||< Surf-6:ceil_void
 *surf,floor,FLOR,-,-,-,susp_flr_re,OPAQUE,SIMILAR,00,00  #   6 ||< identical environment
 *surf,spandral,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   7 ||< external
-*surf,vent,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   8 ||< external
+*surf,vent,VERT,spandral,F-FRAME,OPEN,insul_frame,OPAQUE,EXTERIOR,0,0  #   8 ||< external
 *surf,frame,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   9 ||< external
-*surf,glazing,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  10 ||< external
-*surf,part_glaz,VERT,-,-,-,dbl_glz,DCF7671_06nb,ANOTHER,02,14  #  11 ||< part_glaz:general
+*surf,glazing,VERT,frame,C-WINDOW,CRACK,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  10 ||< external
+*surf,part_glaz,VERT,part_frame,-,-,dbl_glz,DCF7671_06nb,ANOTHER,02,14  #  11 ||< part_glaz:general
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 
@@ -70,11 +70,11 @@ manager describes cellular office
 # 
 # block entities:
 #  *obs = obstructions
-*block_start,20 20 # geometric blocks
-*obs,0.000,-0.100,3.100,3.000,0.020,0.300,0.000,ob1,NONE  # block  1
-*obs,0.000,-0.300,3.100,3.000,0.020,0.250,0.000,ob2,NONE  # block  2
-*obs,0.000,-0.500,3.100,3.000,0.020,0.220,0.000,ob3,NONE  # block  3
-*obs,0.000,-0.700,3.100,3.000,0.020,0.200,0.000,ob4,NONE  # block  4
-*obs,0.000,-0.900,3.100,3.000,0.020,0.200,0.000,ob5,NONE  # block  5
-*obs,0.000,-1.100,3.100,3.000,0.020,0.200,0.000,ob6,NONE  # block  6
+*block_start, 20 20 # geometric blocks
+*obs,0.0000,-0.1000,3.1000,3.0000,0.0200,0.3000,0.0000,1.00,ob1,NONE  # block   1
+*obs,0.0000,-0.3000,3.1000,3.0000,0.0200,0.2500,0.0000,1.00,ob2,NONE  # block   2
+*obs,0.0000,-0.5000,3.1000,3.0000,0.0200,0.2200,0.0000,1.00,ob3,NONE  # block   3
+*obs,0.0000,-0.7000,3.1000,3.0000,0.0200,0.2000,0.0000,1.00,ob4,NONE  # block   4
+*obs,0.0000,-0.9000,3.1000,3.0000,0.0200,0.2000,0.0000,1.00,ob5,NONE  # block   5
+*obs,0.0000,-1.1000,3.1000,3.0000,0.0200,0.2000,0.0000,1.00,ob6,NONE  # block   6
 *end_block

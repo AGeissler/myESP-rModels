@@ -1,0 +1,11 @@
+# transparent properties of living defined in ../zones/main.tmc
+#SURFACE_COUNT
+11 # surfaces
+#TMC_INDEX tmc index for each surface
+0,0,0,0,0,0,0,1,1,1,1
+#TMC_DATA
+# layers in tmc type 1
+# Transmission @ 5 angles & visible tr. (1 value); all 5.3 floats
+# For each layer absorption @ 5 angles; all 5.3 floats
+# optical control flag (0?)
+#END_TMC_DATA

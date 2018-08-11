@@ -12,7 +12,6 @@ rm -f CFD.mon_01 TECp_1.dat
 # 
 time $DFS -mode text -file $model".dfd" 1> $model".out" 2> $model".time" << XYZ 
 d
-a
 e
 e
 -

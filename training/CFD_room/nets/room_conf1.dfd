@@ -80,8 +80,8 @@ Vel W  0.100E-02 Linear  0.500
 Temp   20.000 Linear  0.500
 Ted  0.500E-03 Linear  0.500    
 Epd  0.500E-03 Linear  0.500    
-CO_2  n/a Linear    1.00    
-H2O  n/a Linear    1.00    
+CO_2  0.500E-5 Linear    1.00    
+H2O  0.500E-5 Linear    1.00    
 Lmage  n/a Linear  n/a # currently 0.9 is always assumed
 # Iteration control.
 *iteration 

@@ -1,12 +1,13 @@
 Synopsis
  
 Synopsis of the model Three offices with different window representations
-(legacy network). defined in 3_windows_legacy.cfg generated on Thu Dec  1
-12:17:35 2016. Associated notes are in ../doc/3_windows.log
+(legacy network). defined in 3_windows_legacy.cfg generated on Thu Apr  5
+16:16:18 2018. Associated notes are in ../doc/3_windows.log
  
 The model is located at latitude   55.00 with a longitude difference of   0.00
 from the local time meridian (east +ve). The year used in simulations is 2000
 and weekends occur on Saturday and Sunday.
+ 
 The site exposure is typical city centre and the ground reflectance is 0.20.
  
  
@@ -109,35 +110,35 @@ The model includes an air flow network.
  Flow network description.
  
    8 nodes,   6 components,  10 connections;     wind reduction =  1.000
-   # Node      Fluid   Node Type           Height Temperature    Data_1       Data_2
-   1 manager      air   internal & unknown    1.5000   20.000     (-)     0.000  vol   40.501
-   2 manager_t_b  air   internal & unknown    1.5000   20.000     (-)     0.000  vol   40.501
-   3 manager_bi   air   internal & unknown    1.5000   20.000     (-)     0.000  vol   40.501
-   4 gl_ext       air   boundary & wind ind   1.9500   0.0000     coef    5.000  azim 180.000
-   5 low_glz_ext  air   boundary & wind ind   1.1500   0.0000     coef    5.000  azim 180.000
-   6 hi_glz_ext   air   boundary & wind ind   2.7500   0.0000     coef    5.000  azim 180.000
-   7 bi_glz       air   boundary & wind ind   1.9500   0.0000     coef    5.000  azim 180.000
-   8 adjacent     air   internal & unknown    0.0500 manager      (-)     0.000  vol   40.501
+   # Node       Fluid   Node Type              X Y Z Position      Temperature    Data_1        Data_2
+   1 manager      air   internal & unknown    0.0000  0.0000  1.5000   20.000     (-)     0.000  vol   40.501
+   2 manager_t_b  air   internal & unknown    0.0000  0.0000  1.5000   20.000     (-)     0.000  vol   40.501
+   3 manager_bi   air   internal & unknown    0.0000  0.0000  1.5000   20.000     (-)     0.000  vol   40.501
+   4 gl_ext       air   boundary & wind ind   0.0000  0.0000  1.9500   0.0000     coef    5.000  azim 180.000
+   5 low_glz_ext  air   boundary & wind ind   0.0000  0.0000  1.1500   0.0000     coef    5.000  azim 180.000
+   6 hi_glz_ext   air   boundary & wind ind   0.0000  0.0000  2.7500   0.0000     coef    5.000  azim 180.000
+   7 bi_glz       air   boundary & wind ind   0.0000  0.0000  1.9500   0.0000     coef    5.000  azim 180.000
+   8 adjacent     air   internal & unknown    0.0000  0.0000  0.0500 manager      (-)     0.000  vol   40.501
  
  Component    Type C+ L+ Description
  
  door_crack    120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
- Fluid  1.0 crack width (m)  0.0050 crack length (m)  0.800
+ Fluid  1.0 crack width(m)  0.0050 crack length(m)  0.800
  
  win_1.68      110  2  0 Specific air flow opening           m = rho.f(A,dP)
- Fluid  1.0 opening area (m)  1.680
+ Fluid  1.0 opening area(m)  1.680
  
  win_low.84    110  2  0 Specific air flow opening           m = rho.f(A,dP)
- Fluid  1.0 opening area (m)  0.840
+ Fluid  1.0 opening area(m)  0.840
  
  hi_win.84     110  2  0 Specific air flow opening           m = rho.f(A,dP)
- Fluid  1.0 opening area (m)  0.840
+ Fluid  1.0 opening area(m)  0.840
  
  bi_win        130  5  0 Specific air flow door              m = rho.f(W,H,dP)
  Fluid  1.0 width  0.880 height 1.880 ref ht  0.600 discharge factor 0.600
  
  win_crack     120  3  0 Specific air flow crack             m = rho.f(W,L,dP)
- Fluid  1.0 crack width (m)  0.0050 crack length (m)  2.000
+ Fluid  1.0 crack width(m)  0.0050 crack length(m)  2.000
  
     # +Node         dHght   -Node         dHght   Component       Z @+    Z @-
     1 gl_ext        0.000   manager       0.450   win_1.68        1.950   1.950
@@ -172,8 +173,8 @@ ID Zone         Volume|          Surface
  area of 72.0m^2 & approx floor area of 12.4m^2
  manager describes cellular office
  There is 9.0000m2 of exposed surface area, 9.0000m2 of which is vertical.
- Outside walls are 29.725 % of floor area & average U of 0.461 & UA of 1.6958
- Glazing is 42.973 % of floor & 59.111 % facade with average U of 2.811 & UA of 14.953
+ Facade opaque is 3.6800m2 & 29.725 % of floor area & average U of 0.461 & UA of 1.6958
+ Facade glazing is 5.3200m2 & 42.973 % of floor & 59.111 % facade with average U of 2.811 & UA of 14.953
  
  A summary of the surfaces in manager( 1) follows:
  
@@ -181,13 +182,13 @@ ID Zone         Volume|          Surface
     | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
   1  13.5     90.   0. pt_general   OPAQUE   VERT -        -        gyp_gyp_ptn ||< identical environment
   2  0.960   360.   0. part_frame   OPAQUE   VERT -        -        insul_frame ||< identical environment
-  3  3.00      0.   0. door         OPAQUE   VERT -        -        door ||< identical environment
+  3  3.00      0.   0. door         OPAQUE   VERT DOOR     UNDERCUT door ||< identical environment
   4  13.5    270.   0. pt_other     OPAQUE   VERT -        -        gyp_gyp_ptn ||< identical environment
   5  13.5      0.  90. ceiling      OPAQUE   CEIL -        -        ceiling ||< identical environment
   6  13.5      0. -90. floor        OPAQUE   FLOR -        -        susp_flr_re ||< identical environment
   7  2.70    180.   0. spandral     OPAQUE   VERT -        -        insul_frame ||< external
-  8  0.980   180.   0. frame        OPAQUE   VERT -        -        insul_frame ||< external
-  9  5.32    180.   0. glazing      DCF7671_ VERT -        -        dbl_glz ||< external
+  8  0.980   180.   0. frame        OPAQUE   VERT F-FRAME  VENT     insul_frame ||< external
+  9  5.32    180.   0. glazing      DCF7671_ VERT C-WINDOW CRACK    dbl_glz ||< external
  10  5.04      0.   0. part_glaz    DCF7671_ VERT -        -        dbl_glz ||< identical environment
  
  Vertices ( index X Y Z) in the zone...
@@ -264,8 +265,8 @@ sunday      2 Equipt     equipment Wm2  0-24      0.0      0.0       0.50       
  area of 72.0m^2 & approx floor area of 13.5m^2
  manager_t_b describes an office with top and bottom openings
  There is 9.0000m2 of exposed surface area, 9.0000m2 of which is vertical.
- Outside walls are 27.259 % of floor area & average U of 0.280 & UA of 1.0293
- Glazing is 39.407 % of floor & 59.111 % facade with average U of 2.811 & UA of 14.953
+ Facade opaque is 3.6800m2 & 27.259 % of floor area & average U of 0.280 & UA of 1.0293
+ Facade glazing is 5.3200m2 & 39.407 % of floor & 59.111 % facade with average U of 2.811 & UA of 14.953
  
  A summary of the surfaces in manager_t_b( 2) follows:
  
@@ -273,16 +274,16 @@ sunday      2 Equipt     equipment Wm2  0-24      0.0      0.0       0.50       
     | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
   1  13.5     90.   0. pt_general   OPAQUE   VERT -        -        gyp_gyp_ptn ||< identical environment
   2  0.960   360.   0. part_frame   OPAQUE   VERT -        -        insul_frame ||< identical environment
-  3  3.00      0.   0. door         OPAQUE   VERT -        -        door ||< identical environment
+  3  3.00      0.   0. door         OPAQUE   VERT DOOR     UNDERCUT door ||< identical environment
   4  13.5    270.   0. pt_other     OPAQUE   VERT -        -        gyp_gyp_ptn ||< identical environment
   5  13.5      0.  90. ceiling      OPAQUE   CEIL -        -        ceiling ||< identical environment
   6  13.5      0. -90. floor        OPAQUE   FLOR -        -        susp_flr_re ||< identical environment
   7  2.70    180.   0. spandral     OPAQUE   VERT -        -        extern_wall ||< external
-  8  0.980   180.   0. frame        OPAQUE   VERT -        -        insul_frame ||< external
-  9  3.64    180.   0. glazing      DCF7671_ VERT -        -        dbl_glz ||< external
+  8  0.980   180.   0. frame        OPAQUE   VERT FRAME    CRACK    insul_frame ||< external
+  9  3.64    180.   0. glazing      DCF7671_ VERT C-WINDOW CLOSED   dbl_glz ||< external
  10  5.04      0.   0. part_glaz    DCF7671_ VERT -        -        dbl_glz ||< identical environment
- 11  0.840   180.   0. low_glz      DCF7671_ VERT -        -        dbl_glz ||< external
- 12  0.840   180.   0. high_glz     DCF7671_ VERT -        -        dbl_glz ||< external
+ 11  0.840   180.   0. low_glz      DCF7671_ VERT C-WINDOW OPEN     dbl_glz ||< external
+ 12  0.840   180.   0. high_glz     DCF7671_ VERT C-WINDOW OPEN     dbl_glz ||< external
  
  Vertices ( index X Y Z) in the zone...
 vertex   1    4.00000    0.00000    0.00000   vertex  14    6.00000    0.00000    0.90000
@@ -327,8 +328,8 @@ vertex  13    5.00000    0.00000    0.90000   vertex  26    4.10000    0.00000  
  area of 72.0m^2 & approx floor area of 13.5m^2
  manager_bi describes an office with bi-directional opening
  There is 9.0000m2 of exposed surface area, 9.0000m2 of which is vertical.
- Outside walls are 27.259 % of floor area & average U of 0.280 & UA of 1.0293
- Glazing is 39.407 % of floor & 59.111 % facade with average U of 2.811 & UA of 14.953
+ Facade opaque is 3.6800m2 & 27.259 % of floor area & average U of 0.280 & UA of 1.0293
+ Facade glazing is 5.3200m2 & 39.407 % of floor & 59.111 % facade with average U of 2.811 & UA of 14.953
  
  A summary of the surfaces in manager_bi( 3) follows:
  
@@ -336,15 +337,15 @@ vertex  13    5.00000    0.00000    0.90000   vertex  26    4.10000    0.00000  
     | m^2   |deg |deg | name       |optical|locat| use            | name         |other side
   1  13.5     90.   0. pt_general   OPAQUE   VERT -        -        gyp_gyp_ptn ||< identical environment
   2  0.960   360.   0. part_frame   OPAQUE   VERT -        -        insul_frame ||< identical environment
-  3  3.00      0.   0. door         OPAQUE   VERT -        -        door ||< identical environment
+  3  3.00      0.   0. door         OPAQUE   VERT DOOR     UNDERCUT door ||< identical environment
   4  13.5    270.   0. pt_other     OPAQUE   VERT -        -        gyp_gyp_ptn ||< identical environment
   5  13.5      0.  90. ceiling      OPAQUE   CEIL -        -        ceiling ||< identical environment
   6  13.5      0. -90. floor        OPAQUE   FLOR -        -        susp_flr_re ||< identical environment
   7  2.70    180.   0. spandral     OPAQUE   VERT -        -        extern_wall ||< external
-  8  0.980   180.   0. frame        OPAQUE   VERT -        -        insul_frame ||< external
-  9  3.64    180.   0. glazing      DCF7671_ VERT -        -        dbl_glz ||< external
+  8  0.980   180.   0. frame        OPAQUE   VERT F-FRAME  CRACK    insul_frame ||< external
+  9  3.64    180.   0. glazing      DCF7671_ VERT C-WINDOW CLOSED   dbl_glz ||< external
  10  5.04      0.   0. part_glaz    DCF7671_ VERT -        -        dbl_glz ||< identical environment
- 11  1.68    180.   0. bi-glaz      DCF7671_ VERT -        -        dbl_glz ||< external
+ 11  1.68    180.   0. bi-glaz      DCF7671_ VERT C-WINDOW BIDIR    dbl_glz ||< external
  
  Vertices ( index X Y Z) in the zone...
 vertex   1    8.00000    0.00000    0.00000   vertex  13    9.00000    0.00000    0.90000

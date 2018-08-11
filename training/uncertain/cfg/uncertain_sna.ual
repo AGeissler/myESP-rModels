@@ -5,36 +5,36 @@
 #  
 *cng_def
 glass_area               # Change id string
- 101 # Change type: Zone air volume         
-   2   1 # ref 1, ref 2
-   1     12.000     0.000 # Data
+ 101 # Change type: Zone volume or area
+   2   1 # Zone parameter  surface area
+   1    12.000     0.000   # % change surface area
 *cng_def
 frame_area               # Change id string
- 101 # Change type: Zone air volume         
-   2   1 # ref 1, ref 2
-   1    20.000     0.000 # Data
+ 101 # Change type: Zone volume or area
+   2   1 # Zone parameter  surface area
+   1    20.000     0.000   # % change surface area
 *cng_def
 walls                    # Change id string
- 101 # Change type: Zone air volume         
-   2   1 # ref 1, ref 2
-   2     1.00      0.000 # Data
+ 101 # Change type: Zone volume or area
+   2   1 # Zone parameter  surface area
+   2     1.000     0.000   # abs change surface area
 #  
 # Locations definitions follow...
 #  
 *loc_def
 glazing         # Location id string
    1 # Number of zones
-   1   1 # Zone number, Number of surfaces
+   1   1 # Zone number Number of surfaces
   8
 *loc_def
 frames          # Location id string
    1 # Number of zones
-   1   1 # Zone number, Number of surfaces
+   1   1 # Zone number Number of surfaces
   7
 *loc_def
 facade          # Location id string
    1 # Number of zones
-   1   4 # Zone number, Number of surfaces
+   1   4 # Zone number Number of surfaces
   1  2  3  4
 #  
 # Action definitions follow...

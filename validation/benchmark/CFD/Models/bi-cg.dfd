@@ -105,11 +105,11 @@ Buoyancy 0 # ignored
 *solution_equations
 #  Type  Initial value  Relaxation type and factor
 Pressure    0.000 Linear  0.2500
-Vel U  0.001 Linear  0.750
-Vel V  0.001 Linear  0.750
-Vel W  0.001 Linear  0.750
-Ted  0.900E-02 Linear  0.500    
-Epd  0.500E-02 Linear  0.500    
+Vel U  0.001 Linear  0.250
+Vel V  0.001 Linear  0.250
+Vel W  0.001 Linear  0.250
+Ted  0.900E-02 Linear  0.2500    
+Epd  0.500E-02 Linear  0.2500    
 # Iteration control.
 *iteration 
   2000  1.0000E-04 No

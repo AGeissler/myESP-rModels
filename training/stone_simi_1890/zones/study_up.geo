@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,study # tag version, format, zone name
-*date Mon Apr 23 16:58:57 2012  # latest file modification 
+*date Thu Nov 16 11:26:05 2017  # latest file modification 
 study describes small north facing room
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,7.60000,14.00000,0.00000  #   1
@@ -38,49 +38,49 @@ study describes small north facing room
 *vertex,8.10000,14.00000,2.10000  #  34
 # 
 # tag, number of vertices followed by list of associated vert
-*edges,8,1,31,34,33,32,2,10,9  #  1
-*edges,5,2,3,17,11,10  #  2
-*edges,4,17,18,12,11  #  3
-*edges,6,18,19,23,25,13,12  #  4
-*edges,4,19,20,24,23  #  5
-*edges,6,20,21,15,14,26,24  #  6
-*edges,4,21,22,16,15  #  7
-*edges,5,8,1,9,16,22  #  8
-*edges,8,9,10,11,12,13,14,15,16  #  9
-*edges,10,1,8,7,6,5,4,3,2,32,31  # 10
-*edges,4,3,4,18,17  # 11
-*edges,4,4,5,19,18  # 12
-*edges,4,5,6,20,19  # 13
-*edges,4,6,7,21,20  # 14
-*edges,4,7,8,22,21  # 15
-*edges,10,23,24,26,25,23,27,30,29,28,27  # 16
-*edges,4,25,26,14,13  # 17
-*edges,4,27,28,29,30  # 18
-*edges,4,31,32,33,34  # 19
+*edges,8,1,31,34,33,32,2,10,9  #   1
+*edges,5,2,3,17,11,10  #   2
+*edges,4,17,18,12,11  #   3
+*edges,6,18,19,23,25,13,12  #   4
+*edges,4,19,20,24,23  #   5
+*edges,6,20,21,15,14,26,24  #   6
+*edges,4,21,22,16,15  #   7
+*edges,5,8,1,9,16,22  #   8
+*edges,8,9,10,11,12,13,14,15,16  #   9
+*edges,10,1,8,7,6,5,4,3,2,32,31  #  10
+*edges,4,3,4,18,17  #  11
+*edges,4,4,5,19,18  #  12
+*edges,4,5,6,20,19  #  13
+*edges,4,6,7,21,20  #  14
+*edges,4,7,8,22,21  #  15
+*edges,10,23,24,26,25,23,27,30,29,28,27  #  16
+*edges,4,25,26,14,13  #  17
+*edges,4,27,28,29,30  #  18
+*edges,4,31,32,33,34  #  19
 # 
 # surf attributes:
 #  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,sptn_hall,VERT,-,-,-,door,OPAQUE,ANOTHER,07,09  #   1 ||< hptn_study:hall
-*surf,sptn_liv,VERT,-,-,-,pla_pla_ptn,OPAQUE,ANOTHER,06,11  #   2 ||< ptn_study:living
-*surf,north_a,VERT,-,-,-,stone_0.7m,OPAQUE,EXTERIOR,0,0  #   3 ||< external
-*surf,angle_b,VERT,-,-,-,stone_0.4m,OPAQUE,EXTERIOR,0,0  #   4 ||< external
-*surf,sill_c,VERT,-,-,-,stone_0.4m,OPAQUE,EXTERIOR,0,0  #   5 ||< external
-*surf,angle_d,VERT,-,-,-,stone_0.4m,OPAQUE,EXTERIOR,0,0  #   6 ||< external
-*surf,north_e,VERT,-,-,-,stone_0.7m,OPAQUE,EXTERIOR,0,0  #   7 ||< external
-*surf,sptn_fam,VERT,-,-,-,pla_pla_ptn,OPAQUE,ANOTHER,09,04  #   8 ||< fptn_stdy:family
-*surf,ceiling_std,CEIL,-,-,-,ceil_to_roof,OPAQUE,ANOTHER,13,03  #   9 ||< ceiling_std:upper_ne
-*surf,floor_std,FLOR,-,-,-,floor_to_cli,OPAQUE,ANOTHER,11,02  #  10 ||< floor_std:lower_ne
-*surf,skirt_a,VERT,-,-,-,stone_0.7m,OPAQUE,EXTERIOR,0,0  #  11 ||< external
-*surf,skirt_b,VERT,-,-,-,stone_0.4m,OPAQUE,EXTERIOR,0,0  #  12 ||< external
-*surf,skirt_c,VERT,-,-,-,stone_0.4m,OPAQUE,EXTERIOR,0,0  #  13 ||< external
-*surf,skirt_d,VERT,-,-,-,stone_0.4m,OPAQUE,EXTERIOR,0,0  #  14 ||< external
-*surf,skirt_e,VERT,-,-,-,stone_0.7m,OPAQUE,EXTERIOR,0,0  #  15 ||< external
-*surf,frame_c,VERT,-,-,-,sash_frame,OPAQUE,EXTERIOR,0,0  #  16 ||< external
-*surf,head_c,VERT,-,-,-,stone_0.4m,OPAQUE,EXTERIOR,0,0  #  17 ||< external
-*surf,glass_c,VERT,frame_c,-,-,Window_ext,TRAN,EXTERIOR,0,0  #  18 ||< external
+*surf,sptn_hall,VERT,-,PARTN,-,door,OPAQUE,ANOTHER,07,09  #   1 ||< hptn_study:hall
+*surf,sptn_liv,VERT,-,PARTN,-,pla_pla_ptn,OPAQUE,ANOTHER,06,11  #   2 ||< ptn_study:living
+*surf,north_a,VERT,-,-,-,stone_0.7m,OPAQUE,EXTERIOR,00,000  #   3 ||< external
+*surf,angle_b,VERT,-,-,-,stone_0.4m,OPAQUE,EXTERIOR,00,000  #   4 ||< external
+*surf,sill_c,VERT,-,-,-,stone_0.4m,OPAQUE,EXTERIOR,00,000  #   5 ||< external
+*surf,angle_d,VERT,-,-,-,stone_0.4m,OPAQUE,EXTERIOR,00,000  #   6 ||< external
+*surf,north_e,VERT,-,-,-,stone_0.7m,OPAQUE,EXTERIOR,00,000  #   7 ||< external
+*surf,sptn_fam,VERT,-,PARTN,-,pla_pla_ptn,OPAQUE,ANOTHER,09,04  #   8 ||< fptn_stdy:family
+*surf,ceiling_std,CEIL,-,PARTN,-,ceil_to_roof,OPAQUE,ANOTHER,13,03  #   9 ||< ceiling_std:upper_ne
+*surf,floor_std,FLOR,-,PARTN,-,floor_to_cli,OPAQUE,ANOTHER,11,02  #  10 ||< floor_std:lower_ne
+*surf,skirt_a,VERT,-,-,-,stone_0.7m,OPAQUE,EXTERIOR,00,000  #  11 ||< external
+*surf,skirt_b,VERT,-,-,-,stone_0.4m,OPAQUE,EXTERIOR,00,000  #  12 ||< external
+*surf,skirt_c,VERT,-,-,-,stone_0.4m,OPAQUE,EXTERIOR,00,000  #  13 ||< external
+*surf,skirt_d,VERT,-,-,-,stone_0.4m,OPAQUE,EXTERIOR,00,000  #  14 ||< external
+*surf,skirt_e,VERT,-,-,-,stone_0.7m,OPAQUE,EXTERIOR,00,000  #  15 ||< external
+*surf,frame_c,VERT,-,F-FRAME,CLOSED,sash_frame,OPAQUE,EXTERIOR,00,000  #  16 ||< external
+*surf,head_c,VERT,-,-,-,stone_0.4m,OPAQUE,EXTERIOR,00,000  #  17 ||< external
+*surf,glass_c,VERT,frame_c,C-WINDOW,CLOSED,Window_ext,DC_8074_04nb,EXTERIOR,00,000  #  18 ||< external
 *surf,door_st,VERT,sptn_hall,-,-,door,OPAQUE,ANOTHER,07,24  #  19 ||< door_st:hall
 # 
 *insol,3,0,0,0  # default insolation distribution

@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,box # tag version, format, zone name
-*date Thu Jul 10 09:21:57 2014  # latest file modification 
+*date Tue Apr 24 15:13:46 2018  # latest file modification 
 box describes a leaky room
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,1.00000,1.00000,0.00000  #   1
@@ -24,30 +24,30 @@ box describes a leaky room
 *vertex,4.00000,1.15000,2.55000  #  20
 # 
 # tag, number of vertices followed by list of associated vert
-*edges,8,1,9,12,11,10,2,6,5  #  1
-*edges,10,2,3,7,6,2,17,20,19,18,17  #  2
-*edges,10,3,4,8,7,3,13,16,15,14,13  #  3
-*edges,4,4,1,5,8  #  4
-*edges,4,5,6,7,8  #  5
-*edges,6,1,4,3,2,10,9  #  6
-*edges,4,9,10,11,12  #  7
-*edges,4,13,14,15,16  #  8
-*edges,4,17,18,19,20  #  9
+*edges,8,1,9,12,11,10,2,6,5  #   1
+*edges,10,2,3,7,6,2,17,20,19,18,17  #   2
+*edges,10,3,4,8,7,3,13,16,15,14,13  #   3
+*edges,4,4,1,5,8  #   4
+*edges,4,5,6,7,8  #   5
+*edges,6,1,4,3,2,10,9  #   6
+*edges,4,9,10,11,12  #   7
+*edges,4,13,14,15,16  #   8
+*edges,4,17,18,19,20  #   9
 # 
 # surf attributes:
 #  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,front,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   1 ||< external
-*surf,right_frm,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   2 ||< external
-*surf,back,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   3 ||< external
-*surf,left,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   4 ||< external
-*surf,top,CEIL,-,-,-,roof_1,OPAQUE,EXTERIOR,0,0  #   5 ||< external
+*surf,front,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,00,000  #   1 ||< external
+*surf,right_frm,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,00,000  #   2 ||< external
+*surf,back,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,00,000  #   3 ||< external
+*surf,left,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,00,000  #   4 ||< external
+*surf,top,CEIL,-,-,-,roof_1,OPAQUE,EXTERIOR,00,000  #   5 ||< external
 *surf,floor,FLOR,-,-,-,grnd_floor,OPAQUE,GROUND,01,0  #   6 ||< ground profile  1
-*surf,door,VERT,front,DOOR,CLOSED,door,OPAQUE,EXTERIOR,0,0  #   7 ||< external
-*surf,grill,VERT,back,GRILL,EXTRACT,insul_mtl_p,OPAQUE,EXTERIOR,0,0  #   8 ||< external
-*surf,glazing,VERT,right_frm,C-WINDOW,CLOSED,dbl_glz,TRAN,EXTERIOR,0,0  #   9 ||< external
+*surf,door,VERT,front,DOOR,UNDERCUT,door,OPAQUE,EXTERIOR,00,000  #   7 ||< external
+*surf,grill,VERT,back,GRILL,EXTRACT,insul_mtl_p,OPAQUE,EXTERIOR,00,000  #   8 ||< external
+*surf,glazing,VERT,right_frm,C-WINDOW,CRACK,dbl_glz,DCF7671_06nb,EXTERIOR,00,000  #   9 ||< external
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

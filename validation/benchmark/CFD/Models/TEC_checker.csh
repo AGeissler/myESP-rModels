@@ -12,9 +12,9 @@ set STDdir = $1
 set WORdir = `pwd`
 
 echo "Which tests did you run?"
-echo " (1) Fast (23 simulations; run time: ~15 minutes & <2hrs on a slow computer)"
-echo " (2) Slow (3 simulations; run time: 12x time for fast tests)"
-echo " (3) All (26 simulations)"
+echo " (1) Fast (24 simulations)"
+echo " (2) Slow (2 simulations)"
+echo " (3) All"
 @ A=0
 while ( $A<1 || $A>3 )
 set A = $<

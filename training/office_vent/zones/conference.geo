@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,conference # tag version, format, zone name
-*date Fri Jul 17 11:05:01 2009  # latest file modification 
+*date Fri Sep  4 13:30:46 2015  # latest file modification 
 conference describes a conference room for 10-12
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,3.00000,13.50000,0.00000  #   1
@@ -112,30 +112,30 @@ conference describes a conference room for 10-12
 #  boundary condition tag followed by two data items
 *surf,pt_next_off,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,SIMILAR,00,00  #   1 ||< identical environment
 *surf,pt_recp_b,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,04,06  #   2 ||< pt_recp_b:reception
-*surf,fict_open,VERT,-,-,-,fict,SC_fictit,ANOTHER,04,05  #   3 ||< fict_open:reception
+*surf,fict_open,VERT,-,DOOR,BIDIR,fict,SC_fictit,ANOTHER,04,05  #   3 ||< fict_open:reception
 *surf,pt_recp_a,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,04,04  #   4 ||< pt_recp_a:reception
 *surf,ceiling,CEIL,-,-,-,ceiling,OPAQUE,ANOTHER,05,03  #   5 ||< ceil_conff:ceil_void
 *surf,floor,FLOR,-,-,-,susp_flr_re,OPAQUE,SIMILAR,00,00  #   6 ||< identical environment
 *surf,spandral,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   7 ||< external
-*surf,vent,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   8 ||< external
+*surf,vent,VERT,-,F-FRAME,OPEN,insul_frame,OPAQUE,EXTERIOR,0,0  #   8 ||< external
 *surf,frame,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   9 ||< external
-*surf,glazing,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  10 ||< external
+*surf,glazing,VERT,-,C-WINDOW,CRACK,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  10 ||< external
 *surf,spandral_a,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #  11 ||< external
-*surf,vent_a,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  12 ||< external
+*surf,vent_a,VERT,-,F-FRAME,OPEN,insul_frame,OPAQUE,EXTERIOR,0,0  #  12 ||< external
 *surf,frame_a,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  13 ||< external
-*surf,glazing_a,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  14 ||< external
+*surf,glazing_a,VERT,-,C-WINDOW,CRACK,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  14 ||< external
 *surf,spandral_b,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #  15 ||< external
-*surf,vent_b,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  16 ||< external
+*surf,vent_b,VERT,-,F-FRAME,OPEN,insul_frame,OPAQUE,EXTERIOR,0,0  #  16 ||< external
 *surf,frame_b,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  17 ||< external
-*surf,glazing_b,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  18 ||< external
+*surf,glazing_b,VERT,-,C-WINDOW,CRACK,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  18 ||< external
 *surf,spandral_c,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #  19 ||< external
-*surf,vent_c,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  20 ||< external
+*surf,vent_c,VERT,-,F-FRAME,OPEN,insul_frame,OPAQUE,EXTERIOR,0,0  #  20 ||< external
 *surf,frame_c,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  21 ||< external
-*surf,glazing_c,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  22 ||< external
+*surf,glazing_c,VERT,-,C-WINDOW,CRACK,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  22 ||< external
 *surf,spandral_d,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #  23 ||< external
-*surf,vent_d,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  24 ||< external
+*surf,vent_d,VERT,-,F-FRAME,OPEN,insul_frame,OPAQUE,EXTERIOR,0,0  #  24 ||< external
 *surf,frame_d,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  25 ||< external
-*surf,glazing_d,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  26 ||< external
+*surf,glazing_d,VERT,-,C-WINDOW,CRACK,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  26 ||< external
 *surf,desk_top,CEIL,-,-,-,door,OPAQUE,ADIABATIC,0,0  #  27 ||< adiabatic
 *surf,conf_bottom,FLOR,-,-,-,door,OPAQUE,ADIABATIC,0,0  #  28 ||< adiabatic
 # 
@@ -152,11 +152,11 @@ conference describes a conference room for 10-12
 # 
 # block entities:
 #  *obs = obstructions
-*block_start,20 20 # geometric blocks
-*obs,12.100,12.000,3.100,6.000,0.020,0.300,90.000,eob1,NONE  # block  1
-*obs,12.300,12.000,3.100,6.000,0.020,0.250,90.000,eob2,NONE  # block  2
-*obs,12.500,12.000,3.100,6.000,0.020,0.220,90.000,eob3,NONE  # block  3
-*obs,12.700,12.000,3.100,6.000,0.020,0.200,90.000,eob4,NONE  # block  4
-*obs,12.900,12.000,3.100,6.000,0.020,0.200,90.000,eob5,NONE  # block  5
-*obs,13.100,12.000,3.100,6.000,0.020,0.200,90.000,eob6,NONE  # block  6
+*block_start, 20 20 # geometric blocks
+*obs,12.1000,12.0000,3.1000,6.0000,0.0200,0.3000,90.0000,1.00,eob1,NONE  # block   1
+*obs,12.3000,12.0000,3.1000,6.0000,0.0200,0.2500,90.0000,1.00,eob2,NONE  # block   2
+*obs,12.5000,12.0000,3.1000,6.0000,0.0200,0.2200,90.0000,1.00,eob3,NONE  # block   3
+*obs,12.7000,12.0000,3.1000,6.0000,0.0200,0.2000,90.0000,1.00,eob4,NONE  # block   4
+*obs,12.9000,12.0000,3.1000,6.0000,0.0200,0.2000,90.0000,1.00,eob5,NONE  # block   5
+*obs,13.1000,12.0000,3.1000,6.0000,0.0200,0.2000,90.0000,1.00,eob6,NONE  # block   6
 *end_block

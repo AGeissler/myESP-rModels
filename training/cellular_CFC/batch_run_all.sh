@@ -3,12 +3,13 @@
 # Run a series of simulations in "batch" mode
 
 # Following shell scripts need to be copied to the cfg-folder:
-TOOLLIST="QA_report.sh simulate.sh"
+TOOLLIST="QA_report.sh simulate.sh \
+res_temp_hours_below.sh res_temp_hours_above.sh"
 
 # Blank-separated list of model variants to be evaluated. Call this script from the model
 # main folder (e.g. /Leadenhall/). Each variant is completely described in a subfolder
 # "var" (e.g. "Base") and the configuration file has the same name (e.g. "base.cfg").
-VARLIST="cellular_CFC"
+VARLIST="cellular_CFC_adv"
 
 # Construction list
 #TMCLIST="mit ohne"
@@ -75,10 +76,16 @@ do
           [ -f ./${theFile}.contents ] && rm ./${theFile}.contents
 
           . ./QA_report.sh $VAR ${theFile}.contents
-          . ./simulate_trace.sh $VAR ${theFile} $FD $FM $TD $TM $PP $TSTEP
+          . ./simulate.sh $VAR ${theFile} $FD $FM $TD $TM $PP $TSTEP
 #          . ./res_ach.sh ${theFile} ${theFile}_ach.dat
 
           [ -f ${VAR}.csv ] && mv ${VAR}.csv ${theFile}.csv
+
+          # Extract hours below (winter case)
+          . ./res_temp_hours_below.sh ${theFile}
+
+          # Extract hours above (summer case)
+#          . ./res_temp_hours_above.sh ${theFile}
 
 
         done # current PER / complete list

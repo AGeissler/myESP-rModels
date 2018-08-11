@@ -5,14 +5,14 @@
 #  
 *cng_def
 ctl_start                # Change id string
-1001 # Change type: control st                 
-   1   1  2  1 # ref 1, ref 2
-   2     1.000     0.000 # Data
+1001 # Change type: Zone control
+   1   1   2   1 # Control parameters
+   2     1.000     0.000   # abs change control loop
 *cng_def
 heat_SP                  # Change id string
-1001 # Change type: control period                 
-   1   1  2  6 # ref 1, ref 2
-   2     1.000     0.000 # Data
+1001 # Change type: Zone control
+   1   1   2   6 # Control parameters
+   2     1.000     0.000   # abs change control loop
 #  
 # Locations definitions follow...
 #  

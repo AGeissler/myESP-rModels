@@ -11,7 +11,7 @@ ESP-r plant file version 2 written on: Thu Aug 22 16:14:17 2013
        110.00     #   1 Component total mass (kg)                                       
        2000.0     #   2 Mass weighted average specific heat (J/kgK)                     
        1.6000     #   3 Heat loss modulus (W/K)                                         
-       3.0000     #   4 COP model [1 fixed;2 - Carnot efficiency; 3- quadratic; 4-cubic]
+       3.0000     #   4 COP model [1 fixed;2 - Carnot efficiency; 3- quadratic; 3-cubic]
        6.3972     #   5 COP empirical coefficient a0 (-)                                
      -0.10220     #   6 COP empirical coefficient a1 (-)                                
       0.50000E-03 #   7 COP empirical coefficient a2 (-)                                
@@ -94,7 +94,7 @@ ESP-r plant file version 2 written on: Thu Aug 22 16:14:17 2013
       0.35100     #  16 Diameter of first immersed HX coil (m)                          
       0.56000E-01 #  17 Pitch of first immersed HX coil (distance from one loop to the n
        40.000     #  18 Thermal conductivity of first immersed HX coil material (W/m/K) 
-      0.60000     #  19 Height of second immersed HX inlet (m)                           
+      0.60000     #  19 eight of second immersed HX inlet (m)                           
       0.10000     #  20 Height of second immersed HX outlet (m)                         
       0.34000E-01 #  21 Inside diameter of second immersed HX coil (m)                  
       0.38000E-01 #  22 Outside diameter of second immersed HX coil (m)                 

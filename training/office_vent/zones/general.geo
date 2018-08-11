@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,general # tag version, format, zone name
-*date Fri Jul 17 11:05:01 2009  # latest file modification 
+*date Fri Sep  4 13:23:00 2015  # latest file modification 
 general describes an open plan with 4 desks
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,0.00000,4.50000,0.00000  #   1
@@ -132,36 +132,36 @@ general describes an open plan with 4 desks
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,door,VERT,-,-,-,door,OPAQUE,ANOTHER,01,03  #   1 ||< door:manager
+*surf,door,VERT,-,DOOR,UNDERCUT,door,OPAQUE,ANOTHER,01,03  #   1 ||< door:manager
 *surf,pt_mgrs,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,01,01  #   2 ||< pt_general:manager
 *surf,pt_rec_a,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,04,03  #   3 ||< pt_rec_a:reception
-*surf,fict_rec,VERT,-,-,-,fict,SC_fictit,ANOTHER,04,02  #   4 ||< fict_rec:reception
+*surf,fict_rec,VERT,-,DOOR,BIDIR,fict,SC_fictit,ANOTHER,04,02  #   4 ||< fict_rec:reception
 *surf,pt_core_a,VERT,-,-,-,gyp_blk_ptn,OPAQUE,SIMILAR,00,00  #   5 ||< identical environment
 *surf,fire_door,VERT,-,-,-,door,OPAQUE,SIMILAR,00,00  #   6 ||< identical environment
 *surf,ceiling,CEIL,-,-,-,ceiling,OPAQUE,ANOTHER,05,02  #   7 ||< ceiling:ceil_void
 *surf,floor,FLOR,-,-,-,susp_flr_re,OPAQUE,SIMILAR,00,00  #   8 ||< identical environment
 *surf,spandral,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   9 ||< external
-*surf,vent,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  10 ||< external
+*surf,vent,VERT,-,F-FRAME,OPEN,insul_frame,OPAQUE,EXTERIOR,0,0  #  10 ||< external
 *surf,frame,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  11 ||< external
-*surf,glazing,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  12 ||< external
+*surf,glazing,VERT,-,C-WINDOW,CRACK,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  12 ||< external
 *surf,part_frame,VERT,-,-,-,insul_frame,OPAQUE,ANOTHER,01,02  #  13 ||< part_frame:manager
 *surf,part_glaz,VERT,-,-,-,dbl_glz,DCF7671_06nb,ANOTHER,01,11  #  14 ||< part_glaz:manager
 *surf,spandral_a,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #  15 ||< external
-*surf,vent_a,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  16 ||< external
+*surf,vent_a,VERT,-,F-FRAME,OPEN,insul_frame,OPAQUE,EXTERIOR,0,0  #  16 ||< external
 *surf,frame_a,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  17 ||< external
-*surf,glazing_a,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  18 ||< external
+*surf,glazing_a,VERT,-,C-WINDOW,CRACK,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  18 ||< external
 *surf,spandral_b,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #  19 ||< external
-*surf,vent_b,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  20 ||< external
+*surf,vent_b,VERT,-,F-FRAME,OPEN,insul_frame,OPAQUE,EXTERIOR,0,0  #  20 ||< external
 *surf,frame_b,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  21 ||< external
-*surf,glazing_b,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  22 ||< external
+*surf,glazing_b,VERT,-,C-WINDOW,CRACK,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  22 ||< external
 *surf,spandral_c,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #  23 ||< external
-*surf,vent_c,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  24 ||< external
+*surf,vent_c,VERT,-,F-FRAME,OPEN,insul_frame,OPAQUE,EXTERIOR,0,0  #  24 ||< external
 *surf,frame_c,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  25 ||< external
-*surf,glazing_c,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  26 ||< external
+*surf,glazing_c,VERT,-,C-WINDOW,CRACK,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  26 ||< external
 *surf,spandral_d,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #  27 ||< external
-*surf,vent_d,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  28 ||< external
+*surf,vent_d,VERT,-,F-FRAME,OPEN,insul_frame,OPAQUE,EXTERIOR,0,0  #  28 ||< external
 *surf,frame_d,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  29 ||< external
-*surf,glazing_d,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  30 ||< external
+*surf,glazing_d,VERT,-,C-WINDOW,CRACK,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  30 ||< external
 *surf,desk_top,CEIL,-,-,-,door,OPAQUE,ADIABATIC,0,0  #  31 ||< adiabatic
 *surf,desk_base,FLOR,-,-,-,door,OPAQUE,ADIABATIC,0,0  #  32 ||< adiabatic
 # 
@@ -178,17 +178,17 @@ general describes an open plan with 4 desks
 # 
 # block entities:
 #  *obs = obstructions
-*block_start,20 20 # geometric blocks
-*obs,3.000,-0.100,3.100,9.000,0.020,0.300,0.000,ob1,NONE  # block  1
-*obs,3.000,-0.300,3.100,9.000,0.020,0.250,0.000,ob2,NONE  # block  2
-*obs,3.000,-0.500,3.100,9.000,0.020,0.220,0.000,ob3,NONE  # block  3
-*obs,3.000,-0.700,3.100,9.000,0.020,0.200,0.000,ob4,NONE  # block  4
-*obs,3.000,-0.900,3.100,9.000,0.020,0.200,0.000,ob5,NONE  # block  5
-*obs,3.000,-1.100,3.100,9.000,0.020,0.200,0.000,ob6,NONE  # block  6
-*obs,12.100,0.100,3.100,6.000,0.020,0.300,90.000,eob1,NONE  # block  7
-*obs,12.300,0.100,3.100,6.000,0.020,0.250,90.000,eob2,NONE  # block  8
-*obs,12.500,0.100,3.100,6.000,0.020,0.220,90.000,eob3,NONE  # block  9
-*obs,12.700,0.100,3.100,6.000,0.020,0.200,90.000,eob4,NONE  # block 10
-*obs,12.900,0.100,3.100,6.000,0.020,0.200,90.000,eob5,NONE  # block 11
-*obs,13.100,0.100,3.100,6.000,0.020,0.200,90.000,eob6,NONE  # block 12
+*block_start, 20 20 # geometric blocks
+*obs,3.0000,-0.1000,3.1000,9.0000,0.0200,0.3000,0.0000,1.00,ob1,NONE  # block   1
+*obs,3.0000,-0.3000,3.1000,9.0000,0.0200,0.2500,0.0000,1.00,ob2,NONE  # block   2
+*obs,3.0000,-0.5000,3.1000,9.0000,0.0200,0.2200,0.0000,1.00,ob3,NONE  # block   3
+*obs,3.0000,-0.7000,3.1000,9.0000,0.0200,0.2000,0.0000,1.00,ob4,NONE  # block   4
+*obs,3.0000,-0.9000,3.1000,9.0000,0.0200,0.2000,0.0000,1.00,ob5,NONE  # block   5
+*obs,3.0000,-1.1000,3.1000,9.0000,0.0200,0.2000,0.0000,1.00,ob6,NONE  # block   6
+*obs,12.1000,0.1000,3.1000,6.0000,0.0200,0.3000,90.0000,1.00,eob1,NONE  # block   7
+*obs,12.3000,0.1000,3.1000,6.0000,0.0200,0.2500,90.0000,1.00,eob2,NONE  # block   8
+*obs,12.5000,0.1000,3.1000,6.0000,0.0200,0.2200,90.0000,1.00,eob3,NONE  # block   9
+*obs,12.7000,0.1000,3.1000,6.0000,0.0200,0.2000,90.0000,1.00,eob4,NONE  # block  10
+*obs,12.9000,0.1000,3.1000,6.0000,0.0200,0.2000,90.0000,1.00,eob5,NONE  # block  11
+*obs,13.1000,0.1000,3.1000,6.0000,0.0200,0.2000,90.0000,1.00,eob6,NONE  # block  12
 *end_block

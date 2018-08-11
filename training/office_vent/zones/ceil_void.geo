@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,ceil_void # tag version, format, zone name
-*date Thu Aug 23 18:21:04 2007  # latest file modification 
+*date Fri Sep  4 13:33:12 2015  # latest file modification 
 ceil_void is a 0.5m ceiling void over offices
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,0.00000,0.00000,3.00000  #   1
@@ -50,7 +50,7 @@ ceil_void is a 0.5m ceiling void over offices
 *edges,5,13,5,1,24,33  # 11
 # 
 # surf attributes:
-#  surf name, surf position VERT/CIIL/FLOR/SLOP/UNKN
+#  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
@@ -59,9 +59,9 @@ ceil_void is a 0.5m ceiling void over offices
 *surf,ceil_conff,FLOR,-,-,-,ceiling_rev,OPAQUE,ANOTHER,03,05  #   3 ||< ceiling:conference
 *surf,ceil_rec,FLOR,-,-,-,ceiling_rev,OPAQUE,ANOTHER,04,17  #   4 ||< ceiling:reception
 *surf,structure,CEIL,-,-,-,susp_floor,OPAQUE,SIMILAR,00,00  #   5 ||< identical environment
-*surf,south_edge,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   6 ||< external
-*surf,east_edge,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   7 ||< external
-*surf,north_edge,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   8 ||< external
+*surf,south_edge,VERT,-,F-FRAME,CRACK,extern_wall,OPAQUE,EXTERIOR,0,0  #   6 ||< external
+*surf,east_edge,VERT,-,F-FRAME,CRACK,extern_wall,OPAQUE,EXTERIOR,0,0  #   7 ||< external
+*surf,north_edge,VERT,-,F-FRAME,CRACK,extern_wall,OPAQUE,EXTERIOR,0,0  #   8 ||< external
 *surf,core_b,VERT,-,-,-,gyp_blk_ptn,OPAQUE,SIMILAR,00,00  #   9 ||< identical environment
 *surf,core_a,VERT,-,-,-,gyp_blk_ptn,OPAQUE,ANOTHER,06,01  #  10 ||< Surf-1:mixing_box
 *surf,core_c,VERT,-,-,-,gyp_blk_ptn,OPAQUE,SIMILAR,00,00  #  11 ||< identical environment

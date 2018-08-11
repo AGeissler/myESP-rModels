@@ -9,7 +9,7 @@ MODEL=$1
 #
 rm -f CFD.mon_01 TECp_1.dat
 # 
-time dfs -mode text -file $MODEL << XYZ
+time dfs -mode text -file $MODEL > out.txt << XYZ
 d
 e
 e

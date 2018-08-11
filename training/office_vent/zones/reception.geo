@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,reception # tag version, format, zone name
-*date Fri Jul 17 11:05:01 2009  # latest file modification 
+*date Fri Sep  4 13:32:14 2015  # latest file modification 
 reception of office group adj to conference room
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,3.00000,6.00000,0.00000  #   1
@@ -76,19 +76,19 @@ reception of office group adj to conference room
 #  construction name, optical name
 #  boundary condition tag followed by two data items
 *surf,pt_core_a,VERT,-,-,-,gyp_blk_ptn,OPAQUE,SIMILAR,00,00  #   1 ||< identical environment
-*surf,fict_rec,VERT,-,-,-,fict,SC_fictit,ANOTHER,02,04  #   2 ||< fict_rec:general
+*surf,fict_rec,VERT,-,DOOR,BIDIR,fict,SC_fictit,ANOTHER,02,04  #   2 ||< fict_rec:general
 *surf,pt_rec_a,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,02,03  #   3 ||< pt_rec_a:general
 *surf,pt_recp_a,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,03,04  #   4 ||< pt_recp_a:conference
-*surf,fict_open,VERT,-,-,-,fict,SC_fictit,ANOTHER,03,03  #   5 ||< fict_open:conference
+*surf,fict_open,VERT,-,DOOR,BIDIR,fict,SC_fictit,ANOTHER,03,03  #   5 ||< fict_open:conference
 *surf,pt_recp_b,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,03,02  #   6 ||< pt_recp_b:conference
 *surf,spandral,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   7 ||< external
-*surf,vent,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   8 ||< external
+*surf,vent,VERT,spandral,F-FRAME,OPEN,insul_frame,OPAQUE,EXTERIOR,0,0  #   8 ||< external
 *surf,frame,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   9 ||< external
-*surf,glazing,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  10 ||< external
+*surf,glazing,VERT,frame,C-WINDOW,CRACK,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  10 ||< external
 *surf,spandral_a,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #  11 ||< external
-*surf,vent_a,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  12 ||< external
+*surf,vent_a,VERT,spandral_a,F-FRAME,OPEN,insul_frame,OPAQUE,EXTERIOR,0,0  #  12 ||< external
 *surf,frame_a,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #  13 ||< external
-*surf,glazing_a,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  14 ||< external
+*surf,glazing_a,VERT,frame_a,C-WINDOW,CRACK,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #  14 ||< external
 *surf,desk_top,CEIL,-,-,-,door,OPAQUE,ADIABATIC,0,0  #  15 ||< adiabatic
 *surf,desk_base,FLOR,-,-,-,door,OPAQUE,ADIABATIC,0,0  #  16 ||< adiabatic
 *surf,ceiling,CEIL,-,-,-,ceiling,OPAQUE,ANOTHER,05,04  #  17 ||< ceil_rec:ceil_void
@@ -103,15 +103,15 @@ reception of office group adj to conference room
 *insol_calc,all_applicable   2 # insolation sources
  10 14
 # 
-*base_list,1,16,    10.10 0  # zone base list
+*base_list,1,16,    70.85 0  # zone base list
 # 
 # block entities:
 #  *obs = obstructions
-*block_start,20 20 # geometric blocks
-*obs,12.100,6.000,3.100,6.000,0.020,0.300,90.000,eob1,NONE  # block  1
-*obs,12.300,6.000,3.100,6.000,0.020,0.250,90.000,eob2,NONE  # block  2
-*obs,12.500,6.000,3.100,6.000,0.020,0.220,90.000,eob3,NONE  # block  3
-*obs,12.700,6.000,3.100,6.000,0.020,0.200,90.000,eob4,NONE  # block  4
-*obs,12.900,6.000,3.100,6.000,0.020,0.200,90.000,eob5,NONE  # block  5
-*obs,13.100,6.000,3.100,6.000,0.020,0.200,90.000,eob6,NONE  # block  6
+*block_start, 20 20 # geometric blocks
+*obs,12.1000,6.0000,3.1000,6.0000,0.0200,0.3000,90.0000,1.00,eob1,NONE  # block   1
+*obs,12.3000,6.0000,3.1000,6.0000,0.0200,0.2500,90.0000,1.00,eob2,NONE  # block   2
+*obs,12.5000,6.0000,3.1000,6.0000,0.0200,0.2200,90.0000,1.00,eob3,NONE  # block   3
+*obs,12.7000,6.0000,3.1000,6.0000,0.0200,0.2000,90.0000,1.00,eob4,NONE  # block   4
+*obs,12.9000,6.0000,3.1000,6.0000,0.0200,0.2000,90.0000,1.00,eob5,NONE  # block   5
+*obs,13.1000,6.0000,3.1000,6.0000,0.0200,0.2000,90.0000,1.00,eob6,NONE  # block   6
 *end_block

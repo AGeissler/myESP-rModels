@@ -6,7 +6,7 @@
 *cng_def
 Brk_blk_aerated          # Change id string
    2 # Change type: Constructions           
-  13 Brk_blk_1980                     # material & construction name
+  13 Brk_blk_1980  4                    # material & construction name
    1     5.000     0.000 # Data
 #  
 # Locations definitions follow...

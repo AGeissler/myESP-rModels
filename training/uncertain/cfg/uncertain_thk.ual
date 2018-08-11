@@ -5,26 +5,26 @@
 #  
 *cng_def
 cav_ins_thick            # Change id string
-   2 # Change type: Constructions           
- 161 Brk_blk_1980                     # material & construction name
-   1    10.000     0.000 # Data
+   2 # Change type: Constructions
+ 161 Brk_blk_1980  3    # material index & construction name & which layer
+   1    10.000     0.000   # % change layer thickness mineral fibre
 *cng_def
 roof_insul_thick         # Change id string
-   2 # Change type: Constructions           
- 156 Flat_rf_1980                     # material & construction name
-   2    0.0100      0.0 # Data
+   2 # Change type: Constructions
+ 156 Flat_rf_1980  4    # material index & construction name & which layer
+   2     0.010     0.000   # abs change layer thickness glasswool
 #  
 # Locations definitions follow...
 #  
 *loc_def
 facade          # Location id string
    1 # Number of zones
-   1   4 # Zone number, Number of surfaces
+   1   4 # Zone number Number of surfaces
   1  2  3  4
 *loc_def
 roof            # Location id string
    1 # Number of zones
-   1   1 # Zone number, Number of surfaces
+   1   1 # Zone number Number of surfaces
   5
 #  
 # Action definitions follow...

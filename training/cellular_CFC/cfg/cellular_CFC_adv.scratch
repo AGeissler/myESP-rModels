@@ -1,0 +1,223 @@
+ 
+ESP-r Integrated Building Performance Simulator
+This is a development copy of bps, based on ESP-r release .
+ 
+Copyright resides with the members of the ESP-r consortium
+as listed at www.esru.strath.ac.uk/.
+ 
+Build information:
+  Platform -         x86_64:Darwin:17.7.0
+  Compilers -        gcc-mp-5/g++-mp-5/gfortran-mp-5
+  Graphics library - X11
+  XML output -       Supported
+  Preferences (esprc) file - standard version.
+ 
+The input file is: cellular_CFC_adv.cfg
+(currently: cellular_CFC_adv.cfg)
+ Model configuration file?  The name (cellular_CFC_adv.cfg) will be used.
+Scanning the model description...
+Scanning the model description...done
+ Checking zone descriptions...
+ Checking zone descriptions...done
+ Checking model topology...
+ Checking model topology...done
+A systems and building simulation start-up period of   3 days has been specified.
+ 
+ Scanning...../ctl/vb_ctl.tdfa
+ 
+ Scanning...../ctl/vb_ctl.tdfa
+ Opened new /tmp/94917.temporalscratch
+ 
+Updating the scratch file...
+ 
+Updating the scratch file...done.
+Importing data finished.
+Converting temporal data...done.
+ 
+ Climate data:                           ESP :  1967
+ 
+ESP-r integrated simulator:
+  a Input model description     w Warnings >> OFF          
+  b Assign climate file         r Reporting >> silent      
+    _________________________     _________________________
+  c Initiate simulation         s Configure H3K Reports    
+    _________________________     _________________________
+  t Invoke trace facilities     ? Help                     
+  y Multi-year sim >> OFF       - Quit                     
+
+ ESP-r integrated simulator:?> (currently: libb)
+ Zone results library name ?  Resetting results file record width to           40
+ Library file: cellular_CFC_adv_mit_per2.res
+(currently:  9  1)
+Simulation period:
+ Start day & month (DD MM)? (currently:  6  2)
+Simulation period:
+ End day & month (DD MM)? (currently: 3)
+ Start-up period duration:
+ Number of days? (currently: 1)
+ 
+ Zone side: time-steps/hour?  Hourly results integration:
+  [Y]es or [N]o (default) ?
+SIMUL:
+  a Specify results db                                         
+  b Specify simulation period     < Delete last result set     
+    ....................            ....................       
+  * Save >> 2 (1+) surf temps     g Simulation toggles         
+    ....................          i Info on current parameters 
+  m Monitor state variables       o View data from 0 level save
+  t Invoke time-step controller     ....................       
+  s Invoke simulation             ? Help                       
+  - Exit to main menu
+
+ SIMUL:?> SIMUL:
+  a Specify results db                                         
+  b Specify simulation period     < Delete last result set     
+    ....................            ....................       
+  * Save >> 3 (2+) node temps     g Simulation toggles         
+    ....................          i Info on current parameters 
+  m Monitor state variables       o View data from 0 level save
+  t Invoke time-step controller     ....................       
+  s Invoke simulation             ? Help                       
+  - Exit to main menu
+
+ SIMUL:?> SIMUL:
+  a Specify results db                                         
+  b Specify simulation period     < Delete last result set     
+    ....................            ....................       
+  * Save >> 4 (2+) energy balnc   g Simulation toggles         
+    ....................          i Info on current parameters 
+  m Monitor state variables       o View data from 0 level save
+  t Invoke time-step controller     ....................       
+  s Invoke simulation             ? Help                       
+  - Exit to main menu
+
+ SIMUL:?>  Use ../ctl/cellular_CFC_adv.ctl
+ with the current model? [Y]es (default) or [N]o ?
+ 
+ Within the current model  1 control loops have been specified.
+ The overall project control is
+Ideal control for dual office model. Weekdays normal office hours,
+saturday reduced occupied hours, sunday stand-by only. One person per
+office, 100W lighting and 150W small power.
+ and the zone control is
+this is a base case set of assumptions
+ 
+ 
+ The sensor for function  1 senses the temperature of the current zone.
+ The actuator for function  1 is air point of the current zone
+For building control  the following day types have been defined:
+weekdays    saturday    sunday
+ 
+ Per|Start|Sensing  |Actuating  | weekdays control laws
+   1  0.00 db temp   > flux      basic control: heating capacity 2500.0W cooling capacity 2500.0W.
+heating setpoint 15.00C cooling setpoint 26.00C.
+   2  6.00 db temp   > flux      basic control: heating capacity 2500.0W cooling capacity 2500.0W.
+heating setpoint 19.00C cooling setpoint 24.00C.
+   3 18.00 db temp   > flux      basic control: heating capacity 2500.0W cooling capacity 2500.0W.
+heating setpoint 15.00C cooling setpoint 26.00C.
+ 
+ Per|Start|Sensing  |Actuating  | saturday control laws
+   1  0.00 db temp   > flux      basic control: heating capacity 2500.0W cooling capacity 2500.0W.
+heating setpoint 15.00C cooling setpoint 26.00C.
+   2  9.00 db temp   > flux      basic control: heating capacity 2500.0W cooling capacity 2500.0W.
+heating setpoint 19.00C cooling setpoint 24.00C.
+   3 17.00 db temp   > flux      free floating
+ 
+ Per|Start|Sensing  |Actuating  | sunday control laws
+   1  0.00 db temp   > flux      basic control: heating capacity 2500.0W cooling capacity 2500.0W.
+heating setpoint 10.00C cooling setpoint 30.00C.
+ zone ( 1) manager_a    << control  1
+ zone ( 2) manager_b    << control  1
+ zone ( 3) corridor     << control  1
+ 
+ Within the current model  2 control loops have been specified.
+ The overall project control is
+Ideal control for dual office model. Weekdays normal office hours,
+saturday reduced occupied hours, sunday stand-by only. One person per
+office, 100W lighting and 150W small power.
+ and the complex fenestration control is
+Sense total solar on frame, control manager_a by 3 angles and
+manager_b by cut off.
+ 
+ 
+ The sensor for function  1 senses incident sol rad on frame in manager_a.
+ The actuator for function  1 is Shade ON/OFF and three slat angles   1 in manager_a.
+ There have been  1 day type(s) defined.
+ Control is valid Sun-01-Jan to Sun-31-Dec, 1967 with  2 periods.
+ 
+ Per|Start|Sensing  |Actuating  | weekdays control laws
+   1  0.00 rad > shd ON/OFF      Basic control: [C] shade ON (close) setpoint 800.0[C] shade OFF
+(open) setpoint 750.0
+   2  6.00 rad > shd ON/OFF & an Basic control: [W/m2] shade OFF (up) setp. 100.0[W/m2] shade ON
+setp. 150.0[W/m2] shade MID setp. 250.0[W/m2] shade CLSD setp. 380.0[deg] ON slat angle 0.0[deg]
+MID slat angle 45.0[deg] CLSD slat angle 80.0
+ 
+ The sensor for function  2 senses incident sol rad on frame in manager_b.
+ The actuator for function  2 is Cutoff shade control   1 in manager_b.
+ There have been  1 day type(s) defined.
+ Control is valid Sun-01-Jan to Sun-31-Dec, 1967 with  1 periods.
+ 
+ Per|Start|Sensing  |Actuating  | weekdays control laws
+   1  0.00 rad > slat angle      Basic control: [C] shade ON (close) setpoint 500.0[C] shade OFF
+(open) setpoint 400.0[deg] close slat angle 80.0[deg] open slat angle 0.0
+(currently: For cellular_CFC_adv)
+ Result-set description?  Climate file         : clm67
+ Configuration file   : cellular_CFC_adv.cfg
+ Configuration name   : Model of two adjacent cellular offices featuring CFCs
+ 
+ Control file name    : ../ctl/cellular_CFC_adv.ctl
+ 
+ Zone save option     : 4 (Energy Balance)
+ No. of warnings      :      0
+ 
+ Simulation period    :      7 day(s)
+                period: Mon-06-Feb@01h00 - Sun-12-Feb@24h00
+ Start-up period      :      3 day(s)
+ Zone time-steps      :     10 / hr (  6.00 min. intervals saved at each timestep)
+ Number of zones      :      3
+ Zone-time increments :   7200
+ Zone results db size :     41.5 Mbytes
+ Time-step controller :     Not active
+ 
+Continue with simulation? [Y]es (default) or [N]o ?
+ 
+ Simulation has now commenced.
+  10 %   complete; expected finish time : Sat Aug  4 17:07:26 2018
+  95 %   complete; expected finish time : Sat Aug  4 17:07:18 2018
+Simulation cpu runtime:       1.1 seconds
+XML postprocessor cpu runtime:    0.50 seconds
+Save simulation results?
+(see help) [Y]es (default) or [N]o ?
+ Zones library simulation no.  1
+ 
+ Results saved for the period from day  6 of month  2
+                                to day 12 of month  2
+SIMUL:
+  a Specify results db                                         
+  b Specify simulation period     < Delete last result set     
+    ....................            ....................       
+  * Save >> 4 (2+) energy balnc   g Simulation toggles         
+    ....................          i Info on current parameters 
+  m Monitor state variables       o View data from 0 level save
+  t Invoke time-step controller     ....................       
+  s Invoke simulation             ? Help                       
+  - Exit to main menu
+
+ SIMUL:?>  
+ESP-r integrated simulator:
+  a Input model description     w Warnings >> OFF          
+  b Assign climate file         r Reporting >> silent      
+    _________________________     _________________________
+  c Initiate simulation         s Configure H3K Reports    
+    _________________________     _________________________
+  t Invoke trace facilities     ? Help                     
+  y Multi-year sim >> OFF       - Quit                     
+
+ ESP-r integrated simulator:?> Unmet hours for each zone at end of simulation.
+Zone  1 manager_a        0.0
+Zone  2 manager_b        0.0
+Zone  3 corridor         0.0
+Deleting scratch file...
+/tmp/94917.temporalscratch
+Deleting scratch file...done.
+/tmp/94917.temporalscratch
