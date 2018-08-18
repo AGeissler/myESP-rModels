@@ -1,0 +1,133 @@
+# composite construction db defined in ../dbs/wsf.constrdb
+# based on materials db ../dbs/gae.materialdb.a
+# and based on CFClayers db CFClayers.db1.a
+   25     # no of composites 
+# layers  description  type  optics name   symmetry tag
+    1    mass_part     OPAQ  OPAQUE        SYMMETRIC     
+# material ref thickness (m) description & air gap R
+   35    0.2400  Block white ptd inner (3% mc) : Block white ptd inner (3% mc)
+# layers  description  type  optics name   symmetry tag
+    1    w_unins       OPAQ  OPAQUE        SYMMETRIC     
+# material ref thickness (m) description & air gap R
+   35    0.2400  Block white ptd inner (3% mc) : Block white ptd inner (3% mc)
+# layers  description  type  optics name   symmetry tag
+    3    w_int_ins     OPAQ  OPAQUE        NONSYMMETRIC  
+# material ref thickness (m) description & air gap R
+   35    0.2400  Block white ptd inner (3% mc) : Block white ptd inner (3% mc)
+  216    0.0600  Mineral fibre : Mineral fibre
+  107    0.0125  Gypsum plasterboard : Gypsum plasterboard
+# layers  description  type  optics name   symmetry tag
+    4    w_int_ins_vb  OPAQ  OPAQUE        NONSYMMETRIC  
+# material ref thickness (m) description & air gap R
+   35    0.2400  Block white ptd inner (3% mc) : Block white ptd inner (3% mc)
+  216    0.0600  Mineral fibre : Mineral fibre
+  207    0.0010  PVC : PVC
+  107    0.0125  Gypsum plasterboard : Gypsum plasterboard
+# layers  description  type  optics name   symmetry tag
+    4    w_unins4L     OPAQ  OPAQUE        SYMMETRIC
+# material ref thickness (m) description & air gap R
+   35    0.0200  Block white ptd inner (3% mc) : Block white ptd inner (3% mc)
+   35    0.1000  Block white ptd inner (3% mc) : Block white ptd inner (3% mc)
+   35    0.1000  Block white ptd inner (3% mc) : Block white ptd inner (3% mc)
+   35    0.0200  Block white ptd inner (3% mc) : Block white ptd inner (3% mc)
+# layers  description  type  optics name   symmetry tag
+    3    Panel_U1.97   OPAQ  OPAQUE        SYMMETRIC     
+# material ref thickness (m) description & air gap R
+   43    0.0040  Aluminium : Aluminium
+  216    0.0135  Mineral fibre : Mineral fibre
+   43    0.0040  Aluminium : Aluminium
+# layers  description  type  optics name   symmetry tag
+    3    Panel_U0.446  OPAQ  OPAQUE        SYMMETRIC     
+# material ref thickness (m) description & air gap R
+   46    0.0030  Grey cotd aluminium : Grey cotd aluminium
+  216    0.0840  Mineral fibre : Mineral fibre
+   46    0.0030  Grey cotd aluminium : Grey cotd aluminium
+# layers  description  type  optics name   symmetry tag
+    2    pcm_board     OPAQ  OPAQUE        SYMMETRIC     
+# material ref thickness (m) description & air gap R
+  107    0.0150  Gypsum plasterboard : Gypsum plasterboard
+  107    0.0150  Gypsum plasterboard : Gypsum plasterboard
+# layers  description  type  optics name   symmetry tag
+    3    TAB_Decke     OPAQ  OPAQUE        SYMMETRIC     
+# material ref thickness (m) description & air gap R
+   37    0.0800  reinforced concrete : reinforced concrete
+   37    0.1200  reinforced concrete : reinforced concrete
+   37    0.0800  reinforced concrete : reinforced concrete
+# layers  description  type  optics name   symmetry tag
+    3    ceiling       OPAQ  OPAQUE        ceiling_rev   
+# material ref thickness (m) description & air gap R
+   37    0.2800  reinforced concrete : reinforced concrete
+    0    0.1000  gap  0.160 0.160 0.160
+   42    0.0040  Steel : Steel
+# layers  description  type  optics name   symmetry tag
+    3    ceiling_rev   OPAQ  OPAQUE        ceiling       
+# material ref thickness (m) description & air gap R
+   42    0.0040  Steel : Steel
+    0    0.1000  gap  0.160 0.160 0.160
+   37    0.2800  reinforced concrete : reinforced concrete
+# layers  description  type  optics name   symmetry tag
+    3    frame         OPAQ  OPAQUE        SYMMETRIC     
+# material ref thickness (m) description & air gap R
+   46    0.0040  Grey cotd aluminium : Grey cotd aluminium
+  301    0.0050  Std. Frame (equivalent) : Std. Frame (equivalent)
+   46    0.0040  Grey cotd aluminium : Grey cotd aluminium
+# layers  description  type  optics name   symmetry tag
+    3    frame_lt      OPAQ  OPAQUE        SYMMETRIC     
+# material ref thickness (m) description & air gap R
+   59    0.0040  light-grey_coated_aluminum : Light grey coated aluminium
+  301    0.0050  Std. Frame (equivalent) : Std. Frame (equivalent)
+   59    0.0040  light-grey_coated_aluminum : Light grey coated aluminium
+# layers  description  type  optics name   symmetry tag
+    3    alu_frame     OPAQ  OPAQUE        SYMMETRIC     
+# material ref thickness (m) description & air gap R
+   46    0.0050  Grey cotd aluminium : Grey cotd aluminium
+    0    0.0150  gap  0.820 0.961 0.605
+   46    0.0050  Grey cotd aluminium : Grey cotd aluminium
+# layers  description  type  optics name   symmetry tag
+    3    cw_elem-sep   OPAQ  OPAQUE        SYMMETRIC     
+# material ref thickness (m) description & air gap R
+   46    0.0040  Grey cotd aluminium : Grey cotd aluminium
+    0    0.0600  gap  0.230 0.230 0.230
+   46    0.0040  Grey cotd aluminium : Grey cotd aluminium
+# layers  description  type  optics name   symmetry tag
+    1    BlindSlat_f   OPAQ  OPAQUE        SYMMETRIC     
+# material ref thickness (m) description & air gap R
+   49    0.0010  slat_reflective : slat_reflective
+# layers  description  type  optics name   symmetry tag
+    1    BlindSlat_b   OPAQ  OPAQUE        SYMMETRIC     
+# material ref thickness (m) description & air gap R
+   50    0.0010  slat_standard : slat_standard
+# layers  description  type  optics name   symmetry tag
+    1    SelectSheet   OPAQ  OPAQUE        SYMMETRIC     
+# material ref thickness (m) description & air gap R
+   44    0.0020  SelectiveAbsorber : SelectiveAbsorber
+# layers  description  type  optics name   symmetry tag
+    1    Abs_100       OPAQ  OPAQUE        SYMMETRIC     
+# material ref thickness (m) description & air gap R
+   58    0.0030  Abs_100 : Abs_100
+# layers  description  type  optics name   symmetry tag
+    1    fict_gap_cn   TRAN  SC_fictit     SYMMETRIC     
+# material ref thickness (m) description & air gap R
+  245    0.0010  fict : fict
+# layers  description  type  optics name   symmetry tag
+    1    80AF_9006     TRAN  80AF_9006     SYMMETRIC     
+# material ref thickness (m) description & air gap R
+  245    0.0020  fict : fict
+# layers  description  type  optics name   symmetry tag
+    1    8mm-float     TRAN  SCF7747_06n   SYMMETRIC     
+# material ref thickness (m) description & air gap R
+  242    0.0080  Plate glass : Plate glass
+# layers  description  type  optics name   symmetry tag
+    1    curt_glz12    TRAN  clear12gvb    SYMMETRIC     
+# material ref thickness (m) description & air gap R
+  242    0.0120  Plate glass : Plate glass
+# layers  description  type  optics name   symmetry tag
+    1    curt_glz_frt  TRAN  Grey50fritb   SYMMETRIC     
+# material ref thickness (m) description & air gap R
+  243    0.0080  4mm clear float : 4mm clear float
+# layers  description  type  optics name   symmetry tag
+    3    dbl_glz       TRAN  ip6834_06nbb  NONSYMMETRIC  
+# material ref thickness (m) description & air gap R
+  247    0.0060  ip6834ne : ip6834ne
+    0    0.0160  gap  0.365 0.260 0.365
+  243    0.0060  4mm clear float : 4mm clear float

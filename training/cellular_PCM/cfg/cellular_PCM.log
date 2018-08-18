@@ -1,0 +1,19 @@
+Project notes for cellular_PCM.cfg
+Description: base case model of two adjacent cellular offices
+In folder: cellular_PCM
+By: Achim
+Date: Wed Jun  7 10:11:58 2017
+For: 
+Project reference: 
+Notes: 
+_____________________________
+
+There is one variant in this folder:
+
+cellular_PCM.cfg, a basic version of cellular office featuring PCM
+materials in manager_a and manager_b.
+
+The layout of the rooms was taken from CAD data - e.g. the
+surfaces are positioned in real-space. There is a ~50mm gap
+between the rooms. The partitions are thermally connected
+at the same time the geometry is separated.

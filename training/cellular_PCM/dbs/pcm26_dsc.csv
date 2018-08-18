@@ -1,0 +1,2 @@
+ConfigFile,Nr. Nodes,Node Nr.,Name,Zone,Surf,Node,Type,OpqTrn,Nr. Items,Tmelt,Tsoli,sub,consol,conliq,shcsol,shcliq,Lges,typtoggle,a1,b1,c1,d1,e1,f1,a2,b2,c2,d2,e2,f2
+cellular_PCM.cfg,1,1,PCM_manager_a,1,5,4,56,1,9,16.2,27.6,0.8,0.2,0.2,3500,3300,228000,2,../dbs/pcm26.dsc,,,,,,,,,,,

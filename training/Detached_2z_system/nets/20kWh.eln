@@ -1,0 +1,252 @@
+* FileVersion
+      1.00
+* electrical network
+# ESP-r Electrical network file created with configuration file:
+  3br_tt_det_zeroE.cfg
+# Network description:
+  Network for detached house 2010
+* net type 
+  balanced
+* base power value (all nodes)
+     1000.00
+* phase angles (for each phase)
+      0.00    120.00    240.00
+# List and details of nodes in the network
+* nodes
+   17
+# Index  Node name   Phase type   Phase Node type         Base volt
+    1  liv           1-phase         2  variable          220.00    0
+    2  non_liv       1-phase         2  variable          220.00    0
+    3  f_pump        1-phase         3  variable          220.00    0
+    4  hw_pump       1-phase         3  variable          220.00    0
+    5  sol_pump      1-phase         3  variable          220.00    0
+    6  hcoil_3PDV    1-phase         3  variable          220.00    0
+    7  DHW_divert    1-phase         3  variable          220.00    0
+    8  s_fan         1-phase         3  variable          220.00    0
+    9  ex_fan        1-phase         3  variable          220.00    0
+   10  mains_1       3-phase         1  fixed_V           220.00    0
+   11  mains_2       3-phase         2  fixed_V           220.00    0
+   12  mains_3       3-phase         3  fixed_V           220.00    0
+   13  ASHP_1        3-phase         1  variable          220.00    0
+   14  ASHP_2        3-phase         2  variable          220.00    0
+   15  ASHP_3        3-phase         3  variable          220.00    0
+   16  PV            d.c.            1  calc_PV           220.00    1
+   17  DC-bus        d.c.            1  fixed_V           220.00    0
+** end nodes
+# List and details of load and generator connections to nodes
+* hybrid components
+   13
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    1  zone          liv_lights    1-phase         0    1    0     1    2    0
+# description:
+  Lighting power, living room
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    2  zone          n-liv_light   1-phase         0    2    0     2    2    0
+# description:
+  Non-Living room lighting power
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    3  zone          liv_smallp    1-phase         0    1    0     1    3    0
+# description:
+  Small power, living room
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    4  zone          n-liv_smalp   1-phase         0    2    0     2    3    0
+# description:
+  Small power, non-living room
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    5  plant         f_pump        1-phase         0    0    3     2    0    0
+# plt comp node connections   DC node id   AC node id
+    1    0    0
+# description:
+  dummy pump of ASHP
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    6  plant         hw_pump       1-phase         0    0    4    16    0    0
+# plt comp node connections   DC node id   AC node id
+    1    0    0
+# description:
+  The hot water circulating pump
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    7  plant         sol_pump      1-phase         0    0    5    12    0    0
+# plt comp node connections   DC node id   AC node id
+    1    0    0
+# description:
+  The solar thermal collector circuit pump
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    8  plant         DHW_divert    1-phase         0    0    6     4    0    0
+# plt comp node connections   DC node id   AC node id
+    1    0    0
+# description:
+  3-port valve switching flow to DHW node 2 or h_coil node 3
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+    9  plant         hcoil_3PDV    1-phase         0    0    7     8    0    0
+# plt comp node connections   DC node id   AC node id
+    1    0    0
+# description:
+  3-port valve ... not quite clear what its purpose is
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+   10  plant         s_fan         1-phase         0    0    8    20    0    0
+# plt comp node connections   DC node id   AC node id
+    1    0    0
+# description:
+  Supply fan for AHU
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+   11  plant         ex_fan        1-phase         0    0    9    21    0    0
+# plt comp node connections   DC node id   AC node id
+    1    0    0
+# description:
+  Extract fan for AHU
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+   12  plant         ASHP          3-phase        13   14   15     1    0    0
+# plt comp node connections   DC node id   AC node id
+    1    0    0
+# description:
+  Air source heat pump
+# Number of additional data items:
+    0
+# Component          Component     Phase         Connects to nodes    location
+# Index  type        name          type          pha1 pha2 pha3       data
+   13  spmaterial    PV_array      d.c.           16    0    0     1    0    0
+# description:
+  PV array on roof
+# Number of additional data items:
+    0
+** end hybrid
+# List and details of power only components
+* power-only components
+    5
+# No.   i.d.  Comp. name   Phase type  links to nodes 
+    1   22  Battery       d.c.           17    0    0
+# description:
+  Test for Li-Ion battery
+# Number of additional data items:
+   81    0
+    34.000        100.00        1.5000        25.000        4.3000        3.1500        24.200        4.3000
+    25.000       0.30000        27.300        42.640        582.90       0.85000        0.0000        60.000
+   -40.000      -0.57100E-01  -0.52500E-01  -0.20970      -0.34510      -0.41170        4.2230       0.11520
+  -0.25560       0.20070      -0.65100E-01   0.26500E-01   0.20200E-01   0.60500E-01    1.0000       0.12100
+    1.0000       0.24190        1.0000        1.2100       0.98500        6.0480       0.89500        12.100
+   0.77500        24.190       0.59300        999.00       0.59300       -40.000       0.90500       0.18700
+   -20.000       0.98500       0.36600E-01    0.0000        1.0000       0.12300E-01    10.000        1.0000
+   0.62000E-02    20.000        1.0000       0.24000E-02    30.000        1.0000      -0.15000E-04    40.000
+    1.0000      -0.12000E-02    60.000        1.0000      -0.12000E-02   0.50000E-03    0.0000        3.0000
+    0.0000       0.19720      -0.47490       0.41180      -0.14720       0.38000E-01   0.15400E-01    16.000
+    3000.0
+# No.   i.d.  Comp. name   Phase type  links to nodes 
+    2   20  PV-DC-DC      d.c.           16    0    0
+# description:
+  DC-DC converter for PV
+# Number of additional data items:
+    6    0
+    3.0000        10000.       0.89750E-05   0.98000       0.12270E+08    0.0000
+   16   17
+# No.   i.d.  Comp. name   Phase type  links to nodes 
+    3   20  DC-AC-ph1     d.c.           10    0    0
+# description:
+  DC-AC inverter for DC bus to AC bus, phase 1
+# Number of additional data items:
+    6    0
+    4.0000        10000.       0.89750E-05   0.98000       0.12270E+08    0.0000
+   17   10
+# No.   i.d.  Comp. name   Phase type  links to nodes 
+    4   20  DC-AC-ph2     d.c.           11    0    0
+# description:
+  DC-AC inverter for DC bus to AC bus, phase 2
+# Number of additional data items:
+    6    0
+    4.0000        10000.       0.89750E-05   0.98000       0.12270E+08    0.0000
+   17   11
+# No.   i.d.  Comp. name   Phase type  links to nodes 
+    5   20  DC-AC-ph3     d.c.           12    0    0
+# description:
+  DC-AC inverter for DC bus to AC bus, phase 3
+# Number of additional data items:
+    6    0
+    4.0000        10000.       0.89750E-05   0.98000       0.12270E+08    0.0000
+   17   12
+** end power-only 
+# Listing and Description of components connecting the nodes
+* connecting components
+    4
+# Index db  Component     Phase
+#       ref name          type
+    1    2  1ph_cable     1-phase
+# description: 
+  10 m 1-phase cable
+# Number of additional data items:
+    6
+   0.10000E-02   0.50000E-02   0.10000E-02   0.50000E-02   0.10000E-02    10.000
+# Index db  Component     Phase
+#       ref name          type
+    2    4  3ph_cbl_lng   3-phase
+# description: 
+  40 m 3-phase cable
+# Number of additional data items:
+    7
+   0.17000E-01   0.50000E-01   0.10000E-03    0.0000        0.0000        0.0000        40.000
+# Index db  Component     Phase
+#       ref name          type
+    3    4  3ph_cbl_sht   3-phase
+# description: 
+  5 m 3-phase cable for ASHP connection
+# Number of additional data items:
+    7
+   0.17000E-01   0.50000E-01   0.10000E-02    0.0000        0.0000        0.0000        5.0000
+# Index db  Component     Phase
+#       ref name          type
+    4    1  dc_lng        d.c.
+# description: 
+  20 m long dc cable
+# Number of additional data items:
+    2
+   0.50000        20.000
+** end connecting components
+# Connections between nodes in the network 
+* connections
+   10
+# Connection        Phases  Connection  Start nodes       End nodes
+# Index type        1 2 3   component   pha1 pha2 pha3    pha1 pha2 pha3
+    1  1-phase      0 2 0     1         0   11    0       0    1    0
+    2  1-phase      0 2 0     1         0   11    0       0    2    0
+    3  1-phase      0 0 3     1         0    0   12       0    0    3
+    4  1-phase      0 0 3     1         0    0   12       0    0    4
+    5  1-phase      0 0 3     1         0    0   12       0    0    5
+    6  1-phase      0 0 3     1         0    0   12       0    0    6
+    7  1-phase      0 0 3     1         0    0   12       0    0    7
+    8  1-phase      0 0 3     1         0    0   12       0    0    8
+    9  1-phase      0 0 3     1         0    0   12       0    0    9
+   10  3-phase      1 2 3     3        10   11   12      13   14   15
+** end connections
+** electrical network end

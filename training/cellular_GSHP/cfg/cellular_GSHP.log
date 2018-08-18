@@ -1,0 +1,23 @@
+Project notes for cellular_offices_CFC.cfg
+Description: base case model of two adjacent cellular offices
+In folder: cellular_CFC
+By: Achim
+Date: Wed Jun  7 10:11:58 2017
+For: 
+Project reference: 
+Notes: 
+_____________________________
+
+There is one variant in this folder:
+
+cellular_CFC.cfg, a basic version of cellular office featuring CFC
+glazing for the large windows in manager_a and manager_b.
+
+See *.glz files in the subfolder doc for information on the glazing
+products used. Both CFC constructions additionally feature an external
+venetian type blind which is controlled.
+
+The layout of the rooms was taken from CAD data - e.g. the
+surfaces are positioned in real-space. There is a ~50mm gap
+between the rooms. The partitions are thermally connected
+at the same time the geometry is separated.

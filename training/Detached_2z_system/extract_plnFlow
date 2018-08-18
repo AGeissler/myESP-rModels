@@ -1,0 +1,94 @@
+#!/bin/csh
+# Take current model and extract detailed data from plant results.
+# Script expects that the plant results file name is set in the
+# configuration file.
+#
+#DOES NOT WORK WHEN RUNNING MULTIPLE SIMULATIONS FROM A SCIRPT, THEREFORE!
+
+set RESFILE=$1
+
+res -mode text -file $RESFILE<<XXX
+
+e # Plant results
+
+>
+${RESFILE}_plnFlow.dat
+$RESFILE plant results
+^
+e # comma delimiter
+* # toggle time format
+b # 1st phase flow
+0
+v # hw_pump
+-
+
+b # 1st phase flow
+r # sol_pump
+-
+
+b # 1st phase flow
+d # DHW_divert
+-
+1 # node number
+
+b # 1st phase flow
+d # DHW_divert
+-
+2 # node number
+
+b # 1st phase flow
+d # DHW_divert
+-
+3 # node number
+
+b # 1st phase flow
+l # hcoil_3PDV
+-
+1 # node number
+
+b # 1st phase flow
+l # hcoil_3PDV
+-
+2 # node number
+
+b # 1st phase flow
+l # hcoil_3PDV
+-
+3 # node number
+
+! # list data
+> # switch back to screen
+-
+-
+-
+XXX
+
+unset RESFILE
+
+###
+#:  a ASHP             l hcoil_3PDV
+#b f_pump           m hcoil_3PDV
+#c pump_bpass_cvg   n hcoil_3PDV
+#d DHW_divert       o coil_3PDV_mrg
+#e DHW_divert       p coil_DHW_mrg
+#f DHW_divert       q return_loss
+#g DHW_tank         r sol_pump
+#h DHW_tank
+#i DHW_tank         0 Page:  1: 3
+#j DHW_draw         < index select
+#k flow_loss        ? help
+#:  - exit this menu
+
+#::?>
+#::  r sol_pump         c ex_fan
+#s Collector_A      d ex_duct
+#t Collector_B      e h_coil
+#u Collector_C      f h_coil
+#v hw_pump          g sup_duct_l
+#w buff_tank        h sup_duct_n
+#x buff_tank        i ex_plen
+#y in_duct
+#z heat_ex          0 Page:  2: 3
+#a heat_ex          < index select
+#b s_fan            ? help
+#:  - exit this menu

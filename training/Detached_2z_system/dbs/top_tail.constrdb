@@ -1,5 +1,6 @@
 # composite construction db defined in ../dbs/top_tail.constrdb
 # based on materials db ../dbs/top_tail.materialdb
+# and based on CFClayers db CFClayers.db1.a
    88     # no of composites 
 # layers  description  type  optics name   symmetry tag
     4    extern_wall   OPAQ  OPAQUE        NONSYMMETRIC  
@@ -305,12 +306,12 @@
     0    0.0120  gap  0.371 0.371 0.371
   243    0.0060  clear float : 4mm clear float glass with optics from UK national method
 # layers  description  type  optics name   symmetry tag
-    5    tripglz_089   TRAN  tr_Kgl_arg    NONSYMMETRIC  
+    5    tripglz_089   TRAN  tr_Kgl_arg    SYMMETRIC     
 # material ref thickness (m) description & air gap R
   243    0.0060  clear float : 4mm clear float glass with optics from UK national method
-    0    0.0120  gap  0.428 0.428 0.428
+    0    0.0120  gap  0.580 0.580 0.580
   243    0.0060  clear float : 4mm clear float glass with optics from UK national method
-    0    0.0120  gap  0.508 0.508 0.508
+    0    0.0120  gap  0.580 0.580 0.580
   243    0.0060  clear float : 4mm clear float glass with optics from UK national method
 # layers  description  type  optics name   symmetry tag
     7    PV_constr     TRAN  PVmod_opt     NONSYMMETRIC  
@@ -475,12 +476,13 @@
   150    0.0100  ceiling mineral : Ceiling acoustic tile (mineral fibre based)
   211    0.1000  glasswool : Glasswool (generic)
 # layers  description  type  optics name   symmetry tag
-    8    grnd_floor    OPAQ  OPAQUE        NONSYMMETRIC  
+    9    grnd_floor    OPAQ  OPAQUE        NONSYMMETRIC  
 # material ref thickness (m) description & air gap R
   263    0.2000  earth std : Common_earth
   263    0.2000  earth std : Common_earth
   263    0.2000  earth std : Common_earth
   262    0.1500  gravel based : Gravel based
+  298    0.1500  foamed glass chippings : foamed glass with density of 105 kg/m3 chips g
    32    0.1500  heavy mix concrete : Heavy mix concrete
     0    0.0500  gap  0.170 0.170 0.170
    67    0.0190  chipboard : Chipboard

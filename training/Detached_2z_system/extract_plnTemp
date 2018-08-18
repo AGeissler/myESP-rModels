@@ -1,0 +1,95 @@
+#!/bin/csh
+# Take current model and extract detailed data from plant results.
+# Script expects that the plant results file name is set in the
+# configuration file.
+#
+#DOES NOT WORK WHEN RUNNING MULTIPLE SIMULATIONS FROM A SCIRPT, THEREFORE!
+
+set RESFILE=$1
+
+res -mode text -file $RESFILE<<XXX
+
+e # Plant results
+
+>
+${RESFILE}_plnTemp.dat
+$RESFILE plant results
+^
+e # comma delimiter
+* # toggle time format
+a # temperature
+a # ASHP
+-
+
+h # additional output
+a # ASHP
+-
+a # heat output
+-
+
+h # additional output
+a # ASHP
+-
+d # device on/off status
+-
+
+a # temperature
+e # DHW_tank
+-
+1 # node number
+
+a # temperature
+e # DHW_tank
+-
+2 # node number
+
+a # temperature
+e # DHW_tank
+-
+3 # node number
+
+a # temperature
+q # buff tank
+-
+1
+
+a # temperature
+q # buff tank
+-
+2
+
+a # temperature
+n # Collector_B
+-
+
+b # 1st phase flow
+0
+v # hw_pump
+-
+
+b # 1st phase flow
+r # sol_pump
+-
+
+! # list data
+> # switch back to screen
+-
+-
+-
+XXX
+
+unset RESFILE
+
+###
+# a ASHP                l sol_pump
+# b f_pump              m Collector_A
+# c pump_bpass_cvg      n Collector_B     *
+# d DHW_divert          o Collector_C
+# e DHW_tank            p hw_pump
+# f DHW_draw            q buff_tank
+# g flow_loss           r in_duct
+# h hcoil_3PDV
+# i coil_3PDV_mrg       0 Page:  1: 2
+# j coil_DHW_mrg        < index select
+# k return_loss         ? help
+# - exit this menu

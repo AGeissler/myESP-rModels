@@ -1,0 +1,168 @@
+ESP-r plant file version 2 written on: Sun Aug 12 17:44:03 2018
+# Project title:
+Cellular office heating with ground source heat pump, floor heating     
+# Total no. of specified components and simulation type
+   11    3
+#->   1, Ground Source Heat Pump connecting to WCH system; 1 node model          
+  GSHP             113
+    1        # Component has   1 control variable(s).
+   0.00000000    
+   33     5
+       25.000     #   1 Component total mass (kg)                                       
+       2000.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.6000     #   3 Heat loss modulus (W/K)                                         
+       3.0000     #   4 COP model [1 fixed;2 - Carnot efficiency; 3- quadratic; 3-cubic]
+       12.945     #   5 COP empirical coefficient a0 (-)                                
+     -0.32158     #   6 COP empirical coefficient a1 (-)                                
+      0.26909E-02 #   7 COP empirical coefficient a2 (-)                                
+       0.0000     #   8 COP empirical coefficient a3 (-)                                
+       3.0000     #   9 Compressor Model                                                
+       1.1400     #  10 Compressor empirical coefficient a0 (-)                         
+      0.12700E-02 #  11 Compressor empirical coefficient a1 (-)                         
+       0.0000     #  12 Compressor empirical coefficient a2 (-)                         
+       0.0000     #  13 Compressor empirical coefficient a3 (-)                         
+      0.92800     #  14 Compressor pf (-)                                               
+       75.000     #  15 Pump rating (W)                                                 
+      0.90000     #  16 Pump pf (-)                                                     
+      0.33333     #  17 Flowrate at rated pump power (l/s)                              
+       10.000     #  18 Controller power (W)                                            
+       1.0000     #  19 Controller pf (-)                                               
+       35.000     #  20 Tout max (degC)                                                 
+       34.000     #  21 Tin max (degC)                                                  
+       1.0000     #  22 Temp compensation on/off (0-off 1-on)                           
+       33.000     #  23 Nominal water return temperature (Deg C)                        
+      0.50000     #  24 Nominal water return deadband (Deg C)                           
+       0.0000     #  25 Temp compensation start temperature [Deg C]                     
+       15.000     #  26 Temp compensation end temperature (-)                           
+     -0.20000     #  27 Temp compensation gradient c1 (-)                               
+       30.000     #  28 Heat pump lock out time (min)                                   
+       2.0000     #  29 Ground source model [1 - standard profile 2 - user profile 3 - f
+       3.0000     #  30 Model coef g0 [1 & 2 - profile number 3 - depth in m]           
+       60.000     #  31 Nominal water return temperature for DHW (degC)                 
+       65.000     #  32 Tout max DHW (degC)                                             
+       61.000     #  33 Tin max DHW (degC)                                              
+# Component electrical details.
+  0.700   1      2.000    230.000   1
+#->   2, WCH pipe; 1 node model                                                  
+  pi_VL             13
+    0        # Component has   0 control variable(s).
+    6
+       5.0000     #   1 Component total mass (kg)                                       
+       2250.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.1800     #   3 UA modulus from wall to environment (W/K)                       
+      0.70000E-02 #   4 Hydraulic diameter of pipe (m)                                  
+       6.0000     #   5 Length of pipe section (m)                                      
+      0.90800E-03 #   6 Cross sectional face area (m^2)                                 
+#->   3, Slab-on-grade hydronic floor; 1 node model                              
+  sl_manager_a      63
+    0        # Component has   0 control variable(s).
+    9
+       1.0000     #   1 Number of circuits (integer)                                    
+      0.10000E-01 #   2 Inside diameter of pipe (m)                                     
+      0.12000E-01 #   3 Outside diameter of pipe (m)                                    
+      0.10000     #   4 Pipe spacing (m)                                                
+      0.40000     #   5 Thermal conductivity of pipe material (W/mK)                    
+      0.22000E+07 #   6 Volumetric specific heat of pipe material - rho*Cp (J/m3K)      
+       1.0000     #   7 Served zone number (integer)                                    
+       6.0000     #   8 Zone surface number (integer)                                   
+       6.0000     #   9 Injection node number (integer)                                 
+#->   4, Slab-on-grade hydronic floor; 1 node model                              
+  sl_manager_b      63
+    0        # Component has   0 control variable(s).
+    9
+       1.0000     #   1 Number of circuits (integer)                                    
+      0.10000E-01 #   2 Inside diameter of pipe (m)                                     
+      0.12000E-01 #   3 Outside diameter of pipe (m)                                    
+      0.10000     #   4 Pipe spacing (m)                                                
+      0.40000     #   5 Thermal conductivity of pipe material (W/mK)                    
+      0.22000E+07 #   6 Volumetric specific heat of pipe material - rho*Cp (J/m3K)      
+       2.0000     #   7 Served zone number (integer)                                    
+       6.0000     #   8 Zone surface number (integer)                                   
+       6.0000     #   9 Injection node number (integer)                                 
+#->   5, WCH 3-port valve; 3 node model; flow divert control                     
+  trv_manager_a    112
+    1        # Component has   1 control variable(s).
+   0.00000000    
+    3
+       1.0000     #   1 Component total mass (kg)                                       
+       500.00     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.25000     #   3 UA modulus (W/K)                                                
+#->   6, WCH 3-port valve; 3 node model; flow divert control                     
+  trv_manager_b    112
+    1        # Component has   1 control variable(s).
+   0.00000000    
+    3
+       1.0000     #   1 Component total mass (kg)                                       
+       500.00     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.25000     #   3 UA modulus (W/K)                                                
+#->   7, WCH pipe converging 2-leg junction; 1 node model                        
+  con_manager_b     14
+    0        # Component has   0 control variable(s).
+    3
+      0.50000     #   1 Component total mass (kg)                                       
+       2250.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.20000E-01 #   3 UA modulus from wall to environment (W/K)                       
+#->   8, WCH pipe converging 2-leg junction; 1 node model                        
+  con_manager_a     14
+    0        # Component has   0 control variable(s).
+    3
+      0.50000     #   1 Component total mass (kg)                                       
+       2250.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.20000E-01 #   3 UA modulus from wall to environment (W/K)                       
+#->   9, WCH pipe; 1 node model                                                  
+  pi_RL             13
+    0        # Component has   0 control variable(s).
+    6
+       5.0000     #   1 Component total mass (kg)                                       
+       2250.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.1800     #   3 UA modulus from wall to environment (W/K)                       
+      0.70000E-02 #   4 Hydraulic diameter of pipe (m)                                  
+       6.0000     #   5 Length of pipe section (m)                                      
+      0.90800E-03 #   6 Cross sectional face area (m^2)                                 
+#->  10, WCH automatic flow control valve; 1 node model                          
+  cntFlow_man_a    115
+    0        # Component has   0 control variable(s).
+    4
+       1.0000     #   1 Component total mass (kg)                                       
+       500.00     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.50000     #   3 UA modulus (W/K)                                                
+      0.45000E-01 #   4 Setpoint (l/s)                                                  
+#->  11, WCH automatic flow control valve; 1 node model                          
+  cntFlow_man_b    115
+    0        # Component has   0 control variable(s).
+    4
+       1.0000     #   1 Component total mass (kg)                                       
+       500.00     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.50000     #   3 UA modulus (W/K)                                                
+      0.45000E-01 #   4 Setpoint (l/s)                                                  
+# The following is a list of component connections.
+ 13          # Total number of connections
+# receiving       node  conncn sending          node  diversion  suppl1   suppl2
+# component              type  component                ratio
+  pi_VL             1     3     GSHP              1    1.000                 #  1
+  trv_manager_a     1     3     pi_VL             1    1.000                 #  2
+  cntFlow_man_a     1     3     trv_manager_a     2    1.000                 #  3
+  sl_manager_a      1     3     cntFlow_man_a     1    1.000                 #  4
+  trv_manager_b     1     3     trv_manager_a     3    1.000                 #  5
+  cntFlow_man_b     1     3     trv_manager_b     2    1.000                 #  6
+  sl_manager_b      1     3     cntFlow_man_b     1    1.000                 #  7
+  con_manager_b     1     3     trv_manager_b     3    1.000                 #  8
+  con_manager_b     1     3     sl_manager_b      1    1.000                 #  9
+  con_manager_a     1     3     con_manager_b     1    1.000                 # 10
+  con_manager_a     1     3     sl_manager_a      1    1.000                 # 11
+  pi_RL             1     3     con_manager_a     1    1.000                 # 12
+  GSHP              1     3     pi_RL             1    1.000                 # 13
+# The following is a list of containment temperatures.
+  9          # Total number of containments
+# Component       cont type        suppl1     suppl2    suppl3
+  GSHP                3             3.00000   0.00000   0.00000
+  pi_VL               3             3.00000   0.00000   0.00000
+  pi_RL               3             3.00000   0.00000   0.00000
+  con_manager_b       3             2.00000   0.00000   0.00000
+  con_manager_a       3             1.00000   0.00000   0.00000
+  trv_manager_b       3             2.00000   0.00000   0.00000
+  trv_manager_a       3             1.00000   0.00000   0.00000
+  cntFlow_man_b       3             2.00000   0.00000   0.00000
+  cntFlow_man_a       3             1.00000   0.00000   0.00000
+# No mass flow network defined.
+    0

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <apply_style_sheet>false</apply_style_sheet>
+  <dump_all_data>true</dump_all_data>
+  <enable_xml_wildcards>false</enable_xml_wildcards>
+  <hierarchy>tree</hierarchy>
+  <link_style_sheet>false</link_style_sheet>
+  <output_dictionary>true</output_dictionary>
+  <use_resfilenameroot>true</use_resfilenameroot>
+  <use_zonenames>true</use_zonenames>
+  <use_surfacenames>true</use_surfacenames>
+  <report_startup_period_data>false</report_startup_period_data>
+  <save_to_disk>false</save_to_disk>
+  <time_step_averaging>false</time_step_averaging>
+</configuration>

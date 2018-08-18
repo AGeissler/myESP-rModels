@@ -1,6 +1,6 @@
 *DFS V2.2 # Zone air movement description.
-*conflation 0  # conflation type (not applicable to cfd-only)
-*title A room with a CFD domain with blockages, not coupled                                                                     
+*conflation 4  # conflation type
+*title A room with a CFD domain with blockages, not coupled                    
 # user supplied notes for this domain
 *thermal_geom
 *vrts    1   2   4   5
@@ -61,31 +61,30 @@ Outlet       Velocity -0.010 Temp 20.000 Hum  0.000 Area  0.000 Ang  0.000  0.00
 *contaminants(   2 contaminants, humdity is contaminant number   2 )
 CO_2           0    1.0000
 H2O            0    0.5900
-*volume name,heat source,cas gain index and fraction, CO_2 H2O 
+*volume name,heat source,cas gain index and fraction, CO_2 H2O                                                                                                                                                                                                                                                        
 CO2              0.0   0 0.00  0.0000153737 none        0.00 none                                                                                                                                                                                                                             
-Source016        0.0   0 0.00  0.00 none        1.0 none
 # Blockages.
 *blockages
 Block        Heat       0.000
 *solution_methods
 Turbulence 3 # MIT
-Buoyancy 1 # full calculation
+Buoyancy 1 0.5000 # full calc, density lin relax fac
 # Equations to be solved:
 *solution_equations
-#  Type  Initial value  Relaxation type and factor
-Pressure    0.000 Linear  1.000
-Vel U  0.100E-02 Linear  0.500
-Vel V  0.100E-02 Linear  0.500
-Vel W  0.100E-02 Linear  0.100
-Temp   20.000 Linear  0.500
-Ted  0.500E-02 Linear  0.700    
-Epd  0.500E-02 Linear  0.700    
-CO_2  n/a Linear    1.00    
-H2O  n/a Linear    1.00    
+#  Type  Initial value  Relaxation type and factors
+Pressure    0.000 Linear  1.000  0.050
+Vel U  0.100E-02 Linear  0.500  0.050
+Vel V  0.100E-02 Linear  0.500  0.050
+Vel W  0.100E-02 Linear  0.100  0.050
+Temp   20.000 Linear  0.500  0.250
+Ted  0.500E-02 Linear  0.700     0.500E-01
+Epd  0.500E-02 Linear  0.700     0.500E-01
+CO_2 0.500E-02 Linear  1.00      0.250    
+H2O  0.500E-02 Linear  1.00      0.250    
 Lmage  n/a Linear  n/a # currently 0.9 is always assumed
 # Iteration control.
 *iteration 
-   500  0.1000E-01 No
+  1000  0.1000E-01 No
 *monitor    6   4   5  CFD.mon
 *reint  NO
 *svf  1  # frequency of results writing
