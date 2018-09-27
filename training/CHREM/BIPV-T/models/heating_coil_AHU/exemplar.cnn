@@ -1,5 +1,5 @@
-*connections for 2901A00152
-*Date Mon Mar 15 14:17:16 2010
+*connections for bsmt_main1_main2_Vitocal_ASHP
+*Date Wed Sep 26 13:35:14 2018
      73   # number of connections
    1   1   3   3   2  #    1 floor in main_1 >|< ceiling in bsmt
    1   2   3   2   1  #    2 ceiling in main_1 >|< floor in main_2

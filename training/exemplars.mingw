@@ -22,9 +22,9 @@
 *cfg	C:\esp-r\training\basic\cfg\bld_basic.cfg
 *root	C:\esp-r\training\basic
 *item
-*name	4 identical zones with variant on-off controllers
-*cfg	C:\esp-r\training\on-off_control\cfg\on-off_control.cfg
-*root	C:\esp-r\training\on-off_control
+*name	4 identical zones with variant two-position controllers
+*cfg	C:\esp-r\training\two-position_control\cfg\two-position_control.cfg
+*root	C:\esp-r\training\two-position_control
 *item
 *name	...with window reveal & external shading
 *cfg	C:\esp-r\training\basic\cfg\bld_basic_shd.cfg

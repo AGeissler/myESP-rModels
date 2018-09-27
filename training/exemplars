@@ -22,6 +22,10 @@
 *cfg	/opt/esp-r/training/basic/cfg/bld_basic.cfg
 *root	/opt/esp-r/training/basic
 *item
+*name	4 identical zones with variant two-position controller
+*cfg	/opt/esp-r/training/two-position_control/cfg/two-position_control.cfg
+*root	/opt/esp-r/training/two-position_control
+*item
 *name	... with window reveal & external shading
 *cfg	/opt/esp-r/training/basic/cfg/bld_basic_shd.cfg
 *root	/opt/esp-r/training/basic
