@@ -2,11 +2,11 @@ ESP-r plant file version 2 written on: Sun Aug 12 17:44:03 2018
 # Project title:
 Cellular office heating with ground source heat pump, floor heating     
 # Total no. of specified components and simulation type
-   14    3
+   12    3
 #->   1, Ground Source Heat Pump connecting to WCH system; 2 node model          
   GSHP             114
-    1        # Component has   1 control variable(s).
-   0.00000000    
+    3        # Component has   1 control variable(s).
+   0.00000000  0.0000000  0.00000000   
    34     5
        110.00     #   1 Component total mass (kg)                                       
        2000.0     #   2 Mass weighted average specific heat (J/kgK)                     
@@ -80,22 +80,24 @@ Cellular office heating with ground source heat pump, floor heating
        2.0000     #   7 Served zone number (integer)                                    
        6.0000     #   8 Zone surface number (integer)                                   
        6.0000     #   9 Injection node number (integer)                                 
-#->   5, WCH 3-port valve; 3 node model; flow divert control                     
-  trv_manager_a    112
+#->   5, WCH 3-port valve; 3 node model; flow divert control w/ flow limiter
+  trv_manager_a    115
     1        # Component has   1 control variable(s).
    0.00000000    
-    3
+    4
        1.0000     #   1 Component total mass (kg)                                       
        500.00     #   2 Mass weighted average specific heat (J/kgK)                     
       0.25000     #   3 UA modulus (W/K)                                                
-#->   6, WCH 3-port valve; 3 node model; flow divert control                     
-  trv_manager_b    112
+      0.75000E-01 #   4 Maximum flow setpoint (l/s)
+#->   6, WCH 3-port valve; 3 node model; flow divert control w/ flow limiter
+  trv_manager_b    115
     1        # Component has   1 control variable(s).
    0.00000000    
-    3
+    4
        1.0000     #   1 Component total mass (kg)                                       
        500.00     #   2 Mass weighted average specific heat (J/kgK)                     
       0.25000     #   3 UA modulus (W/K)                                                
+      0.75000E-01 #   4 Maximum flow setpoint (l/s)
 #->   7, WCH pipe converging 2-leg junction; 1 node model                        
   con_manager_b     14
     0        # Component has   0 control variable(s).
@@ -120,23 +122,7 @@ Cellular office heating with ground source heat pump, floor heating
       0.70000E-02 #   4 Hydraulic diameter of pipe (m)                                  
        6.0000     #   5 Length of pipe section (m)                                      
       0.90800E-03 #   6 Cross sectional face area (m^2)                                 
-#->  10, WCH automatic flow control valve; 1 node model                          
-  cntFlow_man_a    115
-    0        # Component has   0 control variable(s).
-    4
-       1.0000     #   1 Component total mass (kg)                                       
-       500.00     #   2 Mass weighted average specific heat (J/kgK)                     
-      0.50000     #   3 UA modulus (W/K)                                                
-      0.45000E-01 #   4 Setpoint (l/s)                                                  
-#->  11, WCH automatic flow control valve; 1 node model                          
-  cntFlow_man_b    115
-    0        # Component has   0 control variable(s).
-    4
-       1.0000     #   1 Component total mass (kg)                                       
-       500.00     #   2 Mass weighted average specific heat (J/kgK)                     
-      0.50000     #   3 UA modulus (W/K)                                                
-      0.45000E-01 #   4 Setpoint (l/s)                                                  
-#->  12, WCH pipe; 1 node model                                                  
+#->  10, WCH pipe; 1 node model                                                  
   theGround         13
     0        # Component has   0 control variable(s).
     6
@@ -146,7 +132,7 @@ Cellular office heating with ground source heat pump, floor heating
       0.50000E-02 #   4 Hydraulic diameter of pipe (m)                                  
        20.000     #   5 Length of pipe section (m)                                      
       0.53100E-03 #   6 Cross sectional face area (m^2)                                 
-#->  13, WCH pipe; 1 node model                                                  
+#->  11, WCH pipe; 1 node model                                                  
   pi_VLGround       13
     0        # Component has   0 control variable(s).
     6
@@ -156,7 +142,7 @@ Cellular office heating with ground source heat pump, floor heating
       0.70000E-02 #   4 Hydraulic diameter of pipe (m)                                  
        6.0000     #   5 Length of pipe section (m)                                      
       0.90800E-03 #   6 Cross sectional face area (m^2)                                 
-#->  14, WCH pipe; 1 node model                                                  
+#->  12, WCH pipe; 1 node model                                                  
   pi_RLGround       13
     0        # Component has   0 control variable(s).
     6
@@ -167,28 +153,26 @@ Cellular office heating with ground source heat pump, floor heating
        6.0000     #   5 Length of pipe section (m)                                      
       0.90800E-03 #   6 Cross sectional face area (m^2)                                 
 # The following is a list of component connections.
- 17          # Total number of connections
+ 15          # Total number of connections
 # receiving       node  conncn sending          node  diversion  suppl1   suppl2
 # component              type  component                ratio
   pi_VL             1     3     GSHP              1    1.000                 #  1
   trv_manager_a     1     3     pi_VL             1    1.000                 #  2
-  cntFlow_man_a     1     3     trv_manager_a     2    1.000                 #  3
-  sl_manager_a      1     3     cntFlow_man_a     1    1.000                 #  4
-  trv_manager_b     1     3     trv_manager_a     3    1.000                 #  5
-  cntFlow_man_b     1     3     trv_manager_b     2    1.000                 #  6
-  sl_manager_b      1     3     cntFlow_man_b     1    1.000                 #  7
-  con_manager_b     1     3     trv_manager_b     3    1.000                 #  8
-  con_manager_b     1     3     sl_manager_b      1    1.000                 #  9
-  con_manager_a     1     3     con_manager_b     1    1.000                 # 10
-  con_manager_a     1     3     sl_manager_a      1    1.000                 # 11
-  pi_RL             1     3     con_manager_a     1    1.000                 # 12
-  GSHP              1     3     pi_RL             1    1.000                 # 13
-  pi_VLGround       1     3     theGround         1    1.000                 # 14
-  GSHP              2     3     pi_VLGround       1    1.000                 # 15
-  pi_RLGround       1     3     GSHP              2    1.000                 # 16
-  theGround         1     3     pi_RLGround       1    1.000                 # 17
+  sl_manager_a      1     3     trv_manager_a     2    1.000                 #  3
+  trv_manager_b     1     3     trv_manager_a     3    1.000                 #  4
+  sl_manager_b      1     3     trv_manager_b     2    1.000                 #  5
+  con_manager_b     1     3     trv_manager_b     3    1.000                 #  6
+  con_manager_b     1     3     sl_manager_b      1    1.000                 #  7
+  con_manager_a     1     3     con_manager_b     1    1.000                 #  8
+  con_manager_a     1     3     sl_manager_a      1    1.000                 #  9
+  pi_RL             1     3     con_manager_a     1    1.000                 # 10
+  GSHP              1     3     pi_RL             1    1.000                 # 11
+  pi_VLGround       1     3     theGround         1    1.000                 # 12
+  GSHP              2     3     pi_VLGround       1    1.000                 # 13
+  pi_RLGround       1     3     GSHP              2    1.000                 # 14
+  theGround         1     3     pi_RLGround       1    1.000                 # 15
 # The following is a list of containment temperatures.
- 10          # Total number of containments
+  8          # Total number of containments
 # Component       cont type        suppl1     suppl2    suppl3
   GSHP                3             3.00000   0.00000   0.00000
   pi_VL               3             3.00000   0.00000   0.00000
@@ -197,8 +181,6 @@ Cellular office heating with ground source heat pump, floor heating
   con_manager_a       3             1.00000   0.00000   0.00000
   trv_manager_b       3             2.00000   0.00000   0.00000
   trv_manager_a       3             1.00000   0.00000   0.00000
-  cntFlow_man_b       3             2.00000   0.00000   0.00000
-  cntFlow_man_a       3             1.00000   0.00000   0.00000
   theGround           2             8.00000   0.00000   0.00000
 # No mass flow network defined.
     0

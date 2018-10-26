@@ -9,8 +9,8 @@ res_temp_hours_below.sh res_temp_hours_above.sh"
 # Blank-separated list of model variants to be evaluated. Call this script from the model
 # main folder (e.g. /Leadenhall/). Each variant is completely described in a subfolder
 # "var" (e.g. "Base") and the configuration file has the same name (e.g. "base.cfg").
-VARLIST="cellular_GSHP cellular_GSHP2n"
-#VARLIST="cellular_GSHP2n"
+#VARLIST="cellular_GSHP cellular_GSHP2n"
+VARLIST="cellular_GSHP"
 
 # Construction list
 #TMCLIST="mit ohne"
@@ -68,6 +68,7 @@ do
           # ... avoid error messages for non-existent files ...
           [ -f ./${VAR}.scratch ] && rm ./${VAR}.scratch
           [ -f ./${theFile}.res ] && rm ./${theFile}.res
+          [ -f ./${theFile}.plr ] && rm ./${theFile}.plr
           [ -f ./${theFile}.contents ] && rm ./${theFile}.contents
 
           . ./QA_report.sh $VAR ${theFile}.contents
