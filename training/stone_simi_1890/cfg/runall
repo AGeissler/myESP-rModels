@@ -28,7 +28,7 @@ date
 &>/dev/null time bps -mode text -file stone_simi_1890.cfg -p annual4_s2 silent
 date
 echo "starting extact..."
-./extract stone_simi_1890_annual_s2.res
+./extract stone_simi_1890_annual4_s2.res
 date
 echo "finished annual"
 echo $1
@@ -57,18 +57,18 @@ echo "removing zone results files"
 rm stone_simi_1890_spr_s2.res
 rm stone_simi_1890_jan-feb_s2.res
 rm stone_simi_1890_summer_s2.res
-rm stone_simi_1890_annual_s2.res
+rm stone_simi_1890_annual4_s2.res
 rm stone_simi_1890_spr_s4.res
 rm stone_simi_1890_jan-feb_s4.res
 rm stone_simi_1890_summer_s4.res
-# echo "annual save 4 simulation with stone_simi_1890.cfg"
-# date
-# &>/dev/null time bps -mode text -file stone_simi_1890.cfg -p annual4_s4 silent
-# date
-# echo "starting extact..."
-# ./extract stone_simi_1890_annual_s4.res
-# date
-# rm stone_simi_1890_annual_s4.res
+echo "annual save 4 simulation with stone_simi_1890.cfg"
+date
+&>/dev/null time bps -mode text -file stone_simi_1890.cfg -p annual4_s4 silent
+date
+echo "starting extact..."
+./extract stone_simi_1890_annual4_s4.res
+date
+rm stone_simi_1890_annual4_s4.res
 echo "finished"
 
 
