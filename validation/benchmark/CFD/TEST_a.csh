@@ -101,7 +101,7 @@ endif
 # Fast not converging tests
 #
 if ( $A == 1 || $A == 3 ) then
-  foreach i (displ.dfd displ_si.dfd tm1_so.dfd tm2_so.dfd tm1a.dfd tm1b.dfd)
+  foreach i (displ.dfd displ_si.dfd tm1_so.dfd tm2_so.dfd)
     @ test ++
     echo "Test "$test": "$i" with the default solver."
     cd Models; ./dfs_not_conv.csh $DFS $i; echo $i; sleep 15; cd ..
@@ -121,7 +121,7 @@ endif
 # Slow converging tests
 #
 if ( $A == 2 || $A == 3 ) then
-  foreach i (bi-cg.dfd)
+  foreach i (bi-cg.dfd tm1b.dfd tm1a.dfd)
     @ test ++
     echo "Test "$test": "$i" with the default solver."
     cd Models; ./dfs_basic.csh $DFS $i; echo $i; sleep 15; cd ..

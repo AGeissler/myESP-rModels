@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,kitliv # tag version, format, zone name
-*date Fri Jul 17 11:56:36 2009  # latest file modification 
+*date Fri Mar 23 14:18:42 2018  # latest file modification 
 kitliv describes a...
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,8.48800,5.93200,0.00000  #   1
@@ -24,18 +24,28 @@ kitliv describes a...
 *vertex,9.28800,7.31700,2.10000  #  20
 *vertex,7.12300,11.56900,0.00000  #  21
 *vertex,7.12300,11.56900,2.40000  #  22
+*vertex,4.57566,11.55480,0.73524  #  23
+*vertex,3.76234,10.14620,0.73524  #  24
+*vertex,3.76234,10.14620,1.66476  #  25
+*vertex,4.57566,11.55480,1.66476  #  26
+*vertex,10.15496,9.81895,0.00000  #  27
+*vertex,9.46209,10.21887,0.00000  #  28
+*vertex,9.46209,10.21887,2.10000  #  29
+*vertex,10.15496,9.81895,2.10000  #  30
 # 
 # tag, number of vertices followed by list of associated vert
-*edges,10,1,2,6,5,1,17,20,19,18,17  #  1
-*edges,4,2,21,22,6  #  2
-*edges,4,3,4,8,7  #  3
-*edges,16,4,1,14,13,16,15,14,1,5,8,4,9,12,11,10,9  #  4
-*edges,5,5,6,22,7,8  #  5
-*edges,5,1,4,3,21,2  #  6
-*edges,4,9,10,11,12  #  7
-*edges,4,17,18,19,20  #  8
-*edges,4,13,14,15,16  #  9
-*edges,4,21,3,7,22  # 10
+*edges,10,1,2,6,5,1,17,20,19,18,17  #   1
+*edges,8,2,27,30,29,28,21,22,6  #   2
+*edges,10,3,23,26,25,24,23,3,4,8,7  #   3
+*edges,16,4,1,14,13,16,15,14,1,5,8,4,9,12,11,10,9  #   4
+*edges,5,5,6,22,7,8  #   5
+*edges,7,1,4,3,21,28,27,2  #   6
+*edges,4,9,10,11,12  #   7
+*edges,4,17,18,19,20  #   8
+*edges,4,13,14,15,16  #   9
+*edges,4,21,3,7,22  #  10
+*edges,4,23,24,25,26  #  11
+*edges,4,27,28,29,30  #  12
 # 
 # surf attributes:
 #  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
@@ -48,10 +58,12 @@ kitliv describes a...
 *surf,s_west,VERT,-,-,-,int_west,OPAQUE,ANOTHER,02,02  #   4 ||< s_liv:west_space
 *surf,ceil,CEIL,-,-,-,int_roof,OPAQUE,ANOTHER,10,02  #   5 ||< liv:roof
 *surf,floor,FLOR,-,-,-,house_floor,OPAQUE,GROUND,01,00  #   6 ||< ground profile  1
-*surf,win1,VERT,-,-,-,doub_glaz,DC_8074_04nb,EXTERIOR,0,0  #   7 ||< external
-*surf,win3,VERT,-,-,-,doub_glaz,DC_8074_04nb,ANOTHER,07,08  #   8 ||< int_win:buf_1
-*surf,win2,VERT,-,-,-,doub_glaz,DC_8074_04nb,EXTERIOR,0,0  #   9 ||< external
+*surf,win1,VERT,s_west,C-WINDOW,CRACK,doub_glaz,DC_8074_04nb,EXTERIOR,00,000  #   7 ||< external
+*surf,win3,VERT,s_buf,WINDOW,CRACK,sing_glaz,SCF8783_06nb,ANOTHER,07,08  #   8 ||< int_win:buf_1
+*surf,win2,VERT,s_west,C-WINDOW,CRACK,doub_glaz,DC_8074_04nb,EXTERIOR,00,000  #   9 ||< external
 *surf,s_bath,VERT,-,-,-,int_buf,OPAQUE,ANOTHER,04,04  #  10 ||< s_liv:bath
+*surf,test,VERT,s_adjhouse,C-WINDOW,CLOSED,doub_glaz,DC_8074_04nb,SIMILAR,00,00  #  11 ||< identical environment
+*surf,liv_door,VERT,s_hall,DOOR,UNDERCUT,door,OPAQUE,ANOTHER,03,012  #  12 ||< liv_door:hall
 # 
 *insol,1,6,0,0  # default insolation distribution
 # 
@@ -66,11 +78,11 @@ kitliv describes a...
 # 
 # block entities:
 #  *obs = obstructions
-*block_start,20 20 # geometric blocks
-*obs,3.528,8.240,0.600,0.400,0.100,1.450,60.000,nl,NONE  # block  1
-*obs,4.264,7.815,0.600,0.400,0.100,1.450,60.000,nr,NONE  # block  2
-*obs,3.641,8.637,2.200,0.400,1.000,0.100,240.000,nt,NONE  # block  3
-*obs,6.819,6.340,0.600,0.400,0.100,1.450,60.000,sl,NONE  # block  4
-*obs,7.555,5.915,0.600,0.400,0.100,1.450,60.000,sr,NONE  # block  5
-*obs,7.019,6.687,2.200,0.400,1.000,0.100,240.000,st,NONE  # block  6
+*block_start, 20 20 # geometric blocks
+*obs,3.5280,8.2400,0.6000,0.4000,0.1000,1.4500,60.00,1.00,nl NONE  # block   1
+*obs,4.2640,7.8150,0.6000,0.4000,0.1000,1.4500,60.00,1.00,nr NONE  # block   2
+*obs,3.6410,8.6370,2.2000,0.4000,1.0000,0.1000,240.00,1.00,nt NONE  # block   3
+*obs,6.8190,6.3400,0.6000,0.4000,0.1000,1.4500,60.00,1.00,sl NONE  # block   4
+*obs,7.5550,5.9150,0.6000,0.4000,0.1000,1.4500,60.00,1.00,sr NONE  # block   5
+*obs,7.0190,6.6870,2.2000,0.4000,1.0000,0.1000,240.00,1.00,st NONE  # block   6
 *end_block

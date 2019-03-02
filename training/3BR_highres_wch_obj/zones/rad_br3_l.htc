@@ -1,0 +1,12 @@
+*HC_CTL for zone rad_br3_l
+*Date,Thu Jan 17 14:35:48 2019
+  1 # number control intervals
+ 24 # number of surfaces
+# (base_rad_l top_rad_l edg_2rad_l edg_3rad_l edg_4rad_l edg_5rad_l edg_6rad_l edg_7rad_l edg_8rad_l edg_9rad_l  )
+# (edg_10rad_l edg_11rad_l edg_12rad_l edg_13rad_l edg_14rad_l edg_15rad_l edg_16rad_l edg_17rad_l edg_18rad_l  )
+# (edg_19rad_l edg_20rad_l edg_21rad_l edg_22rad_l edg_23rad_l)
+  0.00    24.00 # start and end time of interval
+  1 # fixed coefficients calculation control type
+*Doc,Water filled convection coefficients
+ 999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00
+ -1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000

@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,bath # tag version, format, zone name
-*date Tue Oct  3 15:05:01 2017  # latest file modification 
+*date Wed Jan 23 10:48:24 2019  # latest file modification 
 bath describes bath at top of stairs
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,1.30000,6.00000,2.80000  #   1
@@ -128,47 +128,47 @@ bath describes bath at top of stairs
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,ptn_br2,VERT,-,-,-,int_part,OPAQUE,ANOTHER,08,10  #   1 ||< ptn_bath:bedroom2
-*surf,bk_facade_a,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   2 ||< external
-*surf,bk_sill,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   3 ||< external
-*surf,bk_facade_b,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   4 ||< external
-*surf,facade_lft,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   5 ||< external
-*surf,ceil_bath,CEIL,-,-,-,ceiling,OPAQUE,ANOTHER,10,10  #   6 ||< ceil_bath:attic
-*surf,floor_bath,FLOR,-,-,-,tg_flr2ceil,OPAQUE,ANOTHER,04,06  #   7 ||< ceil_kit:kitchen
-*surf,ptn_bath_a,VERT,-,-,-,int_part,OPAQUE,ANOTHER,05,05  #   8 ||< ptn_bath_a:upper_hall
-*surf,ptn_bath_b,VERT,-,-,-,int_part,OPAQUE,ANOTHER,05,06  #   9 ||< ptn_bath_b:upper_hall
-*surf,door_bath,VERT,-,-,-,door,OPAQUE,ANOTHER,05,04  #  10 ||< door_bath:upper_hall
-*surf,head,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #  11 ||< external
-*surf,frame_glz,VERT,-,-,-,sash_fr74mm,OPAQUE,EXTERIOR,00,000  #  12 ||< external
+*surf,ptn_br2,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,08,010  #   1 ||< ptn_bath:bedroom2
+*surf,bk_facade_a,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   2 ||< external
+*surf,bk_sill,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   3 ||< external
+*surf,bk_facade_b,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   4 ||< external
+*surf,facade_lft,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   5 ||< external
+*surf,ceil_bath,CEIL,-,PARTN,-,ceiling,OPAQUE,ANOTHER,10,010  #   6 ||< ceil_bath:attic
+*surf,floor_bath,FLOR,-,PARTN,-,tg_flr2ceil,OPAQUE,ANOTHER,04,06  #   7 ||< ceil_kit:kitchen
+*surf,ptn_bath_a,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,05,005  #   8 ||< ptn_bath_a:upper_hall
+*surf,ptn_bath_b,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,05,006  #   9 ||< ptn_bath_b:upper_hall
+*surf,door_bath,VERT,-,DOOR,UNDERCUT,door,OPAQUE,ANOTHER,05,004  #  10 ||< door_bath:upper_hall
+*surf,head,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #  11 ||< external
+*surf,frame_glz,VERT,-,F-FRAME,VENT,sash_fr74mm,OPAQUE,EXTERIOR,00,000  #  12 ||< external
 *surf,bk_glaze,VERT,frame_glz,C-WINDOW,CLOSED,dbl_glz,DCF7671_06nb,EXTERIOR,00,000  #  13 ||< external
-*surf,bath,CEIL,-,PARTN,-,corian_count,OPAQUE,ANOTHER,09,15  #  14 ||< bath_:bath
-*surf,bath_,FLOR,-,PARTN,-,corian_count,OPAQUE,ANOTHER,09,14  #  15 ||< bath:bath
-*surf,sink,CEIL,-,PARTN,-,corian_count,OPAQUE,ANOTHER,09,17  #  16 ||< sink_:bath
-*surf,sink_,FLOR,-,PARTN,-,corian_count,OPAQUE,ANOTHER,09,16  #  17 ||< sink:bath
-*surf,base_rad,CEIL,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,01  #  18 ||< base_rad:rad_bath
-*surf,top_rad,FLOR,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,02  #  19 ||< top_rad:rad_bath
-*surf,edg_2rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,03  #  20 ||< edg_2rad:rad_bath
-*surf,edg_3rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,04  #  21 ||< edg_3rad:rad_bath
-*surf,edg_4rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,05  #  22 ||< edg_4rad:rad_bath
-*surf,edg_5rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,06  #  23 ||< edg_5rad:rad_bath
-*surf,edg_6rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,07  #  24 ||< edg_6rad:rad_bath
-*surf,edg_7rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,08  #  25 ||< edg_7rad:rad_bath
-*surf,edg_8rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,09  #  26 ||< edg_8rad:rad_bath
-*surf,edg_9rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,10  #  27 ||< edg_9rad:rad_bath
-*surf,edg_10rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,11  #  28 ||< edg_10rad:rad_bath
-*surf,edg_11rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,12  #  29 ||< edg_11rad:rad_bath
-*surf,edg_12rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,13  #  30 ||< edg_12rad:rad_bath
-*surf,edg_13rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,14  #  31 ||< edg_13rad:rad_bath
-*surf,edg_14rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,15  #  32 ||< edg_14rad:rad_bath
-*surf,edg_15rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,16  #  33 ||< edg_15rad:rad_bath
-*surf,edg_16rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,17  #  34 ||< edg_16rad:rad_bath
-*surf,edg_17rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,18  #  35 ||< edg_17rad:rad_bath
-*surf,edg_18rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,19  #  36 ||< edg_18rad:rad_bath
-*surf,edg_19rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,20  #  37 ||< edg_19rad:rad_bath
-*surf,edg_20rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,21  #  38 ||< edg_20rad:rad_bath
-*surf,edg_21rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,22  #  39 ||< edg_21rad:rad_bath
-*surf,edg_22rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,23  #  40 ||< edg_22rad:rad_bath
-*surf,edg_23rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,24  #  41 ||< edg_23rad:rad_bath
+*surf,bath,CEIL,-,FURNI,-,corian_count,OPAQUE,ANOTHER,09,015  #  14 ||< bath_:bath
+*surf,bath_,FLOR,-,FURNI,-,corian_count,OPAQUE,ANOTHER,09,014  #  15 ||< bath:bath
+*surf,sink,CEIL,-,FURNI,-,corian_count,OPAQUE,ANOTHER,09,017  #  16 ||< sink_:bath
+*surf,sink_,FLOR,-,FURNI,-,corian_count,OPAQUE,ANOTHER,09,016  #  17 ||< sink:bath
+*surf,base_rad,CEIL,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,001  #  18 ||< base_rad:rad_bath
+*surf,top_rad,FLOR,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,002  #  19 ||< top_rad:rad_bath
+*surf,edg_2rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,003  #  20 ||< edg_2rad:rad_bath
+*surf,edg_3rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,004  #  21 ||< edg_3rad:rad_bath
+*surf,edg_4rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,005  #  22 ||< edg_4rad:rad_bath
+*surf,edg_5rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,006  #  23 ||< edg_5rad:rad_bath
+*surf,edg_6rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,007  #  24 ||< edg_6rad:rad_bath
+*surf,edg_7rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,008  #  25 ||< edg_7rad:rad_bath
+*surf,edg_8rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,009  #  26 ||< edg_8rad:rad_bath
+*surf,edg_9rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,010  #  27 ||< edg_9rad:rad_bath
+*surf,edg_10rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,011  #  28 ||< edg_10rad:rad_bath
+*surf,edg_11rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,012  #  29 ||< edg_11rad:rad_bath
+*surf,edg_12rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,013  #  30 ||< edg_12rad:rad_bath
+*surf,edg_13rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,014  #  31 ||< edg_13rad:rad_bath
+*surf,edg_14rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,015  #  32 ||< edg_14rad:rad_bath
+*surf,edg_15rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,016  #  33 ||< edg_15rad:rad_bath
+*surf,edg_16rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,017  #  34 ||< edg_16rad:rad_bath
+*surf,edg_17rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,018  #  35 ||< edg_17rad:rad_bath
+*surf,edg_18rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,019  #  36 ||< edg_18rad:rad_bath
+*surf,edg_19rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,020  #  37 ||< edg_19rad:rad_bath
+*surf,edg_20rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,021  #  38 ||< edg_20rad:rad_bath
+*surf,edg_21rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,022  #  39 ||< edg_21rad:rad_bath
+*surf,edg_22rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,023  #  40 ||< edg_22rad:rad_bath
+*surf,edg_23rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,16,024  #  41 ||< edg_23rad:rad_bath
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 
@@ -178,11 +178,12 @@ bath describes bath at top of stairs
 *insol_calc,all_applicable   1 # insolation sources
  13
 # 
-*base_list,2,10,7,     8.36 0  # zone base list
+*base_list,2,10,7,     6.94 0  # zone base list
 # 
 # block entities:
 #  *obs = obstructions
 *block_start, 20 20 # geometric blocks
 *obs,1.3400,6.0400,2.8400,0.6500,1.6500,0.5000,0.00,1.00,bath_b door  # block   1
 *obs,2.6000,8.1500,2.8000,0.8000,0.3000,0.8000,0.00,1.00,cabinet door  # block   2
+*mrt,2.3500,7.2500,4.5000,0.2000,0.2000,0.2000,0.00,sen_01  # mrt   1
 *end_block

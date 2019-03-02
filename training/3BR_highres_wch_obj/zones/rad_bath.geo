@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,rad_bath # tag version, format, zone name
-*date Tue Oct  3 14:35:16 2017  # latest file modification 
+*date Thu Jan 17 15:33:44 2019  # latest file modification 
 radiator describes 700mm x 600mm x 15mm with fins zone
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,1.80000,8.31500,3.00000  #   1
@@ -78,30 +78,30 @@ radiator describes 700mm x 600mm x 15mm with fins zone
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,base_rad,FLOR,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,18  #   1 ||< base_rad:bath
-*surf,top_rad,CEIL,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,19  #   2 ||< top_rad:bath
-*surf,edg_2rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,20  #   3 ||< edg_2rad:bath
-*surf,edg_3rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,21  #   4 ||< edg_3rad:bath
-*surf,edg_4rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,22  #   5 ||< edg_4rad:bath
-*surf,edg_5rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,23  #   6 ||< edg_5rad:bath
-*surf,edg_6rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,24  #   7 ||< edg_6rad:bath
-*surf,edg_7rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,25  #   8 ||< edg_7rad:bath
-*surf,edg_8rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,26  #   9 ||< edg_8rad:bath
-*surf,edg_9rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,27  #  10 ||< edg_9rad:bath
-*surf,edg_10rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,28  #  11 ||< edg_10rad:bath
-*surf,edg_11rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,29  #  12 ||< edg_11rad:bath
-*surf,edg_12rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,30  #  13 ||< edg_12rad:bath
-*surf,edg_13rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,31  #  14 ||< edg_13rad:bath
-*surf,edg_14rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,32  #  15 ||< edg_14rad:bath
-*surf,edg_15rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,33  #  16 ||< edg_15rad:bath
-*surf,edg_16rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,34  #  17 ||< edg_16rad:bath
-*surf,edg_17rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,35  #  18 ||< edg_17rad:bath
-*surf,edg_18rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,36  #  19 ||< edg_18rad:bath
-*surf,edg_19rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,37  #  20 ||< edg_19rad:bath
-*surf,edg_20rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,38  #  21 ||< edg_20rad:bath
-*surf,edg_21rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,39  #  22 ||< edg_21rad:bath
-*surf,edg_22rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,40  #  23 ||< edg_22rad:bath
-*surf,edg_23rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,41  #  24 ||< edg_23rad:bath
+*surf,base_rad,FLOR,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,018  #   1 ||< base_rad:bath
+*surf,top_rad,CEIL,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,019  #   2 ||< top_rad:bath
+*surf,edg_2rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,020  #   3 ||< edg_2rad:bath
+*surf,edg_3rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,021  #   4 ||< edg_3rad:bath
+*surf,edg_4rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,022  #   5 ||< edg_4rad:bath
+*surf,edg_5rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,023  #   6 ||< edg_5rad:bath
+*surf,edg_6rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,024  #   7 ||< edg_6rad:bath
+*surf,edg_7rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,025  #   8 ||< edg_7rad:bath
+*surf,edg_8rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,026  #   9 ||< edg_8rad:bath
+*surf,edg_9rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,027  #  10 ||< edg_9rad:bath
+*surf,edg_10rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,028  #  11 ||< edg_10rad:bath
+*surf,edg_11rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,029  #  12 ||< edg_11rad:bath
+*surf,edg_12rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,030  #  13 ||< edg_12rad:bath
+*surf,edg_13rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,031  #  14 ||< edg_13rad:bath
+*surf,edg_14rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,032  #  15 ||< edg_14rad:bath
+*surf,edg_15rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,033  #  16 ||< edg_15rad:bath
+*surf,edg_16rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,034  #  17 ||< edg_16rad:bath
+*surf,edg_17rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,035  #  18 ||< edg_17rad:bath
+*surf,edg_18rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,036  #  19 ||< edg_18rad:bath
+*surf,edg_19rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,037  #  20 ||< edg_19rad:bath
+*surf,edg_20rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,038  #  21 ||< edg_20rad:bath
+*surf,edg_21rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,039  #  22 ||< edg_21rad:bath
+*surf,edg_22rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,040  #  23 ||< edg_22rad:bath
+*surf,edg_23rad,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,09,041  #  24 ||< edg_23rad:bath
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

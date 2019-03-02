@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,bath # tag version, format, zone name
-*date Thu Aug 23 18:09:28 2007  # latest file modification 
+*date Fri Mar 23 14:16:00 2018  # latest file modification 
 bath describes a...
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,7.12200,11.57000,0.00000  #   1
@@ -10,17 +10,22 @@ bath describes a...
 *vertex,7.97200,13.04200,2.40000  #   6
 *vertex,6.06600,14.14200,2.40000  #   7
 *vertex,5.21700,12.67000,2.40000  #   8
+*vertex,7.22201,11.74320,0.00000  #   9
+*vertex,7.57206,12.34939,0.00000  #  10
+*vertex,7.57206,12.34939,2.10000  #  11
+*vertex,7.22201,11.74320,2.10000  #  12
 # 
 # tag, number of vertices followed by list of associated vert
-*edges,4,1,2,6,5  #  1
-*edges,4,2,3,7,6  #  2
-*edges,4,3,4,8,7  #  3
-*edges,4,4,1,5,8  #  4
-*edges,4,5,6,7,8  #  5
-*edges,4,1,4,3,2  #  6
+*edges,8,1,9,12,11,10,2,6,5  #   1
+*edges,4,2,3,7,6  #   2
+*edges,4,3,4,8,7  #   3
+*edges,4,4,1,5,8  #   4
+*edges,4,5,6,7,8  #   5
+*edges,6,1,4,3,2,10,9  #   6
+*edges,4,9,10,11,12  #   7
 # 
 # surf attributes:
-#  surf name, surf position VERT/CIIL/FLOR/SLOP/UNKN
+#  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
@@ -30,6 +35,7 @@ bath describes a...
 *surf,s_liv,VERT,-,-,-,int_buf,OPAQUE,ANOTHER,01,10  #   4 ||< s_bath:kitliv
 *surf,ceil,CEIL,-,-,-,int_roof,OPAQUE,ANOTHER,10,04  #   5 ||< bath:roof
 *surf,floor,FLOR,-,-,-,house_floor,OPAQUE,GROUND,01,00  #   6 ||< ground profile  1
+*surf,door_bath,VERT,s_hall,DOOR,UNDERCUT,door,OPAQUE,ANOTHER,03,009  #   7 ||< door_bath:hall
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

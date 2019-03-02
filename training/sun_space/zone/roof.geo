@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,roof # tag version, format, zone name
-*date Tue Dec 13 17:03:37 2011  # latest file modification 
+*date Fri Mar 23 14:09:02 2018  # latest file modification 
 roof describes a...
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,8.28600,5.58600,2.40000  #   1
@@ -21,32 +21,32 @@ roof describes a...
 *vertex,9.15423,7.08989,3.39222  #  17
 # 
 # tag, number of vertices followed by list of associated vert
-*edges,6,3,12,11,14,4,5  #  1
-*edges,5,13,14,11,7,16  #  2
-*edges,5,16,7,8,9,6  #  3
-*edges,4,7,11,12,8  #  4
-*edges,4,6,9,10,2  #  5
-*edges,5,9,8,12,3,10  #  6
-*edges,4,1,4,14,13  #  7
-*edges,7,6,2,15,17,1,13,16  #  8
-*edges,5,4,1,17,15,5  #  9
-*edges,5,2,10,3,5,15  # 10
+*edges,6,3,12,11,14,4,5  #   1
+*edges,5,13,14,11,7,16  #   2
+*edges,5,16,7,8,9,6  #   3
+*edges,4,7,11,12,8  #   4
+*edges,4,6,9,10,2  #   5
+*edges,5,9,8,12,3,10  #   6
+*edges,4,1,4,14,13  #   7
+*edges,7,6,2,15,17,1,13,16  #   8
+*edges,5,4,1,17,15,5  #   9
+*edges,5,2,10,3,5,15  #  10
 # 
 # surf attributes:
 #  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,roof_n,VERT,-,-,-,ext_west,OPAQUE,EXTERIOR,0,0  #   1 ||< external
+*surf,roof_n,VERT,-,GRILL,CRACK,ext_west,OPAQUE,EXTERIOR,00,000  #   1 ||< external
 *surf,liv,FLOR,-,-,-,int_roofrev,OPAQUE,ANOTHER,01,05  #   2 ||< ceil:kitliv
 *surf,hall,FLOR,-,-,-,int_roofrev,OPAQUE,ANOTHER,03,05  #   3 ||< ceil:hall
 *surf,bath,FLOR,-,-,-,int_roofrev,OPAQUE,ANOTHER,04,05  #   4 ||< ceil:bath
 *surf,bed1,FLOR,-,-,-,int_roofrev,OPAQUE,ANOTHER,05,05  #   5 ||< ceil:bed1
 *surf,bed2,FLOR,-,-,-,int_roofrev,OPAQUE,ANOTHER,06,05  #   6 ||< ceil:bed2
-*surf,west_sp,FLOR,-,-,-,int_roofrev,OPAQUE,ANOTHER,02,05  #   7 ||< ceil:west_space
-*surf,roof_buf,VERT,-,-,-,int_buf,OPAQUE,ANOTHER,09,08  #   8 ||< roof_buf:buf_roof
-*surf,roof_w,SLOP,-,-,-,ni_roof,OPAQUE,EXTERIOR,0,0  #   9 ||< external
-*surf,roof_e,SLOP,-,-,-,ni_roof,OPAQUE,EXTERIOR,0,0  #  10 ||< external
+*surf,west_sp,FLOR,-,GRILL,CRACK,int_roofrev,OPAQUE,ANOTHER,02,05  #   7 ||< ceil:west_space
+*surf,roof_buf,VERT,-,GRILL,CRACK,int_buf,OPAQUE,ANOTHER,09,08  #   8 ||< roof_buf:buf_roof
+*surf,roof_w,SLOP,-,-,-,ni_roof,OPAQUE,EXTERIOR,00,000  #   9 ||< external
+*surf,roof_e,SLOP,-,-,-,ni_roof,OPAQUE,EXTERIOR,00,000  #  10 ||< external
 # 
 *insol,2,6,1,0  # default insolation distribution
 # 

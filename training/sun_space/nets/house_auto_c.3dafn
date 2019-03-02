@@ -1,0 +1,146 @@
+*Flow_network 1.0
+*Date,Wed Feb  6 14:30:06 2019
+*Doc,Flows within house on a windy site
+*Domain,Flow,2  # domain for this network
+*windpressure,0.000  # wind speed reduction
+# tag name fluid type assoc zone & surface
+# position & data
+*node,kitliv,1,0,kitliv,-   # internal unknown pressure
+6.8535,9.3005,1.2000,20.0000,1.0000,62.4868  # position temp data
+*node,west_space,1,0,west_space,-   # internal unknown pressure
+5.7010,7.3090,1.2000,20.0000,1.0000,4.9275  # position temp data
+*node,hall,1,0,hall,-   # internal unknown pressure
+9.2795,11.3055,1.2000,20.0000,1.0000,16.3149  # position temp data
+*node,bath,1,0,bath,-   # internal unknown pressure
+6.5945,12.8560,1.2000,20.0000,1.0000,8.9746  # position temp data
+*node,bed1,1,0,bed1,-   # internal unknown pressure
+10.8685,13.1585,1.2000,20.0000,1.0000,23.0689  # position temp data
+*node,bed2,1,0,bed2,-   # internal unknown pressure
+8.1840,14.7085,1.2000,20.0000,1.0000,23.0617  # position temp data
+*node,buf_1,1,0,buf_1,-   # internal unknown pressure
+10.6920,6.8525,1.2000,20.0000,1.0000,32.0144  # position temp data
+*node,buf_2,1,0,buf_2,-   # internal unknown pressure
+13.0420,10.9235,1.2000,20.0000,1.0000,33.4134  # position temp data
+*node,buf_roof,1,0,buf_roof,-   # internal unknown pressure
+11.8920,8.9310,3.8000,20.0000,1.0000,38.1666  # position temp data
+*node,roof,1,0,roof,-   # internal unknown pressure
+7.9525,11.2065,3.8000,20.0000,1.0000,81.6121  # position temp data
+*node,BW-Cr01:007,1,3,kitliv,win1   # boundary wind pressure
+3.6859,7.6651,1.3500,0.0000,1.0000,210.0041  # position temp data
+*node,BW-Cr01:009,1,3,kitliv,win2   # boundary wind pressure
+6.9769,5.7651,1.3500,0.0000,1.0000,210.0041  # position temp data
+*node,BW-Cr02:011,1,3,west_space,jl   # boundary wind pressure
+7.6529,6.0549,1.3500,0.0000,1.0000,127.0404  # position temp data
+*node,BW-Cr02:012,1,3,west_space,jr   # boundary wind pressure
+6.9531,6.7141,1.3500,0.0000,1.0000,307.0402  # position temp data
+*node,BW-Cr05:007,1,3,bed1,win   # boundary wind pressure
+12.0281,15.3182,1.3500,0.0000,1.0000,29.9705  # position temp data
+*node,BW-Cr06:007,1,3,bed2,win   # boundary wind pressure
+9.6901,16.6679,1.3500,0.0000,1.0000,30.0041  # position temp data
+*node,BW-Cr07:005,1,3,buf_1,westwin   # boundary wind pressure
+9.0489,4.1056,1.2000,0.0000,1.0000,210.0055  # position temp data
+*node,BW-Cr08:006,1,3,buf_2,eastwin   # boundary wind pressure
+14.7361,13.7554,1.2000,0.0000,1.0000,30.0055  # position temp data
+*node,BW-Cr09:005,1,3,buf_roof,win2   # boundary wind pressure
+10.9899,7.4186,5.1157,0.0000,1.0000,210.0292  # position temp data
+*node,BW-Cr09:006,1,3,buf_roof,glz_w   # boundary wind pressure
+12.7807,10.5706,5.2245,0.0000,1.0000,29.9760  # position temp data
+*node,BW-Cr10:001,1,3,roof,roof_n   # boundary wind pressure
+4.2701,12.8312,2.8664,0.0000,1.0000,299.9989  # position temp data
+# tag name assoc zone & surface type C+ L+
+start&end positions  description
+# data
+*cmp,Winz01:007,kitliv,win1, 40,3,0
+0,4.1360,8.4445,1.3500,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.300000012,0.800000012  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiOPz01:008,kitliv,win3, 40,3,0
+0,9.6880,8.0100,1.3500,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.300000012,0.800000012  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiCrz01:009,kitliv,win2,120,3,0
+0,7.4270,6.5445,1.3500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,1.00000005E-03,0.849894762  # Fluid crack width(m) crack length(m)
+*cmp,DoCrz01:012,kitliv,liv_door,120,3,0
+0,9.8085,10.0189,0.0000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,0.800004005  # Fluid crack width(m) crack length(m)
+*cmp,GrCRz02:005,west_space,ceil,120,3,0
+0,5.7010,7.3090,2.4000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,1.00000005E-03,6.60020113  # Fluid crack width(m) crack length(m)
+*cmp,FrCrz02:011,west_space,jl,120,3,0
+0,6.9345,6.5970,1.3500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,1.00000005E-03,1.90340161  # Fluid crack width(m) crack length(m)
+*cmp,FrCrz02:012,west_space,jr,120,3,0
+0,7.6715,6.1720,1.3500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,1.00000005E-03,1.90340161  # Fluid crack width(m) crack length(m)
+*cmp,DoCrz03:007,hall,door,120,3,0
+0,11.1360,10.5215,0.0000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,0.800155640  # Fluid crack width(m) crack length(m)
+*cmp,DoCrz03:009,hall,door_bath,120,3,0
+0,7.3970,12.0463,0.0000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,0.700000763  # Fluid crack width(m) crack length(m)
+*cmp,DoCrz03:010,hall,door_b1,120,3,0
+0,9.2273,12.3160,0.0000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,0.700003624  # Fluid crack width(m) crack length(m)
+*cmp,DoCrz03:011,hall,door_b2,120,3,0
+0,8.3617,12.8159,0.0000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,0.700003147  # Fluid crack width(m) crack length(m)
+*cmp,WiCrz05:007,bed1,win,120,3,0
+0,11.5785,14.5385,1.3500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,1.00000005E-03,0.850761414  # Fluid crack width(m) crack length(m)
+*cmp,WiCrz06:007,bed2,win,120,3,0
+0,9.2400,15.8885,1.3500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,1.00000005E-03,0.849895000  # Fluid crack width(m) crack length(m)
+*cmp,GrOPz07:003,buf_1,fict, 40,3,0
+0,10.2508,6.6684,2.4000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,13.3388577,0.500000000  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiOPz07:005,buf_1,westwin, 40,3,0
+0,9.4990,4.8850,1.2000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.400000006,0.800000012  # Fluid opening area (m^2) discharge factor (-)
+*cmp,FiBIz07:009,buf_1,fictv,130,5,0
+0,11.8420,8.8445,0.0000,Specific air flow door              m = rho.f(W,H,dP)       
+1.00000000,2.17496681,1.80000007,1.20000005,0.500000000  # Fluid width height ref ht discharge factor
+*cmp,GrOPz08:004,buf_2,fict, 40,3,0
+0,12.7208,10.9470,2.4000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,13.9219971,0.800000012  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiCrz08:006,buf_2,eastwin,120,3,0
+0,14.2860,12.9760,1.2000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,1.00000005E-03,2.39960098  # Fluid crack width(m) crack length(m)
+*cmp,WiCrz09:005,buf_roof,win2,120,3,0
+0,11.2135,7.8055,4.3345,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,1.00000005E-03,2.05106068  # Fluid crack width(m) crack length(m)
+*cmp,WiOPz09:006,buf_roof,glz_w, 40,3,0
+0,12.5430,10.1585,4.4605,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.400000006,0.800000012  # Fluid opening area (m^2) discharge factor (-)
+*cmp,GrCRz09:008,buf_roof,roof_buf,120,3,0
+0,10.4193,9.2803,2.8667,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,1.00000005E-03,10.1712742  # Fluid crack width(m) crack length(m)
+*cmp,GrCRz10:001,roof,roof_n,120,3,0
+0,5.0495,12.3812,2.8667,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,1.00000005E-03,10.1720829  # Fluid crack width(m) crack length(m)
+# connection +node deltaZ  -node deltaZ via component
+*cnn,BW-Cr01:007,  0.000,kitliv,  0.150,Winz01:007
+*cnn,kitliv,  0.150,buf_1,  0.150,WiOPz01:008
+*cnn,BW-Cr01:009,  0.000,kitliv,  0.150,WiCrz01:009
+*cnn,kitliv, -1.200,hall, -1.200,DoCrz01:012
+*cnn,west_space,  1.200,roof, -1.400,GrCRz02:005
+*cnn,BW-Cr02:011,  0.000,west_space,  0.150,FrCrz02:011
+*cnn,BW-Cr02:012,  0.000,west_space,  0.150,FrCrz02:012
+*cnn,hall, -1.200,buf_2, -1.200,DoCrz03:007
+*cnn,hall, -1.200,bath, -1.200,DoCrz03:009
+*cnn,hall, -1.200,bed1, -1.200,DoCrz03:010
+*cnn,hall, -1.200,bed2, -1.200,DoCrz03:011
+*cnn,BW-Cr05:007,  0.000,bed1,  0.150,WiCrz05:007
+*cnn,BW-Cr06:007,  0.000,bed2,  0.150,WiCrz06:007
+*cnn,buf_1,  1.200,buf_roof, -1.400,GrOPz07:003
+*cnn,BW-Cr07:005,  0.000,buf_1,  0.000,WiOPz07:005
+*cnn,buf_1, -1.200,buf_2, -1.200,FiBIz07:009
+*cnn,buf_2,  1.200,buf_roof, -1.400,GrOPz08:004
+*cnn,BW-Cr08:006,  0.000,buf_2, -0.000,WiCrz08:006
+*cnn,BW-Cr09:005,  0.000,buf_roof,  0.535,WiCrz09:005
+*cnn,BW-Cr09:006, -0.764,buf_roof,  0.660,WiOPz09:006
+*cnn,buf_roof, -0.933,roof, -0.933,GrCRz09:008
+*cnn,BW-Cr10:001,  0.000,roof, -0.933,GrCRz10:001
+*IPSMOD 0  # stack calc
+*MFBSNC 0  # timing
+*MSLVTP 0  # flow solution
+*MFTRAC 0  # trace level
+*End_network

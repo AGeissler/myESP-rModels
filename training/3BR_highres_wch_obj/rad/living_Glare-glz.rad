@@ -87,6 +87,26 @@ single_glaz  polygon  hall:fr_door_glz
     2.78000    1.30000    2.18000
     2.78000    1.30000    0.32000
     2.12000    1.30000    0.32000
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  hall:alow_trns
+0 
+0 
+ 12
+    2.85000    2.90500    2.39500
+    2.85000    3.04500    2.39500
+    2.70500    3.04500    2.39500
+    2.70500    2.90500    2.39500
+  
+#@mkillum e=single_glaz d=48 s=32
+single_glaz  polygon  hall:alow_trns_
+0 
+0 
+ 12
+    2.85000    3.04500    2.39500
+    2.85000    2.90500    2.39500
+    2.70500    2.90500    2.39500
+    2.70500    3.04500    2.39500
 # living Surface defs..
   
   
@@ -179,11 +199,11 @@ dbl_glz  polygon  kitchen:bk_door_gl
   
 # skipping fict surface: upper_hall:entr_st                                                                                 
   
-# bedroom1 Surface defs..
+# master_br Surface defs..
   
   
 #@mkillum e=dbl_glz d=48 s=32
-dbl_glz  polygon  bedroom1:glaz_a
+dbl_glz  polygon  master_br:glaz_a
 0 
 0 
  12
@@ -193,7 +213,7 @@ dbl_glz  polygon  bedroom1:glaz_a
     4.40000    1.22000    3.58000
   
 #@mkillum e=dbl_glz d=48 s=32
-dbl_glz  polygon  bedroom1:glaz_b
+dbl_glz  polygon  master_br:glaz_b
 0 
 0 
  12
@@ -203,7 +223,7 @@ dbl_glz  polygon  bedroom1:glaz_b
     4.52000    0.65000    3.62000
   
 #@mkillum e=dbl_glz d=48 s=32
-dbl_glz  polygon  bedroom1:glaz_c
+dbl_glz  polygon  master_br:glaz_c
 0 
 0 
  12
@@ -261,21 +281,21 @@ dbl_glz  polygon  bath:bk_glaze
   
 # rad_bath Surface defs..
   
-# rad_br3 Surface defs..
+# rad_br3_h Surface defs..
   
 # boiler_case Surface defs..
   
-# rad_br2 Surface defs..
+# rad_br2_h Surface defs..
   
-# rad_dining Surface defs..
+# rad_dining_h Surface defs..
   
-# rad-mbr Surface defs..
+# rad-mbr_h Surface defs..
   
-# rad_lounge Surface defs..
+# rad_lounge_h Surface defs..
   
 # rad_kit Surface defs..
   
-# rad-hall Surface defs..
+# rad-hall_h Surface defs..
   
 # collec_low Surface defs..
   
@@ -332,4 +352,30 @@ single_glaz  polygon  air_hi:glass
 # gas Surface defs..
   
 # mixer Surface defs..
+  
+# rad_lounge_m Surface defs..
+  
+# rad_lounge_l Surface defs..
+  
+# rad_dining_m Surface defs..
+  
+# rad_dining_l Surface defs..
+  
+# rad-hall_m Surface defs..
+  
+# rad-hall_l Surface defs..
+  
+# rad-mbr_m Surface defs..
+  
+# rad-mbr_l Surface defs..
+  
+# rad_br2_m Surface defs..
+  
+# rad_br2_l Surface defs..
+  
+# rad_br3_m Surface defs..
+  
+# rad_br3_l Surface defs..
+  
+# thermostat Surface defs..
   

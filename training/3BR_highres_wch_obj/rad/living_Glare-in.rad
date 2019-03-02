@@ -223,97 +223,97 @@ rc_in_cavity_brick  polygon  hall:left_facade
     1.30300    1.30000    0.20000
     1.30300    2.70000    0.20000
   
-rc_in_steel_pl_3mm  polygon  hall:face
+rc_in_steel_pl_3mm  polygon  hall:face_h
 0 
 0 
  12
     3.29700    2.60000    0.80000
     3.29700    3.70000    0.80000
-    3.29700    3.70000    0.30000
-    3.29700    2.60000    0.30000
+    3.29700    3.70000    0.65000
+    3.29700    2.60000    0.65000
   
-rc_in_steel_pl_3mm  polygon  hall:right
+rc_in_steel_pl_3mm  polygon  hall:right_h
 0 
 0 
  12
     3.31500    2.59700    0.80000
     3.30000    2.59700    0.80000
-    3.30000    2.59700    0.30000
-    3.31500    2.59700    0.30000
+    3.30000    2.59700    0.65000
+    3.31500    2.59700    0.65000
   
-rc_in_steel_pl_3mm  polygon  hall:back_a
+rc_in_steel_pl_3mm  polygon  hall:back_ah
 0 
 0 
  12
     3.31800    2.70000    0.80000
     3.31800    2.60000    0.80000
-    3.31800    2.60000    0.30000
-    3.31800    2.70000    0.30000
+    3.31800    2.60000    0.65000
+    3.31800    2.70000    0.65000
   
-rc_in_steel_pl_3mm  polygon  hall:back_b
+rc_in_steel_pl_3mm  polygon  hall:back_bh
 0 
 0 
  12
     3.33500    2.69700    0.80000
     3.31500    2.69700    0.80000
-    3.31500    2.69700    0.30000
-    3.33500    2.69700    0.30000
+    3.31500    2.69700    0.65000
+    3.33500    2.69700    0.65000
   
-rc_in_steel_pl_3mm  polygon  hall:fin_a
+rc_in_steel_pl_3mm  polygon  hall:fin_ah
 0 
 0 
  12
     3.33800    3.60000    0.80000
     3.33800    2.70000    0.80000
-    3.33800    2.70000    0.30000
-    3.33800    3.60000    0.30000
+    3.33800    2.70000    0.65000
+    3.33800    3.60000    0.65000
   
-rc_in_steel_pl_3mm  polygon  hall:fin_b
+rc_in_steel_pl_3mm  polygon  hall:fin_bh
 0 
 0 
  12
     3.32500    3.60300    0.80000
     3.33500    3.60300    0.80000
-    3.33500    3.60300    0.30000
-    3.32500    3.60300    0.30000
+    3.33500    3.60300    0.65000
+    3.32500    3.60300    0.65000
   
-rc_in_steel_pl_3mm  polygon  hall:fin_c
+rc_in_steel_pl_3mm  polygon  hall:fin_ch
 0 
 0 
  12
     3.32200    2.75000    0.80000
     3.32200    3.60000    0.80000
-    3.32200    3.60000    0.30000
-    3.32200    2.75000    0.30000
+    3.32200    3.60000    0.65000
+    3.32200    2.75000    0.65000
   
-rc_in_steel_pl_3mm  polygon  hall:fin_d
+rc_in_steel_pl_3mm  polygon  hall:fin_dh
 0 
 0 
  12
     3.31500    2.75300    0.80000
     3.32500    2.75300    0.80000
-    3.32500    2.75300    0.30000
-    3.31500    2.75300    0.30000
+    3.32500    2.75300    0.65000
+    3.31500    2.75300    0.65000
   
-rc_in_steel_pl_3mm  polygon  hall:back_c
+rc_in_steel_pl_3mm  polygon  hall:back_ch
 0 
 0 
  12
     3.31800    3.70000    0.80000
     3.31800    2.75000    0.80000
-    3.31800    2.75000    0.30000
-    3.31800    3.70000    0.30000
+    3.31800    2.75000    0.65000
+    3.31800    3.70000    0.65000
   
-rc_in_steel_pl_3mm  polygon  hall:left
+rc_in_steel_pl_3mm  polygon  hall:left_h
 0 
 0 
  12
     3.30000    3.70300    0.80000
     3.31500    3.70300    0.80000
-    3.31500    3.70300    0.30000
-    3.30000    3.70300    0.30000
+    3.31500    3.70300    0.65000
+    3.30000    3.70300    0.65000
   
-rc_in_steel_pl_3mm  polygon  hall:rad_top
+rc_in_steel_pl_3mm  polygon  hall:rad_top_h
 0 
 0 
  30
@@ -328,7 +328,187 @@ rc_in_steel_pl_3mm  polygon  hall:rad_top
     3.30000    3.70000    0.80300
     3.30000    2.60000    0.80300
   
-rc_in_steel_pl_3mm  polygon  hall:rad_base
+rc_in_steel_pl_3mm  polygon  hall:face_m
+0 
+0 
+ 12
+    3.29700    2.60000    0.65000
+    3.29700    3.70000    0.65000
+    3.29700    3.70000    0.50000
+    3.29700    2.60000    0.50000
+  
+rc_in_steel_pl_3mm  polygon  hall:right_m
+0 
+0 
+ 12
+    3.31500    2.59700    0.65000
+    3.30000    2.59700    0.65000
+    3.30000    2.59700    0.50000
+    3.31500    2.59700    0.50000
+  
+rc_in_steel_pl_3mm  polygon  hall:back_am
+0 
+0 
+ 12
+    3.31800    2.70000    0.65000
+    3.31800    2.60000    0.65000
+    3.31800    2.60000    0.50000
+    3.31800    2.70000    0.50000
+  
+rc_in_steel_pl_3mm  polygon  hall:back_bm
+0 
+0 
+ 12
+    3.33500    2.69700    0.65000
+    3.31500    2.69700    0.65000
+    3.31500    2.69700    0.50000
+    3.33500    2.69700    0.50000
+  
+rc_in_steel_pl_3mm  polygon  hall:fin_am
+0 
+0 
+ 12
+    3.33800    3.60000    0.65000
+    3.33800    2.70000    0.65000
+    3.33800    2.70000    0.50000
+    3.33800    3.60000    0.50000
+  
+rc_in_steel_pl_3mm  polygon  hall:fin_bm
+0 
+0 
+ 12
+    3.32500    3.60300    0.65000
+    3.33500    3.60300    0.65000
+    3.33500    3.60300    0.50000
+    3.32500    3.60300    0.50000
+  
+rc_in_steel_pl_3mm  polygon  hall:fin_cm
+0 
+0 
+ 12
+    3.32200    2.75000    0.65000
+    3.32200    3.60000    0.65000
+    3.32200    3.60000    0.50000
+    3.32200    2.75000    0.50000
+  
+rc_in_steel_pl_3mm  polygon  hall:fin_dm
+0 
+0 
+ 12
+    3.31500    2.75300    0.65000
+    3.32500    2.75300    0.65000
+    3.32500    2.75300    0.50000
+    3.31500    2.75300    0.50000
+  
+rc_in_steel_pl_3mm  polygon  hall:back_cm
+0 
+0 
+ 12
+    3.31800    3.70000    0.65000
+    3.31800    2.75000    0.65000
+    3.31800    2.75000    0.50000
+    3.31800    3.70000    0.50000
+  
+rc_in_steel_pl_3mm  polygon  hall:left_m
+0 
+0 
+ 12
+    3.30000    3.70300    0.65000
+    3.31500    3.70300    0.65000
+    3.31500    3.70300    0.50000
+    3.30000    3.70300    0.50000
+  
+rc_in_steel_pl_3mm  polygon  hall:face_l
+0 
+0 
+ 12
+    3.29700    2.60000    0.50000
+    3.29700    3.70000    0.50000
+    3.29700    3.70000    0.30000
+    3.29700    2.60000    0.30000
+  
+rc_in_steel_pl_3mm  polygon  hall:right_l
+0 
+0 
+ 12
+    3.31500    2.59700    0.50000
+    3.30000    2.59700    0.50000
+    3.30000    2.59700    0.30000
+    3.31500    2.59700    0.30000
+  
+rc_in_steel_pl_3mm  polygon  hall:back_al
+0 
+0 
+ 12
+    3.31800    2.70000    0.50000
+    3.31800    2.60000    0.50000
+    3.31800    2.60000    0.30000
+    3.31800    2.70000    0.30000
+  
+rc_in_steel_pl_3mm  polygon  hall:back_bl
+0 
+0 
+ 12
+    3.33500    2.69700    0.50000
+    3.31500    2.69700    0.50000
+    3.31500    2.69700    0.30000
+    3.33500    2.69700    0.30000
+  
+rc_in_steel_pl_3mm  polygon  hall:fin_al
+0 
+0 
+ 12
+    3.33800    3.60000    0.50000
+    3.33800    2.70000    0.50000
+    3.33800    2.70000    0.30000
+    3.33800    3.60000    0.30000
+  
+rc_in_steel_pl_3mm  polygon  hall:fin_bl
+0 
+0 
+ 12
+    3.32500    3.60300    0.50000
+    3.33500    3.60300    0.50000
+    3.33500    3.60300    0.30000
+    3.32500    3.60300    0.30000
+  
+rc_in_steel_pl_3mm  polygon  hall:fin_cl
+0 
+0 
+ 12
+    3.32200    2.75000    0.50000
+    3.32200    3.60000    0.50000
+    3.32200    3.60000    0.30000
+    3.32200    2.75000    0.30000
+  
+rc_in_steel_pl_3mm  polygon  hall:fin_dl
+0 
+0 
+ 12
+    3.31500    2.75300    0.50000
+    3.32500    2.75300    0.50000
+    3.32500    2.75300    0.30000
+    3.31500    2.75300    0.30000
+  
+rc_in_steel_pl_3mm  polygon  hall:back_cl
+0 
+0 
+ 12
+    3.31800    3.70000    0.50000
+    3.31800    2.75000    0.50000
+    3.31800    2.75000    0.30000
+    3.31800    3.70000    0.30000
+  
+rc_in_steel_pl_3mm  polygon  hall:left_l
+0 
+0 
+ 12
+    3.30000    3.70300    0.50000
+    3.31500    3.70300    0.50000
+    3.31500    3.70300    0.30000
+    3.30000    3.70300    0.30000
+  
+rc_in_steel_pl_3mm  polygon  hall:rad_base_l
 0 
 0 
  30
@@ -593,126 +773,6 @@ rc_in_sash_fr74mm  polygon  living:frame_b
     6.20000    0.65300    0.90000
     4.40000    0.65300    0.90000
   
-rc_in_steel_pl_3mm  polygon  living:face
-0 
-0 
- 12
-    4.80000    0.75300    0.80000
-    6.00000    0.75300    0.80000
-    6.00000    0.75300    0.30000
-    4.80000    0.75300    0.30000
-  
-rc_in_steel_pl_3mm  polygon  living:right
-0 
-0 
- 12
-    4.79700    0.73500    0.80000
-    4.79700    0.75000    0.80000
-    4.79700    0.75000    0.30000
-    4.79700    0.73500    0.30000
-  
-rc_in_steel_pl_3mm  polygon  living:back_a
-0 
-0 
- 12
-    5.00000    0.73200    0.80000
-    4.80000    0.73200    0.80000
-    4.80000    0.73200    0.30000
-    5.00000    0.73200    0.30000
-  
-rc_in_steel_pl_3mm  polygon  living:back_b
-0 
-0 
- 12
-    4.99700    0.71500    0.80000
-    4.99700    0.73500    0.80000
-    4.99700    0.73500    0.30000
-    4.99700    0.71500    0.30000
-  
-rc_in_steel_pl_3mm  polygon  living:fin_a
-0 
-0 
- 12
-    5.90000    0.71200    0.80000
-    5.00000    0.71200    0.80000
-    5.00000    0.71200    0.30000
-    5.90000    0.71200    0.30000
-  
-rc_in_steel_pl_3mm  polygon  living:fin_b
-0 
-0 
- 12
-    5.90300    0.72500    0.80000
-    5.90300    0.71500    0.80000
-    5.90300    0.71500    0.30000
-    5.90300    0.72500    0.30000
-  
-rc_in_steel_pl_3mm  polygon  living:fin_c
-0 
-0 
- 12
-    5.05000    0.72800    0.80000
-    5.90000    0.72800    0.80000
-    5.90000    0.72800    0.30000
-    5.05000    0.72800    0.30000
-  
-rc_in_steel_pl_3mm  polygon  living:fin_d
-0 
-0 
- 12
-    5.05300    0.73500    0.80000
-    5.05300    0.72500    0.80000
-    5.05300    0.72500    0.30000
-    5.05300    0.73500    0.30000
-  
-rc_in_steel_pl_3mm  polygon  living:back_c
-0 
-0 
- 12
-    6.00000    0.73200    0.80000
-    5.05000    0.73200    0.80000
-    5.05000    0.73200    0.30000
-    6.00000    0.73200    0.30000
-  
-rc_in_steel_pl_3mm  polygon  living:left
-0 
-0 
- 12
-    6.00300    0.75000    0.80000
-    6.00300    0.73500    0.80000
-    6.00300    0.73500    0.30000
-    6.00300    0.75000    0.30000
-  
-rc_in_steel_pl_3mm  polygon  living:rad_top
-0 
-0 
- 30
-    4.80000    0.73500    0.80300
-    5.00000    0.73500    0.80300
-    5.00000    0.71500    0.80300
-    5.90000    0.71500    0.80300
-    5.90000    0.72500    0.80300
-    5.05000    0.72500    0.80300
-    5.05000    0.73500    0.80300
-    6.00000    0.73500    0.80300
-    6.00000    0.75000    0.80300
-    4.80000    0.75000    0.80300
-  
-rc_in_steel_pl_3mm  polygon  living:rad_base
-0 
-0 
- 30
-    5.05000    0.73500    0.29700
-    5.05000    0.72500    0.29700
-    5.90000    0.72500    0.29700
-    5.90000    0.71500    0.29700
-    5.00000    0.71500    0.29700
-    5.00000    0.73500    0.29700
-    4.80000    0.73500    0.29700
-    4.80000    0.75000    0.29700
-    6.00000    0.75000    0.29700
-    6.00000    0.73500    0.29700
-  
 rc_in_furn_wd10mm  polygon  living:abil_lft
 0 
 0 
@@ -964,6 +1024,375 @@ rc_in_circuit_bd  polygon  living:dcircuit_
     6.77700    2.96500    1.00500
     6.77700    2.96500    0.71500
     6.77700    2.49500    0.71500
+  
+rc_in_steel_pl_3mm  polygon  living:face_h
+0 
+0 
+ 12
+    4.80000    0.75300    0.80000
+    6.00000    0.75300    0.80000
+    6.00000    0.75300    0.65000
+    4.80000    0.75300    0.65000
+  
+rc_in_steel_pl_3mm  polygon  living:right_h
+0 
+0 
+ 12
+    4.79700    0.73500    0.80000
+    4.79700    0.75000    0.80000
+    4.79700    0.75000    0.65000
+    4.79700    0.73500    0.65000
+  
+rc_in_steel_pl_3mm  polygon  living:back_ah
+0 
+0 
+ 12
+    5.00000    0.73200    0.80000
+    4.80000    0.73200    0.80000
+    4.80000    0.73200    0.65000
+    5.00000    0.73200    0.65000
+  
+rc_in_steel_pl_3mm  polygon  living:back_bh
+0 
+0 
+ 12
+    4.99700    0.71500    0.80000
+    4.99700    0.73500    0.80000
+    4.99700    0.73500    0.65000
+    4.99700    0.71500    0.65000
+  
+rc_in_steel_pl_3mm  polygon  living:fin_ah
+0 
+0 
+ 12
+    5.90000    0.71200    0.80000
+    5.00000    0.71200    0.80000
+    5.00000    0.71200    0.65000
+    5.90000    0.71200    0.65000
+  
+rc_in_steel_pl_3mm  polygon  living:fin_bh
+0 
+0 
+ 12
+    5.90300    0.72500    0.80000
+    5.90300    0.71500    0.80000
+    5.90300    0.71500    0.65000
+    5.90300    0.72500    0.65000
+  
+rc_in_steel_pl_3mm  polygon  living:fin_ch
+0 
+0 
+ 12
+    5.05000    0.72800    0.80000
+    5.90000    0.72800    0.80000
+    5.90000    0.72800    0.65000
+    5.05000    0.72800    0.65000
+  
+rc_in_steel_pl_3mm  polygon  living:fin_dh
+0 
+0 
+ 12
+    5.05300    0.73500    0.80000
+    5.05300    0.72500    0.80000
+    5.05300    0.72500    0.65000
+    5.05300    0.73500    0.65000
+  
+rc_in_steel_pl_3mm  polygon  living:back_ch
+0 
+0 
+ 12
+    6.00000    0.73200    0.80000
+    5.05000    0.73200    0.80000
+    5.05000    0.73200    0.65000
+    6.00000    0.73200    0.65000
+  
+rc_in_steel_pl_3mm  polygon  living:left_h
+0 
+0 
+ 12
+    6.00300    0.75000    0.80000
+    6.00300    0.73500    0.80000
+    6.00300    0.73500    0.65000
+    6.00300    0.75000    0.65000
+  
+rc_in_steel_pl_3mm  polygon  living:rad_top_h
+0 
+0 
+ 30
+    4.80000    0.73500    0.80300
+    5.00000    0.73500    0.80300
+    5.00000    0.71500    0.80300
+    5.90000    0.71500    0.80300
+    5.90000    0.72500    0.80300
+    5.05000    0.72500    0.80300
+    5.05000    0.73500    0.80300
+    6.00000    0.73500    0.80300
+    6.00000    0.75000    0.80300
+    4.80000    0.75000    0.80300
+  
+rc_in_steel_pl_3mm  polygon  living:face_m
+0 
+0 
+ 12
+    4.80000    0.75300    0.65000
+    6.00000    0.75300    0.65000
+    6.00000    0.75300    0.50000
+    4.80000    0.75300    0.50000
+  
+rc_in_steel_pl_3mm  polygon  living:right_m
+0 
+0 
+ 12
+    4.79700    0.73500    0.65000
+    4.79700    0.75000    0.65000
+    4.79700    0.75000    0.50000
+    4.79700    0.73500    0.50000
+  
+rc_in_steel_pl_3mm  polygon  living:back_am
+0 
+0 
+ 12
+    5.00000    0.73200    0.65000
+    4.80000    0.73200    0.65000
+    4.80000    0.73200    0.50000
+    5.00000    0.73200    0.50000
+  
+rc_in_steel_pl_3mm  polygon  living:back_bm
+0 
+0 
+ 12
+    4.99700    0.71500    0.65000
+    4.99700    0.73500    0.65000
+    4.99700    0.73500    0.50000
+    4.99700    0.71500    0.50000
+  
+rc_in_steel_pl_3mm  polygon  living:fin_am
+0 
+0 
+ 12
+    5.90000    0.71200    0.65000
+    5.00000    0.71200    0.65000
+    5.00000    0.71200    0.50000
+    5.90000    0.71200    0.50000
+  
+rc_in_steel_pl_3mm  polygon  living:fin_bm
+0 
+0 
+ 12
+    5.90300    0.72500    0.65000
+    5.90300    0.71500    0.65000
+    5.90300    0.71500    0.50000
+    5.90300    0.72500    0.50000
+  
+rc_in_steel_pl_3mm  polygon  living:fin_cm
+0 
+0 
+ 12
+    5.05000    0.72800    0.65000
+    5.90000    0.72800    0.65000
+    5.90000    0.72800    0.50000
+    5.05000    0.72800    0.50000
+  
+rc_in_steel_pl_3mm  polygon  living:fin_dm
+0 
+0 
+ 12
+    5.05300    0.73500    0.65000
+    5.05300    0.72500    0.65000
+    5.05300    0.72500    0.50000
+    5.05300    0.73500    0.50000
+  
+rc_in_steel_pl_3mm  polygon  living:back_cm
+0 
+0 
+ 12
+    6.00000    0.73200    0.65000
+    5.05000    0.73200    0.65000
+    5.05000    0.73200    0.50000
+    6.00000    0.73200    0.50000
+  
+rc_in_steel_pl_3mm  polygon  living:left_m
+0 
+0 
+ 12
+    6.00300    0.75000    0.65000
+    6.00300    0.73500    0.65000
+    6.00300    0.73500    0.50000
+    6.00300    0.75000    0.50000
+  
+rc_in_steel_pl_3mm  polygon  living:face_l
+0 
+0 
+ 12
+    4.80000    0.75300    0.50000
+    6.00000    0.75300    0.50000
+    6.00000    0.75300    0.30000
+    4.80000    0.75300    0.30000
+  
+rc_in_steel_pl_3mm  polygon  living:right_l
+0 
+0 
+ 12
+    4.79700    0.73500    0.50000
+    4.79700    0.75000    0.50000
+    4.79700    0.75000    0.30000
+    4.79700    0.73500    0.30000
+  
+rc_in_steel_pl_3mm  polygon  living:back_al
+0 
+0 
+ 12
+    5.00000    0.73200    0.50000
+    4.80000    0.73200    0.50000
+    4.80000    0.73200    0.30000
+    5.00000    0.73200    0.30000
+  
+rc_in_steel_pl_3mm  polygon  living:back_bl
+0 
+0 
+ 12
+    4.99700    0.71500    0.50000
+    4.99700    0.73500    0.50000
+    4.99700    0.73500    0.30000
+    4.99700    0.71500    0.30000
+  
+rc_in_steel_pl_3mm  polygon  living:fin_al
+0 
+0 
+ 12
+    5.90000    0.71200    0.50000
+    5.00000    0.71200    0.50000
+    5.00000    0.71200    0.30000
+    5.90000    0.71200    0.30000
+  
+rc_in_steel_pl_3mm  polygon  living:fin_bl
+0 
+0 
+ 12
+    5.90300    0.72500    0.50000
+    5.90300    0.71500    0.50000
+    5.90300    0.71500    0.30000
+    5.90300    0.72500    0.30000
+  
+rc_in_steel_pl_3mm  polygon  living:fin_cl
+0 
+0 
+ 12
+    5.05000    0.72800    0.50000
+    5.90000    0.72800    0.50000
+    5.90000    0.72800    0.30000
+    5.05000    0.72800    0.30000
+  
+rc_in_steel_pl_3mm  polygon  living:fin_dl
+0 
+0 
+ 12
+    5.05300    0.73500    0.50000
+    5.05300    0.72500    0.50000
+    5.05300    0.72500    0.30000
+    5.05300    0.73500    0.30000
+  
+rc_in_steel_pl_3mm  polygon  living:back_cl
+0 
+0 
+ 12
+    6.00000    0.73200    0.50000
+    5.05000    0.73200    0.50000
+    5.05000    0.73200    0.30000
+    6.00000    0.73200    0.30000
+  
+rc_in_steel_pl_3mm  polygon  living:left_l
+0 
+0 
+ 12
+    6.00300    0.75000    0.50000
+    6.00300    0.73500    0.50000
+    6.00300    0.73500    0.30000
+    6.00300    0.75000    0.30000
+  
+rc_in_steel_pl_3mm  polygon  living:rad_base_l
+0 
+0 
+ 30
+    5.05000    0.73500    0.29700
+    5.05000    0.72500    0.29700
+    5.90000    0.72500    0.29700
+    5.90000    0.71500    0.29700
+    5.00000    0.71500    0.29700
+    5.00000    0.73500    0.29700
+    4.80000    0.73500    0.29700
+    4.80000    0.75000    0.29700
+    6.00000    0.75000    0.29700
+    6.00000    0.73500    0.29700
+  
+rc_in_sensor_case  polygon  living:acase_front
+0 
+0 
+ 30
+    6.89700    2.67000    1.48700
+    6.89700    2.80000    1.48700
+    6.89700    2.80000    1.40000
+    6.89700    2.77600    1.43000
+    6.89700    2.77600    1.48300
+    6.89700    2.69500    1.48300
+    6.89700    2.69500    1.43000
+    6.89700    2.77600    1.43000
+    6.89700    2.80000    1.40000
+    6.89700    2.67000    1.40000
+  
+rc_in_sensor_case  polygon  living:acase_right
+0 
+0 
+ 12
+    6.92300    2.66700    1.48700
+    6.90000    2.66700    1.48700
+    6.90000    2.66700    1.40000
+    6.92300    2.66700    1.40000
+  
+rc_in_sensor_case  polygon  living:acase_back
+0 
+0 
+ 12
+    6.92600    2.80000    1.48700
+    6.92600    2.67000    1.48700
+    6.92600    2.67000    1.40000
+    6.92600    2.80000    1.40000
+  
+rc_in_sensor_case  polygon  living:aleft_case
+0 
+0 
+ 12
+    6.90000    2.80300    1.48700
+    6.92300    2.80300    1.48700
+    6.92300    2.80300    1.40000
+    6.90000    2.80300    1.40000
+  
+rc_in_sensor_case  polygon  living:acase_top
+0 
+0 
+ 12
+    6.92300    2.67000    1.49000
+    6.92300    2.80000    1.49000
+    6.90000    2.80000    1.49000
+    6.90000    2.67000    1.49000
+  
+rc_in_sensor_case  polygon  living:acase_base
+0 
+0 
+ 12
+    6.92300    2.67000    1.39700
+    6.90000    2.67000    1.39700
+    6.90000    2.80000    1.39700
+    6.92300    2.80000    1.39700
+  
+rc_in_circuit_bd  polygon  living:adisplay
+0 
+0 
+ 12
+    6.89700    2.69500    1.48300
+    6.89700    2.77600    1.48300
+    6.89700    2.77600    1.43000
+    6.89700    2.69500    1.43000
   
 # dining Surface defs..
   
@@ -1238,97 +1667,97 @@ rc_in_shelves_20mm  polygon  dining:shelf_d_
     6.90000    7.35000    2.00300
     7.19000    7.35000    2.00300
   
-rc_in_steel_pl_3mm  polygon  dining:face
+rc_in_steel_pl_3mm  polygon  dining:face_h
 0 
 0 
  12
     4.00300    8.10000    0.90000
     4.00300    7.00000    0.90000
-    4.00300    7.00000    0.40000
-    4.00300    8.10000    0.40000
+    4.00300    7.00000    0.75000
+    4.00300    8.10000    0.75000
   
-rc_in_steel_pl_3mm  polygon  dining:right
+rc_in_steel_pl_3mm  polygon  dining:right_h
 0 
 0 
  12
     3.98500    8.10300    0.90000
     4.00000    8.10300    0.90000
-    4.00000    8.10300    0.40000
-    3.98500    8.10300    0.40000
+    4.00000    8.10300    0.75000
+    3.98500    8.10300    0.75000
   
-rc_in_steel_pl_3mm  polygon  dining:back_a
+rc_in_steel_pl_3mm  polygon  dining:back_ah
 0 
 0 
  12
     3.98200    8.00000    0.90000
     3.98200    8.10000    0.90000
-    3.98200    8.10000    0.40000
-    3.98200    8.00000    0.40000
+    3.98200    8.10000    0.75000
+    3.98200    8.00000    0.75000
   
-rc_in_steel_pl_3mm  polygon  dining:back_b
+rc_in_steel_pl_3mm  polygon  dining:back_bh
 0 
 0 
  12
     3.96000    8.00300    0.90000
     3.98500    8.00300    0.90000
-    3.98500    8.00300    0.40000
-    3.96000    8.00300    0.40000
+    3.98500    8.00300    0.75000
+    3.96000    8.00300    0.75000
   
-rc_in_steel_pl_3mm  polygon  dining:fin_a
+rc_in_steel_pl_3mm  polygon  dining:fin_ah
 0 
 0 
  12
     3.95700    7.10000    0.90000
     3.95700    8.00000    0.90000
-    3.95700    8.00000    0.40000
-    3.95700    7.10000    0.40000
+    3.95700    8.00000    0.75000
+    3.95700    7.10000    0.75000
   
-rc_in_steel_pl_3mm  polygon  dining:fin_b
+rc_in_steel_pl_3mm  polygon  dining:fin_bh
 0 
 0 
  12
     3.97200    7.09700    0.90000
     3.96000    7.09700    0.90000
-    3.96000    7.09700    0.40000
-    3.97200    7.09700    0.40000
+    3.96000    7.09700    0.75000
+    3.97200    7.09700    0.75000
   
-rc_in_steel_pl_3mm  polygon  dining:fin_c
+rc_in_steel_pl_3mm  polygon  dining:fin_ch
 0 
 0 
  12
     3.97500    7.95000    0.90000
     3.97500    7.10000    0.90000
-    3.97500    7.10000    0.40000
-    3.97500    7.95000    0.40000
+    3.97500    7.10000    0.75000
+    3.97500    7.95000    0.75000
   
-rc_in_steel_pl_3mm  polygon  dining:fin_d
+rc_in_steel_pl_3mm  polygon  dining:fin_dh
 0 
 0 
  12
     3.98500    7.94700    0.90000
     3.97200    7.94700    0.90000
-    3.97200    7.94700    0.40000
-    3.98500    7.94700    0.40000
+    3.97200    7.94700    0.75000
+    3.98500    7.94700    0.75000
   
-rc_in_steel_pl_3mm  polygon  dining:back_c
+rc_in_steel_pl_3mm  polygon  dining:back_ch
 0 
 0 
  12
     3.98200    7.00000    0.90000
     3.98200    7.95000    0.90000
-    3.98200    7.95000    0.40000
-    3.98200    7.00000    0.40000
+    3.98200    7.95000    0.75000
+    3.98200    7.00000    0.75000
   
-rc_in_steel_pl_3mm  polygon  dining:left
+rc_in_steel_pl_3mm  polygon  dining:left_h
 0 
 0 
  12
     4.00000    6.99700    0.90000
     3.98500    6.99700    0.90000
-    3.98500    6.99700    0.40000
-    4.00000    6.99700    0.40000
+    3.98500    6.99700    0.75000
+    4.00000    6.99700    0.75000
   
-rc_in_steel_pl_3mm  polygon  dining:rad_top
+rc_in_steel_pl_3mm  polygon  dining:rad_top_h
 0 
 0 
  30
@@ -1343,7 +1772,187 @@ rc_in_steel_pl_3mm  polygon  dining:rad_top
     4.00000    7.00000    0.90300
     4.00000    8.10000    0.90300
   
-rc_in_steel_pl_3mm  polygon  dining:rad_base
+rc_in_steel_pl_3mm  polygon  dining:face_m
+0 
+0 
+ 12
+    4.00300    8.10000    0.75000
+    4.00300    7.00000    0.75000
+    4.00300    7.00000    0.60000
+    4.00300    8.10000    0.60000
+  
+rc_in_steel_pl_3mm  polygon  dining:right_m
+0 
+0 
+ 12
+    3.98500    8.10300    0.75000
+    4.00000    8.10300    0.75000
+    4.00000    8.10300    0.60000
+    3.98500    8.10300    0.60000
+  
+rc_in_steel_pl_3mm  polygon  dining:back_am
+0 
+0 
+ 12
+    3.98200    8.00000    0.75000
+    3.98200    8.10000    0.75000
+    3.98200    8.10000    0.60000
+    3.98200    8.00000    0.60000
+  
+rc_in_steel_pl_3mm  polygon  dining:back_bm
+0 
+0 
+ 12
+    3.96000    8.00300    0.75000
+    3.98500    8.00300    0.75000
+    3.98500    8.00300    0.60000
+    3.96000    8.00300    0.60000
+  
+rc_in_steel_pl_3mm  polygon  dining:fin_am
+0 
+0 
+ 12
+    3.95700    7.10000    0.75000
+    3.95700    8.00000    0.75000
+    3.95700    8.00000    0.60000
+    3.95700    7.10000    0.60000
+  
+rc_in_steel_pl_3mm  polygon  dining:fin_bm
+0 
+0 
+ 12
+    3.97200    7.09700    0.75000
+    3.96000    7.09700    0.75000
+    3.96000    7.09700    0.60000
+    3.97200    7.09700    0.60000
+  
+rc_in_steel_pl_3mm  polygon  dining:fin_cm
+0 
+0 
+ 12
+    3.97500    7.95000    0.75000
+    3.97500    7.10000    0.75000
+    3.97500    7.10000    0.60000
+    3.97500    7.95000    0.60000
+  
+rc_in_steel_pl_3mm  polygon  dining:fin_dm
+0 
+0 
+ 12
+    3.98500    7.94700    0.75000
+    3.97200    7.94700    0.75000
+    3.97200    7.94700    0.60000
+    3.98500    7.94700    0.60000
+  
+rc_in_steel_pl_3mm  polygon  dining:back_cm
+0 
+0 
+ 12
+    3.98200    7.00000    0.75000
+    3.98200    7.95000    0.75000
+    3.98200    7.95000    0.60000
+    3.98200    7.00000    0.60000
+  
+rc_in_steel_pl_3mm  polygon  dining:left_m
+0 
+0 
+ 12
+    4.00000    6.99700    0.75000
+    3.98500    6.99700    0.75000
+    3.98500    6.99700    0.60000
+    4.00000    6.99700    0.60000
+  
+rc_in_steel_pl_3mm  polygon  dining:face_l
+0 
+0 
+ 12
+    4.00300    8.10000    0.60000
+    4.00300    7.00000    0.60000
+    4.00300    7.00000    0.40000
+    4.00300    8.10000    0.40000
+  
+rc_in_steel_pl_3mm  polygon  dining:right_l
+0 
+0 
+ 12
+    3.98500    8.10300    0.60000
+    4.00000    8.10300    0.60000
+    4.00000    8.10300    0.40000
+    3.98500    8.10300    0.40000
+  
+rc_in_steel_pl_3mm  polygon  dining:back_al
+0 
+0 
+ 12
+    3.98200    8.00000    0.60000
+    3.98200    8.10000    0.60000
+    3.98200    8.10000    0.40000
+    3.98200    8.00000    0.40000
+  
+rc_in_steel_pl_3mm  polygon  dining:back_bl
+0 
+0 
+ 12
+    3.96000    8.00300    0.60000
+    3.98500    8.00300    0.60000
+    3.98500    8.00300    0.40000
+    3.96000    8.00300    0.40000
+  
+rc_in_steel_pl_3mm  polygon  dining:fin_al
+0 
+0 
+ 12
+    3.95700    7.10000    0.60000
+    3.95700    8.00000    0.60000
+    3.95700    8.00000    0.40000
+    3.95700    7.10000    0.40000
+  
+rc_in_steel_pl_3mm  polygon  dining:fin_bl
+0 
+0 
+ 12
+    3.97200    7.09700    0.60000
+    3.96000    7.09700    0.60000
+    3.96000    7.09700    0.40000
+    3.97200    7.09700    0.40000
+  
+rc_in_steel_pl_3mm  polygon  dining:fin_cl
+0 
+0 
+ 12
+    3.97500    7.95000    0.60000
+    3.97500    7.10000    0.60000
+    3.97500    7.10000    0.40000
+    3.97500    7.95000    0.40000
+  
+rc_in_steel_pl_3mm  polygon  dining:fin_dl
+0 
+0 
+ 12
+    3.98500    7.94700    0.60000
+    3.97200    7.94700    0.60000
+    3.97200    7.94700    0.40000
+    3.98500    7.94700    0.40000
+  
+rc_in_steel_pl_3mm  polygon  dining:back_cl
+0 
+0 
+ 12
+    3.98200    7.00000    0.60000
+    3.98200    7.95000    0.60000
+    3.98200    7.95000    0.40000
+    3.98200    7.00000    0.40000
+  
+rc_in_steel_pl_3mm  polygon  dining:left_l
+0 
+0 
+ 12
+    4.00000    6.99700    0.60000
+    3.98500    6.99700    0.60000
+    3.98500    6.99700    0.40000
+    4.00000    6.99700    0.40000
+  
+rc_in_steel_pl_3mm  polygon  dining:rad_base_l
 0 
 0 
  30
@@ -2375,9 +2984,9 @@ rc_in_door  polygon  upper_hall:door_br3
     3.40000    3.70300    2.80000
     2.60000    3.70300    2.80000
   
-# bedroom1 Surface defs..
+# master_br Surface defs..
   
-rc_in_cavity_brick  polygon  bedroom1:facade_a
+rc_in_cavity_brick  polygon  master_br:facade_a
 0 
 0 
  18
@@ -2388,7 +2997,7 @@ rc_in_cavity_brick  polygon  bedroom1:facade_a
     4.40000    1.30300    2.80000
     3.40000    1.30300    2.80000
   
-rc_in_cavity_brick  polygon  bedroom1:sill_a
+rc_in_cavity_brick  polygon  master_br:sill_a
 0 
 0 
  12
@@ -2397,7 +3006,7 @@ rc_in_cavity_brick  polygon  bedroom1:sill_a
     4.40300    0.65000    2.80000
     4.40300    1.30000    2.80000
   
-rc_in_cavity_brick  polygon  bedroom1:sill_b
+rc_in_cavity_brick  polygon  master_br:sill_b
 0 
 0 
  12
@@ -2406,7 +3015,7 @@ rc_in_cavity_brick  polygon  bedroom1:sill_b
     6.20000    0.65300    2.80000
     4.40000    0.65300    2.80000
   
-rc_in_cavity_brick  polygon  bedroom1:sill_c
+rc_in_cavity_brick  polygon  master_br:sill_c
 0 
 0 
  12
@@ -2415,7 +3024,7 @@ rc_in_cavity_brick  polygon  bedroom1:sill_c
     6.19700    1.30000    2.80000
     6.19700    0.65000    2.80000
   
-rc_in_cavity_brick  polygon  bedroom1:facade_d
+rc_in_cavity_brick  polygon  master_br:facade_d
 0 
 0 
  18
@@ -2426,7 +3035,7 @@ rc_in_cavity_brick  polygon  bedroom1:facade_d
     7.20000    1.30300    2.80000
     6.20000    1.30300    2.80000
   
-rc_in_cavity_brick  polygon  bedroom1:right_a
+rc_in_cavity_brick  polygon  master_br:right_a
 0 
 0 
  12
@@ -2435,7 +3044,7 @@ rc_in_cavity_brick  polygon  bedroom1:right_a
     7.19700    2.30000    2.80000
     7.19700    1.30000    2.80000
   
-rc_in_cavity_brick  polygon  bedroom1:right_b
+rc_in_cavity_brick  polygon  master_br:right_b
 0 
 0 
  12
@@ -2444,7 +3053,7 @@ rc_in_cavity_brick  polygon  bedroom1:right_b
     7.00000    2.29700    2.80000
     7.20000    2.29700    2.80000
   
-rc_in_cavity_brick  polygon  bedroom1:right_c
+rc_in_cavity_brick  polygon  master_br:right_c
 0 
 0 
  12
@@ -2453,7 +3062,7 @@ rc_in_cavity_brick  polygon  bedroom1:right_c
     6.99700    3.80000    2.80000
     6.99700    2.30000    2.80000
   
-rc_in_cavity_brick  polygon  bedroom1:right_d
+rc_in_cavity_brick  polygon  master_br:right_d
 0 
 0 
  12
@@ -2462,7 +3071,7 @@ rc_in_cavity_brick  polygon  bedroom1:right_d
     7.20000    3.80300    2.80000
     7.00000    3.80300    2.80000
   
-rc_in_cavity_brick  polygon  bedroom1:right_e
+rc_in_cavity_brick  polygon  master_br:right_e
 0 
 0 
  12
@@ -2471,7 +3080,7 @@ rc_in_cavity_brick  polygon  bedroom1:right_e
     7.19700    4.80000    2.80000
     7.19700    3.80000    2.80000
   
-rc_in_int_part  polygon  bedroom1:ptn_br2
+rc_in_int_part  polygon  master_br:ptn_br2
 0 
 0 
  12
@@ -2480,7 +3089,7 @@ rc_in_int_part  polygon  bedroom1:ptn_br2
     3.40000    4.79700    2.80000
     7.20000    4.79700    2.80000
   
-rc_in_int_part  polygon  bedroom1:ptn_hall
+rc_in_int_part  polygon  master_br:ptn_hall
 0 
 0 
  30
@@ -2495,7 +3104,7 @@ rc_in_int_part  polygon  bedroom1:ptn_hall
     3.40300    4.60000    2.80000
     3.40300    4.80000    2.80000
   
-rc_in_door  polygon  bedroom1:door_hall
+rc_in_door  polygon  master_br:door_hall
 0 
 0 
  12
@@ -2504,7 +3113,7 @@ rc_in_door  polygon  bedroom1:door_hall
     3.40300    3.90000    2.80000
     3.40300    4.60000    2.80000
   
-rc_in_int_part  polygon  bedroom1:ptn_br3
+rc_in_int_part  polygon  master_br:ptn_br3
 0 
 0 
  12
@@ -2513,7 +3122,7 @@ rc_in_int_part  polygon  bedroom1:ptn_br3
     3.40300    1.30000    2.80000
     3.40300    3.70000    2.80000
   
-rc_in_ceiling  polygon  bedroom1:ceil_br1
+rc_in_ceiling  polygon  master_br:ceil_br1
 0 
 0 
  45
@@ -2533,7 +3142,7 @@ rc_in_ceiling  polygon  bedroom1:ceil_br1
     4.40000    1.30000    5.29700
     3.40000    1.30000    5.29700
   
-rc_in_tg_flr2ceil  polygon  bedroom1:floor_br1
+rc_in_tg_flr2ceil  polygon  master_br:floor_br1
 0 
 0 
  45
@@ -2553,7 +3162,7 @@ rc_in_tg_flr2ceil  polygon  bedroom1:floor_br1
     3.40000    3.70000    2.80300
     3.40000    1.30000    2.80300
   
-rc_in_cavity_brick  polygon  bedroom1:head_a
+rc_in_cavity_brick  polygon  master_br:head_a
 0 
 0 
  12
@@ -2562,7 +3171,7 @@ rc_in_cavity_brick  polygon  bedroom1:head_a
     4.40300    0.65000    4.90000
     4.40300    1.30000    4.90000
   
-rc_in_cavity_brick  polygon  bedroom1:head_b
+rc_in_cavity_brick  polygon  master_br:head_b
 0 
 0 
  12
@@ -2571,7 +3180,7 @@ rc_in_cavity_brick  polygon  bedroom1:head_b
     6.20000    0.65300    4.90000
     4.40000    0.65300    4.90000
   
-rc_in_cavity_brick  polygon  bedroom1:head_c
+rc_in_cavity_brick  polygon  master_br:head_c
 0 
 0 
  12
@@ -2580,7 +3189,7 @@ rc_in_cavity_brick  polygon  bedroom1:head_c
     6.19700    1.30000    4.90000
     6.19700    0.65000    4.90000
   
-rc_in_sash_fr74mm  polygon  bedroom1:frame_a
+rc_in_sash_fr74mm  polygon  master_br:frame_a
 0 
 0 
  30
@@ -2595,7 +3204,7 @@ rc_in_sash_fr74mm  polygon  bedroom1:frame_a
     4.40300    0.65000    3.50000
     4.40300    1.30000    3.50000
   
-rc_in_sash_fr74mm  polygon  bedroom1:frame_b
+rc_in_sash_fr74mm  polygon  master_br:frame_b
 0 
 0 
  30
@@ -2610,7 +3219,7 @@ rc_in_sash_fr74mm  polygon  bedroom1:frame_b
     6.20000    0.65300    3.50000
     4.40000    0.65300    3.50000
   
-rc_in_sash_fr74mm  polygon  bedroom1:frame_c
+rc_in_sash_fr74mm  polygon  master_br:frame_c
 0 
 0 
  30
@@ -2625,97 +3234,223 @@ rc_in_sash_fr74mm  polygon  bedroom1:frame_c
     6.19700    1.30000    3.50000
     6.19700    0.65000    3.50000
   
-rc_in_steel_pl_3mm  polygon  bedroom1:face
+rc_in_upholstery  polygon  master_br:aseat_mass
+0 
+0 
+ 12
+    3.57000    1.79000    3.01700
+    3.57000    2.39000    3.01700
+    4.31000    2.39000    3.01700
+    4.31000    1.79000    3.01700
+  
+rc_in_upholstery  polygon  master_br:aseat_mass_
+0 
+0 
+ 12
+    3.57000    2.39000    3.02300
+    3.57000    1.79000    3.02300
+    4.31000    1.79000    3.02300
+    4.31000    2.39000    3.02300
+  
+rc_in_upholstery  polygon  master_br:aarm_mass_l
+0 
+0 
+ 12
+    4.38000    1.71700    3.46500
+    3.66000    1.71700    3.46500
+    3.66000    1.71700    3.01500
+    4.38000    1.71700    3.01500
+  
+rc_in_upholstery  polygon  master_br:aarm_mass_l_
+0 
+0 
+ 12
+    3.66000    1.72300    3.46500
+    4.38000    1.72300    3.46500
+    4.38000    1.72300    3.01500
+    3.66000    1.72300    3.01500
+  
+rc_in_upholstery  polygon  master_br:aarm_mass_r
+0 
+0 
+ 12
+    4.38000    2.38700    3.46500
+    3.66000    2.38700    3.46500
+    3.66000    2.38700    3.01500
+    4.38000    2.38700    3.01500
+  
+rc_in_upholstery  polygon  master_br:aarm_mass_r_
+0 
+0 
+ 12
+    3.66000    2.39300    3.46500
+    4.38000    2.39300    3.46500
+    4.38000    2.39300    3.01500
+    3.66000    2.39300    3.01500
+  
+rc_in_door  polygon  master_br:bbase_mass
+0 
+0 
+ 12
+    4.86000    4.56000    3.13700
+    6.16000    4.56000    3.13700
+    6.16000    2.76000    3.13700
+    4.86000    2.76000    3.13700
+  
+rc_in_door  polygon  master_br:bbase_mass_
+0 
+0 
+ 12
+    6.16000    4.56000    3.14300
+    4.86000    4.56000    3.14300
+    4.86000    2.76000    3.14300
+    6.16000    2.76000    3.14300
+  
+rc_in_upholstery  polygon  master_br:bmatress
+0 
+0 
+ 12
+    4.86000    4.56000    3.33700
+    6.16000    4.56000    3.33700
+    6.16000    2.76000    3.33700
+    4.86000    2.76000    3.33700
+  
+rc_in_upholstery  polygon  master_br:bmatress_
+0 
+0 
+ 12
+    6.16000    4.56000    3.34300
+    4.86000    4.56000    3.34300
+    4.86000    2.76000    3.34300
+    6.16000    2.76000    3.34300
+  
+rc_in_furn_wd10mm  polygon  master_br:cbil_lft
+0 
+0 
+ 12
+    6.80500    4.69800    4.80500
+    7.05500    4.69800    4.80500
+    7.05500    4.69800    2.80500
+    6.80500    4.69800    2.80500
+  
+rc_in_furn_wd10mm  polygon  master_br:cbil_lft_
+0 
+0 
+ 12
+    7.05500    4.69200    4.80500
+    6.80500    4.69200    4.80500
+    6.80500    4.69200    2.80500
+    7.05500    4.69200    2.80500
+  
+rc_in_furn_wd10mm  polygon  master_br:cbil_rt
+0 
+0 
+ 12
+    6.80500    4.32800    4.80500
+    7.05500    4.32800    4.80500
+    7.05500    4.32800    2.80500
+    6.80500    4.32800    2.80500
+  
+rc_in_furn_wd10mm  polygon  master_br:cbil_rt_
+0 
+0 
+ 12
+    7.05500    4.32200    4.80500
+    6.80500    4.32200    4.80500
+    6.80500    4.32200    2.80500
+    7.05500    4.32200    2.80500
+  
+rc_in_steel_pl_3mm  polygon  master_br:face_h
 0 
 0 
  12
     4.80000    0.75300    3.40000
     6.00000    0.75300    3.40000
-    6.00000    0.75300    2.90000
-    4.80000    0.75300    2.90000
+    6.00000    0.75300    3.25000
+    4.80000    0.75300    3.25000
   
-rc_in_steel_pl_3mm  polygon  bedroom1:right
+rc_in_steel_pl_3mm  polygon  master_br:right_h
 0 
 0 
  12
     4.79700    0.73500    3.40000
     4.79700    0.75000    3.40000
-    4.79700    0.75000    2.90000
-    4.79700    0.73500    2.90000
+    4.79700    0.75000    3.25000
+    4.79700    0.73500    3.25000
   
-rc_in_steel_pl_3mm  polygon  bedroom1:back_a
+rc_in_steel_pl_3mm  polygon  master_br:back_ah
 0 
 0 
  12
     5.00000    0.73200    3.40000
     4.80000    0.73200    3.40000
-    4.80000    0.73200    2.90000
-    5.00000    0.73200    2.90000
+    4.80000    0.73200    3.25000
+    5.00000    0.73200    3.25000
   
-rc_in_steel_pl_3mm  polygon  bedroom1:back_b
+rc_in_steel_pl_3mm  polygon  master_br:back_bh
 0 
 0 
  12
     4.99700    0.71300    3.40000
     4.99700    0.73500    3.40000
-    4.99700    0.73500    2.90000
-    4.99700    0.71300    2.90000
+    4.99700    0.73500    3.25000
+    4.99700    0.71300    3.25000
   
-rc_in_steel_pl_3mm  polygon  bedroom1:fin_a
+rc_in_steel_pl_3mm  polygon  master_br:fin_ah
 0 
 0 
  12
     5.90000    0.71000    3.40000
     5.00000    0.71000    3.40000
-    5.00000    0.71000    2.90000
-    5.90000    0.71000    2.90000
+    5.00000    0.71000    3.25000
+    5.90000    0.71000    3.25000
   
-rc_in_steel_pl_3mm  polygon  bedroom1:fin_b
+rc_in_steel_pl_3mm  polygon  master_br:fin_bh
 0 
 0 
  12
-    5.90300    0.72300    2.90000
     5.90300    0.72300    3.40000
     5.90300    0.71300    3.40000
-    5.90300    0.71300    2.90000
+    5.90300    0.71300    3.25000
+    5.90300    0.72300    3.25000
   
-rc_in_steel_pl_3mm  polygon  bedroom1:fin_c
+rc_in_steel_pl_3mm  polygon  master_br:fin_ch
 0 
 0 
  12
     5.05000    0.72600    3.40000
     5.90000    0.72600    3.40000
-    5.90000    0.72600    2.90000
-    5.05000    0.72600    2.90000
+    5.90000    0.72600    3.25000
+    5.05000    0.72600    3.25000
   
-rc_in_steel_pl_3mm  polygon  bedroom1:fin_d
+rc_in_steel_pl_3mm  polygon  master_br:fin_dh
 0 
 0 
  12
     5.05300    0.73500    3.40000
     5.05300    0.72300    3.40000
-    5.05300    0.72300    2.90000
-    5.05300    0.73500    2.90000
+    5.05300    0.72300    3.25000
+    5.05300    0.73500    3.25000
   
-rc_in_steel_pl_3mm  polygon  bedroom1:back_c
+rc_in_steel_pl_3mm  polygon  master_br:back_ch
 0 
 0 
  12
     6.00000    0.73200    3.40000
     5.05000    0.73200    3.40000
-    5.05000    0.73200    2.90000
-    6.00000    0.73200    2.90000
+    5.05000    0.73200    3.25000
+    6.00000    0.73200    3.25000
   
-rc_in_steel_pl_3mm  polygon  bedroom1:left
+rc_in_steel_pl_3mm  polygon  master_br:left_h
 0 
 0 
  12
     6.00300    0.75000    3.40000
     6.00300    0.73500    3.40000
-    6.00300    0.73500    2.90000
-    6.00300    0.75000    2.90000
+    6.00300    0.73500    3.25000
+    6.00300    0.75000    3.25000
   
-rc_in_steel_pl_3mm  polygon  bedroom1:rad_top
+rc_in_steel_pl_3mm  polygon  master_br:rad_top_h
 0 
 0 
  30
@@ -2730,7 +3465,187 @@ rc_in_steel_pl_3mm  polygon  bedroom1:rad_top
     6.00000    0.75000    3.40300
     4.80000    0.75000    3.40300
   
-rc_in_steel_pl_3mm  polygon  bedroom1:rad_base
+rc_in_steel_pl_3mm  polygon  master_br:face_m
+0 
+0 
+ 12
+    4.80000    0.75300    3.25000
+    6.00000    0.75300    3.25000
+    6.00000    0.75300    3.10000
+    4.80000    0.75300    3.10000
+  
+rc_in_steel_pl_3mm  polygon  master_br:right_m
+0 
+0 
+ 12
+    4.79700    0.73500    3.25000
+    4.79700    0.75000    3.25000
+    4.79700    0.75000    3.10000
+    4.79700    0.73500    3.10000
+  
+rc_in_steel_pl_3mm  polygon  master_br:back_am
+0 
+0 
+ 12
+    5.00000    0.73200    3.25000
+    4.80000    0.73200    3.25000
+    4.80000    0.73200    3.10000
+    5.00000    0.73200    3.10000
+  
+rc_in_steel_pl_3mm  polygon  master_br:back_bm
+0 
+0 
+ 12
+    4.99700    0.71300    3.25000
+    4.99700    0.73500    3.25000
+    4.99700    0.73500    3.10000
+    4.99700    0.71300    3.10000
+  
+rc_in_steel_pl_3mm  polygon  master_br:fin_am
+0 
+0 
+ 12
+    5.90000    0.71000    3.25000
+    5.00000    0.71000    3.25000
+    5.00000    0.71000    3.10000
+    5.90000    0.71000    3.10000
+  
+rc_in_steel_pl_3mm  polygon  master_br:fin_bm
+0 
+0 
+ 12
+    5.90300    0.72300    3.25000
+    5.90300    0.71300    3.25000
+    5.90300    0.71300    3.10000
+    5.90300    0.72300    3.10000
+  
+rc_in_steel_pl_3mm  polygon  master_br:fin_cm
+0 
+0 
+ 12
+    5.05000    0.72600    3.25000
+    5.90000    0.72600    3.25000
+    5.90000    0.72600    3.10000
+    5.05000    0.72600    3.10000
+  
+rc_in_steel_pl_3mm  polygon  master_br:fin_dm
+0 
+0 
+ 12
+    5.05300    0.73500    3.25000
+    5.05300    0.72300    3.25000
+    5.05300    0.72300    3.10000
+    5.05300    0.73500    3.10000
+  
+rc_in_steel_pl_3mm  polygon  master_br:back_cm
+0 
+0 
+ 12
+    6.00000    0.73200    3.25000
+    5.05000    0.73200    3.25000
+    5.05000    0.73200    3.10000
+    6.00000    0.73200    3.10000
+  
+rc_in_steel_pl_3mm  polygon  master_br:left_m
+0 
+0 
+ 12
+    6.00300    0.75000    3.25000
+    6.00300    0.73500    3.25000
+    6.00300    0.73500    3.10000
+    6.00300    0.75000    3.10000
+  
+rc_in_steel_pl_3mm  polygon  master_br:face_l
+0 
+0 
+ 12
+    4.80000    0.75300    3.10000
+    6.00000    0.75300    3.10000
+    6.00000    0.75300    2.90000
+    4.80000    0.75300    2.90000
+  
+rc_in_steel_pl_3mm  polygon  master_br:right_l
+0 
+0 
+ 12
+    4.79700    0.73500    3.10000
+    4.79700    0.75000    3.10000
+    4.79700    0.75000    2.90000
+    4.79700    0.73500    2.90000
+  
+rc_in_steel_pl_3mm  polygon  master_br:back_al
+0 
+0 
+ 12
+    5.00000    0.73200    3.10000
+    4.80000    0.73200    3.10000
+    4.80000    0.73200    2.90000
+    5.00000    0.73200    2.90000
+  
+rc_in_steel_pl_3mm  polygon  master_br:back_bl
+0 
+0 
+ 12
+    4.99700    0.71300    3.10000
+    4.99700    0.73500    3.10000
+    4.99700    0.73500    2.90000
+    4.99700    0.71300    2.90000
+  
+rc_in_steel_pl_3mm  polygon  master_br:fin_al
+0 
+0 
+ 12
+    5.90000    0.71000    3.10000
+    5.00000    0.71000    3.10000
+    5.00000    0.71000    2.90000
+    5.90000    0.71000    2.90000
+  
+rc_in_steel_pl_3mm  polygon  master_br:fin_bl
+0 
+0 
+ 12
+    5.90300    0.72300    3.10000
+    5.90300    0.71300    3.10000
+    5.90300    0.71300    2.90000
+    5.90300    0.72300    2.90000
+  
+rc_in_steel_pl_3mm  polygon  master_br:fin_cl
+0 
+0 
+ 12
+    5.05000    0.72600    3.10000
+    5.90000    0.72600    3.10000
+    5.90000    0.72600    2.90000
+    5.05000    0.72600    2.90000
+  
+rc_in_steel_pl_3mm  polygon  master_br:fin_dl
+0 
+0 
+ 12
+    5.05300    0.73500    3.10000
+    5.05300    0.72300    3.10000
+    5.05300    0.72300    2.90000
+    5.05300    0.73500    2.90000
+  
+rc_in_steel_pl_3mm  polygon  master_br:back_cl
+0 
+0 
+ 12
+    6.00000    0.73200    3.10000
+    5.05000    0.73200    3.10000
+    5.05000    0.73200    2.90000
+    6.00000    0.73200    2.90000
+  
+rc_in_steel_pl_3mm  polygon  master_br:left_l
+0 
+0 
+ 12
+    6.00300    0.75000    3.10000
+    6.00300    0.73500    3.10000
+    6.00300    0.73500    2.90000
+    6.00300    0.75000    2.90000
+  
+rc_in_steel_pl_3mm  polygon  master_br:rad_base_l
 0 
 0 
  30
@@ -2744,132 +3659,6 @@ rc_in_steel_pl_3mm  polygon  bedroom1:rad_base
     4.80000    0.75000    2.89700
     6.00000    0.75000    2.89700
     6.00000    0.73500    2.89700
-  
-rc_in_upholstery  polygon  bedroom1:aseat_mass
-0 
-0 
- 12
-    3.57000    1.79000    3.01700
-    3.57000    2.39000    3.01700
-    4.31000    2.39000    3.01700
-    4.31000    1.79000    3.01700
-  
-rc_in_upholstery  polygon  bedroom1:aseat_mass_
-0 
-0 
- 12
-    3.57000    2.39000    3.02300
-    3.57000    1.79000    3.02300
-    4.31000    1.79000    3.02300
-    4.31000    2.39000    3.02300
-  
-rc_in_upholstery  polygon  bedroom1:aarm_mass_l
-0 
-0 
- 12
-    4.38000    1.71700    3.46500
-    3.66000    1.71700    3.46500
-    3.66000    1.71700    3.01500
-    4.38000    1.71700    3.01500
-  
-rc_in_upholstery  polygon  bedroom1:aarm_mass_l_
-0 
-0 
- 12
-    3.66000    1.72300    3.46500
-    4.38000    1.72300    3.46500
-    4.38000    1.72300    3.01500
-    3.66000    1.72300    3.01500
-  
-rc_in_upholstery  polygon  bedroom1:aarm_mass_r
-0 
-0 
- 12
-    4.38000    2.38700    3.46500
-    3.66000    2.38700    3.46500
-    3.66000    2.38700    3.01500
-    4.38000    2.38700    3.01500
-  
-rc_in_upholstery  polygon  bedroom1:aarm_mass_r_
-0 
-0 
- 12
-    3.66000    2.39300    3.46500
-    4.38000    2.39300    3.46500
-    4.38000    2.39300    3.01500
-    3.66000    2.39300    3.01500
-  
-rc_in_door  polygon  bedroom1:bbase_mass
-0 
-0 
- 12
-    4.86000    4.56000    3.13700
-    6.16000    4.56000    3.13700
-    6.16000    2.76000    3.13700
-    4.86000    2.76000    3.13700
-  
-rc_in_door  polygon  bedroom1:bbase_mass_
-0 
-0 
- 12
-    6.16000    4.56000    3.14300
-    4.86000    4.56000    3.14300
-    4.86000    2.76000    3.14300
-    6.16000    2.76000    3.14300
-  
-rc_in_upholstery  polygon  bedroom1:bmatress
-0 
-0 
- 12
-    4.86000    4.56000    3.33700
-    6.16000    4.56000    3.33700
-    6.16000    2.76000    3.33700
-    4.86000    2.76000    3.33700
-  
-rc_in_upholstery  polygon  bedroom1:bmatress_
-0 
-0 
- 12
-    6.16000    4.56000    3.34300
-    4.86000    4.56000    3.34300
-    4.86000    2.76000    3.34300
-    6.16000    2.76000    3.34300
-  
-rc_in_furn_wd10mm  polygon  bedroom1:cbil_lft
-0 
-0 
- 12
-    6.80500    4.69800    4.80500
-    7.05500    4.69800    4.80500
-    7.05500    4.69800    2.80500
-    6.80500    4.69800    2.80500
-  
-rc_in_furn_wd10mm  polygon  bedroom1:cbil_lft_
-0 
-0 
- 12
-    7.05500    4.69200    4.80500
-    6.80500    4.69200    4.80500
-    6.80500    4.69200    2.80500
-    7.05500    4.69200    2.80500
-  
-rc_in_furn_wd10mm  polygon  bedroom1:cbil_rt
-0 
-0 
- 12
-    6.80500    4.32800    4.80500
-    7.05500    4.32800    4.80500
-    7.05500    4.32800    2.80500
-    6.80500    4.32800    2.80500
-  
-rc_in_furn_wd10mm  polygon  bedroom1:cbil_rt_
-0 
-0 
- 12
-    7.05500    4.32200    4.80500
-    6.80500    4.32200    4.80500
-    6.80500    4.32200    2.80500
-    7.05500    4.32200    2.80500
   
 # bedroom3 Surface defs..
   
@@ -3018,258 +3807,6 @@ rc_in_int_part  polygon  bedroom3:ptn_hall
     2.30000    3.69700    2.80000
     2.60000    3.69700    2.80000
   
-rc_in_steel_pl_3mm  polygon  bedroom3:base_rad
-0 
-0 
- 66
-    2.88000    1.40000    3.00300
-    2.80000    1.40000    3.00300
-    2.80000    1.36500    3.00300
-    2.78000    1.40000    3.00300
-    2.70000    1.40000    3.00300
-    2.70000    1.36500    3.00300
-    2.68000    1.40000    3.00300
-    2.60000    1.40000    3.00300
-    2.60000    1.36500    3.00300
-    2.58000    1.40000    3.00300
-    2.50000    1.40000    3.00300
-    2.50000    1.36500    3.00300
-    2.48000    1.40000    3.00300
-    2.40000    1.40000    3.00300
-    2.40000    1.36500    3.00300
-    2.38000    1.40000    3.00300
-    2.30000    1.40000    3.00300
-    2.30000    1.41500    3.00300
-    3.00000    1.41500    3.00300
-    3.00000    1.40000    3.00300
-    2.90000    1.40000    3.00300
-    2.90000    1.36500    3.00300
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:top_rad
-0 
-0 
- 66
-    2.90000    1.36500    3.59700
-    2.90000    1.40000    3.59700
-    3.00000    1.40000    3.59700
-    3.00000    1.41500    3.59700
-    2.30000    1.41500    3.59700
-    2.30000    1.40000    3.59700
-    2.38000    1.40000    3.59700
-    2.40000    1.36500    3.59700
-    2.40000    1.40000    3.59700
-    2.48000    1.40000    3.59700
-    2.50000    1.36500    3.59700
-    2.50000    1.40000    3.59700
-    2.58000    1.40000    3.59700
-    2.60000    1.36500    3.59700
-    2.60000    1.40000    3.59700
-    2.68000    1.40000    3.59700
-    2.70000    1.36500    3.59700
-    2.70000    1.40000    3.59700
-    2.78000    1.40000    3.59700
-    2.80000    1.36500    3.59700
-    2.80000    1.40000    3.59700
-    2.88000    1.40000    3.59700
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_2rad
-0 
-0 
- 12
-    2.88000    1.39700    3.60000
-    2.80000    1.39700    3.60000
-    2.80000    1.39700    3.00000
-    2.88000    1.39700    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_3rad
-0 
-0 
- 12
-    2.80300    1.40000    3.60000
-    2.80300    1.36500    3.60000
-    2.80300    1.36500    3.00000
-    2.80300    1.40000    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_4rad
-0 
-0 
- 12
-    2.79740    1.36351    3.60000
-    2.77740    1.39851    3.60000
-    2.77740    1.39851    3.00000
-    2.79740    1.36351    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_5rad
-0 
-0 
- 12
-    2.78000    1.39700    3.60000
-    2.70000    1.39700    3.60000
-    2.70000    1.39700    3.00000
-    2.78000    1.39700    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_6rad
-0 
-0 
- 12
-    2.70300    1.40000    3.60000
-    2.70300    1.36500    3.60000
-    2.70300    1.36500    3.00000
-    2.70300    1.40000    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_7rad
-0 
-0 
- 12
-    2.69740    1.36351    3.60000
-    2.67740    1.39851    3.60000
-    2.67740    1.39851    3.00000
-    2.69740    1.36351    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_8rad
-0 
-0 
- 12
-    2.68000    1.39700    3.60000
-    2.60000    1.39700    3.60000
-    2.60000    1.39700    3.00000
-    2.68000    1.39700    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_9rad
-0 
-0 
- 12
-    2.60300    1.40000    3.60000
-    2.60300    1.36500    3.60000
-    2.60300    1.36500    3.00000
-    2.60300    1.40000    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_10rad
-0 
-0 
- 12
-    2.59740    1.36351    3.60000
-    2.57740    1.39851    3.60000
-    2.57740    1.39851    3.00000
-    2.59740    1.36351    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_11rad
-0 
-0 
- 12
-    2.58000    1.39700    3.60000
-    2.50000    1.39700    3.60000
-    2.50000    1.39700    3.00000
-    2.58000    1.39700    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_12rad
-0 
-0 
- 12
-    2.50300    1.40000    3.60000
-    2.50300    1.36500    3.60000
-    2.50300    1.36500    3.00000
-    2.50300    1.40000    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_13rad
-0 
-0 
- 12
-    2.49740    1.36351    3.60000
-    2.47740    1.39851    3.60000
-    2.47740    1.39851    3.00000
-    2.49740    1.36351    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_14rad
-0 
-0 
- 12
-    2.48000    1.39700    3.60000
-    2.40000    1.39700    3.60000
-    2.40000    1.39700    3.00000
-    2.48000    1.39700    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_15rad
-0 
-0 
- 12
-    2.40300    1.40000    3.60000
-    2.40300    1.36500    3.60000
-    2.40300    1.36500    3.00000
-    2.40300    1.40000    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_16rad
-0 
-0 
- 12
-    2.39740    1.36351    3.60000
-    2.37740    1.39851    3.60000
-    2.37740    1.39851    3.00000
-    2.39740    1.36351    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_17rad
-0 
-0 
- 12
-    2.38000    1.39700    3.60000
-    2.30000    1.39700    3.60000
-    2.30000    1.39700    3.00000
-    2.38000    1.39700    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_18rad
-0 
-0 
- 12
-    2.29700    1.40000    3.60000
-    2.29700    1.41500    3.60000
-    2.29700    1.41500    3.00000
-    2.29700    1.40000    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_19rad
-0 
-0 
- 12
-    2.30000    1.41800    3.60000
-    3.00000    1.41800    3.60000
-    3.00000    1.41800    3.00000
-    2.30000    1.41800    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_20rad
-0 
-0 
- 12
-    3.00300    1.41500    3.60000
-    3.00300    1.40000    3.60000
-    3.00300    1.40000    3.00000
-    3.00300    1.41500    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_21rad
-0 
-0 
- 12
-    3.00000    1.39700    3.60000
-    2.90000    1.39700    3.60000
-    2.90000    1.39700    3.00000
-    3.00000    1.39700    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_22rad
-0 
-0 
- 12
-    2.90300    1.40000    3.60000
-    2.90300    1.36500    3.60000
-    2.90300    1.36500    3.00000
-    2.90300    1.40000    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom3:edg_23rad
-0 
-0 
- 12
-    2.89740    1.36351    3.60000
-    2.87740    1.39851    3.60000
-    2.87740    1.39851    3.00000
-    2.89740    1.36351    3.00000
-  
 rc_in_door  polygon  bedroom3:abase_mass
 0 
 0 
@@ -3305,6 +3842,654 @@ rc_in_upholstery  polygon  bedroom3:amatress_
     1.41000    3.21000    3.34300
     1.41000    1.41000    3.34300
     2.25000    1.41000    3.34300
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:top_rad_h
+0 
+0 
+ 66
+    2.90000    1.36500    3.59700
+    2.90000    1.40000    3.59700
+    3.00000    1.40000    3.59700
+    3.00000    1.41500    3.59700
+    2.30000    1.41500    3.59700
+    2.30000    1.40000    3.59700
+    2.38000    1.40000    3.59700
+    2.40000    1.36500    3.59700
+    2.40000    1.40000    3.59700
+    2.48000    1.40000    3.59700
+    2.50000    1.36500    3.59700
+    2.50000    1.40000    3.59700
+    2.58000    1.40000    3.59700
+    2.60000    1.36500    3.59700
+    2.60000    1.40000    3.59700
+    2.68000    1.40000    3.59700
+    2.70000    1.36500    3.59700
+    2.70000    1.40000    3.59700
+    2.78000    1.40000    3.59700
+    2.80000    1.36500    3.59700
+    2.80000    1.40000    3.59700
+    2.88000    1.40000    3.59700
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_2rad_h
+0 
+0 
+ 12
+    2.88000    1.39700    3.60000
+    2.80000    1.39700    3.60000
+    2.80000    1.39700    3.40000
+    2.88000    1.39700    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_3rad_h
+0 
+0 
+ 12
+    2.80300    1.40000    3.60000
+    2.80300    1.36500    3.60000
+    2.80300    1.36500    3.40000
+    2.80300    1.40000    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_4rad_h
+0 
+0 
+ 12
+    2.79740    1.36351    3.60000
+    2.77740    1.39851    3.60000
+    2.77740    1.39851    3.40000
+    2.79740    1.36351    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_5rad_h
+0 
+0 
+ 12
+    2.78000    1.39700    3.60000
+    2.70000    1.39700    3.60000
+    2.70000    1.39700    3.40000
+    2.78000    1.39700    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_6rad_h
+0 
+0 
+ 12
+    2.70300    1.40000    3.60000
+    2.70300    1.36500    3.60000
+    2.70300    1.36500    3.40000
+    2.70300    1.40000    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_7rad_h
+0 
+0 
+ 12
+    2.69740    1.36351    3.60000
+    2.67740    1.39851    3.60000
+    2.67740    1.39851    3.40000
+    2.69740    1.36351    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_8rad_h
+0 
+0 
+ 12
+    2.68000    1.39700    3.60000
+    2.60000    1.39700    3.60000
+    2.60000    1.39700    3.40000
+    2.68000    1.39700    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_9rad_h
+0 
+0 
+ 12
+    2.60300    1.40000    3.60000
+    2.60300    1.36500    3.60000
+    2.60300    1.36500    3.40000
+    2.60300    1.40000    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_10rad_h
+0 
+0 
+ 12
+    2.59740    1.36351    3.60000
+    2.57740    1.39851    3.60000
+    2.57740    1.39851    3.40000
+    2.59740    1.36351    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_11rad_h
+0 
+0 
+ 12
+    2.58000    1.39700    3.60000
+    2.50000    1.39700    3.60000
+    2.50000    1.39700    3.40000
+    2.58000    1.39700    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_12rad_h
+0 
+0 
+ 12
+    2.50300    1.40000    3.60000
+    2.50300    1.36500    3.60000
+    2.50300    1.36500    3.40000
+    2.50300    1.40000    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_13rad_h
+0 
+0 
+ 12
+    2.49740    1.36351    3.60000
+    2.47740    1.39851    3.60000
+    2.47740    1.39851    3.40000
+    2.49740    1.36351    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_14rad_h
+0 
+0 
+ 12
+    2.48000    1.39700    3.60000
+    2.40000    1.39700    3.60000
+    2.40000    1.39700    3.40000
+    2.48000    1.39700    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_15rad_h
+0 
+0 
+ 12
+    2.40300    1.40000    3.60000
+    2.40300    1.36500    3.60000
+    2.40300    1.36500    3.40000
+    2.40300    1.40000    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_16rad_h
+0 
+0 
+ 12
+    2.39740    1.36351    3.60000
+    2.37740    1.39851    3.60000
+    2.37740    1.39851    3.40000
+    2.39740    1.36351    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_17rad_h
+0 
+0 
+ 12
+    2.38000    1.39700    3.60000
+    2.30000    1.39700    3.60000
+    2.30000    1.39700    3.40000
+    2.38000    1.39700    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_18rad_h
+0 
+0 
+ 12
+    2.29700    1.40000    3.60000
+    2.29700    1.41500    3.60000
+    2.29700    1.41500    3.40000
+    2.29700    1.40000    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_19rad_h
+0 
+0 
+ 12
+    2.30000    1.41800    3.60000
+    3.00000    1.41800    3.60000
+    3.00000    1.41800    3.40000
+    2.30000    1.41800    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_20rad_h
+0 
+0 
+ 12
+    3.00300    1.41500    3.60000
+    3.00300    1.40000    3.60000
+    3.00300    1.40000    3.40000
+    3.00300    1.41500    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_21rad_h
+0 
+0 
+ 12
+    3.00000    1.39700    3.60000
+    2.90000    1.39700    3.60000
+    2.90000    1.39700    3.40000
+    3.00000    1.39700    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_22rad_h
+0 
+0 
+ 12
+    2.90300    1.40000    3.60000
+    2.90300    1.36500    3.60000
+    2.90300    1.36500    3.40000
+    2.90300    1.40000    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_23rad_h
+0 
+0 
+ 12
+    2.89740    1.36351    3.60000
+    2.87740    1.39851    3.60000
+    2.87740    1.39851    3.40000
+    2.89740    1.36351    3.40000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_2rad_m
+0 
+0 
+ 12
+    2.88000    1.39700    3.40000
+    2.80000    1.39700    3.40000
+    2.80000    1.39700    3.20000
+    2.88000    1.39700    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_3rad_m
+0 
+0 
+ 12
+    2.80300    1.40000    3.40000
+    2.80300    1.36500    3.40000
+    2.80300    1.36500    3.20000
+    2.80300    1.40000    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_4rad_m
+0 
+0 
+ 12
+    2.79740    1.36351    3.40000
+    2.77740    1.39851    3.40000
+    2.77740    1.39851    3.20000
+    2.79740    1.36351    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_5rad_m
+0 
+0 
+ 12
+    2.78000    1.39700    3.40000
+    2.70000    1.39700    3.40000
+    2.70000    1.39700    3.20000
+    2.78000    1.39700    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_6rad_m
+0 
+0 
+ 12
+    2.70300    1.40000    3.40000
+    2.70300    1.36500    3.40000
+    2.70300    1.36500    3.20000
+    2.70300    1.40000    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_7rad_m
+0 
+0 
+ 12
+    2.69740    1.36351    3.40000
+    2.67740    1.39851    3.40000
+    2.67740    1.39851    3.20000
+    2.69740    1.36351    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_8rad_m
+0 
+0 
+ 12
+    2.68000    1.39700    3.40000
+    2.60000    1.39700    3.40000
+    2.60000    1.39700    3.20000
+    2.68000    1.39700    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_9rad_m
+0 
+0 
+ 12
+    2.60300    1.40000    3.40000
+    2.60300    1.36500    3.40000
+    2.60300    1.36500    3.20000
+    2.60300    1.40000    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_10rad_m
+0 
+0 
+ 12
+    2.59740    1.36351    3.40000
+    2.57740    1.39851    3.40000
+    2.57740    1.39851    3.20000
+    2.59740    1.36351    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_11rad_m
+0 
+0 
+ 12
+    2.58000    1.39700    3.40000
+    2.50000    1.39700    3.40000
+    2.50000    1.39700    3.20000
+    2.58000    1.39700    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_12rad_m
+0 
+0 
+ 12
+    2.50300    1.40000    3.40000
+    2.50300    1.36500    3.40000
+    2.50300    1.36500    3.20000
+    2.50300    1.40000    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_13rad_m
+0 
+0 
+ 12
+    2.49740    1.36351    3.40000
+    2.47740    1.39851    3.40000
+    2.47740    1.39851    3.20000
+    2.49740    1.36351    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_14rad_m
+0 
+0 
+ 12
+    2.48000    1.39700    3.40000
+    2.40000    1.39700    3.40000
+    2.40000    1.39700    3.20000
+    2.48000    1.39700    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_15rad_m
+0 
+0 
+ 12
+    2.40300    1.40000    3.40000
+    2.40300    1.36500    3.40000
+    2.40300    1.36500    3.20000
+    2.40300    1.40000    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_16rad_m
+0 
+0 
+ 12
+    2.39740    1.36351    3.40000
+    2.37740    1.39851    3.40000
+    2.37740    1.39851    3.20000
+    2.39740    1.36351    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_17rad_m
+0 
+0 
+ 12
+    2.38000    1.39700    3.40000
+    2.30000    1.39700    3.40000
+    2.30000    1.39700    3.20000
+    2.38000    1.39700    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_18rad_m
+0 
+0 
+ 12
+    2.29700    1.40000    3.40000
+    2.29700    1.41500    3.40000
+    2.29700    1.41500    3.20000
+    2.29700    1.40000    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_19rad_m
+0 
+0 
+ 12
+    2.30000    1.41800    3.40000
+    3.00000    1.41800    3.40000
+    3.00000    1.41800    3.20000
+    2.30000    1.41800    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_20rad_m
+0 
+0 
+ 12
+    3.00300    1.41500    3.40000
+    3.00300    1.40000    3.40000
+    3.00300    1.40000    3.20000
+    3.00300    1.41500    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_21rad_m
+0 
+0 
+ 12
+    3.00000    1.39700    3.40000
+    2.90000    1.39700    3.40000
+    2.90000    1.39700    3.20000
+    3.00000    1.39700    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_22rad_m
+0 
+0 
+ 12
+    2.90300    1.40000    3.40000
+    2.90300    1.36500    3.40000
+    2.90300    1.36500    3.20000
+    2.90300    1.40000    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_23rad_m
+0 
+0 
+ 12
+    2.89740    1.36351    3.40000
+    2.87740    1.39851    3.40000
+    2.87740    1.39851    3.20000
+    2.89740    1.36351    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:base_rad_l
+0 
+0 
+ 66
+    2.88000    1.40000    3.00300
+    2.80000    1.40000    3.00300
+    2.80000    1.36500    3.00300
+    2.78000    1.40000    3.00300
+    2.70000    1.40000    3.00300
+    2.70000    1.36500    3.00300
+    2.68000    1.40000    3.00300
+    2.60000    1.40000    3.00300
+    2.60000    1.36500    3.00300
+    2.58000    1.40000    3.00300
+    2.50000    1.40000    3.00300
+    2.50000    1.36500    3.00300
+    2.48000    1.40000    3.00300
+    2.40000    1.40000    3.00300
+    2.40000    1.36500    3.00300
+    2.38000    1.40000    3.00300
+    2.30000    1.40000    3.00300
+    2.30000    1.41500    3.00300
+    3.00000    1.41500    3.00300
+    3.00000    1.40000    3.00300
+    2.90000    1.40000    3.00300
+    2.90000    1.36500    3.00300
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_2rad_l
+0 
+0 
+ 12
+    2.88000    1.39700    3.20000
+    2.80000    1.39700    3.20000
+    2.80000    1.39700    3.00000
+    2.88000    1.39700    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_3rad_l
+0 
+0 
+ 12
+    2.80300    1.40000    3.20000
+    2.80300    1.36500    3.20000
+    2.80300    1.36500    3.00000
+    2.80300    1.40000    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_4rad_l
+0 
+0 
+ 12
+    2.79740    1.36351    3.20000
+    2.77740    1.39851    3.20000
+    2.77740    1.39851    3.00000
+    2.79740    1.36351    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_5rad_l
+0 
+0 
+ 12
+    2.78000    1.39700    3.20000
+    2.70000    1.39700    3.20000
+    2.70000    1.39700    3.00000
+    2.78000    1.39700    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_6rad_l
+0 
+0 
+ 12
+    2.70300    1.40000    3.20000
+    2.70300    1.36500    3.20000
+    2.70300    1.36500    3.00000
+    2.70300    1.40000    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_7rad_l
+0 
+0 
+ 12
+    2.69740    1.36351    3.20000
+    2.67740    1.39851    3.20000
+    2.67740    1.39851    3.00000
+    2.69740    1.36351    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_8rad_l
+0 
+0 
+ 12
+    2.68000    1.39700    3.20000
+    2.60000    1.39700    3.20000
+    2.60000    1.39700    3.00000
+    2.68000    1.39700    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_9rad_l
+0 
+0 
+ 12
+    2.60300    1.40000    3.20000
+    2.60300    1.36500    3.20000
+    2.60300    1.36500    3.00000
+    2.60300    1.40000    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_10rad_l
+0 
+0 
+ 12
+    2.59740    1.36351    3.20000
+    2.57740    1.39851    3.20000
+    2.57740    1.39851    3.00000
+    2.59740    1.36351    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_11rad_l
+0 
+0 
+ 12
+    2.58000    1.39700    3.20000
+    2.50000    1.39700    3.20000
+    2.50000    1.39700    3.00000
+    2.58000    1.39700    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_12rad_l
+0 
+0 
+ 12
+    2.50300    1.40000    3.20000
+    2.50300    1.36500    3.20000
+    2.50300    1.36500    3.00000
+    2.50300    1.40000    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_13rad_l
+0 
+0 
+ 12
+    2.49740    1.36351    3.20000
+    2.47740    1.39851    3.20000
+    2.47740    1.39851    3.00000
+    2.49740    1.36351    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_14rad_l
+0 
+0 
+ 12
+    2.48000    1.39700    3.20000
+    2.40000    1.39700    3.20000
+    2.40000    1.39700    3.00000
+    2.48000    1.39700    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_15rad_l
+0 
+0 
+ 12
+    2.40300    1.40000    3.20000
+    2.40300    1.36500    3.20000
+    2.40300    1.36500    3.00000
+    2.40300    1.40000    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_16rad_l
+0 
+0 
+ 12
+    2.39740    1.36351    3.20000
+    2.37740    1.39851    3.20000
+    2.37740    1.39851    3.00000
+    2.39740    1.36351    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_17rad_l
+0 
+0 
+ 12
+    2.38000    1.39700    3.20000
+    2.30000    1.39700    3.20000
+    2.30000    1.39700    3.00000
+    2.38000    1.39700    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_18rad_l
+0 
+0 
+ 12
+    2.29700    1.40000    3.20000
+    2.29700    1.41500    3.20000
+    2.29700    1.41500    3.00000
+    2.29700    1.40000    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_19rad_l
+0 
+0 
+ 12
+    2.30000    1.41800    3.20000
+    3.00000    1.41800    3.20000
+    3.00000    1.41800    3.00000
+    2.30000    1.41800    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_20rad_l
+0 
+0 
+ 12
+    3.00300    1.41500    3.20000
+    3.00300    1.40000    3.20000
+    3.00300    1.40000    3.00000
+    3.00300    1.41500    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_21rad_l
+0 
+0 
+ 12
+    3.00000    1.39700    3.20000
+    2.90000    1.39700    3.20000
+    2.90000    1.39700    3.00000
+    3.00000    1.39700    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_22rad_l
+0 
+0 
+ 12
+    2.90300    1.40000    3.20000
+    2.90300    1.36500    3.20000
+    2.90300    1.36500    3.00000
+    2.90300    1.40000    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom3:edg_23rad_l
+0 
+0 
+ 12
+    2.89740    1.36351    3.20000
+    2.87740    1.39851    3.20000
+    2.87740    1.39851    3.00000
+    2.89740    1.36351    3.00000
   
 # bedroom2 Surface defs..
   
@@ -3484,126 +4669,6 @@ rc_in_sash_fr74mm  polygon  bedroom2:frm_glaz
     4.40000    8.49700    3.50000
     6.10000    8.49700    3.50000
   
-rc_in_steel_pl_3mm  polygon  bedroom2:face
-0 
-0 
- 12
-    5.90000    8.39700    3.50000
-    4.80000    8.39700    3.50000
-    4.80000    8.39700    3.00000
-    5.90000    8.39700    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom2:right_r
-0 
-0 
- 12
-    5.90300    8.41500    3.50000
-    5.90300    8.40000    3.50000
-    5.90300    8.40000    3.00000
-    5.90300    8.41500    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom2:back_a
-0 
-0 
- 12
-    5.80000    8.41800    3.50000
-    5.90000    8.41800    3.50000
-    5.90000    8.41800    3.00000
-    5.80000    8.41800    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom2:back_b
-0 
-0 
- 12
-    5.80300    8.44000    3.50000
-    5.80300    8.41500    3.50000
-    5.80300    8.41500    3.00000
-    5.80300    8.44000    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom2:fin_a
-0 
-0 
- 12
-    4.90000    8.44300    3.50000
-    5.80000    8.44300    3.50000
-    5.80000    8.44300    3.00000
-    4.90000    8.44300    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom2:fin_b
-0 
-0 
- 12
-    4.89700    8.42800    3.50000
-    4.89700    8.44000    3.50000
-    4.89700    8.44000    3.00000
-    4.89700    8.42800    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom2:fin_c
-0 
-0 
- 12
-    5.75000    8.42500    3.50000
-    4.90000    8.42500    3.50000
-    4.90000    8.42500    3.00000
-    5.75000    8.42500    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom2:fin_d
-0 
-0 
- 12
-    5.74700    8.41500    3.50000
-    5.74700    8.42800    3.50000
-    5.74700    8.42800    3.00000
-    5.74700    8.41500    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom2:back_c
-0 
-0 
- 12
-    4.80000    8.41800    3.50000
-    5.75000    8.41800    3.50000
-    5.75000    8.41800    3.00000
-    4.80000    8.41800    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom2:left_rad
-0 
-0 
- 12
-    4.79700    8.40000    3.50000
-    4.79700    8.41500    3.50000
-    4.79700    8.41500    3.00000
-    4.79700    8.40000    3.00000
-  
-rc_in_steel_pl_3mm  polygon  bedroom2:rad_top
-0 
-0 
- 30
-    5.90000    8.41500    3.50300
-    5.80000    8.41500    3.50300
-    5.80000    8.44000    3.50300
-    4.90000    8.44000    3.50300
-    4.90000    8.42800    3.50300
-    5.75000    8.42800    3.50300
-    5.75000    8.41500    3.50300
-    4.80000    8.41500    3.50300
-    4.80000    8.40000    3.50300
-    5.90000    8.40000    3.50300
-  
-rc_in_steel_pl_3mm  polygon  bedroom2:rad_base
-0 
-0 
- 30
-    5.75000    8.41500    2.99700
-    5.75000    8.42800    2.99700
-    4.90000    8.42800    2.99700
-    4.90000    8.44000    2.99700
-    5.80000    8.44000    2.99700
-    5.80000    8.41500    2.99700
-    5.90000    8.41500    2.99700
-    5.90000    8.40000    2.99700
-    4.80000    8.40000    2.99700
-    4.80000    8.41500    2.99700
-  
 rc_in_furn_wd10mm  polygon  bedroom2:abil_lft
 0 
 0 
@@ -3711,6 +4776,306 @@ rc_in_upholstery  polygon  bedroom2:bstback_
     6.65591    8.20332    3.85530
     6.62377    8.16501    3.36530
     6.98381    7.86290    3.36530
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:face_h
+0 
+0 
+ 12
+    5.90000    8.39700    3.50000
+    4.80000    8.39700    3.50000
+    4.80000    8.39700    3.35000
+    5.90000    8.39700    3.35000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:right_h
+0 
+0 
+ 12
+    5.90300    8.41500    3.50000
+    5.90300    8.40000    3.50000
+    5.90300    8.40000    3.35000
+    5.90300    8.41500    3.35000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:back_ah
+0 
+0 
+ 12
+    5.80000    8.41800    3.50000
+    5.90000    8.41800    3.50000
+    5.90000    8.41800    3.35000
+    5.80000    8.41800    3.35000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:back_bh
+0 
+0 
+ 12
+    5.80300    8.44000    3.50000
+    5.80300    8.41500    3.50000
+    5.80300    8.41500    3.35000
+    5.80300    8.44000    3.35000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:fin_ah
+0 
+0 
+ 12
+    4.90000    8.44300    3.50000
+    5.80000    8.44300    3.50000
+    5.80000    8.44300    3.35000
+    4.90000    8.44300    3.35000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:fin_bh
+0 
+0 
+ 12
+    4.89700    8.42800    3.50000
+    4.89700    8.44000    3.50000
+    4.89700    8.44000    3.35000
+    4.89700    8.42800    3.35000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:fin_ch
+0 
+0 
+ 12
+    5.75000    8.42500    3.50000
+    4.90000    8.42500    3.50000
+    4.90000    8.42500    3.35000
+    5.75000    8.42500    3.35000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:fin_dh
+0 
+0 
+ 12
+    5.74700    8.41500    3.50000
+    5.74700    8.42800    3.50000
+    5.74700    8.42800    3.35000
+    5.74700    8.41500    3.35000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:back_ch
+0 
+0 
+ 12
+    4.80000    8.41800    3.50000
+    5.75000    8.41800    3.50000
+    5.75000    8.41800    3.35000
+    4.80000    8.41800    3.35000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:left_h
+0 
+0 
+ 12
+    4.79700    8.40000    3.50000
+    4.79700    8.41500    3.50000
+    4.79700    8.41500    3.35000
+    4.79700    8.40000    3.35000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:rad_top_h
+0 
+0 
+ 30
+    5.90000    8.41500    3.50300
+    5.80000    8.41500    3.50300
+    5.80000    8.44000    3.50300
+    4.90000    8.44000    3.50300
+    4.90000    8.42800    3.50300
+    5.75000    8.42800    3.50300
+    5.75000    8.41500    3.50300
+    4.80000    8.41500    3.50300
+    4.80000    8.40000    3.50300
+    5.90000    8.40000    3.50300
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:face_m
+0 
+0 
+ 12
+    5.90000    8.39700    3.35000
+    4.80000    8.39700    3.35000
+    4.80000    8.39700    3.20000
+    5.90000    8.39700    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:right_m
+0 
+0 
+ 12
+    5.90300    8.41500    3.35000
+    5.90300    8.40000    3.35000
+    5.90300    8.40000    3.20000
+    5.90300    8.41500    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:back_am
+0 
+0 
+ 12
+    5.80000    8.41800    3.35000
+    5.90000    8.41800    3.35000
+    5.90000    8.41800    3.20000
+    5.80000    8.41800    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:back_bm
+0 
+0 
+ 12
+    5.80300    8.44000    3.35000
+    5.80300    8.41500    3.35000
+    5.80300    8.41500    3.20000
+    5.80300    8.44000    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:fin_am
+0 
+0 
+ 12
+    4.90000    8.44300    3.35000
+    5.80000    8.44300    3.35000
+    5.80000    8.44300    3.20000
+    4.90000    8.44300    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:fin_bm
+0 
+0 
+ 12
+    4.89700    8.42800    3.35000
+    4.89700    8.44000    3.35000
+    4.89700    8.44000    3.20000
+    4.89700    8.42800    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:fin_cm
+0 
+0 
+ 12
+    5.75000    8.42500    3.35000
+    4.90000    8.42500    3.35000
+    4.90000    8.42500    3.20000
+    5.75000    8.42500    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:fin_dm
+0 
+0 
+ 12
+    5.74700    8.41500    3.35000
+    5.74700    8.42800    3.35000
+    5.74700    8.42800    3.20000
+    5.74700    8.41500    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:back_cm
+0 
+0 
+ 12
+    4.80000    8.41800    3.35000
+    5.75000    8.41800    3.35000
+    5.75000    8.41800    3.20000
+    4.80000    8.41800    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:left_m
+0 
+0 
+ 12
+    4.79700    8.40000    3.35000
+    4.79700    8.41500    3.35000
+    4.79700    8.41500    3.20000
+    4.79700    8.40000    3.20000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:face_l
+0 
+0 
+ 12
+    5.90000    8.39700    3.20000
+    4.80000    8.39700    3.20000
+    4.80000    8.39700    3.00000
+    5.90000    8.39700    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:right_l
+0 
+0 
+ 12
+    5.90300    8.41500    3.20000
+    5.90300    8.40000    3.20000
+    5.90300    8.40000    3.00000
+    5.90300    8.41500    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:back_al
+0 
+0 
+ 12
+    5.80000    8.41800    3.20000
+    5.90000    8.41800    3.20000
+    5.90000    8.41800    3.00000
+    5.80000    8.41800    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:back_bl
+0 
+0 
+ 12
+    5.80300    8.44000    3.20000
+    5.80300    8.41500    3.20000
+    5.80300    8.41500    3.00000
+    5.80300    8.44000    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:fin_al
+0 
+0 
+ 12
+    4.90000    8.44300    3.20000
+    5.80000    8.44300    3.20000
+    5.80000    8.44300    3.00000
+    4.90000    8.44300    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:fin_bl
+0 
+0 
+ 12
+    4.89700    8.42800    3.20000
+    4.89700    8.44000    3.20000
+    4.89700    8.44000    3.00000
+    4.89700    8.42800    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:fin_cl
+0 
+0 
+ 12
+    5.75000    8.42500    3.20000
+    4.90000    8.42500    3.20000
+    4.90000    8.42500    3.00000
+    5.75000    8.42500    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:fin_dl
+0 
+0 
+ 12
+    5.74700    8.41500    3.20000
+    5.74700    8.42800    3.20000
+    5.74700    8.42800    3.00000
+    5.74700    8.41500    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:back_cl
+0 
+0 
+ 12
+    4.80000    8.41800    3.20000
+    5.75000    8.41800    3.20000
+    5.75000    8.41800    3.00000
+    4.80000    8.41800    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:leftl
+0 
+0 
+ 12
+    4.79700    8.40000    3.20000
+    4.79700    8.41500    3.20000
+    4.79700    8.41500    3.00000
+    4.79700    8.40000    3.00000
+  
+rc_in_steel_pl_3mm  polygon  bedroom2:rad_base_l
+0 
+0 
+ 30
+    5.75000    8.41500    2.99700
+    5.75000    8.42800    2.99700
+    4.90000    8.42800    2.99700
+    4.90000    8.44000    2.99700
+    5.80000    8.44000    2.99700
+    5.80000    8.41500    2.99700
+    5.90000    8.41500    2.99700
+    5.90000    8.40000    2.99700
+    4.80000    8.40000    2.99700
+    4.80000    8.41500    2.99700
   
 # bath Surface defs..
   
@@ -6151,36 +7516,36 @@ rc_in_steel_pl_3mm  polygon  rad_bath:edg_23rad
     1.89740    8.34851    3.00000
     1.91740    8.31351    3.00000
   
-# rad_br3 Surface defs..
+# rad_br3_h Surface defs..
   
-rc_in_steel_pl_3mm  polygon  rad_br3:base_rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:base_rad_h
 0 
 0 
  66
-    3.00000    1.40000    2.99700
-    3.00000    1.41500    2.99700
-    2.30000    1.41500    2.99700
-    2.30000    1.40000    2.99700
-    2.38000    1.40000    2.99700
-    2.40000    1.36500    2.99700
-    2.40000    1.40000    2.99700
-    2.48000    1.40000    2.99700
-    2.50000    1.36500    2.99700
-    2.50000    1.40000    2.99700
-    2.58000    1.40000    2.99700
-    2.60000    1.36500    2.99700
-    2.60000    1.40000    2.99700
-    2.68000    1.40000    2.99700
-    2.70000    1.36500    2.99700
-    2.70000    1.40000    2.99700
-    2.78000    1.40000    2.99700
-    2.80000    1.36500    2.99700
-    2.80000    1.40000    2.99700
-    2.88000    1.40000    2.99700
-    2.90000    1.36500    2.99700
-    2.90000    1.40000    2.99700
+    3.00000    1.40000    3.39700
+    3.00000    1.41500    3.39700
+    2.30000    1.41500    3.39700
+    2.30000    1.40000    3.39700
+    2.38000    1.40000    3.39700
+    2.40000    1.36500    3.39700
+    2.40000    1.40000    3.39700
+    2.48000    1.40000    3.39700
+    2.50000    1.36500    3.39700
+    2.50000    1.40000    3.39700
+    2.58000    1.40000    3.39700
+    2.60000    1.36500    3.39700
+    2.60000    1.40000    3.39700
+    2.68000    1.40000    3.39700
+    2.70000    1.36500    3.39700
+    2.70000    1.40000    3.39700
+    2.78000    1.40000    3.39700
+    2.80000    1.36500    3.39700
+    2.80000    1.40000    3.39700
+    2.88000    1.40000    3.39700
+    2.90000    1.36500    3.39700
+    2.90000    1.40000    3.39700
   
-rc_in_steel_pl_3mm  polygon  rad_br3:top_rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:top_rad_h
 0 
 0 
  66
@@ -6207,203 +7572,203 @@ rc_in_steel_pl_3mm  polygon  rad_br3:top_rad
     2.88000    1.40000    3.60300
     2.80000    1.40000    3.60300
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_2rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_2rad_h
 0 
 0 
  12
     2.80000    1.40300    3.60000
     2.88000    1.40300    3.60000
-    2.88000    1.40300    3.00000
-    2.80000    1.40300    3.00000
+    2.88000    1.40300    3.40000
+    2.80000    1.40300    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_3rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_3rad_h
 0 
 0 
  12
     2.79700    1.36500    3.60000
     2.79700    1.40000    3.60000
-    2.79700    1.40000    3.00000
-    2.79700    1.36500    3.00000
+    2.79700    1.40000    3.40000
+    2.79700    1.36500    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_4rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_4rad_h
 0 
 0 
  12
     2.78260    1.40149    3.60000
     2.80260    1.36649    3.60000
-    2.80260    1.36649    3.00000
-    2.78260    1.40149    3.00000
+    2.80260    1.36649    3.40000
+    2.78260    1.40149    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_5rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_5rad_h
 0 
 0 
  12
     2.70000    1.40300    3.60000
     2.78000    1.40300    3.60000
-    2.78000    1.40300    3.00000
-    2.70000    1.40300    3.00000
+    2.78000    1.40300    3.40000
+    2.70000    1.40300    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_6rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_6rad_h
 0 
 0 
  12
     2.69700    1.36500    3.60000
     2.69700    1.40000    3.60000
-    2.69700    1.40000    3.00000
-    2.69700    1.36500    3.00000
+    2.69700    1.40000    3.40000
+    2.69700    1.36500    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_7rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_7rad_h
 0 
 0 
  12
     2.68260    1.40149    3.60000
     2.70260    1.36649    3.60000
-    2.70260    1.36649    3.00000
-    2.68260    1.40149    3.00000
+    2.70260    1.36649    3.40000
+    2.68260    1.40149    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_8rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_8rad_h
 0 
 0 
  12
     2.60000    1.40300    3.60000
     2.68000    1.40300    3.60000
-    2.68000    1.40300    3.00000
-    2.60000    1.40300    3.00000
+    2.68000    1.40300    3.40000
+    2.60000    1.40300    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_9rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_9rad_h
 0 
 0 
  12
     2.59700    1.36500    3.60000
     2.59700    1.40000    3.60000
-    2.59700    1.40000    3.00000
-    2.59700    1.36500    3.00000
+    2.59700    1.40000    3.40000
+    2.59700    1.36500    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_10rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_10rad_h
 0 
 0 
  12
     2.58260    1.40149    3.60000
     2.60260    1.36649    3.60000
-    2.60260    1.36649    3.00000
-    2.58260    1.40149    3.00000
+    2.60260    1.36649    3.40000
+    2.58260    1.40149    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_11rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_11rad_h
 0 
 0 
  12
     2.50000    1.40300    3.60000
     2.58000    1.40300    3.60000
-    2.58000    1.40300    3.00000
-    2.50000    1.40300    3.00000
+    2.58000    1.40300    3.40000
+    2.50000    1.40300    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_12rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_12rad_h
 0 
 0 
  12
     2.49700    1.36500    3.60000
     2.49700    1.40000    3.60000
-    2.49700    1.40000    3.00000
-    2.49700    1.36500    3.00000
+    2.49700    1.40000    3.40000
+    2.49700    1.36500    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_13rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_13rad_h
 0 
 0 
  12
     2.48260    1.40149    3.60000
     2.50260    1.36649    3.60000
-    2.50260    1.36649    3.00000
-    2.48260    1.40149    3.00000
+    2.50260    1.36649    3.40000
+    2.48260    1.40149    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_14rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_14rad_h
 0 
 0 
  12
     2.40000    1.40300    3.60000
     2.48000    1.40300    3.60000
-    2.48000    1.40300    3.00000
-    2.40000    1.40300    3.00000
+    2.48000    1.40300    3.40000
+    2.40000    1.40300    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_15rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_15rad_h
 0 
 0 
  12
     2.39700    1.36500    3.60000
     2.39700    1.40000    3.60000
-    2.39700    1.40000    3.00000
-    2.39700    1.36500    3.00000
+    2.39700    1.40000    3.40000
+    2.39700    1.36500    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_16rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_16rad_h
 0 
 0 
  12
     2.38260    1.40149    3.60000
     2.40260    1.36649    3.60000
-    2.40260    1.36649    3.00000
-    2.38260    1.40149    3.00000
+    2.40260    1.36649    3.40000
+    2.38260    1.40149    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_17rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_17rad_h
 0 
 0 
  12
     2.30000    1.40300    3.60000
     2.38000    1.40300    3.60000
-    2.38000    1.40300    3.00000
-    2.30000    1.40300    3.00000
+    2.38000    1.40300    3.40000
+    2.30000    1.40300    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_18rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_18rad_h
 0 
 0 
  12
     2.30300    1.41500    3.60000
     2.30300    1.40000    3.60000
-    2.30300    1.40000    3.00000
-    2.30300    1.41500    3.00000
+    2.30300    1.40000    3.40000
+    2.30300    1.41500    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_19rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_19rad_h
 0 
 0 
  12
     3.00000    1.41200    3.60000
     2.30000    1.41200    3.60000
-    2.30000    1.41200    3.00000
-    3.00000    1.41200    3.00000
+    2.30000    1.41200    3.40000
+    3.00000    1.41200    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_20rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_20rad_h
 0 
 0 
  12
     2.99700    1.40000    3.60000
     2.99700    1.41500    3.60000
-    2.99700    1.41500    3.00000
-    2.99700    1.40000    3.00000
+    2.99700    1.41500    3.40000
+    2.99700    1.40000    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_21rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_21rad_h
 0 
 0 
  12
     2.90000    1.40300    3.60000
     3.00000    1.40300    3.60000
-    3.00000    1.40300    3.00000
-    2.90000    1.40300    3.00000
+    3.00000    1.40300    3.40000
+    2.90000    1.40300    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_22rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_22rad_h
 0 
 0 
  12
     2.89700    1.36500    3.60000
     2.89700    1.40000    3.60000
-    2.89700    1.40000    3.00000
-    2.89700    1.36500    3.00000
+    2.89700    1.40000    3.40000
+    2.89700    1.36500    3.40000
   
-rc_in_steel_pl_3mm  polygon  rad_br3:edg_23rad
+rc_in_steel_pl_3mm  polygon  rad_br3_h:edg_23rad_h
 0 
 0 
  12
     2.88260    1.40149    3.60000
     2.90260    1.36649    3.60000
-    2.90260    1.36649    3.00000
-    2.88260    1.40149    3.00000
+    2.90260    1.36649    3.40000
+    2.88260    1.40149    3.40000
   
 # boiler_case Surface defs..
   
@@ -6461,7 +7826,7 @@ rc_in_steel_pl_3mm  polygon  boiler_case:base
     1.40000    5.84500    1.20300
     1.40000    5.40000    1.20300
   
-rc_in_tank_w_50mm  polygon  boiler_case:j_left
+rc_in_tank_w_15mm  polygon  boiler_case:j_left
 0 
 0 
  12
@@ -6470,7 +7835,7 @@ rc_in_tank_w_50mm  polygon  boiler_case:j_left
     1.41000    5.42700    1.39000
     1.68000    5.42700    1.39000
   
-rc_in_tank_w_50mm  polygon  boiler_case:j_front
+rc_in_tank_w_15mm  polygon  boiler_case:j_front
 0 
 0 
  12
@@ -6479,7 +7844,7 @@ rc_in_tank_w_50mm  polygon  boiler_case:j_front
     1.68300    5.43000    1.39000
     1.68300    5.70000    1.39000
   
-rc_in_tank_w_50mm  polygon  boiler_case:j_right
+rc_in_tank_w_15mm  polygon  boiler_case:j_right
 0 
 0 
  12
@@ -6488,7 +7853,7 @@ rc_in_tank_w_50mm  polygon  boiler_case:j_right
     1.68000    5.70300    1.39000
     1.41000    5.70300    1.39000
   
-rc_in_tank_w_50mm  polygon  boiler_case:j_back
+rc_in_tank_w_15mm  polygon  boiler_case:j_back
 0 
 0 
  12
@@ -6497,7 +7862,7 @@ rc_in_tank_w_50mm  polygon  boiler_case:j_back
     1.40700    5.70000    1.39000
     1.40700    5.43000    1.39000
   
-rc_in_tank_w_50mm  polygon  boiler_case:j_top
+rc_in_tank_w_15mm  polygon  boiler_case:j_top
 0 
 0 
  12
@@ -6506,7 +7871,7 @@ rc_in_tank_w_50mm  polygon  boiler_case:j_top
     1.41000    5.43000    1.91300
     1.68000    5.43000    1.91300
   
-rc_in_tank_w_50mm  polygon  boiler_case:j_base
+rc_in_tank_w_15mm  polygon  boiler_case:j_base
 0 
 0 
  12
@@ -6515,99 +7880,99 @@ rc_in_tank_w_50mm  polygon  boiler_case:j_base
     1.41000    5.43000    1.38700
     1.41000    5.70000    1.38700
   
-# rad_br2 Surface defs..
+# rad_br2_h Surface defs..
   
-rc_in_steel_pl_3mm  polygon  rad_br2:face
+rc_in_steel_pl_3mm  polygon  rad_br2_h:face_h
 0 
 0 
  12
     4.80000    8.40300    3.50000
     5.90000    8.40300    3.50000
-    5.90000    8.40300    3.00000
-    4.80000    8.40300    3.00000
+    5.90000    8.40300    3.35000
+    4.80000    8.40300    3.35000
   
-rc_in_steel_pl_3mm  polygon  rad_br2:right
+rc_in_steel_pl_3mm  polygon  rad_br2_h:right_h
 0 
 0 
  12
     5.89700    8.40000    3.50000
     5.89700    8.41500    3.50000
-    5.89700    8.41500    3.00000
-    5.89700    8.40000    3.00000
+    5.89700    8.41500    3.35000
+    5.89700    8.40000    3.35000
   
-rc_in_steel_pl_3mm  polygon  rad_br2:back_a
+rc_in_steel_pl_3mm  polygon  rad_br2_h:back_ah
 0 
 0 
  12
     5.90000    8.41200    3.50000
     5.80000    8.41200    3.50000
-    5.80000    8.41200    3.00000
-    5.90000    8.41200    3.00000
+    5.80000    8.41200    3.35000
+    5.90000    8.41200    3.35000
   
-rc_in_steel_pl_3mm  polygon  rad_br2:back_b
+rc_in_steel_pl_3mm  polygon  rad_br2_h:back_bh
 0 
 0 
  12
     5.79700    8.41500    3.50000
     5.79700    8.44000    3.50000
-    5.79700    8.44000    3.00000
-    5.79700    8.41500    3.00000
+    5.79700    8.44000    3.35000
+    5.79700    8.41500    3.35000
   
-rc_in_steel_pl_3mm  polygon  rad_br2:fin_a
+rc_in_steel_pl_3mm  polygon  rad_br2_h:fin_ah
 0 
 0 
  12
     5.80000    8.43700    3.50000
     4.90000    8.43700    3.50000
-    4.90000    8.43700    3.00000
-    5.80000    8.43700    3.00000
+    4.90000    8.43700    3.35000
+    5.80000    8.43700    3.35000
   
-rc_in_steel_pl_3mm  polygon  rad_br2:fin_b
+rc_in_steel_pl_3mm  polygon  rad_br2_h:fin_bh
 0 
 0 
  12
     4.90300    8.44000    3.50000
     4.90300    8.42800    3.50000
-    4.90300    8.42800    3.00000
-    4.90300    8.44000    3.00000
+    4.90300    8.42800    3.35000
+    4.90300    8.44000    3.35000
   
-rc_in_steel_pl_3mm  polygon  rad_br2:fin_c
+rc_in_steel_pl_3mm  polygon  rad_br2_h:fin_ch
 0 
 0 
  12
     4.90000    8.43100    3.50000
     5.75000    8.43100    3.50000
-    5.75000    8.43100    3.00000
-    4.90000    8.43100    3.00000
+    5.75000    8.43100    3.35000
+    4.90000    8.43100    3.35000
   
-rc_in_steel_pl_3mm  polygon  rad_br2:fin_d
+rc_in_steel_pl_3mm  polygon  rad_br2_h:fin_dh
 0 
 0 
  12
     5.75300    8.42800    3.50000
     5.75300    8.41500    3.50000
-    5.75300    8.41500    3.00000
-    5.75300    8.42800    3.00000
+    5.75300    8.41500    3.35000
+    5.75300    8.42800    3.35000
   
-rc_in_steel_pl_3mm  polygon  rad_br2:back_c
+rc_in_steel_pl_3mm  polygon  rad_br2_h:back_ch
 0 
 0 
  12
     5.75000    8.41200    3.50000
     4.80000    8.41200    3.50000
-    4.80000    8.41200    3.00000
-    5.75000    8.41200    3.00000
+    4.80000    8.41200    3.35000
+    5.75000    8.41200    3.35000
   
-rc_in_steel_pl_3mm  polygon  rad_br2:left
+rc_in_steel_pl_3mm  polygon  rad_br2_h:left_h
 0 
 0 
  12
     4.80300    8.41500    3.50000
     4.80300    8.40000    3.50000
-    4.80300    8.40000    3.00000
-    4.80300    8.41500    3.00000
+    4.80300    8.40000    3.35000
+    4.80300    8.41500    3.35000
   
-rc_in_steel_pl_3mm  polygon  rad_br2:rad_top
+rc_in_steel_pl_3mm  polygon  rad_br2_h:rad_top_h
 0 
 0 
  30
@@ -6622,114 +7987,114 @@ rc_in_steel_pl_3mm  polygon  rad_br2:rad_top
     5.90000    8.40000    3.49700
     4.80000    8.40000    3.49700
   
-rc_in_steel_pl_3mm  polygon  rad_br2:rad_base
+rc_in_steel_pl_3mm  polygon  rad_br2_h:rad_base_h
 0 
 0 
  30
-    5.90000    8.40000    3.00300
-    5.90000    8.41500    3.00300
-    5.80000    8.41500    3.00300
-    5.80000    8.44000    3.00300
-    4.90000    8.44000    3.00300
-    4.90000    8.42800    3.00300
-    5.75000    8.42800    3.00300
-    5.75000    8.41500    3.00300
-    4.80000    8.41500    3.00300
-    4.80000    8.40000    3.00300
+    5.90000    8.40000    3.35300
+    5.90000    8.41500    3.35300
+    5.80000    8.41500    3.35300
+    5.80000    8.44000    3.35300
+    4.90000    8.44000    3.35300
+    4.90000    8.42800    3.35300
+    5.75000    8.42800    3.35300
+    5.75000    8.41500    3.35300
+    4.80000    8.41500    3.35300
+    4.80000    8.40000    3.35300
   
-# rad_dining Surface defs..
+# rad_dining_h Surface defs..
   
-rc_in_steel_pl_3mm  polygon  rad_dining:face
+rc_in_steel_pl_3mm  polygon  rad_dining_h:face_h
 0 
 0 
  12
     3.99700    7.00000    0.90000
     3.99700    8.10000    0.90000
-    3.99700    8.10000    0.40000
-    3.99700    7.00000    0.40000
+    3.99700    8.10000    0.75000
+    3.99700    7.00000    0.75000
   
-rc_in_steel_pl_3mm  polygon  rad_dining:right
+rc_in_steel_pl_3mm  polygon  rad_dining_h:right_h
 0 
 0 
  12
     4.00000    8.09700    0.90000
     3.98500    8.09700    0.90000
-    3.98500    8.09700    0.40000
-    4.00000    8.09700    0.40000
+    3.98500    8.09700    0.75000
+    4.00000    8.09700    0.75000
   
-rc_in_steel_pl_3mm  polygon  rad_dining:back_a
+rc_in_steel_pl_3mm  polygon  rad_dining_h:back_ah
 0 
 0 
  12
     3.98800    8.10000    0.90000
     3.98800    8.00000    0.90000
-    3.98800    8.00000    0.40000
-    3.98800    8.10000    0.40000
+    3.98800    8.00000    0.75000
+    3.98800    8.10000    0.75000
   
-rc_in_steel_pl_3mm  polygon  rad_dining:back_b
+rc_in_steel_pl_3mm  polygon  rad_dining_h:back_bh
 0 
 0 
  12
     3.98500    7.99700    0.90000
     3.96000    7.99700    0.90000
-    3.96000    7.99700    0.40000
-    3.98500    7.99700    0.40000
+    3.96000    7.99700    0.75000
+    3.98500    7.99700    0.75000
   
-rc_in_steel_pl_3mm  polygon  rad_dining:fin_a
+rc_in_steel_pl_3mm  polygon  rad_dining_h:fin_ah
 0 
 0 
  12
     3.96300    8.00000    0.90000
     3.96300    7.10000    0.90000
-    3.96300    7.10000    0.40000
-    3.96300    8.00000    0.40000
+    3.96300    7.10000    0.75000
+    3.96300    8.00000    0.75000
   
-rc_in_steel_pl_3mm  polygon  rad_dining:fin_b
+rc_in_steel_pl_3mm  polygon  rad_dining_h:fin_bh
 0 
 0 
  12
     3.96000    7.10300    0.90000
     3.97200    7.10300    0.90000
-    3.97200    7.10300    0.40000
-    3.96000    7.10300    0.40000
+    3.97200    7.10300    0.75000
+    3.96000    7.10300    0.75000
   
-rc_in_steel_pl_3mm  polygon  rad_dining:fin_c
+rc_in_steel_pl_3mm  polygon  rad_dining_h:fin_ch
 0 
 0 
  12
     3.96900    7.10000    0.90000
     3.96900    7.95000    0.90000
-    3.96900    7.95000    0.40000
-    3.96900    7.10000    0.40000
+    3.96900    7.95000    0.75000
+    3.96900    7.10000    0.75000
   
-rc_in_steel_pl_3mm  polygon  rad_dining:fin_d
+rc_in_steel_pl_3mm  polygon  rad_dining_h:fin_dh
 0 
 0 
  12
     3.97200    7.95300    0.90000
     3.98500    7.95300    0.90000
-    3.98500    7.95300    0.40000
-    3.97200    7.95300    0.40000
+    3.98500    7.95300    0.75000
+    3.97200    7.95300    0.75000
   
-rc_in_steel_pl_3mm  polygon  rad_dining:back_c
+rc_in_steel_pl_3mm  polygon  rad_dining_h:back_ch
 0 
 0 
  12
     3.98800    7.95000    0.90000
     3.98800    7.00000    0.90000
-    3.98800    7.00000    0.40000
-    3.98800    7.95000    0.40000
+    3.98800    7.00000    0.75000
+    3.98800    7.95000    0.75000
   
-rc_in_steel_pl_3mm  polygon  rad_dining:left
+rc_in_steel_pl_3mm  polygon  rad_dining_h:left_h
 0 
 0 
  12
     3.98500    7.00300    0.90000
     4.00000    7.00300    0.90000
-    4.00000    7.00300    0.40000
-    3.98500    7.00300    0.40000
+    4.00000    7.00300    0.75000
+    3.98500    7.00300    0.75000
   
-rc_in_steel_pl_3mm  polygon  rad_dining:rad_top
+rc_in_steel_pl_3mm  polygon  rad_dining_h:rad_top_h
 0 
 0 
  30
@@ -6744,114 +8109,114 @@ rc_in_steel_pl_3mm  polygon  rad_dining:rad_top
     4.00000    8.10000    0.89700
     4.00000    7.00000    0.89700
   
-rc_in_steel_pl_3mm  polygon  rad_dining:rad_base
+rc_in_steel_pl_3mm  polygon  rad_dining_h:rad_base_h
 0 
 0 
  30
-    4.00000    8.10000    0.40300
-    3.98500    8.10000    0.40300
-    3.98500    8.00000    0.40300
-    3.96000    8.00000    0.40300
-    3.96000    7.10000    0.40300
-    3.97200    7.10000    0.40300
-    3.97200    7.95000    0.40300
-    3.98500    7.95000    0.40300
-    3.98500    7.00000    0.40300
-    4.00000    7.00000    0.40300
+    4.00000    8.10000    0.75300
+    3.98500    8.10000    0.75300
+    3.98500    8.00000    0.75300
+    3.96000    8.00000    0.75300
+    3.96000    7.10000    0.75300
+    3.97200    7.10000    0.75300
+    3.97200    7.95000    0.75300
+    3.98500    7.95000    0.75300
+    3.98500    7.00000    0.75300
+    4.00000    7.00000    0.75300
   
-# rad-mbr Surface defs..
+# rad-mbr_h Surface defs..
   
-rc_in_steel_pl_3mm  polygon  rad-mbr:face
+rc_in_steel_pl_3mm  polygon  rad-mbr_h:face_h
 0 
 0 
  12
     6.00000    0.74700    3.40000
     4.80000    0.74700    3.40000
-    4.80000    0.74700    2.90000
-    6.00000    0.74700    2.90000
+    4.80000    0.74700    3.25000
+    6.00000    0.74700    3.25000
   
-rc_in_steel_pl_3mm  polygon  rad-mbr:right
+rc_in_steel_pl_3mm  polygon  rad-mbr_h:right_h
 0 
 0 
  12
     4.80300    0.75000    3.40000
     4.80300    0.73500    3.40000
-    4.80300    0.73500    2.90000
-    4.80300    0.75000    2.90000
+    4.80300    0.73500    3.25000
+    4.80300    0.75000    3.25000
   
-rc_in_steel_pl_3mm  polygon  rad-mbr:back_a
+rc_in_steel_pl_3mm  polygon  rad-mbr_h:back_ah
 0 
 0 
  12
     4.80000    0.73800    3.40000
     5.00000    0.73800    3.40000
-    5.00000    0.73800    2.90000
-    4.80000    0.73800    2.90000
+    5.00000    0.73800    3.25000
+    4.80000    0.73800    3.25000
   
-rc_in_steel_pl_3mm  polygon  rad-mbr:back_b
+rc_in_steel_pl_3mm  polygon  rad-mbr_h:back_bh
 0 
 0 
  12
     5.00300    0.73500    3.40000
     5.00300    0.71300    3.40000
-    5.00300    0.71300    2.90000
-    5.00300    0.73500    2.90000
+    5.00300    0.71300    3.25000
+    5.00300    0.73500    3.25000
   
-rc_in_steel_pl_3mm  polygon  rad-mbr:fin_a
+rc_in_steel_pl_3mm  polygon  rad-mbr_h:fin_ah
 0 
 0 
  12
     5.00000    0.71600    3.40000
     5.90000    0.71600    3.40000
-    5.90000    0.71600    2.90000
-    5.00000    0.71600    2.90000
+    5.90000    0.71600    3.25000
+    5.00000    0.71600    3.25000
   
-rc_in_steel_pl_3mm  polygon  rad-mbr:fin_b
+rc_in_steel_pl_3mm  polygon  rad-mbr_h:fin_bh
 0 
 0 
  12
     5.89700    0.71300    3.40000
     5.89700    0.72300    3.40000
-    5.89700    0.72300    2.90000
-    5.89700    0.71300    2.90000
+    5.89700    0.72300    3.25000
+    5.89700    0.71300    3.25000
   
-rc_in_steel_pl_3mm  polygon  rad-mbr:fin_c
+rc_in_steel_pl_3mm  polygon  rad-mbr_h:fin_ch
 0 
 0 
  12
     5.90000    0.72000    3.40000
     5.05000    0.72000    3.40000
-    5.05000    0.72000    2.90000
-    5.90000    0.72000    2.90000
+    5.05000    0.72000    3.25000
+    5.90000    0.72000    3.25000
   
-rc_in_steel_pl_3mm  polygon  rad-mbr:fin_d
+rc_in_steel_pl_3mm  polygon  rad-mbr_h:fin_dh
 0 
 0 
  12
     5.04700    0.72300    3.40000
     5.04700    0.73500    3.40000
-    5.04700    0.73500    2.90000
-    5.04700    0.72300    2.90000
+    5.04700    0.73500    3.25000
+    5.04700    0.72300    3.25000
   
-rc_in_steel_pl_3mm  polygon  rad-mbr:back_c
+rc_in_steel_pl_3mm  polygon  rad-mbr_h:back_ch
 0 
 0 
  12
     5.05000    0.73800    3.40000
     6.00000    0.73800    3.40000
-    6.00000    0.73800    2.90000
-    5.05000    0.73800    2.90000
+    6.00000    0.73800    3.25000
+    5.05000    0.73800    3.25000
   
-rc_in_steel_pl_3mm  polygon  rad-mbr:left
+rc_in_steel_pl_3mm  polygon  rad-mbr_h:left_h
 0 
 0 
  12
     5.99700    0.73500    3.40000
     5.99700    0.75000    3.40000
-    5.99700    0.75000    2.90000
-    5.99700    0.73500    2.90000
+    5.99700    0.75000    3.25000
+    5.99700    0.73500    3.25000
   
-rc_in_steel_pl_3mm  polygon  rad-mbr:rad_top
+rc_in_steel_pl_3mm  polygon  rad-mbr_h:rad_top_h
 0 
 0 
  30
@@ -6866,114 +8231,114 @@ rc_in_steel_pl_3mm  polygon  rad-mbr:rad_top
     4.80000    0.75000    3.39700
     6.00000    0.75000    3.39700
   
-rc_in_steel_pl_3mm  polygon  rad-mbr:rad_base
+rc_in_steel_pl_3mm  polygon  rad-mbr_h:rad_base_h
 0 
 0 
  30
-    4.80000    0.75000    2.90300
-    4.80000    0.73500    2.90300
-    5.00000    0.73500    2.90300
-    5.00000    0.71300    2.90300
-    5.90000    0.71300    2.90300
-    5.90000    0.72300    2.90300
-    5.05000    0.72300    2.90300
-    5.05000    0.73500    2.90300
-    6.00000    0.73500    2.90300
-    6.00000    0.75000    2.90300
+    4.80000    0.75000    3.25300
+    4.80000    0.73500    3.25300
+    5.00000    0.73500    3.25300
+    5.00000    0.71300    3.25300
+    5.90000    0.71300    3.25300
+    5.90000    0.72300    3.25300
+    5.05000    0.72300    3.25300
+    5.05000    0.73500    3.25300
+    6.00000    0.73500    3.25300
+    6.00000    0.75000    3.25300
   
-# rad_lounge Surface defs..
+# rad_lounge_h Surface defs..
   
-rc_in_steel_pl_3mm  polygon  rad_lounge:face
+rc_in_steel_pl_3mm  polygon  rad_lounge_h:face_h
 0 
 0 
  12
     6.00000    0.74700    0.80000
     4.80000    0.74700    0.80000
-    4.80000    0.74700    0.30000
-    6.00000    0.74700    0.30000
+    4.80000    0.74700    0.65000
+    6.00000    0.74700    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad_lounge:right
+rc_in_steel_pl_3mm  polygon  rad_lounge_h:right_h
 0 
 0 
  12
     4.80300    0.75000    0.80000
     4.80300    0.73500    0.80000
-    4.80300    0.73500    0.30000
-    4.80300    0.75000    0.30000
+    4.80300    0.73500    0.65000
+    4.80300    0.75000    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad_lounge:back_a
+rc_in_steel_pl_3mm  polygon  rad_lounge_h:back_ah
 0 
 0 
  12
     4.80000    0.73800    0.80000
     5.00000    0.73800    0.80000
-    5.00000    0.73800    0.30000
-    4.80000    0.73800    0.30000
+    5.00000    0.73800    0.65000
+    4.80000    0.73800    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad_lounge:back_b
+rc_in_steel_pl_3mm  polygon  rad_lounge_h:back_bh
 0 
 0 
  12
     5.00300    0.73500    0.80000
     5.00300    0.71500    0.80000
-    5.00300    0.71500    0.30000
-    5.00300    0.73500    0.30000
+    5.00300    0.71500    0.65000
+    5.00300    0.73500    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad_lounge:fin_a
+rc_in_steel_pl_3mm  polygon  rad_lounge_h:fin_ah
 0 
 0 
  12
     5.00000    0.71800    0.80000
     5.90000    0.71800    0.80000
-    5.90000    0.71800    0.30000
-    5.00000    0.71800    0.30000
+    5.90000    0.71800    0.65000
+    5.00000    0.71800    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad_lounge:fin_b
+rc_in_steel_pl_3mm  polygon  rad_lounge_h:fin_bh
 0 
 0 
  12
     5.89700    0.71500    0.80000
     5.89700    0.72500    0.80000
-    5.89700    0.72500    0.30000
-    5.89700    0.71500    0.30000
+    5.89700    0.72500    0.65000
+    5.89700    0.71500    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad_lounge:fin_c
+rc_in_steel_pl_3mm  polygon  rad_lounge_h:fin_ch
 0 
 0 
  12
     5.90000    0.72200    0.80000
     5.05000    0.72200    0.80000
-    5.05000    0.72200    0.30000
-    5.90000    0.72200    0.30000
+    5.05000    0.72200    0.65000
+    5.90000    0.72200    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad_lounge:fin_d
+rc_in_steel_pl_3mm  polygon  rad_lounge_h:fin_dh
 0 
 0 
  12
     5.04700    0.72500    0.80000
     5.04700    0.73500    0.80000
-    5.04700    0.73500    0.30000
-    5.04700    0.72500    0.30000
+    5.04700    0.73500    0.65000
+    5.04700    0.72500    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad_lounge:back_c
+rc_in_steel_pl_3mm  polygon  rad_lounge_h:back_ch
 0 
 0 
  12
     5.05000    0.73800    0.80000
     6.00000    0.73800    0.80000
-    6.00000    0.73800    0.30000
-    5.05000    0.73800    0.30000
+    6.00000    0.73800    0.65000
+    5.05000    0.73800    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad_lounge:left
+rc_in_steel_pl_3mm  polygon  rad_lounge_h:left_h
 0 
 0 
  12
     5.99700    0.73500    0.80000
     5.99700    0.75000    0.80000
-    5.99700    0.75000    0.30000
-    5.99700    0.73500    0.30000
+    5.99700    0.75000    0.65000
+    5.99700    0.73500    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad_lounge:rad_top
+rc_in_steel_pl_3mm  polygon  rad_lounge_h:rad_top_h
 0 
 0 
  30
@@ -6988,20 +8353,20 @@ rc_in_steel_pl_3mm  polygon  rad_lounge:rad_top
     4.80000    0.75000    0.79700
     6.00000    0.75000    0.79700
   
-rc_in_steel_pl_3mm  polygon  rad_lounge:rad_base
+rc_in_steel_pl_3mm  polygon  rad_lounge_h:rad_base_h
 0 
 0 
  30
-    4.80000    0.75000    0.30300
-    4.80000    0.73500    0.30300
-    5.00000    0.73500    0.30300
-    5.00000    0.71500    0.30300
-    5.90000    0.71500    0.30300
-    5.90000    0.72500    0.30300
-    5.05000    0.72500    0.30300
-    5.05000    0.73500    0.30300
-    6.00000    0.73500    0.30300
-    6.00000    0.75000    0.30300
+    4.80000    0.75000    0.65300
+    4.80000    0.73500    0.65300
+    5.00000    0.73500    0.65300
+    5.00000    0.71500    0.65300
+    5.90000    0.71500    0.65300
+    5.90000    0.72500    0.65300
+    5.05000    0.72500    0.65300
+    5.05000    0.73500    0.65300
+    6.00000    0.73500    0.65300
+    6.00000    0.75000    0.65300
   
 # rad_kit Surface defs..
   
@@ -7257,99 +8622,99 @@ rc_in_steel_pl_3mm  polygon  rad_kit:edg_23rad
     2.64740    8.39851    0.40000
     2.66740    8.36351    0.40000
   
-# rad-hall Surface defs..
+# rad-hall_h Surface defs..
   
-rc_in_steel_pl_3mm  polygon  rad-hall:face
+rc_in_steel_pl_3mm  polygon  rad-hall_h:face_h
 0 
 0 
  12
     3.30300    3.70000    0.80000
     3.30300    2.60000    0.80000
-    3.30300    2.60000    0.30000
-    3.30300    3.70000    0.30000
+    3.30300    2.60000    0.65000
+    3.30300    3.70000    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad-hall:right
+rc_in_steel_pl_3mm  polygon  rad-hall_h:right_h
 0 
 0 
  12
     3.30000    2.60300    0.80000
     3.31500    2.60300    0.80000
-    3.31500    2.60300    0.30000
-    3.30000    2.60300    0.30000
+    3.31500    2.60300    0.65000
+    3.30000    2.60300    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad-hall:back_a
+rc_in_steel_pl_3mm  polygon  rad-hall_h:back_ah
 0 
 0 
  12
     3.31200    2.60000    0.80000
     3.31200    2.70000    0.80000
-    3.31200    2.70000    0.30000
-    3.31200    2.60000    0.30000
+    3.31200    2.70000    0.65000
+    3.31200    2.60000    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad-hall:back_b
+rc_in_steel_pl_3mm  polygon  rad-hall_h:back_bh
 0 
 0 
  12
     3.31500    2.70300    0.80000
     3.33500    2.70300    0.80000
-    3.33500    2.70300    0.30000
-    3.31500    2.70300    0.30000
+    3.33500    2.70300    0.65000
+    3.31500    2.70300    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad-hall:fin_a
+rc_in_steel_pl_3mm  polygon  rad-hall_h:fin_ah
 0 
 0 
  12
     3.33200    2.70000    0.80000
     3.33200    3.60000    0.80000
-    3.33200    3.60000    0.30000
-    3.33200    2.70000    0.30000
+    3.33200    3.60000    0.65000
+    3.33200    2.70000    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad-hall:fin_b
+rc_in_steel_pl_3mm  polygon  rad-hall_h:fin_bh
 0 
 0 
  12
     3.33500    3.59700    0.80000
     3.32500    3.59700    0.80000
-    3.32500    3.59700    0.30000
-    3.33500    3.59700    0.30000
+    3.32500    3.59700    0.65000
+    3.33500    3.59700    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad-hall:fin_c
+rc_in_steel_pl_3mm  polygon  rad-hall_h:fin_ch
 0 
 0 
  12
     3.32800    3.60000    0.80000
     3.32800    2.75000    0.80000
-    3.32800    2.75000    0.30000
-    3.32800    3.60000    0.30000
+    3.32800    2.75000    0.65000
+    3.32800    3.60000    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad-hall:fin_d
+rc_in_steel_pl_3mm  polygon  rad-hall_h:fin_dh
 0 
 0 
  12
     3.32500    2.74700    0.80000
     3.31500    2.74700    0.80000
-    3.31500    2.74700    0.30000
-    3.32500    2.74700    0.30000
+    3.31500    2.74700    0.65000
+    3.32500    2.74700    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad-hall:back_c
+rc_in_steel_pl_3mm  polygon  rad-hall_h:back_ch
 0 
 0 
  12
     3.31200    2.75000    0.80000
     3.31200    3.70000    0.80000
-    3.31200    3.70000    0.30000
-    3.31200    2.75000    0.30000
+    3.31200    3.70000    0.65000
+    3.31200    2.75000    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad-hall:left
+rc_in_steel_pl_3mm  polygon  rad-hall_h:left_h
 0 
 0 
  12
     3.31500    3.69700    0.80000
     3.30000    3.69700    0.80000
-    3.30000    3.69700    0.30000
-    3.31500    3.69700    0.30000
+    3.30000    3.69700    0.65000
+    3.31500    3.69700    0.65000
   
-rc_in_steel_pl_3mm  polygon  rad-hall:rad_top
+rc_in_steel_pl_3mm  polygon  rad-hall_h:rad_top_h
 0 
 0 
  30
@@ -7364,20 +8729,20 @@ rc_in_steel_pl_3mm  polygon  rad-hall:rad_top
     3.30000    2.60000    0.79700
     3.30000    3.70000    0.79700
   
-rc_in_steel_pl_3mm  polygon  rad-hall:rad_base
+rc_in_steel_pl_3mm  polygon  rad-hall_h:rad_base_h
 0 
 0 
  30
-    3.30000    2.60000    0.30300
-    3.31500    2.60000    0.30300
-    3.31500    2.70000    0.30300
-    3.33500    2.70000    0.30300
-    3.33500    3.60000    0.30300
-    3.32500    3.60000    0.30300
-    3.32500    2.75000    0.30300
-    3.31500    2.75000    0.30300
-    3.31500    3.70000    0.30300
-    3.30000    3.70000    0.30300
+    3.30000    2.60000    0.65300
+    3.31500    2.60000    0.65300
+    3.31500    2.70000    0.65300
+    3.33500    2.70000    0.65300
+    3.33500    3.60000    0.65300
+    3.32500    3.60000    0.65300
+    3.32500    2.75000    0.65300
+    3.31500    2.75000    0.65300
+    3.31500    3.70000    0.65300
+    3.30000    3.70000    0.65300
   
 # collec_low Surface defs..
   
@@ -7654,7 +9019,7 @@ rc_in_tank_i_50mmi  polygon  air_hi:right
   
 # water_jacket Surface defs..
   
-rc_in_tank_i_50mmi  polygon  water_jacket:j_left
+rc_in_tank_i_20mm  polygon  water_jacket:j_left
 0 
 0 
  12
@@ -7663,7 +9028,7 @@ rc_in_tank_i_50mmi  polygon  water_jacket:j_left
     1.68000    5.43300    1.39000
     1.41000    5.43300    1.39000
   
-rc_in_tank_i_50mmi  polygon  water_jacket:j_front
+rc_in_tank_i_20mm  polygon  water_jacket:j_front
 0 
 0 
  12
@@ -7672,7 +9037,7 @@ rc_in_tank_i_50mmi  polygon  water_jacket:j_front
     1.67700    5.70000    1.39000
     1.67700    5.43000    1.39000
   
-rc_in_tank_i_50mmi  polygon  water_jacket:j_right
+rc_in_tank_i_20mm  polygon  water_jacket:j_right
 0 
 0 
  12
@@ -7681,7 +9046,7 @@ rc_in_tank_i_50mmi  polygon  water_jacket:j_right
     1.41000    5.69700    1.39000
     1.68000    5.69700    1.39000
   
-rc_in_tank_i_50mmi  polygon  water_jacket:j_back
+rc_in_tank_i_20mm  polygon  water_jacket:j_back
 0 
 0 
  12
@@ -7690,7 +9055,7 @@ rc_in_tank_i_50mmi  polygon  water_jacket:j_back
     1.41300    5.43000    1.39000
     1.41300    5.70000    1.39000
   
-rc_in_tank_i_50mmi  polygon  water_jacket:j_top
+rc_in_tank_i_20mm  polygon  water_jacket:j_top
 0 
 0 
  12
@@ -7699,7 +9064,7 @@ rc_in_tank_i_50mmi  polygon  water_jacket:j_top
     1.68000    5.43000    1.90700
     1.41000    5.43000    1.90700
   
-rc_in_tank_i_50mmi  polygon  water_jacket:j_base
+rc_in_tank_i_20mm  polygon  water_jacket:j_base
 0 
 0 
  12
@@ -7873,4 +9238,1861 @@ rc_in_tank_i_100mi  polygon  mixer:Base-6
     1.62000    5.62000    1.20300
     1.42000    5.62000    1.20300
     1.42000    5.42000    1.20300
+  
+# rad_lounge_m Surface defs..
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_m:face_m
+0 
+0 
+ 12
+    6.00000    0.74700    0.65000
+    4.80000    0.74700    0.65000
+    4.80000    0.74700    0.50000
+    6.00000    0.74700    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_m:right_m
+0 
+0 
+ 12
+    4.80300    0.75000    0.65000
+    4.80300    0.73500    0.65000
+    4.80300    0.73500    0.50000
+    4.80300    0.75000    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_m:back_am
+0 
+0 
+ 12
+    4.80000    0.73800    0.65000
+    5.00000    0.73800    0.65000
+    5.00000    0.73800    0.50000
+    4.80000    0.73800    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_m:back_bm
+0 
+0 
+ 12
+    5.00300    0.73500    0.65000
+    5.00300    0.71500    0.65000
+    5.00300    0.71500    0.50000
+    5.00300    0.73500    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_m:fin_am
+0 
+0 
+ 12
+    5.00000    0.71800    0.65000
+    5.90000    0.71800    0.65000
+    5.90000    0.71800    0.50000
+    5.00000    0.71800    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_m:fin_bm
+0 
+0 
+ 12
+    5.89700    0.71500    0.65000
+    5.89700    0.72500    0.65000
+    5.89700    0.72500    0.50000
+    5.89700    0.71500    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_m:fin_cm
+0 
+0 
+ 12
+    5.90000    0.72200    0.65000
+    5.05000    0.72200    0.65000
+    5.05000    0.72200    0.50000
+    5.90000    0.72200    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_m:fin_dm
+0 
+0 
+ 12
+    5.04700    0.72500    0.65000
+    5.04700    0.73500    0.65000
+    5.04700    0.73500    0.50000
+    5.04700    0.72500    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_m:back_cm
+0 
+0 
+ 12
+    5.05000    0.73800    0.65000
+    6.00000    0.73800    0.65000
+    6.00000    0.73800    0.50000
+    5.05000    0.73800    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_m:left_m
+0 
+0 
+ 12
+    5.99700    0.73500    0.65000
+    5.99700    0.75000    0.65000
+    5.99700    0.75000    0.50000
+    5.99700    0.73500    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_m:rad_top_m
+0 
+0 
+ 30
+    6.00000    0.73500    0.64700
+    5.05000    0.73500    0.64700
+    5.05000    0.72500    0.64700
+    5.90000    0.72500    0.64700
+    5.90000    0.71500    0.64700
+    5.00000    0.71500    0.64700
+    5.00000    0.73500    0.64700
+    4.80000    0.73500    0.64700
+    4.80000    0.75000    0.64700
+    6.00000    0.75000    0.64700
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_m:rad_base_m
+0 
+0 
+ 30
+    4.80000    0.75000    0.50300
+    4.80000    0.73500    0.50300
+    5.00000    0.73500    0.50300
+    5.00000    0.71500    0.50300
+    5.90000    0.71500    0.50300
+    5.90000    0.72500    0.50300
+    5.05000    0.72500    0.50300
+    5.05000    0.73500    0.50300
+    6.00000    0.73500    0.50300
+    6.00000    0.75000    0.50300
+  
+# rad_lounge_l Surface defs..
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_l:face_l
+0 
+0 
+ 12
+    6.00000    0.74700    0.50000
+    4.80000    0.74700    0.50000
+    4.80000    0.74700    0.30000
+    6.00000    0.74700    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_l:right_l
+0 
+0 
+ 12
+    4.80300    0.75000    0.50000
+    4.80300    0.73500    0.50000
+    4.80300    0.73500    0.30000
+    4.80300    0.75000    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_l:back_al
+0 
+0 
+ 12
+    4.80000    0.73800    0.50000
+    5.00000    0.73800    0.50000
+    5.00000    0.73800    0.30000
+    4.80000    0.73800    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_l:back_bl
+0 
+0 
+ 12
+    5.00300    0.73500    0.50000
+    5.00300    0.71500    0.50000
+    5.00300    0.71500    0.30000
+    5.00300    0.73500    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_l:fin_al
+0 
+0 
+ 12
+    5.00000    0.71800    0.50000
+    5.90000    0.71800    0.50000
+    5.90000    0.71800    0.30000
+    5.00000    0.71800    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_l:fin_bl
+0 
+0 
+ 12
+    5.89700    0.71500    0.50000
+    5.89700    0.72500    0.50000
+    5.89700    0.72500    0.30000
+    5.89700    0.71500    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_l:fin_cl
+0 
+0 
+ 12
+    5.90000    0.72200    0.50000
+    5.05000    0.72200    0.50000
+    5.05000    0.72200    0.30000
+    5.90000    0.72200    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_l:fin_dl
+0 
+0 
+ 12
+    5.04700    0.72500    0.50000
+    5.04700    0.73500    0.50000
+    5.04700    0.73500    0.30000
+    5.04700    0.72500    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_l:back_cl
+0 
+0 
+ 12
+    5.05000    0.73800    0.50000
+    6.00000    0.73800    0.50000
+    6.00000    0.73800    0.30000
+    5.05000    0.73800    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_l:left_l
+0 
+0 
+ 12
+    5.99700    0.73500    0.50000
+    5.99700    0.75000    0.50000
+    5.99700    0.75000    0.30000
+    5.99700    0.73500    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_l:rad_top_l
+0 
+0 
+ 30
+    6.00000    0.73500    0.49700
+    5.05000    0.73500    0.49700
+    5.05000    0.72500    0.49700
+    5.90000    0.72500    0.49700
+    5.90000    0.71500    0.49700
+    5.00000    0.71500    0.49700
+    5.00000    0.73500    0.49700
+    4.80000    0.73500    0.49700
+    4.80000    0.75000    0.49700
+    6.00000    0.75000    0.49700
+  
+rc_in_steel_pl_3mm  polygon  rad_lounge_l:rad_base_l
+0 
+0 
+ 30
+    4.80000    0.75000    0.30300
+    4.80000    0.73500    0.30300
+    5.00000    0.73500    0.30300
+    5.00000    0.71500    0.30300
+    5.90000    0.71500    0.30300
+    5.90000    0.72500    0.30300
+    5.05000    0.72500    0.30300
+    5.05000    0.73500    0.30300
+    6.00000    0.73500    0.30300
+    6.00000    0.75000    0.30300
+  
+# rad_dining_m Surface defs..
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_m:face_m
+0 
+0 
+ 12
+    3.99700    7.00000    0.75000
+    3.99700    8.10000    0.75000
+    3.99700    8.10000    0.60000
+    3.99700    7.00000    0.60000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_m:right_m
+0 
+0 
+ 12
+    4.00000    8.09700    0.75000
+    3.98500    8.09700    0.75000
+    3.98500    8.09700    0.60000
+    4.00000    8.09700    0.60000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_m:back_am
+0 
+0 
+ 12
+    3.98800    8.10000    0.75000
+    3.98800    8.00000    0.75000
+    3.98800    8.00000    0.60000
+    3.98800    8.10000    0.60000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_m:back_bm
+0 
+0 
+ 12
+    3.98500    7.99700    0.75000
+    3.96000    7.99700    0.75000
+    3.96000    7.99700    0.60000
+    3.98500    7.99700    0.60000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_m:fin_am
+0 
+0 
+ 12
+    3.96300    8.00000    0.75000
+    3.96300    7.10000    0.75000
+    3.96300    7.10000    0.60000
+    3.96300    8.00000    0.60000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_m:fin_bm
+0 
+0 
+ 12
+    3.96000    7.10300    0.75000
+    3.97200    7.10300    0.75000
+    3.97200    7.10300    0.60000
+    3.96000    7.10300    0.60000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_m:fin_cm
+0 
+0 
+ 12
+    3.96900    7.10000    0.75000
+    3.96900    7.95000    0.75000
+    3.96900    7.95000    0.60000
+    3.96900    7.10000    0.60000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_m:fin_dm
+0 
+0 
+ 12
+    3.97200    7.95300    0.75000
+    3.98500    7.95300    0.75000
+    3.98500    7.95300    0.60000
+    3.97200    7.95300    0.60000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_m:back_cm
+0 
+0 
+ 12
+    3.98800    7.95000    0.75000
+    3.98800    7.00000    0.75000
+    3.98800    7.00000    0.60000
+    3.98800    7.95000    0.60000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_m:left_m
+0 
+0 
+ 12
+    3.98500    7.00300    0.75000
+    4.00000    7.00300    0.75000
+    4.00000    7.00300    0.60000
+    3.98500    7.00300    0.60000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_m:rad_top_m
+0 
+0 
+ 30
+    3.98500    7.00000    0.74700
+    3.98500    7.95000    0.74700
+    3.97200    7.95000    0.74700
+    3.97200    7.10000    0.74700
+    3.96000    7.10000    0.74700
+    3.96000    8.00000    0.74700
+    3.98500    8.00000    0.74700
+    3.98500    8.10000    0.74700
+    4.00000    8.10000    0.74700
+    4.00000    7.00000    0.74700
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_m:rad_base_m
+0 
+0 
+ 30
+    4.00000    8.10000    0.60300
+    3.98500    8.10000    0.60300
+    3.98500    8.00000    0.60300
+    3.96000    8.00000    0.60300
+    3.96000    7.10000    0.60300
+    3.97200    7.10000    0.60300
+    3.97200    7.95000    0.60300
+    3.98500    7.95000    0.60300
+    3.98500    7.00000    0.60300
+    4.00000    7.00000    0.60300
+  
+# rad_dining_l Surface defs..
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_l:face_l
+0 
+0 
+ 12
+    3.99700    7.00000    0.60000
+    3.99700    8.10000    0.60000
+    3.99700    8.10000    0.40000
+    3.99700    7.00000    0.40000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_l:right_l
+0 
+0 
+ 12
+    4.00000    8.09700    0.60000
+    3.98500    8.09700    0.60000
+    3.98500    8.09700    0.40000
+    4.00000    8.09700    0.40000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_l:back_al
+0 
+0 
+ 12
+    3.98800    8.10000    0.60000
+    3.98800    8.00000    0.60000
+    3.98800    8.00000    0.40000
+    3.98800    8.10000    0.40000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_l:back_bl
+0 
+0 
+ 12
+    3.98500    7.99700    0.60000
+    3.96000    7.99700    0.60000
+    3.96000    7.99700    0.40000
+    3.98500    7.99700    0.40000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_l:fin_al
+0 
+0 
+ 12
+    3.96300    8.00000    0.60000
+    3.96300    7.10000    0.60000
+    3.96300    7.10000    0.40000
+    3.96300    8.00000    0.40000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_l:fin_bl
+0 
+0 
+ 12
+    3.96000    7.10300    0.60000
+    3.97200    7.10300    0.60000
+    3.97200    7.10300    0.40000
+    3.96000    7.10300    0.40000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_l:fin_cl
+0 
+0 
+ 12
+    3.96900    7.10000    0.60000
+    3.96900    7.95000    0.60000
+    3.96900    7.95000    0.40000
+    3.96900    7.10000    0.40000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_l:fin_dl
+0 
+0 
+ 12
+    3.97200    7.95300    0.60000
+    3.98500    7.95300    0.60000
+    3.98500    7.95300    0.40000
+    3.97200    7.95300    0.40000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_l:back_cl
+0 
+0 
+ 12
+    3.98800    7.95000    0.60000
+    3.98800    7.00000    0.60000
+    3.98800    7.00000    0.40000
+    3.98800    7.95000    0.40000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_l:left_l
+0 
+0 
+ 12
+    3.98500    7.00300    0.60000
+    4.00000    7.00300    0.60000
+    4.00000    7.00300    0.40000
+    3.98500    7.00300    0.40000
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_l:rad_top_l
+0 
+0 
+ 30
+    3.98500    7.00000    0.59700
+    3.98500    7.95000    0.59700
+    3.97200    7.95000    0.59700
+    3.97200    7.10000    0.59700
+    3.96000    7.10000    0.59700
+    3.96000    8.00000    0.59700
+    3.98500    8.00000    0.59700
+    3.98500    8.10000    0.59700
+    4.00000    8.10000    0.59700
+    4.00000    7.00000    0.59700
+  
+rc_in_steel_pl_3mm  polygon  rad_dining_l:rad_base_l
+0 
+0 
+ 30
+    4.00000    8.10000    0.40300
+    3.98500    8.10000    0.40300
+    3.98500    8.00000    0.40300
+    3.96000    8.00000    0.40300
+    3.96000    7.10000    0.40300
+    3.97200    7.10000    0.40300
+    3.97200    7.95000    0.40300
+    3.98500    7.95000    0.40300
+    3.98500    7.00000    0.40300
+    4.00000    7.00000    0.40300
+  
+# rad-hall_m Surface defs..
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_m:face_m
+0 
+0 
+ 12
+    3.30300    3.70000    0.65000
+    3.30300    2.60000    0.65000
+    3.30300    2.60000    0.50000
+    3.30300    3.70000    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_m:right_m
+0 
+0 
+ 12
+    3.30000    2.60300    0.65000
+    3.31500    2.60300    0.65000
+    3.31500    2.60300    0.50000
+    3.30000    2.60300    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_m:back_am
+0 
+0 
+ 12
+    3.31200    2.60000    0.65000
+    3.31200    2.70000    0.65000
+    3.31200    2.70000    0.50000
+    3.31200    2.60000    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_m:back_bm
+0 
+0 
+ 12
+    3.31500    2.70300    0.65000
+    3.33500    2.70300    0.65000
+    3.33500    2.70300    0.50000
+    3.31500    2.70300    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_m:fin_am
+0 
+0 
+ 12
+    3.33200    2.70000    0.65000
+    3.33200    3.60000    0.65000
+    3.33200    3.60000    0.50000
+    3.33200    2.70000    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_m:fin_bm
+0 
+0 
+ 12
+    3.33500    3.59700    0.65000
+    3.32500    3.59700    0.65000
+    3.32500    3.59700    0.50000
+    3.33500    3.59700    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_m:fin_cm
+0 
+0 
+ 12
+    3.32800    3.60000    0.65000
+    3.32800    2.75000    0.65000
+    3.32800    2.75000    0.50000
+    3.32800    3.60000    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_m:fin_dm
+0 
+0 
+ 12
+    3.32500    2.74700    0.65000
+    3.31500    2.74700    0.65000
+    3.31500    2.74700    0.50000
+    3.32500    2.74700    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_m:back_cm
+0 
+0 
+ 12
+    3.31200    2.75000    0.65000
+    3.31200    3.70000    0.65000
+    3.31200    3.70000    0.50000
+    3.31200    2.75000    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_m:left_m
+0 
+0 
+ 12
+    3.31500    3.69700    0.65000
+    3.30000    3.69700    0.65000
+    3.30000    3.69700    0.50000
+    3.31500    3.69700    0.50000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_m:rad_top_m
+0 
+0 
+ 30
+    3.31500    3.70000    0.64700
+    3.31500    2.75000    0.64700
+    3.32500    2.75000    0.64700
+    3.32500    3.60000    0.64700
+    3.33500    3.60000    0.64700
+    3.33500    2.70000    0.64700
+    3.31500    2.70000    0.64700
+    3.31500    2.60000    0.64700
+    3.30000    2.60000    0.64700
+    3.30000    3.70000    0.64700
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_m:rad_base_m
+0 
+0 
+ 30
+    3.30000    2.60000    0.50300
+    3.31500    2.60000    0.50300
+    3.31500    2.70000    0.50300
+    3.33500    2.70000    0.50300
+    3.33500    3.60000    0.50300
+    3.32500    3.60000    0.50300
+    3.32500    2.75000    0.50300
+    3.31500    2.75000    0.50300
+    3.31500    3.70000    0.50300
+    3.30000    3.70000    0.50300
+  
+# rad-hall_l Surface defs..
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_l:face_l
+0 
+0 
+ 12
+    3.30300    3.70000    0.50000
+    3.30300    2.60000    0.50000
+    3.30300    2.60000    0.30000
+    3.30300    3.70000    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_l:right_l
+0 
+0 
+ 12
+    3.30000    2.60300    0.50000
+    3.31500    2.60300    0.50000
+    3.31500    2.60300    0.30000
+    3.30000    2.60300    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_l:back_al
+0 
+0 
+ 12
+    3.31200    2.60000    0.50000
+    3.31200    2.70000    0.50000
+    3.31200    2.70000    0.30000
+    3.31200    2.60000    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_l:back_bl
+0 
+0 
+ 12
+    3.31500    2.70300    0.50000
+    3.33500    2.70300    0.50000
+    3.33500    2.70300    0.30000
+    3.31500    2.70300    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_l:fin_al
+0 
+0 
+ 12
+    3.33200    2.70000    0.50000
+    3.33200    3.60000    0.50000
+    3.33200    3.60000    0.30000
+    3.33200    2.70000    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_l:fin_bl
+0 
+0 
+ 12
+    3.33500    3.59700    0.50000
+    3.32500    3.59700    0.50000
+    3.32500    3.59700    0.30000
+    3.33500    3.59700    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_l:fin_cl
+0 
+0 
+ 12
+    3.32800    3.60000    0.50000
+    3.32800    2.75000    0.50000
+    3.32800    2.75000    0.30000
+    3.32800    3.60000    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_l:fin_dl
+0 
+0 
+ 12
+    3.32500    2.74700    0.50000
+    3.31500    2.74700    0.50000
+    3.31500    2.74700    0.30000
+    3.32500    2.74700    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_l:back_cl
+0 
+0 
+ 12
+    3.31200    2.75000    0.50000
+    3.31200    3.70000    0.50000
+    3.31200    3.70000    0.30000
+    3.31200    2.75000    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_l:left_l
+0 
+0 
+ 12
+    3.31500    3.69700    0.50000
+    3.30000    3.69700    0.50000
+    3.30000    3.69700    0.30000
+    3.31500    3.69700    0.30000
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_l:rad_top_l
+0 
+0 
+ 30
+    3.31500    3.70000    0.49700
+    3.31500    2.75000    0.49700
+    3.32500    2.75000    0.49700
+    3.32500    3.60000    0.49700
+    3.33500    3.60000    0.49700
+    3.33500    2.70000    0.49700
+    3.31500    2.70000    0.49700
+    3.31500    2.60000    0.49700
+    3.30000    2.60000    0.49700
+    3.30000    3.70000    0.49700
+  
+rc_in_steel_pl_3mm  polygon  rad-hall_l:rad_base_l
+0 
+0 
+ 30
+    3.30000    2.60000    0.30300
+    3.31500    2.60000    0.30300
+    3.31500    2.70000    0.30300
+    3.33500    2.70000    0.30300
+    3.33500    3.60000    0.30300
+    3.32500    3.60000    0.30300
+    3.32500    2.75000    0.30300
+    3.31500    2.75000    0.30300
+    3.31500    3.70000    0.30300
+    3.30000    3.70000    0.30300
+  
+# rad-mbr_m Surface defs..
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_m:face_m
+0 
+0 
+ 12
+    6.00000    0.74700    3.25000
+    4.80000    0.74700    3.25000
+    4.80000    0.74700    3.10000
+    6.00000    0.74700    3.10000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_m:right_m
+0 
+0 
+ 12
+    4.80300    0.75000    3.25000
+    4.80300    0.73500    3.25000
+    4.80300    0.73500    3.10000
+    4.80300    0.75000    3.10000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_m:back_am
+0 
+0 
+ 12
+    4.80000    0.73800    3.25000
+    5.00000    0.73800    3.25000
+    5.00000    0.73800    3.10000
+    4.80000    0.73800    3.10000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_m:back_bm
+0 
+0 
+ 12
+    5.00300    0.73500    3.25000
+    5.00300    0.71300    3.25000
+    5.00300    0.71300    3.10000
+    5.00300    0.73500    3.10000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_m:fin_am
+0 
+0 
+ 12
+    5.00000    0.71600    3.25000
+    5.90000    0.71600    3.25000
+    5.90000    0.71600    3.10000
+    5.00000    0.71600    3.10000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_m:fin_bm
+0 
+0 
+ 12
+    5.89700    0.71300    3.25000
+    5.89700    0.72300    3.25000
+    5.89700    0.72300    3.10000
+    5.89700    0.71300    3.10000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_m:fin_cm
+0 
+0 
+ 12
+    5.90000    0.72000    3.25000
+    5.05000    0.72000    3.25000
+    5.05000    0.72000    3.10000
+    5.90000    0.72000    3.10000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_m:fin_dm
+0 
+0 
+ 12
+    5.04700    0.72300    3.25000
+    5.04700    0.73500    3.25000
+    5.04700    0.73500    3.10000
+    5.04700    0.72300    3.10000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_m:back_cm
+0 
+0 
+ 12
+    5.05000    0.73800    3.25000
+    6.00000    0.73800    3.25000
+    6.00000    0.73800    3.10000
+    5.05000    0.73800    3.10000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_m:left_m
+0 
+0 
+ 12
+    5.99700    0.73500    3.25000
+    5.99700    0.75000    3.25000
+    5.99700    0.75000    3.10000
+    5.99700    0.73500    3.10000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_m:rad_top_m
+0 
+0 
+ 30
+    6.00000    0.73500    3.24700
+    5.05000    0.73500    3.24700
+    5.05000    0.72300    3.24700
+    5.90000    0.72300    3.24700
+    5.90000    0.71300    3.24700
+    5.00000    0.71300    3.24700
+    5.00000    0.73500    3.24700
+    4.80000    0.73500    3.24700
+    4.80000    0.75000    3.24700
+    6.00000    0.75000    3.24700
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_m:rad_base_m
+0 
+0 
+ 30
+    4.80000    0.75000    3.10300
+    4.80000    0.73500    3.10300
+    5.00000    0.73500    3.10300
+    5.00000    0.71300    3.10300
+    5.90000    0.71300    3.10300
+    5.90000    0.72300    3.10300
+    5.05000    0.72300    3.10300
+    5.05000    0.73500    3.10300
+    6.00000    0.73500    3.10300
+    6.00000    0.75000    3.10300
+  
+# rad-mbr_l Surface defs..
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_l:face_l
+0 
+0 
+ 12
+    6.00000    0.74700    3.10000
+    4.80000    0.74700    3.10000
+    4.80000    0.74700    2.90000
+    6.00000    0.74700    2.90000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_l:right_l
+0 
+0 
+ 12
+    4.80300    0.75000    3.10000
+    4.80300    0.73500    3.10000
+    4.80300    0.73500    2.90000
+    4.80300    0.75000    2.90000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_l:back_al
+0 
+0 
+ 12
+    4.80000    0.73800    3.10000
+    5.00000    0.73800    3.10000
+    5.00000    0.73800    2.90000
+    4.80000    0.73800    2.90000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_l:back_bl
+0 
+0 
+ 12
+    5.00300    0.73500    3.10000
+    5.00300    0.71300    3.10000
+    5.00300    0.71300    2.90000
+    5.00300    0.73500    2.90000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_l:fin_al
+0 
+0 
+ 12
+    5.00000    0.71600    3.10000
+    5.90000    0.71600    3.10000
+    5.90000    0.71600    2.90000
+    5.00000    0.71600    2.90000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_l:fin_bl
+0 
+0 
+ 12
+    5.89700    0.71300    3.10000
+    5.89700    0.72300    3.10000
+    5.89700    0.72300    2.90000
+    5.89700    0.71300    2.90000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_l:fin_cl
+0 
+0 
+ 12
+    5.90000    0.72000    3.10000
+    5.05000    0.72000    3.10000
+    5.05000    0.72000    2.90000
+    5.90000    0.72000    2.90000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_l:fin_dl
+0 
+0 
+ 12
+    5.04700    0.72300    3.10000
+    5.04700    0.73500    3.10000
+    5.04700    0.73500    2.90000
+    5.04700    0.72300    2.90000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_l:back_cl
+0 
+0 
+ 12
+    5.05000    0.73800    3.10000
+    6.00000    0.73800    3.10000
+    6.00000    0.73800    2.90000
+    5.05000    0.73800    2.90000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_l:left_l
+0 
+0 
+ 12
+    5.99700    0.73500    3.10000
+    5.99700    0.75000    3.10000
+    5.99700    0.75000    2.90000
+    5.99700    0.73500    2.90000
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_l:rad_top_l
+0 
+0 
+ 30
+    6.00000    0.73500    3.09700
+    5.05000    0.73500    3.09700
+    5.05000    0.72300    3.09700
+    5.90000    0.72300    3.09700
+    5.90000    0.71300    3.09700
+    5.00000    0.71300    3.09700
+    5.00000    0.73500    3.09700
+    4.80000    0.73500    3.09700
+    4.80000    0.75000    3.09700
+    6.00000    0.75000    3.09700
+  
+rc_in_steel_pl_3mm  polygon  rad-mbr_l:rad_base_l
+0 
+0 
+ 30
+    4.80000    0.75000    2.90300
+    4.80000    0.73500    2.90300
+    5.00000    0.73500    2.90300
+    5.00000    0.71300    2.90300
+    5.90000    0.71300    2.90300
+    5.90000    0.72300    2.90300
+    5.05000    0.72300    2.90300
+    5.05000    0.73500    2.90300
+    6.00000    0.73500    2.90300
+    6.00000    0.75000    2.90300
+  
+# rad_br2_m Surface defs..
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_m:face_m
+0 
+0 
+ 12
+    4.80000    8.40300    3.35000
+    5.90000    8.40300    3.35000
+    5.90000    8.40300    3.20000
+    4.80000    8.40300    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_m:right_m
+0 
+0 
+ 12
+    5.89700    8.40000    3.35000
+    5.89700    8.41500    3.35000
+    5.89700    8.41500    3.20000
+    5.89700    8.40000    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_m:back_am
+0 
+0 
+ 12
+    5.90000    8.41200    3.35000
+    5.80000    8.41200    3.35000
+    5.80000    8.41200    3.20000
+    5.90000    8.41200    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_m:back_bm
+0 
+0 
+ 12
+    5.79700    8.41500    3.35000
+    5.79700    8.44000    3.35000
+    5.79700    8.44000    3.20000
+    5.79700    8.41500    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_m:fin_am
+0 
+0 
+ 12
+    5.80000    8.43700    3.35000
+    4.90000    8.43700    3.35000
+    4.90000    8.43700    3.20000
+    5.80000    8.43700    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_m:fin_bm
+0 
+0 
+ 12
+    4.90300    8.44000    3.35000
+    4.90300    8.42800    3.35000
+    4.90300    8.42800    3.20000
+    4.90300    8.44000    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_m:fin_cm
+0 
+0 
+ 12
+    4.90000    8.43100    3.35000
+    5.75000    8.43100    3.35000
+    5.75000    8.43100    3.20000
+    4.90000    8.43100    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_m:fin_dm
+0 
+0 
+ 12
+    5.75300    8.42800    3.35000
+    5.75300    8.41500    3.35000
+    5.75300    8.41500    3.20000
+    5.75300    8.42800    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_m:back_cm
+0 
+0 
+ 12
+    5.75000    8.41200    3.35000
+    4.80000    8.41200    3.35000
+    4.80000    8.41200    3.20000
+    5.75000    8.41200    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_m:left_m
+0 
+0 
+ 12
+    4.80300    8.41500    3.35000
+    4.80300    8.40000    3.35000
+    4.80300    8.40000    3.20000
+    4.80300    8.41500    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_m:rad_top_m
+0 
+0 
+ 30
+    4.80000    8.41500    3.34700
+    5.75000    8.41500    3.34700
+    5.75000    8.42800    3.34700
+    4.90000    8.42800    3.34700
+    4.90000    8.44000    3.34700
+    5.80000    8.44000    3.34700
+    5.80000    8.41500    3.34700
+    5.90000    8.41500    3.34700
+    5.90000    8.40000    3.34700
+    4.80000    8.40000    3.34700
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_m:rad_base_m
+0 
+0 
+ 30
+    5.90000    8.40000    3.20300
+    5.90000    8.41500    3.20300
+    5.80000    8.41500    3.20300
+    5.80000    8.44000    3.20300
+    4.90000    8.44000    3.20300
+    4.90000    8.42800    3.20300
+    5.75000    8.42800    3.20300
+    5.75000    8.41500    3.20300
+    4.80000    8.41500    3.20300
+    4.80000    8.40000    3.20300
+  
+# rad_br2_l Surface defs..
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_l:face_l
+0 
+0 
+ 12
+    4.80000    8.40300    3.20000
+    5.90000    8.40300    3.20000
+    5.90000    8.40300    3.00000
+    4.80000    8.40300    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_l:right_l
+0 
+0 
+ 12
+    5.89700    8.40000    3.20000
+    5.89700    8.41500    3.20000
+    5.89700    8.41500    3.00000
+    5.89700    8.40000    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_l:back_al
+0 
+0 
+ 12
+    5.90000    8.41200    3.20000
+    5.80000    8.41200    3.20000
+    5.80000    8.41200    3.00000
+    5.90000    8.41200    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_l:back_bl
+0 
+0 
+ 12
+    5.79700    8.41500    3.20000
+    5.79700    8.44000    3.20000
+    5.79700    8.44000    3.00000
+    5.79700    8.41500    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_l:fin_al
+0 
+0 
+ 12
+    5.80000    8.43700    3.20000
+    4.90000    8.43700    3.20000
+    4.90000    8.43700    3.00000
+    5.80000    8.43700    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_l:fin_bl
+0 
+0 
+ 12
+    4.90300    8.44000    3.20000
+    4.90300    8.42800    3.20000
+    4.90300    8.42800    3.00000
+    4.90300    8.44000    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_l:fin_cl
+0 
+0 
+ 12
+    4.90000    8.43100    3.20000
+    5.75000    8.43100    3.20000
+    5.75000    8.43100    3.00000
+    4.90000    8.43100    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_l:fin_dl
+0 
+0 
+ 12
+    5.75300    8.42800    3.20000
+    5.75300    8.41500    3.20000
+    5.75300    8.41500    3.00000
+    5.75300    8.42800    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_l:back_cl
+0 
+0 
+ 12
+    5.75000    8.41200    3.20000
+    4.80000    8.41200    3.20000
+    4.80000    8.41200    3.00000
+    5.75000    8.41200    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_l:leftl
+0 
+0 
+ 12
+    4.80300    8.41500    3.20000
+    4.80300    8.40000    3.20000
+    4.80300    8.40000    3.00000
+    4.80300    8.41500    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_l:rad_top_l
+0 
+0 
+ 30
+    4.80000    8.41500    3.19700
+    5.75000    8.41500    3.19700
+    5.75000    8.42800    3.19700
+    4.90000    8.42800    3.19700
+    4.90000    8.44000    3.19700
+    5.80000    8.44000    3.19700
+    5.80000    8.41500    3.19700
+    5.90000    8.41500    3.19700
+    5.90000    8.40000    3.19700
+    4.80000    8.40000    3.19700
+  
+rc_in_steel_pl_3mm  polygon  rad_br2_l:rad_base_l
+0 
+0 
+ 30
+    5.90000    8.40000    3.00300
+    5.90000    8.41500    3.00300
+    5.80000    8.41500    3.00300
+    5.80000    8.44000    3.00300
+    4.90000    8.44000    3.00300
+    4.90000    8.42800    3.00300
+    5.75000    8.42800    3.00300
+    5.75000    8.41500    3.00300
+    4.80000    8.41500    3.00300
+    4.80000    8.40000    3.00300
+  
+# rad_br3_m Surface defs..
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:base_rad_m
+0 
+0 
+ 66
+    3.00000    1.40000    3.19700
+    3.00000    1.41500    3.19700
+    2.30000    1.41500    3.19700
+    2.30000    1.40000    3.19700
+    2.38000    1.40000    3.19700
+    2.40000    1.36500    3.19700
+    2.40000    1.40000    3.19700
+    2.48000    1.40000    3.19700
+    2.50000    1.36500    3.19700
+    2.50000    1.40000    3.19700
+    2.58000    1.40000    3.19700
+    2.60000    1.36500    3.19700
+    2.60000    1.40000    3.19700
+    2.68000    1.40000    3.19700
+    2.70000    1.36500    3.19700
+    2.70000    1.40000    3.19700
+    2.78000    1.40000    3.19700
+    2.80000    1.36500    3.19700
+    2.80000    1.40000    3.19700
+    2.88000    1.40000    3.19700
+    2.90000    1.36500    3.19700
+    2.90000    1.40000    3.19700
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:top_rad_m
+0 
+0 
+ 66
+    2.80000    1.36500    3.40300
+    2.78000    1.40000    3.40300
+    2.70000    1.40000    3.40300
+    2.70000    1.36500    3.40300
+    2.68000    1.40000    3.40300
+    2.60000    1.40000    3.40300
+    2.60000    1.36500    3.40300
+    2.58000    1.40000    3.40300
+    2.50000    1.40000    3.40300
+    2.50000    1.36500    3.40300
+    2.48000    1.40000    3.40300
+    2.40000    1.40000    3.40300
+    2.40000    1.36500    3.40300
+    2.38000    1.40000    3.40300
+    2.30000    1.40000    3.40300
+    2.30000    1.41500    3.40300
+    3.00000    1.41500    3.40300
+    3.00000    1.40000    3.40300
+    2.90000    1.40000    3.40300
+    2.90000    1.36500    3.40300
+    2.88000    1.40000    3.40300
+    2.80000    1.40000    3.40300
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_2rad_m
+0 
+0 
+ 12
+    2.80000    1.40300    3.40000
+    2.88000    1.40300    3.40000
+    2.88000    1.40300    3.20000
+    2.80000    1.40300    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_3rad_m
+0 
+0 
+ 12
+    2.79700    1.36500    3.40000
+    2.79700    1.40000    3.40000
+    2.79700    1.40000    3.20000
+    2.79700    1.36500    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_4rad_m
+0 
+0 
+ 12
+    2.78260    1.40149    3.40000
+    2.80260    1.36649    3.40000
+    2.80260    1.36649    3.20000
+    2.78260    1.40149    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_5rad_m
+0 
+0 
+ 12
+    2.70000    1.40300    3.40000
+    2.78000    1.40300    3.40000
+    2.78000    1.40300    3.20000
+    2.70000    1.40300    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_6rad_m
+0 
+0 
+ 12
+    2.69700    1.36500    3.40000
+    2.69700    1.40000    3.40000
+    2.69700    1.40000    3.20000
+    2.69700    1.36500    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_7rad_m
+0 
+0 
+ 12
+    2.68260    1.40149    3.40000
+    2.70260    1.36649    3.40000
+    2.70260    1.36649    3.20000
+    2.68260    1.40149    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_8rad_m
+0 
+0 
+ 12
+    2.60000    1.40300    3.40000
+    2.68000    1.40300    3.40000
+    2.68000    1.40300    3.20000
+    2.60000    1.40300    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_9rad_m
+0 
+0 
+ 12
+    2.59700    1.36500    3.40000
+    2.59700    1.40000    3.40000
+    2.59700    1.40000    3.20000
+    2.59700    1.36500    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_10rad_m
+0 
+0 
+ 12
+    2.58260    1.40149    3.40000
+    2.60260    1.36649    3.40000
+    2.60260    1.36649    3.20000
+    2.58260    1.40149    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_11rad_m
+0 
+0 
+ 12
+    2.50000    1.40300    3.40000
+    2.58000    1.40300    3.40000
+    2.58000    1.40300    3.20000
+    2.50000    1.40300    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_12rad_m
+0 
+0 
+ 12
+    2.49700    1.36500    3.40000
+    2.49700    1.40000    3.40000
+    2.49700    1.40000    3.20000
+    2.49700    1.36500    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_13rad_m
+0 
+0 
+ 12
+    2.48260    1.40149    3.40000
+    2.50260    1.36649    3.40000
+    2.50260    1.36649    3.20000
+    2.48260    1.40149    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_14rad_m
+0 
+0 
+ 12
+    2.40000    1.40300    3.40000
+    2.48000    1.40300    3.40000
+    2.48000    1.40300    3.20000
+    2.40000    1.40300    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_15rad_m
+0 
+0 
+ 12
+    2.39700    1.36500    3.40000
+    2.39700    1.40000    3.40000
+    2.39700    1.40000    3.20000
+    2.39700    1.36500    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_16rad_m
+0 
+0 
+ 12
+    2.38260    1.40149    3.40000
+    2.40260    1.36649    3.40000
+    2.40260    1.36649    3.20000
+    2.38260    1.40149    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_17rad_m
+0 
+0 
+ 12
+    2.30000    1.40300    3.40000
+    2.38000    1.40300    3.40000
+    2.38000    1.40300    3.20000
+    2.30000    1.40300    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_18rad_m
+0 
+0 
+ 12
+    2.30300    1.41500    3.40000
+    2.30300    1.40000    3.40000
+    2.30300    1.40000    3.20000
+    2.30300    1.41500    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_19rad_m
+0 
+0 
+ 12
+    3.00000    1.41200    3.40000
+    2.30000    1.41200    3.40000
+    2.30000    1.41200    3.20000
+    3.00000    1.41200    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_20rad_m
+0 
+0 
+ 12
+    2.99700    1.40000    3.40000
+    2.99700    1.41500    3.40000
+    2.99700    1.41500    3.20000
+    2.99700    1.40000    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_21rad_m
+0 
+0 
+ 12
+    2.90000    1.40300    3.40000
+    3.00000    1.40300    3.40000
+    3.00000    1.40300    3.20000
+    2.90000    1.40300    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_22rad_m
+0 
+0 
+ 12
+    2.89700    1.36500    3.40000
+    2.89700    1.40000    3.40000
+    2.89700    1.40000    3.20000
+    2.89700    1.36500    3.20000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_m:edg_23rad_m
+0 
+0 
+ 12
+    2.88260    1.40149    3.40000
+    2.90260    1.36649    3.40000
+    2.90260    1.36649    3.20000
+    2.88260    1.40149    3.20000
+  
+# rad_br3_l Surface defs..
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:base_rad_l
+0 
+0 
+ 66
+    3.00000    1.40000    2.99700
+    3.00000    1.41500    2.99700
+    2.30000    1.41500    2.99700
+    2.30000    1.40000    2.99700
+    2.38000    1.40000    2.99700
+    2.40000    1.36500    2.99700
+    2.40000    1.40000    2.99700
+    2.48000    1.40000    2.99700
+    2.50000    1.36500    2.99700
+    2.50000    1.40000    2.99700
+    2.58000    1.40000    2.99700
+    2.60000    1.36500    2.99700
+    2.60000    1.40000    2.99700
+    2.68000    1.40000    2.99700
+    2.70000    1.36500    2.99700
+    2.70000    1.40000    2.99700
+    2.78000    1.40000    2.99700
+    2.80000    1.36500    2.99700
+    2.80000    1.40000    2.99700
+    2.88000    1.40000    2.99700
+    2.90000    1.36500    2.99700
+    2.90000    1.40000    2.99700
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:top_rad_l
+0 
+0 
+ 66
+    2.80000    1.36500    3.20300
+    2.78000    1.40000    3.20300
+    2.70000    1.40000    3.20300
+    2.70000    1.36500    3.20300
+    2.68000    1.40000    3.20300
+    2.60000    1.40000    3.20300
+    2.60000    1.36500    3.20300
+    2.58000    1.40000    3.20300
+    2.50000    1.40000    3.20300
+    2.50000    1.36500    3.20300
+    2.48000    1.40000    3.20300
+    2.40000    1.40000    3.20300
+    2.40000    1.36500    3.20300
+    2.38000    1.40000    3.20300
+    2.30000    1.40000    3.20300
+    2.30000    1.41500    3.20300
+    3.00000    1.41500    3.20300
+    3.00000    1.40000    3.20300
+    2.90000    1.40000    3.20300
+    2.90000    1.36500    3.20300
+    2.88000    1.40000    3.20300
+    2.80000    1.40000    3.20300
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_2rad_l
+0 
+0 
+ 12
+    2.80000    1.40300    3.20000
+    2.88000    1.40300    3.20000
+    2.88000    1.40300    3.00000
+    2.80000    1.40300    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_3rad_l
+0 
+0 
+ 12
+    2.79700    1.36500    3.20000
+    2.79700    1.40000    3.20000
+    2.79700    1.40000    3.00000
+    2.79700    1.36500    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_4rad_l
+0 
+0 
+ 12
+    2.78260    1.40149    3.20000
+    2.80260    1.36649    3.20000
+    2.80260    1.36649    3.00000
+    2.78260    1.40149    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_5rad_l
+0 
+0 
+ 12
+    2.70000    1.40300    3.20000
+    2.78000    1.40300    3.20000
+    2.78000    1.40300    3.00000
+    2.70000    1.40300    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_6rad_l
+0 
+0 
+ 12
+    2.69700    1.36500    3.20000
+    2.69700    1.40000    3.20000
+    2.69700    1.40000    3.00000
+    2.69700    1.36500    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_7rad_l
+0 
+0 
+ 12
+    2.68260    1.40149    3.20000
+    2.70260    1.36649    3.20000
+    2.70260    1.36649    3.00000
+    2.68260    1.40149    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_8rad_l
+0 
+0 
+ 12
+    2.60000    1.40300    3.20000
+    2.68000    1.40300    3.20000
+    2.68000    1.40300    3.00000
+    2.60000    1.40300    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_9rad_l
+0 
+0 
+ 12
+    2.59700    1.36500    3.20000
+    2.59700    1.40000    3.20000
+    2.59700    1.40000    3.00000
+    2.59700    1.36500    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_10rad_l
+0 
+0 
+ 12
+    2.58260    1.40149    3.20000
+    2.60260    1.36649    3.20000
+    2.60260    1.36649    3.00000
+    2.58260    1.40149    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_11rad_l
+0 
+0 
+ 12
+    2.50000    1.40300    3.20000
+    2.58000    1.40300    3.20000
+    2.58000    1.40300    3.00000
+    2.50000    1.40300    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_12rad_l
+0 
+0 
+ 12
+    2.49700    1.36500    3.20000
+    2.49700    1.40000    3.20000
+    2.49700    1.40000    3.00000
+    2.49700    1.36500    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_13rad_l
+0 
+0 
+ 12
+    2.48260    1.40149    3.20000
+    2.50260    1.36649    3.20000
+    2.50260    1.36649    3.00000
+    2.48260    1.40149    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_14rad_l
+0 
+0 
+ 12
+    2.40000    1.40300    3.20000
+    2.48000    1.40300    3.20000
+    2.48000    1.40300    3.00000
+    2.40000    1.40300    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_15rad_l
+0 
+0 
+ 12
+    2.39700    1.36500    3.20000
+    2.39700    1.40000    3.20000
+    2.39700    1.40000    3.00000
+    2.39700    1.36500    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_16rad_l
+0 
+0 
+ 12
+    2.38260    1.40149    3.20000
+    2.40260    1.36649    3.20000
+    2.40260    1.36649    3.00000
+    2.38260    1.40149    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_17rad_l
+0 
+0 
+ 12
+    2.30000    1.40300    3.20000
+    2.38000    1.40300    3.20000
+    2.38000    1.40300    3.00000
+    2.30000    1.40300    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_18rad_l
+0 
+0 
+ 12
+    2.30300    1.41500    3.20000
+    2.30300    1.40000    3.20000
+    2.30300    1.40000    3.00000
+    2.30300    1.41500    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_19rad_l
+0 
+0 
+ 12
+    3.00000    1.41200    3.20000
+    2.30000    1.41200    3.20000
+    2.30000    1.41200    3.00000
+    3.00000    1.41200    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_20rad_l
+0 
+0 
+ 12
+    2.99700    1.40000    3.20000
+    2.99700    1.41500    3.20000
+    2.99700    1.41500    3.00000
+    2.99700    1.40000    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_21rad_l
+0 
+0 
+ 12
+    2.90000    1.40300    3.20000
+    3.00000    1.40300    3.20000
+    3.00000    1.40300    3.00000
+    2.90000    1.40300    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_22rad_l
+0 
+0 
+ 12
+    2.89700    1.36500    3.20000
+    2.89700    1.40000    3.20000
+    2.89700    1.40000    3.00000
+    2.89700    1.36500    3.00000
+  
+rc_in_steel_pl_3mm  polygon  rad_br3_l:edg_23rad_l
+0 
+0 
+ 12
+    2.88260    1.40149    3.20000
+    2.90260    1.36649    3.20000
+    2.90260    1.36649    3.00000
+    2.88260    1.40149    3.00000
+  
+# thermostat Surface defs..
+  
+rc_in_sensor_case  polygon  thermostat:acase_front
+0 
+0 
+ 30
+    6.90300    2.77600    1.43000
+    6.90300    2.69500    1.43000
+    6.90300    2.69500    1.48300
+    6.90300    2.77600    1.48300
+    6.90300    2.77600    1.43000
+    6.90300    2.80000    1.40000
+    6.90300    2.80000    1.48700
+    6.90300    2.67000    1.48700
+    6.90300    2.67000    1.40000
+    6.90300    2.80000    1.40000
+  
+rc_in_sensor_case  polygon  thermostat:acase_right
+0 
+0 
+ 12
+    6.90000    2.67300    1.48700
+    6.92300    2.67300    1.48700
+    6.92300    2.67300    1.40000
+    6.90000    2.67300    1.40000
+  
+rc_in_sensor_case  polygon  thermostat:acase_back
+0 
+0 
+ 12
+    6.92000    2.67000    1.48700
+    6.92000    2.80000    1.48700
+    6.92000    2.80000    1.40000
+    6.92000    2.67000    1.40000
+  
+rc_in_sensor_case  polygon  thermostat:aleft_case
+0 
+0 
+ 12
+    6.92300    2.79700    1.48700
+    6.90000    2.79700    1.48700
+    6.90000    2.79700    1.40000
+    6.92300    2.79700    1.40000
+  
+rc_in_sensor_case  polygon  thermostat:acase_top
+0 
+0 
+ 12
+    6.92300    2.80000    1.48400
+    6.92300    2.67000    1.48400
+    6.90000    2.67000    1.48400
+    6.90000    2.80000    1.48400
+  
+rc_in_sensor_case  polygon  thermostat:acase_base
+0 
+0 
+ 12
+    6.90000    2.67000    1.40300
+    6.92300    2.67000    1.40300
+    6.92300    2.80000    1.40300
+    6.90000    2.80000    1.40300
+  
+rc_in_circuit_bd  polygon  thermostat:adisplay
+0 
+0 
+ 12
+    6.90300    2.77600    1.48300
+    6.90300    2.69500    1.48300
+    6.90300    2.69500    1.43000
+    6.90300    2.77600    1.43000
+  
+rc_in_NiMH_battery  polygon  thermostat:abattery
+0 
+0 
+ 12
+    6.91700    2.79000    1.40900
+    6.91700    2.69000    1.40900
+    6.90500    2.69000    1.40900
+    6.90500    2.79000    1.40900
+  
+rc_in_NiMH_battery  polygon  thermostat:abattery_
+0 
+0 
+ 12
+    6.91700    2.69000    1.41500
+    6.91700    2.79000    1.41500
+    6.90500    2.79000    1.41500
+    6.90500    2.69000    1.41500
+  
+rc_in_circuit_bd  polygon  thermostat:acircuit
+0 
+0 
+ 18
+    6.90900    2.79600    1.48100
+    6.90900    2.69100    1.48100
+    6.90900    2.69100    1.47100
+    6.90900    2.67600    1.47100
+    6.90900    2.67600    1.41600
+    6.90900    2.79600    1.41600
+  
+rc_in_circuit_bd  polygon  thermostat:acircuit_
+0 
+0 
+ 18
+    6.90300    2.67600    1.47100
+    6.90300    2.69100    1.47100
+    6.90300    2.69100    1.48100
+    6.90300    2.79600    1.48100
+    6.90300    2.79600    1.41600
+    6.90300    2.67600    1.41600
+  
+rc_in_circuit_bd  polygon  thermostat:asen_a
+0 
+0 
+ 12
+    6.90900    2.69100    1.48100
+    6.90900    2.67600    1.48100
+    6.90900    2.67600    1.47100
+    6.90900    2.69100    1.47100
+  
+rc_in_circuit_bd  polygon  thermostat:axsen_a
+0 
+0 
+ 12
+    6.90300    2.67600    1.48100
+    6.90300    2.69100    1.48100
+    6.90300    2.69100    1.47100
+    6.90300    2.67600    1.47100
   

@@ -1,0 +1,50 @@
+   12   10   10    1.000    (nodes, components, connections, wind reduction)
+ Node         Fld. Type   Height    Temperature    Data_1       Data_2
+ reception       1    0   1.5000       20.000       1.0000       144.00    
+ office          1    0   1.5000       20.000       1.0000       48.001    
+ roof_space      1    0   3.7500       20.000       1.0000       49.501    
+ BW-SL01:010     1    3   1.0000       0.0000       1.0000       180.00    
+ BW-SU01:010     1    3   2.2500       0.0000       1.0000       180.00    
+ BW-Cr01:013     1    3   0.0000       0.0000       1.0000       270.00    
+ BW-SL01:014     1    3   1.0000       0.0000       1.0000       90.000    
+ BW-SU01:014     1    3   2.2500       0.0000       1.0000       90.000    
+ BW-SL02:008     1    3   1.0000       0.0000       1.0000       270.00    
+ BW-SU02:008     1    3   2.2500       0.0000       1.0000       270.00    
+ fire_out        1    3   3.6000       0.0000       9.0000       90.000    
+ west_roof       1    3   2.1000       0.0000       9.0000       0.0000    
+ Component    Type C+ L+ Description
+ WiSLz01:010    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000      0.937500000      0.800000012    
+ WiSUz01:010    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000      0.937500000      0.800000012    
+ DoCrz01:012   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       4.99999989E-03   1.00000000    
+ DoCrz01:013   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       4.99999989E-03   1.00000000    
+ WiSLz01:014    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000      0.312500000      0.500000000    
+ WiSUz01:014    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000      0.312500000      0.500000000    
+ WiSLz02:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000      0.312500000      0.500000000    
+ WiSUz02:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000      0.312500000      0.500000000    
+ west_eve       40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000      0.300000012      0.500000000    
+ fire_grill     40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000      0.400000006      0.500000000    
+ +Node         dHght   -Node         dHght   via Component
+ BW-SL01:010   0.000   reception    -0.500   WiSLz01:010                             
+ BW-SU01:010   0.000   reception     0.750   WiSUz01:010                             
+ reception    -1.500   office       -1.500   DoCrz01:012                             
+ BW-Cr01:013   0.000   reception    -1.500   DoCrz01:013                             
+ BW-SL01:014   0.000   reception    -0.500   WiSLz01:014                             
+ BW-SU01:014   0.000   reception     0.750   WiSUz01:014                             
+ BW-SL02:008   0.000   office       -0.500   WiSLz02:008                             
+ BW-SU02:008   0.000   office        0.750   WiSUz02:008                             
+ fire_out      0.000   roof_space   -0.150   fire_grill                              
+ west_roof     0.900   roof_space   -0.750   west_eve                                
+*IPSMOD 0  # stack calc
+*MFBSNC 0  # timing
+*MSLVTP 0  # flow solution
+*MFTRAC 0  # trace level

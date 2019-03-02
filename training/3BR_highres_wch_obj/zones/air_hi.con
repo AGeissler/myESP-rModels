@@ -1,0 +1,31 @@
+# thermophysical properties of air_hi defined in ../zones/air_hi.con
+# no of |air |surface(from geo)| multilayer construction
+# layers|gaps|number &  name   | database name 
+     1,     0  #   1 top_col      collector_pl
+     1,     0  #   2 glass        single_glaz
+     3,     0  #   3 top_edge     tank_i_50mmi
+     3,     0  #   4 left         tank_i_50mmi
+     1,     0  #   5 to-mid       fictitious
+     3,     0  #   6 right        tank_i_50mmi
+# conduc-  |  density | specific | thick- |dpnd|  ref. |  temp. |moisture| surf|lyr
+# tivity   |          | heat     |ness(m) |type|  temp | factor | factor |     |  
+   200.0000,    8900.0,     418.0,  0.0030,   0,   0.00, 0.00000, 0.00000  #   1   1
+     1.0500,    2500.0,     750.0,  0.0060,   0,   0.00, 0.00000, 0.00000  #   2   1
+    40.0000,    7800.0,     502.0,  0.0030,   0,   0.00, 0.00000, 0.00000  #   3   1
+     0.0300,      30.0,    1764.0,  0.0500,   0,   0.00, 0.00000, 0.00000  #       2
+   200.0000,    8900.0,     418.0,  0.0030,   0,   0.00, 0.00000, 0.00000  #       3
+    40.0000,    7800.0,     502.0,  0.0030,   0,   0.00, 0.00000, 0.00000  #   4   1
+     0.0300,      30.0,    1764.0,  0.0500,   0,   0.00, 0.00000, 0.00000  #       2
+   200.0000,    8900.0,     418.0,  0.0030,   0,   0.00, 0.00000, 0.00000  #       3
+    20.0000,      10.0,      10.0,  0.0040,   0,   0.00, 0.00000, 0.00000  #   5   1
+    40.0000,    7800.0,     502.0,  0.0030,   0,   0.00, 0.00000, 0.00000  #   6   1
+     0.0300,      30.0,    1764.0,  0.0500,   0,   0.00, 0.00000, 0.00000  #       2
+   200.0000,    8900.0,     418.0,  0.0030,   0,   0.00, 0.00000, 0.00000  #       3
+# for each surface: inside face emissivity
+ 0.5200,0.8300,0.7200,0.7200,0.9900,0.7200
+# for each surface: outside face emissivity
+ 0.5200,0.8300,0.8200,0.8200,0.9900,0.8200
+# for each surface: inside face solar absorptivity
+ 0.9600,0.050000,0.6500,0.6500,0.010000,0.6500
+# for each surface: outside face solar absorptivity
+ 0.9600,0.050000,0.3000,0.3000,0.010000,0.3000

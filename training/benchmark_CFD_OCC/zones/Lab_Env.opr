@@ -1,0 +1,32 @@
+*Operations 2.1
+*date Wed Aug 16 13:27:15 2017  # latest file modification 
+# operations of Lab_Env defined in: 
+# ../zones/Lab_Env.opr
+no infiltration or venitlation notes (yet)
+# control(no control of air flow  ), low mid & high setpoints 
+   0     0.000     0.000     0.000
+     0   # number of flow periods in day type: weekdays    
+     0   # number of flow periods in day type: saturday    
+     0   # number of flow periods in day type: sunday      
+     0   # number of flow periods in day type: holiday     
+*casual
+no casual gain notes (yet)
+# casual user-label type-key-word slot attributes
+*type lab          dynamicpeople     1  3  0
+*end_type 
+     1   # number of casual gains in day type: weekdays    
+# slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
+   1,   0,  24,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.600,  0.400
+     1   # number of casual gains in day type: saturday    
+# slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
+   1,   0,  24,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.600,  0.400
+     1   # number of casual gains in day type: sunday      
+# slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
+   1,   0,  24,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.600,  0.400
+     1   # number of casual gains in day type: holiday     
+# slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
+   1,   0,  24,  0.00,  0.00,  0.00,  0.00,  0.00,  0.00,  0.600,  0.400

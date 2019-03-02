@@ -1,7 +1,7 @@
 # Radiance RIF file: living_Glare.rif
 #e2r_gen_view   1  2
 #e2r_glaz_type   1
-view= lounge -vtv -vp 5 4.2 1.6 -vd 0.55 -0.83 0 -vu 0 0 1 -vh 110 -vv 110 -vo 0 -va 0 -vs 0 -vl 0
+view= for_glr -vtv -vp    4.8    4.5    1.6 -vd  0.552 -0.834  0.000 -vu  0.00 0.00 1.00 -vh 100.0 -vv  80.0 -vs 0 -vl 0 -vo 0 -va 0
 scene= living_Glare.sky
 scene= living_Glare-glz.rad
 scene= living_Glare.mat

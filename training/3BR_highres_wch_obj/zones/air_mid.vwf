@@ -1,0 +1,18 @@
+# zone viewfactors and MRT sensor definition of air_mid
+# defined in ../zones/air_mid.vwf
+*VIEWFACTORS
+*GEOM  ../zones/air_mid.geo
+   0   6  29   # numb mrt sensors, numb zone surfs, zone index
+# Zone viewfactors follow
+ 0.00,0.92415,0.0241099,0.0138863,0.0242078,0.0136973
+ 0.92416,0.00,0.0240984,0.0136973,0.0242078,0.0138863
+ 0.46927,0.46926,0.00,0.0238180,0.0170839,0.0206573
+ 0.44916,0.44991,0.0449192,0.00,0.0483627,0.0077329
+ 0.46930,0.46925,0.0170839,0.0206651,0.00,0.0237949
+ 0.44991,0.44874,0.0483627,0.0077329,0.0453403,0.00
+ sum over row  1 is :   1.0000512600
+ sum over row  2 is :   1.0000498295
+ sum over row  3 is :   1.0000891685
+ sum over row  4 is :   1.0000847578
+ sum over row  5 is :   1.0000939369
+ sum over row  6 is :   1.0000859499

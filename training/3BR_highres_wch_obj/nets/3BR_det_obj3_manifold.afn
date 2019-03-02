@@ -1,0 +1,250 @@
+   59   60   63    1.000    (nodes, components, connections, wind reduction)
+ Node         Fld. Type   Height    Temperature    Data_1       Data_2
+ hall            1    0   1.3000       20.000       0.0000       14.441    
+ living          1    0   1.4500       20.000       0.0000       35.412    
+ dining          1    0   1.4500       20.000       0.0000       31.587    
+ kitchen         1    0   1.4500       20.000       0.0000       15.618    
+ upper_hall      1    0   2.8500       20.000       0.0000       16.365    
+ master_br       1    0   4.0500       20.000       0.0000       35.412    
+ bedroom3        1    0   4.0500       20.000       0.0000       12.236    
+ bedroom2        1    0   4.0500       20.000       0.0000       34.087    
+ bath            1    0   4.0500       20.000       0.0000       13.118    
+ attic           1    0   6.2500       20.000       0.0000       44.271    
+ equipment       1    0   1.5000       20.000       0.0000       7.1614    
+ crawl           1    0  0.10000       20.000       0.0000       8.5862    
+ tnk_lo_160      2    0   5.7250       20.000       0.0000      0.16540    
+ tnk_md_160      2    0   6.1750       20.000       0.0000      0.16540    
+ tnk_hi_160      2    0   6.6250       20.000       0.0000      0.16540    
+ rad_bath        2    0   3.3000       20.000       0.0000      0.76000E-02
+ rad_br3_h       2    0   3.5000       20.000       0.0000      0.25000E-02
+ boiler_case     1    0   1.6000       20.000       0.0000      0.76000E-01
+ rad_br2_h       2    0   3.4250       20.000       0.0000      0.42000E-02
+ rad_dining_h    2    0  0.82500       20.000       0.0000      0.42000E-02
+ rad-mbr_h       2    0   3.3250       20.000       0.0000      0.41000E-02
+ rad_lounge_h    2    0  0.72500       20.000       0.0000      0.41000E-02
+ rad_kit         2    0  0.70000       20.000       0.0000      0.76000E-02
+ rad-hall_h      2    0  0.72500       20.000       0.0000      0.39000E-02
+ collec_low      2    0   5.6830       20.000       0.0000      0.15000E-01
+ collec_mid      2    0   6.1410       20.000       0.0000      0.15000E-01
+ collec_hi       2    0   6.6000       20.000       0.0000      0.15000E-01
+ air_low         1    0   5.7101       20.000       0.0000      0.50000E-01
+ air_mid         1    0   6.1685       20.000       0.0000      0.50000E-01
+ air_hi          1    0   6.6145       20.000       0.0000      0.50000E-01
+ water_jacket    2    0   1.6500       20.000       0.0000      0.67000E-02
+ gas             1    0   1.6500       20.000       0.0000      0.31200E-01
+ mixer           1    0   1.3000       20.000       0.0000      0.80000E-02
+ rad_lounge_m    2    0  0.57500       20.000       0.0000      0.41000E-02
+ rad_lounge_l    2    0  0.40000       20.000       0.0000      0.55000E-02
+ rad_dining_m    2    0  0.67500       20.000       0.0000      0.42000E-02
+ rad_dining_l    2    0  0.50000       20.000       0.0000      0.56000E-02
+ rad-hall_m      2    0  0.57500       20.000       0.0000      0.39000E-02
+ rad-hall_l      2    0  0.40000       20.000       0.0000      0.52000E-02
+ rad-mbr_m       2    0   3.1750       20.000       0.0000      0.41000E-02
+ rad-mbr_l       2    0   3.0000       20.000       0.0000      0.55000E-02
+ rad_br2_m       2    0   3.2750       20.000       0.0000      0.42000E-02
+ rad_br2_l       2    0   3.1000       20.000       0.0000      0.56000E-02
+ rad_br3_m       2    0   3.3000       20.000       0.0000      0.25000E-02
+ rad_br3_l       2    0   3.1000       20.000       0.0000      0.25000E-02
+ BW-Cr01:002     1    3  0.20000       0.0000       1.0000       180.00    
+ BW-Ve02:020     1    3   2.3000       0.0000       1.0000       90.000    
+ BW-Ve02:021     1    3   2.3000       0.0000       1.0000       270.00    
+ BW-Ve03:009     1    3   2.3000       0.0000       1.0000       360.00    
+ BW-Ve04:003     1    3   2.3000       0.0000       1.0000       360.00    
+ BW-Ve06:020     1    3   4.9000       0.0000       1.0000       270.00    
+ BW-Ve06:022     1    3   4.9000       0.0000       1.0000       90.000    
+ BW-Ve07:012     1    3   4.9000       0.0000       1.0000       180.00    
+ BW-Ve08:016     1    3   4.9000       0.0000       1.0000      0.10000E-03
+ BW-Ve09:012     1    3   4.9000       0.0000       1.0000       0.0000    
+ mains           2    2   0.0000       0.0000       200.00       0.0000    
+ eve_east        1    3   4.8000       0.0000       2.0000       0.0000    
+ eve_west        1    3   4.8000       0.0000       2.0000       0.0000    
+ boil_ext        1    3   1.6500       0.0000       9.0000       270.00    
+ Component    Type C+ L+ Description
+ DoCrz01:002   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       4.99999989E-03  0.900000095    
+ DoCrz01:004   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       4.99999989E-03  0.699999809    
+ DoCrz01:005   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       9.99999978E-03  0.899999976    
+ FiOPz01:009    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000      0.250000030      0.500000000    
+ DoCrz01:014   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       4.99999989E-03  0.800000191    
+ DoCrz01:016   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       4.99999989E-03   3.29999995    
+ FrVez02:020   110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000       1.29999989E-03
+ FrVez02:021   110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000       1.29999989E-03
+ FrVez03:009   110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000       1.79999927E-03
+ FrVez04:003   110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000       1.59999996E-03
+ DoCrz05:002   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       4.99999989E-03  0.699999809    
+ DoCrz05:004   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       4.99999989E-03  0.800000191    
+ DoCrz05:010   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       4.99999989E-03  0.800000191    
+ DoCrz05:048   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       4.99999989E-03  0.800000191    
+ FrVez06:020   110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000       1.29999989E-03
+ FrVez06:022   110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000       1.29999989E-03
+ FrVez07:012   110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000       1.80000020E-03
+ FrVez08:016   110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000       3.40000005E-03
+ FrVez09:012   110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000       1.59999996E-03
+ DoCrz11:043   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       4.99999989E-03  0.444999695    
+ tnk_m2h       210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ tnk_l2m       210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ col_low_lnk   210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ col_pump       30  2  0 Constant vol. flow rate component   m = rho.a               
+   2.00000000       2.77799991E-04
+ bath_p         30  2  0 Constant vol. flow rate component   m = rho.a               
+   2.00000000       3.17222220E-05
+ bath_ret      210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ kitchen_p      30  2  0 Constant vol. flow rate component   m = rho.a               
+   2.00000000       3.17222220E-05
+ kit_ret       210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ br3_p          30  2  0 Constant vol. flow rate component   m = rho.a               
+   2.00000000       3.17222220E-05
+ br3_hm        210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ br3_ml        210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ br3_ret       210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ br2_p          30  2  0 Constant vol. flow rate component   m = rho.a               
+   2.00000000       3.17222220E-05
+ br2_hm        210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ br2_ml        210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ br2_ret       210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ dining_p       30  2  0 Constant vol. flow rate component   m = rho.a               
+   2.00000000       3.17222220E-05
+ din_hm        210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ din_ml        210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ din_ret       210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ living_p       30  2  0 Constant vol. flow rate component   m = rho.a               
+   2.00000000       3.17222220E-05
+ liv_hm        210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ liv_ml        210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ liv_ret       210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ mbr_p          30  2  0 Constant vol. flow rate component   m = rho.a               
+   2.00000000       3.17222220E-05
+ mbr_hm        210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ mbr_ml        210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ mbr_ret       210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ hall_p         30  2  0 Constant vol. flow rate component   m = rho.a               
+   2.00000000       3.17222220E-05
+ hall_hm       210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ hall_ml       210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ hall_ret      210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ col_lm        210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.48999998E-02   1.48999998E-02   1.00000000       0.00000000      0.100000001    
+ col_mh        210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.40000004E-02   1.40000004E-02   1.00000000       0.00000000      0.100000001    
+ main_pipe     210  6  0 General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+   2.00000000       1.40000004E-02   1.40000004E-02   4.00000000       0.00000000      0.100000001    
+ east_eve_v    110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000      0.200000003    
+ west_eve_v    110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000       5.00000007E-02
+ col_crack     120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       3.00000003E-03   1.00000000    
+ boil_vent     110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000      0.100000039    
+ mix_crack     120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       4.99999989E-03   1.00000000    
+ +Node         dHght   -Node         dHght   via Component
+ BW-Cr01:002   0.000   hall         -1.100   DoCrz01:002                             
+ hall         -1.100   living       -1.250   DoCrz01:004                             
+ hall         -1.100   kitchen      -1.250   DoCrz01:005                             
+ hall          0.800   upper_hall   -0.750   FiOPz01:009                             
+ hall         -1.100   dining       -1.250   DoCrz01:014                             
+ hall         -1.100   equipment    -1.300   DoCrz01:016                             
+ BW-Ve02:020   0.000   living        0.850   FrVez02:020                             
+ BW-Ve02:021   0.000   living        0.850   FrVez02:021                             
+ BW-Ve03:009   0.000   dining        0.850   FrVez03:009                             
+ BW-Ve04:003   0.000   kitchen       0.850   FrVez04:003                             
+ upper_hall   -0.050   master_br    -1.250   DoCrz05:002                             
+ upper_hall   -0.050   bath         -1.250   DoCrz05:004                             
+ upper_hall   -0.050   bedroom2     -1.250   DoCrz05:010                             
+ upper_hall   -0.050   bedroom3     -1.250   DoCrz05:048                             
+ BW-Ve06:020   0.000   master_br     0.850   FrVez06:020                             
+ BW-Ve06:022   0.000   master_br     0.850   FrVez06:022                             
+ BW-Ve07:012   0.000   bedroom3      0.850   FrVez07:012                             
+ BW-Ve08:016   0.000   bedroom2      0.850   FrVez08:016                             
+ BW-Ve09:012   0.000   bath          0.850   FrVez09:012                             
+ equipment    -0.300   boiler_case  -0.400   DoCrz11:043                             
+ water_jacket  1.950   rad_bath      0.300   bath_p                                  
+ rad_bath     -0.300   water_jacket  1.350   bath_ret                                
+ water_jacket  1.950   rad_br3_h     0.100   br3_p                                   
+ rad_br3_h    -0.100   rad_br3_m     0.100   br3_hm                                  
+ rad_br3_m     1.950   rad_br3_l     0.300   br3_ml                                  
+ rad_br3_l    -0.100   water_jacket  1.350   br3_ret                                 
+ water_jacket -0.650   rad_br2_h     0.300   br2_p                                   
+ rad_br2_h    -0.075   rad_br2_m     0.075   br2_hm                                  
+ rad_br2_m    -0.075   rad_br2_l     0.100   br2_ml                                  
+ rad_br2_l    -0.100   water_jacket  1.350   br2_ret                                 
+ water_jacket -0.650   rad_kit       0.300   kitchen_p                               
+ rad_kit      -0.300   water_jacket -1.250   kit_ret                                 
+ water_jacket  1.850   rad-mbr_h     0.075   mbr_p                                   
+ rad-mbr_h    -0.075   rad-mbr_m     0.075   mbr_hm                                  
+ rad-mbr_m    -0.075   rad-mbr_l     0.100   mbr_ml                                  
+ rad-mbr_l    -0.100   water_jacket  1.250   mbr_ret                                 
+ water_jacket -0.750   rad_lounge_h  0.075   living_p                                
+ rad_lounge_h -0.075   rad_lounge_m  0.075   liv_hm                                  
+ rad_lounge_m -0.075   rad_lounge_l  0.100   liv_ml                                  
+ rad_lounge_l -0.100   water_jacket -1.350   liv_ret                                 
+ water_jacket -0.850   rad-hall_h    0.075   hall_p                                  
+ rad-hall_h   -0.075   rad-hall_m    0.075   hall_hm                                 
+ rad-hall_m   -0.075   rad-hall_l    0.100   hall_ml                                 
+ rad-hall_l   -0.100   water_jacket -1.350   hall_ret                                
+ water_jacket  1.750   rad_dining_h  0.075   dining_p                                
+ rad_dining_h -0.075   rad_dining_m  0.075   din_hm                                  
+ rad_dining_m -0.075   rad_dining_l  0.100   din_ml                                  
+ rad_dining_l -0.100   water_jacket -1.250   din_ret                                 
+ tnk_hi_160   -0.850   tnk_md_160    0.075   tnk_m2h                                 
+ tnk_md_160   -0.225   tnk_lo_160    0.225   tnk_l2m                                 
+ tnk_lo_160   -0.271   collec_low   -0.229   col_low_lnk                             
+ collec_low    0.229   collec_mid   -0.229   col_lm                                  
+ collec_mid    0.230   collec_hi    -0.229   col_mh                                  
+ collec_hi     0.250   tnk_hi_160    0.225   col_pump                                
+ mains         0.100   water_jacket -5.625   main_pipe                               
+ mains         0.500   tnk_lo_160   -0.950   main_pipe                               
+ eve_east      0.900   attic        -0.950   east_eve_v                              
+ eve_west      0.900   attic        -0.950   west_eve_v                              
+ eve_east      0.000   air_low       0.000   col_crack                               
+ eve_east      1.769   air_mid       0.000   col_crack                               
+ eve_east      1.769   air_hi       -0.446   col_crack                               
+ boil_ext      0.000   gas           0.000   boil_vent                               
+ eve_west     -3.500   mixer         0.000   mix_crack                               
+*IPSMOD 0  # stack calc
+*MFBSNC 0  # timing
+*MSLVTP 0  # flow solution
+*MFTRAC 0  # trace level

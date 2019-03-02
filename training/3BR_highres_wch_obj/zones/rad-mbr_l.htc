@@ -1,0 +1,10 @@
+*HC_CTL for zone rad-mbr_l
+*Date,Thu Jan 17 14:34:56 2019
+  1 # number control intervals
+ 12 # number of surfaces
+# (face_l right_l back_al back_bl fin_al fin_bl fin_cl fin_dl back_cl left_l rad_top_l rad_base_l)
+  0.00    24.00 # start and end time of interval
+  1 # fixed coefficients calculation control type
+*Doc,Water filled convection coefficients
+ 999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00,999.00
+ -1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000

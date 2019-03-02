@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,west_space # tag version, format, zone name
-*date Thu Aug 23 18:09:28 2007  # latest file modification 
+*date Fri Mar 23 14:07:53 2018  # latest file modification 
 west_space is the construction void within west wall
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,8.28600,5.58600,0.00000  #   1
@@ -28,40 +28,40 @@ west_space is the construction void within west wall
 *vertex,4.50200,8.23300,2.10000  #  24
 # 
 # tag, number of vertices followed by list of associated vert
-*edges,4,1,2,6,5  #  1
-*edges,16,2,3,22,21,24,23,22,3,7,6,2,17,20,19,18,17  #  2
-*edges,4,3,4,8,7  #  3
-*edges,16,4,1,14,13,16,15,14,1,5,8,4,9,12,11,10,9  #  4
-*edges,4,5,6,7,8  #  5
-*edges,4,1,4,3,2  #  6
-*edges,4,9,22,23,12  #  7
-*edges,4,21,10,11,24  #  8
-*edges,4,9,10,21,22  #  9
-*edges,4,11,12,23,24  # 10
-*edges,4,13,18,19,16  # 11
-*edges,4,17,14,15,20  # 12
-*edges,4,13,14,17,18  # 13
-*edges,4,15,16,19,20  # 14
+*edges,4,1,2,6,5  #   1
+*edges,16,2,3,22,21,24,23,22,3,7,6,2,17,20,19,18,17  #   2
+*edges,4,3,4,8,7  #   3
+*edges,16,4,1,14,13,16,15,14,1,5,8,4,9,12,11,10,9  #   4
+*edges,4,5,6,7,8  #   5
+*edges,4,1,4,3,2  #   6
+*edges,4,9,22,23,12  #   7
+*edges,4,21,10,11,24  #   8
+*edges,4,9,10,21,22  #   9
+*edges,4,11,12,23,24  #  10
+*edges,4,13,18,19,16  #  11
+*edges,4,17,14,15,20  #  12
+*edges,4,13,14,17,18  #  13
+*edges,4,15,16,19,20  #  14
 # 
 # surf attributes:
-#  surf name, surf position VERT/CIIL/FLOR/SLOP/UNKN
+#  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
 *surf,s_buf,VERT,-,-,-,int_buf,OPAQUE,ANOTHER,07,07  #   1 ||< s_west:buf_1
 *surf,s_liv,VERT,-,-,-,int_westrev,OPAQUE,ANOTHER,01,04  #   2 ||< s_west:kitliv
 *surf,s_adjhouse,VERT,-,-,-,ext_west,OPAQUE,SIMILAR,00,00  #   3 ||< identical environment
-*surf,ext_west,VERT,-,-,-,ext_west,OPAQUE,EXTERIOR,0,0  #   4 ||< external
-*surf,ceil,CEIL,-,-,-,int_roof,OPAQUE,ANOTHER,10,07  #   5 ||< west_sp:roof
+*surf,ext_west,VERT,-,-,-,ext_west,OPAQUE,EXTERIOR,00,000  #   4 ||< external
+*surf,ceil,CEIL,-,GRILL,CRACK,int_roof,OPAQUE,ANOTHER,10,07  #   5 ||< west_sp:roof
 *surf,floor,FLOR,-,-,-,house_floor,OPAQUE,GROUND,01,00  #   6 ||< ground profile  1
-*surf,jambl,VERT,-,-,-,ext_west,OPAQUE,EXTERIOR,0,0  #   7 ||< external
-*surf,jambr,VERT,-,-,-,ext_west,OPAQUE,EXTERIOR,0,0  #   8 ||< external
-*surf,sill,CEIL,-,-,-,ext_west,OPAQUE,EXTERIOR,0,0  #   9 ||< external
-*surf,head,FLOR,-,-,-,ext_west,OPAQUE,EXTERIOR,0,0  #  10 ||< external
-*surf,jl,VERT,-,-,-,ext_west,OPAQUE,EXTERIOR,0,0  #  11 ||< external
-*surf,jr,VERT,-,-,-,ext_west,OPAQUE,EXTERIOR,0,0  #  12 ||< external
-*surf,sillr,CEIL,-,-,-,ext_west,OPAQUE,EXTERIOR,0,0  #  13 ||< external
-*surf,headr,FLOR,-,-,-,ext_west,OPAQUE,EXTERIOR,0,0  #  14 ||< external
+*surf,jambl,VERT,-,-,-,ext_west,OPAQUE,EXTERIOR,00,000  #   7 ||< external
+*surf,jambr,VERT,-,-,-,ext_west,OPAQUE,EXTERIOR,00,000  #   8 ||< external
+*surf,sill,CEIL,-,-,-,ext_west,OPAQUE,EXTERIOR,00,000  #   9 ||< external
+*surf,head,FLOR,-,-,-,ext_west,OPAQUE,EXTERIOR,00,000  #  10 ||< external
+*surf,jl,VERT,-,FRAME,CRACK,ext_west,OPAQUE,EXTERIOR,00,000  #  11 ||< external
+*surf,jr,VERT,-,FRAME,CRACK,ext_west,OPAQUE,EXTERIOR,00,000  #  12 ||< external
+*surf,sillr,CEIL,-,-,-,ext_west,OPAQUE,EXTERIOR,00,000  #  13 ||< external
+*surf,headr,FLOR,-,-,-,ext_west,OPAQUE,EXTERIOR,00,000  #  14 ||< external
 # 
 *insol,2,10,9,0  # default insolation distribution
 # 

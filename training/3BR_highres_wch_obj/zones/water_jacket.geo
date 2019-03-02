@@ -1,7 +1,6 @@
 *Geometry 1.1,GEN,water_jacket # tag version, format, zone name
-*date Tue Oct  3 14:37:23 2017  # latest file modification 
+*date Mon Jan 28 11:56:26 2019  # latest file modification 
 water_jacket describes water side of boiler
-*previous_rotate    90.00,   0.000,   0.000  # prior rotation angle X Y
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,1.41000,5.43000,1.39000  #   1
 *vertex,1.68000,5.43000,1.39000  #   2
@@ -39,18 +38,18 @@ water_jacket describes water side of boiler
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,j_left,VERT,-,-,-,tank_i_50mmi,OPAQUE,ANOTHER,18,07  #   1 ||< j_left:boiler_case
-*surf,j_front,VERT,-,-,-,tank_i_50mmi,OPAQUE,ANOTHER,18,08  #   2 ||< j_front:boiler_case
-*surf,j_right,VERT,-,-,-,tank_i_50mmi,OPAQUE,ANOTHER,18,09  #   3 ||< j_right:boiler_case
-*surf,j_back,VERT,-,-,-,tank_i_50mmi,OPAQUE,ANOTHER,18,10  #   4 ||< j_back:boiler_case
-*surf,j_top,CEIL,-,-,-,tank_i_50mmi,OPAQUE,ANOTHER,18,11  #   5 ||< j_top:boiler_case
-*surf,j_base,FLOR,-,-,-,tank_i_50mmi,OPAQUE,ANOTHER,18,12  #   6 ||< j_base:boiler_case
-*surf,c-left,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,32,01  #   7 ||< c-left:gas
-*surf,c_front,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,32,02  #   8 ||< c_front:gas
-*surf,c_right,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,32,03  #   9 ||< c_right:gas
-*surf,c_back,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,32,04  #  10 ||< c_back:gas
-*surf,c_top,FLOR,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,32,05  #  11 ||< c_top:gas
-*surf,c_base,CEIL,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,32,06  #  12 ||< c_base:gas
+*surf,j_left,VERT,-,-,-,tank_i_20mm,OPAQUE,ANOTHER,18,007  #   1 ||< j_left:boiler_case
+*surf,j_front,VERT,-,-,-,tank_i_20mm,OPAQUE,ANOTHER,18,008  #   2 ||< j_front:boiler_case
+*surf,j_right,VERT,-,-,-,tank_i_20mm,OPAQUE,ANOTHER,18,009  #   3 ||< j_right:boiler_case
+*surf,j_back,VERT,-,-,-,tank_i_20mm,OPAQUE,ANOTHER,18,010  #   4 ||< j_back:boiler_case
+*surf,j_top,CEIL,-,-,-,tank_i_20mm,OPAQUE,ANOTHER,18,011  #   5 ||< j_top:boiler_case
+*surf,j_base,FLOR,-,-,-,tank_i_20mm,OPAQUE,ANOTHER,18,012  #   6 ||< j_base:boiler_case
+*surf,c-left,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,32,001  #   7 ||< c-left:gas
+*surf,c_front,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,32,002  #   8 ||< c_front:gas
+*surf,c_right,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,32,003  #   9 ||< c_right:gas
+*surf,c_back,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,32,004  #  10 ||< c_back:gas
+*surf,c_top,FLOR,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,32,005  #  11 ||< c_top:gas
+*surf,c_base,CEIL,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,32,006  #  12 ||< c_base:gas
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

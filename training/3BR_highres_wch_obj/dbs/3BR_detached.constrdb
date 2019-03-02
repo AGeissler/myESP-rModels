@@ -1,7 +1,7 @@
-# composite construction db defined in ../dbs/3BR_detached.constrdb
+# Composite construction db defined in ../dbs/3BR_detached.constrdb
 # based on materials db ../dbs/3BR_detached.materialdb
 # and based on CFClayers db CFClayers.db1.a
-  115     # no of composites 
+  117     # no of composites 
 # layers  description  type  optics name   symmetry tag
     4    extern_wall   OPAQ  OPAQUE        NONSYMMETRIC  
 # material ref thickness (m) description & air gap R
@@ -835,3 +835,15 @@
     1    steel_gr_3mm  OPAQ  OPAQUE        SYMMETRIC     
 # material ref thickness (m) description & air gap R
    44    0.0030  beige ptd steel : Beige painted steel
+# layers  description  type  optics name   symmetry tag
+    3    tank_w_15mm   OPAQ  OPAQUE        tank_i_20mm   
+# material ref thickness (m) description & air gap R
+   41    0.0030  copper : Copper
+  203    0.0050  UF foam : UF foam (non-hygroscopic)
+   45    0.0030  white ptd steel : White painted steel
+# layers  description  type  optics name   symmetry tag
+    3    tank_i_20mm   OPAQ  OPAQUE        tank_w_15mm   
+# material ref thickness (m) description & air gap R
+   45    0.0030  white ptd steel : White painted steel
+  203    0.0050  UF foam : UF foam (non-hygroscopic)
+   41    0.0030  copper : Copper

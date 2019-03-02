@@ -1,0 +1,39 @@
+# thermophysical properties of thermostat defined in ../zones/thermostat.con
+# no of |air |surface(from geo)| multilayer construction
+# layers|gaps|number &  name   | database name 
+     1,     0  #   1 acase_front  sensor_case
+     1,     0  #   2 acase_right  sensor_case
+     1,     0  #   3 acase_back   sensor_case
+     1,     0  #   4 aleft_case   sensor_case
+     1,     0  #   5 acase_top    sensor_case
+     1,     0  #   6 acase_base   sensor_case
+     1,     0  #   7 adisplay     circuit_bd
+     1,     0  #   8 abattery     NiMH_battery
+     1,     0  #   9 abattery_    NiMH_battery
+     1,     0  #  10 acircuit     circuit_bd
+     1,     0  #  11 acircuit_    circuit_bd
+     1,     0  #  12 asen_a       circuit_bd
+     1,     0  #  13 axsen_a      circuit_bd
+# conduc-  |  density | specific | thick- |dpnd|  ref. |  temp. |moisture| surf|lyr
+# tivity   |          | heat     |ness(m) |type|  temp | factor | factor |     |  
+     0.2500,    1020.0,    1400.0,  0.0017,   0,   0.00, 0.00000, 0.00000  #   1   1
+     0.2500,    1020.0,    1400.0,  0.0017,   0,   0.00, 0.00000, 0.00000  #   2   1
+     0.2500,    1020.0,    1400.0,  0.0017,   0,   0.00, 0.00000, 0.00000  #   3   1
+     0.2500,    1020.0,    1400.0,  0.0017,   0,   0.00, 0.00000, 0.00000  #   4   1
+     0.2500,    1020.0,    1400.0,  0.0017,   0,   0.00, 0.00000, 0.00000  #   5   1
+     0.2500,    1020.0,    1400.0,  0.0017,   0,   0.00, 0.00000, 0.00000  #   6   1
+     0.3230,    1770.0,     695.0,  0.0017,   0,   0.00, 0.00000, 0.00000  #   7   1
+     0.5700,    3130.0,     677.0,  0.0140,   0,   0.00, 0.00000, 0.00000  #   8   1
+     0.5700,    3130.0,     677.0,  0.0140,   0,   0.00, 0.00000, 0.00000  #   9   1
+     0.3230,    1770.0,     695.0,  0.0017,   0,   0.00, 0.00000, 0.00000  #  10   1
+     0.3230,    1770.0,     695.0,  0.0017,   0,   0.00, 0.00000, 0.00000  #  11   1
+     0.3230,    1770.0,     695.0,  0.0017,   0,   0.00, 0.00000, 0.00000  #  12   1
+     0.3230,    1770.0,     695.0,  0.0017,   0,   0.00, 0.00000, 0.00000  #  13   1
+# for each surface: inside face emissivity
+ 0.9000,0.9000,0.9000,0.9000,0.9000,0.9000,0.9000,0.8000,0.8000,0.9000,0.9000,0.9000,0.9000
+# for each surface: outside face emissivity
+ 0.9000,0.9000,0.9000,0.9000,0.9000,0.9000,0.9000,0.8000,0.8000,0.9000,0.9000,0.9000,0.9000
+# for each surface: inside face solar absorptivity
+ 0.6000,0.6000,0.6000,0.6000,0.6000,0.6000,0.7500,0.7000,0.7000,0.7500,0.7500,0.7500,0.7500
+# for each surface: outside face solar absorptivity
+ 0.6000,0.6000,0.6000,0.6000,0.6000,0.6000,0.7500,0.7000,0.7000,0.7500,0.7500,0.7500,0.7500

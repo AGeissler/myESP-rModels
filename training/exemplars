@@ -65,21 +65,13 @@
 *group	technical features
 *help	A simple office model with various technical features applied.
 *item
-*name	base case model: two offices and a passageway
-*cfg	/opt/esp-r/training/cellular_bc/cfg/cellular_bc.cfg
-*root	/opt/esp-r/training/cellular_bc
-*item
-*name	... with high resolution
-*cfg	/opt/esp-r/training/cellular_hires/cfg/cellular_hires.cfg
-*root	/opt/esp-r/training/cellular_hires
+*name	two offices and a passageway
+*cfg	/opt/esp-r/training/cellular_shd/cfg/cellular_shd.cfg
+*root	/opt/esp-r/training/cellular_shd
 *item
 *name	... with high resolution and furniture mass
 *cfg	/opt/esp-r/training/cellular_furn/cfg/cellular_furn.cfg
 *root	/opt/esp-r/training/cellular_furn
-*item
-*name	... with shading
-*cfg	/opt/esp-r/training/cellular_shd/cfg/cellular_shd.cfg
-*root	/opt/esp-r/training/cellular_shd
 *item
 *name	... with natural ventilation
 *cfg	/opt/esp-r/training/cellular_various/cfg/cellular_natv.cfg
@@ -166,9 +158,9 @@
 *cfg	/opt/esp-r/training/cellular_various/cfg/cellular_pi.cfg
 *root	/opt/esp-r/training/cellular_various
 *item
-*name	... with associated measured temperatures
-*cfg	/opt/esp-r/training/cellular_bc/cfg/cellular_measured.cfg
-*root	/opt/esp-r/training/cellular_bc
+*name	... with associated observed temperatures
+*cfg	/opt/esp-r/training/cellular_various/cfg/cellular_measured.cfg
+*root	/opt/esp-r/training/cellular_various
 *item
 *name	... using CFC complex fenistrations in facade
 *cfg	/opt/esp-r/training/cellular_CFC/cfg/cellular_CFC.cfg
@@ -183,28 +175,20 @@
 *group	realistic scale
 *help	A set of relatively detailed models.
 *item
-*name	house with sun-space, winter operation
-*cfg	/opt/esp-r/training/sun_space/cfg/house_win.cfg
-*root	/opt/esp-r/training/sun_space
-*item
 *name	house with sun-space, summer operation
-*cfg	/opt/esp-r/training/sun_space/cfg/house_sum.cfg
+*cfg	/opt/esp-r/training/sun_space/cfg/house_with_sunspace.cfg
 *root	/opt/esp-r/training/sun_space
 *item
 *name	house with solar ventilation pre-heat
 *cfg	/opt/esp-r/training/svph/cfg/linford.cfg
 *root	/opt/esp-r/training/svph
 *item
-*name	office with natural ventilation
-*cfg	/opt/esp-r/training/office/cfg/office_sum.cfg
-*root	/opt/esp-r/training/office
-*item
 *name	comfort in hospital rooms with radiant pannel heating
 *cfg	/opt/esp-r/training/rad_room_heat/cfg/rad_rooms_heat.cfg
 *root	/opt/esp-r/training/rad_room_heat
 *item
 *name	high resolution 3BR with zonal radiators and flow based WCH
-*cfg	/opt/esp-r/training/3BR_highres_wch_obj/cfg/3BR_wch_obj1819.cfg
+*cfg	/opt/esp-r/training/3BR_highres_wch_obj/cfg/3BR_det_obj3.cfg
 *root	/opt/esp-r/training/3BR_highres_wch_obj
 *item
 *group	real projects
@@ -275,17 +259,9 @@
 *cfg	/opt/esp-r/training/office_doctor/cfg/office_for_doctor_flow.cfg
 *root	/opt/esp-r/training/office_doctor
 *item
-*name	Office for a doctor with graphic flow network
+*name	Office for a doctor with icon based flow network
 *cfg	/opt/esp-r/training/office_doctor/cfg/office_for_doctor_gflow.cfg
 *root	/opt/esp-r/training/office_doctor
-*item
-*name	A simple room to add a graphic flow network
-*cfg	/opt/esp-r/training/box_network/cfg/box_nonetwork.cfg
-*root	/opt/esp-r/training/box_network
-*item
-*name	A simple room with a graphic flow network
-*cfg	/opt/esp-r/training/box_network/cfg/box_network.cfg
-*root	/opt/esp-r/training/box_network
 *item
 *name	A pair of rooms to add component based mechanical ventilation
 *cfg	/opt/esp-r/training/plant/mech_vent_2izn/cfg/mech_vent_bc.cfg
@@ -302,48 +278,24 @@
 *group	network ventilation
 *help	These models demonstrate the nodal network approach to flow modelling.
 *item
-*name	natural ventilation network
-*cfg	/opt/esp-r/training/flow/cfg/bld_flw_simp.cfg
-*root	/opt/esp-r/training/flow
-*item
 *name	... with controlled window opening
-*cfg    /opt/esp-r/training/flow/cfg/bld_flw_ctl.cfg
-*root	/opt/esp-r/training/flow
-*item
-*name	office with Trombe-Michell wall
-*cfg    /opt/esp-r/training/trombe_wall/cfg/trombe_wall.cfg
-*root	/opt/esp-r/training/trombe_wall
-*item
-*name	...Trombe-Michell wall with open dampers
-*cfg    /opt/esp-r/training/trombe_wall/cfg/trombe_wall_crack.cfg
-*root	/opt/esp-r/training/trombe_wall
-*item
-*name	...Trombe-Michell wall with graphic net open dampers
-*cfg    /opt/esp-r/training/trombe_wall/cfg/trombe_wall_crackg.cfg
-*root	/opt/esp-r/training/trombe_wall
+*cfg    /opt/esp-r/training/basic/cfg/bld_flow_ctl.cfg
+*root	/opt/esp-r/training/basic
 *item
 *name	...Trombe-Michell wall with controlled dampers
-*cfg    /opt/esp-r/training/trombe_wall/cfg/trombe_wall_crack_ctl.cfg
+*cfg    /opt/esp-r/training/trombe_wall/cfg/trombe_wall_office_cr3d_ctl.cfg
 *root	/opt/esp-r/training/trombe_wall
 *item
-*name	forced ventilation network with controlled recirculation
-*cfg    /opt/esp-r/training/flow/cfg/bld_mech_ven.cfg
-*root	/opt/esp-r/training/flow
+*name	forced ventilation network with zonal air handler
+*cfg    /opt/esp-r/training/cellular_hybrid/cfg/cellular_mctl.cfg
+*root	/opt/esp-r/training/cellular_hybrid
 *item
 *name	flow network equivalent of blower-door test
 *cfg    /opt/esp-r/training/blower_test/cfg/blower_test.cfg
 *root	/opt/esp-r/training/blower_test
 *item
-*name	... with thermal mixing
-*cfg    /opt/esp-r/training/flow/cfg/bld_mech_ven_th.cfg
-*root	/opt/esp-r/training/flow
-*item
-*name	alternative facade ventilation schemes, text network
-*cfg    /opt/esp-r/training/3_windows/cfg/3_windows_legacy.cfg
-*root	/opt/esp-r/training/3_windows
-*item
-*name	... graphic flow network
-*cfg    /opt/esp-r/training/3_windows/cfg/3_windows_dog.cfg
+*name	... alternative window flow definitions
+*cfg    /opt/esp-r/training/3_windows/cfg/3_windows_3D.cfg
 *root	/opt/esp-r/training/3_windows
 *item
 *group	systems + control
@@ -512,10 +464,6 @@
 *name   ... with detailed dynamic occupant in room
 *cfg    /opt/esp-r/training/cfd/CFD_room/cfg/CFD_room_occ.cfg
 *root	/opt/esp-r/training/cfd/CFD_room
-*item
-*name	... conflated within cellular office
-*cfg	/opt/esp-r/training/office_dfs/cfg/office_vent_dfs_conf.cfg
-*root	/opt/esp-r/training/office_dfs
 *item
 *name   Multi-zone CFD with building + flow network coupling
 *cfg    /opt/esp-r/training/cellular_cfd/cfg/cellular_cfd.cfg

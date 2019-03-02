@@ -1,0 +1,92 @@
+*DFS V2.2 # Zone air movement description.
+*conflation 4  # conflation type
+*title ... describe the basic room wiyhout a person                            
+# user supplied notes for this domain
+*thermal_geom
+*vrts    1   2   4   5
+# Ze is 0 if orthogonal
+*regions    5   5   3   0  # regions in X Y Zw Ze directions
+# Negative cell number enables symetrical gridding.
+*xregion
+  -5   0.200   1.000 # no cells, length, power law coeff
+ -10   1.000   1.000 # no cells, length, power law coeff
+ -21   0.600   1.000 # no cells, length, power law coeff
+ -10   1.000   1.000 # no cells, length, power law coeff
+  -5   0.200   1.000 # no cells, length, power law coeff
+*yregion
+  -8   0.500   1.000 # no cells, length, power law coeff
+ -10   1.000   1.000 # no cells, length, power law coeff
+ -15   0.500   1.000 # no cells, length, power law coeff
+ -10   1.000   1.000 # no cells, length, power law coeff
+  -8   0.500   1.000 # no cells, length, power law coeff
+*zwregion
+ -10   0.200   1.000 # no cells, length, power law coeff
+ -32   2.000   1.000 # no cells, length, power law coeff
+ -10   0.300   1.000 # no cells, length, power law coeff
+# Define the volumes for the CFD domain.
+*volumes   18
+# name  type  Ii If Ji Jf Ki Kf
+South        South    1  51   1   1  11  52
+North        North    1  51  51  51   1  42
+west         West     1   1   1  51   1  52
+East         East    51  51   1  51   1  52
+Floor        Low      1  51   1  51   1   1
+Roof         High     1  51   1  51  52  52
+south1       South    1  18   1   1   1  10
+south2       South   34  51   1   1   1  10
+North1       North    1  20  51  51  43  52
+North2       North   32  51  51  51  43  52
+Inlet        South   19  33   1   1   1  10
+Outlet       North   21  31  51  51  43  52
+head1        Block   25  27  25  27  30  34
+trunk1       Block   22  30  24  29  18  29
+armr1        Block   19  21  26  27  18  29
+arml1        Block   31  33  26  27  18  29
+legr1        Block   22  25  25  28   1  17
+legl1        Block   27  30  25  28   1  17
+# Solid boundary conditions.
+*solids 
+South        Temp  24.00 | Confl   1 Wall-1      
+North        Temp  24.00 | Confl   1 Wall-3      
+west         Temp  24.00 | Confl   1 Wall-4      
+East         Temp  24.00 | Confl   1 Wall-2      
+Floor        Temp  24.00 | Confl   1 Base-6      
+Roof         Temp  24.00 | Confl   1 Top-5       
+south1       Temp  24.00 | Confl   1 Wall-1      
+south2       Temp  24.00 | Confl   1 Wall-1      
+North1       Temp  24.00 | Confl   1 Wall-3      
+North2       Temp  24.00 | Confl   1 Wall-3      
+# Air flow boundary conditions.
+*air_flow 
+Inlet        Velocity  0.017 Temp 21.800 Hum  0.000 Area  0.000 Ang  0.000  0.000
+Outlet       Velocity -0.017 Temp 26.500 Hum  0.000 Area  0.000 Ang  0.000  0.000
+# Internal sources.
+*contaminants(   0 contaminants, humdity is contaminant number   0 )
+# Blockages.
+*blockages
+head1        Heat       0.000
+trunk1       Heat       0.000
+armr1        Heat       0.000
+arml1        Heat       0.000
+legr1        Heat       0.000
+legl1        Heat       0.000
+*solution_methods
+Turbulence 1 # k-e model
+Buoyancy 2  25.00 # Boussinesq approx.
+# Equations to be solved:
+*solution_equations
+#  Type  Initial value  Relaxation type and factors
+Pressure    0.000 Linear  0.700  0.050
+Vel U  0.100E-02 Linear  0.500  0.050
+Vel V  0.100E-02 Linear  0.500  0.050
+Vel W  0.100E-02 Linear  0.500  0.050
+Temp   26.000 Linear  0.900  0.250
+Ted  0.500E-02 Linear  0.900      0.500E-01
+Epd  0.500E-02 Linear  0.900      0.500E-01
+Lmage  n/a Linear  n/a # currently 0.9 is always assumed
+# Iteration control.
+*iteration 
+ 10000  0.2000E-01 No
+*monitor   10   5  20  CFD.mon
+*reint  NO
+*svf  1  # frequency of results writing

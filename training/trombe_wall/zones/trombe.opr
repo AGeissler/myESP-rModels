@@ -1,6 +1,6 @@
-*Operations 2.0
-*date Wed Nov 25 18:18:12 2009  # latest file modification 
-# operations of trombe_up defined in: 
+*Operations 2.1
+*date Tue Feb  5 10:05:39 2019  # latest file modification 
+# operations of bypass defined in: 
 # ../zones/trombe.opr
 nothing happens in this zone in terms of occupants lights and small power. There is not infiltration or ventilation.
 # control(no control of air flow  ), low mid & high setpoints 
@@ -14,20 +14,28 @@ nothing happens in this zone in terms of occupants lights and small power. There
      1   # number of flow periods in day type: sunday      
 # start, stop, infil, ventil, source, data
    0, 24,    0.000    0.000    0    0.000
+*casual
+nothing happens in this zone in terms of occupants lights and small power. There is not infiltration or ventilation.
+# casual user-label type-key-word slot attributes
+*type Occupt       people            1  0  0
+*type Lights       lighting          2  0  0
+*type Equipt       equipment         3  0  0
+*end_type 
      3   # number of casual gains in day type: weekdays    
-# type, start, stop, sens, latent, rad_frac, conv_frac
-    1,   0,  24,      0.0,      0.0, 0.500, 0.500
-    2,   0,  24,      0.0,      0.0, 0.500, 0.500
-    3,   0,  24,      0.0,      0.0, 0.500, 0.500
+# slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
+   1,   0,  24,      0.0,      0.0,  0.500,  0.500
+   2,   0,  24,      0.0,      0.0,  0.500,  0.500
+   3,   0,  24,      0.0,      0.0,  0.500,  0.500
      3   # number of casual gains in day type: saturday    
-# type, start, stop, sens, latent, rad_frac, conv_frac
-    1,   0,  24,      0.0,      0.0, 0.500, 0.500
-    2,   0,  24,      0.0,      0.0, 0.500, 0.500
-    3,   0,  24,      0.0,      0.0, 0.500, 0.500
+# slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
+   1,   0,  24,      0.0,      0.0,  0.500,  0.500
+   2,   0,  24,      0.0,      0.0,  0.500,  0.500
+   3,   0,  24,      0.0,      0.0,  0.500,  0.500
      3   # number of casual gains in day type: sunday      
-# type, start, stop, sens, latent, rad_frac, conv_frac
-    1,   0,  24,      0.0,      0.0, 0.500, 0.500
-    2,   0,  24,      0.0,      0.0, 0.500, 0.500
-    3,   0,  24,      0.0,      0.0, 0.500, 0.500
-# Labels for gain types 
- Occupt Lights Equipt
+# slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
+   1,   0,  24,      0.0,      0.0,  0.500,  0.500
+   2,   0,  24,      0.0,      0.0,  0.500,  0.500
+   3,   0,  24,      0.0,      0.0,  0.500,  0.500

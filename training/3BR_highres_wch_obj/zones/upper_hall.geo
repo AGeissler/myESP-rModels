@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,upper_hall # tag version, format, zone name
-*date Sun Apr  5 10:35:14 2015  # latest file modification 
+*date Mon Jan 21 08:51:41 2019  # latest file modification 
 upper_hall describes the upper hall and stair.
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,3.40000,3.90000,2.80000  #   1
@@ -91,108 +91,108 @@ upper_hall describes the upper hall and stair.
 *vertex,3.40000,3.70000,4.90000  #  87
 # 
 # tag, number of vertices followed by list of associated vert
-*edges,11,23,1,14,15,2,3,10,9,8,24,87  #  1
-*edges,4,1,2,15,14  #  2
-*edges,9,3,18,20,21,19,4,16,11,10  #  3
-*edges,4,4,5,17,16  #  4
-*edges,6,5,6,12,11,16,17  #  5
-*edges,4,6,7,13,12  #  6
-*edges,5,7,22,78,25,13  #  7
-*edges,9,24,8,9,10,11,12,13,25,82  #  8
-*edges,12,26,27,6,5,4,19,18,3,2,1,23,85  #  9
-*edges,4,18,19,21,20  # 10
-*edges,4,32,31,6,27  # 11
-*edges,4,33,30,34,32  # 12
-*edges,4,35,28,29,33  # 13
-*edges,3,32,34,31  # 14
-*edges,4,31,34,7,6  # 15
-*edges,3,33,29,30  # 16
-*edges,4,36,37,38,39  # 17
-*edges,4,40,41,42,43  # 18
-*edges,4,44,45,46,47  # 19
-*edges,4,48,49,50,51  # 20
-*edges,4,52,53,54,55  # 21
-*edges,4,56,57,58,59  # 22
-*edges,4,60,61,62,63  # 23
-*edges,4,64,65,66,67  # 24
-*edges,4,68,69,70,71  # 25
-*edges,4,73,72,69,68  # 26
-*edges,4,71,70,65,64  # 27
-*edges,4,67,66,61,60  # 28
-*edges,4,63,62,57,56  # 29
-*edges,4,59,58,53,52  # 30
-*edges,4,55,54,49,48  # 31
-*edges,4,51,50,45,44  # 32
-*edges,4,47,46,41,40  # 33
-*edges,4,43,42,37,36  # 34
-*edges,4,39,38,28,35  # 35
-*edges,7,75,74,33,32,27,26,83  # 36
-*edges,15,59,52,55,48,51,44,47,40,43,36,39,35,33,74,79  # 37
-*edges,11,73,68,71,64,67,60,63,56,59,79,80  # 38
-*edges,4,80,79,74,75  # 39
-*edges,5,72,73,80,75,76  # 40
-*edges,18,81,22,7,34,30,29,28,38,37,42,41,46,45,50,49,54,53,58  # 41
-*edges,13,69,72,76,84,22,81,58,57,62,61,66,65,70  # 42
-*edges,9,26,85,86,87,24,82,25,78,77  # 43
-*edges,3,83,26,77  # 44
-*edges,4,76,75,83,84  # 45
-*edges,3,22,84,78  # 46
-*edges,4,84,83,77,78  # 47
-*edges,4,85,23,87,86  # 48
+*edges,11,23,1,14,15,2,3,10,9,8,24,87  #   1
+*edges,4,1,2,15,14  #   2
+*edges,9,3,18,20,21,19,4,16,11,10  #   3
+*edges,4,4,5,17,16  #   4
+*edges,6,5,6,12,11,16,17  #   5
+*edges,4,6,7,13,12  #   6
+*edges,5,7,22,78,25,13  #   7
+*edges,9,24,8,9,10,11,12,13,25,82  #   8
+*edges,12,26,27,6,5,4,19,18,3,2,1,23,85  #   9
+*edges,4,18,19,21,20  #  10
+*edges,4,32,31,6,27  #  11
+*edges,4,33,30,34,32  #  12
+*edges,4,35,28,29,33  #  13
+*edges,3,32,34,31  #  14
+*edges,4,31,34,7,6  #  15
+*edges,3,33,29,30  #  16
+*edges,4,36,37,38,39  #  17
+*edges,4,40,41,42,43  #  18
+*edges,4,44,45,46,47  #  19
+*edges,4,48,49,50,51  #  20
+*edges,4,52,53,54,55  #  21
+*edges,4,56,57,58,59  #  22
+*edges,4,60,61,62,63  #  23
+*edges,4,64,65,66,67  #  24
+*edges,4,68,69,70,71  #  25
+*edges,4,73,72,69,68  #  26
+*edges,4,71,70,65,64  #  27
+*edges,4,67,66,61,60  #  28
+*edges,4,63,62,57,56  #  29
+*edges,4,59,58,53,52  #  30
+*edges,4,55,54,49,48  #  31
+*edges,4,51,50,45,44  #  32
+*edges,4,47,46,41,40  #  33
+*edges,4,43,42,37,36  #  34
+*edges,4,39,38,28,35  #  35
+*edges,7,75,74,33,32,27,26,83  #  36
+*edges,15,59,52,55,48,51,44,47,40,43,36,39,35,33,74,79  #  37
+*edges,11,73,68,71,64,67,60,63,56,59,79,80  #  38
+*edges,4,80,79,74,75  #  39
+*edges,5,72,73,80,75,76  #  40
+*edges,18,81,22,7,34,30,29,28,38,37,42,41,46,45,50,49,54,53,58  #  41
+*edges,13,69,72,76,84,22,81,58,57,62,61,66,65,70  #  42
+*edges,9,26,85,86,87,24,82,25,78,77  #  43
+*edges,3,83,26,77  #  44
+*edges,4,76,75,83,84  #  45
+*edges,3,22,84,78  #  46
+*edges,4,84,83,77,78  #  47
+*edges,4,85,23,87,86  #  48
 # 
 # surf attributes:
 #  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,ptn_br1,VERT,-,-,-,int_part,OPAQUE,ANOTHER,06,12  #   1 ||< ptn_hall:bedroom1
-*surf,door_br1,VERT,ptn_br1,-,-,door,OPAQUE,ANOTHER,06,13  #   2 ||< door_hall:bedroom1
-*surf,ptn_br2,VERT,-,-,-,int_part,OPAQUE,ANOTHER,08,13  #   3 ||< ptn_br2:bedroom2
-*surf,door_bath,VERT,-,-,-,door,OPAQUE,ANOTHER,09,10  #   4 ||< door_bath:bath
-*surf,ptn_bath_a,VERT,-,-,-,int_part,OPAQUE,ANOTHER,09,08  #   5 ||< ptn_bath_a:bath
-*surf,ptn_bath_b,VERT,-,-,-,int_part,OPAQUE,ANOTHER,09,09  #   6 ||< ptn_bath_b:bath
-*surf,upper_left,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,0,0  #   7 ||< external
-*surf,stair_ceil,CEIL,-,-,-,ceiling,OPAQUE,ANOTHER,10,15  #   8 ||< stair_ceil:attic
-*surf,up_hall_flr,FLOR,-,-,-,tg_flr2ceil,OPAQUE,ANOTHER,11,06  #   9 ||< up_hall_flr:equipment
-*surf,door_br2,VERT,ptn_br2,-,-,door,OPAQUE,ANOTHER,08,14  #  10 ||< door_br2:bedroom2
-*surf,rise_z,VERT,-,-,-,door,OPAQUE,ANOTHER,11,07  #  11 ||< rise_z:equipment
-*surf,rise_y,VERT,-,-,-,door,OPAQUE,ANOTHER,11,08  #  12 ||< rise_y:equipment
-*surf,rise_x,VERT,-,-,-,door,OPAQUE,ANOTHER,11,09  #  13 ||< rise_x:equipment
-*surf,tread_z,FLOR,-,-,-,door,OPAQUE,ANOTHER,11,10  #  14 ||< tread_z:equipment
-*surf,fill_bath,VERT,-,-,-,int_part,OPAQUE,ADIABATIC,0,0  #  15 ||< adiabatic
-*surf,tread_y,FLOR,-,-,-,door,OPAQUE,ANOTHER,11,11  #  16 ||< tread_y:equipment
-*surf,rise_w,VERT,-,-,-,door,OPAQUE,ANOTHER,11,12  #  17 ||< rise_w:equipment
-*surf,xrise_v,VERT,-,-,-,door,OPAQUE,ANOTHER,11,13  #  18 ||< xrise_v:equipment
-*surf,rise_u,VERT,-,-,-,door,OPAQUE,ANOTHER,11,14  #  19 ||< rise_u:equipment
-*surf,rise_t,VERT,-,-,-,door,OPAQUE,ANOTHER,11,15  #  20 ||< rise_t:equipment
-*surf,rise_s,VERT,-,-,-,door,OPAQUE,ANOTHER,11,16  #  21 ||< rise_s:equipment
-*surf,rise_r,VERT,-,-,-,door,OPAQUE,ANOTHER,11,17  #  22 ||< rise_r:equipment
-*surf,rise_q,VERT,-,-,-,door,OPAQUE,ANOTHER,11,18  #  23 ||< rise_q:equipment
-*surf,rise_p,VERT,-,-,-,door,OPAQUE,ANOTHER,11,19  #  24 ||< rise_p:equipment
-*surf,rise_o,VERT,-,-,-,door,OPAQUE,ANOTHER,11,20  #  25 ||< rise_o:equipment
-*surf,tread_n,FLOR,-,-,-,door,OPAQUE,ANOTHER,11,21  #  26 ||< tread_n:equipment
-*surf,tread_o,FLOR,-,-,-,door,OPAQUE,ANOTHER,11,24  #  27 ||< tread_o:equipment
-*surf,tread_p,FLOR,-,-,-,door,OPAQUE,ANOTHER,11,25  #  28 ||< tread_p:equipment
-*surf,tread_q,FLOR,-,-,-,door,OPAQUE,ANOTHER,11,26  #  29 ||< tread_q:equipment
-*surf,tread_r,FLOR,-,-,-,door,OPAQUE,ANOTHER,11,27  #  30 ||< tread_r:equipment
-*surf,tread_s,FLOR,-,-,-,door,OPAQUE,ANOTHER,11,28  #  31 ||< tread_s:equipment
-*surf,tread_t,FLOR,-,-,-,door,OPAQUE,ANOTHER,11,29  #  32 ||< tread_t:equipment
-*surf,tread_u,FLOR,-,-,-,door,OPAQUE,ANOTHER,11,30  #  33 ||< tread_u:equipment
-*surf,tread_v,FLOR,-,-,-,door,OPAQUE,ANOTHER,11,31  #  34 ||< tread_v:equipment
-*surf,tread_w,FLOR,-,-,-,door,OPAQUE,ANOTHER,11,32  #  35 ||< tread_w:equipment
-*surf,struc_a,VERT,-,-,-,int_part,OPAQUE,ANOTHER,11,33  #  36 ||< struc_a:equipment
-*surf,fict,VERT,-,-,-,int_part,OPAQUE,ANOTHER,01,13  #  37 ||< up_rail:hall
-*surf,rail,VERT,-,-,-,int_part,OPAQUE,ANOTHER,01,10  #  38 ||< rail:hall
-*surf,fict_rail,VERT,-,-,-,fictitious,SC_fictit,ANOTHER,01,09  #  39 ||< fict_ov_rail:hall
-*surf,entr_st,VERT,-,-,-,fictitious,SC_fictit,ANOTHER,01,12  #  40 ||< fict_to_st:hall
-*surf,left_wall,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,0,0  #  41 ||< external
-*surf,lower_left,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,0,0  #  42 ||< external
-*surf,br3_hall,VERT,-,-,-,int_part,OPAQUE,ANOTHER,07,14  #  43 ||< ptn_hall:bedroom3
-*surf,st_right,VERT,-,-,-,int_part,OPAQUE,ANOTHER,07,10  #  44 ||< st_right:bedroom3
-*surf,soped_ceil,SLOP,-,-,-,int_part,OPAQUE,ANOTHER,11,34  #  45 ||< soped_ceil:equipment
-*surf,left_slope,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,0,0  #  46 ||< external
-*surf,slop_br3,SLOP,-,-,-,int_part,OPAQUE,ANOTHER,07,09  #  47 ||< slop_br3:bedroom3
-*surf,door_br3,VERT,-,-,-,door,OPAQUE,ANOTHER,07,08  #  48 ||< door_br3:bedroom3
+*surf,ptn_br1,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,06,012  #   1 ||< ptn_hall:master_br
+*surf,door_br1,VERT,ptn_br1,DOOR,UNDERCUT,door,OPAQUE,ANOTHER,06,013  #   2 ||< door_hall:master_br
+*surf,ptn_br2,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,08,013  #   3 ||< ptn_br2:bedroom2
+*surf,door_bath,VERT,-,DOOR,UNDERCUT,door,OPAQUE,ANOTHER,09,010  #   4 ||< door_bath:bath
+*surf,ptn_bath_a,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,09,008  #   5 ||< ptn_bath_a:bath
+*surf,ptn_bath_b,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,09,009  #   6 ||< ptn_bath_b:bath
+*surf,upper_left,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   7 ||< external
+*surf,stair_ceil,CEIL,-,PARTN,-,ceiling,OPAQUE,ANOTHER,10,015  #   8 ||< stair_ceil:attic
+*surf,up_hall_flr,FLOR,-,PARTN,-,tg_flr2ceil,OPAQUE,ANOTHER,11,006  #   9 ||< up_hall_flr:equipment
+*surf,door_br2,VERT,ptn_br2,DOOR,UNDERCUT,door,OPAQUE,ANOTHER,08,014  #  10 ||< door_br2:bedroom2
+*surf,rise_z,VERT,-,PARTN,-,door,OPAQUE,ANOTHER,11,007  #  11 ||< rise_z:equipment
+*surf,rise_y,VERT,-,PARTN,-,door,OPAQUE,ANOTHER,11,008  #  12 ||< rise_y:equipment
+*surf,rise_x,VERT,-,PARTN,-,door,OPAQUE,ANOTHER,11,009  #  13 ||< rise_x:equipment
+*surf,tread_z,FLOR,-,PARTN,-,door,OPAQUE,ANOTHER,11,010  #  14 ||< tread_z:equipment
+*surf,fill_bath,VERT,-,-,-,int_part,OPAQUE,ADIABATIC,00,000  #  15 ||< adiabatic
+*surf,tread_y,FLOR,-,PARTN,-,door,OPAQUE,ANOTHER,11,011  #  16 ||< tread_y:equipment
+*surf,rise_w,VERT,-,PARTN,-,door,OPAQUE,ANOTHER,11,012  #  17 ||< rise_w:equipment
+*surf,xrise_v,VERT,-,PARTN,-,door,OPAQUE,ANOTHER,11,013  #  18 ||< xrise_v:equipment
+*surf,rise_u,VERT,-,PARTN,-,door,OPAQUE,ANOTHER,11,014  #  19 ||< rise_u:equipment
+*surf,rise_t,VERT,-,PARTN,-,door,OPAQUE,ANOTHER,11,015  #  20 ||< rise_t:equipment
+*surf,rise_s,VERT,-,PARTN,-,door,OPAQUE,ANOTHER,11,016  #  21 ||< rise_s:equipment
+*surf,rise_r,VERT,-,PARTN,-,door,OPAQUE,ANOTHER,11,017  #  22 ||< rise_r:equipment
+*surf,rise_q,VERT,-,PARTN,-,door,OPAQUE,ANOTHER,11,018  #  23 ||< rise_q:equipment
+*surf,rise_p,VERT,-,PARTN,-,door,OPAQUE,ANOTHER,11,019  #  24 ||< rise_p:equipment
+*surf,rise_o,VERT,-,PARTN,-,door,OPAQUE,ANOTHER,11,020  #  25 ||< rise_o:equipment
+*surf,tread_n,FLOR,-,PARTN,-,door,OPAQUE,ANOTHER,11,021  #  26 ||< tread_n:equipment
+*surf,tread_o,FLOR,-,PARTN,-,door,OPAQUE,ANOTHER,11,024  #  27 ||< tread_o:equipment
+*surf,tread_p,FLOR,-,PARTN,-,door,OPAQUE,ANOTHER,11,025  #  28 ||< tread_p:equipment
+*surf,tread_q,FLOR,-,PARTN,-,door,OPAQUE,ANOTHER,11,026  #  29 ||< tread_q:equipment
+*surf,tread_r,FLOR,-,PARTN,-,door,OPAQUE,ANOTHER,11,027  #  30 ||< tread_r:equipment
+*surf,tread_s,FLOR,-,PARTN,-,door,OPAQUE,ANOTHER,11,028  #  31 ||< tread_s:equipment
+*surf,tread_t,FLOR,-,PARTN,-,door,OPAQUE,ANOTHER,11,029  #  32 ||< tread_t:equipment
+*surf,tread_u,FLOR,-,PARTN,-,door,OPAQUE,ANOTHER,11,030  #  33 ||< tread_u:equipment
+*surf,tread_v,FLOR,-,PARTN,-,door,OPAQUE,ANOTHER,11,031  #  34 ||< tread_v:equipment
+*surf,tread_w,FLOR,-,PARTN,-,door,OPAQUE,ANOTHER,11,032  #  35 ||< tread_w:equipment
+*surf,struc_a,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,11,033  #  36 ||< struc_a:equipment
+*surf,fict,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,01,013  #  37 ||< up_rail:hall
+*surf,rail,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,01,010  #  38 ||< rail:hall
+*surf,fict_rail,VERT,-,FICT,OPEN,fictitious,SC_fictit,ANOTHER,01,009  #  39 ||< fict_ov_rail:hall
+*surf,entr_st,VERT,-,FICT,CLOSED,fictitious,SC_fictit,ANOTHER,01,012  #  40 ||< fict_to_st:hall
+*surf,left_wall,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #  41 ||< external
+*surf,lower_left,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #  42 ||< external
+*surf,br3_hall,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,07,014  #  43 ||< ptn_hall:bedroom3
+*surf,st_right,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,07,010  #  44 ||< st_right:bedroom3
+*surf,soped_ceil,SLOP,-,PARTN,-,int_part,OPAQUE,ANOTHER,11,034  #  45 ||< soped_ceil:equipment
+*surf,left_slope,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #  46 ||< external
+*surf,slop_br3,SLOP,-,PARTN,-,int_part,OPAQUE,ANOTHER,07,009  #  47 ||< slop_br3:bedroom3
+*surf,door_br3,VERT,-,DOOR,UNDERCUT,door,OPAQUE,ANOTHER,07,008  #  48 ||< door_br3:bedroom3
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

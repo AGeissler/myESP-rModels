@@ -1,5 +1,5 @@
 * Shading and insolation data in db ../zone/bed2.shd                                                        
-  6  8 # zone index & number of surfaces
+  6  9 # zone index & number of surfaces
 * month: `Jan`
 24 hour external surface shading
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
@@ -34,10 +34,14 @@
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface s_hall
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface s_hall
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface door_b2
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface door_b2
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
-0 0 0 0 0 0 1 0
-surfaces insolated by source  1 win          # hourly columns, ranking via rows
+0 0 0 0 0 0 1 0 0
+surfaces insolated by source   1 win          # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1
@@ -93,10 +97,14 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface s_hall
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface s_hall
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface door_b2
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface door_b2
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
-0 0 0 0 0 0 1 0
-surfaces insolated by source  1 win          # hourly columns, ranking via rows
+0 0 0 0 0 0 1 0 0
+surfaces insolated by source   1 win          # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1
@@ -152,10 +160,14 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface s_hall
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface s_hall
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface door_b2
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface door_b2
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
-0 0 0 0 0 0 1 0
-surfaces insolated by source  1 win          # hourly columns, ranking via rows
+0 0 0 0 0 0 1 0 0
+surfaces insolated by source   1 win          # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1
@@ -211,10 +223,14 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface s_hall
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface s_hall
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface door_b2
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface door_b2
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
-0 0 0 0 0 0 1 0
-surfaces insolated by source  1 win          # hourly columns, ranking via rows
+0 0 0 0 0 0 1 0 0
+surfaces insolated by source   1 win          # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 3 0 0 3 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 0 0 0 6 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
@@ -270,10 +286,14 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface s_hall
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface s_hall
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface door_b2
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface door_b2
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
-0 0 0 0 0 0 1 0
-surfaces insolated by source  1 win          # hourly columns, ranking via rows
+0 0 0 0 0 0 1 0 0
+surfaces insolated by source   1 win          # hourly columns, ranking via rows
 -1 -1 -1 -1 3 3 0 0 3 0 0 0 0 0 0 0 0 0 0 1 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 0 6 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1
@@ -329,10 +349,14 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface s_hall
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface s_hall
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface door_b2
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface door_b2
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
-0 0 0 0 0 0 1 0
-surfaces insolated by source  1 win          # hourly columns, ranking via rows
+0 0 0 0 0 0 1 0 0
+surfaces insolated by source   1 win          # hourly columns, ranking via rows
 -1 -1 -1 4 3 3 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 -1 -1 -1
 -1 -1 -1 0 4 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1
 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1
@@ -388,10 +412,14 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface s_hall
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface s_hall
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface door_b2
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface door_b2
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
-0 0 0 0 0 0 1 0
-surfaces insolated by source  1 win          # hourly columns, ranking via rows
+0 0 0 0 0 0 1 0 0
+surfaces insolated by source   1 win          # hourly columns, ranking via rows
 -1 -1 -1 4 3 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1
 -1 -1 -1 0 4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1
 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1
@@ -447,10 +475,14 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface s_hall
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface s_hall
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface door_b2
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface door_b2
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
-0 0 0 0 0 0 1 0
-surfaces insolated by source  1 win          # hourly columns, ranking via rows
+0 0 0 0 0 0 1 0 0
+surfaces insolated by source   1 win          # hourly columns, ranking via rows
 -1 -1 -1 -1 3 3 0 0 3 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 0 6 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
@@ -506,10 +538,14 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface s_hall
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface s_hall
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface door_b2
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface door_b2
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
-0 0 0 0 0 0 1 0
-surfaces insolated by source  1 win          # hourly columns, ranking via rows
+0 0 0 0 0 0 1 0 0
+surfaces insolated by source   1 win          # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1
@@ -565,10 +601,14 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface s_hall
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface s_hall
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface door_b2
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface door_b2
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
-0 0 0 0 0 0 1 0
-surfaces insolated by source  1 win          # hourly columns, ranking via rows
+0 0 0 0 0 0 1 0 0
+surfaces insolated by source   1 win          # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 3 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1
@@ -624,10 +664,14 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface s_hall
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface s_hall
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface door_b2
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface door_b2
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
-0 0 0 0 0 0 1 0
-surfaces insolated by source  1 win          # hourly columns, ranking via rows
+0 0 0 0 0 0 1 0 0
+surfaces insolated by source   1 win          # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1
@@ -683,10 +727,14 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface s_hall
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface s_hall
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # direct - surface door_b2
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000
+0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 0.0000 # diffuse - surface door_b2
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
-0 0 0 0 0 0 1 0
-surfaces insolated by source  1 win          # hourly columns, ranking via rows
+0 0 0 0 0 0 1 0 0
+surfaces insolated by source   1 win          # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1

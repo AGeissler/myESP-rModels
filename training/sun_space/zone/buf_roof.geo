@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,buf_roof # tag version, format, zone name
-*date Tue Dec 13 16:44:23 2011  # latest file modification 
+*date Fri Mar 23 14:08:18 2018  # latest file modification 
 buf_roof describes a...
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,10.79800,4.13600,2.40000  #   1
@@ -22,28 +22,28 @@ buf_roof describes a...
 *vertex,10.73600,9.82900,5.20000  #  18
 # 
 # tag, number of vertices followed by list of associated vert
-*edges,5,1,4,16,5,17  #  1
-*edges,10,4,1,3,18,4,8,11,10,9,8  #  2
-*edges,10,2,7,18,3,2,12,15,14,13,12  #  3
-*edges,4,1,17,2,3  #  4
-*edges,4,8,9,10,11  #  5
-*edges,4,12,13,14,15  #  6
-*edges,5,17,5,6,7,2  #  7
-*edges,6,7,6,5,16,4,18  #  8
+*edges,5,1,4,16,5,17  #   1
+*edges,10,4,1,3,18,4,8,11,10,9,8  #   2
+*edges,10,2,7,18,3,2,12,15,14,13,12  #   3
+*edges,4,1,17,2,3  #   4
+*edges,4,8,9,10,11  #   5
+*edges,4,12,13,14,15  #   6
+*edges,5,17,5,6,7,2  #   7
+*edges,6,7,6,5,16,4,18  #   8
 # 
 # surf attributes:
 #  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,buf_1,FLOR,-,-,-,fictitious,SC_fictit,ANOTHER,07,03  #   1 ||< fict:buf_1
-*surf,roof_e,SLOP,-,-,-,roof,OPAQUE,EXTERIOR,0,0  #   2 ||< external
-*surf,roof_w,SLOP,-,-,-,roof,OPAQUE,EXTERIOR,0,0  #   3 ||< external
-*surf,roof_s,VERT,-,-,-,ext_buf,OPAQUE,EXTERIOR,0,0  #   4 ||< external
-*surf,win2,SLOP,roof_e,-,-,doub_glaz,DC_8074_04nb,EXTERIOR,0,0  #   5 ||< external
-*surf,glz_w,SLOP,roof_w,-,-,doub_glaz,DC_8074_04nb,EXTERIOR,0,0  #   6 ||< external
-*surf,buf_2,FLOR,-,-,-,fictitious,SC_fictit,ANOTHER,08,04  #   7 ||< fict:buf_2
-*surf,roof_buf,VERT,-,-,-,int_buf,OPAQUE,ANOTHER,10,08  #   8 ||< roof_buf:roof
+*surf,buf_1,FLOR,-,GRILL,OPEN,fictitious,SC_fictit,ANOTHER,07,03  #   1 ||< fict:buf_1
+*surf,roof_e,SLOP,-,-,-,roof,OPAQUE,EXTERIOR,00,000  #   2 ||< external
+*surf,roof_w,SLOP,-,-,-,roof,OPAQUE,EXTERIOR,00,000  #   3 ||< external
+*surf,roof_s,VERT,-,-,-,ext_buf,OPAQUE,EXTERIOR,00,000  #   4 ||< external
+*surf,win2,SLOP,roof_e,C-WINDOW,CRACK,doub_glaz,DC_8074_04nb,EXTERIOR,00,000  #   5 ||< external
+*surf,glz_w,SLOP,roof_w,C-WINDOW,CRACK,doub_glaz,DC_8074_04nb,EXTERIOR,00,000  #   6 ||< external
+*surf,buf_2,FLOR,-,GRILL,OPEN,fictitious,SC_fictit,ANOTHER,08,04  #   7 ||< fict:buf_2
+*surf,roof_buf,VERT,-,GRILL,CRACK,int_buf,OPAQUE,ANOTHER,10,08  #   8 ||< roof_buf:roof
 # 
 *insol,2,6,1,0  # default insolation distribution
 # 

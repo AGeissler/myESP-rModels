@@ -1,0 +1,377 @@
+*Flow_network 1.0
+*Date,Mon Jan 28 12:34:02 2019
+*Doc,mixed air and water model
+*Domain,Flow,2  # domain for this network
+*windpressure,1.000  # wind speed reduction
+# tag name fluid type assoc zone & surface
+# position & data
+*node,hall,1,0,hall,-   # internal unknown pressure
+2.3500,3.6500,1.3000,20.0000,0.0000,14.4413  # position temp data
+*node,living,1,0,living,-   # internal unknown pressure
+5.3000,2.7400,1.4500,20.0000,0.0000,35.4120  # position temp data
+*node,dining,1,0,dining,-   # internal unknown pressure
+5.3000,6.6500,1.4500,20.0000,0.0000,31.5867  # position temp data
+*node,kitchen,1,0,kitchen,-   # internal unknown pressure
+2.5500,7.2500,1.4500,20.0000,0.0000,15.6178  # position temp data
+*node,upper_hall,1,0,upper_hall,-   # internal unknown pressure
+2.3500,4.3500,2.8500,20.0000,0.0000,16.3653  # position temp data
+*node,master_br,1,0,master_br,-   # internal unknown pressure
+5.3000,2.7250,4.0500,20.0000,0.0000,35.4119  # position temp data
+*node,bedroom3,1,0,bedroom3,-   # internal unknown pressure
+2.3500,2.5000,4.0500,20.0000,0.0000,12.2355  # position temp data
+*node,bedroom2,1,0,bedroom2,-   # internal unknown pressure
+5.3000,6.6500,4.0500,20.0000,0.0000,34.0867  # position temp data
+*node,bath,1,0,bath,-   # internal unknown pressure
+2.3500,7.2500,4.0500,20.0000,0.0000,13.1177  # position temp data
+*node,attic,1,0,attic,-   # internal unknown pressure
+4.2500,4.9000,6.2500,20.0000,0.0000,44.2713  # position temp data
+*node,equipment,1,0,equipment,-   # internal unknown pressure
+2.3500,3.6500,1.5000,20.0000,0.0000,7.1614  # position temp data
+*node,crawl,1,0,crawl,-   # internal unknown pressure
+4.2500,4.5750,0.1000,20.0000,0.0000,8.5862  # position temp data
+*node,tnk_lo_160,2,0,tnk_lo_160,-   # internal unknown pressure
+4.6000,5.1500,5.7250,20.0000,0.0000,0.1654  # position temp data
+*node,tnk_md_160,2,0,tnk_md_160,-   # internal unknown pressure
+4.6000,5.1500,6.1750,20.0000,0.0000,0.1654  # position temp data
+*node,tnk_hi_160,2,0,tnk_hi_160,-   # internal unknown pressure
+4.6000,5.1500,6.6250,20.0000,0.0000,0.1654  # position temp data
+*node,rad_bath,2,0,rad_bath,-   # internal unknown pressure
+2.1500,8.3250,3.3000,20.0000,0.0000,0.0076  # position temp data
+*node,rad_br3_h,2,0,rad_br3_h,-   # internal unknown pressure
+2.6500,1.3900,3.5000,20.0000,0.0000,0.0025  # position temp data
+*node,boiler_case,1,0,boiler_case,-   # internal unknown pressure
+1.5600,5.6225,1.6000,20.0000,0.0000,0.0760  # position temp data
+*node,rad_br2_h,2,0,rad_br2_h,-   # internal unknown pressure
+5.3500,8.4200,3.4250,20.0000,0.0000,0.0042  # position temp data
+*node,rad_dining_h,2,0,rad_dining_h,-   # internal unknown pressure
+3.9800,7.5500,0.8250,20.0000,0.0000,0.0042  # position temp data
+*node,rad-mbr_h,2,0,rad-mbr_h,-   # internal unknown pressure
+5.4000,0.7320,3.3250,20.0000,0.0000,0.0041  # position temp data
+*node,rad_lounge_h,2,0,rad_lounge_h,-   # internal unknown pressure
+5.4000,0.7320,0.7250,20.0000,0.0000,0.0041  # position temp data
+*node,rad_kit,2,0,rad_kit,-   # internal unknown pressure
+2.9000,8.3750,0.7000,20.0000,0.0000,0.0076  # position temp data
+*node,rad-hall_h,2,0,rad-hall_h,-   # internal unknown pressure
+3.3175,3.1500,0.7250,20.0000,0.0000,0.0039  # position temp data
+*node,collec_low,2,0,collec_low,-   # internal unknown pressure
+4.2560,1.2190,5.6830,20.0000,0.0000,0.0150  # position temp data
+*node,collec_mid,2,0,collec_mid,-   # internal unknown pressure
+4.2632,1.9140,6.1410,20.0000,0.0000,0.0150  # position temp data
+*node,collec_hi,2,0,collec_hi,-   # internal unknown pressure
+4.2703,2.6100,6.6000,20.0000,0.0000,0.0150  # position temp data
+*node,air_low,1,0,air_low,-   # internal unknown pressure
+4.2559,1.2009,5.7101,20.0000,0.0000,0.0500  # position temp data
+*node,air_mid,1,0,air_mid,-   # internal unknown pressure
+4.2630,1.8965,6.1685,20.0000,0.0000,0.0500  # position temp data
+*node,air_hi,1,0,air_hi,-   # internal unknown pressure
+4.2702,2.6008,6.6145,20.0000,0.0000,0.0500  # position temp data
+*node,water_jacket,2,0,water_jacket,-   # internal unknown pressure
+1.5450,5.5650,1.6500,20.0000,0.0000,0.0067  # position temp data
+*node,gas,1,0,gas,-   # internal unknown pressure
+1.5450,5.5650,1.6500,20.0000,0.0000,0.0312  # position temp data
+*node,mixer,1,0,mixer,-   # internal unknown pressure
+1.5200,5.5200,1.3000,20.0000,0.0000,0.0080  # position temp data
+*node,rad_lounge_m,2,0,rad_lounge_m,-   # internal unknown pressure
+5.4000,0.7320,0.5750,20.0000,0.0000,0.0041  # position temp data
+*node,rad_lounge_l,2,0,rad_lounge_l,-   # internal unknown pressure
+5.4000,0.7320,0.4000,20.0000,0.0000,0.0055  # position temp data
+*node,rad_dining_m,2,0,rad_dining_m,-   # internal unknown pressure
+3.9800,7.5500,0.6750,20.0000,0.0000,0.0042  # position temp data
+*node,rad_dining_l,2,0,rad_dining_l,-   # internal unknown pressure
+3.9800,7.5500,0.5000,20.0000,0.0000,0.0056  # position temp data
+*node,rad-hall_m,2,0,rad-hall_m,-   # internal unknown pressure
+3.3175,3.1500,0.5750,20.0000,0.0000,0.0039  # position temp data
+*node,rad-hall_l,2,0,rad-hall_l,-   # internal unknown pressure
+3.3175,3.1500,0.4000,20.0000,0.0000,0.0052  # position temp data
+*node,rad-mbr_m,2,0,rad-mbr_m,-   # internal unknown pressure
+5.4000,0.7320,3.1750,20.0000,0.0000,0.0041  # position temp data
+*node,rad-mbr_l,2,0,rad-mbr_l,-   # internal unknown pressure
+5.4000,0.7320,3.0000,20.0000,0.0000,0.0055  # position temp data
+*node,rad_br2_m,2,0,rad_br2_m,-   # internal unknown pressure
+5.3500,8.4200,3.2750,20.0000,0.0000,0.0042  # position temp data
+*node,rad_br2_l,2,0,rad_br2_l,-   # internal unknown pressure
+5.3500,8.4200,3.1000,20.0000,0.0000,0.0056  # position temp data
+*node,rad_br3_m,2,0,rad_br3_m,-   # internal unknown pressure
+2.6500,1.3900,3.3000,20.0000,0.0000,0.0025  # position temp data
+*node,rad_br3_l,2,0,rad_br3_l,-   # internal unknown pressure
+2.6500,1.3900,3.1000,20.0000,0.0000,0.0025  # position temp data
+*node,BW-Cr01:002,1,3,hall,fr_door_fr   # boundary wind pressure
+2.3720,0.4000,0.2000,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Ve02:020,1,3,living,frame_c   # boundary wind pressure
+7.1000,0.9180,2.3000,0.0000,1.0000,90.0000  # position temp data
+*node,BW-Ve02:021,1,3,living,frame_a   # boundary wind pressure
+3.5000,1.0320,2.3000,0.0000,1.0000,270.0000  # position temp data
+*node,BW-Ve03:009,1,3,dining,french   # boundary wind pressure
+5.3300,9.4000,2.3000,0.0000,1.0000,359.9999  # position temp data
+*node,BW-Ve04:003,1,3,kitchen,door_fr   # boundary wind pressure
+2.2909,9.4000,2.3000,0.0000,1.0000,360.0000  # position temp data
+*node,BW-Ve06:020,1,3,master_br,frame_a   # boundary wind pressure
+3.5000,1.0320,4.9000,0.0000,1.0000,270.0000  # position temp data
+*node,BW-Ve06:022,1,3,master_br,frame_c   # boundary wind pressure
+7.1000,0.9180,4.9000,0.0000,1.0000,90.0000  # position temp data
+*node,BW-Ve07:012,1,3,bedroom3,fr_frame   # boundary wind pressure
+2.3700,0.4000,4.9000,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Ve08:016,1,3,bedroom2,frm_glaz   # boundary wind pressure
+5.4080,9.4000,4.9000,0.0000,1.0000,0.0001  # position temp data
+*node,BW-Ve09:012,1,3,bath,frame_glz   # boundary wind pressure
+2.2720,9.4000,4.9000,0.0000,1.0000,0.0000  # position temp data
+*node,mains,2,2,-,-   # boundary known pressure
+-1.0000,5.0000,0.0000,0.0000,200.0000,0.0000  # position temp data
+*node,eve_east,1,3,-,-   # boundary wind pressure
+7.5000,3.8620,4.8000,0.0000,2.0000,0.0000  # position temp data
+*node,eve_west,1,3,-,-   # boundary wind pressure
+1.6000,2.1000,4.8000,0.0000,2.0000,0.0000  # position temp data
+*node,boil_ext,1,3,-,-   # boundary wind pressure
+0.4200,5.5650,1.6500,0.0000,9.0000,270.0000  # position temp data
+# tag name assoc zone & surface type C+ L+
+start&end positions  description
+# data
+*cmp,DoCrz01:002,hall,fr_door_fr,120,3,0
+0,2.3720,1.3000,0.2000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,0.900000095  # Fluid crack width(m) crack length(m)
+*cmp,DoCrz01:004,hall,door_lng,120,3,0
+0,3.4000,4.2500,0.2000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,0.699999809  # Fluid crack width(m) crack length(m)
+*cmp,DoCrz01:005,hall,door_kit,120,3,0
+0,2.9500,6.0000,0.2000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,9.99999978E-03,0.899999976  # Fluid crack width(m) crack length(m)
+*cmp,FiOPz01:009,hall,fict_ov_rail, 40,3,0
+0,2.3000,3.2000,2.1000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.250000030,0.500000000  # Fluid opening area (m^2) discharge factor (-)
+*cmp,DoCrz01:014,hall,door_dining,120,3,0
+0,3.4000,5.4000,0.2000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,0.800000191  # Fluid crack width(m) crack length(m)
+*cmp,DoCrz01:016,hall,under_stair,120,3,0
+0,2.3000,4.1208,0.2000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,3.29999995  # Fluid crack width(m) crack length(m)
+*cmp,FrVez02:020,living,frame_c,110,2,0
+0,6.2000,0.9180,2.3000,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,1.29999989E-03  # Fluid opening area(m)
+*cmp,FrVez02:021,living,frame_a,110,2,0
+0,4.4000,1.0320,2.3000,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,1.29999989E-03  # Fluid opening area(m)
+*cmp,FrVez03:009,dining,french,110,2,0
+0,5.3300,8.5000,2.3000,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,1.79999927E-03  # Fluid opening area(m)
+*cmp,FrVez04:003,kitchen,door_fr,110,2,0
+0,2.2909,8.5000,2.3000,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,1.59999996E-03  # Fluid opening area(m)
+*cmp,DoCrz05:002,upper_hall,door_br1,120,3,0
+0,3.4000,4.2500,2.8000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,0.699999809  # Fluid crack width(m) crack length(m)
+*cmp,DoCrz05:004,upper_hall,door_bath,120,3,0
+0,3.0000,6.0000,2.8000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,0.800000191  # Fluid crack width(m) crack length(m)
+*cmp,DoCrz05:010,upper_hall,door_br2,120,3,0
+0,3.4000,5.4000,2.8000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,0.800000191  # Fluid crack width(m) crack length(m)
+*cmp,DoCrz05:048,upper_hall,door_br3,120,3,0
+0,3.0000,3.7000,2.8000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,0.800000191  # Fluid crack width(m) crack length(m)
+*cmp,FrVez06:020,master_br,frame_a,110,2,0
+0,4.4000,1.0320,4.9000,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,1.29999989E-03  # Fluid opening area(m)
+*cmp,FrVez06:022,master_br,frame_c,110,2,0
+0,6.2000,0.9180,4.9000,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,1.29999989E-03  # Fluid opening area(m)
+*cmp,FrVez07:012,bedroom3,fr_frame,110,2,0
+0,2.3700,1.3000,4.9000,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,1.80000020E-03  # Fluid opening area(m)
+*cmp,FrVez08:016,bedroom2,frm_glaz,110,2,0
+0,5.4080,8.5000,4.9000,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,3.40000005E-03  # Fluid opening area(m)
+*cmp,FrVez09:012,bath,frame_glz,110,2,0
+0,2.2720,8.5000,4.9000,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,1.59999996E-03  # Fluid opening area(m)
+*cmp,DoCrz11:043,equipment,front,120,3,0
+0,1.7200,5.6225,1.2000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,0.444999695  # Fluid crack width(m) crack length(m)
+*cmp,tnk_m2h,tnk_md_160,t_tnk,210,6,0
+0,4.6000,5.1500,6.4000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,tnk_l2m,tnk_lo_160,t_tnk,210,6,0
+0,4.6000,5.1500,5.9500,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,col_low_lnk,collec_low,base_edge,210,6,0
+0,4.2525,0.8710,5.4536,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,col_pump,tnk_hi_160,t_tnk, 30,2,0
+0,4.6000,5.1500,6.8500,Constant vol. flow rate component   m = rho.a               
+2.00000000,2.77799991E-04  # Fluid flow rate (m^3/s)
+*cmp,bath_p,rad_bath,top_rad, 30,2,0
+0,2.1555,8.3232,3.6000,Constant vol. flow rate component   m = rho.a               
+2.00000000,3.17222220E-05  # Fluid flow rate (m^3/s)
+*cmp,bath_ret,rad_bath,base_rad,210,6,0
+0,2.1555,8.3232,3.0000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,kitchen_p,rad_kit,top_rad, 30,2,0
+0,2.9055,8.3732,1.0000,Constant vol. flow rate component   m = rho.a               
+2.00000000,3.17222220E-05  # Fluid flow rate (m^3/s)
+*cmp,kit_ret,rad_kit,base_rad,210,6,0
+0,2.9055,8.3732,0.4000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,br3_p,rad_br3_h,top_rad_h, 30,2,0
+0,2.6445,1.3918,3.6000,Constant vol. flow rate component   m = rho.a               
+2.00000000,3.17222220E-05  # Fluid flow rate (m^3/s)
+*cmp,br3_hm,rad_br3_h,base_rad_h,210,6,0
+0,2.6445,1.3918,3.4000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,br3_ml,rad_br3_m,base_rad_m,210,6,0
+0,2.6445,1.3918,3.2000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,br3_ret,gas,c_back,210,6,0
+0,2.6445,1.3918,3.0000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,br2_p,rad_br2_h,rad_top_h, 30,2,0
+0,5.4300,8.4196,3.5000,Constant vol. flow rate component   m = rho.a               
+2.00000000,3.17222220E-05  # Fluid flow rate (m^3/s)
+*cmp,br2_hm,rad_br2_m,rad_top_m,210,6,0
+0,5.4300,8.4196,3.3500,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,br2_ml,rad_br2_l,rad_top_l,210,6,0
+0,5.4300,8.4196,3.2000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,br2_ret,rad_br2_l,rad_base_l,210,6,0
+0,5.4300,8.4196,3.0000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,dining_p,rad_dining_h,rad_top_h, 30,2,0
+0,3.9804,7.6300,0.9000,Constant vol. flow rate component   m = rho.a               
+2.00000000,3.17222220E-05  # Fluid flow rate (m^3/s)
+*cmp,din_hm,rad_dining_h,rad_base_h,210,6,0
+0,3.9804,7.6300,0.7500,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,din_ml,rad_dining_m,rad_base_m,210,6,0
+0,3.9804,7.6300,0.6000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,din_ret,rad_dining_l,rad_base_l,210,6,0
+0,3.9804,7.6300,0.4000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,living_p,rad_lounge_h,rad_top_h, 30,2,0
+0,5.3500,0.7320,0.8000,Constant vol. flow rate component   m = rho.a               
+2.00000000,3.17222220E-05  # Fluid flow rate (m^3/s)
+*cmp,liv_hm,rad_lounge_h,rad_base_h,210,6,0
+0,5.3500,0.7320,0.6500,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,liv_ml,rad_lounge_l,rad_top_l,210,6,0
+0,5.3500,0.7320,0.5000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,liv_ret,rad_lounge_l,rad_base_l,210,6,0
+0,5.3500,0.7320,0.3000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,mbr_p,rad-mbr_h,rad_top_h, 30,2,0
+0,5.3500,0.7312,3.4000,Constant vol. flow rate component   m = rho.a               
+2.00000000,3.17222220E-05  # Fluid flow rate (m^3/s)
+*cmp,mbr_hm,rad-mbr_h,rad_base_h,210,6,0
+0,5.3500,0.7312,3.2500,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,mbr_ml,rad-mbr_m,rad_base_m,210,6,0
+0,5.3500,0.7312,3.1000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,mbr_ret,rad-mbr_l,rad_base_l,210,6,0
+0,5.3500,0.7312,2.9000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,hall_p,rad-hall_h,rad_top_h, 30,2,0
+0,3.3180,3.0700,0.8000,Constant vol. flow rate component   m = rho.a               
+2.00000000,3.17222220E-05  # Fluid flow rate (m^3/s)
+*cmp,hall_hm,rad-hall_h,rad_base_h,210,6,0
+0,3.3180,3.0700,0.6500,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,hall_ml,rad-hall_m,rad_base_m,210,6,0
+0,3.3180,3.0700,0.5000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,hall_ret,rad-hall_l,rad_base_l,210,6,0
+0,3.3180,3.0700,0.3000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,col_lm,collec_low,to_mid,210,6,0
+0,4.2596,1.5666,5.9121,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.48999998E-02,1.48999998E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,col_mh,collec_mid,to_top,210,6,0
+0,4.2668,2.2622,6.3706,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.40000004E-02,1.40000004E-02,1.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,main_pipe,crawl,edge_left,210,6,0
+0,1.3000,4.6250,0.1000,General flow conduit component      m = rho.f(D,A,L,k,SCi)  
+2.00000000,1.40000004E-02,1.40000004E-02,4.00000000,0.00000000,0.100000001  # Fluid hydr diam x-sect conduit ln roughness loss fac.
+*cmp,east_eve_v,attic,fill_br1,110,2,0
+0,7.5000,3.0500,5.3000,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,0.200000003  # Fluid opening area(m)
+*cmp,west_eve_v,attic,soffit_left,110,2,0
+0,1.6000,2.9835,5.3000,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,5.00000007E-02  # Fluid opening area(m)
+*cmp,col_crack,air_mid,right,120,3,0
+0,4.8630,1.8906,6.1686,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,3.00000003E-03,1.00000000  # Fluid crack width(m) crack length(m)
+*cmp,boil_vent,gas,c_back,110,2,0
+0,1.4200,5.5650,1.6500,Specific air flow opening           m = rho.f(A,dP)         
+1.00000000,0.100000039  # Fluid opening area(m)
+*cmp,mix_crack,mixer,Wall-3,120,3,0
+0,1.5200,5.6200,1.3000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,4.99999989E-03,1.00000000  # Fluid crack width(m) crack length(m)
+# connection +node deltaZ  -node deltaZ via component
+*cnn,BW-Cr01:002,  0.000,hall, -1.100,DoCrz01:002
+*cnn,hall, -1.100,living, -1.250,DoCrz01:004
+*cnn,hall, -1.100,kitchen, -1.250,DoCrz01:005
+*cnn,hall,  0.800,upper_hall, -0.750,FiOPz01:009
+*cnn,hall, -1.100,dining, -1.250,DoCrz01:014
+*cnn,hall, -1.100,equipment, -1.300,DoCrz01:016
+*cnn,BW-Ve02:020,  0.000,living,  0.850,FrVez02:020
+*cnn,BW-Ve02:021,  0.000,living,  0.850,FrVez02:021
+*cnn,BW-Ve03:009,  0.000,dining,  0.850,FrVez03:009
+*cnn,BW-Ve04:003,  0.000,kitchen,  0.850,FrVez04:003
+*cnn,upper_hall, -0.050,master_br, -1.250,DoCrz05:002
+*cnn,upper_hall, -0.050,bath, -1.250,DoCrz05:004
+*cnn,upper_hall, -0.050,bedroom2, -1.250,DoCrz05:010
+*cnn,upper_hall, -0.050,bedroom3, -1.250,DoCrz05:048
+*cnn,BW-Ve06:020,  0.000,master_br,  0.850,FrVez06:020
+*cnn,BW-Ve06:022,  0.000,master_br,  0.850,FrVez06:022
+*cnn,BW-Ve07:012,  0.000,bedroom3,  0.850,FrVez07:012
+*cnn,BW-Ve08:016,  0.000,bedroom2,  0.850,FrVez08:016
+*cnn,BW-Ve09:012,  0.000,bath,  0.850,FrVez09:012
+*cnn,equipment, -0.300,boiler_case, -0.400,DoCrz11:043
+*cnn,water_jacket,  1.950,rad_bath,  0.300,bath_p
+*cnn,rad_bath, -0.300,water_jacket,  1.350,bath_ret
+*cnn,water_jacket,  1.950,rad_br3_h,  0.100,br3_p
+*cnn,rad_br3_h, -0.100,rad_br3_m,  0.100,br3_hm
+*cnn,rad_br3_m,  1.950,rad_br3_l,  0.300,br3_ml
+*cnn,rad_br3_l, -0.100,water_jacket,  1.350,br3_ret
+*cnn,water_jacket, -0.650,rad_br2_h,  0.300,br2_p
+*cnn,rad_br2_h, -0.075,rad_br2_m,  0.075,br2_hm
+*cnn,rad_br2_m, -0.075,rad_br2_l,  0.100,br2_ml
+*cnn,rad_br2_l, -0.100,water_jacket,  1.350,br2_ret
+*cnn,water_jacket, -0.650,rad_kit,  0.300,kitchen_p
+*cnn,rad_kit, -0.300,water_jacket, -1.250,kit_ret
+*cnn,water_jacket,  1.850,rad-mbr_h,  0.075,mbr_p
+*cnn,rad-mbr_h, -0.075,rad-mbr_m,  0.075,mbr_hm
+*cnn,rad-mbr_m, -0.075,rad-mbr_l,  0.100,mbr_ml
+*cnn,rad-mbr_l, -0.100,water_jacket,  1.250,mbr_ret
+*cnn,water_jacket, -0.750,rad_lounge_h,  0.075,living_p
+*cnn,rad_lounge_h, -0.075,rad_lounge_m,  0.075,liv_hm
+*cnn,rad_lounge_m, -0.075,rad_lounge_l,  0.100,liv_ml
+*cnn,rad_lounge_l, -0.100,water_jacket, -1.350,liv_ret
+*cnn,water_jacket, -0.850,rad-hall_h,  0.075,hall_p
+*cnn,rad-hall_h, -0.075,rad-hall_m,  0.075,hall_hm
+*cnn,rad-hall_m, -0.075,rad-hall_l,  0.100,hall_ml
+*cnn,rad-hall_l, -0.100,water_jacket, -1.350,hall_ret
+*cnn,water_jacket,  1.750,rad_dining_h,  0.075,dining_p
+*cnn,rad_dining_h, -0.075,rad_dining_m,  0.075,din_hm
+*cnn,rad_dining_m, -0.075,rad_dining_l,  0.100,din_ml
+*cnn,rad_dining_l, -0.100,water_jacket, -1.250,din_ret
+*cnn,tnk_hi_160, -0.850,tnk_md_160,  0.075,tnk_m2h
+*cnn,tnk_md_160, -0.225,tnk_lo_160,  0.225,tnk_l2m
+*cnn,tnk_lo_160, -0.271,collec_low, -0.229,col_low_lnk
+*cnn,collec_low,  0.229,collec_mid, -0.229,col_lm
+*cnn,collec_mid,  0.230,collec_hi, -0.229,col_mh
+*cnn,collec_hi,  0.250,tnk_hi_160,  0.225,col_pump
+*cnn,mains,  0.100,water_jacket, -5.625,main_pipe
+*cnn,mains,  0.500,tnk_lo_160, -0.950,main_pipe
+*cnn,eve_east,  0.900,attic, -0.950,east_eve_v
+*cnn,eve_west,  0.900,attic, -0.950,west_eve_v
+*cnn,eve_east,  0.000,air_low,  0.000,col_crack
+*cnn,eve_east,  1.769,air_mid,  0.000,col_crack
+*cnn,eve_east,  1.769,air_hi, -0.446,col_crack
+*cnn,boil_ext,  0.000,gas,  0.000,boil_vent
+*cnn,eve_west, -3.500,mixer,  0.000,mix_crack
+*IPSMOD 0  # stack calc
+*MFBSNC 0  # timing
+*MSLVTP 0  # flow solution
+*MFTRAC 0  # trace level
+*End_network

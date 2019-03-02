@@ -1,0 +1,18 @@
+# zone viewfactors and MRT sensor definition of air_low
+# defined in ../zones/air_low.vwf
+*VIEWFACTORS
+*GEOM  ../zones/air_low.geo
+   0   6  28   # numb mrt sensors, numb zone surfs, zone index
+# Zone viewfactors follow
+ 0.00,0.92429,0.0240408,0.0138863,0.0241327,0.0136973
+ 0.92429,0.00,0.0240408,0.0136973,0.0241327,0.0138863
+ 0.46928,0.46925,0.00,0.0238361,0.0170839,0.0206395
+ 0.44874,0.44991,0.0453403,0.00,0.0483627,0.0077329
+ 0.46926,0.46926,0.0170839,0.0206573,0.00,0.0238219
+ 0.44991,0.44874,0.0483627,0.0077329,0.0453403,0.00
+ sum over row  1 is :   1.0000470877
+ sum over row  2 is :   1.0000472069
+ sum over row  3 is :   1.0000894070
+ sum over row  4 is :   1.0000859499
+ sum over row  5 is :   1.0000830889
+ sum over row  6 is :   1.0000859499

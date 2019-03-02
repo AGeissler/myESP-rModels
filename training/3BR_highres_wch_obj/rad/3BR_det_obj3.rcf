@@ -1,0 +1,10 @@
+*ESP-r visualisation scene configuration file.
+Sun Feb  3 16:19:58 2019 # latest file modification.
+  1 # No. of scenes
+# Scene number  1
+*rnm living_Glare.rif                    # Rif name
+*srt living_Glare                        # Scene root
+*rde Scene of living for Glare analysis. # Description
+*rpu Glare                               # Intended use
+*sceneEND
+*end

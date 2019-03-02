@@ -1,0 +1,1080 @@
+Synopsis
+ 
+Synopsis of the model house with sun space, summer operations defined in
+house_with_sunspace.cfg generated on Wed Feb  6 14:32:11 2019. Associated
+notes are in ../doc/house_sun.log
+ 
+The model is located at latitude   58.20 with a longitude difference of  -6.20
+from the local time meridian (east +ve). The year used in simulations is 1967
+and weekends occur on Saturday and Sunday.
+ 
+The site exposure is typical urban site and the ground reflectance is 0.20.
+ 
+ 
+The climate is: ESP test climate and is held in: clm67 with hour centred solar
+data.
+ standard annual weather: clm67
+Calculated ground temperature at depth                                                                                      
+  0.5 m: 3.0888 4.3008 6.6610 8.8949 13.123 15.349 15.963 14.834 12.227 8.9770 5.7777 3.6649                                                                                                                                                                                                                                                                                                                                                                                                                    
+  1.0 m: 3.6630 4.5020 6.4738 8.4398 12.343 14.560 15.374 14.612 12.434 9.5459 6.5633 4.4524                                                                                                                                                                                                                                                                                                                                                                                                                    
+  1.5 m: 4.2245 4.7614 6.3956 8.1158 11.689 13.852 14.802 14.336 12.531 9.9790 7.2247 5.1599                                                                                                                                                                                                                                                                                                                                                                                                                    
+  2.0 m: 4.7588 5.0557 6.4004 7.8990 11.149 13.226 14.259 14.027 12.542 10.298 7.7730 5.7855                                                                                                                                                                                                                                                                                                                                                                                                                    
+  2.5 m: 5.2563 5.3667 6.4664 7.7682 10.709 12.681 13.756 13.705 12.490 10.522 8.2208 6.3313                                                                                                                                                                                                                                                                                                                                                                                                                    
+  3.0 m: 5.7116 5.6803 6.5755 7.7046 10.357 12.211 13.297 13.382 12.393 10.670 8.5810 6.8017                                                                                                                                                                                                                                                                                                                                                                                                                    
+  3.5 m: 6.1222 5.9864 6.7127 7.6921 10.080 11.812 12.884 13.069 12.266 10.758 8.8661 7.2026                                                                                                                                                                                                                                                                                                                                                                                                                    
+  4.0 m: 6.4880 6.2779 6.8663 7.7174 9.8661 11.475 12.517 12.771 12.121 10.800 9.0880 7.5409                                                                                                                                                                                                                                                                                                                                                                                                                    
+  4.5 m: 6.8105 6.5502 7.0275 7.7692 9.7037 11.193 12.194 12.495 11.967 10.806 9.2575 7.8239                                                                                                                                                                                                                                                                                                                                                                                                                    
+  5.0 m: 7.0924 6.8008 7.1892 7.8387 9.5835 10.959 11.913 12.241 11.812 10.787 9.3843 8.0587                                                                                                                                                                                                                                                                                                                                                                                                                    
+  5.5 m: 7.3371 7.0287 7.3468 7.9188 9.4969 10.767 11.669 12.010 11.659 10.750 9.4768 8.2523                                                                                                                                                                                                                                                                                                                                                                                                                    
+  6.0 m: 7.5483 7.2337 7.4969 8.0042 9.4367 10.610 11.459 11.804 11.513 10.702 9.5423 8.4109                                                                                                                                                                                                                                                                                                                                                                                                                    
+  6.5 m: 7.7298 7.4168 7.6374 8.0909 9.3969 10.482 11.279 11.619 11.376 10.646 9.5869 8.5404                                                                                                                                                                                                                                                                                                                                                                                                                    
+  7.0 m: 7.8854 7.5794 7.7672 8.1760 9.3725 10.377 11.125 11.456 11.249 10.588 9.6156 8.6458                                                                                                                                                                                                                                                                                                                                                                                                                    
+  7.5 m: 8.0186 7.7231 7.8858 8.2576 9.3593 10.293 10.993 11.312 11.132 10.530 9.6324 8.7315                                                                                                                                                                                                                                                                                                                                                                                                                    
+  8.0 m: 8.1327 7.8497 7.9934 8.3344 9.3543 10.224 10.881 11.185 11.026 10.472 9.6407 8.8013                                                                                                                                                                                                                                                                                                                                                                                                                    
+  8.5 m: 8.2306 7.9611 8.0905 8.4057 9.3549 10.168 10.784 11.074 10.931 10.417 9.6430 8.8583                                                                                                                                                                                                                                                                                                                                                                                                                    
+  9.0 m: 8.3148 8.0592 8.1776 8.4712 9.3591 10.121 10.701 10.976 10.845 10.366 9.6413 8.9053                                                                                                                                                                                                                                                                                                                                                                                                                    
+  9.5 m: 8.3877 8.1457 8.2557 8.5310 9.3656 10.083 10.630 10.889 10.768 10.319 9.6371 8.9442                                                                                                                                                                                                                                                                                                                                                                                                                    
+ 10.0 m: 8.4510 8.2221 8.3255 8.5853 9.3733 10.051 10.568 10.813 10.699 10.275 9.6314 8.9770                                                                                                                                                                                                                                                                                                                                                                                                                    
+ 
+An Integrated Performance View is incomplete or missing.
+ 
+Databases associated with the model:
+ standard pressure distr: pressc.db1
+ standard materials     : material.db4.a
+ constructions          :  ../dbs/ss.mdb
+ standard plant comp    : plantc.db1
+ standard event profiles: profiles.db2.a
+ standard optical prop  : optics.db2
+ standard UK NCM data   : SBEM.db1
+ standard predefined obj: predefined.db1
+ standard mould isopleth: mould.db1
+ 
+ ____________________________________________________________
+ 
+The model includes ideal controls as follows:
+Control description:
+window in kitliv and the buf_roof open if warm
+no zone control description supplied
+ 
+ Flow control includes  2 loops.
+open window in kitliv and buf1 and bufroof if warm.
+ 
+ The sensor for function  1 senses node (1) kitliv
+ The actuator for function  1 is flow connection:   1 BW-Cr01:007 - kitliv via Winz01:007
+ >  1 periods of validity during the year have been defined.
+ Control is valid Sun-01-Jan to Sun-31-Dec, 1967 with  3 periods.
+ 
+ Per|Start|Sensing  |Actuating  | weekdays control laws
+   1  0.00 dry bulb > flow       on/off setpoint 21.00 direct action ON fraction 0.000.
+   2  7.00 dry bulb > flow       on/off setpoint 21.00 direct action ON fraction 1.000.
+   3 18.00 dry bulb > flow       on/off setpoint 21.00 direct action ON fraction 0.500.
+ 
+ The sensor for function  2 senses node (9) buf_roof
+ The actuator for function  2 is flow connection:  20 BW-Cr09:006 - buf_roof via WiOPz09:006
+ >  1 periods of validity during the year have been defined.
+ Control is valid Sun-01-Jan to Sun-31-Dec, 1967 with  3 periods.
+ 
+ Per|Start|Sensing  |Actuating  | weekdays control laws
+   1  0.00 dry bulb > flow       on/off setpoint 21.00 direct action ON fraction 0.000.
+   2  7.00 dry bulb > flow       on/off setpoint 21.00 direct action ON fraction 1.000.
+   3 18.00 dry bulb > flow       on/off setpoint 21.00 direct action ON fraction 0.500.
+ ____________________________________________________________
+ 
+The model includes an air flow network.
+ 
+ Flow network description.
+ 
+  21 nodes,  22 components,  22 connections;     wind reduction =  0.000
+   # Node       Fluid   Node Type              X Y Z Position      Temperature    Data_1        Data_2
+   1 kitliv       air   internal & unknown    6.8535  9.3005  1.2000   20.000     (-)     1.000  vol   62.487
+   2 west_space   air   internal & unknown    5.7010  7.3090  1.2000   20.000     (-)     1.000  vol    4.927
+   3 hall         air   internal & unknown    9.2795 11.3055  1.2000   20.000     (-)     1.000  vol   16.315
+   4 bath         air   internal & unknown    6.5945 12.8560  1.2000   20.000     (-)     1.000  vol    8.975
+   5 bed1         air   internal & unknown   10.8685 13.1585  1.2000   20.000     (-)     1.000  vol   23.069
+   6 bed2         air   internal & unknown    8.1840 14.7085  1.2000   20.000     (-)     1.000  vol   23.062
+   7 buf_1        air   internal & unknown   10.6920  6.8525  1.2000   20.000     (-)     1.000  vol   32.014
+   8 buf_2        air   internal & unknown   13.0420 10.9235  1.2000   20.000     (-)     1.000  vol   33.413
+   9 buf_roof     air   internal & unknown   11.8920  8.9310  3.8000   20.000     (-)     1.000  vol   38.167
+  10 roof         air   internal & unknown    7.9525 11.2065  3.8000   20.000     (-)     1.000  vol   81.612
+  11 BW-Cr01:007  air   boundary & wind ind   3.6859  7.6651  1.3500   0.0000     coef    1.000  azim 210.004
+  12 BW-Cr01:009  air   boundary & wind ind   6.9769  5.7651  1.3500   0.0000     coef    1.000  azim 210.004
+  13 BW-Cr02:011  air   boundary & wind ind   7.6529  6.0549  1.3500   0.0000     coef    1.000  azim 127.040
+  14 BW-Cr02:012  air   boundary & wind ind   6.9531  6.7141  1.3500   0.0000     coef    1.000  azim 307.040
+  15 BW-Cr05:007  air   boundary & wind ind  12.0281 15.3182  1.3500   0.0000     coef    1.000  azim  29.971
+  16 BW-Cr06:007  air   boundary & wind ind   9.6901 16.6679  1.3500   0.0000     coef    1.000  azim  30.004
+  17 BW-Cr07:005  air   boundary & wind ind   9.0489  4.1056  1.2000   0.0000     coef    1.000  azim 210.005
+  18 BW-Cr08:006  air   boundary & wind ind  14.7361 13.7554  1.2000   0.0000     coef    1.000  azim  30.006
+  19 BW-Cr09:005  air   boundary & wind ind  10.9899  7.4186  5.1157   0.0000     coef    1.000  azim 210.029
+  20 BW-Cr09:006  air   boundary & wind ind  12.7807 10.5706  5.2245   0.0000     coef    1.000  azim  29.976
+  21 BW-Cr10:001  air   boundary & wind ind   4.2701 12.8312  2.8664   0.0000     coef    1.000  azim 299.999
+ 
+ Component    Type C+ L+ X Y Z Position Description
+ 
+ Winz01:007     40  3  0   4.1   8.4   1.4 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Associated with kitliv:win1
+ Fluid  1.0 opening area (m^2)  0.300 discharge factor (-) 0.800
+ 
+ WiOPz01:008    40  3  0   9.7   8.0   1.4 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Associated with kitliv:win3
+ Fluid  1.0 opening area (m^2)  0.300 discharge factor (-) 0.800
+ 
+ WiCrz01:009   120  3  0   7.4   6.5   1.4 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with kitliv:win2
+ Fluid  1.0 crack width(m)  0.0010 crack length(m)  0.850
+ 
+ DoCrz01:012   120  3  0   9.8  10.0   0.0 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with kitliv:liv_door
+ Fluid  1.0 crack width(m)  0.0050 crack length(m)  0.800
+ 
+ GrCRz02:005   120  3  0   5.7   7.3   2.4 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with west_space:ceil
+ Fluid  1.0 crack width(m)  0.0010 crack length(m)  6.600
+ 
+ FrCrz02:011   120  3  0   6.9   6.6   1.4 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with west_space:jl
+ Fluid  1.0 crack width(m)  0.0010 crack length(m)  1.903
+ 
+ FrCrz02:012   120  3  0   7.7   6.2   1.4 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with west_space:jr
+ Fluid  1.0 crack width(m)  0.0010 crack length(m)  1.903
+ 
+ DoCrz03:007   120  3  0  11.1  10.5   0.0 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with hall:door
+ Fluid  1.0 crack width(m)  0.0050 crack length(m)  0.800
+ 
+ DoCrz03:009   120  3  0   7.4  12.0   0.0 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with hall:door_bath
+ Fluid  1.0 crack width(m)  0.0050 crack length(m)  0.700
+ 
+ DoCrz03:010   120  3  0   9.2  12.3   0.0 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with hall:door_b1
+ Fluid  1.0 crack width(m)  0.0050 crack length(m)  0.700
+ 
+ DoCrz03:011   120  3  0   8.4  12.8   0.0 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with hall:door_b2
+ Fluid  1.0 crack width(m)  0.0050 crack length(m)  0.700
+ 
+ WiCrz05:007   120  3  0  11.6  14.5   1.4 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with bed1:win
+ Fluid  1.0 crack width(m)  0.0010 crack length(m)  0.851
+ 
+ WiCrz06:007   120  3  0   9.2  15.9   1.4 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with bed2:win
+ Fluid  1.0 crack width(m)  0.0010 crack length(m)  0.850
+ 
+ GrOPz07:003    40  3  0  10.3   6.7   2.4 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Associated with buf_1:fict
+ Fluid  1.0 opening area (m^2) 13.339 discharge factor (-) 0.500
+ 
+ WiOPz07:005    40  3  0   9.5   4.9   1.2 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Associated with buf_1:westwin
+ Fluid  1.0 opening area (m^2)  0.400 discharge factor (-) 0.800
+ 
+ FiBIz07:009   130  5  0  11.8   8.8   0.0 Specific air flow door              m = rho.f(W,H,dP)
+ Associated with buf_1:fictv
+ Fluid  1.0 width  2.175 height 1.800 ref ht  1.200 discharge factor 0.500
+ 
+ GrOPz08:004    40  3  0  12.7  10.9   2.4 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Associated with buf_2:fict
+ Fluid  1.0 opening area (m^2) 13.922 discharge factor (-) 0.800
+ 
+ WiCrz08:006   120  3  0  14.3  13.0   1.2 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with buf_2:eastwin
+ Fluid  1.0 crack width(m)  0.0010 crack length(m)  2.400
+ 
+ WiCrz09:005   120  3  0  11.2   7.8   4.3 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with buf_roof:win2
+ Fluid  1.0 crack width(m)  0.0010 crack length(m)  2.051
+ 
+ WiOPz09:006    40  3  0  12.5  10.2   4.5 Common orifice flow component m = rho.f(Cd,A,rho,dP)
+ Associated with buf_roof:glz_w
+ Fluid  1.0 opening area (m^2)  0.400 discharge factor (-) 0.800
+ 
+ GrCRz09:008   120  3  0  10.4   9.3   2.9 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with buf_roof:roof_buf
+ Fluid  1.0 crack width(m)  0.0010 crack length(m) 10.171
+ 
+ GrCRz10:001   120  3  0   5.0  12.4   2.9 Specific air flow crack             m = rho.f(W,L,dP)
+ Associated with roof:roof_n
+ Fluid  1.0 crack width(m)  0.0010 crack length(m) 10.172
+ 
+    # +Node         dHght   -Node         dHght   Component       Z @+    Z @-
+    1 BW-Cr01:007   0.000   kitliv        0.150   Winz01:007      1.350   1.350
+    2 kitliv        0.150   buf_1         0.150   WiOPz01:008     1.350   1.350
+    3 BW-Cr01:009   0.000   kitliv        0.150   WiCrz01:009     1.350   1.350
+    4 kitliv       -1.200   hall         -1.200   DoCrz01:012     0.000   0.000
+    5 west_space    1.200   roof         -1.400   GrCRz02:005     2.400   2.400
+    6 BW-Cr02:011   0.000   west_space    0.150   FrCrz02:011     1.350   1.350
+    7 BW-Cr02:012   0.000   west_space    0.150   FrCrz02:012     1.350   1.350
+    8 hall         -1.200   buf_2        -1.200   DoCrz03:007     0.000   0.000
+    9 hall         -1.200   bath         -1.200   DoCrz03:009     0.000   0.000
+   10 hall         -1.200   bed1         -1.200   DoCrz03:010     0.000   0.000
+   11 hall         -1.200   bed2         -1.200   DoCrz03:011     0.000   0.000
+   12 BW-Cr05:007   0.000   bed1          0.150   WiCrz05:007     1.350   1.350
+   13 BW-Cr06:007   0.000   bed2          0.150   WiCrz06:007     1.350   1.350
+   14 buf_1         1.200   buf_roof     -1.400   GrOPz07:003     2.400   2.400
+   15 BW-Cr07:005   0.000   buf_1         0.000   WiOPz07:005     1.200   1.200
+   16 buf_1        -1.200   buf_2        -1.200   FiBIz07:009     0.000   0.000
+   17 buf_2         1.200   buf_roof     -1.400   GrOPz08:004     2.400   2.400
+   18 BW-Cr08:006   0.000   buf_2        -0.000   WiCrz08:006     1.200   1.200
+   19 BW-Cr09:005   0.000   buf_roof      0.535   WiCrz09:005     5.116   4.335
+   20 BW-Cr09:006  -0.764   buf_roof      0.660   WiOPz09:006     4.460   4.460
+   21 buf_roof     -0.933   roof         -0.933   GrCRz09:008     2.867   2.867
+   22 BW-Cr10:001   0.000   roof         -0.933   GrCRz10:001     2.866   2.867
+thermal zone to air flow node mapping:
+thermal zone -> air flow node
+kitliv       -> kitliv
+west_space   -> west_space
+hall         -> hall
+bath         -> bath
+bed1         -> bed1
+bed2         -> bed2
+buf_1        -> buf_1
+buf_2        -> buf_2
+buf_roof     -> buf_roof
+roof         -> roof
+ 
+ 
+ ____________________________________________________________
+ 
+ID Zone         Volume|          Surface
+   Name         m^3   | No. Opaque  Transp  ~Floor
+ 1 kitliv         62.5  12    95.5     6.5    26.0  kitliv describes a...
+ 2 west_space      4.9  14    35.3     0.0     2.5  west_space is the construction void within west wall
+ 3 hall           16.3  12    41.0     0.0     6.8  hall describes a...
+ 4 bath            9.0   7    26.2     0.0     3.7  bath describes a...
+ 5 bed1           23.1   8    47.7     1.3     9.6  bed1 describes a...
+ 6 bed2           23.1   9    47.7     1.3     9.6  bed2 describes a...
+ 7 buf_1          32.0   9    35.7    27.0    13.3  buf_1 describes a...
+ 8 buf_2          33.4   9    39.6    25.2    13.9  buf_2 describes a...
+ 9 buf_roof       38.2   8    54.8    30.5    27.3  buf_roof describes a...
+10 roof           81.6  10   152.5     0.0    58.3  roof describes a...
+   all           324.   98    576.     92.    171.
+ 
+ 
+ Zone kitliv ( 1) is composed of 12 surfaces and 30 vertices.
+ It encloses a volume of 62.5m^3 of space, with a total surface
+ area of 102.m^2 & approx floor area of 26.0m^2
+ kitliv describes a...
+ There is 2.5497m2 of exposed surface area, 2.5497m2 of which is vertical.
+ Facade glazing is 2.5497m2 &   9.8 % of floor & 100.0 % facade with average U of 2.877 & UA of 7.3347
+ Opaque partitions:ceiling:floor 60.922m2 & trasparent partitions:ceiling:floor 2.4018m2.
+Ground contact is 99.982 % of floor area & average U of 0.359 & perimeter 0.00
+ 
+ A summary of the surfaces in kitliv( 1) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction    |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name            |other side
+  1  7.68    120.  -0. s_buf        OPAQUE   VERT -        -        int_buf         ||< s_liv:buf_1
+  2  7.92     30.  -0. s_hall       OPAQUE   VERT -        -        int_buf         ||< s_liv:hall
+  3  8.57    300.   0. s_adjhouse   OPAQUE   VERT -        -        ext_west        ||< identical environment
+  4  12.3    210.   0. s_west       OPAQUE   VERT -        -        int_west        ||< s_liv:west_space
+  5  26.0      0.  90. ceil         OPAQUE   CEIL -        -        int_roof        ||< liv:roof
+  6  26.0      0. -90. floor        OPAQUE   FLOR -        -        house_floor     ||< ground profile  1
+  7  1.27    210.   0. win1         DC_8074_ VERT C-WINDOW CRACK    doub_glaz       ||< external
+  8  2.40    120.   0. win3         SCF8783_ VERT WINDOW   CRACK    sing_glaz       ||< int_win:buf_1
+  9  1.27    210.   0. win2         DC_8074_ VERT C-WINDOW CRACK    doub_glaz       ||< external
+ 10  5.28     30.   0. s_bath       OPAQUE   VERT -        -        int_buf         ||< s_liv:bath
+ 11  1.51    300.   0. test         DC_8074_ VERT C-WINDOW CLOSED   doub_glaz       ||< identical environment
+ 12  1.68     30.   0. liv_door     OPAQUE   VERT DOOR     UNDERCUT door            ||< liv_door:hall
+ 
+ 
+ An hourly solar radiation distribution is used for this zone.
+ Surfaces (all applicable) for shading analysis:
+win1 win2
+ Insolation sources (all applicable):
+win1 win2
+ 
+ 
+Block  X-     Y-    Z-coords   DX-    DY-    DZ-values  Orientation   Opacity  Name  Construction
+  1     3.5     8.2     0.6     0.4     0.1     1.5    60.0     0.0 1.00 nl NONE
+  2     4.3     7.8     0.6     0.4     0.1     1.5    60.0     0.0 1.00 nr NONE
+  3     3.6     8.6     2.2     0.4     1.0     0.1   240.0     0.0 1.00 nt NONE
+  4     6.8     6.3     0.6     0.4     0.1     1.5    60.0     0.0 1.00 sl NONE
+  5     7.6     5.9     0.6     0.4     0.1     1.5    60.0     0.0 1.00 sr NONE
+  6     7.0     6.7     2.2     0.4     1.0     0.1   240.0     0.0 1.00 st NONE
+ 
+ Shading patterns have been calculated for this zone.
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: kitliv
+ 
+Notes:
+kitliv
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekdays    1 Occupt     people    W    0- 8      0.0      0.0       0.50       0.50
+weekdays    2 Occupt     people    W    8-22    285.0    135.0       0.20       0.80
+weekdays    3 Occupt     people    W   22-24      0.0      0.0       0.50       0.50
+weekdays    4 Lights     lighting  W    0-19      0.0      0.0       0.50       0.50
+weekdays    5 Lights     lighting  W   19-23    200.0      0.0       0.80       0.20
+weekdays    6 Lights     lighting  W   23-24      0.0      0.0       0.50       0.50
+weekdays    7 Equipt     equipment W    0- 8      0.0      0.0       0.50       0.50
+weekdays    8 Equipt     equipment W    8- 9   1000.0      0.0       0.40       0.60
+weekdays    9 Equipt     equipment W    9-12     60.0      0.0       0.40       0.60
+weekdays   10 Equipt     equipment W   12-13   1000.0      0.0       0.40       0.60
+weekdays   11 Equipt     equipment W   13-18     60.0      0.0       0.40       0.60
+weekdays   12 Equipt     equipment W   18-19   1000.0      0.0       0.40       0.60
+weekdays   13 Equipt     equipment W   19-23     60.0      0.0       0.40       0.60
+weekdays   14 Equipt     equipment W   23-24      0.0      0.0       0.50       0.50
+saturday    1 Occupt     people    W    0- 8      0.0      0.0       0.50       0.50
+saturday    2 Occupt     people    W    8-22    285.0    135.0       0.20       0.80
+saturday    3 Occupt     people    W   22-24      0.0      0.0       0.50       0.50
+saturday    4 Lights     lighting  W    0-19      0.0      0.0       0.50       0.50
+saturday    5 Lights     lighting  W   19-23    200.0      0.0       0.80       0.20
+saturday    6 Lights     lighting  W   23-24      0.0      0.0       0.50       0.50
+saturday    7 Equipt     equipment W    0- 8      0.0      0.0       0.50       0.50
+saturday    8 Equipt     equipment W    8- 9   1000.0      0.0       0.40       0.60
+saturday    9 Equipt     equipment W    9-12     60.0      0.0       0.40       0.60
+saturday   10 Equipt     equipment W   12-13   1000.0      0.0       0.40       0.60
+saturday   11 Equipt     equipment W   13-18     60.0      0.0       0.40       0.60
+saturday   12 Equipt     equipment W   18-19   1000.0      0.0       0.40       0.60
+saturday   13 Equipt     equipment W   19-23     60.0      0.0       0.40       0.60
+saturday   14 Equipt     equipment W   23-24      0.0      0.0       0.50       0.50
+sunday      1 Occupt     people    W    0- 8      0.0      0.0       0.50       0.50
+sunday      2 Occupt     people    W    8-22    285.0    135.0       0.20       0.80
+sunday      3 Occupt     people    W   22-24      0.0      0.0       0.50       0.50
+sunday      4 Lights     lighting  W    0-19      0.0      0.0       0.50       0.50
+sunday      5 Lights     lighting  W   19-23    200.0      0.0       0.80       0.20
+sunday      6 Lights     lighting  W   23-24      0.0      0.0       0.50       0.50
+sunday      7 Equipt     equipment W    0- 8      0.0      0.0       0.50       0.50
+sunday      8 Equipt     equipment W    8- 9   1000.0      0.0       0.40       0.60
+sunday      9 Equipt     equipment W    9-12     60.0      0.0       0.40       0.60
+sunday     10 Equipt     equipment W   12-13   1000.0      0.0       0.40       0.60
+sunday     11 Equipt     equipment W   13-18     60.0      0.0       0.40       0.60
+sunday     12 Equipt     equipment W   18-19   1000.0      0.0       0.40       0.60
+sunday     13 Equipt     equipment W   19-23     60.0      0.0       0.40       0.60
+sunday     14 Equipt     equipment W   23-24      0.0      0.0       0.50       0.50
+ 
+ ____________________________________________________________
+ 
+ Zone west_space ( 2) is composed of 14 surfaces and 24 vertices.
+ It encloses a volume of 4.93m^3 of space, with a total surface
+ area of 35.3m^2 & user list floor area of 2.48m^2
+ west_space is the construction void within west wall
+ There is 16.112m2 of exposed surface area, 14.751m2 of which is vertical.
+ Facade opaque is 15.432m2 & 622.2 % of floor area & average U of 3.763 & UA of 58.067.
+Flat roof is 27.454 % of floor area & average U of 4.270 & UA of 2.9070.
+ Opaque partitions:ceiling:floor 15.768m2.
+Ground contact is 99.920 % of floor area & average U of 0.359 & perimeter 6.2006
+ 
+ A summary of the surfaces in west_space( 2) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction    |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name            |other side
+  1  0.959   120.   0. s_buf        OPAQUE   VERT -        -        int_buf         ||< s_west:buf_1
+  2  12.3     30.   0. s_liv        OPAQUE   VERT -        -        int_westrev     ||< s_west:kitliv
+  3  0.959   300.   0. s_adjhouse   OPAQUE   VERT -        -        ext_west        ||< identical environment
+  4  12.3    210.  -0. ext_west     OPAQUE   VERT -        -        ext_west        ||< external
+  5  2.48      0.  90. ceil         OPAQUE   CEIL GRILL    CRACK    int_roof        ||< west_sp:roof
+  6  2.48      0. -90. floor        OPAQUE   FLOR -        -        house_floor     ||< ground profile  1
+  7  0.605   127.   0. jambl        OPAQUE   VERT -        -        ext_west        ||< external
+  8  0.605   307.   0. jambr        OPAQUE   VERT -        -        ext_west        ||< external
+  9  0.340     0.  90. sill         OPAQUE   CEIL -        -        ext_west        ||< external
+ 10  0.340     0. -90. head         OPAQUE   FLOR -        -        ext_west        ||< external
+ 11  0.605   127.   0. jl           OPAQUE   VERT FRAME    CRACK    ext_west        ||< external
+ 12  0.605   307.   0. jr           OPAQUE   VERT FRAME    CRACK    ext_west        ||< external
+ 13  0.341     0.  90. sillr        OPAQUE   CEIL -        -        ext_west        ||< external
+ 14  0.341     0. -90. headr        OPAQUE   FLOR -        -        ext_west        ||< external
+ 
+ 
+ Solar insolation focused on head         & sill         (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: west_space
+ 
+Notes:
+west_space
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+ 
+ ____________________________________________________________
+ 
+ Zone hall ( 3) is composed of 12 surfaces and 30 vertices.
+ It encloses a volume of 16.3m^3 of space, with a total surface
+ area of 41.0m^2 & approx floor area of 6.80m^2
+ hall describes a...
+ Opaque partitions:ceiling:floor 34.156m2.
+Ground contact is 99.950 % of floor area & average U of 0.359 & perimeter 0.00
+ 
+ A summary of the surfaces in hall( 3) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction    |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name            |other side
+  1  2.40    120.  -0. s_buf        OPAQUE   VERT -        -        int_buf         ||< s_hall:buf_2
+  2  5.97     30.   0. s_bed1       OPAQUE   VERT -        -        int_buf         ||< s_hall:bed1
+  3  2.61    300.   0. s_bath       OPAQUE   VERT -        -        int_buf         ||< s_hall:bath
+  4  7.92    210.  -0. s_liv        OPAQUE   VERT -        -        int_buf         ||< s_hall:kitliv
+  5  6.80      0.  90. ceil         OPAQUE   CEIL -        -        int_roof        ||< hall:roof
+  6  6.80      0. -90. floor        OPAQUE   FLOR -        -        house_floor     ||< ground profile  1
+  7  1.68    120.   0. door         OPAQUE   VERT DOOR     UNDERCUT door            ||< door:buf_2
+  8  0.690    30.  -0. s_bed2       OPAQUE   VERT -        -        door            ||< s_hall:bed2
+  9  1.47    300.   0. door_bath    OPAQUE   VERT DOOR     UNDERCUT door            ||< door_bath:bath
+ 10  1.47     30.   0. door_b1      OPAQUE   VERT DOOR     UNDERCUT door            ||< door_b1:bed1
+ 11  1.47     30.   0. door_b2      OPAQUE   VERT DOOR     UNDERCUT door            ||< door_b2:bed2
+ 12  1.68    210.   0. liv_door     OPAQUE   VERT DOOR     UNDERCUT door            ||< liv_door:kitliv
+ 
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: hall
+ 
+Notes:
+hall
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+ 
+ ____________________________________________________________
+ 
+ Zone bath ( 4) is composed of 7 surfaces and 12 vertices.
+ It encloses a volume of 8.97m^3 of space, with a total surface
+ area of 26.2m^2 & approx floor area of 3.74m^2
+ bath describes a...
+ Opaque partitions:ceiling:floor 18.380m2.
+Ground contact is 99.983 % of floor area & average U of 0.359 & perimeter 0.00
+ 
+ A summary of the surfaces in bath( 4) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction    |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name            |other side
+  1  2.61    120.   0. s_hall       OPAQUE   VERT -        -        int_buf         ||< s_bath:hall
+  2  5.28     30.   0. s_bed2       OPAQUE   VERT -        -        int_buf         ||< s_bath:bed2
+  3  4.08    300.   0. s_adjhouse   OPAQUE   VERT -        -        ext_west        ||< identical environment
+  4  5.28    210.   0. s_liv        OPAQUE   VERT -        -        int_buf         ||< s_bath:kitliv
+  5  3.74      0.  90. ceil         OPAQUE   CEIL -        -        int_roof        ||< bath:roof
+  6  3.74      0. -90. floor        OPAQUE   FLOR -        -        house_floor     ||< ground profile  1
+  7  1.47    120.   0. door_bath    OPAQUE   VERT DOOR     UNDERCUT door            ||< door_bath:hall
+ 
+ 
+ All surfaces will receive diffuse insolation (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: bath
+ 
+Notes:
+bath
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekdays    1 Lights     lighting  W    0- 7      0.0      0.0       0.50       0.50
+weekdays    2 Lights     lighting  W    7- 8    100.0      0.0       0.80       0.20
+weekdays    3 Lights     lighting  W    8-17      0.0      0.0       0.50       0.50
+weekdays    4 Lights     lighting  W   17-18    100.0      0.0       0.80       0.20
+weekdays    5 Lights     lighting  W   18-24      0.0      0.0       0.50       0.50
+saturday    1 Lights     lighting  W    0- 7      0.0      0.0       0.50       0.50
+saturday    2 Lights     lighting  W    7- 8    100.0      0.0       0.80       0.20
+saturday    3 Lights     lighting  W    8-17      0.0      0.0       0.50       0.50
+saturday    4 Lights     lighting  W   17-18    100.0      0.0       0.80       0.20
+saturday    5 Lights     lighting  W   18-24      0.0      0.0       0.50       0.50
+sunday      1 Lights     lighting  W    0- 7      0.0      0.0       0.50       0.50
+sunday      2 Lights     lighting  W    7- 8    100.0      0.0       0.80       0.20
+sunday      3 Lights     lighting  W    8-17      0.0      0.0       0.50       0.50
+sunday      4 Lights     lighting  W   17-18    100.0      0.0       0.80       0.20
+sunday      5 Lights     lighting  W   18-24      0.0      0.0       0.50       0.50
+ 
+ ____________________________________________________________
+ 
+ Zone bed1 ( 5) is composed of 8 surfaces and 16 vertices.
+ It encloses a volume of 23.1m^3 of space, with a total surface
+ area of 49.0m^2 & approx floor area of 9.61m^2
+ bed1 describes a...
+ There is 7.4407m2 of exposed surface area, 7.4407m2 of which is vertical.
+ Facade opaque is 6.1645m2 &  64.1 % of floor area & average U of 0.211 & UA of 1.2994.
+ Facade glazing is 1.2761m2 &  13.3 % of floor &  17.2 % facade with average U of 2.877 & UA of 3.6711
+ Opaque partitions:ceiling:floor 31.934m2.
+Ground contact is 100.02 % of floor area & average U of 0.359 & perimeter 3.1003
+ 
+ A summary of the surfaces in bed1( 5) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction    |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name            |other side
+  1  7.44    120.   0. s_buf        OPAQUE   VERT -        -        int_buf         ||< s_bed:buf_2
+  2  6.16     30.   0. ext_east     OPAQUE   VERT -        -        ext_east        ||< external
+  3  7.44    300.   0. s_bed2       OPAQUE   VERT PARTN    -        int_buf         ||< s_bed1:bed2
+  4  5.97    210.   0. s_hall       OPAQUE   VERT -        -        int_buf         ||< s_bed1:hall
+  5  9.61      0.  90. ceil         OPAQUE   CEIL -        -        int_roof        ||< bed1:roof
+  6  9.61      0. -90. floor        OPAQUE   FLOR -        -        house_floor     ||< ground profile  1
+  7  1.28     30.   0. win          DC_8074_ VERT C-WINDOW CRACK    doub_glaz       ||< external
+  8  1.47    210.   0. door_b1      OPAQUE   VERT DOOR     UNDERCUT door            ||< door_b1:hall
+ 
+ 
+ An hourly solar radiation distribution is used for this zone.
+ Surfaces (all applicable) for shading analysis:
+ext_east win
+ Insolation sources (all applicable):
+win
+ 
+ 
+Block  X-     Y-    Z-coords   DX-    DY-    DZ-values  Orientation   Opacity  Name  Construction
+  1    12.0    14.3     0.6     0.6     0.1     1.5    60.0     0.0 1.00 S NONE
+  2    11.2    14.8     0.6     0.6     0.1     1.5    60.0     0.0 1.00 N NONE
+  3    12.0    14.3     2.1     0.6     1.0     0.1    60.0     0.0 1.00 T NONE
+ 
+ Shading patterns have been calculated for this zone.
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: bed1
+ 
+Notes:
+two children sleeping
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekdays    1 Occupt     people    W    0- 8    190.0     90.0       0.20       0.80
+weekdays    2 Occupt     people    W    8-22      0.0      0.0       0.20       0.80
+weekdays    3 Occupt     people    W   22-24    190.0     90.0       0.20       0.80
+weekdays    4 Lights     lighting  W    0-22      0.0      0.0       0.50       0.50
+weekdays    5 Lights     lighting  W   22-24    100.0      0.0       0.80       0.20
+saturday    1 Occupt     people    W    0- 8    190.0     90.0       0.20       0.80
+saturday    2 Occupt     people    W    8-22      0.0      0.0       0.20       0.80
+saturday    3 Occupt     people    W   22-24    190.0     90.0       0.20       0.80
+saturday    4 Lights     lighting  W    0-22      0.0      0.0       0.50       0.50
+saturday    5 Lights     lighting  W   22-24    100.0      0.0       0.80       0.20
+sunday      1 Occupt     people    W    0- 8    190.0     90.0       0.20       0.80
+sunday      2 Occupt     people    W    8-22      0.0      0.0       0.20       0.80
+sunday      3 Occupt     people    W   22-24    190.0     90.0       0.20       0.80
+sunday      4 Lights     lighting  W    0-22      0.0      0.0       0.50       0.50
+sunday      5 Lights     lighting  W   22-24    100.0      0.0       0.80       0.20
+ 
+ ____________________________________________________________
+ 
+ Zone bed2 ( 6) is composed of 9 surfaces and 18 vertices.
+ It encloses a volume of 23.1m^3 of space, with a total surface
+ area of 49.0m^2 & approx floor area of 9.61m^2
+ bed2 describes a...
+ There is 7.4386m2 of exposed surface area, 7.4386m2 of which is vertical.
+ Facade opaque is 6.1637m2 &  64.1 % of floor area & average U of 0.211 & UA of 1.2993.
+ Facade glazing is 1.2748m2 &  13.3 % of floor &  17.1 % facade with average U of 2.877 & UA of 3.6674
+ Opaque partitions:ceiling:floor 24.488m2.
+Ground contact is 99.988 % of floor area & average U of 0.359 & perimeter 3.0994
+ 
+ A summary of the surfaces in bed2( 6) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction    |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name            |other side
+  1  7.44    120.   0. s_bed1       OPAQUE   VERT PARTN    -        int_buf         ||< s_bed2:bed1
+  2  6.16     30.   0. ext_east     OPAQUE   VERT -        -        ext_east        ||< external
+  3  7.44    300.   0. s_adjhouse   OPAQUE   VERT -        -        ext_west        ||< identical environment
+  4  5.28    210.   0. s_bath       OPAQUE   VERT -        -        int_buf         ||< s_bed2:bath
+  5  9.61      0.  90. ceil         OPAQUE   CEIL -        -        int_roof        ||< bed2:roof
+  6  9.61      0. -90. floor        OPAQUE   FLOR -        -        house_floor     ||< ground profile  1
+  7  1.27     30.   0. win          DC_8074_ VERT C-WINDOW CRACK    doub_glaz       ||< external
+  8  0.689   210.  -0. s_hall       OPAQUE   VERT -        -        door            ||< s_bed2:hall
+  9  1.47    210.   0. door_b2      OPAQUE   VERT DOOR     UNDERCUT door            ||< door_b2:hall
+ 
+ 
+ An hourly solar radiation distribution is used for this zone.
+ Surfaces (all applicable) for shading analysis:
+ext_east win
+ Insolation sources (all applicable):
+win
+ 
+ 
+Block  X-     Y-    Z-coords   DX-    DY-    DZ-values  Orientation   Opacity  Name  Construction
+  1     9.7    15.6     0.6     0.6     0.1     1.5    60.0     0.0 1.00 S NONE
+  2     8.9    16.1     0.6     0.6     0.1     1.5    60.0     0.0 1.00 N NONE
+  3     9.7    15.6     2.1     0.6     1.0     0.1    60.0     0.0 1.00 T NONE
+ 
+ Shading patterns have been calculated for this zone.
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: bed2
+ 
+Notes:
+bed2 with one person sleeping
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+weekdays    1 Occupt     people    W    0- 8     95.0     45.0       0.20       0.80
+weekdays    2 Occupt     people    W    8-22      0.0      0.0       0.20       0.80
+weekdays    3 Occupt     people    W   22-24     95.0     45.0       0.20       0.80
+weekdays    4 Lights     lighting  W    0-22      0.0      0.0       0.50       0.50
+weekdays    5 Lights     lighting  W   22-24    100.0      0.0       0.80       0.20
+saturday    1 Occupt     people    W    0- 8     95.0     45.0       0.20       0.80
+saturday    2 Occupt     people    W    8-22      0.0      0.0       0.20       0.80
+saturday    3 Occupt     people    W   22-24     95.0     45.0       0.20       0.80
+saturday    4 Lights     lighting  W    0-22      0.0      0.0       0.50       0.50
+saturday    5 Lights     lighting  W   22-24    100.0      0.0       0.80       0.20
+sunday      1 Occupt     people    W    0- 8     95.0     45.0       0.20       0.80
+sunday      2 Occupt     people    W    8-22      0.0      0.0       0.20       0.80
+sunday      3 Occupt     people    W   22-24     95.0     45.0       0.20       0.80
+sunday      4 Lights     lighting  W    0-22      0.0      0.0       0.50       0.50
+sunday      5 Lights     lighting  W   22-24    100.0      0.0       0.80       0.20
+ 
+ ____________________________________________________________
+ 
+ Zone buf_1 ( 7) is composed of 9 surfaces and 18 vertices.
+ It encloses a volume of 32.0m^3 of space, with a total surface
+ area of 62.7m^2 & approx floor area of 13.3m^2
+ buf_1 describes a...
+ There is 18.002m2 of exposed surface area, 18.002m2 of which is vertical.
+ Facade opaque is 13.682m2 & 102.6 % of floor area & average U of 3.487 & UA of 47.708.
+ Facade glazing is 4.3193m2 &  32.4 % of floor &  24.0 % facade with average U of 2.877 & UA of 12.425
+ Opaque partitions:ceiling:floor 8.6393m2 & trasparent partitions:ceiling:floor 22.698m2.
+Ground contact is 99.991 % of floor area & average U of 1.261 & perimeter 7.5007
+ 
+ A summary of the surfaces in buf_1( 7) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction    |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name            |other side
+  1  11.0    120.   0. ext_wall     OPAQUE   VERT -        -        ext_buf         ||< external
+  2  2.64    210.   0. west         OPAQUE   VERT -        -        ext_west        ||< external
+  3  13.3      0.  90. fict         SC_ficti CEIL GRILL    OPEN     fictitious      ||< buf_1:buf_roof
+  4  13.3      0. -90. floor        OPAQUE   FLOR -        -        buf_floor       ||< ground profile  1
+  5  4.32    210.   0. westwin      DC_8074_ VERT C-WINDOW CRACK    doub_glaz       ||< external
+  6  7.68    300.   0. s_liv        OPAQUE   VERT -        -        int_buf         ||< s_buf:kitliv
+  7  0.957   300.   0. s_west       OPAQUE   VERT -        -        int_buf         ||< s_buf:west_space
+  8  2.40    300.   0. int_win      SCF8783_ VERT WINDOW   CRACK    sing_glaz       ||< win3:kitliv
+  9  6.96     30.   0. fictv        SC_ficti VERT FICT     BIDIR    fictitious      ||< fictv:buf_2
+ 
+ 
+ Solar insolation focused on surface s_liv        (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: buf_1
+ 
+Notes:
+buf_1
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+ 
+ ____________________________________________________________
+ 
+ Zone buf_2 ( 8) is composed of 9 surfaces and 18 vertices.
+ It encloses a volume of 33.4m^3 of space, with a total surface
+ area of 64.8m^2 & approx floor area of 13.9m^2
+ buf_2 describes a...
+ There is 18.480m2 of exposed surface area, 18.480m2 of which is vertical.
+ Facade opaque is 14.161m2 & 101.7 % of floor area & average U of 3.484 & UA of 49.343.
+ Facade glazing is 4.3193m2 &  31.0 % of floor &  23.4 % facade with average U of 2.877 & UA of 12.425
+ Opaque partitions:ceiling:floor 11.520m2 & trasparent partitions:ceiling:floor 20.883m2.
+Ground contact is 100.01 % of floor area & average U of 1.261 & perimeter 7.7002
+ 
+ A summary of the surfaces in buf_2( 8) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction    |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name            |other side
+  1  11.5    120.   0. ext_wall     OPAQUE   VERT -        -        ext_buf         ||< external
+  2  2.64     30.   0. east         OPAQUE   VERT -        -        ext_west        ||< external
+  3  7.44    300.   0. s_bed        OPAQUE   VERT -        -        int_buf         ||< s_buf:bed1
+  4  13.9      0.  90. fict         SC_ficti CEIL GRILL    OPEN     fictitious      ||< buf_2:buf_roof
+  5  13.9      0. -90. floor        OPAQUE   FLOR -        -        buf_floor       ||< ground profile  1
+  6  4.32     30.   0. eastwin      DC_8074_ VERT C-WINDOW CRACK    doub_glaz       ||< external
+  7  2.40    300.  -0. s_hall       OPAQUE   VERT -        -        int_buf         ||< s_buf:hall
+  8  1.68    300.   0. door         OPAQUE   VERT DOOR     UNDERCUT door            ||< door:hall
+  9  6.96    210.   0. fictv        SC_ficti VERT FICT     BIDIR    fictitious      ||< fictv:buf_1
+ 
+ 
+ Solar insolation focused on surface eastwin      (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: buf_2
+ 
+Notes:
+nil_operations
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+ 
+ ____________________________________________________________
+ 
+ Zone buf_roof ( 9) is composed of 8 surfaces and 18 vertices.
+ It encloses a volume of 38.2m^3 of space, with a total surface
+ area of 85.3m^2 & approx floor area of 27.3m^2
+ buf_roof describes a...
+ There is 44.899m2 of exposed surface area, 13.159m2 of which is vertical.
+ Facade opaque is 13.159m2 &  48.3 % of floor area & average U of 3.415 & UA of 44.945.
+ Sloped roof is 104.55 % of floor area & average U of 0.777 & UA of 22.135
+Skylights are 11.882 % of floor area & average U of 3.148 & UA of 10.198
+ Opaque partitions:ceiling:floor 13.159m2 & trasparent partitions:ceiling:floor 27.258m2.
+ 
+ A summary of the surfaces in buf_roof( 9) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction    |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name            |other side
+  1  13.3      0. -90. buf_1        SC_ficti FLOR GRILL    OPEN     fictitious      ||< fict:buf_1
+  2  14.7    210.  60. roof_e       OPAQUE   SLOP -        -        roof            ||< external
+  3  13.8     30.  58. roof_w       OPAQUE   SLOP -        -        roof            ||< external
+  4  13.2    120.  -0. roof_s       OPAQUE   VERT -        -        ext_buf         ||< external
+  5  1.64    210.  60. win2         DC_8074_ SLOP C-WINDOW CRACK    doub_glaz       ||< external
+  6  1.60     30.  58. glz_w        DC_8074_ SLOP C-WINDOW CRACK    doub_glaz       ||< external
+  7  13.9      0. -90. buf_2        SC_ficti FLOR GRILL    OPEN     fictitious      ||< fict:buf_2
+  8  13.2    300.  -0. roof_buf     OPAQUE   VERT GRILL    CRACK    int_buf         ||< roof_buf:roof
+ 
+ 
+ Solar insolation focused on glz_w        & buf_1        (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ 
+ 
+ Ventilation & infiltration is assessed via network analysis
+ and the associated network node is: buf_roof
+ 
+Notes:
+buf_roof
+ 
+Daytype   Gain Label     Type    Unit Period Sensible  Latent     Radiant    Convec
+          No.                          Hours Magn.(W)  Magn.(W)   Fraction   Fraction
+ 
+ ____________________________________________________________
+ 
+ Zone roof (10) is composed of 10 surfaces and 17 vertices.
+ It encloses a volume of 81.6m^3 of space, with a total surface
+ area of 152.m^2 & approx floor area of 58.3m^2
+ roof describes a...
+ There is 81.028m2 of exposed surface area, 13.160m2 of which is vertical.
+ Facade opaque is 13.160m2 &  22.6 % of floor area & average U of 3.785 & UA of 49.810.
+ Sloped roof is 116.43 % of floor area & average U of 1.860 & UA of 126.24
+ Opaque partitions:ceiling:floor 71.452m2.
+ 
+ A summary of the surfaces in roof(10) follows:
+ 
+ Sur| Area  |Azim|Elev| surface    |    geometry                  | construction    |environment
+    | m^2   |deg |deg | name       |optical|locat| use            | name            |other side
+  1  13.2    300.  -0. roof_n       OPAQUE   VERT GRILL    CRACK    ext_west        ||< external
+  2  26.0      0. -90. liv          OPAQUE   FLOR -        -        int_roofrev     ||< ceil:kitliv
+  3  6.80      0. -90. hall         OPAQUE   FLOR -        -        int_roofrev     ||< ceil:hall
+  4  3.74      0. -90. bath         OPAQUE   FLOR -        -        int_roofrev     ||< ceil:bath
+  5  9.62      0. -90. bed1         OPAQUE   FLOR -        -        int_roofrev     ||< ceil:bed1
+  6  9.61      0. -90. bed2         OPAQUE   FLOR -        -        int_roofrev     ||< ceil:bed2
+  7  2.48      0. -90. west_sp      OPAQUE   FLOR GRILL    CRACK    int_roofrev     ||< ceil:west_space
+  8  13.2    120.  -0. roof_buf     OPAQUE   VERT GRILL    CRACK    int_buf         ||< roof_buf:buf_roof
+  9  35.0    210.  60. roof_w       OPAQUE   SLOP -        -        ni_roof         ||< external
+ 10  32.9     30.  58. roof_e       OPAQUE   SLOP -        -        ni_roof         ||< external
+ 
+ 
+ Solar insolation focused on bed2         & roof_n       (if shading not calculated).
+ No shading analysis requested.
+ No insolation analysis requested.
+ 
+ Uses same operations as zone buf_roof
+ 
+ ____________________________________________________________
+ 
+ Project floor area is 171.09m2, wall area is 81.923m2, window area is 13.739m2.
+ Sloped roof area is 96.369m2, flat roof area is 0.68086m2, skylight area is 3.2391m2.
+ In contact with ground 85.530m2.
+ There is 195.95m2 of outside surface area, 94.981m2 of which is vertical.
+ 
+ Outside walls are 47.883 % of floor area & average U of 3.082 & UA of 252.47 & max MLC thickness 0.642
+ Sloped roof is 56.326 % of floor area & average U of 1.540 & UA of 148.38
+ Flat roof is 0.39795 % of floor area & average U of 4.270 & UA of 2.9070
+ Glazing is 8.0304 % of floor & 14.465 % facade with average U of 2.877 & UA of 39.524
+ Skylights are 1.8932 % of floor area & average U of 3.148 & UA of 10.198
+ Ground contact is 49.991 % of floor area & average U of 0.646 & perimeter 27.601 & max MLC thickness 0.385
+ CIBSE ground beta! 6.198 dt 3.023 Ufleft 0.133 Ufright 2.007 Uf 0.268 R extra @ virtual layer 2.189
+ 
+ ____________________________________________________________
+ Multi-layer constructions used:
+ 
+ Details of opaque construction: ext_west and overall thickness  0.118
+ In category general constructions also shown in menus as: render over concrete
+ext_west is outer layer of facade
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    18.0     0.790  1329.  1000. 0.91 0.50    19.  0.02  23.9 rendering not-dry : Rendering (8% mc) (inorganic-porous)
+ Int   100.0     1.400  2100.   653. 0.90 0.65    19.  0.07 210.0 heavy mix concrete : Heavy mix concrete
+ ISO 6946 U values (horiz/upward/downward heat flow)=  3.785  4.270  3.287 (partition)  2.823
+ Weight per m^2 of this construction 233.92
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  3.65
+ External surface admittance Y=  4.77  w=  1.22 decrement factor f=  0.49  phi=  1.44 surface factor f=  0.49  phi=  1.44
+ Partition admittance Y=  4.07  w=  3.90 surface factor f=  0.85  phi=  1.95
+ Total area of ext_west is     55.60
+ 
+ Details of opaque construction: ext_east and overall thickness  0.642
+ In category general constructions also shown in menus as: render over insul conc
+ext_east is retrofitted wall with inside insulation.
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    18.0     0.790  1329.  1000. 0.91 0.50    19.  0.02  23.9 rendering not-dry : Rendering (8% mc) (inorganic-porous)
+    2  100.0     1.400  2100.   653. 0.90 0.65    19.  0.07 210.0 heavy mix concrete : Heavy mix concrete
+    3  350.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.4 air  0.17 0.17 0.17
+    4   50.0     0.030    30.   837. 0.90 0.50    90.  1.67   1.5 Polyurethane foam bd : Polyurethane foam board (non-hygroscopic)
+    5   12.0     0.150   560.  2500. 0.90 0.65   576.  0.08   6.7 plywood 560d : Plywood (generic 560 density)
+    6  100.0     0.040   105.  1800. 0.90 0.60     1.  2.50  10.5 mineral fibre : Mineral fibre (non-hygroscopic)
+ Int    12.0     0.190   950.   840. 0.91 0.50    11.  0.06  11.4 gypsum plasterboard : Gypsum plasterboard (generic) (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.211  0.212  0.209 (partition)  0.207
+ Weight per m^2 of this construction 264.47
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.21
+ External surface admittance Y=  1.17  w=  3.76 decrement factor f=  0.93  phi=  0.48 surface factor f=  0.93  phi=  0.48
+ Partition admittance Y=  1.22  w=  3.66 surface factor f=  0.92  phi=  0.50
+ Total area of ext_east is     12.33
+ 
+ Details of opaque construction: int_west linked to int_westrev & with overall thickness  0.174
+ In category general constructions also shown in menus as: internal layers of facade
+int_west is associated with ext_west as the inside portion of the facade.
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    50.0     0.030    30.   837. 0.90 0.50    90.  1.67   1.5 Polyurethane foam bd : Polyurethane foam board (non-hygroscopic)
+    2   12.0     0.150   560.  2500. 0.90 0.65   576.  0.08   6.7 plywood 560d : Plywood (generic 560 density)
+    3  100.0     0.040   105.  1800. 0.90 0.60     1.  2.50  10.5 mineral fibre : Mineral fibre (non-hygroscopic)
+ Int    12.0     0.190   950.   840. 0.91 0.50    11.  0.06  11.4 gypsum plasterboard : Gypsum plasterboard (generic) (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.223  0.225  0.221 (partition)  0.219
+ Weight per m^2 of this construction  30.12
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.22
+ External surface admittance Y=  1.17  w=  3.77 decrement factor f=  0.93  phi=  0.48 surface factor f=  0.93  phi=  0.48
+ Partition admittance Y=  1.26  w=  3.87 surface factor f=  0.93  phi=  0.53
+ Total area of int_west is     12.33
+ 
+ Details of opaque construction: int_westrev linked to int_west & with overall thickness  0.174
+ In category general constructions also shown in menus as: reversed int_west
+int_westrev is inverted version of int_west used from within the void
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    12.0     0.190   950.   840. 0.91 0.50    11.  0.06  11.4 gypsum plasterboard : Gypsum plasterboard (generic) (inorganic-porous)
+    2  100.0     0.040   105.  1800. 0.90 0.60     1.  2.50  10.5 mineral fibre : Mineral fibre (non-hygroscopic)
+    3   12.0     0.150   560.  2500. 0.90 0.65   576.  0.08   6.7 plywood 560d : Plywood (generic 560 density)
+ Int    50.0     0.030    30.   837. 0.90 0.50    90.  1.67   1.5 Polyurethane foam bd : Polyurethane foam board (non-hygroscopic)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.223  0.225  0.221 (partition)  0.219
+ Weight per m^2 of this construction  30.12
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.22
+ External surface admittance Y=  0.50  w=  1.25 decrement factor f=  0.94  phi=  0.08 surface factor f=  0.94  phi=  0.08
+ Partition admittance Y=  0.56  w=  1.84 surface factor f=  0.94  phi=  0.13
+ Total area of int_westrev is     12.33
+ 
+ Details of opaque construction: ext_buf and overall thickness  0.158
+ In category general constructions also shown in menus as: render over 140mm concrete
+ext_buf is a thicker concrete wall section.
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    18.0     0.790  1329.  1000. 0.91 0.50    19.  0.02  23.9 rendering not-dry : Rendering (8% mc) (inorganic-porous)
+ Int   140.0     1.400  2100.   653. 0.90 0.65    19.  0.10 294.0 heavy mix concrete : Heavy mix concrete
+ ISO 6946 U values (horiz/upward/downward heat flow)=  3.415  3.805  3.005 (partition)  2.612
+ Weight per m^2 of this construction 317.92
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  3.30
+ External surface admittance Y=  5.00  w=  1.34 decrement factor f=  0.48  phi=  1.69 surface factor f=  0.48  phi=  1.69
+ Partition admittance Y=  4.94  w=  3.27 surface factor f=  0.76  phi=  2.42
+ Total area of ext_buf is     35.72
+ 
+ Details of opaque construction: int_buf and overall thickness  0.124
+ In category general constructions also shown in menus as: insulated partition
+int_buf      is a ...
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    12.0     0.190   950.   840. 0.91 0.50    11.  0.06  11.4 gypsum plasterboard : Gypsum plasterboard (generic) (inorganic-porous)
+    2  100.0     0.040   105.  1800. 0.90 0.60     1.  2.50  10.5 mineral fibre : Mineral fibre (non-hygroscopic)
+ Int    12.0     0.190   950.   840. 0.91 0.50    11.  0.06  11.4 gypsum plasterboard : Gypsum plasterboard (generic) (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.358  0.361  0.353 (partition)  0.346
+ Weight per m^2 of this construction  33.30
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.36
+ External surface admittance Y=  1.13  w=  3.85 decrement factor f=  0.93  phi=  0.47 surface factor f=  0.93  phi=  0.47
+ Partition admittance Y=  1.25  w=  4.80 surface factor f=  0.96  phi=  0.57
+ Total area of int_buf is    132.28
+ 
+ Details of opaque construction: int_roof linked to int_roofrev & with overall thickness  0.230
+ In category general constructions also shown in menus as: ceiling adjacent to attic
+int_roof is used as a ceiling room->attic
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    18.0     0.150   560.  2500. 0.90 0.65   576.  0.12  10.1 plywood 560d : Plywood (generic 560 density)
+    2  200.0     0.040   105.  1800. 0.90 0.60     1.  5.00  21.0 mineral fibre : Mineral fibre (non-hygroscopic)
+ Int    12.0     0.190   950.   840. 0.91 0.50    11.  0.06  11.4 gypsum plasterboard : Gypsum plasterboard (generic) (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.187  0.188  0.185 (partition)  0.184
+ Weight per m^2 of this construction  42.48
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.19
+ External surface admittance Y=  1.20  w=  3.81 decrement factor f=  0.93  phi=  0.50 surface factor f=  0.93  phi=  0.50
+ Partition admittance Y=  1.29  w=  3.77 surface factor f=  0.92  phi=  0.53
+ Total area of int_roof is     58.27
+ 
+ Details of opaque construction: int_roofrev linked to int_roof & with overall thickness  0.230
+ In category general constructions also shown in menus as: base of attic
+int_roofrev is inverse of int_roof
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext    12.0     0.190   950.   840. 0.91 0.50    11.  0.06  11.4 gypsum plasterboard : Gypsum plasterboard (generic) (inorganic-porous)
+    2  200.0     0.040   105.  1800. 0.90 0.60     1.  5.00  21.0 mineral fibre : Mineral fibre (non-hygroscopic)
+ Int    18.0     0.150   560.  2500. 0.90 0.65   576.  0.12  10.1 plywood 560d : Plywood (generic 560 density)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.187  0.188  0.185 (partition)  0.184
+ Weight per m^2 of this construction  42.48
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.19
+ External surface admittance Y=  2.04  w=  3.86 decrement factor f=  0.89  phi=  0.89 surface factor f=  0.89  phi=  0.89
+ Partition admittance Y=  2.12  w=  3.82 surface factor f=  0.89  phi=  0.93
+ Total area of int_roofrev is     58.29
+ 
+ Details of opaque construction: roof and overall thickness  0.345
+ In category general constructions also shown in menus as: slightly insulated roof
+roof         is a ...
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   200.0     1.100  2100.   837. 0.90 0.65    20.  0.18 420.0 concrete tile : Concrete tile (inorganic-porous)
+    2    3.0     0.190   960.   950. 0.90 0.90    15.  0.02   2.9 felt sheathing : Felt sheathing
+    3  100.0     0.000     0.     0. 0.99 0.99     1.  0.12   0.1 air  0.12 0.12 0.12
+    4   30.0     0.040   105.  1800. 0.90 0.60     1.  0.75   3.1 mineral fibre : Mineral fibre (non-hygroscopic)
+ Int    12.0     0.150   560.  2500. 0.90 0.65   576.  0.08   6.7 plywood 560d : Plywood (generic 560 density)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.759  0.777  0.737 (partition)  0.710
+ Weight per m^2 of this construction 432.87
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.75
+ External surface admittance Y=  1.49  w=  2.92 decrement factor f=  0.88  phi=  0.54 surface factor f=  0.88  phi=  0.54
+ Partition admittance Y=  1.71  w=  3.07 surface factor f=  0.87  phi=  0.65
+ Total area of roof is     28.50
+ 
+ Details of opaque construction: house_floor and overall thickness  0.385
+ In category general constructions also shown in menus as: house_floor
+house_floor  is a ...
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   200.0     0.360  1840.   840. 0.90 0.60     2.  0.56 368.0 gravel : Gravel (non-hygroscopic)
+    2   25.0     0.380  1200.   653. 0.90 0.65     6.  0.07  30.0 light mix concrete : Light mix concrete (inorganic-porous)
+    3   50.0     0.030    30.   837. 0.90 0.50    90.  1.67   1.5 Polyurethane foam bd : Polyurethane foam board (non-hygroscopic)
+    4  100.0     1.280  2100.  1007. 0.90 0.65    44.  0.08 210.0 cast conc screed : Cast concrete screed (inorganic-porous)
+ Int    10.0     0.040   105.  1800. 0.90 0.60    15.  0.25   1.0 cork insulation : Cork insulation (organic-hygroscopic)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  0.359  0.363  0.354 (partition)  0.348
+ Weight per m^2 of this construction 610.55
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  0.36
+ External surface admittance Y=  2.49  w=  0.68 decrement factor f=  0.71  phi=  0.29 surface factor f=  0.71  phi=  0.29
+ Partition admittance Y=  2.49  w=  0.66 surface factor f=  0.71  phi=  0.28
+ Total area of house_floor is     58.27
+ 
+ Details of opaque construction: buf_floor and overall thickness  0.250
+ In category general constructions also shown in menus as: floor in buffer space
+buf_floor is a rough screeded slab on grade
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   200.0     0.360  1840.   840. 0.90 0.60     2.  0.56 368.0 gravel : Gravel (non-hygroscopic)
+    2   25.0     0.520  2050.   184. 0.90 0.85     2.  0.05  51.2 gravel based : Gravel based (non-hygroscopic)
+ Int    25.0     1.280  2100.  1007. 0.90 0.65    44.  0.02  52.5 cast conc screed : Cast concrete screed (inorganic-porous)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  1.261  1.310  1.200 (partition)  1.132
+ Weight per m^2 of this construction 471.75
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.25
+ External surface admittance Y=  4.58  w=  1.90 decrement factor f=  0.58  phi=  1.80 surface factor f=  0.58  phi=  1.80
+ Partition admittance Y=  4.93  w=  1.89 surface factor f=  0.56  phi=  2.03
+ Total area of buf_floor is     27.26
+ 
+ Details of transparent construction: fictitious with SC_fictit optics and overall thickness  0.004
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1    4.0    20.000    10.    10. 0.99 0.01 19200.  0.00   0.0 fict : fictitious material (almost not there) with matching single layer optics
+ ISO 6946 U values (horiz/upward/downward heat flow)=  5.875  7.133  4.757 (partition)  3.843
+ Weight per m^2 of this construction   0.04
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  5.55
+ External surface admittance Y=  5.55  w=  0.00 decrement factor f=  0.33  phi=  0.00 surface factor f=  0.33  phi=  0.00
+ Partition admittance Y=  0.00  w=  6.00 surface factor f=  1.00  phi=  0.00
+ 
+ Fictitious 99/99,      4mm, no blind: with id of: SC_fictit
+ with 1 layers [including air gaps] and visible trn: 0.99
+ Direct transmission @ 0, 40, 55, 70, 80 deg
+   0.998 0.987 0.986 0.985 0.984
+ Layer| absorption @ 0, 40, 55, 70, 80 deg
+    1  0.001 0.001 0.001 0.001 0.001
+ Total area of fictitious is     68.44
+ 
+ Details of transparent construction: sing_glaz with SCF8783_06nb optics and overall thickness  0.006
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1    6.0     1.050  2500.   750. 0.83 0.05 19200.  0.01  15.0 clear float : clear float glass with optics from UK national method datase for 3 m
+ ISO 6946 U values (horiz/upward/downward heat flow)=  5.691  6.863  4.636 (partition)  3.763
+ Weight per m^2 of this construction  15.00
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  5.38
+ External surface admittance Y=  5.39  w=  0.07 decrement factor f=  0.35  phi=  0.12 surface factor f=  0.35  phi=  0.12
+ Partition admittance Y=  0.28  w=  5.87 surface factor f=  1.00  phi=  0.13
+ 
+ Clear float 87/83,     6mm, no blind: with id of: SCF8783_06nb
+ with 1 layers [including air gaps] and visible trn: 0.87
+ Direct transmission @ 0, 40, 55, 70, 80 deg
+   0.779 0.759 0.717 0.581 0.348
+ Layer| absorption @ 0, 40, 55, 70, 80 deg
+    1  0.149 0.163 0.173 0.179 0.169
+ Total area of sing_glaz is      4.80
+ 
+ Details of transparent construction: doub_glaz with DC_8074_04nb optics and overall thickness  0.020
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext     4.0     1.050  2500.   750. 0.83 0.05 19200.  0.00  10.0 clear float : clear float glass with optics from UK national method datase for 3 m
+    2   12.0     0.000     0.     0. 0.99 0.99     1.  0.17   0.0 air  0.17 0.17 0.17
+ Int     4.0     1.050  2500.   750. 0.83 0.05 19200.  0.00  10.0 clear float : clear float glass with optics from UK national method datase for 3 m
+ ISO 6946 U values (horiz/upward/downward heat flow)=  2.877  3.148  2.580 (partition)  2.285
+ Weight per m^2 of this construction  20.01
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  2.80
+ External surface admittance Y=  2.82  w=  0.34 decrement factor f=  0.66  phi=  0.17 surface factor f=  0.66  phi=  0.17
+ Partition admittance Y=  0.45  w=  5.80 surface factor f=  1.00  phi=  0.21
+ 
+ Clear glass 80/75,     4mm, no blind: with id of: DC_8074_04nb
+ with 3 layers [including air gaps] and visible trn: 0.80
+ Direct transmission @ 0, 40, 55, 70, 80 deg
+   0.676 0.651 0.604 0.441 0.201
+ Layer| absorption @ 0, 40, 55, 70, 80 deg
+    1  0.113 0.124 0.134 0.148 0.154
+    2  0.001 0.002 0.003 0.004 0.005
+    3  0.087 0.094 0.097 0.087 0.062
+ Total area of doub_glaz is     18.49
+ 
+ Details of opaque construction: door and overall thickness  0.025
+ In category general constructions also shown in menus as: solid wood door
+door is solid hardwood
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+    1   25.0     0.190   700.  2390. 0.90 0.65    12.  0.13  17.5 oak : Oak (radial cut)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  3.316  3.682  2.928 (partition)  2.554
+ Weight per m^2 of this construction  17.50
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  3.21
+ External surface admittance Y=  3.33  w=  0.61 decrement factor f=  0.61  phi=  0.40 surface factor f=  0.61  phi=  0.40
+ Partition admittance Y=  1.21  w=  5.38 surface factor f=  0.99  phi=  0.56
+ Total area of door is     16.92
+ 
+ Details of opaque construction: ni_roof and overall thickness  0.315
+ In category general constructions also shown in menus as: conc tile cold roof
+ni_roof      is a ...
+ 
+ Layer|Thick |Conduc-|Density|Specif|IR  |Solar|Diffu| R    | Kg |Description
+      |(mm)  |tivity |       |heat  |emis|abs  |resis|m^2K/W| m^2|
+ Ext   200.0     1.100  2100.   837. 0.90 0.65    20.  0.18 420.0 concrete tile : Concrete tile (inorganic-porous)
+    2    3.0     0.190   960.   950. 0.90 0.90    15.  0.02   2.9 felt sheathing : Felt sheathing
+    3  100.0     0.000     0.     0. 0.99 0.99     1.  0.12   0.1 air  0.12 0.12 0.12
+ Int    12.0     0.150   560.  2500. 0.90 0.65   576.  0.08   6.7 plywood 560d : Plywood (generic 560 density)
+ ISO 6946 U values (horiz/upward/downward heat flow)=  1.762  1.860  1.646 (partition)  1.521
+ Weight per m^2 of this construction 429.72
+ 
+Admittance calculations using Rsi   0.12 Rso   0.06 & Uvalue=  1.73
+ External surface admittance Y=  2.74  w=  1.17 decrement factor f=  0.69  phi=  0.55 surface factor f=  0.69  phi=  0.55
+ Partition admittance Y=  3.16  w=  1.86 surface factor f=  0.69  phi=  1.00
+ Total area of ni_roof is     67.87

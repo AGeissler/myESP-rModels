@@ -1,5 +1,5 @@
-*Geometry 1.1,GEN,bedroom1 # tag version, format, zone name
-*date Tue Oct  3 15:03:23 2017  # latest file modification 
+*Geometry 1.1,GEN,master_br # tag version, format, zone name
+*date Wed Jan 23 10:46:51 2019  # latest file modification 
 bedroom1 describes front bedroom
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,3.40000,1.30000,2.80000  #   1
@@ -54,54 +54,74 @@ bedroom1 describes front bedroom
 *vertex,6.20000,1.22000,3.58000  #  50
 *vertex,6.20000,1.22000,4.82000  #  51
 *vertex,6.20000,0.73000,4.82000  #  52
-*vertex,6.00000,0.75000,2.90000  #  53
-*vertex,4.80000,0.75000,2.90000  #  54
-*vertex,4.80000,0.75000,3.40000  #  55
-*vertex,6.00000,0.75000,3.40000  #  56
-*vertex,4.80000,0.73500,2.90000  #  57
-*vertex,4.80000,0.73500,3.40000  #  58
-*vertex,5.00000,0.73500,2.90000  #  59
-*vertex,5.00000,0.73500,3.40000  #  60
-*vertex,5.00000,0.71300,2.90000  #  61
-*vertex,5.00000,0.71300,3.40000  #  62
-*vertex,5.90000,0.71300,2.90000  #  63
-*vertex,5.90000,0.71300,3.40000  #  64
-*vertex,5.05000,0.72300,2.90000  #  65
-*vertex,5.05000,0.72300,3.40000  #  66
-*vertex,5.90000,0.72300,3.40000  #  67
-*vertex,5.05000,0.73500,2.90000  #  68
-*vertex,5.05000,0.73500,3.40000  #  69
-*vertex,6.00000,0.73500,2.90000  #  70
-*vertex,6.00000,0.73500,3.40000  #  71
-*vertex,5.90000,0.72300,2.90000  #  72
-*vertex,4.31000,1.79000,3.02000  #  73
-*vertex,4.31000,2.39000,3.02000  #  74
-*vertex,3.57000,2.39000,3.02000  #  75
-*vertex,3.57000,1.79000,3.02000  #  76
-*vertex,4.38000,1.72000,3.01500  #  77
-*vertex,3.66000,1.72000,3.01500  #  78
-*vertex,3.66000,1.72000,3.46500  #  79
-*vertex,4.38000,1.72000,3.46500  #  80
-*vertex,4.38000,2.39000,3.01500  #  81
-*vertex,3.66000,2.39000,3.01500  #  82
-*vertex,3.66000,2.39000,3.46500  #  83
-*vertex,4.38000,2.39000,3.46500  #  84
-*vertex,4.86000,2.76000,3.14000  #  85
-*vertex,6.16000,2.76000,3.14000  #  86
-*vertex,6.16000,4.56000,3.14000  #  87
-*vertex,4.86000,4.56000,3.14000  #  88
-*vertex,4.86000,2.76000,3.34000  #  89
-*vertex,6.16000,2.76000,3.34000  #  90
-*vertex,6.16000,4.56000,3.34000  #  91
-*vertex,4.86000,4.56000,3.34000  #  92
-*vertex,6.80500,4.69500,2.80500  #  93
-*vertex,7.05500,4.69500,2.80500  #  94
-*vertex,7.05500,4.69500,4.80500  #  95
-*vertex,6.80500,4.69500,4.80500  #  96
-*vertex,6.80500,4.32500,2.80500  #  97
-*vertex,7.05500,4.32500,2.80500  #  98
-*vertex,7.05500,4.32500,4.80500  #  99
-*vertex,6.80500,4.32500,4.80500  # 100
+*vertex,4.31000,1.79000,3.02000  #  53
+*vertex,4.31000,2.39000,3.02000  #  54
+*vertex,3.57000,2.39000,3.02000  #  55
+*vertex,3.57000,1.79000,3.02000  #  56
+*vertex,4.38000,1.72000,3.01500  #  57
+*vertex,3.66000,1.72000,3.01500  #  58
+*vertex,3.66000,1.72000,3.46500  #  59
+*vertex,4.38000,1.72000,3.46500  #  60
+*vertex,4.38000,2.39000,3.01500  #  61
+*vertex,3.66000,2.39000,3.01500  #  62
+*vertex,3.66000,2.39000,3.46500  #  63
+*vertex,4.38000,2.39000,3.46500  #  64
+*vertex,4.86000,2.76000,3.14000  #  65
+*vertex,6.16000,2.76000,3.14000  #  66
+*vertex,6.16000,4.56000,3.14000  #  67
+*vertex,4.86000,4.56000,3.14000  #  68
+*vertex,4.86000,2.76000,3.34000  #  69
+*vertex,6.16000,2.76000,3.34000  #  70
+*vertex,6.16000,4.56000,3.34000  #  71
+*vertex,4.86000,4.56000,3.34000  #  72
+*vertex,6.80500,4.69500,2.80500  #  73
+*vertex,7.05500,4.69500,2.80500  #  74
+*vertex,7.05500,4.69500,4.80500  #  75
+*vertex,6.80500,4.69500,4.80500  #  76
+*vertex,6.80500,4.32500,2.80500  #  77
+*vertex,7.05500,4.32500,2.80500  #  78
+*vertex,7.05500,4.32500,4.80500  #  79
+*vertex,6.80500,4.32500,4.80500  #  80
+*vertex,6.00000,0.75000,3.25000  #  81
+*vertex,4.80000,0.75000,3.25000  #  82
+*vertex,4.80000,0.75000,3.40000  #  83
+*vertex,6.00000,0.75000,3.40000  #  84
+*vertex,4.80000,0.73500,3.25000  #  85
+*vertex,4.80000,0.73500,3.40000  #  86
+*vertex,5.00000,0.73500,3.25000  #  87
+*vertex,5.00000,0.73500,3.40000  #  88
+*vertex,5.00000,0.71300,3.25000  #  89
+*vertex,5.00000,0.71300,3.40000  #  90
+*vertex,5.90000,0.71300,3.25000  #  91
+*vertex,5.90000,0.71300,3.40000  #  92
+*vertex,5.90000,0.72300,3.25000  #  93
+*vertex,5.90000,0.72300,3.40000  #  94
+*vertex,5.05000,0.72300,3.25000  #  95
+*vertex,5.05000,0.72300,3.40000  #  96
+*vertex,5.05000,0.73500,3.25000  #  97
+*vertex,5.05000,0.73500,3.40000  #  98
+*vertex,6.00000,0.73500,3.25000  #  99
+*vertex,6.00000,0.73500,3.40000  # 100
+*vertex,6.00000,0.75000,3.10000  # 101
+*vertex,4.80000,0.75000,3.10000  # 102
+*vertex,4.80000,0.73500,3.10000  # 103
+*vertex,5.00000,0.73500,3.10000  # 104
+*vertex,5.00000,0.71300,3.10000  # 105
+*vertex,5.90000,0.71300,3.10000  # 106
+*vertex,5.90000,0.72300,3.10000  # 107
+*vertex,5.05000,0.72300,3.10000  # 108
+*vertex,5.05000,0.73500,3.10000  # 109
+*vertex,6.00000,0.73500,3.10000  # 110
+*vertex,6.00000,0.75000,2.90000  # 111
+*vertex,4.80000,0.75000,2.90000  # 112
+*vertex,4.80000,0.73500,2.90000  # 113
+*vertex,5.00000,0.73500,2.90000  # 114
+*vertex,5.00000,0.71300,2.90000  # 115
+*vertex,5.90000,0.71300,2.90000  # 116
+*vertex,5.90000,0.72300,2.90000  # 117
+*vertex,5.05000,0.72300,2.90000  # 118
+*vertex,5.05000,0.73500,2.90000  # 119
+*vertex,6.00000,0.73500,2.90000  # 120
 # 
 # tag, number of vertices followed by list of associated vert
 *edges,6,1,2,37,33,17,16  #   1
@@ -129,89 +149,129 @@ bedroom1 describes front bedroom
 *edges,4,41,42,43,44  #  23
 *edges,4,45,46,47,48  #  24
 *edges,4,49,50,51,52  #  25
-*edges,4,54,53,56,55  #  26
-*edges,4,57,54,55,58  #  27
-*edges,4,59,57,58,60  #  28
-*edges,4,61,59,60,62  #  29
-*edges,4,63,61,62,64  #  30
-*edges,4,63,64,67,72  #  31
-*edges,4,65,72,67,66  #  32
-*edges,4,68,65,66,69  #  33
-*edges,4,70,68,69,71  #  34
-*edges,4,53,70,71,56  #  35
-*edges,10,55,56,71,69,66,67,64,62,60,58  #  36
-*edges,10,70,53,54,57,59,61,63,72,65,68  #  37
-*edges,4,73,74,75,76  #  38
-*edges,4,74,73,76,75  #  39
-*edges,4,77,78,79,80  #  40
-*edges,4,78,77,80,79  #  41
-*edges,4,81,82,83,84  #  42
-*edges,4,82,81,84,83  #  43
-*edges,4,85,86,87,88  #  44
-*edges,4,86,85,88,87  #  45
-*edges,4,89,90,91,92  #  46
-*edges,4,90,89,92,91  #  47
-*edges,4,93,94,95,96  #  48
-*edges,4,94,93,96,95  #  49
-*edges,4,97,98,99,100  #  50
-*edges,4,98,97,100,99  #  51
+*edges,4,53,54,55,56  #  26
+*edges,4,54,53,56,55  #  27
+*edges,4,57,58,59,60  #  28
+*edges,4,58,57,60,59  #  29
+*edges,4,61,62,63,64  #  30
+*edges,4,62,61,64,63  #  31
+*edges,4,65,66,67,68  #  32
+*edges,4,66,65,68,67  #  33
+*edges,4,69,70,71,72  #  34
+*edges,4,70,69,72,71  #  35
+*edges,4,73,74,75,76  #  36
+*edges,4,74,73,76,75  #  37
+*edges,4,77,78,79,80  #  38
+*edges,4,78,77,80,79  #  39
+*edges,4,82,81,84,83  #  40
+*edges,4,85,82,83,86  #  41
+*edges,4,87,85,86,88  #  42
+*edges,4,89,87,88,90  #  43
+*edges,4,91,89,90,92  #  44
+*edges,4,93,91,92,94  #  45
+*edges,4,95,93,94,96  #  46
+*edges,4,97,95,96,98  #  47
+*edges,4,99,97,98,100  #  48
+*edges,4,81,99,100,84  #  49
+*edges,10,83,84,100,98,96,94,92,90,88,86  #  50
+*edges,4,102,101,81,82  #  51
+*edges,4,103,102,82,85  #  52
+*edges,4,104,103,85,87  #  53
+*edges,4,105,104,87,89  #  54
+*edges,4,106,105,89,91  #  55
+*edges,4,107,106,91,93  #  56
+*edges,4,108,107,93,95  #  57
+*edges,4,109,108,95,97  #  58
+*edges,4,110,109,97,99  #  59
+*edges,4,101,110,99,81  #  60
+*edges,4,112,111,101,102  #  61
+*edges,4,113,112,102,103  #  62
+*edges,4,114,113,103,104  #  63
+*edges,4,115,114,104,105  #  64
+*edges,4,116,115,105,106  #  65
+*edges,4,117,116,106,107  #  66
+*edges,4,118,117,107,108  #  67
+*edges,4,119,118,108,109  #  68
+*edges,4,120,119,109,110  #  69
+*edges,4,111,120,110,101  #  70
+*edges,10,120,111,112,113,114,115,116,117,118,119  #  71
 # 
 # surf attributes:
 #  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,facade_a,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   1 ||< external
-*surf,sill_a,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   2 ||< external
-*surf,sill_b,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   3 ||< external
-*surf,sill_c,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   4 ||< external
-*surf,facade_d,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   5 ||< external
-*surf,right_a,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   6 ||< external
-*surf,right_b,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   7 ||< external
-*surf,right_c,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   8 ||< external
-*surf,right_d,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   9 ||< external
-*surf,right_e,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #  10 ||< external
-*surf,ptn_br2,VERT,-,-,-,int_part,OPAQUE,ANOTHER,08,01  #  11 ||< ptn_br1:bedroom2
-*surf,ptn_hall,VERT,-,-,-,int_part,OPAQUE,ANOTHER,05,01  #  12 ||< ptn_br1:upper_hall
-*surf,door_hall,VERT,ptn_hall,-,-,door,OPAQUE,ANOTHER,05,02  #  13 ||< door_br1:upper_hall
-*surf,ptn_br3,VERT,-,-,-,int_part,OPAQUE,ANOTHER,07,05  #  14 ||< br3_br1:bedroom3
-*surf,ceil_br1,CEIL,-,-,-,ceiling,OPAQUE,ANOTHER,10,08  #  15 ||< ceil_br1:attic
-*surf,floor_br1,FLOR,-,-,-,tg_flr2ceil,OPAQUE,ANOTHER,02,14  #  16 ||< ceil_liv:living
-*surf,head_a,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #  17 ||< external
-*surf,head_b,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #  18 ||< external
-*surf,head_c,VERT,-,-,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #  19 ||< external
-*surf,frame_a,VERT,-,-,-,sash_fr74mm,OPAQUE,EXTERIOR,00,000  #  20 ||< external
+*surf,facade_a,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   1 ||< external
+*surf,sill_a,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   2 ||< external
+*surf,sill_b,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   3 ||< external
+*surf,sill_c,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   4 ||< external
+*surf,facade_d,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   5 ||< external
+*surf,right_a,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   6 ||< external
+*surf,right_b,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   7 ||< external
+*surf,right_c,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   8 ||< external
+*surf,right_d,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #   9 ||< external
+*surf,right_e,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #  10 ||< external
+*surf,ptn_br2,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,08,001  #  11 ||< ptn_br1:bedroom2
+*surf,ptn_hall,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,05,001  #  12 ||< ptn_br1:upper_hall
+*surf,door_hall,VERT,ptn_hall,DOOR,UNDERCUT,door,OPAQUE,ANOTHER,05,002  #  13 ||< door_br1:upper_hall
+*surf,ptn_br3,VERT,-,PARTN,-,int_part,OPAQUE,ANOTHER,07,005  #  14 ||< br3_br1:bedroom3
+*surf,ceil_br1,CEIL,-,PARTN,-,ceiling,OPAQUE,ANOTHER,10,008  #  15 ||< ceil_br1:attic
+*surf,floor_br1,FLOR,-,PARTN,-,tg_flr2ceil,OPAQUE,ANOTHER,02,14  #  16 ||< ceil_liv:living
+*surf,head_a,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #  17 ||< external
+*surf,head_b,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #  18 ||< external
+*surf,head_c,VERT,-,WALL,-,cavity_brick,OPAQUE,EXTERIOR,00,000  #  19 ||< external
+*surf,frame_a,VERT,glaz_a,F-FRAME,VENT,sash_fr74mm,OPAQUE,EXTERIOR,00,000  #  20 ||< external
 *surf,frame_b,VERT,-,-,-,sash_fr74mm,OPAQUE,EXTERIOR,00,000  #  21 ||< external
-*surf,frame_c,VERT,-,-,-,sash_fr74mm,OPAQUE,EXTERIOR,00,000  #  22 ||< external
+*surf,frame_c,VERT,glaz_c,F-FRAME,VENT,sash_fr74mm,OPAQUE,EXTERIOR,00,000  #  22 ||< external
 *surf,glaz_a,VERT,frame_a,C-WINDOW,CLOSED,dbl_glz,DCF7671_06nb,EXTERIOR,00,000  #  23 ||< external
 *surf,glaz_b,VERT,frame_b,C-WINDOW,CLOSED,dbl_glz,DCF7671_06nb,EXTERIOR,00,000  #  24 ||< external
 *surf,glaz_c,VERT,frame_c,C-WINDOW,CLOSED,dbl_glz,DCF7671_06nb,EXTERIOR,00,000  #  25 ||< external
-*surf,face,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,01  #  26 ||< face:rad-mbr
-*surf,right,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,02  #  27 ||< right:rad-mbr
-*surf,back_a,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,03  #  28 ||< back_a:rad-mbr
-*surf,back_b,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,04  #  29 ||< back_b:rad-mbr
-*surf,fin_a,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,05  #  30 ||< fin_a:rad-mbr
-*surf,fin_b,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,06  #  31 ||< fin_b:rad-mbr
-*surf,fin_c,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,07  #  32 ||< fin_c:rad-mbr
-*surf,fin_d,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,08  #  33 ||< fin_d:rad-mbr
-*surf,back_c,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,09  #  34 ||< back_c:rad-mbr
-*surf,left,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,10  #  35 ||< left:rad-mbr
-*surf,rad_top,FLOR,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,11  #  36 ||< rad_top:rad-mbr
-*surf,rad_base,CEIL,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,12  #  37 ||< rad_base:rad-mbr
-*surf,aseat_mass,CEIL,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,39  #  38 ||< aseat_mass_:bedroom1
-*surf,aseat_mass_,FLOR,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,38  #  39 ||< aseat_mass:bedroom1
-*surf,aarm_mass_l,VERT,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,41  #  40 ||< aarm_mass_l_:bedroom1
-*surf,aarm_mass_l_,VERT,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,40  #  41 ||< aarm_mass_l:bedroom1
-*surf,aarm_mass_r,VERT,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,43  #  42 ||< aarm_mass_r_:bedroom1
-*surf,aarm_mass_r_,VERT,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,42  #  43 ||< aarm_mass_r:bedroom1
-*surf,bbase_mass,CEIL,-,PARTN,-,door,OPAQUE,ANOTHER,06,45  #  44 ||< bbase_mass_:bedroom1
-*surf,bbase_mass_,FLOR,-,PARTN,-,door,OPAQUE,ANOTHER,06,44  #  45 ||< bbase_mass:bedroom1
-*surf,bmatress,CEIL,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,47  #  46 ||< bmatress_:bedroom1
-*surf,bmatress_,FLOR,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,46  #  47 ||< bmatress:bedroom1
-*surf,cbil_lft,VERT,-,PARTN,-,furn_wd10mm,OPAQUE,ANOTHER,06,49  #  48 ||< cbil_lft_:bedroom1
-*surf,cbil_lft_,VERT,-,PARTN,-,furn_wd10mm,OPAQUE,ANOTHER,06,48  #  49 ||< cbil_lft:bedroom1
-*surf,cbil_rt,VERT,-,PARTN,-,furn_wd10mm,OPAQUE,ANOTHER,06,51  #  50 ||< cbil_rt_:bedroom1
-*surf,cbil_rt_,VERT,-,PARTN,-,furn_wd10mm,OPAQUE,ANOTHER,06,50  #  51 ||< cbil_rt:bedroom1
+*surf,aseat_mass,CEIL,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,027  #  26 ||< aseat_mass_:master_br
+*surf,aseat_mass_,FLOR,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,026  #  27 ||< aseat_mass:master_br
+*surf,aarm_mass_l,VERT,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,029  #  28 ||< aarm_mass_l_:master_br
+*surf,aarm_mass_l_,VERT,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,028  #  29 ||< aarm_mass_l:master_br
+*surf,aarm_mass_r,VERT,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,031  #  30 ||< aarm_mass_r_:master_br
+*surf,aarm_mass_r_,VERT,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,030  #  31 ||< aarm_mass_r:master_br
+*surf,bbase_mass,CEIL,-,PARTN,-,door,OPAQUE,ANOTHER,06,033  #  32 ||< bbase_mass_:master_br
+*surf,bbase_mass_,FLOR,-,PARTN,-,door,OPAQUE,ANOTHER,06,032  #  33 ||< bbase_mass:master_br
+*surf,bmatress,CEIL,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,035  #  34 ||< bmatress_:master_br
+*surf,bmatress_,FLOR,-,PARTN,-,upholstery,OPAQUE,ANOTHER,06,034  #  35 ||< bmatress:master_br
+*surf,cbil_lft,VERT,-,PARTN,-,furn_wd10mm,OPAQUE,ANOTHER,06,037  #  36 ||< cbil_lft_:master_br
+*surf,cbil_lft_,VERT,-,PARTN,-,furn_wd10mm,OPAQUE,ANOTHER,06,036  #  37 ||< cbil_lft:master_br
+*surf,cbil_rt,VERT,-,PARTN,-,furn_wd10mm,OPAQUE,ANOTHER,06,039  #  38 ||< cbil_rt_:master_br
+*surf,cbil_rt_,VERT,-,PARTN,-,furn_wd10mm,OPAQUE,ANOTHER,06,038  #  39 ||< cbil_rt:master_br
+*surf,face_h,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,001  #  40 ||< face_h:rad-mbr_h
+*surf,right_h,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,002  #  41 ||< right_h:rad-mbr_h
+*surf,back_ah,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,003  #  42 ||< back_ah:rad-mbr_h
+*surf,back_bh,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,004  #  43 ||< back_bh:rad-mbr_h
+*surf,fin_ah,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,005  #  44 ||< fin_ah:rad-mbr_h
+*surf,fin_bh,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,006  #  45 ||< fin_bh:rad-mbr_h
+*surf,fin_ch,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,007  #  46 ||< fin_ch:rad-mbr_h
+*surf,fin_dh,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,008  #  47 ||< fin_dh:rad-mbr_h
+*surf,back_ch,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,009  #  48 ||< back_ch:rad-mbr_h
+*surf,left_h,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,010  #  49 ||< left_h:rad-mbr_h
+*surf,rad_top_h,FLOR,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,21,011  #  50 ||< rad_top_h:rad-mbr_h
+*surf,face_m,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,40,001  #  51 ||< face_m:rad-mbr_m
+*surf,right_m,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,40,002  #  52 ||< right_m:rad-mbr_m
+*surf,back_am,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,40,003  #  53 ||< back_am:rad-mbr_m
+*surf,back_bm,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,40,004  #  54 ||< back_bm:rad-mbr_m
+*surf,fin_am,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,40,005  #  55 ||< fin_am:rad-mbr_m
+*surf,fin_bm,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,40,006  #  56 ||< fin_bm:rad-mbr_m
+*surf,fin_cm,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,40,007  #  57 ||< fin_cm:rad-mbr_m
+*surf,fin_dm,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,40,008  #  58 ||< fin_dm:rad-mbr_m
+*surf,back_cm,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,40,009  #  59 ||< back_cm:rad-mbr_m
+*surf,left_m,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,40,010  #  60 ||< left_m:rad-mbr_m
+*surf,face_l,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,41,001  #  61 ||< face_l:rad-mbr_l
+*surf,right_l,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,41,002  #  62 ||< right_l:rad-mbr_l
+*surf,back_al,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,41,003  #  63 ||< back_al:rad-mbr_l
+*surf,back_bl,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,41,004  #  64 ||< back_bl:rad-mbr_l
+*surf,fin_al,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,41,005  #  65 ||< fin_al:rad-mbr_l
+*surf,fin_bl,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,41,006  #  66 ||< fin_bl:rad-mbr_l
+*surf,fin_cl,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,41,007  #  67 ||< fin_cl:rad-mbr_l
+*surf,fin_dl,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,41,008  #  68 ||< fin_dl:rad-mbr_l
+*surf,back_cl,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,41,009  #  69 ||< back_cl:rad-mbr_l
+*surf,left_l,VERT,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,41,010  #  70 ||< left_l:rad-mbr_l
+*surf,rad_base_l,CEIL,-,-,-,steel_pl_3mm,OPAQUE,ANOTHER,41,012  #  71 ||< rad_base_l:rad-mbr_l
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 
@@ -222,6 +282,12 @@ bedroom1 describes front bedroom
  23 24 25
 # 
 *base_list,2,17,16,    19.58 0  # zone base list
+# 
+*block_start, 20  20  # geometric blocks
+# mrt blocks:
+*mrt,5.3000,2.7250,4.0500,0.2000,0.2000,0.2000,0.00,ocu1  # mrt   1
+*mrt,4.0000,2.1250,3.5500,0.2000,0.2000,0.2000,0.00,ocup2  # mrt   2
+*end_block
 # 
 # visual entities:
 #  *vis = visual blocks

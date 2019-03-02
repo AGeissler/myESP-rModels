@@ -42,11 +42,286 @@ ground_mat ring groundplane
 0
 0
 8
-4.3 4.9 -0.01
+4.2 4.9 -0.01
 0 0 1
 0 30
+# diffuse light sources follow...
+# derived from lampcolor WHITE
+# diffuse 800 lum 50mm diam bulb
+
+void light 800lum-bulb
+0
+0
+3 181.132831 181.132842 181.132842
+# diffuse 1000 lum 50mm diam bulb
+
+void light 1klum-bulb
+0
+0
+3 226.416039 226.416053 226.416053
+# diffuse 1200 lum 50mm halogin bulb
+
+void light 1.2klum-bulb
+0
+0
+3 271.699247 271.699263 271.699263
+# diffuse 2000 lum 50mm bulb
+
+void light 2klum-bulb
+0
+0
+3 452.832079 452.832106 452.832106
+# diffuse 1000 lum 100mmx100mm surf
+
+void light 1klum100mmsq
+0
+0
+3 177.826741 177.826752 177.826752
+# diffuse 1000 lumin 200mmx200mm surf
+
+void light 1klum200mmsq
+0
+0
+3 44.456685 44.456688 44.456688
+# diffuse 2000 lumin 200mmx200mm surf
+
+void light 2klum200mmsq
+0
+0
+3 88.913371 88.913376 88.913376
+# diffuse 3240 lumin 1.2m x 0.3m surface
+
+void light 3.2klumpanel
+0
+0
+3 16.004407 16.004408 16.004408
 # other definitions of outside follow...
 # hall Surface defs..
+# visual object defs...
+# xform -rz 0.000 -t 2.700 3.045 2.390
+# genbox rc_ex_steel_pl_3mm aface_bb 0.150 0.005 0.010
+
+rc_ex_steel_pl_3mm polygon aface_bb.1540
+0
+0
+12
+2.85 3.045 2.39
+2.85 3.045 2.4
+2.7 3.045 2.4
+2.7 3.045 2.39
+
+rc_ex_steel_pl_3mm polygon aface_bb.4620
+0
+0
+12
+2.7 3.045 2.4
+2.7 3.05 2.4
+2.7 3.05 2.39
+2.7 3.045 2.39
+
+rc_ex_steel_pl_3mm polygon aface_bb.2310
+0
+0
+12
+2.7 3.05 2.39
+2.85 3.05 2.39
+2.85 3.045 2.39
+2.7 3.045 2.39
+
+rc_ex_steel_pl_3mm polygon aface_bb.3267
+0
+0
+12
+2.85 3.05 2.39
+2.7 3.05 2.39
+2.7 3.05 2.4
+2.85 3.05 2.4
+
+rc_ex_steel_pl_3mm polygon aface_bb.5137
+0
+0
+12
+2.85 3.045 2.4
+2.85 3.045 2.39
+2.85 3.05 2.39
+2.85 3.05 2.4
+
+rc_ex_steel_pl_3mm polygon aface_bb.6457
+0
+0
+12
+2.7 3.05 2.4
+2.7 3.045 2.4
+2.85 3.045 2.4
+2.85 3.05 2.4
+# xform -rz 0.000 -t 2.700 2.900 2.390
+# genbox rc_ex_steel_pl_3mm aend_bb 0.005 0.145 0.010
+
+rc_ex_steel_pl_3mm polygon aend_bb.1540
+0
+0
+12
+2.705 2.9 2.39
+2.705 2.9 2.4
+2.7 2.9 2.4
+2.7 2.9 2.39
+
+rc_ex_steel_pl_3mm polygon aend_bb.4620
+0
+0
+12
+2.7 2.9 2.4
+2.7 3.045 2.4
+2.7 3.045 2.39
+2.7 2.9 2.39
+
+rc_ex_steel_pl_3mm polygon aend_bb.2310
+0
+0
+12
+2.7 3.045 2.39
+2.705 3.045 2.39
+2.705 2.9 2.39
+2.7 2.9 2.39
+
+rc_ex_steel_pl_3mm polygon aend_bb.3267
+0
+0
+12
+2.705 3.045 2.39
+2.7 3.045 2.39
+2.7 3.045 2.4
+2.705 3.045 2.4
+
+rc_ex_steel_pl_3mm polygon aend_bb.5137
+0
+0
+12
+2.705 2.9 2.4
+2.705 2.9 2.39
+2.705 3.045 2.39
+2.705 3.045 2.4
+
+rc_ex_steel_pl_3mm polygon aend_bb.6457
+0
+0
+12
+2.7 3.045 2.4
+2.7 2.9 2.4
+2.705 2.9 2.4
+2.705 3.045 2.4
+# xform -rz 0.000 -t 2.845 2.900 2.390
+# genbox rc_ex_steel_pl_3mm aend_aa 0.005 0.145 0.010
+
+rc_ex_steel_pl_3mm polygon aend_aa.1540
+0
+0
+12
+2.85 2.9 2.39
+2.85 2.9 2.4
+2.845 2.9 2.4
+2.845 2.9 2.39
+
+rc_ex_steel_pl_3mm polygon aend_aa.4620
+0
+0
+12
+2.845 2.9 2.4
+2.845 3.045 2.4
+2.845 3.045 2.39
+2.845 2.9 2.39
+
+rc_ex_steel_pl_3mm polygon aend_aa.2310
+0
+0
+12
+2.845 3.045 2.39
+2.85 3.045 2.39
+2.85 2.9 2.39
+2.845 2.9 2.39
+
+rc_ex_steel_pl_3mm polygon aend_aa.3267
+0
+0
+12
+2.85 3.045 2.39
+2.845 3.045 2.39
+2.845 3.045 2.4
+2.85 3.045 2.4
+
+rc_ex_steel_pl_3mm polygon aend_aa.5137
+0
+0
+12
+2.85 2.9 2.4
+2.85 2.9 2.39
+2.85 3.045 2.39
+2.85 3.045 2.4
+
+rc_ex_steel_pl_3mm polygon aend_aa.6457
+0
+0
+12
+2.845 3.045 2.4
+2.845 2.9 2.4
+2.85 2.9 2.4
+2.85 3.045 2.4
+# xform -rz 0.000 -t 2.700 2.900 2.390
+# genbox rc_ex_steel_pl_3mm abase_bb 0.145 0.005 0.010
+
+rc_ex_steel_pl_3mm polygon abase_bb.1540
+0
+0
+12
+2.845 2.9 2.39
+2.845 2.9 2.4
+2.7 2.9 2.4
+2.7 2.9 2.39
+
+rc_ex_steel_pl_3mm polygon abase_bb.4620
+0
+0
+12
+2.7 2.9 2.4
+2.7 2.905 2.4
+2.7 2.905 2.39
+2.7 2.9 2.39
+
+rc_ex_steel_pl_3mm polygon abase_bb.2310
+0
+0
+12
+2.7 2.905 2.39
+2.845 2.905 2.39
+2.845 2.9 2.39
+2.7 2.9 2.39
+
+rc_ex_steel_pl_3mm polygon abase_bb.3267
+0
+0
+12
+2.845 2.905 2.39
+2.7 2.905 2.39
+2.7 2.905 2.4
+2.845 2.905 2.4
+
+rc_ex_steel_pl_3mm polygon abase_bb.5137
+0
+0
+12
+2.845 2.9 2.4
+2.845 2.9 2.39
+2.845 2.905 2.39
+2.845 2.905 2.4
+
+rc_ex_steel_pl_3mm polygon abase_bb.6457
+0
+0
+12
+2.7 2.905 2.4
+2.7 2.9 2.4
+2.845 2.9 2.4
+2.845 2.905 2.4
 # Outside zone Surface defs...
 
 rc_ex_cavity_brick polygon hall:fr_facade
@@ -91,7 +366,7 @@ rc_ex_cavity_brick polygon hall:left_facade
 # living Surface defs..
 # visual object defs...
 # xform -rz -90.000 -t 6.800 4.700 0.200
-# genrbox rc_ex_furn_wd10mm aleft_ver 0.010 0.280 2.020
+# genbox rc_ex_furn_wd10mm aleft_ver 0.010 0.280 2.020
 
 rc_ex_furn_wd10mm polygon aleft_ver.1540
 0
@@ -147,7 +422,7 @@ rc_ex_furn_wd10mm polygon aleft_ver.6457
 6.8 4.69 2.22
 7.08 4.69 2.22
 # xform -rz -90.000 -t 6.800 3.910 0.200
-# genrbox rc_ex_furn_wd10mm aright_ver 0.010 0.280 2.020
+# genbox rc_ex_furn_wd10mm aright_ver 0.010 0.280 2.020
 
 rc_ex_furn_wd10mm polygon aright_ver.1540
 0
@@ -203,7 +478,7 @@ rc_ex_furn_wd10mm polygon aright_ver.6457
 6.8 3.9 2.22
 7.08 3.9 2.22
 # xform -rz -90.000 -t 7.070 4.700 0.200
-# genrbox rc_ex_furn_wd10mm abil_bk 0.780 0.010 2.005
+# genbox rc_ex_furn_wd10mm abil_bk 0.780 0.010 2.005
 
 rc_ex_furn_wd10mm polygon abil_bk.1540
 0
@@ -259,7 +534,7 @@ rc_ex_furn_wd10mm polygon abil_bk.6457
 7.07 3.92 2.205
 7.08 3.92 2.205
 # xform -rz -90.000 -t 6.805 4.690 0.275
-# genrbox rc_ex_furn_wd10mm ashelf_a 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm ashelf_a 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon ashelf_a.1540
 0
@@ -315,7 +590,7 @@ rc_ex_furn_wd10mm polygon ashelf_a.6457
 6.805 3.91 0.285
 7.075 3.91 0.285
 # xform -rz -90.000 -t 6.805 4.690 0.715
-# genrbox rc_ex_furn_wd10mm ashelf_b 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm ashelf_b 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon ashelf_b.1540
 0
@@ -371,7 +646,7 @@ rc_ex_furn_wd10mm polygon ashelf_b.6457
 6.805 3.91 0.725
 7.075 3.91 0.725
 # xform -rz -90.000 -t 6.805 4.690 1.115
-# genrbox rc_ex_furn_wd10mm ashelf_c 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm ashelf_c 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon ashelf_c.1540
 0
@@ -427,7 +702,7 @@ rc_ex_furn_wd10mm polygon ashelf_c.6457
 6.805 3.91 1.125
 7.075 3.91 1.125
 # xform -rz -90.000 -t 6.805 4.690 1.605
-# genrbox rc_ex_furn_wd10mm ashelf_d 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm ashelf_d 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon ashelf_d.1540
 0
@@ -483,7 +758,7 @@ rc_ex_furn_wd10mm polygon ashelf_d.6457
 6.805 3.91 1.615
 7.075 3.91 1.615
 # xform -rz -90.000 -t 6.805 4.690 1.895
-# genrbox rc_ex_furn_wd10mm ashelf_e 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm ashelf_e 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon ashelf_e.1540
 0
@@ -539,7 +814,7 @@ rc_ex_furn_wd10mm polygon ashelf_e.6457
 6.805 3.91 1.905
 7.075 3.91 1.905
 # xform -rz -90.000 -t 6.805 4.690 2.205
-# genrbox rc_ex_furn_wd10mm abil_top 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm abil_top 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon abil_top.1540
 0
@@ -595,7 +870,7 @@ rc_ex_furn_wd10mm polygon abil_top.6457
 6.805 3.91 2.215
 7.075 3.91 2.215
 # xform -rz -90.000 -t 6.835 4.690 0.205
-# genrbox rc_ex_furn_wd10mm akick 0.780 0.010 0.060
+# genbox rc_ex_furn_wd10mm akick 0.780 0.010 0.060
 
 rc_ex_furn_wd10mm polygon akick.1540
 0
@@ -651,7 +926,7 @@ rc_ex_furn_wd10mm polygon akick.6457
 6.835 3.91 0.265
 6.845 3.91 0.265
 # xform -rz -90.000 -t 6.800 2.250 0.200
-# genrbox rc_ex_furn_wd10mm bleft_ver 0.010 0.280 2.020
+# genbox rc_ex_furn_wd10mm bleft_ver 0.010 0.280 2.020
 
 rc_ex_furn_wd10mm polygon bleft_ver.1540
 0
@@ -707,7 +982,7 @@ rc_ex_furn_wd10mm polygon bleft_ver.6457
 6.8 2.24 2.22
 7.08 2.24 2.22
 # xform -rz -90.000 -t 6.800 1.460 0.200
-# genrbox rc_ex_furn_wd10mm bright_ver 0.010 0.280 2.020
+# genbox rc_ex_furn_wd10mm bright_ver 0.010 0.280 2.020
 
 rc_ex_furn_wd10mm polygon bright_ver.1540
 0
@@ -763,7 +1038,7 @@ rc_ex_furn_wd10mm polygon bright_ver.6457
 6.8 1.45 2.22
 7.08 1.45 2.22
 # xform -rz -90.000 -t 7.070 2.250 0.200
-# genrbox rc_ex_furn_wd10mm bbil_bk 0.780 0.010 2.005
+# genbox rc_ex_furn_wd10mm bbil_bk 0.780 0.010 2.005
 
 rc_ex_furn_wd10mm polygon bbil_bk.1540
 0
@@ -819,7 +1094,7 @@ rc_ex_furn_wd10mm polygon bbil_bk.6457
 7.07 1.47 2.205
 7.08 1.47 2.205
 # xform -rz -90.000 -t 6.805 2.240 0.275
-# genrbox rc_ex_furn_wd10mm bshelf_a 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm bshelf_a 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon bshelf_a.1540
 0
@@ -875,7 +1150,7 @@ rc_ex_furn_wd10mm polygon bshelf_a.6457
 6.805 1.46 0.285
 7.075 1.46 0.285
 # xform -rz -90.000 -t 6.805 2.240 0.715
-# genrbox rc_ex_furn_wd10mm bshelf_b 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm bshelf_b 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon bshelf_b.1540
 0
@@ -931,7 +1206,7 @@ rc_ex_furn_wd10mm polygon bshelf_b.6457
 6.805 1.46 0.725
 7.075 1.46 0.725
 # xform -rz -90.000 -t 6.805 2.240 1.115
-# genrbox rc_ex_furn_wd10mm bshelf_c 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm bshelf_c 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon bshelf_c.1540
 0
@@ -987,7 +1262,7 @@ rc_ex_furn_wd10mm polygon bshelf_c.6457
 6.805 1.46 1.125
 7.075 1.46 1.125
 # xform -rz -90.000 -t 6.805 2.240 1.605
-# genrbox rc_ex_furn_wd10mm bshelf_d 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm bshelf_d 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon bshelf_d.1540
 0
@@ -1043,7 +1318,7 @@ rc_ex_furn_wd10mm polygon bshelf_d.6457
 6.805 1.46 1.615
 7.075 1.46 1.615
 # xform -rz -90.000 -t 6.805 2.240 1.895
-# genrbox rc_ex_furn_wd10mm bshelf_e 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm bshelf_e 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon bshelf_e.1540
 0
@@ -1099,7 +1374,7 @@ rc_ex_furn_wd10mm polygon bshelf_e.6457
 6.805 1.46 1.905
 7.075 1.46 1.905
 # xform -rz -90.000 -t 6.805 2.240 2.205
-# genrbox rc_ex_furn_wd10mm bbil_top 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm bbil_top 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon bbil_top.1540
 0
@@ -1155,7 +1430,7 @@ rc_ex_furn_wd10mm polygon bbil_top.6457
 6.805 1.46 2.215
 7.075 1.46 2.215
 # xform -rz -90.000 -t 6.835 2.240 0.205
-# genrbox rc_ex_furn_wd10mm bkick 0.780 0.010 0.060
+# genbox rc_ex_furn_wd10mm bkick 0.780 0.010 0.060
 
 rc_ex_furn_wd10mm polygon bkick.1540
 0
@@ -1211,7 +1486,7 @@ rc_ex_furn_wd10mm polygon bkick.6457
 6.835 1.46 0.265
 6.845 1.46 0.265
 # xform -rz 90.000 -t 4.400 1.900 0.410
-# genrbox rc_ex_upholstery carm_l 0.070 0.760 0.490
+# genbox rc_ex_upholstery carm_l 0.070 0.760 0.490
 
 rc_ex_upholstery polygon carm_l.1540
 0
@@ -1267,7 +1542,7 @@ rc_ex_upholstery polygon carm_l.6457
 4.4 1.97 0.9
 3.64 1.97 0.9
 # xform -rz 90.000 -t 4.400 2.530 0.410
-# genrbox rc_ex_upholstery carm_r 0.070 0.760 0.490
+# genbox rc_ex_upholstery carm_r 0.070 0.760 0.490
 
 rc_ex_upholstery polygon carm_r.1540
 0
@@ -1323,7 +1598,7 @@ rc_ex_upholstery polygon carm_r.6457
 4.4 2.6 0.9
 3.64 2.6 0.9
 # xform -rz 90.000 -t 4.360 1.920 0.200
-# genrbox rc_ex_steel_gr_3mm cleg_a 0.020 0.020 0.210
+# genbox rc_ex_steel_gr_3mm cleg_a 0.020 0.020 0.210
 
 rc_ex_steel_gr_3mm polygon cleg_a.1540
 0
@@ -1379,7 +1654,7 @@ rc_ex_steel_gr_3mm polygon cleg_a.6457
 4.36 1.94 0.41
 4.34 1.94 0.41
 # xform -rz 90.000 -t 4.360 2.550 0.200
-# genrbox rc_ex_steel_gr_3mm cleg_b 0.020 0.020 0.210
+# genbox rc_ex_steel_gr_3mm cleg_b 0.020 0.020 0.210
 
 rc_ex_steel_gr_3mm polygon cleg_b.1540
 0
@@ -1435,7 +1710,7 @@ rc_ex_steel_gr_3mm polygon cleg_b.6457
 4.36 2.57 0.41
 4.34 2.57 0.41
 # xform -rz 90.000 -t 3.670 1.920 0.200
-# genrbox rc_ex_steel_gr_3mm cleg_c 0.020 0.020 0.210
+# genbox rc_ex_steel_gr_3mm cleg_c 0.020 0.020 0.210
 
 rc_ex_steel_gr_3mm polygon cleg_c.1540
 0
@@ -1491,7 +1766,7 @@ rc_ex_steel_gr_3mm polygon cleg_c.6457
 3.67 1.94 0.41
 3.65 1.94 0.41
 # xform -rz 90.000 -t 3.670 2.550 0.200
-# genrbox rc_ex_steel_gr_3mm cleg_d 0.020 0.020 0.210
+# genbox rc_ex_steel_gr_3mm cleg_d 0.020 0.020 0.210
 
 rc_ex_steel_gr_3mm polygon cleg_d.1540
 0
@@ -1655,7 +1930,7 @@ rc_ex_upholstery polygon cseat_6
 3.65 2.52 0.41
 4.4 2.52 0.41
 # xform -rz 0.000 -t 4.300 4.000 0.410
-# genrbox rc_ex_upholstery darm_l 0.070 0.760 0.490
+# genbox rc_ex_upholstery darm_l 0.070 0.760 0.490
 
 rc_ex_upholstery polygon darm_l.1540
 0
@@ -1711,7 +1986,7 @@ rc_ex_upholstery polygon darm_l.6457
 4.37 4 0.9
 4.37 4.76 0.9
 # xform -rz 0.000 -t 5.960 4.000 0.410
-# genrbox rc_ex_upholstery darm_r 0.070 0.760 0.490
+# genbox rc_ex_upholstery darm_r 0.070 0.760 0.490
 
 rc_ex_upholstery polygon darm_r.1540
 0
@@ -1767,7 +2042,7 @@ rc_ex_upholstery polygon darm_r.6457
 6.03 4 0.9
 6.03 4.76 0.9
 # xform -rz 0.000 -t 4.320 4.040 0.200
-# genrbox rc_ex_steel_gr_3mm dleg_a 0.020 0.020 0.210
+# genbox rc_ex_steel_gr_3mm dleg_a 0.020 0.020 0.210
 
 rc_ex_steel_gr_3mm polygon dleg_a.1540
 0
@@ -1823,7 +2098,7 @@ rc_ex_steel_gr_3mm polygon dleg_a.6457
 4.34 4.04 0.41
 4.34 4.06 0.41
 # xform -rz 0.000 -t 5.980 4.040 0.200
-# genrbox rc_ex_steel_gr_3mm dleg_b 0.020 0.020 0.210
+# genbox rc_ex_steel_gr_3mm dleg_b 0.020 0.020 0.210
 
 rc_ex_steel_gr_3mm polygon dleg_b.1540
 0
@@ -1879,7 +2154,7 @@ rc_ex_steel_gr_3mm polygon dleg_b.6457
 6 4.04 0.41
 6 4.06 0.41
 # xform -rz 0.000 -t 4.320 4.730 0.200
-# genrbox rc_ex_steel_gr_3mm dleg_c 0.020 0.020 0.210
+# genbox rc_ex_steel_gr_3mm dleg_c 0.020 0.020 0.210
 
 rc_ex_steel_gr_3mm polygon dleg_c.1540
 0
@@ -1935,7 +2210,7 @@ rc_ex_steel_gr_3mm polygon dleg_c.6457
 4.34 4.73 0.41
 4.34 4.75 0.41
 # xform -rz 0.000 -t 5.980 4.730 0.200
-# genrbox rc_ex_steel_gr_3mm dleg_d 0.020 0.020 0.210
+# genbox rc_ex_steel_gr_3mm dleg_d 0.020 0.020 0.210
 
 rc_ex_steel_gr_3mm polygon dleg_d.1540
 0
@@ -2099,7 +2374,7 @@ rc_ex_upholstery polygon dseat_6
 5.95 4.75 0.41
 5.95 4 0.41
 # xform -rz 0.000 -t 5.500 2.000 0.520
-# genrbox rc_ex_shelves_20mm atbl_top 0.510 1.040 0.020
+# genbox rc_ex_shelves_20mm atbl_top 0.510 1.040 0.020
 
 rc_ex_shelves_20mm polygon atbl_top.1540
 0
@@ -2155,7 +2430,7 @@ rc_ex_shelves_20mm polygon atbl_top.6457
 6.01 2 0.54
 6.01 3.04 0.54
 # xform -rz 0.000 -t 5.590 2.110 0.300
-# genrbox rc_ex_furn_wd10mm atbl_shelf 0.340 0.830 0.020
+# genbox rc_ex_furn_wd10mm atbl_shelf 0.340 0.830 0.020
 
 rc_ex_furn_wd10mm polygon atbl_shelf.1540
 0
@@ -2211,7 +2486,7 @@ rc_ex_furn_wd10mm polygon atbl_shelf.6457
 5.93 2.11 0.32
 5.93 2.94 0.32
 # xform -rz 0.000 -t 5.550 2.110 0.200
-# genrbox rc_ex_shelves_20mm aleg_a 0.040 0.040 0.320
+# genbox rc_ex_shelves_20mm aleg_a 0.040 0.040 0.320
 
 rc_ex_shelves_20mm polygon aleg_a.1540
 0
@@ -2267,7 +2542,7 @@ rc_ex_shelves_20mm polygon aleg_a.6457
 5.59 2.11 0.52
 5.59 2.15 0.52
 # xform -rz 0.000 -t 5.920 2.110 0.200
-# genrbox rc_ex_shelves_20mm aleg_b 0.040 0.040 0.320
+# genbox rc_ex_shelves_20mm aleg_b 0.040 0.040 0.320
 
 rc_ex_shelves_20mm polygon aleg_b.1540
 0
@@ -2323,7 +2598,7 @@ rc_ex_shelves_20mm polygon aleg_b.6457
 5.96 2.11 0.52
 5.96 2.15 0.52
 # xform -rz 0.000 -t 5.550 2.900 0.200
-# genrbox rc_ex_shelves_20mm aleg_c 0.040 0.040 0.320
+# genbox rc_ex_shelves_20mm aleg_c 0.040 0.040 0.320
 
 rc_ex_shelves_20mm polygon aleg_c.1540
 0
@@ -2379,7 +2654,7 @@ rc_ex_shelves_20mm polygon aleg_c.6457
 5.59 2.9 0.52
 5.59 2.94 0.52
 # xform -rz 0.000 -t 5.920 2.900 0.200
-# genrbox rc_ex_shelves_20mm aleg_d 0.040 0.040 0.320
+# genbox rc_ex_shelves_20mm aleg_d 0.040 0.040 0.320
 
 rc_ex_shelves_20mm polygon aleg_d.1540
 0
@@ -2435,7 +2710,7 @@ rc_ex_shelves_20mm polygon aleg_d.6457
 5.96 2.9 0.52
 5.96 2.94 0.52
 # xform -rz -90.000 -t 6.700 2.885 0.200
-# genrbox rc_ex_IT_case dbase 0.300 0.100 0.620
+# genbox rc_ex_IT_case dbase 0.300 0.100 0.620
 
 rc_ex_IT_case polygon dbase.1540
 0
@@ -2491,7 +2766,7 @@ rc_ex_IT_case polygon dbase.6457
 6.7 2.585 0.82
 6.8 2.585 0.82
 # xform -rz -90.000 -t 6.730 2.805 0.620
-# genrbox rc_ex_steel_pl_3mm dstand 0.140 0.040 0.020
+# genbox rc_ex_steel_pl_3mm dstand 0.140 0.040 0.020
 
 rc_ex_steel_pl_3mm polygon dstand.1540
 0
@@ -2547,7 +2822,7 @@ rc_ex_steel_pl_3mm polygon dstand.6457
 6.73 2.665 0.64
 6.77 2.665 0.64
 # xform -rz -90.000 -t 6.720 3.000 0.640
-# genrbox rc_ex_steel_pl_3mm dlow_edge 0.530 0.040 0.070
+# genbox rc_ex_steel_pl_3mm dlow_edge 0.530 0.040 0.070
 
 rc_ex_steel_pl_3mm polygon dlow_edge.1540
 0
@@ -2603,7 +2878,7 @@ rc_ex_steel_pl_3mm polygon dlow_edge.6457
 6.72 2.47 0.71
 6.76 2.47 0.71
 # xform -rz -90.000 -t 6.720 3.000 1.010
-# genrbox rc_ex_IT_case dup_edge 0.530 0.040 0.030
+# genbox rc_ex_IT_case dup_edge 0.530 0.040 0.030
 
 rc_ex_IT_case polygon dup_edge.1540
 0
@@ -2659,7 +2934,7 @@ rc_ex_IT_case polygon dup_edge.6457
 6.72 2.47 1.04
 6.76 2.47 1.04
 # xform -rz -90.000 -t 6.720 3.000 0.710
-# genrbox rc_ex_IT_case dlft_edge 0.030 0.040 0.300
+# genbox rc_ex_IT_case dlft_edge 0.030 0.040 0.300
 
 rc_ex_IT_case polygon dlft_edge.1540
 0
@@ -2715,7 +2990,7 @@ rc_ex_IT_case polygon dlft_edge.6457
 6.72 2.97 1.01
 6.76 2.97 1.01
 # xform -rz -90.000 -t 6.720 2.500 0.710
-# genrbox rc_ex_IT_case drt_edge 0.030 0.040 0.300
+# genbox rc_ex_IT_case drt_edge 0.030 0.040 0.300
 
 rc_ex_IT_case polygon drt_edge.1540
 0
@@ -2771,7 +3046,7 @@ rc_ex_IT_case polygon drt_edge.6457
 6.72 2.47 1.01
 6.76 2.47 1.01
 # xform -rz -90.000 -t 6.735 2.970 0.710
-# genrbox rc_ex_sensor_case dcomponent 0.480 0.080 0.300
+# genbox rc_ex_sensor_case dcomponent 0.480 0.080 0.300
 
 rc_ex_sensor_case polygon dcomponent.1540
 0
@@ -2997,7 +3272,7 @@ rc_ex_sash_fr74mm polygon living:frame_b
 # dining Surface defs..
 # Obstruction defs...
 # xform -rz 0.000 -t 4.800 5.800 0.200
-# genrbox rc_ex_door la 0.100 0.100 0.730
+# genbox rc_ex_door la 0.100 0.100 0.730
 
 rc_ex_door polygon la.1540
 0
@@ -3053,7 +3328,7 @@ rc_ex_door polygon la.6457
 4.9 5.8 0.93
 4.9 5.9 0.93
 # xform -rz 0.000 -t 5.500 5.800 0.200
-# genrbox rc_ex_door lb 0.100 0.100 0.730
+# genbox rc_ex_door lb 0.100 0.100 0.730
 
 rc_ex_door polygon lb.1540
 0
@@ -3109,7 +3384,7 @@ rc_ex_door polygon lb.6457
 5.6 5.8 0.93
 5.6 5.9 0.93
 # xform -rz 0.000 -t 4.800 7.700 0.200
-# genrbox rc_ex_door lc 0.100 0.100 0.730
+# genbox rc_ex_door lc 0.100 0.100 0.730
 
 rc_ex_door polygon lc.1540
 0
@@ -3165,7 +3440,7 @@ rc_ex_door polygon lc.6457
 4.9 7.7 0.93
 4.9 7.8 0.93
 # xform -rz 0.000 -t 5.500 7.700 0.200
-# genrbox rc_ex_door ld 0.100 0.100 0.730
+# genbox rc_ex_door ld 0.100 0.100 0.730
 
 rc_ex_door polygon ld.1540
 0
@@ -3221,7 +3496,7 @@ rc_ex_door polygon ld.6457
 5.6 7.7 0.93
 5.6 7.8 0.93
 # xform -rz 0.000 -t 4.500 6.200 0.750
-# genrbox rc_ex_door ca 0.400 0.400 0.100
+# genbox rc_ex_door ca 0.400 0.400 0.100
 
 rc_ex_door polygon ca.1540
 0
@@ -3277,7 +3552,7 @@ rc_ex_door polygon ca.6457
 4.9 6.2 0.85
 4.9 6.6 0.85
 # xform -rz 0.000 -t 4.450 6.200 0.200
-# genrbox rc_ex_door cav 0.050 0.400 0.900
+# genbox rc_ex_door cav 0.050 0.400 0.900
 
 rc_ex_door polygon cav.1540
 0
@@ -3333,7 +3608,7 @@ rc_ex_door polygon cav.6457
 4.5 6.2 1.1
 4.5 6.6 1.1
 # xform -rz 0.000 -t 4.500 7.000 0.850
-# genrbox rc_ex_door cb 0.400 0.400 0.100
+# genbox rc_ex_door cb 0.400 0.400 0.100
 
 rc_ex_door polygon cb.1540
 0
@@ -3389,7 +3664,7 @@ rc_ex_door polygon cb.6457
 4.9 7 0.95
 4.9 7.4 0.95
 # xform -rz 0.000 -t 4.450 7.000 0.200
-# genrbox rc_ex_door cbv 0.050 0.400 0.900
+# genbox rc_ex_door cbv 0.050 0.400 0.900
 
 rc_ex_door polygon cbv.1540
 0
@@ -3445,7 +3720,7 @@ rc_ex_door polygon cbv.6457
 4.5 7 1.1
 4.5 7.4 1.1
 # xform -rz 0.000 -t 5.500 6.200 0.750
-# genrbox rc_ex_door cc 0.400 0.400 0.100
+# genbox rc_ex_door cc 0.400 0.400 0.100
 
 rc_ex_door polygon cc.1540
 0
@@ -3501,7 +3776,7 @@ rc_ex_door polygon cc.6457
 5.9 6.2 0.85
 5.9 6.6 0.85
 # xform -rz 0.000 -t 5.900 6.200 0.200
-# genrbox rc_ex_door ccv 0.050 0.400 0.900
+# genbox rc_ex_door ccv 0.050 0.400 0.900
 
 rc_ex_door polygon ccv.1540
 0
@@ -3557,7 +3832,7 @@ rc_ex_door polygon ccv.6457
 5.95 6.2 1.1
 5.95 6.6 1.1
 # xform -rz 0.000 -t 5.500 7.000 0.750
-# genrbox rc_ex_door cd 0.400 0.400 0.100
+# genbox rc_ex_door cd 0.400 0.400 0.100
 
 rc_ex_door polygon cd.1540
 0
@@ -3613,7 +3888,7 @@ rc_ex_door polygon cd.6457
 5.9 7 0.85
 5.9 7.4 0.85
 # xform -rz 0.000 -t 5.900 7.000 0.200
-# genrbox rc_ex_door cdv 0.050 0.400 0.900
+# genbox rc_ex_door cdv 0.050 0.400 0.900
 
 rc_ex_door polygon cdv.1540
 0
@@ -3669,7 +3944,7 @@ rc_ex_door polygon cdv.6457
 5.95 7 1.1
 5.95 7.4 1.1
 # xform -rz 0.000 -t 6.900 4.900 0.450
-# genrbox rc_ex_door cabinet 0.300 0.900 0.500
+# genbox rc_ex_door cabinet 0.300 0.900 0.500
 
 rc_ex_door polygon cabinet.1540
 0
@@ -3807,7 +4082,7 @@ rc_ex_sash_fr74mm polygon dining:french
 # kitchen Surface defs..
 # Obstruction defs...
 # xform -rz 0.000 -t 1.300 7.000 0.220
-# genrbox rc_ex_door thin_c 0.290 1.400 2.300
+# genbox rc_ex_door thin_c 0.290 1.400 2.300
 
 rc_ex_door polygon thin_c.1540
 0
@@ -3863,7 +4138,7 @@ rc_ex_door polygon thin_c.6457
 1.59 7 2.52
 1.59 8.4 2.52
 # xform -rz 0.000 -t 3.510 6.500 1.600
-# genrbox rc_ex_door wall_cab_bl 0.290 1.900 0.750
+# genbox rc_ex_door wall_cab_bl 0.290 1.900 0.750
 
 rc_ex_door polygon wall_cab_bl.1540
 0
@@ -3919,7 +4194,7 @@ rc_ex_door polygon wall_cab_bl.6457
 3.8 6.5 2.35
 3.8 8.4 2.35
 # xform -rz 0.000 -t 3.210 6.500 0.370
-# genrbox rc_ex_door base 0.590 1.900 0.750
+# genbox rc_ex_door base 0.590 1.900 0.750
 
 rc_ex_door polygon base.1540
 0
@@ -3975,7 +4250,7 @@ rc_ex_door polygon base.6457
 3.8 6.5 1.12
 3.8 8.4 1.12
 # xform -rz 0.000 -t 1.330 6.050 0.300
-# genrbox rc_ex_insul_mtl_p fridge 0.600 0.600 1.800
+# genbox rc_ex_insul_mtl_p fridge 0.600 0.600 1.800
 
 rc_ex_insul_mtl_p polygon fridge.1540
 0
@@ -4160,10 +4435,10 @@ rc_ex_cavity_brick polygon upper_hall:left_slope
 1.297 3.7 2.8
 1.297 2.98571 2.8
 1.297 3.7 3.8
-# bedroom1 Surface defs..
+# master_br Surface defs..
 # visual object defs...
 # xform -rz 90.000 -t 4.400 1.700 3.010
-# genrbox rc_ex_upholstery aarm_l 0.070 0.760 0.490
+# genbox rc_ex_upholstery aarm_l 0.070 0.760 0.490
 
 rc_ex_upholstery polygon aarm_l.1540
 0
@@ -4219,7 +4494,7 @@ rc_ex_upholstery polygon aarm_l.6457
 4.4 1.77 3.5
 3.64 1.77 3.5
 # xform -rz 90.000 -t 4.400 2.330 3.010
-# genrbox rc_ex_upholstery aarm_r 0.070 0.760 0.490
+# genbox rc_ex_upholstery aarm_r 0.070 0.760 0.490
 
 rc_ex_upholstery polygon aarm_r.1540
 0
@@ -4275,7 +4550,7 @@ rc_ex_upholstery polygon aarm_r.6457
 4.4 2.4 3.5
 3.64 2.4 3.5
 # xform -rz 90.000 -t 4.360 1.720 2.800
-# genrbox rc_ex_steel_gr_3mm aleg_a 0.020 0.020 0.210
+# genbox rc_ex_steel_gr_3mm aleg_a 0.020 0.020 0.210
 
 rc_ex_steel_gr_3mm polygon aleg_a.1540
 0
@@ -4331,7 +4606,7 @@ rc_ex_steel_gr_3mm polygon aleg_a.6457
 4.36 1.74 3.01
 4.34 1.74 3.01
 # xform -rz 90.000 -t 4.360 2.350 2.800
-# genrbox rc_ex_steel_gr_3mm aleg_b 0.020 0.020 0.210
+# genbox rc_ex_steel_gr_3mm aleg_b 0.020 0.020 0.210
 
 rc_ex_steel_gr_3mm polygon aleg_b.1540
 0
@@ -4387,7 +4662,7 @@ rc_ex_steel_gr_3mm polygon aleg_b.6457
 4.36 2.37 3.01
 4.34 2.37 3.01
 # xform -rz 90.000 -t 3.670 1.720 2.800
-# genrbox rc_ex_steel_gr_3mm aleg_c 0.020 0.020 0.210
+# genbox rc_ex_steel_gr_3mm aleg_c 0.020 0.020 0.210
 
 rc_ex_steel_gr_3mm polygon aleg_c.1540
 0
@@ -4443,7 +4718,7 @@ rc_ex_steel_gr_3mm polygon aleg_c.6457
 3.67 1.74 3.01
 3.65 1.74 3.01
 # xform -rz 90.000 -t 3.670 2.350 2.800
-# genrbox rc_ex_steel_gr_3mm aleg_d 0.020 0.020 0.210
+# genbox rc_ex_steel_gr_3mm aleg_d 0.020 0.020 0.210
 
 rc_ex_steel_gr_3mm polygon aleg_d.1540
 0
@@ -4607,7 +4882,7 @@ rc_ex_upholstery polygon aseat_6
 3.65 2.32 3.01
 4.4 2.32 3.01
 # xform -rz 0.000 -t 4.800 2.700 2.800
-# genrbox rc_ex_door bfoot 1.370 0.050 0.350
+# genbox rc_ex_door bfoot 1.370 0.050 0.350
 
 rc_ex_door polygon bfoot.1540
 0
@@ -4663,7 +4938,7 @@ rc_ex_door polygon bfoot.6457
 6.17 2.7 3.15
 6.17 2.75 3.15
 # xform -rz 0.000 -t 4.800 4.650 2.800
-# genrbox rc_ex_door bhead 1.370 0.050 0.900
+# genbox rc_ex_door bhead 1.370 0.050 0.900
 
 rc_ex_door polygon bhead.1540
 0
@@ -4719,7 +4994,7 @@ rc_ex_door polygon bhead.6457
 6.17 4.65 3.7
 6.17 4.7 3.7
 # xform -rz 0.000 -t 4.800 2.750 3.100
-# genrbox rc_ex_door bbase 1.370 1.900 0.050
+# genbox rc_ex_door bbase 1.370 1.900 0.050
 
 rc_ex_door polygon bbase.1540
 0
@@ -4775,7 +5050,7 @@ rc_ex_door polygon bbase.6457
 6.17 2.75 3.15
 6.17 4.65 3.15
 # xform -rz 0.000 -t 4.816 2.740 3.152
-# genrbox rc_ex_upholstery bmatress 1.350 1.880 0.240
+# genbox rc_ex_upholstery bmatress 1.350 1.880 0.240
 
 rc_ex_upholstery polygon bmatress.1540
 0
@@ -4831,7 +5106,7 @@ rc_ex_upholstery polygon bmatress.6457
 6.166 2.74 3.392
 6.166 4.62 3.392
 # xform -rz 0.000 -t 4.900 4.280 3.394
-# genrbox rc_ex_upholstery bpillow_l 0.600 0.320 0.080
+# genbox rc_ex_upholstery bpillow_l 0.600 0.320 0.080
 
 rc_ex_upholstery polygon bpillow_l.1540
 0
@@ -4887,7 +5162,7 @@ rc_ex_upholstery polygon bpillow_l.6457
 5.5 4.28 3.474
 5.5 4.6 3.474
 # xform -rz 0.000 -t 5.520 4.280 3.394
-# genrbox rc_ex_upholstery bpillow_r 0.600 0.320 0.080
+# genbox rc_ex_upholstery bpillow_r 0.600 0.320 0.080
 
 rc_ex_upholstery polygon bpillow_r.1540
 0
@@ -4943,7 +5218,7 @@ rc_ex_upholstery polygon bpillow_r.6457
 6.12 4.28 3.474
 6.12 4.6 3.474
 # xform -rz -90.000 -t 6.800 4.700 2.800
-# genrbox rc_ex_furn_wd10mm cleft_ver 0.010 0.280 2.020
+# genbox rc_ex_furn_wd10mm cleft_ver 0.010 0.280 2.020
 
 rc_ex_furn_wd10mm polygon cleft_ver.1540
 0
@@ -4999,7 +5274,7 @@ rc_ex_furn_wd10mm polygon cleft_ver.6457
 6.8 4.69 4.82
 7.08 4.69 4.82
 # xform -rz -90.000 -t 6.800 4.340 2.800
-# genrbox rc_ex_furn_wd10mm cright_ver 0.010 0.280 2.020
+# genbox rc_ex_furn_wd10mm cright_ver 0.010 0.280 2.020
 
 rc_ex_furn_wd10mm polygon cright_ver.1540
 0
@@ -5055,7 +5330,7 @@ rc_ex_furn_wd10mm polygon cright_ver.6457
 6.8 4.33 4.82
 7.08 4.33 4.82
 # xform -rz -90.000 -t 7.070 4.700 2.800
-# genrbox rc_ex_furn_wd10mm cbil_bk 0.360 0.010 2.005
+# genbox rc_ex_furn_wd10mm cbil_bk 0.360 0.010 2.005
 
 rc_ex_furn_wd10mm polygon cbil_bk.1540
 0
@@ -5111,7 +5386,7 @@ rc_ex_furn_wd10mm polygon cbil_bk.6457
 7.07 4.34 4.805
 7.08 4.34 4.805
 # xform -rz -90.000 -t 6.805 4.690 2.875
-# genrbox rc_ex_furn_wd10mm cshelf_a 0.360 0.270 0.010
+# genbox rc_ex_furn_wd10mm cshelf_a 0.360 0.270 0.010
 
 rc_ex_furn_wd10mm polygon cshelf_a.1540
 0
@@ -5167,7 +5442,7 @@ rc_ex_furn_wd10mm polygon cshelf_a.6457
 6.805 4.33 2.885
 7.075 4.33 2.885
 # xform -rz -90.000 -t 6.805 4.690 3.315
-# genrbox rc_ex_furn_wd10mm cshelf_b 0.360 0.270 0.010
+# genbox rc_ex_furn_wd10mm cshelf_b 0.360 0.270 0.010
 
 rc_ex_furn_wd10mm polygon cshelf_b.1540
 0
@@ -5223,7 +5498,7 @@ rc_ex_furn_wd10mm polygon cshelf_b.6457
 6.805 4.33 3.325
 7.075 4.33 3.325
 # xform -rz -90.000 -t 6.805 4.690 3.715
-# genrbox rc_ex_furn_wd10mm cshelf_c 0.360 0.270 0.010
+# genbox rc_ex_furn_wd10mm cshelf_c 0.360 0.270 0.010
 
 rc_ex_furn_wd10mm polygon cshelf_c.1540
 0
@@ -5279,7 +5554,7 @@ rc_ex_furn_wd10mm polygon cshelf_c.6457
 6.805 4.33 3.725
 7.075 4.33 3.725
 # xform -rz -90.000 -t 6.805 4.690 4.205
-# genrbox rc_ex_furn_wd10mm cshelf_d 0.360 0.270 0.010
+# genbox rc_ex_furn_wd10mm cshelf_d 0.360 0.270 0.010
 
 rc_ex_furn_wd10mm polygon cshelf_d.1540
 0
@@ -5335,7 +5610,7 @@ rc_ex_furn_wd10mm polygon cshelf_d.6457
 6.805 4.33 4.215
 7.075 4.33 4.215
 # xform -rz -90.000 -t 6.805 4.690 4.495
-# genrbox rc_ex_furn_wd10mm cshelf_e 0.360 0.270 0.010
+# genbox rc_ex_furn_wd10mm cshelf_e 0.360 0.270 0.010
 
 rc_ex_furn_wd10mm polygon cshelf_e.1540
 0
@@ -5391,7 +5666,7 @@ rc_ex_furn_wd10mm polygon cshelf_e.6457
 6.805 4.33 4.505
 7.075 4.33 4.505
 # xform -rz -90.000 -t 6.805 4.690 4.805
-# genrbox rc_ex_furn_wd10mm cbil_top 0.360 0.270 0.010
+# genbox rc_ex_furn_wd10mm cbil_top 0.360 0.270 0.010
 
 rc_ex_furn_wd10mm polygon cbil_top.1540
 0
@@ -5447,7 +5722,7 @@ rc_ex_furn_wd10mm polygon cbil_top.6457
 6.805 4.33 4.815
 7.075 4.33 4.815
 # xform -rz -90.000 -t 6.835 4.690 2.805
-# genrbox rc_ex_furn_wd10mm ckick 0.360 0.010 0.060
+# genbox rc_ex_furn_wd10mm ckick 0.360 0.010 0.060
 
 rc_ex_furn_wd10mm polygon ckick.1540
 0
@@ -5504,7 +5779,7 @@ rc_ex_furn_wd10mm polygon ckick.6457
 6.845 4.33 2.865
 # Outside zone Surface defs...
 
-rc_ex_cavity_brick polygon bedroom1:facade_a
+rc_ex_cavity_brick polygon master_br:facade_a
 0
 0
 18
@@ -5515,7 +5790,7 @@ rc_ex_cavity_brick polygon bedroom1:facade_a
 4.4 1.297 5.3
 3.4 1.297 5.3
 
-rc_ex_cavity_brick polygon bedroom1:sill_a
+rc_ex_cavity_brick polygon master_br:sill_a
 0
 0
 12
@@ -5524,7 +5799,7 @@ rc_ex_cavity_brick polygon bedroom1:sill_a
 4.397 0.65 3.5
 4.397 1.3 3.5
 
-rc_ex_cavity_brick polygon bedroom1:sill_b
+rc_ex_cavity_brick polygon master_br:sill_b
 0
 0
 12
@@ -5533,7 +5808,7 @@ rc_ex_cavity_brick polygon bedroom1:sill_b
 6.2 0.647 3.5
 4.4 0.647 3.5
 
-rc_ex_cavity_brick polygon bedroom1:sill_c
+rc_ex_cavity_brick polygon master_br:sill_c
 0
 0
 12
@@ -5542,7 +5817,7 @@ rc_ex_cavity_brick polygon bedroom1:sill_c
 6.203 1.3 3.5
 6.203 0.65 3.5
 
-rc_ex_cavity_brick polygon bedroom1:facade_d
+rc_ex_cavity_brick polygon master_br:facade_d
 0
 0
 18
@@ -5553,7 +5828,7 @@ rc_ex_cavity_brick polygon bedroom1:facade_d
 6.2 1.297 4.9
 6.2 1.297 3.5
 
-rc_ex_cavity_brick polygon bedroom1:right_a
+rc_ex_cavity_brick polygon master_br:right_a
 0
 0
 12
@@ -5562,7 +5837,7 @@ rc_ex_cavity_brick polygon bedroom1:right_a
 7.203 2.3 5.3
 7.203 1.3 5.3
 
-rc_ex_cavity_brick polygon bedroom1:right_b
+rc_ex_cavity_brick polygon master_br:right_b
 0
 0
 12
@@ -5571,7 +5846,7 @@ rc_ex_cavity_brick polygon bedroom1:right_b
 7 2.303 5.3
 7.2 2.303 5.3
 
-rc_ex_cavity_brick polygon bedroom1:right_c
+rc_ex_cavity_brick polygon master_br:right_c
 0
 0
 12
@@ -5580,7 +5855,7 @@ rc_ex_cavity_brick polygon bedroom1:right_c
 7.003 3.8 5.3
 7.003 2.3 5.3
 
-rc_ex_cavity_brick polygon bedroom1:right_d
+rc_ex_cavity_brick polygon master_br:right_d
 0
 0
 12
@@ -5589,7 +5864,7 @@ rc_ex_cavity_brick polygon bedroom1:right_d
 7.2 3.797 5.3
 7 3.797 5.3
 
-rc_ex_cavity_brick polygon bedroom1:right_e
+rc_ex_cavity_brick polygon master_br:right_e
 0
 0
 12
@@ -5598,7 +5873,7 @@ rc_ex_cavity_brick polygon bedroom1:right_e
 7.203 4.8 5.3
 7.203 3.8 5.3
 
-rc_ex_cavity_brick polygon bedroom1:head_a
+rc_ex_cavity_brick polygon master_br:head_a
 0
 0
 12
@@ -5607,7 +5882,7 @@ rc_ex_cavity_brick polygon bedroom1:head_a
 4.397 0.65 5.3
 4.397 1.3 5.3
 
-rc_ex_cavity_brick polygon bedroom1:head_b
+rc_ex_cavity_brick polygon master_br:head_b
 0
 0
 12
@@ -5616,7 +5891,7 @@ rc_ex_cavity_brick polygon bedroom1:head_b
 6.2 0.647 5.3
 4.4 0.647 5.3
 
-rc_ex_cavity_brick polygon bedroom1:head_c
+rc_ex_cavity_brick polygon master_br:head_c
 0
 0
 12
@@ -5625,7 +5900,7 @@ rc_ex_cavity_brick polygon bedroom1:head_c
 6.203 1.3 5.3
 6.203 0.65 5.3
 
-rc_ex_sash_fr74mm polygon bedroom1:frame_a
+rc_ex_sash_fr74mm polygon master_br:frame_a
 0
 0
 30
@@ -5640,7 +5915,7 @@ rc_ex_sash_fr74mm polygon bedroom1:frame_a
 4.397 0.73 3.58
 4.397 1.22 3.58
 
-rc_ex_sash_fr74mm polygon bedroom1:frame_b
+rc_ex_sash_fr74mm polygon master_br:frame_b
 0
 0
 30
@@ -5655,7 +5930,7 @@ rc_ex_sash_fr74mm polygon bedroom1:frame_b
 6.08 0.647 3.62
 4.52 0.647 3.62
 
-rc_ex_sash_fr74mm polygon bedroom1:frame_c
+rc_ex_sash_fr74mm polygon master_br:frame_c
 0
 0
 30
@@ -5672,7 +5947,7 @@ rc_ex_sash_fr74mm polygon bedroom1:frame_c
 # bedroom3 Surface defs..
 # visual object defs...
 # xform -rz 0.000 -t 1.350 1.350 2.800
-# genrbox rc_ex_door afoot 1.000 0.050 0.350
+# genbox rc_ex_door afoot 1.000 0.050 0.350
 
 rc_ex_door polygon afoot.1540
 0
@@ -5728,7 +6003,7 @@ rc_ex_door polygon afoot.6457
 2.35 1.35 3.15
 2.35 1.4 3.15
 # xform -rz 0.000 -t 1.350 3.300 3.200
-# genrbox rc_ex_door ahead 1.000 0.050 0.400
+# genbox rc_ex_door ahead 1.000 0.050 0.400
 
 rc_ex_door polygon ahead.1540
 0
@@ -5784,7 +6059,7 @@ rc_ex_door polygon ahead.6457
 2.35 3.3 3.6
 2.35 3.35 3.6
 # xform -rz 0.000 -t 1.350 1.400 3.100
-# genrbox rc_ex_door abase 1.000 1.900 0.050
+# genbox rc_ex_door abase 1.000 1.900 0.050
 
 rc_ex_door polygon abase.1540
 0
@@ -5840,7 +6115,7 @@ rc_ex_door polygon abase.6457
 2.35 1.4 3.15
 2.35 3.3 3.15
 # xform -rz 0.000 -t 1.366 1.390 3.152
-# genrbox rc_ex_upholstery amatress 0.920 1.880 0.210
+# genbox rc_ex_upholstery amatress 0.920 1.880 0.210
 
 rc_ex_upholstery polygon amatress.1540
 0
@@ -5896,7 +6171,7 @@ rc_ex_upholstery polygon amatress.6457
 2.286 1.39 3.362
 2.286 3.27 3.362
 # xform -rz 0.000 -t 1.450 2.930 3.364
-# genrbox rc_ex_upholstery apillow 0.700 0.320 0.080
+# genbox rc_ex_upholstery apillow 0.700 0.320 0.080
 
 rc_ex_upholstery polygon apillow.1540
 0
@@ -6014,7 +6289,7 @@ rc_ex_sash_fr74mm polygon bedroom3:fr_frame
 # bedroom2 Surface defs..
 # visual object defs...
 # xform -rz -90.000 -t 6.800 5.800 2.800
-# genrbox rc_ex_furn_wd10mm aleft_ver 0.010 0.280 2.020
+# genbox rc_ex_furn_wd10mm aleft_ver 0.010 0.280 2.020
 
 rc_ex_furn_wd10mm polygon aleft_ver.1540
 0
@@ -6070,7 +6345,7 @@ rc_ex_furn_wd10mm polygon aleft_ver.6457
 6.8 5.79 4.82
 7.08 5.79 4.82
 # xform -rz -90.000 -t 6.800 5.010 2.800
-# genrbox rc_ex_furn_wd10mm aright_ver 0.010 0.280 2.020
+# genbox rc_ex_furn_wd10mm aright_ver 0.010 0.280 2.020
 
 rc_ex_furn_wd10mm polygon aright_ver.1540
 0
@@ -6126,7 +6401,7 @@ rc_ex_furn_wd10mm polygon aright_ver.6457
 6.8 5 4.82
 7.08 5 4.82
 # xform -rz -90.000 -t 7.070 5.800 2.800
-# genrbox rc_ex_furn_wd10mm abil_bk 0.780 0.010 2.005
+# genbox rc_ex_furn_wd10mm abil_bk 0.780 0.010 2.005
 
 rc_ex_furn_wd10mm polygon abil_bk.1540
 0
@@ -6182,7 +6457,7 @@ rc_ex_furn_wd10mm polygon abil_bk.6457
 7.07 5.02 4.805
 7.08 5.02 4.805
 # xform -rz -90.000 -t 6.805 5.790 2.875
-# genrbox rc_ex_furn_wd10mm ashelf_a 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm ashelf_a 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon ashelf_a.1540
 0
@@ -6238,7 +6513,7 @@ rc_ex_furn_wd10mm polygon ashelf_a.6457
 6.805 5.01 2.885
 7.075 5.01 2.885
 # xform -rz -90.000 -t 6.805 5.790 3.315
-# genrbox rc_ex_furn_wd10mm ashelf_b 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm ashelf_b 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon ashelf_b.1540
 0
@@ -6294,7 +6569,7 @@ rc_ex_furn_wd10mm polygon ashelf_b.6457
 6.805 5.01 3.325
 7.075 5.01 3.325
 # xform -rz -90.000 -t 6.805 5.790 3.715
-# genrbox rc_ex_furn_wd10mm ashelf_c 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm ashelf_c 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon ashelf_c.1540
 0
@@ -6350,7 +6625,7 @@ rc_ex_furn_wd10mm polygon ashelf_c.6457
 6.805 5.01 3.725
 7.075 5.01 3.725
 # xform -rz -90.000 -t 6.805 5.790 4.205
-# genrbox rc_ex_furn_wd10mm ashelf_d 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm ashelf_d 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon ashelf_d.1540
 0
@@ -6406,7 +6681,7 @@ rc_ex_furn_wd10mm polygon ashelf_d.6457
 6.805 5.01 4.215
 7.075 5.01 4.215
 # xform -rz -90.000 -t 6.805 5.790 4.495
-# genrbox rc_ex_furn_wd10mm ashelf_e 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm ashelf_e 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon ashelf_e.1540
 0
@@ -6462,7 +6737,7 @@ rc_ex_furn_wd10mm polygon ashelf_e.6457
 6.805 5.01 4.505
 7.075 5.01 4.505
 # xform -rz -90.000 -t 6.805 5.790 4.805
-# genrbox rc_ex_furn_wd10mm abil_top 0.780 0.270 0.010
+# genbox rc_ex_furn_wd10mm abil_top 0.780 0.270 0.010
 
 rc_ex_furn_wd10mm polygon abil_top.1540
 0
@@ -6518,7 +6793,7 @@ rc_ex_furn_wd10mm polygon abil_top.6457
 6.805 5.01 4.815
 7.075 5.01 4.815
 # xform -rz -90.000 -t 6.835 5.790 2.805
-# genrbox rc_ex_furn_wd10mm akick 0.780 0.010 0.060
+# genbox rc_ex_furn_wd10mm akick 0.780 0.010 0.060
 
 rc_ex_furn_wd10mm polygon akick.1540
 0
@@ -6574,7 +6849,7 @@ rc_ex_furn_wd10mm polygon akick.6457
 6.835 5.01 2.865
 6.845 5.01 2.865
 # xform -rz 90.000 -t 5.400 6.100 2.800
-# genrbox rc_ex_door bfoot 1.370 0.050 0.350
+# genbox rc_ex_door bfoot 1.370 0.050 0.350
 
 rc_ex_door polygon bfoot.1540
 0
@@ -6630,7 +6905,7 @@ rc_ex_door polygon bfoot.6457
 5.4 7.47 3.15
 5.35 7.47 3.15
 # xform -rz 90.000 -t 3.450 6.100 2.800
-# genrbox rc_ex_door bhead 1.370 0.050 0.900
+# genbox rc_ex_door bhead 1.370 0.050 0.900
 
 rc_ex_door polygon bhead.1540
 0
@@ -6686,7 +6961,7 @@ rc_ex_door polygon bhead.6457
 3.45 7.47 3.7
 3.4 7.47 3.7
 # xform -rz 90.000 -t 5.350 6.100 3.100
-# genrbox rc_ex_door bbase 1.370 1.900 0.050
+# genbox rc_ex_door bbase 1.370 1.900 0.050
 
 rc_ex_door polygon bbase.1540
 0
@@ -6742,7 +7017,7 @@ rc_ex_door polygon bbase.6457
 5.35 7.47 3.15
 3.45 7.47 3.15
 # xform -rz 90.000 -t 5.360 6.116 3.152
-# genrbox rc_ex_upholstery bmatress 1.350 1.880 0.240
+# genbox rc_ex_upholstery bmatress 1.350 1.880 0.240
 
 rc_ex_upholstery polygon bmatress.1540
 0
@@ -6798,7 +7073,7 @@ rc_ex_upholstery polygon bmatress.6457
 5.36 7.466 3.392
 3.48 7.466 3.392
 # xform -rz 90.000 -t 3.820 6.200 3.394
-# genrbox rc_ex_upholstery bpillow_l 0.600 0.320 0.080
+# genbox rc_ex_upholstery bpillow_l 0.600 0.320 0.080
 
 rc_ex_upholstery polygon bpillow_l.1540
 0
@@ -6854,7 +7129,7 @@ rc_ex_upholstery polygon bpillow_l.6457
 3.82 6.8 3.474
 3.5 6.8 3.474
 # xform -rz 90.000 -t 3.820 6.820 3.394
-# genrbox rc_ex_upholstery bpillow_r 0.600 0.320 0.080
+# genbox rc_ex_upholstery bpillow_r 0.600 0.320 0.080
 
 rc_ex_upholstery polygon bpillow_r.1540
 0
@@ -6910,7 +7185,7 @@ rc_ex_upholstery polygon bpillow_r.6457
 3.82 7.42 3.474
 3.5 7.42 3.474
 # xform -rz -40.000 -t 6.326 7.818 3.300
-# genrbox rc_ex_upholstery bseat 0.480 0.450 0.030
+# genbox rc_ex_upholstery bseat 0.480 0.450 0.030
 
 rc_ex_upholstery polygon bseat.1540
 0
@@ -6966,7 +7241,7 @@ rc_ex_upholstery polygon bseat.6457
 6.6937013327 7.50946194735 3.33
 6.98295575706 7.85418194675 3.33
 # xform -rz -40.000 -t 6.373 7.975 3.520
-# genrbox rc_ex_upholstery br_arm 0.060 0.330 0.025
+# genbox rc_ex_upholstery br_arm 0.060 0.330 0.025
 
 rc_ex_upholstery polygon br_arm.1540
 0
@@ -7022,7 +7297,7 @@ rc_ex_upholstery polygon br_arm.6457
 6.41896266659 7.93643274342 3.545
 6.63108257778 8.18922740965 3.545
 # xform -rz -40.000 -t 6.794 7.621 3.520
-# genrbox rc_ex_upholstery bl_arm 0.060 0.330 0.025
+# genbox rc_ex_upholstery bl_arm 0.060 0.330 0.025
 
 rc_ex_upholstery polygon bl_arm.1540
 0
@@ -7132,7 +7407,7 @@ rc_ex_upholstery polygon bseat_bk_6
 7.0088 7.885 3.36
 6.9896 7.862 3.36
 # xform -rz 50.000 -t 6.679 7.515 2.880
-# genrbox rc_ex_furn_wd10mm bcross_a 0.450 0.030 0.030
+# genbox rc_ex_furn_wd10mm bcross_a 0.450 0.030 0.030
 
 rc_ex_furn_wd10mm polygon bcross_a.1540
 0
@@ -7188,7 +7463,7 @@ rc_ex_furn_wd10mm polygon bcross_a.6457
 6.96825442436 7.8597199994 2.91
 6.94527309107 7.87900362769 2.91
 # xform -rz 50.000 -t 6.350 7.792 2.880
-# genrbox rc_ex_furn_wd10mm bcross_b 0.450 0.030 0.030
+# genbox rc_ex_furn_wd10mm bcross_b 0.450 0.030 0.030
 
 rc_ex_furn_wd10mm polygon bcross_b.1540
 0
@@ -7244,7 +7519,7 @@ rc_ex_furn_wd10mm polygon bcross_b.6457
 6.63925442436 8.1367199994 2.91
 6.61627309107 8.15600362769 2.91
 # xform -rz -40.000 -t 6.469 7.973 2.880
-# genrbox rc_ex_furn_wd10mm bcross_c 0.450 0.030 0.030
+# genbox rc_ex_furn_wd10mm bcross_c 0.450 0.030 0.030
 
 rc_ex_furn_wd10mm polygon bcross_c.1540
 0
@@ -7300,7 +7575,7 @@ rc_ex_furn_wd10mm polygon bcross_c.6457
 6.8137199994 7.68374557564 2.91
 6.83300362769 7.70672690893 2.91
 # xform -rz -40.000 -t 6.430 7.966 3.300
-# genrbox rc_ex_furn_wd10mm br_arm_rest 0.025 0.050 0.230
+# genbox rc_ex_furn_wd10mm br_arm_rest 0.025 0.050 0.230
 
 rc_ex_furn_wd10mm polygon br_arm_rest.1540
 0
@@ -7356,7 +7631,7 @@ rc_ex_furn_wd10mm polygon br_arm_rest.6457
 6.44915111108 7.94993030976 3.53
 6.48129049156 7.98823253191 3.53
 # xform -rz -40.000 -t 6.817 7.641 3.300
-# genrbox rc_ex_furn_wd10mm bl_arm_rest 0.025 0.050 0.230
+# genbox rc_ex_furn_wd10mm bl_arm_rest 0.025 0.050 0.230
 
 rc_ex_furn_wd10mm polygon bl_arm_rest.1540
 0
@@ -7412,7 +7687,7 @@ rc_ex_furn_wd10mm polygon bl_arm_rest.6457
 6.83615111108 7.62493030976 3.53
 6.86829049156 7.66323253191 3.53
 # xform -rz -40.000 -t 6.334 7.812 2.800
-# genrbox rc_ex_furn_wd10mm bleg_a 0.030 0.030 0.520
+# genbox rc_ex_furn_wd10mm bleg_a 0.030 0.030 0.520
 
 rc_ex_furn_wd10mm polygon bleg_a.1540
 0
@@ -7468,7 +7743,7 @@ rc_ex_furn_wd10mm polygon bleg_a.6457
 6.35698133329 7.79271637171 3.32
 6.37626496158 7.815697705 3.32
 # xform -rz -40.000 -t 6.659 7.538 2.800
-# genrbox rc_ex_furn_wd10mm bleg_b 0.030 0.030 0.520
+# genbox rc_ex_furn_wd10mm bleg_b 0.030 0.030 0.520
 
 rc_ex_furn_wd10mm polygon bleg_b.1540
 0
@@ -7524,7 +7799,7 @@ rc_ex_furn_wd10mm polygon bleg_b.6457
 6.68198133329 7.51871637171 3.32
 6.70126496158 7.541697705 3.32
 # xform -rz -40.000 -t 6.617 8.149 2.800
-# genrbox rc_ex_furn_wd10mm bleg_c 0.030 0.040 0.565
+# genbox rc_ex_furn_wd10mm bleg_c 0.030 0.040 0.565
 
 rc_ex_furn_wd10mm polygon bleg_c.1540
 0
@@ -7580,7 +7855,7 @@ rc_ex_furn_wd10mm polygon bleg_c.6457
 6.63998133329 8.12971637171 3.365
 6.66569283768 8.16035814943 3.365
 # xform -rz -40.000 -t 6.942 7.876 2.800
-# genrbox rc_ex_furn_wd10mm bleg_d 0.030 0.040 0.565
+# genbox rc_ex_furn_wd10mm bleg_d 0.030 0.040 0.565
 
 rc_ex_furn_wd10mm polygon bleg_d.1540
 0
@@ -7739,7 +8014,7 @@ rc_ex_sash_fr74mm polygon bedroom2:frm_glaz
 # bath Surface defs..
 # Obstruction defs...
 # xform -rz 0.000 -t 1.340 6.040 2.840
-# genrbox rc_ex_door bath_b 0.650 1.650 0.500
+# genbox rc_ex_door bath_b 0.650 1.650 0.500
 
 rc_ex_door polygon bath_b.1540
 0
@@ -7795,7 +8070,7 @@ rc_ex_door polygon bath_b.6457
 1.99 6.04 3.34
 1.99 7.69 3.34
 # xform -rz 0.000 -t 2.600 8.150 2.800
-# genrbox rc_ex_door cabinet 0.800 0.300 0.800
+# genbox rc_ex_door cabinet 0.800 0.300 0.800
 
 rc_ex_door polygon cabinet.1540
 0
@@ -8230,21 +8505,21 @@ rc_ex_cavity_brick polygon crawl:edge_left
 # Outside zone Surface defs...
 # rad_bath Surface defs..
 # Outside zone Surface defs...
-# rad_br3 Surface defs..
+# rad_br3_h Surface defs..
 # Outside zone Surface defs...
 # boiler_case Surface defs..
 # Outside zone Surface defs...
-# rad_br2 Surface defs..
+# rad_br2_h Surface defs..
 # Outside zone Surface defs...
-# rad_dining Surface defs..
+# rad_dining_h Surface defs..
 # Outside zone Surface defs...
-# rad-mbr Surface defs..
+# rad-mbr_h Surface defs..
 # Outside zone Surface defs...
-# rad_lounge Surface defs..
+# rad_lounge_h Surface defs..
 # Outside zone Surface defs...
 # rad_kit Surface defs..
 # Outside zone Surface defs...
-# rad-hall Surface defs..
+# rad-hall_h Surface defs..
 # Outside zone Surface defs...
 # collec_low Surface defs..
 # Outside zone Surface defs...
@@ -8407,4 +8682,143 @@ rc_ex_tank_i_50mmi polygon air_hi:right
 # gas Surface defs..
 # Outside zone Surface defs...
 # mixer Surface defs..
+# Outside zone Surface defs...
+# rad_lounge_m Surface defs..
+# Outside zone Surface defs...
+# rad_lounge_l Surface defs..
+# Outside zone Surface defs...
+# rad_dining_m Surface defs..
+# Outside zone Surface defs...
+# rad_dining_l Surface defs..
+# Outside zone Surface defs...
+# rad-hall_m Surface defs..
+# Outside zone Surface defs...
+# rad-hall_l Surface defs..
+# Outside zone Surface defs...
+# rad-mbr_m Surface defs..
+# Outside zone Surface defs...
+# rad-mbr_l Surface defs..
+# Outside zone Surface defs...
+# rad_br2_m Surface defs..
+# Outside zone Surface defs...
+# rad_br2_l Surface defs..
+# Outside zone Surface defs...
+# rad_br3_m Surface defs..
+# Outside zone Surface defs...
+# rad_br3_l Surface defs..
+# Outside zone Surface defs...
+# thermostat Surface defs..
+# visual object defs...
+# xform -rz -90.000 -t 6.897 2.785 1.408
+# genbox rc_ex_circuit_bd abutton 0.010 0.005 0.010
+
+rc_ex_circuit_bd polygon abutton.1540
+0
+0
+12
+6.897 2.775 1.408
+6.897 2.775 1.418
+6.897 2.785 1.418
+6.897 2.785 1.408
+
+rc_ex_circuit_bd polygon abutton.4620
+0
+0
+12
+6.897 2.785 1.418
+6.902 2.785 1.418
+6.902 2.785 1.408
+6.897 2.785 1.408
+
+rc_ex_circuit_bd polygon abutton.2310
+0
+0
+12
+6.902 2.785 1.408
+6.902 2.775 1.408
+6.897 2.775 1.408
+6.897 2.785 1.408
+
+rc_ex_circuit_bd polygon abutton.3267
+0
+0
+12
+6.902 2.775 1.408
+6.902 2.785 1.408
+6.902 2.785 1.418
+6.902 2.775 1.418
+
+rc_ex_circuit_bd polygon abutton.5137
+0
+0
+12
+6.897 2.775 1.418
+6.897 2.775 1.408
+6.902 2.775 1.408
+6.902 2.775 1.418
+
+rc_ex_circuit_bd polygon abutton.6457
+0
+0
+12
+6.902 2.785 1.418
+6.897 2.785 1.418
+6.897 2.775 1.418
+6.902 2.775 1.418
+# xform -rz -90.000 -t 6.897 2.765 1.408
+# genbox rc_ex_circuit_bd abutton-off 0.010 0.005 0.010
+
+rc_ex_circuit_bd polygon abutton-off.1540
+0
+0
+12
+6.897 2.755 1.408
+6.897 2.755 1.418
+6.897 2.765 1.418
+6.897 2.765 1.408
+
+rc_ex_circuit_bd polygon abutton-off.4620
+0
+0
+12
+6.897 2.765 1.418
+6.902 2.765 1.418
+6.902 2.765 1.408
+6.897 2.765 1.408
+
+rc_ex_circuit_bd polygon abutton-off.2310
+0
+0
+12
+6.902 2.765 1.408
+6.902 2.755 1.408
+6.897 2.755 1.408
+6.897 2.765 1.408
+
+rc_ex_circuit_bd polygon abutton-off.3267
+0
+0
+12
+6.902 2.755 1.408
+6.902 2.765 1.408
+6.902 2.765 1.418
+6.902 2.755 1.418
+
+rc_ex_circuit_bd polygon abutton-off.5137
+0
+0
+12
+6.897 2.755 1.418
+6.897 2.755 1.408
+6.902 2.755 1.408
+6.902 2.755 1.418
+
+rc_ex_circuit_bd polygon abutton-off.6457
+0
+0
+12
+6.902 2.765 1.418
+6.897 2.765 1.418
+6.897 2.755 1.418
+6.902 2.755 1.418
 # Outside zone Surface defs...

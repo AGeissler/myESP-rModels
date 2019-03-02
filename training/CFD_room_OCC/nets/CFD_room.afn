@@ -1,0 +1,11 @@
+    3    1    2    1.000    (nodes, components, connections, wind reduction)
+ Node         Fld. Type   Height    Temperature    Data_1       Data_2
+ room            1    0   1.5000       20.000       0.0000       45.361    
+ west            1    3   1.2500       0.0000       1.0000       270.00    
+ east            1    3   2.2500       0.0000       1.0000       90.000    
+ Component    Type C+ L+ Description
+ open          110  2  0 Specific air flow opening           m = rho.f(A,dP)         
+   1.00000000      0.300000012    
+ +Node         dHght   -Node         dHght   via Component
+ room         -0.250   west          0.000   open
+ room          0.750   east         -0.000   open

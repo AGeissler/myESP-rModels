@@ -54,6 +54,7 @@ echo "starting extact..."
 ./extract stone_simi_1890_summer_s4.res
 echo "finished summer"
 echo "removing zone results files"
+ls -l *.res
 rm stone_simi_1890_spr_s2.res
 rm stone_simi_1890_jan-feb_s2.res
 rm stone_simi_1890_summer_s2.res

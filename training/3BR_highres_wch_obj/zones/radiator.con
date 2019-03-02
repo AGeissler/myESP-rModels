@@ -1,4 +1,4 @@
-# thermophysical properties of rad_br3 defined in ../zones/radiator.con
+# thermophysical properties of rad_bath defined in ../zones/radiator.con
 # no of |air |surface(from geo)| multilayer construction
 # layers|gaps|number &  name   | database name 
      1,     0  #   1 base_rad     steel_pl_3mm

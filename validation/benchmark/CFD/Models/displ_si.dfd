@@ -72,7 +72,7 @@ Ted      0.005 Linear  0.500
 Epd      0.005 Linear  0.500
 # Iteration control.
 *iteration 
-  5000  0.0001 No
+  12000  0.0001 No
 *monitor    6   4   8  CFD.mon
 *reint  NO
 *svf  1  # frequency of results writing
