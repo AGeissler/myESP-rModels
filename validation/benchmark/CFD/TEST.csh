@@ -1,16 +1,6 @@
 #!/bin/csh -fb
-#
-set OS = "Sun"
-echo "Operating system?"
-echo " (1) Sun"
-echo " (2) Linux"
-@ A=0
-while ( $A<1 || $A>2 )
-set A = $<
-end
-if ( $A == "2" ) then
-  set OS = "Linux"
-endif
+# version only using csh for runs
+set OS = "Linux"
 echo "Use default version of CFD module (Y/N)?"
 set A = $<
 if ( $A == "Y" || $A == "y" ) then
@@ -57,11 +47,12 @@ else
   endif
 endif
 echo "Which tests?"
-echo " (1) Fast (24 simulations; run time: ~3 minutes, <2hrs on a slow computer)"
-echo " (2) Slow (2 simulations; run time: ~2x time for fast tests)"
+echo " (1) Fast (23 simulations; run time: ~15 minutes & <1hr on a slow computer)"
+echo " (2) Slow (3 simulations; run time: 12x time for fast tests)"
 echo " (3) All (26 simulations)"
+echo " (4) Representative subset (3 simulations)"
 @ A=0
-while ( $A<1 || $A>3 )
+while ( $A<1 || $A>4 )
 set A = $<
 end
 @ test=0
@@ -69,73 +60,81 @@ end
 # Fast converging tests
 #
 if ( $A == 1 || $A == 3 ) then
-  foreach i (basic block block2 block3 blockc blockh \
-             blocklma basiclma co2_so hum_so lma sso \
-             tm1 porous tst33vol tm1a tm1b blockt)
+  foreach i (basic.dfd block.dfd block2.dfd block3.dfd blockc.dfd blockh.dfd \
+             blocklma.dfd basiclma.dfd co2_so.dfd hum_so.dfd lma.dfd sso.dfd \
+             tm1.dfd porous.dfd tst33vol.dfd)
     @ test ++
-    echo "Test "$test": "$i".dfd with the default solver."
-# Debug: echo invocation command
-#    echo "./dfs_basic.sh $DFS $i"
-    cd Models; ./dfs_basic.sh $DFS $i; cd ..
+    echo "Test "$test": "$i" with the default solver."
+    cd Models; ./dfs_basic.csh $DFS $i; echo $i; sleep 15; cd ..
   end
 endif
 #
 # Fast bi-cg solver tests
 #
 if ( $A == 1 || $A == 3 ) then
-  foreach i (basicsol)
+  foreach i (basicsol.dfd)
     @ test ++
-    echo "Test "$test": "$i".dfd with the bi-cg solver."
-# Debug: echo invocation command
-#    echo "./dfs_bi-cg.sh $DFS $i"
-    cd Models; ./dfs_bi-cg.sh $DFS $i; cd ..
-  end
-endif
-#
-# Fast not converging tests
-#
-if ( $A == 1 || $A == 3 ) then
-  foreach i (displ displ_si tm1_so tm2_so)
-    @ test ++
-    echo "Test "$test": "$i".dfd with the default solver."
-# Debug: echo invocation command
-#    echo "./dfs_not_conv.sh $DFS $i"
-    cd Models; ./dfs_not_conv.sh $DFS $i; cd ..
+    echo "Test "$test": "$i" with the bi-cg solver."
+    cd Models; ./dfs_bi-cg.csh $DFS $i; echo $i; sleep 15; cd ..
   end
 endif
 #
 # Fast ggdh solver tests
 #
 if ( $A == 1 || $A == 3 ) then
-  foreach i (displ)
+  foreach i (displ.dfd)
     @ test ++
-    echo "Test "$test": "$i".dfd with the ggdh solver."
-# Debug: echo invocation command
-#    echo "./dfs_ggdh_not_conv.sh $DFS $i"
-    cd Models; ./dfs_ggdh_not_conv.sh $DFS $i; cd ..
+    echo "Test "$test": "$i" with the ggdh solver."
+    cd Models; ./dfs_ggdh_not_conv.csh $DFS $i; echo $i; sleep 15; cd ..
+  end
+endif
+#
+# Fast not converging tests
+#
+if ( $A == 1 || $A == 3 ) then
+  foreach i (displ.dfd displ_si.dfd tm1_so.dfd tm2_so.dfd)
+    @ test ++
+    echo "Test "$test": "$i" with the default solver."
+    cd Models; ./dfs_not_conv.csh $DFS $i; echo $i; sleep 15; cd ..
   end
 endif
 #
 # Slow not converging tests
 #
 if ( $A == 2 || $A == 3 ) then
-  foreach i (bi-cg)
+  foreach i (blockt.dfd)
     @ test ++
-    echo "Test "$test": "$i".dfd with the default solver."
-# Debug: echo invocation command
-#    echo "./dfs_not_conv.sh $DFS $i"
-    cd Models; ./dfs_not_conv.sh $DFS $i; cd ..
+    echo "Test "$test": "$i" with the default solver."
+    cd Models; ./dfs_not_conv.csh $DFS $i; echo $i; sleep 15; cd ..
+  end
+endif
+#
+# Slow converging tests
+#
+if ( $A == 2 || $A == 3 ) then
+  foreach i (bi-cg.dfd tm1b.dfd tm1a.dfd)
+    @ test ++
+    echo "Test "$test": "$i" with the default solver."
+    cd Models; ./dfs_basic.csh $DFS $i; echo $i; sleep 15; cd ..
   end
 endif
 #
 # Slow ggdh solver tests
 #
 if ( $A == 2 || $A == 3 ) then
-  foreach i (bi-cg)
+  foreach i (bi-cg.dfd)
     @ test ++
-    echo "Test "$test": "$i".dfd with the bi-cg solver."
-# Debug: echo invocation command
-#    echo "./dfs_bi-cg.sh $DFS $i"
-    cd Models; ./dfs_bi-cg_not_conv.sh $DFS $i; cd ..
+    echo "Test "$test": "$i" with the bi-cg solver."
+    cd Models; ./dfs_bi-cg.csh $DFS $i; echo $i; sleep 15; cd ..
+  end
+endif
+#
+# Subset of porous.dfd tst33vol.dfd and tm1b.dfd
+#
+if ( $A == 4 ) then
+  foreach i (porous.dfd tst33vol.dfd tm1b.dfd)
+    @ test ++
+    echo "Test "$test": "$i" with the default solver."
+    cd Models; ./dfs_basic.csh $DFS $i; echo $i; sleep 15; cd ..
   end
 endif

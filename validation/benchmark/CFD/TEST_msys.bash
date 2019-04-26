@@ -8,7 +8,9 @@ echo " Doing all (26 simulations)"
 #
 # Fast converging tests
 #
-  for i in basic.dfd block.dfd block2.dfd block3.dfd blockc.dfd blockh.dfd blocklma.dfd basiclma.dfd co2_so.dfd hum_so.dfd lma.dfd sso.dfd tm1.dfd porous.dfd tst33vol.dfd
+  for i in basic.dfd block.dfd block2.dfd block3.dfd blockc.dfd blockh.dfd \
+             blocklma.dfd basiclma.dfd co2_so.dfd hum_so.dfd lma.dfd sso.dfd \
+             tm1.dfd porous.dfd tst33vol.dfd
     do
      (( test++ ));
      echo "Test "$test": "$i" with the default solver.";
@@ -35,7 +37,7 @@ echo " Doing all (26 simulations)"
 #
 # Fast not converging tests
 #
-  for i in displ.dfd displ_si.dfd tm1_so.dfd tm2_so.dfd tm1a.dfd tm1b.dfd
+  for i in displ.dfd displ_si.dfd tm1_so.dfd tm2_so.dfd
   do
     (( test++ ));
     echo "Test "$test": "$i" with the default solver.";
@@ -53,7 +55,7 @@ echo " Doing all (26 simulations)"
 #
 # Slow converging tests
 #
-  for i in bi-cg.dfd
+  for i in bi-cg.dfd tm1b.dfd tm1a.dfd
   do
     (( test++ ));
     echo "Test "$test": "$i" with the default solver.";

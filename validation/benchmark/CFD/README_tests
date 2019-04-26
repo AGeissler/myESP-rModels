@@ -9,9 +9,23 @@ it is good practice to generate your own, as follows:
 
 cd to folder validation/benchmark/CFD
 
-run the script TEST.csh
+On Linux or OSX if you want to see the solution progress run the script 
+TEST.csh and if you just want to see the timings use the script 
+TEST_quiet.csh. You are presented with several choices of the tests
+to run . 
+Which tests?
+ (1) Fast (23 simulations; run time: ~15 minutes & <1hr on a slow computer)
+ (2) Slow (3 simulations; run time: 12x time for fast tests)
+ (3) All (26 simulations)
+ (4) Representative subset (3 simulations)
+ 
+The 4th choice is a useful subset across the range of test models.
+ 
+There is also a TEST_msys.bash which can be used in Windows 10 computers
+with the MSYS environment (it runs all of the tests).
+
 The script asks for location of dfs executable, accept default (usually
-/usr/esru/esp-r/bin/dfs)
+/opt/esp-r/bin/dfs)
 This script runs a number of dfs standalone simulations placing results
 files (*.mon,*.out,*.TEC,*.time) in the validation/benchmark/Models 
 folder. Once the script has run (which may take a substanitial time)
