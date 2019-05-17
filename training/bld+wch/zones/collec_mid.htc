@@ -1,0 +1,10 @@
+*HC_CTL for zone collec_mid
+*Date,Fri Apr  3 17:29:11 2015
+  1 # number control intervals
+  6 # number of surfaces
+# (mid_to_roof mid_plate to_top left to_low right)
+  0.00    24.00 # start and end time of interval
+  1 # fixed coefficients calculation control type
+*Doc,User supplied hc values
+ -1.0000,299.000,-1.0000,-1.0000,-1.0000,-1.0000
+ -1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000

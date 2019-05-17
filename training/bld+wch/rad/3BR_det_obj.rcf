@@ -1,0 +1,16 @@
+*ESP-r visualisation scene configuration file.
+Mon Dec  7 09:26:07 2015 # latest file modification.
+  2 # No. of scenes
+# Scene number  1
+*rnm 3BR_det_obj_Extern.rif                      # Rif name
+*srt 3BR_det_obj_Extern                          # Scene root
+*rde Scene of 3BR_det_obj for External analysis. # Description
+*rpu External                                    # Intended use
+*sceneEND
+# Scene number  2
+*rnm living_Glare.rif                    # Rif name
+*srt living_Glare                        # Scene root
+*rde Scene of living for Glare analysis. # Description
+*rpu Glare                               # Intended use
+*sceneEND
+*end

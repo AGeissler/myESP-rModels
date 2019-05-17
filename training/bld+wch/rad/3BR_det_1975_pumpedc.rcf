@@ -1,0 +1,10 @@
+*ESP-r visualisation scene configuration file.
+Wed Jun 17 14:54:49 2015 # latest file modification.
+  1 # No. of scenes
+# Scene number  1
+*rnm bedroom1_Intern.rif                      # Rif name
+*srt bedroom1_Intern                          # Scene root
+*rde Scene of bedroom1 for Internal analysis. # Description
+*rpu Internal                                 # Intended use
+*sceneEND
+*end

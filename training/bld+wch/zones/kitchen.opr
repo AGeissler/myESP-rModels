@@ -1,0 +1,85 @@
+*Operations 2.1
+*date Thu Nov 28 23:05:21 2013  # latest file modification 
+# operations of kitchen defined in: 
+# ../zones/kitchen.opr
+half ach infiltration all days no venitlation
+# control(no control of air flow  ), low mid & high setpoints 
+   0     0.000     0.000     0.000
+     1   # number of flow periods in day type: weekdays    
+# start, stop, infil, ventil, source, data
+   0, 24,    0.500    0.000    0    0.000
+     1   # number of flow periods in day type: saturday    
+# start, stop, infil, ventil, source, data
+   0, 24,    0.500    0.000    0    0.000
+     1   # number of flow periods in day type: sunday      
+# start, stop, infil, ventil, source, data
+   0, 24,    0.500    0.000    0    0.000
+     1   # number of flow periods in day type: holiday     
+# start, stop, infil, ventil, source, data
+   0, 24,    0.500    0.000    0    0.000
+*casual
+up to 2 people diversity of occupant lighting and small power occassional occupancy during day mostly away during holiday
+# casual user-label type-key-word slot attributes
+*type occupant     people            1  0  0
+*type lights       lighting          2  0  0
+*type electric     equipment         3  0  0
+*end_type 
+    18   # number of casual gains in day type: weekdays    
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,   6,     10.0,     10.0,  0.600,  0.400
+   1,   6,   8,    260.0,    240.0,  0.600,  0.400
+   1,   8,  12,     40.0,     40.0,  0.600,  0.400
+   1,  12,  13,    100.0,     60.0,  0.600,  0.400
+   1,  13,  17,     60.0,     40.0,  0.600,  0.400
+   1,  17,  21,    260.0,    200.0,  0.600,  0.400
+   1,  21,  24,    120.0,    100.0,  0.600,  0.400
+  -2,   0,   7,      1.0,      0.0,  0.300,  0.700
+  -2,   7,   9,      8.0,      0.0,  0.300,  0.700
+  -2,   9,  16,      3.0,      0.0,  0.300,  0.700
+  -2,  16,  21,      8.0,      0.0,  0.300,  0.700
+  -2,  21,  24,      6.0,      0.0,  0.300,  0.700
+  -3,   0,   6,      2.0,      0.0,  0.400,  0.600
+  -3,   6,   9,     12.0,     10.0,  0.400,  0.600
+  -3,   9,  12,      3.0,      3.0,  0.400,  0.600
+  -3,  12,  18,      5.0,      2.0,  0.400,  0.600
+  -3,  18,  21,     13.0,     10.0,  0.400,  0.600
+  -3,  21,  24,      3.0,      0.0,  0.400,  0.600
+    15   # number of casual gains in day type: saturday    
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,   7,      0.0,     10.0,  0.600,  0.400
+   1,   7,  10,    200.0,    100.0,  0.600,  0.400
+   1,  10,  18,     90.0,     60.0,  0.600,  0.400
+   1,  18,  20,    350.0,    200.0,  0.600,  0.400
+   1,  20,  24,     90.0,     50.0,  0.600,  0.400
+  -2,   0,   7,      1.0,      0.0,  0.300,  0.700
+  -2,   7,   9,      5.0,      0.0,  0.300,  0.700
+  -2,   9,  19,      1.0,      0.0,  0.300,  0.700
+  -2,  19,  23,      2.0,      0.0,  0.300,  0.700
+  -2,  23,  24,      1.0,      0.0,  0.300,  0.700
+  -3,   0,   7,      2.0,      0.0,  0.400,  0.600
+  -3,   7,   9,      8.0,      5.0,  0.400,  0.600
+  -3,   9,  16,      4.0,      4.0,  0.400,  0.600
+  -3,  16,  23,      8.0,      6.0,  0.400,  0.600
+  -3,  23,  24,      3.0,      1.0,  0.400,  0.600
+    15   # number of casual gains in day type: sunday      
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,   7,     10.0,     50.0,  0.600,  0.400
+   1,   7,   9,    220.0,    260.0,  0.600,  0.400
+   1,   9,  17,     40.0,     20.0,  0.600,  0.400
+   1,  17,  21,    240.0,    120.0,  0.600,  0.400
+   1,  21,  24,     40.0,     20.0,  0.600,  0.400
+  -2,   0,   8,      1.0,      0.0,  0.300,  0.700
+  -2,   8,  10,      6.0,      0.0,  0.300,  0.700
+  -2,  10,  18,      1.0,      0.0,  0.300,  0.700
+  -2,  18,  22,      7.0,      0.0,  0.300,  0.700
+  -2,  22,  24,      3.0,      0.0,  0.300,  0.700
+  -3,   0,   8,      2.0,      1.0,  0.400,  0.600
+  -3,   8,  10,      9.0,      5.0,  0.400,  0.600
+  -3,  10,  15,      4.0,      4.0,  0.400,  0.600
+  -3,  15,  23,      8.0,      5.0,  0.400,  0.600
+  -3,  23,  24,      3.0,      1.0,  0.400,  0.600
+     3   # number of casual gains in day type: holiday     
+# slot, period, sensible, latent, rad_frac, conv_frac
+   1,   0,  24,      0.0,      0.0,  0.600,  0.400
+  -2,   0,  24,      1.0,      1.0,  0.300,  0.700
+  -3,   0,  24,      2.0,      0.0,  0.400,  0.600

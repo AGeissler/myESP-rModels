@@ -2,8 +2,6 @@
 # This takes model in the folder test_box after the scripts
 # test_tox_register.sh and test_box_dbmanage.sh have been run
 # and adds MLC:
-#  single_glz (for use between buffer & room)
-#  conc_pla_pt (plastered concrete structure partition)
 #  acu_gyp_ptn (acoustic gypboard partition)
 #  apt_conc_cl (ceiling with void & structure)
 #  apt_conc_fl (matched floor with struc and void)
@@ -11,19 +9,24 @@
 # of pt_conc_cl might change (in line 163)
 # the command line needs to include path to esp-r distribution
 VERSION=$1
+echo "  "
+pwd
+echo "  "
 cd test_box/dbs
-mv test_box_a.constrdb- test_box_a.constrdb--
 cp test_box_a.constrdb test_box_a.constrdb-
 cd ../cfg
+echo "  "
 pwd
+echo "  "
 $VERSION/prj -mode text -file test_box_a.cfg<<XXX
 b # database management
 e # MLC
 a # browse
+b # internal partitions
 1 # add
 a # at end of list
 acu_gyp_ptn
-i # change layer
+l # change layer
 y
 f # plaster
 h # white gyp
@@ -44,17 +47,17 @@ h # white gyp
 y
 24
 -
--
 > # save
 y
-y
-a # browse edit
+-
+g # internal ceilings floors
 1 # add
 a # end of list
 apt_conc_cl
-i # change layer
+l # change layer
 y
 d # wood
+0
 u # parquet
 y
 20
@@ -99,25 +102,27 @@ j # ceiling mine
 y
 12.5
 -
--
 > # save
 y
-y
-a # browse edit
 1 # add
 e # copy invert
 0 # page
 0 # page
 f # last page
-a # apt_conc_cl
+w # apt_conc_cl
 -
 apt_conc_fl
+apartment concrete floor
+for medium weight structure
 -
 > # save
 y
 y
 -
 -
+-
+-
 y
 -
 XXX
+cd ../..

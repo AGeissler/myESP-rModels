@@ -1,40 +1,47 @@
 #!/bin/sh
 # This takes model in the folder test_box after the scripts
-# test_tox_register.sh and test_box_dbmanage.sh have been run
+# test_box_register.sh and test_box_dbmanage.sh have been run
 # and adds MLC:
-#  single_glz (for use between buffer & room)
+#  single_glazing (for use between buffer & room)
+#  conc_pla_ptn (concrete plaster partion)
 VERSION=$1
+echo "  "
+pwd
+echo "  "
 cd test_box/dbs
 cp test_box_a.constrdb test_box_a.constrdb-
 cd ../cfg
+echo "  "
 pwd
+echo "  "
 $VERSION/prj -mode text -file test_box_a.cfg<<XXX
 b # database management
 e # MLC
 a # browse
+d # glazing category
 1 # add
 a # at end of list
-single_glz
-i # select the layer
+single_glazing
+l # select the layer
 y # confirm
 m # glass cat
 c # clear float
 y # use it
 6 # thickness
-b # type
+e # type
 b # tmc
-c # optics
+f # optics
 c # pick SCF8783_06nb
 -
 -
 > # save
 y
-y
-a # browse edit
+-
+b # internal partitions
 1 # add
 a # at end of list
 conc_pla_ptn
-i # change to plaster
+l # change to plaster
 y
 f # plaster
 a # dense plaster
@@ -81,9 +88,13 @@ y
 -
 >
 y
-y
+-
+-
 -
 -
 y
 -
 XXX
+pwd
+cd ../..
+pwd

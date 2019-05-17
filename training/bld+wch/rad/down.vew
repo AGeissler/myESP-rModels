@@ -1,0 +1,2 @@
+view= downv  -vtv -vp 2 1.5 50 -vd 0 0 -1 -vu 0 1 0 -vh 90 -vv 90 -vo 48 -va 100 -vs 0 -vl 0
+view= downl  -vtl -vp 2 1.5 50 -vd 0 0 -1 -vu 0 1 0 -vh 10 -vv 10 -vo 48 -va 100 -vs 0 -vl 0

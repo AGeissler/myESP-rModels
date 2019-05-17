@@ -4,8 +4,13 @@
 # and constructions.
 # the command line needs to include path to esp-r distribution
 VERSION=$1
-cd test_box/cfg
+echo "  "
 pwd
+echo "  "
+cd test_box/cfg
+echo "  "
+pwd
+echo "  "
 $VERSION/prj -mode text -file test_box.cfg<<XXX
 b # database management
 - 
@@ -15,7 +20,7 @@ test_box_a
 b
 c # materials
 d # copy default
-
+../dbs/test_box_a.materialdb
 -
 e # MLC
 d # copy default
@@ -26,3 +31,6 @@ d # copy default
 r
 -
 XXX
+echo "  "
+pwd
+echo "  "

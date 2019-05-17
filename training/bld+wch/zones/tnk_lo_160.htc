@@ -1,0 +1,11 @@
+*HC_CTL for zone tnk_lo_160
+*Date,Fri Apr  3 16:41:22 2015
+  1 # number control intervals
+ 14 # number of surfaces
+# (tnk t_tnk edg_2tnk edg_3tnk edg_4tnk edg_5tnk edg_6tnk edg_7tnk edg_8tnk edg_9tnk edg_10tnk edg_11tnk edg_12tnk  )
+# (edg_13tnk)
+  0.00    24.00 # start and end time of interval
+  1 # fixed coefficients calculation control type
+*Doc,User supplied hc values
+ 50.000,299.000,50.000,50.000,50.000,50.000,50.000,50.000,50.000,50.000,50.000,50.000,50.000,50.000
+ -1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000

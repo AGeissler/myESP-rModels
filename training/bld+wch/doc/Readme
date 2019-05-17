@@ -1,0 +1,3 @@
+This exemplar is based on 3BR-highres-wch but with the water-filled zone radiators replaced by an equivalent plant network. The existing water-filled zones are retained and the model is primarily intended as an example of a new plant flow balancing method (see Relative Flow Control.pdf for details). 
+
+Please see the 3BR-highres-wch exemplar for additional documentation with regard to the building and air-flow models.  

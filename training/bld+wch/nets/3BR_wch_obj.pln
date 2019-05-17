@@ -1,0 +1,838 @@
+ESP-r plant file version 2 written on: Wed Mar 13 14:36:27 2019
+# Project title:
+                                                                        
+# Total no. of specified components and simulation type
+   66    2
+#->   1, condensing boiler & ON/OFF control; 2 node model                        
+  boiler            16
+    1        # Component has   1 control variable(s).
+   1.00000000    
+   12
+       50.000     #   1 Component total mass (kg)                                       
+       1000.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.50000E-03 #   3 Full load gas firing rate if boiler on (m^3/s)                  
+       0.0000     #   4 Stand-by gas consumption relative to 1 (-)                      
+      0.35000E+08 #   5 Gas heating value at STP (J/m^3)                                
+      0.86000     #   6 Full load water sided efficiency at Tc (-)                      
+     -0.25000E-02 #   7 Tangent of efficiency curve for Tj < Tc (1/K)                   
+     -0.25000E-03 #   8 Tangent of efficiency curve for Tj > Tc (1/K)                   
+       0.0000     #   9 Stand-by loss at Tj = Te relative to 1 (-)                      
+      0.41000E-03 #  10 Tangent of stand-by loss curve (1/K)                            
+       1.0000     #  11 Normalized start-stop loss (s)                                  
+       90.000     #  12 Upper boiler temperature limit (C)                              
+#->   2, WCH pipe; 1 node model                                                  
+  pipeI             13
+    0        # Component has   0 control variable(s).
+    6
+      0.12200     #   1 Component total mass (kg)                                       
+       2064.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.11520     #   3 UA modulus from wall to environment (W/K)                       
+      0.26200E-01 #   4 Hydraulic diameter of pipe (m)                                  
+      0.10000     #   5 Length of pipe section (m)                                      
+      0.53890E-03 #   6 Cross sectional face area (m^2)                                 
+#->   3, 3-node Flow Branch Diverter Junction - Relative Flow                    
+  SPM              122
+    0        # Component has   0 control variable(s).
+    4
+       2.0000     #   1 Outlet 1 RFF Node                                               
+       3.0000     #   2 Outlet 2 RFF Node                                               
+       1.0000     #   3 Inlet RFF Node                                                  
+       0.0000     #   4 Relative Flow Factor (RFF)                                      
+#->   4, WCH pipe; 1 node model                                                  
+  pipeS11           13
+    0        # Component has   0 control variable(s).
+    6
+       1.7009     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.8108     #   3 UA modulus from wall to environment (W/K)                       
+      0.20200E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       2.0000     #   5 Length of pipe section (m)                                      
+      0.32030E-03 #   6 Cross sectional face area (m^2)                                 
+#->   5, 3-node Flow Branch Diverter Junction - Relative Flow                    
+  SP1              122
+    0        # Component has   0 control variable(s).
+    4
+       999.00     #   1 Outlet 1 RFF Node                                               
+       4.0000     #   2 Outlet 2 RFF Node                                               
+       2.0000     #   3 Inlet RFF Node                                                  
+       1.0000     #   4 Relative Flow Factor (RFF)                                      
+#->   6, WCH pipe; 1 node model                                                  
+  pipe111           13
+    0        # Component has   0 control variable(s).
+    6
+       1.6987     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       2.4693     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       4.0000     #   5 Length of pipe section (m)                                      
+      0.17670E-03 #   6 Cross sectional face area (m^2)                                 
+#->   7, domestic hot water radiator VO ~ 2 m^2; 8 node model                    
+  rad1              18
+    0        # Component has   0 control variable(s).
+   13
+       13.500     #   1 Component total mass (kg)                                       
+       1100.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.3000     #   3 Radiator exponent (-)                                           
+       1000.0     #   4 Nominal heat emission of radiator (W)                           
+       75.000     #   5 Nominal supply temperature (C)                                  
+       65.000     #   6 Nominal exit temperature (C)                                    
+       20.000     #   7 Nominal environment temperature (C)                             
+       1.0000     #   8 Index of coupled building zone (-)                              
+       2.0000     #   9 Number of walls used for defining Te (-)                        
+       3.0000     #  10 Index of 1st wall for defining Te (-)                           
+      0.90000     #  11 Weighting factor 1st wall when defining Te (-)                  
+       8.0000     #  12 Index of 2nd wall for defining Te (-)                           
+      0.10000     #  13 Weighting factor 2nd wall when defining Te (-)                  
+#->   8, mechanical room thermostat; 1 node sensor model                         
+  tstat1            23
+    1        # Component has   1 control variable(s).
+   1.99999996E-02
+    8
+      0.50000E-01 #   1 Component total mass (kg)                                       
+       1000.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.0000     #   3 Index of coupled building zone (-)                              
+       3.0000     #   4 Index of "viewed" wall in that zone (-)                         
+       15.000     #   5 Index of wall on which device is mounted (-)                    
+      0.40000E-01 #   6 Equiv. convective conductance to air (W/K)                      
+      0.10000E-01 #   7 Equiv. radiative conductance to wall 2 (W/K)                    
+      0.10000E-01 #   8 Equiv. radiative conductance to wall 3 (W/K)                    
+#->   9, WCH pipe; 1 node model                                                  
+  pipe112           13
+    0        # Component has   0 control variable(s).
+    6
+       1.6987     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       2.4693     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       4.0000     #   5 Length of pipe section (m)                                      
+      0.17670E-03 #   6 Cross sectional face area (m^2)                                 
+#->  10, WCH pipe converging 2-leg junction; 1 node model                        
+  Conv4             14
+    0        # Component has   0 control variable(s).
+    3
+      0.50000     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.53000     #   3 UA modulus from wall to environment (W/K)                       
+#->  11, WCH pipe; 1 node model                                                  
+  pipeR11           13
+    0        # Component has   0 control variable(s).
+    6
+       1.7009     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.8108     #   3 UA modulus from wall to environment (W/K)                       
+      0.20200E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       2.0000     #   5 Length of pipe section (m)                                      
+      0.32030E-03 #   6 Cross sectional face area (m^2)                                 
+#->  12, WCH pipe; 1 node model                                                  
+  pipeS12           13
+    0        # Component has   0 control variable(s).
+    6
+      0.42520     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.45270     #   3 UA modulus from wall to environment (W/K)                       
+      0.20200E-01 #   4 Hydraulic diameter of pipe (m)                                  
+      0.50000     #   5 Length of pipe section (m)                                      
+      0.32030E-03 #   6 Cross sectional face area (m^2)                                 
+#->  13, 3-node Flow Branch Diverter Valve - Relative Flow                       
+  DV2              123
+    1        # Component has   1 control variable(s).
+   1.00000000    
+    3
+       5.0000     #   1 Outlet 2 RFF Node                                               
+       4.0000     #   2 Inlet RFF Node                                                  
+       0.0000     #   3 Bypass RFF                                                      
+#->  14, WCH pipe; 1 node model                                                  
+  pipe121           13
+    0        # Component has   0 control variable(s).
+    6
+      0.42470     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.61730     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       1.0000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  15, domestic hot water radiator VO ~ 2 m^2; 8 node model                    
+  rad2              18
+    0        # Component has   0 control variable(s).
+   13
+       13.500     #   1 Component total mass (kg)                                       
+       1100.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.3000     #   3 Radiator exponent (-)                                           
+       2000.0     #   4 Nominal heat emission of radiator (W)                           
+       75.000     #   5 Nominal supply temperature (C)                                  
+       65.000     #   6 Nominal exit temperature (C)                                    
+       20.000     #   7 Nominal environment temperature (C)                             
+       3.0000     #   8 Index of coupled building zone (-)                              
+       2.0000     #   9 Number of walls used for defining Te (-)                        
+       18.000     #  10 Index of 1st wall for defining Te (-)                           
+      0.90000     #  11 Weighting factor 1st wall when defining Te (-)                  
+       13.000     #  12 Index of 2nd wall for defining Te (-)                           
+      0.10000     #  13 Weighting factor 2nd wall when defining Te (-)                  
+#->  16, thermostatic radiator valve; 1 node sensor only model                   
+  TRV2             110
+    0        # Component has   0 control variable(s).
+    9
+      0.10000     #   1 Component total mass (kg)                                       
+       1000.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       3.0000     #   3 Index of coupled building zone (-)                              
+       18.000     #   4 Index of coupled wall in that zone (-)                          
+      0.70000E-02 #   5 Thermal conductance water to sensor (W/K)                       
+      0.12000     #   6 Equiv. convective conductance to air (W/K)                      
+      0.60000E-01 #   7 Equiv. radiative conductance to wall (W/K)                      
+      0.60000E-02 #   8 Equiv. rad. conductance to radiator (W/K)                       
+       11.000     #   9 Index of coupled radiator component (-)                         
+#->  17, WCH pipe; 1 node model                                                  
+  pipe122           13
+    0        # Component has   0 control variable(s).
+    6
+      0.42470     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.61730     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       1.0000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  18, WCH pipe converging 2-leg junction; 1 node model                        
+  Conv3             14
+    0        # Component has   0 control variable(s).
+    3
+      0.50000     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.53000     #   3 UA modulus from wall to environment (W/K)                       
+#->  19, WCH pipe; 1 node model                                                  
+  pipeR12           13
+    0        # Component has   0 control variable(s).
+    6
+      0.42520     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.45270     #   3 UA modulus from wall to environment (W/K)                       
+      0.20200E-01 #   4 Hydraulic diameter of pipe (m)                                  
+      0.50000     #   5 Length of pipe section (m)                                      
+      0.32030E-03 #   6 Cross sectional face area (m^2)                                 
+#->  20, WCH pipe; 1 node model                                                  
+  pipeS13           13
+    0        # Component has   0 control variable(s).
+    6
+       1.0617     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.5433     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       2.5000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  21, 3-node Flow Branch Diverter Valve - Relative Flow                       
+  DV3              123
+    1        # Component has   1 control variable(s).
+   1.00000000    
+    3
+       6.0000     #   1 Outlet 2 RFF Node                                               
+       5.0000     #   2 Inlet RFF Node                                                  
+       0.0000     #   3 Bypass RFF                                                      
+#->  22, WCH pipe; 1 node model                                                  
+  pipe131           13
+    0        # Component has   0 control variable(s).
+    6
+      0.21230     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.30870     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+      0.50000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  23, domestic hot water radiator VO ~ 2 m^2; 8 node model                    
+  rad3              18
+    0        # Component has   0 control variable(s).
+   13
+       13.500     #   1 Component total mass (kg)                                       
+       1100.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.3000     #   3 Radiator exponent (-)                                           
+       1500.0     #   4 Nominal heat emission of radiator (W)                           
+       75.000     #   5 Nominal supply temperature (C)                                  
+       65.000     #   6 Nominal exit temperature (C)                                    
+       20.000     #   7 Nominal environment temperature (C)                             
+       4.0000     #   8 Index of coupled building zone (-)                              
+       2.0000     #   9 Number of walls used for defining Te (-)                        
+       2.0000     #  10 Index of 1st wall for defining Te (-)                           
+      0.90000     #  11 Weighting factor 1st wall when defining Te (-)                  
+       7.0000     #  12 Index of 2nd wall for defining Te (-)                           
+      0.10000     #  13 Weighting factor 2nd wall when defining Te (-)                  
+#->  24, thermostatic radiator valve; 1 node sensor only model                   
+  TRV3             110
+    0        # Component has   0 control variable(s).
+    9
+      0.10000     #   1 Component total mass (kg)                                       
+       1000.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       4.0000     #   3 Index of coupled building zone (-)                              
+       2.0000     #   4 Index of coupled wall in that zone (-)                          
+      0.70000E-02 #   5 Thermal conductance water to sensor (W/K)                       
+      0.12000     #   6 Equiv. convective conductance to air (W/K)                      
+      0.60000E-01 #   7 Equiv. radiative conductance to wall (W/K)                      
+      0.60000E-02 #   8 Equiv. rad. conductance to radiator (W/K)                       
+       17.000     #   9 Index of coupled radiator component (-)                         
+#->  25, WCH pipe; 1 node model                                                  
+  pipe132           13
+    0        # Component has   0 control variable(s).
+    6
+      0.21230     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.30870     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+      0.50000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  26, WCH pipe converging 2-leg junction; 1 node model                        
+  Conv2             14
+    0        # Component has   0 control variable(s).
+    3
+      0.50000     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.53000     #   3 UA modulus from wall to environment (W/K)                       
+#->  27, WCH pipe; 1 node model                                                  
+  pipeR13           13
+    0        # Component has   0 control variable(s).
+    6
+       1.0617     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.5433     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       2.5000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  28, WCH pipe; 1 node model                                                  
+  pipeS14           13
+    0        # Component has   0 control variable(s).
+    6
+       1.6987     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       2.4693     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       4.0000     #   5 Length of pipe section (m)                                      
+      0.17670E-03 #   6 Cross sectional face area (m^2)                                 
+#->  29, 3-node Flow Branch Diverter Valve - Relative Flow                       
+  DV4              123
+    1        # Component has   1 control variable(s).
+   1.00000000    
+    3
+       99.000     #   1 Outlet 2 RFF Node                                               
+       6.0000     #   2 Inlet RFF Node                                                  
+       0.0000     #   3 Bypass RFF                                                      
+#->  30, WCH pipe; 1 node model                                                  
+  pipe141           13
+    0        # Component has   0 control variable(s).
+    6
+      0.21230     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.30870     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+      0.50000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  31, domestic hot water radiator VO ~ 2 m^2; 8 node model                    
+  rad4              18
+    0        # Component has   0 control variable(s).
+   13
+       13.500     #   1 Component total mass (kg)                                       
+       1100.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.3000     #   3 Radiator exponent (-)                                           
+       2500.0     #   4 Nominal heat emission of radiator (W)                           
+       75.000     #   5 Nominal supply temperature (C)                                  
+       65.000     #   6 Nominal exit temperature (C)                                    
+       20.000     #   7 Nominal environment temperature (C)                             
+       1.0000     #   8 Index of coupled building zone (-)                              
+       2.0000     #   9 Number of walls used for defining Te (-)                        
+       3.0000     #  10 Index of 1st wall for defining Te (-)                           
+      0.90000     #  11 Weighting factor 1st wall when defining Te (-)                  
+       15.000     #  12 Index of 2nd wall for defining Te (-)                           
+      0.10000     #  13 Weighting factor 2nd wall when defining Te (-)                  
+#->  32, thermostatic radiator valve; 1 node sensor only model                   
+  TRV4             110
+    0        # Component has   0 control variable(s).
+    9
+      0.10000     #   1 Component total mass (kg)                                       
+       1000.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       2.0000     #   3 Index of coupled building zone (-)                              
+       3.0000     #   4 Index of coupled wall in that zone (-)                          
+      0.70000E-02 #   5 Thermal conductance water to sensor (W/K)                       
+      0.12000     #   6 Equiv. convective conductance to air (W/K)                      
+      0.60000E-01 #   7 Equiv. radiative conductance to wall (W/K)                      
+      0.60000E-02 #   8 Equiv. rad. conductance to radiator (W/K)                       
+       23.000     #   9 Index of coupled radiator component (-)                         
+#->  33, WCH pipe; 1 node model                                                  
+  pipe142           13
+    0        # Component has   0 control variable(s).
+    6
+      0.21230     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.30870     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+      0.50000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  34, WCH pipe; 1 node model                                                  
+  pipeS21           13
+    0        # Component has   0 control variable(s).
+    6
+       4.2524     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       4.5270     #   3 UA modulus from wall to environment (W/K)                       
+      0.20200E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       5.0000     #   5 Length of pipe section (m)                                      
+      0.32030E-03 #   6 Cross sectional face area (m^2)                                 
+#->  35, 3-node Flow Branch Diverter Valve - Relative Flow                       
+  DV5              123
+    1        # Component has   1 control variable(s).
+   1.00000000    
+    3
+       7.0000     #   1 Outlet 2 RFF Node                                               
+       3.0000     #   2 Inlet RFF Node                                                  
+       0.0000     #   3 Bypass RFF                                                      
+#->  36, WCH pipe; 1 node model                                                  
+  pipe211           13
+    0        # Component has   0 control variable(s).
+    6
+       1.6987     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       2.4693     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       4.0000     #   5 Length of pipe section (m)                                      
+      0.17670E-03 #   6 Cross sectional face area (m^2)                                 
+#->  37, domestic hot water radiator VO ~ 2 m^2; 8 node model                    
+  rad5              18
+    0        # Component has   0 control variable(s).
+   13
+       13.500     #   1 Component total mass (kg)                                       
+       1100.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.3000     #   3 Radiator exponent (-)                                           
+       1000.0     #   4 Nominal heat emission of radiator (W)                           
+       75.000     #   5 Nominal supply temperature (C)                                  
+       65.000     #   6 Nominal exit temperature (C)                                    
+       20.000     #   7 Nominal environment temperature (C)                             
+       9.0000     #   8 Index of coupled building zone (-)                              
+       2.0000     #   9 Number of walls used for defining Te (-)                        
+       3.0000     #  10 Index of 1st wall for defining Te (-)                           
+      0.90000     #  11 Weighting factor 1st wall when defining Te (-)                  
+       7.0000     #  12 Index of 2nd wall for defining Te (-)                           
+      0.10000     #  13 Weighting factor 2nd wall when defining Te (-)                  
+#->  38, thermostatic radiator valve; 1 node sensor only model                   
+  TRV5             110
+    0        # Component has   0 control variable(s).
+    9
+      0.10000     #   1 Component total mass (kg)                                       
+       1000.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       9.0000     #   3 Index of coupled building zone (-)                              
+       3.0000     #   4 Index of coupled wall in that zone (-)                          
+      0.70000E-02 #   5 Thermal conductance water to sensor (W/K)                       
+      0.12000     #   6 Equiv. convective conductance to air (W/K)                      
+      0.60000E-01 #   7 Equiv. radiative conductance to wall (W/K)                      
+      0.60000E-02 #   8 Equiv. rad. conductance to radiator (W/K)                       
+       30.000     #   9 Index of coupled radiator component (-)                         
+#->  39, WCH pipe; 1 node model                                                  
+  pipe212           13
+    0        # Component has   0 control variable(s).
+    6
+       1.6987     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       2.4693     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       4.0000     #   5 Length of pipe section (m)                                      
+      0.17670E-03 #   6 Cross sectional face area (m^2)                                 
+#->  40, WCH pipe converging 2-leg junction; 1 node model                        
+  Conv8             14
+    0        # Component has   0 control variable(s).
+    3
+      0.50000     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.53000     #   3 UA modulus from wall to environment (W/K)                       
+#->  41, WCH pipe; 1 node model                                                  
+  pipeR21           13
+    0        # Component has   0 control variable(s).
+    6
+       4.2524     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       4.5270     #   3 UA modulus from wall to environment (W/K)                       
+      0.20200E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       5.0000     #   5 Length of pipe section (m)                                      
+      0.32030E-03 #   6 Cross sectional face area (m^2)                                 
+#->  42, WCH pipe; 1 node model                                                  
+  pipeS22           13
+    0        # Component has   0 control variable(s).
+    6
+      0.42520     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.45270     #   3 UA modulus from wall to environment (W/K)                       
+      0.20200E-01 #   4 Hydraulic diameter of pipe (m)                                  
+      0.50000     #   5 Length of pipe section (m)                                      
+      0.32030E-03 #   6 Cross sectional face area (m^2)                                 
+#->  43, 3-node Flow Branch Diverter Valve - Relative Flow                       
+  DV6              123
+    1        # Component has   1 control variable(s).
+   1.00000000    
+    3
+       8.0000     #   1 Outlet 2 RFF Node                                               
+       7.0000     #   2 Inlet RFF Node                                                  
+       0.0000     #   3 Bypass RFF                                                      
+#->  44, WCH pipe; 1 node model                                                  
+  pipe221           13
+    0        # Component has   0 control variable(s).
+    6
+      0.42470     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.61730     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       1.0000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  45, domestic hot water radiator VO ~ 2 m^2; 8 node model                    
+  rad6              18
+    0        # Component has   0 control variable(s).
+   13
+       13.500     #   1 Component total mass (kg)                                       
+       1100.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.3000     #   3 Radiator exponent (-)                                           
+       1500.0     #   4 Nominal heat emission of radiator (W)                           
+       75.000     #   5 Nominal supply temperature (C)                                  
+       65.000     #   6 Nominal exit temperature (C)                                    
+       20.000     #   7 Nominal environment temperature (C)                             
+       6.0000     #   8 Index of coupled building zone (-)                              
+       2.0000     #   9 Number of walls used for defining Te (-)                        
+       3.0000     #  10 Index of 1st wall for defining Te (-)                           
+      0.90000     #  11 Weighting factor 1st wall when defining Te (-)                  
+       16.000     #  12 Index of 2nd wall for defining Te (-)                           
+      0.10000     #  13 Weighting factor 2nd wall when defining Te (-)                  
+#->  46, thermostatic radiator valve; 1 node sensor only model                   
+  TRV6             110
+    0        # Component has   0 control variable(s).
+    9
+      0.10000     #   1 Component total mass (kg)                                       
+       1000.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       6.0000     #   3 Index of coupled building zone (-)                              
+       3.0000     #   4 Index of coupled wall in that zone (-)                          
+      0.70000E-02 #   5 Thermal conductance water to sensor (W/K)                       
+      0.12000     #   6 Equiv. convective conductance to air (W/K)                      
+      0.60000E-01 #   7 Equiv. radiative conductance to wall (W/K)                      
+      0.60000E-02 #   8 Equiv. rad. conductance to radiator (W/K)                       
+       36.000     #   9 Index of coupled radiator component (-)                         
+#->  47, WCH pipe; 1 node model                                                  
+  pipe222           13
+    0        # Component has   0 control variable(s).
+    6
+      0.42470     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.61730     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       1.0000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  48, WCH pipe converging 2-leg junction; 1 node model                        
+  Conv7             14
+    0        # Component has   0 control variable(s).
+    3
+      0.50000     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.53000     #   3 UA modulus from wall to environment (W/K)                       
+#->  49, WCH pipe; 1 node model                                                  
+  pipeR22           13
+    0        # Component has   0 control variable(s).
+    6
+      0.42520     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.45270     #   3 UA modulus from wall to environment (W/K)                       
+      0.20200E-01 #   4 Hydraulic diameter of pipe (m)                                  
+      0.50000     #   5 Length of pipe section (m)                                      
+      0.32030E-03 #   6 Cross sectional face area (m^2)                                 
+#->  50, WCH pipe; 1 node model                                                  
+  pipeS23           13
+    0        # Component has   0 control variable(s).
+    6
+       2.1233     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       3.0866     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       5.0000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  51, 3-node Flow Branch Diverter Valve - Relative Flow                       
+  DV7              123
+    1        # Component has   1 control variable(s).
+   1.00000000    
+    3
+       9.0000     #   1 Outlet 2 RFF Node                                               
+       8.0000     #   2 Inlet RFF Node                                                  
+       0.0000     #   3 Bypass RFF                                                      
+#->  52, WCH pipe; 1 node model                                                  
+  pipe231           13
+    0        # Component has   0 control variable(s).
+    6
+      0.42470     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.61730     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       1.0000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  53, domestic hot water radiator VO ~ 2 m^2; 8 node model                    
+  rad7              18
+    0        # Component has   0 control variable(s).
+   13
+       13.500     #   1 Component total mass (kg)                                       
+       1100.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.3000     #   3 Radiator exponent (-)                                           
+       1000.0     #   4 Nominal heat emission of radiator (W)                           
+       75.000     #   5 Nominal supply temperature (C)                                  
+       65.000     #   6 Nominal exit temperature (C)                                    
+       20.000     #   7 Nominal environment temperature (C)                             
+       8.0000     #   8 Index of coupled building zone (-)                              
+       2.0000     #   9 Number of walls used for defining Te (-)                        
+       8.0000     #  10 Index of 1st wall for defining Te (-)                           
+      0.90000     #  11 Weighting factor 1st wall when defining Te (-)                  
+       12.000     #  12 Index of 2nd wall for defining Te (-)                           
+      0.10000     #  13 Weighting factor 2nd wall when defining Te (-)                  
+#->  54, thermostatic radiator valve; 1 node sensor only model                   
+  TRV7             110
+    0        # Component has   0 control variable(s).
+    9
+      0.10000     #   1 Component total mass (kg)                                       
+       1000.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       8.0000     #   3 Index of coupled building zone (-)                              
+       8.0000     #   4 Index of coupled wall in that zone (-)                          
+      0.70000E-02 #   5 Thermal conductance water to sensor (W/K)                       
+      0.12000     #   6 Equiv. convective conductance to air (W/K)                      
+      0.60000E-01 #   7 Equiv. radiative conductance to wall (W/K)                      
+      0.60000E-02 #   8 Equiv. rad. conductance to radiator (W/K)                       
+       42.000     #   9 Index of coupled radiator component (-)                         
+#->  55, WCH pipe; 1 node model                                                  
+  pipe232           13
+    0        # Component has   0 control variable(s).
+    6
+      0.42470     #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.61730     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       1.0000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  56, WCH pipe converging 2-leg junction; 1 node model                        
+  Conv6             14
+    0        # Component has   0 control variable(s).
+    3
+      0.50000     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.53000     #   3 UA modulus from wall to environment (W/K)                       
+#->  57, WCH pipe; 1 node model                                                  
+  pipeR23           13
+    0        # Component has   0 control variable(s).
+    6
+       2.1233     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       3.0866     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       5.0000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  58, WCH pipe; 1 node model                                                  
+  pipeS24           13
+    0        # Component has   0 control variable(s).
+    6
+      0.42500E-01 #   1 Component total mass (kg)                                       
+       1685.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.61700E-01 #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+      0.10000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  59, 3-node Flow Branch Diverter Valve - Relative Flow                       
+  DV8              123
+    1        # Component has   1 control variable(s).
+   1.00000000    
+    3
+       99.000     #   1 Outlet 2 RFF Node                                               
+       9.0000     #   2 Inlet RFF Node                                                  
+       0.0000     #   3 Bypass RFF                                                      
+#->  60, WCH pipe; 1 node model                                                  
+  pipe241           13
+    0        # Component has   0 control variable(s).
+    6
+      0.84930     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.2346     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       2.0000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  61, domestic hot water radiator VO ~ 2 m^2; 8 node model                    
+  rad8              18
+    0        # Component has   0 control variable(s).
+   13
+       13.500     #   1 Component total mass (kg)                                       
+       1100.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.3000     #   3 Radiator exponent (-)                                           
+       1000.0     #   4 Nominal heat emission of radiator (W)                           
+       75.000     #   5 Nominal supply temperature (C)                                  
+       65.000     #   6 Nominal exit temperature (C)                                    
+       20.000     #   7 Nominal environment temperature (C)                             
+       7.0000     #   8 Index of coupled building zone (-)                              
+       2.0000     #   9 Number of walls used for defining Te (-)                        
+       2.0000     #  10 Index of 1st wall for defining Te (-)                           
+      0.90000     #  11 Weighting factor 1st wall when defining Te (-)                  
+       6.0000     #  12 Index of 2nd wall for defining Te (-)                           
+      0.10000     #  13 Weighting factor 2nd wall when defining Te (-)                  
+#->  62, thermostatic radiator valve; 1 node sensor only model                   
+  TRV8             110
+    0        # Component has   0 control variable(s).
+    9
+      0.10000     #   1 Component total mass (kg)                                       
+       1000.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       7.0000     #   3 Index of coupled building zone (-)                              
+       2.0000     #   4 Index of coupled wall in that zone (-)                          
+      0.70000E-02 #   5 Thermal conductance water to sensor (W/K)                       
+      0.12000     #   6 Equiv. convective conductance to air (W/K)                      
+      0.60000E-01 #   7 Equiv. radiative conductance to wall (W/K)                      
+      0.60000E-02 #   8 Equiv. rad. conductance to radiator (W/K)                       
+       48.000     #   9 Index of coupled radiator component (-)                         
+#->  63, WCH pipe; 1 node model                                                  
+  pipe242           13
+    0        # Component has   0 control variable(s).
+    6
+      0.84930     #   1 Component total mass (kg)                                       
+       1817.0     #   2 Mass weighted average specific heat (J/kgK)                     
+       1.2346     #   3 UA modulus from wall to environment (W/K)                       
+      0.13600E-01 #   4 Hydraulic diameter of pipe (m)                                  
+       2.0000     #   5 Length of pipe section (m)                                      
+      0.14530E-03 #   6 Cross sectional face area (m^2)                                 
+#->  64, WCH pipe converging 2-leg junction; 1 node model                        
+  Conv9             14
+    0        # Component has   0 control variable(s).
+    3
+      0.75000     #   1 Component total mass (kg)                                       
+       2064.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.74600     #   3 UA modulus from wall to environment (W/K)                       
+#->  65, WCH pipe; 1 node model                                                  
+  pipeO             13
+    0        # Component has   0 control variable(s).
+    6
+      0.12200     #   1 Component total mass (kg)                                       
+       2064.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.11520     #   3 UA modulus from wall to environment (W/K)                       
+      0.26200E-01 #   4 Hydraulic diameter of pipe (m)                                  
+      0.10000     #   5 Length of pipe section (m)                                      
+      0.53890E-03 #   6 Cross sectional face area (m^2)                                 
+#->  66, variable speed domestic WCH pump; 1 node model                          
+  pump              15
+    1        # Component has   1 control variable(s).
+   7.30000262E-04
+    6
+       5.0000     #   1 Component total mass (kg)                                       
+       2250.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.20000     #   3 UA modulus from wall to environment (W/K)                       
+       1.0000     #   4 Rated total absorbed power (W)                                  
+      0.73000E-03 #   5 Rated volume flow rate (m^3/s)                                  
+      0.70000     #   6 Overall efficiency (-)                                          
+# The following is a list of component connections.
+ 65          # Total number of connections
+# receiving       node  conncn sending          node  diversion  suppl1   suppl2
+# component              type  component                ratio
+  boiler            1     3     pump              1    1.000                 #  1
+  pipeI             1     3     boiler            2    1.000                 #  2
+  SPM               1     3     pipeI             1    1.000                 #  3
+  pipeS21           1     3     SPM               3    1.000                 #  4
+  pipeS11           1     3     SPM               2    1.000                 #  5
+  SP1               1     3     pipeS11           1    1.000                 #  6
+  pipe111           1     3     SP1               2    1.000                 #  7
+  rad1              1     3     pipe111           1    1.000                 #  8
+  pipe112           1     3     rad1              8    1.000                 #  9
+  Conv4             1     3     pipe112           1    1.000                 # 10
+  pipeS12           1     3     SP1               3    1.000                 # 11
+  DV2               1     3     pipeS12           1    1.000                 # 12
+  pipe121           1     3     DV2               2    1.000                 # 13
+  rad2              1     3     pipe121           1    1.000                 # 14
+  pipe122           1     3     rad2              8    1.000                 # 15
+  Conv3             1     3     pipe122           1    1.000                 # 16
+  pipeS13           1     3     DV2               3    1.000                 # 17
+  DV3               1     3     pipeS13           1    1.000                 # 18
+  pipe131           1     3     DV3               2    1.000                 # 19
+  rad3              1     3     pipe131           1    1.000                 # 20
+  pipe132           1     3     rad3              8    1.000                 # 21
+  Conv2             1     3     pipe132           1    1.000                 # 22
+  pipeS14           1     3     DV3               3    1.000                 # 23
+  DV4               1     3     pipeS14           1    1.000                 # 24
+  pipe141           1     3     DV4               2    1.000                 # 25
+  rad4              1     3     pipe141           1    1.000                 # 26
+  pipe142           1     3     rad4              8    1.000                 # 27
+  Conv2             1     3     pipe142           1    1.000                 # 28
+  pipeR13           1     3     Conv2             1    1.000                 # 29
+  Conv3             1     3     pipeR13           1    1.000                 # 30
+  pipeR12           1     3     Conv3             1    1.000                 # 31
+  Conv4             1     3     pipeR12           1    1.000                 # 32
+  pipeR11           1     3     Conv4             1    1.000                 # 33
+  Conv9             1     3     pipeR11           1    1.000                 # 34
+  DV5               1     3     pipeS21           1    1.000                 # 35
+  pipe211           1     3     DV5               2    1.000                 # 36
+  rad5              1     3     pipe211           1    1.000                 # 37
+  pipe212           1     3     rad5              8    1.000                 # 38
+  Conv8             1     3     pipe212           1    1.000                 # 39
+  pipeS22           1     3     DV5               3    1.000                 # 40
+  DV6               1     3     pipeS22           1    1.000                 # 41
+  pipe221           1     3     DV6               2    1.000                 # 42
+  rad6              1     3     pipe221           1    1.000                 # 43
+  pipe222           1     3     rad6              8    1.000                 # 44
+  Conv7             1     3     pipe222           1    1.000                 # 45
+  pipeS23           1     3     DV6               3    1.000                 # 46
+  DV7               1     3     pipeS23           1    1.000                 # 47
+  pipe231           1     3     DV7               2    1.000                 # 48
+  rad7              1     3     pipe231           1    1.000                 # 49
+  pipe232           1     3     rad7              8    1.000                 # 50
+  Conv6             1     3     pipe232           1    1.000                 # 51
+  pipeS24           1     3     DV7               3    1.000                 # 52
+  DV8               1     3     pipeS24           1    1.000                 # 53
+  pipe241           1     3     DV8               2    1.000                 # 54
+  rad8              1     3     pipe241           1    1.000                 # 55
+  pipe242           1     3     rad8              8    1.000                 # 56
+  Conv6             1     3     pipe242           1    1.000                 # 57
+  pipeR23           1     3     Conv6             1    1.000                 # 58
+  Conv7             1     3     pipeR23           1    1.000                 # 59
+  pipeR22           1     3     Conv7             1    1.000                 # 60
+  Conv8             1     3     pipeR22           1    1.000                 # 61
+  pipeR21           1     3     Conv8             1    1.000                 # 62
+  Conv9             1     3     pipeR21           1    1.000                 # 63
+  pipeO             1     3     Conv9             1    1.000                 # 64
+  pump              1     3     pipeO             1    1.000                 # 65
+# The following is a list of containment temperatures.
+ 50          # Total number of containments
+# Component       cont type        suppl1     suppl2    suppl3
+  boiler              3             4.00000   0.00000   0.00000
+  pipeI               3             4.00000   0.00000   0.00000
+  pipeS11             2            18.00000   0.00000   0.00000
+  pipeS12             2            18.00000   0.00000   0.00000
+  pipeS13             2            18.00000   0.00000   0.00000
+  pipeS14             2            18.00000   0.00000   0.00000
+  pipeR11             2            18.00000   0.00000   0.00000
+  pipeR12             2            18.00000   0.00000   0.00000
+  pipeR13             2            18.00000   0.00000   0.00000
+  pipe111             2            18.00000   0.00000   0.00000
+  pipe112             2            18.00000   0.00000   0.00000
+  pipe121             2            18.00000   0.00000   0.00000
+  pipe122             2            18.00000   0.00000   0.00000
+  pipe131             2            18.00000   0.00000   0.00000
+  pipe132             2            18.00000   0.00000   0.00000
+  pipe141             2            18.00000   0.00000   0.00000
+  pipe142             2            18.00000   0.00000   0.00000
+  SPM                 2            18.00000   0.00000   0.00000
+  SP1                 2            18.00000   0.00000   0.00000
+  DV2                 2            18.00000   0.00000   0.00000
+  DV3                 2            18.00000   0.00000   0.00000
+  DV4                 2            18.00000   0.00000   0.00000
+  Conv2               2            18.00000   0.00000   0.00000
+  Conv3               2            18.00000   0.00000   0.00000
+  Conv4               2            18.00000   0.00000   0.00000
+  pipeS21             2            18.00000   0.00000   0.00000
+  pipeS22             2            18.00000   0.00000   0.00000
+  pipeS23             2            18.00000   0.00000   0.00000
+  pipeS24             2            18.00000   0.00000   0.00000
+  pipeR21             2            18.00000   0.00000   0.00000
+  pipeR22             2            18.00000   0.00000   0.00000
+  pipeR23             2            18.00000   0.00000   0.00000
+  pipe211             2            18.00000   0.00000   0.00000
+  pipe212             2            18.00000   0.00000   0.00000
+  pipe221             2            18.00000   0.00000   0.00000
+  pipe222             2            18.00000   0.00000   0.00000
+  pipe231             2            18.00000   0.00000   0.00000
+  pipe232             2            18.00000   0.00000   0.00000
+  pipe241             2            18.00000   0.00000   0.00000
+  pipe242             2            18.00000   0.00000   0.00000
+  DV5                 2            18.00000   0.00000   0.00000
+  DV6                 2            18.00000   0.00000   0.00000
+  DV7                 2            18.00000   0.00000   0.00000
+  DV8                 2            18.00000   0.00000   0.00000
+  Conv6               2            18.00000   0.00000   0.00000
+  Conv7               2            18.00000   0.00000   0.00000
+  Conv8               2            18.00000   0.00000   0.00000
+  Conv9               2            18.00000   0.00000   0.00000
+  pipeO               2            18.00000   0.00000   0.00000
+  pump                2            18.00000   0.00000   0.00000
+# No mass flow network defined.
+    0

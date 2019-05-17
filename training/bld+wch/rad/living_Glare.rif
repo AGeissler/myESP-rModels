@@ -1,0 +1,22 @@
+# Radiance RIF file: living_Glare.rif
+#e2r_gen_view   1  2
+#e2r_glaz_type   1
+view= lounge -vtv -vp 5 4.2 1.6 -vd 0.55 -0.83 0 -vu 0 0 1 -vh 110 -vv 110 -vo 0 -va 0 -vs 0 -vl 0
+scene= living_Glare.sky
+scene= living_Glare-glz.rad
+scene= living_Glare.mat
+scene= living_Glare-out.rad
+scene= living_Glare-in.rad
+UP= Z
+QUALITY= Medium
+DETAIL= Medium
+VARIABILITY= High  
+RESOLUTION=   800
+INDIRECT=  2
+PENUMBRAS= True 
+REPORT=    1
+render= -av 0 0 0
+ZONE= Interior     3.40    7.20    0.65    4.83    0.20    2.70
+OPTFILE= living_Glare.opt
+OCTREE= living_Glare.oct
+PICTURE= living_Glare

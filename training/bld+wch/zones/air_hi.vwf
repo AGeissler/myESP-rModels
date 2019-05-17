@@ -1,0 +1,18 @@
+# zone viewfactors and MRT sensor definition of air_hi
+# defined in ../zones/air_hi.vwf
+*VIEWFACTORS
+*GEOM  ../zones/air_hi.geo
+   0   6  30   # numb mrt sensors, numb zone surfs, zone index
+# Zone viewfactors follow
+ 0.00,0.92424,0.0240405,0.0136973,0.0241851,0.0138863
+ 0.92428,0.00,0.0240405,0.0138863,0.0241475,0.0136973
+ 0.46925,0.46928,0.00,0.0238361,0.0170839,0.0206395
+ 0.44991,0.44916,0.0449192,0.00,0.0483627,0.0077329
+ 0.46925,0.46930,0.0170839,0.0206651,0.00,0.0237949
+ 0.44916,0.44991,0.0483627,0.0077329,0.0449192,0.00
+ sum over row  1 is :   1.0000492334
+ sum over row  2 is :   1.0000516176
+ sum over row  3 is :   1.0000894070
+ sum over row  4 is :   1.0000847578
+ sum over row  5 is :   1.0000939369
+ sum over row  6 is :   1.0000848770
