@@ -14,10 +14,13 @@ h
 b # cooling
 b # temperatures
 a # zone db
+-
 b
 e # zone resultant
+-
 b
 d # zone control pt
+-
 -
 -
 d # enquire
@@ -28,7 +31,7 @@ f
 b # ventilation
 m
 a # real power
-m
+k
 b # reactive power
 j
 b # convective casual gains
@@ -86,6 +89,7 @@ a
 b # frequency
 b # of temperatures
 a # zone db
+-
 y
 >
 -

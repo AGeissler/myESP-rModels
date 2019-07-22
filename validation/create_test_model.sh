@@ -11,26 +11,49 @@ echo "  "
 echo "  "
 echo "Setting up model databases..."
 echo "  "
-sleep 5
+sleep 4
 ./test_box_dbmanage.sh $VERSION
 echo "  "
 echo "  "
 echo "Adding glazing to MLC database..."
 echo "  "
-sleep 5
+sleep 4
 ./test_box_dbmadd_sg.sh $VERSION
 echo "  "
 echo "  "
 echo "Adding partitions to database..."
 echo "  "
-sleep 5
+sleep 4
 ./test_box_dbmadd_ptn.sh $VERSION
 echo "  "
 echo "  "
 echo "Creating and attributing a zone..."
 echo "  "
-sleep 5
+sleep 4
 ./test_box_create_zone.sh $VERSION
 echo "  "
 echo "  "
+echo "Create and associate controls..."
+echo "  "
+sleep 4
+./test_box_define_control.sh $VERSION
+echo "  "
+echo "Create flow network..."
+echo "  "
+sleep 4
+./test_box_flow.sh $VERSION
+echo "  "
+echo "  "
 echo "You can now work with the model in test_box/cfg/test_box_a.cfg"
+echo "or test_box/cfg/test_box_m.cfg (with a flow network)."
+echo "  "
+echo "Create model variant for later editing..."
+echo "  "
+sleep 4
+./test_box_variant.sh $VERSION
+echo "  "
+echo "Edit the left surface..."
+echo "  "
+sleep 4
+./test_box_edit.sh $VERSION
+
