@@ -35,7 +35,7 @@ standard plant comp        plantc.db1
 standard event profiles    profiles.db2.a
 optical properties         ../dbs/stone_1890.opticdb
 standard UK NCM data       SBEM.db1
-predefined objects         /home/jon/esru_jwh13b/databases/predefined.db1
+predefined objects         predefined.db1
 standard mould isopleth    mould.db1
 -------------------------  --------------------
  

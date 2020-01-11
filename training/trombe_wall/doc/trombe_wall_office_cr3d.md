@@ -44,11 +44,11 @@ An Integrated Performance View is incomplete or missing.
  
 -------------------------  --------------------
 standard pressure distr    pressc.db1
-standard materials         material.db4.a
+standard materials         material.db
 constructions              ../dbs/trombe_wall_office.constrdb
 standard plant comp        plantc.db1
 standard event profiles    profiles.db2.a
-standard optical prop      optics.db2
+standard optical prop      optics.db
 standard UK NCM data       SBEM.db1
 standard predefined obj    predefined.db1
 standard mould isopleth    mould.db1
@@ -58,8 +58,6 @@ standard mould isopleth    mould.db1
  
 The model includes ideal controls -
 vents closed unless trombe  upper is warmer than office
-                                                                                                                        
-                                                                                                                        
         
  
  Flow control includes  4 loops.

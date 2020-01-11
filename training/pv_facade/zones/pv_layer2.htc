@@ -1,6 +1,11 @@
-   1 # number control intervals
-   9 # number of constructions
+*HC_CTL for zone pv_layer2
+*Date,Mon Nov 18 12:01:34 2019
+*Days,  1
+  1 # number control intervals for all day types
+  9 # number of surfaces
+# (Surf-1 Surf-2 Surf-3 Surf-4 Surf-5 Surf-6 pv_base_fm pv1-glaz pv_glaz2)
   0.00    24.00 # start and end time of interval
-   1 # calculation control type
- 7.0  7.0  7.0  7.0  7.0  7.0  7.0  7.0  7.0
--1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0 -1.0
+  1 # fixed coefficients calculation control type
+*Doc,Imported legacy file with no regime docs.
+ 7.0000,7.0000,7.0000,7.0000,7.0000,7.0000,7.0000,7.0000,7.0000
+ -1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000,-1.0000

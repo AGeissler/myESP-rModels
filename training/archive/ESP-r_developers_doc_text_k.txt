@@ -1564,10 +1564,10 @@ presented after the listing in Figure 1.
 *journal,OFF
 *editor,editor,nedit
 *report_gen,Reporting tool,xfs
-*exemplars,Exemplars,/Users/jon/esru_prj_dev/esp-r/training/exemplars
-*validation_stds,Validation standards,/Users/jon/esru_prj_dev/esp-r/validation/stds_list
-*db_defaults,Defaults,/Users/jon/esru_prj_dev/esp-r/default
-*db_climates,climatelist,/Users/jon/esru_prj_dev/esp-r/climate/climatelist
+*exemplars,Exemplars,/opt/esp-r/training/exemplars
+*validation_stds,Validation standards,/opt/esp-r/validation/stds_list
+*db_defaults,Defaults,/opt/esp-r/default
+*db_climates,climatelist,/opt/esp-r/climate/climatelist
 *end
 
 .ES
@@ -1652,26 +1652,26 @@ given at the time.
 .ML
 
 *ESP-r Defaults
-*ipth /Users/jon/esru_prj_dev/esp-r
-*cfg /Users/jon/esru_prj_dev/esp-r/training/basic/cfg/bld_basic.cfg
-*ctl /Users/jon/esru_prj_dev/esp-r/training/basic/ctl/bld_basic.ctl
-*mfn /Users/jon/esru_prj_dev/esp-r/training/basic/networks/bld_basic_af1.afn
-*dfd /Users/jon/esru_prj_dev/esp-r/training/cfd/template.dfd
-*pnf /Users/jon/esru_prj_dev/esp-r/training/plant/vent_simple/cfg/vent.cfg
-*res /Users/jon/esru_prj_dev/esp-r/databases/test.res
-*mfr /Users/jon/esru_prj_dev/esp-r/databases/test.mfr
-*clm /Users/jon/esru_prj_dev/esp-r/climate/clm67
-*prs /Users/jon/esru_prj_dev/esp-r/databases/pressc.db1
-*prm /Users/jon/esru_prj_dev/esp-r/databases/material.db3.a
-*mlc /Users/jon/esru_prj_dev/esp-r/databases/multicon.db3
-*opt /Users/jon/esru_prj_dev/esp-r/databases/optics.db2
-*evn /Users/jon/esru_prj_dev/esp-r/databases/profiles.db2
-*pdb /Users/jon/esru_prj_dev/esp-r/databases/plantc.db1
-*ecdb /Users/jon/esru_prj_dev/esp-r/databases/elcomp.db1
-*mcdb /Users/jon/esru_prj_dev/esp-r/databases/mscomp.db1
-*icdb /Users/jon/esru_prj_dev/esp-r/databases/icons.db1
-*mldb /Users/jon/esru_prj_dev/esp-r/databases/mould.db1
-*sbem /Users/jon/esru_prj_dev/esp-r/databases/SBEM.db1
+*ipth /opt/esp-r
+*cfg /opt/esp-r/training/basic/cfg/bld_basic.cfg
+*ctl /opt/esp-r/training/basic/ctl/bld_basic.ctl
+*mfn /opt/esp-r/training/basic/networks/bld_basic_af1.afn
+*dfd /opt/esp-r/training/cfd/template.dfd
+*pnf /opt/esp-r/training/plant/vent_simple/cfg/vent.cfg
+*res /opt/esp-r/databases/test.res
+*mfr /opt/esp-r/databases/test.mfr
+*clm /opt/esp-r/climate/clm67
+*prs /opt/esp-r/databases/pressc.db1
+*prm /opt/esp-r/databases/material.db
+*mlc /opt/esp-r/databases/multicon.db
+*opt /opt/esp-r/databases/optics.db
+*evn /opt/esp-r/databases/profiles.db2
+*pdb /opt/esp-r/databases/plantc.db1
+*ecdb /opt/esp-r/databases/elcomp.db1
+*mcdb /opt/esp-r/databases/mscomp.db1
+*icdb /opt/esp-r/databases/icons.db1
+*mldb /opt/esp-r/databases/mould.db1
+*sbem /opt/esp-r/databases/SBEM.db1
 *end
 
 .ES

@@ -1,6 +1,7 @@
 *HC_CTL for zone rad_kit
-*Date,Thu Jan 17 14:30:52 2019
-  1 # number control intervals
+*Date,Mon Nov 18 12:01:34 2019
+*Days,  1
+  1 # number control intervals for all day types
  24 # number of surfaces
 # (base_rad top_rad edg_2rad edg_3rad edg_4rad edg_5rad edg_6rad edg_7rad edg_8rad edg_9rad edg_10rad edg_11rad  )
 # (edg_12rad edg_13rad edg_14rad edg_15rad edg_16rad edg_17rad edg_18rad edg_19rad edg_20rad edg_21rad edg_22rad  )

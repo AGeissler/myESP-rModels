@@ -213,21 +213,9 @@
 *cfg	C:\esp-r\training\office_vent_pre\cfg\office_vent_pre_3D.cfg
 *root	C:\esp-r\training\office_vent_pre
 *item
-*name	Single bedroom timber bungalow
-*cfg	C:\esp-r\training\1BR_bungalow\cfg\1BR_bungalow_p1m_avg.cfg
-*root	C:\esp-r\training\1BR_bungalow
-*item
-*name	Two bedroom timber bungalow
-*cfg	C:\esp-r\training2BR_bungalow\cfg\2BR_bungalow_p1m_avg.cfg
-*root	C:\esp-r\training\2BR_bungalow
-*item
 *name	Three bedroom 1930s rendered concrete block bungalow
 *cfg	C:\esp-r\training\3BR_block_bungalow\cfg\3BR_block_bung_p1m_avg.cfg
 *root	C:\esp-r\training\3BR_block_bungalow
-*item
-*name	Three bedroom simi-detached timber-kit 1980s
-*cfg	C:\esp-r\training\3BR_semi_timber85\cfg\3BR_semi_timber_p1m_avg.cfg
-*root	C:\esp-r\training\3BR_semi_timber85
 *item
 *name	1890s traditional stone upper level apartment
 *cfg	C:\esp-r\training\stone_simi_1890\cfg\stone_simi_1890.cfg
@@ -288,10 +276,6 @@
 *name	flow network equivalent of blower-door test
 *cfg    C:\esp-r\training\blower_test\cfg\blower_test.cfg
 *root	C:\esp-r\training\blower_test
-*item
-*name	... graphic flow network
-*cfg    C:\esp-r\training\3_windows\cfg\3_windows_3D.cfg
-*root	C:\esp-r\training\3_windows
 *item
 *group	systems + control
 *help	These models demonstrate plant modelling.

@@ -1,4 +1,4 @@
-* Shading and insolation data in db ../zones/reception.shd                                                  
+* Shading and insolation data in file ../zones/reception.shd                                                  
   1 14 # zone index & number of surfaces
 * month: `Jan`
 24 hour external surface shading
@@ -61,7 +61,7 @@
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 21
-surfaces insolated by source  1 glz_s        # hourly columns, ranking via rows
+surfaces insolated by source   1 glz_s        # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 -1 6 6 6 9 9 9 3 14 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 7 7 9 6 6 6 2 2 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 13 13 7 0 3 11 14 11 -1 -1 -1 -1 -1 -1 -1 -1
@@ -83,7 +83,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-surfaces insolated by source  2 east_glz     # hourly columns, ranking via rows
+surfaces insolated by source   2 east_glz     # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 -1 5 4 9 9 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 12 9 4 4 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1
@@ -166,7 +166,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 21
-surfaces insolated by source  1 glz_s        # hourly columns, ranking via rows
+surfaces insolated by source   1 glz_s        # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 7 7 9 9 9 9 9 9 2 14 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 13 6 6 6 6 6 2 2 14 2 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 0 13 7 7 0 0 6 14 3 0 -1 -1 -1 -1 -1 -1 -1
@@ -188,7 +188,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-surfaces insolated by source  2 east_glz     # hourly columns, ranking via rows
+surfaces insolated by source   2 east_glz     # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 5 12 9 9 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 6 5 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 12 9 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1
@@ -271,7 +271,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 21
-surfaces insolated by source  1 glz_s        # hourly columns, ranking via rows
+surfaces insolated by source   1 glz_s        # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 7 13 9 9 9 9 9 9 9 2 2 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 13 7 13 13 0 0 0 2 2 9 14 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 0 9 7 7 0 0 0 0 14 14 0 -1 -1 -1 -1 -1 -1 -1
@@ -293,7 +293,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-surfaces insolated by source  2 east_glz     # hourly columns, ranking via rows
+surfaces insolated by source   2 east_glz     # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 7 6 9 9 9 9 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 6 5 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 0 9 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1
@@ -376,7 +376,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 21
-surfaces insolated by source  1 glz_s        # hourly columns, ranking via rows
+surfaces insolated by source   1 glz_s        # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 0 7 9 9 9 9 9 9 9 9 9 2 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 0 0 7 7 13 0 0 0 0 2 2 9 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 0 0 0 13 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1
@@ -398,7 +398,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-surfaces insolated by source  2 east_glz     # hourly columns, ranking via rows
+surfaces insolated by source   2 east_glz     # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 7 9 9 9 9 9 9 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 13 0 5 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1
@@ -481,7 +481,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 21
-surfaces insolated by source  1 glz_s        # hourly columns, ranking via rows
+surfaces insolated by source   1 glz_s        # hourly columns, ranking via rows
 -1 -1 -1 -1 0 0 0 0 0 9 9 9 9 9 0 0 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
@@ -503,7 +503,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-surfaces insolated by source  2 east_glz     # hourly columns, ranking via rows
+surfaces insolated by source   2 east_glz     # hourly columns, ranking via rows
 -1 -1 -1 -1 10 9 9 9 9 9 9 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
@@ -586,7 +586,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 21
-surfaces insolated by source  1 glz_s        # hourly columns, ranking via rows
+surfaces insolated by source   1 glz_s        # hourly columns, ranking via rows
 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1
 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1
 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1
@@ -608,7 +608,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-surfaces insolated by source  2 east_glz     # hourly columns, ranking via rows
+surfaces insolated by source   2 east_glz     # hourly columns, ranking via rows
 -1 -1 -1 10 1 9 9 9 9 9 9 9 0 0 0 0 0 0 0 0 -1 -1 -1 -1
 -1 -1 -1 1 10 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1
 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1
@@ -691,7 +691,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 21
-surfaces insolated by source  1 glz_s        # hourly columns, ranking via rows
+surfaces insolated by source   1 glz_s        # hourly columns, ranking via rows
 -1 -1 -1 -1 0 0 0 0 0 0 9 9 9 0 0 0 0 0 0 0 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1
@@ -713,7 +713,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-surfaces insolated by source  2 east_glz     # hourly columns, ranking via rows
+surfaces insolated by source   2 east_glz     # hourly columns, ranking via rows
 -1 -1 -1 -1 10 9 9 9 9 9 9 9 0 0 0 0 0 0 0 0 -1 -1 -1 -1
 -1 -1 -1 -1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1
@@ -796,7 +796,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 21
-surfaces insolated by source  1 glz_s        # hourly columns, ranking via rows
+surfaces insolated by source   1 glz_s        # hourly columns, ranking via rows
 -1 -1 -1 -1 0 0 0 9 9 9 9 9 9 9 9 9 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 0 7 0 0 0 0 0 2 0 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
@@ -818,7 +818,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-surfaces insolated by source  2 east_glz     # hourly columns, ranking via rows
+surfaces insolated by source   2 east_glz     # hourly columns, ranking via rows
 -1 -1 -1 -1 10 7 9 9 9 9 9 9 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 1 9 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
 -1 -1 -1 -1 0 13 0 0 0 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1
@@ -901,7 +901,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 21
-surfaces insolated by source  1 glz_s        # hourly columns, ranking via rows
+surfaces insolated by source   1 glz_s        # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 0 7 9 9 9 9 9 9 9 9 2 2 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 0 13 13 13 13 0 0 0 2 2 9 0 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 0 9 7 7 7 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1
@@ -923,7 +923,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-surfaces insolated by source  2 east_glz     # hourly columns, ranking via rows
+surfaces insolated by source   2 east_glz     # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 13 9 9 9 9 9 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 7 7 5 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 0 6 6 0 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1
@@ -1006,7 +1006,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 21
-surfaces insolated by source  1 glz_s        # hourly columns, ranking via rows
+surfaces insolated by source   1 glz_s        # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 13 7 9 9 9 9 9 9 9 2 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 7 13 7 7 0 0 2 2 2 14 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 0 9 13 0 0 0 0 14 14 0 -1 -1 -1 -1 -1 -1 -1 -1
@@ -1028,7 +1028,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-surfaces insolated by source  2 east_glz     # hourly columns, ranking via rows
+surfaces insolated by source   2 east_glz     # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 6 5 9 9 9 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 5 12 5 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 0 6 12 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1
@@ -1111,7 +1111,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 21
-surfaces insolated by source  1 glz_s        # hourly columns, ranking via rows
+surfaces insolated by source   1 glz_s        # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 7 6 6 9 9 9 9 3 14 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 6 7 9 6 6 6 3 14 2 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 13 13 7 12 0 3 2 2 3 -1 -1 -1 -1 -1 -1 -1 -1
@@ -1133,7 +1133,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-surfaces insolated by source  2 east_glz     # hourly columns, ranking via rows
+surfaces insolated by source   2 east_glz     # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 12 5 9 9 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 5 9 4 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1
@@ -1216,7 +1216,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 24 hour internal surface insolation
 record offsets # to each insolation source (marked by non-zero)
 0 0 0 0 0 0 0 0 0 1 0 0 0 21
-surfaces insolated by source  1 glz_s        # hourly columns, ranking via rows
+surfaces insolated by source   1 glz_s        # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 -1 6 6 6 9 9 3 3 -1 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 7 7 9 6 6 9 14 -1 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 13 5 12 0 11 4 11 -1 -1 -1 -1 -1 -1 -1 -1 -1
@@ -1238,7 +1238,7 @@ matched surface insolation factors # hourly columns, ranking via rows
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000 0.000
-surfaces insolated by source  2 east_glz     # hourly columns, ranking via rows
+surfaces insolated by source   2 east_glz     # hourly columns, ranking via rows
 -1 -1 -1 -1 -1 -1 -1 -1 5 4 4 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 0 9 9 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1
 -1 -1 -1 -1 -1 -1 -1 -1 0 0 0 0 0 0 0 -1 -1 -1 -1 -1 -1 -1 -1 -1

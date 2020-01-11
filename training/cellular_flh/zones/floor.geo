@@ -39,15 +39,15 @@ floor is a thin zone representing piping for floor heating
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,edge_s,VERT,-,-,-,extern_wall,OPAQUE,SIMILAR,00,00  #   1 ||< identical environment
-*surf,edge_e,VERT,-,-,-,structure,OPAQUE,SIMILAR,00,00  #   2 ||< identical environment
-*surf,edge_n,VERT,-,-,-,structure,OPAQUE,SIMILAR,00,00  #   3 ||< identical environment
-*surf,edge_w,VERT,-,-,-,structure,OPAQUE,SIMILAR,00,00  #   4 ||< identical environment
-*surf,Surf-6,FLOR,-,-,-,structure,OPAQUE,CONSTANT,20,00  #   5 ||< constant @ 20dC &   0W rad
-*surf,floor_ma,CEIL,-,-,-,screed_rev,OPAQUE,ANOTHER,01,06  #   6 ||< floor:manager_a
-*surf,floor_mb,CEIL,-,-,-,screed_rev,OPAQUE,ANOTHER,02,06  #   7 ||< floor:manager_b
-*surf,floor_cor,CEIL,-,-,-,screed_rev,OPAQUE,ANOTHER,03,05  #   8 ||< floor:corridor
-*surf,filler,CEIL,-,-,-,screed_rev,OPAQUE,ADIABATIC,0,0  #   9 ||< adiabatic
+*surf,edge_s,VERT,-,-,-,brk_aer_block_wall,OPAQUE,SIMILAR,00,00  #   1 ||< identical environment
+*surf,edge_e,VERT,-,-,-,structure100mm,OPAQUE,SIMILAR,00,00  #   2 ||< identical environment
+*surf,edge_n,VERT,-,-,-,structure100mm,OPAQUE,SIMILAR,00,00  #   3 ||< identical environment
+*surf,edge_w,VERT,-,-,-,structure100mm,OPAQUE,SIMILAR,00,00  #   4 ||< identical environment
+*surf,Surf-6,FLOR,-,-,-,structure100mm,OPAQUE,CONSTANT,20,00  #   5 ||< constant @ 20dC &   0W rad
+*surf,floor_ma,CEIL,-,-,-,slate_screed_rev,OPAQUE,ANOTHER,01,06  #   6 ||< floor:manager_a
+*surf,floor_mb,CEIL,-,-,-,slate_screed_rev,OPAQUE,ANOTHER,02,06  #   7 ||< floor:manager_b
+*surf,floor_cor,CEIL,-,-,-,slate_screed_rev,OPAQUE,ANOTHER,03,05  #   8 ||< floor:corridor
+*surf,filler,CEIL,-,-,-,slate_screed_rev,OPAQUE,ADIABATIC,0,0  #   9 ||< adiabatic
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

@@ -2,14 +2,14 @@ Ideal control for dual office model. Weekdays normal office hours, saturday redu
 * Building
 The floor_below zone is controlled to the temperature of the suspended ceiling zone (to act as a boundary). The boundary_up zone is controlled to the mean temperature of manager_a and manager_b.
    4  # No. of functions
-* Control function
+* Control function    1
 # senses the temperature of the current zone.
     0    0    0    0  # sensor data
 # actuates air point of the current zone
     0    0    0  # actuator data
-    0 # No. day types
+    0 # day types follow calendar  3
     1  365  # valid Sun-01-Jan - Sun-31-Dec
-     3  # No. of periods in day
+     3  # No. of periods in day: weekdays    
     0    1   0.000  # ctl type, law (basic control), start @
       7.  # No. of data items
   2500.000 0.000 2500.000 0.000 15.000 26.000 0.000
@@ -20,7 +20,7 @@ The floor_below zone is controlled to the temperature of the suspended ceiling z
       7.  # No. of data items
   2500.000 0.000 2500.000 0.000 15.000 26.000 0.000
     1  365  # valid Sun-01-Jan - Sun-31-Dec
-     3  # No. of periods in day
+     3  # No. of periods in day: saturday    
     0    1   0.000  # ctl type, law (basic control), start @
       7.  # No. of data items
   2500.000 0.000 2500.000 0.000 15.000 26.000 0.000
@@ -30,40 +30,40 @@ The floor_below zone is controlled to the temperature of the suspended ceiling z
     0    2  17.000  # ctl type, law (free floating), start @
       0.  # No. of data items
     1  365  # valid Sun-01-Jan - Sun-31-Dec
-     1  # No. of periods in day
+     1  # No. of periods in day: sunday      
     0    1   0.000  # ctl type, law (basic control), start @
       7.  # No. of data items
   2500.000 0.000 2500.000 0.000 10.000 30.000 0.000
-* Control function
+* Control function    2
 # senses dry bulb temperature in floor_below.
     4    0    0    0  # sensor data
 # actuates the air point in floor_below.
     4    0    0  # actuator data
-    1 # No. day types
+    1  # all daytypes
     1  365  # valid Sun-01-Jan - Sun-31-Dec
-     1  # No. of periods in day
+     1  # No. of periods in day: weekdays    
     0   11   0.000  # ctl type, law (senses dry bulb temperature in ceiling_abv.), start @
      12.  # No. of data items
   2000.000 0.000 2000.000 0.000 1.000 3.000 5.000 0.000 0.000 0.000 1.000 0.000
-* Control function
+* Control function    3
 # senses dry bulb temperature in boundary_up.
     6    0    0    0  # sensor data
 # actuates the air point in boundary_up.
     6    0    0  # actuator data
-    1 # No. day types
+    1  # all daytypes
     1  365  # valid Sun-01-Jan - Sun-31-Dec
-     1  # No. of periods in day
+     1  # No. of periods in day: weekdays    
     0   11   0.000  # ctl type, law (senses dry bulb temperature in manager_a.), start @
      16.  # No. of data items
   2000.000 0.000 2000.000 0.000 2.000 3.000 1.000 0.000 0.000 0.000 2.000 0.000 0.000 0.000 1.000 0.000
-* Control function
+* Control function    4
 # senses the temperature of the current zone.
     0    0    0    0  # sensor data
 # actuates air point of the current zone
     0    0    0  # actuator data
-    0 # No. day types
+    0 # day types follow calendar  3
     1  365  # valid Sun-01-Jan - Sun-31-Dec
-     3  # No. of periods in day
+     3  # No. of periods in day: weekdays    
     0    1   0.000  # ctl type, law (basic control), start @
       7.  # No. of data items
   2500.000 0.000 2500.000 0.000 16.000 26.000 0.000
@@ -74,7 +74,7 @@ The floor_below zone is controlled to the temperature of the suspended ceiling z
       7.  # No. of data items
   2500.000 0.000 2500.000 0.000 16.000 26.000 0.000
     1  365  # valid Sun-01-Jan - Sun-31-Dec
-     3  # No. of periods in day
+     3  # No. of periods in day: saturday    
     0    1   0.000  # ctl type, law (basic control), start @
       7.  # No. of data items
   2500.000 0.000 2500.000 0.000 15.000 26.000 0.000
@@ -84,7 +84,7 @@ The floor_below zone is controlled to the temperature of the suspended ceiling z
     0    2  17.000  # ctl type, law (free floating), start @
       0.  # No. of data items
     1  365  # valid Sun-01-Jan - Sun-31-Dec
-     1  # No. of periods in day
+     1  # No. of periods in day: sunday      
     0    1   0.000  # ctl type, law (basic control), start @
       7.  # No. of data items
   2500.000 0.000 2500.000 0.000 10.000 30.000 0.000

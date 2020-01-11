@@ -55,17 +55,17 @@ floor_void is a 200mm floor void
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,man_floor,CEIL,-,-,-,top_pln,OPAQUE,ANOTHER,01,06  #   1 ||< floor:manager
-*surf,gen_floor,CEIL,-,-,-,top_pln,OPAQUE,ANOTHER,02,08  #   2 ||< floor:general
-*surf,conf_floor,CEIL,-,-,-,top_pln,OPAQUE,ANOTHER,03,06  #   3 ||< floor:conference
-*surf,recep_floor,CEIL,-,-,-,top_pln,OPAQUE,ANOTHER,04,16  #   4 ||< floor:reception
+*surf,man_floor,CEIL,-,-,-,raised_flr_ovr_pln,OPAQUE,ANOTHER,01,06  #   1 ||< floor:manager
+*surf,gen_floor,CEIL,-,-,-,raised_flr_ovr_pln,OPAQUE,ANOTHER,02,08  #   2 ||< floor:general
+*surf,conf_floor,CEIL,-,-,-,raised_flr_ovr_pln,OPAQUE,ANOTHER,03,06  #   3 ||< floor:conference
+*surf,recep_floor,CEIL,-,-,-,raised_flr_ovr_pln,OPAQUE,ANOTHER,04,16  #   4 ||< floor:reception
 *surf,front,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   5 ||< external
 *surf,right,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   6 ||< external
 *surf,back,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   7 ||< external
 *surf,left_a,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,SIMILAR,00,00  #   8 ||< identical environment
 *surf,back_a,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,SIMILAR,00,00  #   9 ||< identical environment
 *surf,left_b,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,SIMILAR,00,00  #  10 ||< identical environment
-*surf,Base,FLOR,-,-,-,conc_250,OPAQUE,ANOTHER,08,01  #  11 ||< structure:ceiling_belo
+*surf,Base,FLOR,-,-,-,conc_slab_250mm,OPAQUE,ANOTHER,08,01  #  11 ||< structure:ceiling_belo
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

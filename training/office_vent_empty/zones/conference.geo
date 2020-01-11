@@ -102,7 +102,7 @@ conference describes a conference room for 10-12
 #  boundary condition tag followed by two data items
 *surf,pt_next_off,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,SIMILAR,00,00  #   1 ||< identical environment
 *surf,pt_recp_b,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,04,06  #   2 ||< pt_recp_b:reception
-*surf,fict_open,VERT,-,-,-,fict,SC_fictit,ANOTHER,04,05  #   3 ||< fict_open:reception
+*surf,fict_open,VERT,-,-,-,fictitious,SC_fictit,ANOTHER,04,05  #   3 ||< fict_open:reception
 *surf,pt_recp_a,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,04,04  #   4 ||< pt_recp_a:reception
 *surf,ceiling,CEIL,-,-,-,ceiling,OPAQUE,ANOTHER,05,03  #   5 ||< ceil_conff:ceil_void
 *surf,floor,FLOR,-,-,-,flr_ov_pln,OPAQUE,ANOTHER,07,03  #   6 ||< conf_floor:floor_void

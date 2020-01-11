@@ -40,7 +40,7 @@ ceil_below is ceiling below floor void as boundary condition
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,structure,CEIL,-,-,-,conc_250,OPAQUE,ANOTHER,07,11  #   1 ||< Base:floor_void
+*surf,structure,CEIL,-,-,-,conc_slab_250mm,OPAQUE,ANOTHER,07,11  #   1 ||< Base:floor_void
 *surf,front,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   2 ||< external
 *surf,right,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   3 ||< external
 *surf,back,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   4 ||< external

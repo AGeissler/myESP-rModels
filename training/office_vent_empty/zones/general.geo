@@ -117,7 +117,7 @@ general describes an open plan with 4 desks
 *surf,door,VERT,-,-,-,door,OPAQUE,ANOTHER,01,03  #   1 ||< door:manager
 *surf,pt_mgrs,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,01,01  #   2 ||< pt_general:manager
 *surf,pt_rec_a,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,04,03  #   3 ||< pt_rec_a:reception
-*surf,fict_rec,VERT,-,-,-,fict,SC_fictit,ANOTHER,04,02  #   4 ||< fict_rec:reception
+*surf,fict_rec,VERT,-,-,-,fictitious,SC_fictit,ANOTHER,04,02  #   4 ||< fict_rec:reception
 *surf,pt_core_a,VERT,-,-,-,gyp_blk_ptn,OPAQUE,SIMILAR,00,00  #   5 ||< identical environment
 *surf,fire_door,VERT,-,-,-,door,OPAQUE,SIMILAR,00,00  #   6 ||< identical environment
 *surf,ceiling,CEIL,-,-,-,ceiling,OPAQUE,ANOTHER,05,02  #   7 ||< ceiling:ceil_void

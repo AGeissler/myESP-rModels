@@ -1,5 +1,5 @@
 *connections for bld_basic_gb3
-*Date Tue Nov 29 09:38:14 2016
+*Date Mon Sep 30 11:11:14 2019
      29   # number of connections
    1   1   0   0   0  #    1 south in reception is External
    1   2   0   0   0  #    2 east in reception is External

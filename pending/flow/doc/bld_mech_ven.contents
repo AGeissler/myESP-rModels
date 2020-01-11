@@ -102,11 +102,11 @@ Zones: reception office roof_space
  
 Databases associated with the model:
  standard pressure distr: pressc.db1
- standard materials     : material.db4.a
- standard constructions : multicon.db5
+ standard materials     : material.db
+ standard constructions : multicon.db
  plant components       : ../dbs/plantf.db1
  standard event profiles: profiles.db2.a
- standard optical prop  : optics.db2
+ standard optical prop  : optics.db
  standard UK NCM data   : SBEM.db1
  standard predefined obj: predefined.db1
  standard mould isopleth: mould.db1

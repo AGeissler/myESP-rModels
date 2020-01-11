@@ -1,5 +1,5 @@
 *connections for office_for_doctor_flow
-*Date Thu Dec  1 08:06:04 2016
+*Date Tue Oct 29 15:09:21 2019
      23   # number of connections
    1   1   3   2   5  #    1 partn_a in reception >|< partn_a in examination
    1   2   3   2   6  #    2 partn_b in reception >|< partn_b in examination

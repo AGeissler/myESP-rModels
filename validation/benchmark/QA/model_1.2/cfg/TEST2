@@ -1,8 +1,7 @@
 #!/bin/sh
-# Main script to test the ESRU integrated simulator.
+# Alternative script to briefly test the ESRU integrated simulator.
 
-VERSION="/usr/esru/esp-r/bin"
-VERSION="/home/jon/esru_multicon5/esp-r/bin"
+VERSION="/opt/esp-r/bin"
 
 #### Link appropriate shading file
 cd ../cfg

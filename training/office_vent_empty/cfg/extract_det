@@ -22,6 +22,7 @@ a # nearest 100wh
 c # hours above
 b # temperatures
 e # resultant
+-
 23.0
 -
 d
@@ -29,6 +30,7 @@ d
 b # occupants
 b # temperatures
 e # resultant
+-
 17.0
 +
 > # switch back to screen

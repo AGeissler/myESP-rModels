@@ -28,7 +28,7 @@ h # USE
 0 # page
 s # window
 -
-b
+b # crack
 y
 -
 -
@@ -48,11 +48,9 @@ c # scan attributes
 minimal network with door crack frame vent crack
 a # accept
 ../nets/test_box_m.3dafn
-n
--
-y
-
-y
+n # summary
+- # exit menu
+y # save
 u # QA report
 n
 a

@@ -1,5 +1,5 @@
 *Operations 2.1
-*date Tue Mar 14 10:40:46 2017  # latest file modification 
+*date Tue Oct 22 09:05:54 2019  # latest file modification 
 # operations of manager_ASH defined in: 
 # ../zones/manager_ASH.opr
 manager a has some diversity of occupancy (ASHRAE polynomial) lights at 10W/m2 and small power on weekdays at 5W/m2

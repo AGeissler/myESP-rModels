@@ -24,12 +24,12 @@ boundary_up is a boundary zone above suspended ceiling
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,base,FLOR,-,-,-,structure,OPAQUE,ANOTHER,05,05  #   1 ||< upper:ceiling_abv
+*surf,base,FLOR,-,-,-,structure100mm,OPAQUE,ANOTHER,05,05  #   1 ||< upper:ceiling_abv
 *surf,t_upper,CEIL,-,-,-,ceiling,OPAQUE,CONSTANT,20,00  #   2 ||< constant @ 20dC &   0W rad
 *surf,edg_2upper,VERT,-,-,-,insul_frame,OPAQUE,SIMILAR,00,00  #   3 ||< identical environment
 *surf,edg_3upper,VERT,-,-,-,insul_frame,OPAQUE,SIMILAR,00,00  #   4 ||< identical environment
 *surf,edg_4upper,VERT,-,-,-,insul_frame,OPAQUE,SIMILAR,00,00  #   5 ||< identical environment
-*surf,edg_5upper,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   6 ||< external
+*surf,edg_5upper,VERT,-,-,-,brk_aer_block_wall,OPAQUE,EXTERIOR,0,0  #   6 ||< external
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

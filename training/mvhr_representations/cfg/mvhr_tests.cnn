@@ -1,5 +1,5 @@
 *connections for mvhr_testsa
-*Date Wed Dec  7 11:02:47 2016
+*Date Tue Oct 29 13:51:41 2019
      88   # number of connections
    1   1   3   2   4  #    1 pt_general in manager >|< pt_other in man_redinf
    1   2   1   0   0  #    2 part_frame in manager >|< Identical environment
