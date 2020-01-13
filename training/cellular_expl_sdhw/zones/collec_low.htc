@@ -1,6 +1,7 @@
 *HC_CTL for zone collec_low
-*Date,Tue Mar 24 09:25:48 2015
-  1 # number control intervals
+*Date,Mon Nov 18 12:01:34 2019
+*Days,  1
+  1 # number control intervals for all day types
   6 # number of surfaces
 # (plate_l t_plate_l edg_2plate_l edg_3plate_l edg_4plate_l edg_5plate_l)
   0.00    24.00 # start and end time of interval

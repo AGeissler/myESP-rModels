@@ -1,7 +1,8 @@
 *HC_CTL for zone Test_2
-*Date,Sat Oct 18 22:07:34 2008
-   1 # number control intervals
-   7 # number of surfaces
+*Date,Mon Nov 18 12:01:34 2019
+*Days,  1
+  1 # number control intervals for all day types
+  7 # number of surfaces
 # (South East North West Ceiling Floor window)
   0.00    24.00 # start and end time of interval
    4 # CEN calculation control type

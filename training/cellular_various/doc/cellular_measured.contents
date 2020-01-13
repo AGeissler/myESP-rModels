@@ -105,8 +105,8 @@ Databases associated with the model:
  standard event profiles: profiles.db2.a
  standard optical prop  : optics.db2
  standard UK NCM data   : SBEM.db1
- predefined objects     : /home/jon/esru_v13.2.11/databases/predefined.db1
- mould isopleths        : /home/jon/esru_jwh_res/databases/mould.db1
+ predefined objects     : predefined.db1
+ mould isopleths        : mould.db1
  
  ____________________________________________________________
  

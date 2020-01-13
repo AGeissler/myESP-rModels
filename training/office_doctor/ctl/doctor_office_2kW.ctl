@@ -7,7 +7,7 @@ reception occupant 80W with diversitz during the day max to 400 W. Lighting at 1
     0    0    0    0  # sensor data
 # actuates air point of the current zone
     0    0    0  # actuator data
-    0 # No. day types
+    0 # day types follow calendar  3
     1  365  # valid Mon-01-Jan - Mon-31-Dec
      6  # No. of periods in day: weekdays    
     0    1   0.000  # ctl type, law (basic control), start @

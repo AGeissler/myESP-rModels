@@ -59,8 +59,8 @@ corridor describes passage adjacent to offices
 *surf,right,VERT,-,-,-,door,OPAQUE,SIMILAR,00,00  #   1 ||< identical environment
 *surf,wall,VERT,-,-,-,gyp_blk_ptn,OPAQUE,SIMILAR,00,00  #   2 ||< identical environment
 *surf,left,VERT,-,-,-,door,OPAQUE,SIMILAR,00,00  #   3 ||< identical environment
-*surf,ceiling,CEIL,-,-,-,ceiling_scrd,OPAQUE,ANOTHER,05,08  #   4 ||< floor_cor:ceiling_slb
-*surf,floor,FLOR,-,-,-,screed,OPAQUE,ANOTHER,04,08  #   5 ||< floor_cor:floor
+*surf,ceiling,CEIL,-,-,-,upper_scrd,OPAQUE,ANOTHER,05,08  #   4 ||< floor_cor:ceiling_slb
+*surf,floor,FLOR,-,-,-,slate_screed,OPAQUE,ANOTHER,04,08  #   5 ||< floor_cor:floor
 *surf,door,VERT,-,-,-,door,OPAQUE,ANOTHER,01,03  #   6 ||< door:manager_a
 *surf,ptn_corid,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,01,11  #   7 ||< ptn_corid:manager_a
 *surf,part_frame,VERT,-,-,-,insul_frame,OPAQUE,ANOTHER,01,02  #   8 ||< part_frame:manager_a

@@ -1,6 +1,7 @@
 *HC_CTL for zone rad_dining_m
-*Date,Thu Jan 17 14:33:40 2019
-  1 # number control intervals
+*Date,Mon Nov 18 12:01:34 2019
+*Days,  1
+  1 # number control intervals for all day types
  12 # number of surfaces
 # (face_m right_m back_am back_bm fin_am fin_bm fin_cm fin_dm back_cm left_m rad_top_m rad_base_m)
   0.00    24.00 # start and end time of interval

@@ -1,5 +1,5 @@
 *Operations 2.1
-*date Fri Jan 15 16:09:15 2016  # latest file modification 
+*date Wed Dec  4 10:12:58 2019  # latest file modification 
 # operations of floor_void defined in: 
 # ../zones/floor_void.opr
 The zone has no infiltration or ventilation from other zones in the model and no control imposed on air movement.
@@ -23,16 +23,19 @@ Nothing happens in this zone in terms of occupants lights and small power. Initi
 *end_type 
      3   # number of casual gains in day type: weekday     
 # slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
    1,   0,  24,      0.0,      0.0,  0.600,  0.400
    2,   0,  24,      0.0,      0.0,  0.300,  0.700
    3,   0,  24,      0.0,      0.0,  0.400,  0.600
      3   # number of casual gains in day type: saturday    
 # slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
    1,   0,  24,      0.0,      0.0,  0.600,  0.400
    2,   0,  24,      0.0,      0.0,  0.300,  0.700
    3,   0,  24,      0.0,      0.0,  0.400,  0.600
      3   # number of casual gains in day type: sunday      
 # slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
    1,   0,  24,      0.0,      0.0,  0.600,  0.400
    2,   0,  24,      0.0,      0.0,  0.300,  0.700
    3,   0,  24,      0.0,      0.0,  0.400,  0.600

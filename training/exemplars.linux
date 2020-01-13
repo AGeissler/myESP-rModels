@@ -222,21 +222,9 @@
 *cfg	/opt/esp-r/training/office_vent_pre/cfg/office_vent_pre_3D.cfg
 *root	/opt/esp-r/training/office_vent_pre
 *item
-*name	Single bedroom timber bungalow
-*cfg	/opt/esp-r/training/1BR_bungalow/cfg/1BR_bungalow_p1m_avg.cfg
-*root	/opt/esp-r/training/1BR_bungalow
-*item
-*name	Two bedroom timber bungalow
-*cfg	/opt/esp-r/training/2BR_bungalow/cfg/2BR_bungalow_p1m_avg.cfg
-*root	/opt/esp-r/training/2BR_bungalow
-*item
 *name	Three bedroom 1930s rendered concrete block bungalow
 *cfg	/opt/esp-r/training/3BR_block_bungalow/cfg/3BR_block_bung_p1m_avg.cfg
 *root	/opt/esp-r/training/3BR_block_bungalow
-*item
-*name	Three bedroom simi-detached timber-kit 1980s
-*cfg	/opt/esp-r/training/3BR_semi_timber85/cfg/3BR_semi_timber_p1m_avg.cfg
-*root	/opt/esp-r/training/3BR_semi_timber85
 *item
 *name	1890s traditional stone upper level apartment
 *cfg	/opt/esp-r/training/stone_simi_1890/cfg/stone_simi_1890.cfg
@@ -297,10 +285,6 @@
 *name   radiant heating system
 *cfg    /opt/esp-r/training/cfd/rad_htg/cfg/rad_htg.cfg
 *root	/opt/esp-r/training/cfd/rad_htg
-*item
-*name	... alternative window flow definitions
-*cfg    /opt/esp-r/training/3_windows/cfg/3_windows_3D.cfg
-*root	/opt/esp-r/training/3_windows
 *item
 *group	systems + control
 *help	These models demonstrate plant modelling.

@@ -1,49 +1,56 @@
-*Operations 1.0
-*date Thu Jul 29 17:33:03 2004  # latest file modification 
+*Operations 2.1
+*date Tue Oct 29 14:18:00 2019  # latest file modification 
 # operations of general defined in: 
 # ../zones/general.opr
 5 people std occup ramping up from 7-9am half occupants on saturday, 8Wm2 lights 10Wm2 small power weekdays and Saturdays, nothing Sunday
 # control(no control of air flow  ), low mid & high setpoints 
    0     0.000     0.000     0.000
-     1   # no Weekday flow periods
-# Wkd: start, stop, infil, ventil, source, data
+     1   # number of flow periods in day type: weekday     
+# start, stop, infil, ventil, source, data
    0, 24,    0.330    0.000    0    0.000
-     1   # no Saturday flow periods
-# Sat: start, stop, infil, ventil, source, data
+     1   # number of flow periods in day type: saturday    
+# start, stop, infil, ventil, source, data
    0, 24,    0.330    0.000    0    0.000
-     1   # no Sunday flow periods 
-# Sun: start, stop, infil, ventil, source, data
+     1   # number of flow periods in day type: sunday      
+# start, stop, infil, ventil, source, data
    0, 24,    0.330    0.000    0    0.000
-    13   # no Weekday casual gains 
-# Wkd: type, start, stop, sens, latent, rad_frac, conv_frac
-    1,   0,   7,      0.0,      0.0, 0.500, 0.500
-    1,   7,   8,    100.0,     60.0, 0.500, 0.500
-    1,   8,   9,    300.0,    180.0, 0.500, 0.500
-    1,   9,  12,    500.0,    300.0, 0.500, 0.500
-    1,  12,  14,    325.0,    195.0, 0.500, 0.500
-    1,  14,  17,    500.0,    300.0, 0.500, 0.500
-    1,  17,  24,      0.0,      0.0, 0.500, 0.500
-   -2,   0,   8,      0.0,      0.0, 0.500, 0.500
-   -2,   8,  18,      8.0,      0.0, 0.500, 0.500
-   -2,  18,  24,      0.0,      0.0, 0.500, 0.500
-   -3,   0,   8,      0.0,      0.0, 0.500, 0.500
-   -3,   8,  18,     10.0,      0.0, 0.500, 0.500
-   -3,  18,  24,      0.0,      0.0, 0.500, 0.500
-    13   # no Saturday casual gains 
-# Sat: type, start, stop, sens, latent, rad_frac, conv_frac
-    1,   0,   7,      0.0,      0.0, 0.500, 0.500
-    1,   7,   8,     40.0,      0.0, 0.500, 0.500
-    1,   8,   9,    120.0,      0.0, 0.500, 0.500
-    1,   9,  12,    200.0,      0.0, 0.500, 0.500
-    1,  12,  14,    130.0,      0.0, 0.500, 0.500
-    1,  14,  17,    200.0,      0.0, 0.500, 0.500
-    1,  17,  24,      0.0,      0.0, 0.500, 0.500
-   -2,   0,   8,      0.0,      0.0, 0.500, 0.500
-   -2,   8,  18,      8.0,      0.0, 0.500, 0.500
-   -2,  18,  24,      0.0,      0.0, 0.500, 0.500
-   -3,   0,   8,      0.0,      0.0, 0.500, 0.500
-   -3,   8,  18,      5.0,      0.0, 0.500, 0.500
-   -3,  18,  24,      0.0,      0.0, 0.500, 0.500
-     0   # no Sunday casual gains 
-# Labels for gain types 
- Occupt Lights Equipt
+*casual
+5 people std occup ramping up from 7-9am half occupants on saturday, 8Wm2 lights 10Wm2 small power weekdays and Saturdays, nothing Sunday
+# casual user-label type-key-word slot attributes
+*type Occupt       people            1  0  0
+*type Lights       lighting          2  0  0
+*type Equipt       equipment         3  0  0
+*end_type 
+    13   # number of casual gains in day type: weekday     
+# slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
+   1,   0,   7,      0.0,      0.0,  0.500,  0.500
+   1,   7,   8,    100.0,     60.0,  0.500,  0.500
+   1,   8,   9,    300.0,    180.0,  0.500,  0.500
+   1,   9,  12,    500.0,    300.0,  0.500,  0.500
+   1,  12,  14,    325.0,    195.0,  0.500,  0.500
+   1,  14,  17,    500.0,    300.0,  0.500,  0.500
+   1,  17,  24,      0.0,      0.0,  0.500,  0.500
+  -2,   0,   8,      0.0,      0.0,  0.500,  0.500
+  -2,   8,  18,      8.0,      0.0,  0.500,  0.500
+  -2,  18,  24,      0.0,      0.0,  0.500,  0.500
+  -3,   0,   8,      0.0,      0.0,  0.500,  0.500
+  -3,   8,  18,     10.0,      0.0,  0.500,  0.500
+  -3,  18,  24,      0.0,      0.0,  0.500,  0.500
+    13   # number of casual gains in day type: saturday    
+# slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
+   1,   0,   7,      0.0,      0.0,  0.500,  0.500
+   1,   7,   8,     40.0,      0.0,  0.500,  0.500
+   1,   8,   9,    120.0,      0.0,  0.500,  0.500
+   1,   9,  12,    200.0,      0.0,  0.500,  0.500
+   1,  12,  14,    130.0,      0.0,  0.500,  0.500
+   1,  14,  17,    200.0,      0.0,  0.500,  0.500
+   1,  17,  24,      0.0,      0.0,  0.500,  0.500
+  -2,   0,   8,      0.0,      0.0,  0.500,  0.500
+  -2,   8,  18,      8.0,      0.0,  0.500,  0.500
+  -2,  18,  24,      0.0,      0.0,  0.500,  0.500
+  -3,   0,   8,      0.0,      0.0,  0.500,  0.500
+  -3,   8,  18,      5.0,      0.0,  0.500,  0.500
+  -3,  18,  24,      0.0,      0.0,  0.500,  0.500
+     0   # number of casual gains in day type: sunday      

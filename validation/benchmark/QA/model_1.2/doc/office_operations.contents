@@ -79,11 +79,11 @@ Temporal data is available for this model.
  
 Databases associated with the model:
  standard pressure distr: pressc.db1
- standard materials     : material.db4.a
+ standard materials     : material.db4
  constructions          : ../dbs/office_operations.constrdb
  standard plant comp    : plantc.db1
  standard event profiles: profiles.db2.a
- standard optical prop  : optics.db2
+ standard optical prop  : optics.db
  standard UK NCM data   : SBEM.db1
  standard mould isopleth: mould.db1
  

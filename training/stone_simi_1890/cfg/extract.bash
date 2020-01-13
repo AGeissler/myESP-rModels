@@ -18,9 +18,11 @@ b # nearest 100wh
 c # hours above
 b # temperatures
 e # resultant
+-
 24.0
 b
 a
+-
 24.0
 + # filter
 b # occupants

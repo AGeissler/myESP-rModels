@@ -1,6 +1,11 @@
-   1 # number control intervals
-   6 # number of constructions
+*HC_CTL for zone test_cell
+*Date,Mon Nov 18 12:01:34 2019
+*Days,  1
+  1 # number control intervals for all day types
+  6 # number of surfaces
+# (Surf-1 Surf-2 Surf-3 Surf-4 Surf-5 Surf-6)
   0.00    24.00 # start and end time of interval
-   1 # calculation control type
-10.0 10.0 10.0 10.0 10.0 10.0
-15.0 15.0 15.0 15.0 15.0 15.0
+  1 # fixed coefficients calculation control type
+*Doc,Imported legacy file with no regime docs.
+ 10.000,10.000,10.000,10.000,10.000,10.000
+ 15.000,15.000,15.000,15.000,15.000,15.000

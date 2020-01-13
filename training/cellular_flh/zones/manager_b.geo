@@ -57,8 +57,8 @@ manager_b describes right office
 *surf,part_frame,VERT,-,-,-,insul_frame,OPAQUE,ANOTHER,03,10  #   2 ||< part_frameb:corridor
 *surf,door,VERT,-,-,-,door,OPAQUE,ANOTHER,03,11  #   3 ||< door_b:corridor
 *surf,pt_other,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,SIMILAR,00,00  #   4 ||< identical environment
-*surf,ceiling,CEIL,-,-,-,ceiling_scrd,OPAQUE,ANOTHER,05,07  #   5 ||< floor_mb:ceiling_slb
-*surf,floor,FLOR,-,-,-,screed,OPAQUE,ANOTHER,04,07  #   6 ||< floor_mb:floor
+*surf,ceiling,CEIL,-,-,-,upper_scrd,OPAQUE,ANOTHER,05,07  #   5 ||< floor_mb:ceiling_slb
+*surf,floor,FLOR,-,-,-,slate_screed,OPAQUE,ANOTHER,04,07  #   6 ||< floor_mb:floor
 *surf,spandral,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   7 ||< external
 *surf,frame,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   8 ||< external
 *surf,glazing,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #   9 ||< external

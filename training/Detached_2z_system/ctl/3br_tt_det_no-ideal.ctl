@@ -25,8 +25,8 @@ UK-DE: ASHP - w/Buffer Tank
 * Control loops    2
 # senses dry bulb temperature in living.
     1    0    0    0    0  # sensor 
-# plant component   16:hw_pump @ node no.  1
-   -1    16    1    0  # actuator 
+# plant component  16:hw_pump @ node no.  1
+   -1   16    1    0  # actuator 
     1  # all daytypes
     1  365  # valid Sat-01-Jan - Sat-31-Dec
      5  # No. of periods in day: weekdays    
@@ -92,10 +92,10 @@ UK-DE: ASHP - w/Buffer Tank
       5.  # No. of data items
   0.00000 1.00000 16.00000 12.00000 0.00000
 * Control loops    5
-# senses var in compt.  16:hw_pump @ node no.  1
-   -1    16    1    0    0  # sensor 
-# plant component   16:hw_pump @ node no.  1
-   -1    16    1    0  # actuator 
+# senses var in compt. 16:hw_pump @ node no.  1
+   -1   16    1    0    0  # sensor 
+# plant component  16:hw_pump @ node no.  1
+   -1   16    1    0  # actuator 
     1  # all daytypes
     1  365  # valid Sat-01-Jan - Sat-31-Dec
      1  # No. of periods in day: weekdays    

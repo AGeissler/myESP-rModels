@@ -40,9 +40,9 @@ this is a base case set of assumptions
 no flow control description supplied
    4  # No. of controls
 * Control mass    1
-# senses node (1) manager_a
+# senses node (1) mana
    -4    1    0    0  # sensor data
-# actuates flow connection:   1 man_alow - manager_a via low_win
+# actuates flow connection:   1 alow - mana via low_win
    -3    1    0  # actuator data
     1  # all daytypes
     1  365  # valid Sun-01-Jan - Sun-31-Dec
@@ -51,9 +51,9 @@ no flow control description supplied
       6.  # No. of data items
   19.10000 21.00000 26.00000 0.10000 1.50000 0.10000
 * Control mass    2
-# senses node (1) manager_a
+# senses node (1) mana
    -4    1    0    0  # sensor data
-# actuates flow connection:   2 man_ahi - manager_a via high_win
+# actuates flow connection:   2 ahi - mana via high_win
    -3    2    0  # actuator data
     1  # all daytypes
     1  365  # valid Sun-01-Jan - Sun-31-Dec
@@ -62,9 +62,9 @@ no flow control description supplied
       6.  # No. of data items
   19.10000 21.00000 26.00000 0.10000 1.50000 0.10000
 * Control mass    3
-# senses node (2) manager_b
+# senses node (2) manb
    -4    2    0    0  # sensor data
-# actuates flow connection:   3 man_blow - manager_b via low_win
+# actuates flow connection:   3 blow - manb via low_win
    -3    3    0  # actuator data
     1  # all daytypes
     1  365  # valid Sun-01-Jan - Sun-31-Dec
@@ -73,9 +73,9 @@ no flow control description supplied
       6.  # No. of data items
   19.10000 21.00000 26.00000 0.10000 1.50000 0.10000
 * Control mass    4
-# senses node (2) manager_b
+# senses node (2) manb
    -4    2    0    0  # sensor data
-# actuates flow connection:   4 man_bhi - manager_b via high_win
+# actuates flow connection:   4 bhi - manb via high_win
    -3    4    0  # actuator data
     1  # all daytypes
     1  365  # valid Sun-01-Jan - Sun-31-Dec

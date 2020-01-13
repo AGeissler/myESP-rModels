@@ -1,5 +1,5 @@
 *connections for structured_sd
-*Date Fri Jan 17 08:54:57 2014
+*Date Wed Dec  4 09:47:31 2019
       8   # number of connections
    1   1   0   0   0  #    1 south in room is External
    1   2   0   0   0  #    2 east in room is External

@@ -2,14 +2,14 @@ proj cntrl
 * Building
 no descrip
    2  # No. of functions
-* Control function
+* Control function    1
 # senses dry bulb temperature in liv_room.
     5    0    0    0  # sensor data
 # actuates the air point in liv_room.
     5    0    0  # actuator data
-    1 # No. day types
+    1  # all daytypes
     1  365  # valid Fri-01-Jan - Fri-31-Dec
-     4  # No. of periods in day
+     4  # No. of periods in day: weekday     
     0    2   0.000  # ctl type, law (free floating), start @
       0.  # No. of data items
     0    1   6.000  # ctl type, law (basic control), start @
@@ -20,14 +20,14 @@ no descrip
     0    1  17.000  # ctl type, law (basic control), start @
       6.  # No. of data items
   10000.000 0.000 0.000 0.000 21.000 100.000
-* Control function
+* Control function    2
 # senses dry bulb temperature in hall_2.
     9    0    0    0  # sensor data
 # actuates the air point in hall_2.
     9    0    0  # actuator data
-    1 # No. day types
+    1  # all daytypes
     1  365  # valid Fri-01-Jan - Fri-31-Dec
-     4  # No. of periods in day
+     4  # No. of periods in day: weekday     
     0    2   0.000  # ctl type, law (free floating), start @
       0.  # No. of data items
     0    1   6.000  # ctl type, law (basic control), start @
@@ -43,14 +43,14 @@ no descrip
 * Mass Flow
 no descrip
    1  # No. of controls
-* Control mass
+* Control mass    1
 # sensor node(s) not yet defined
    -4    0    0    0  # sensor data
 # actuates flow component:   5 windw
    -4    5    6  # actuator data
-    1 # No. day types
+    1  # all daytypes
     1  365  # valid Fri-01-Jan - Fri-31-Dec
-     1  # No. of periods in day
+     1  # No. of periods in day: weekday     
     1    0   0.000  # ctl type (dry bulb > flow), law (on/off setpoint 23.00 direct action ON fraction 0.000.), starting @
       2.  # No. of data items
   23.00000 1.00000

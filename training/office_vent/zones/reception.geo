@@ -76,10 +76,10 @@ reception of office group adj to conference room
 #  construction name, optical name
 #  boundary condition tag followed by two data items
 *surf,pt_core_a,VERT,-,-,-,gyp_blk_ptn,OPAQUE,SIMILAR,00,00  #   1 ||< identical environment
-*surf,fict_rec,VERT,-,DOOR,BIDIR,fict,SC_fictit,ANOTHER,02,04  #   2 ||< fict_rec:general
+*surf,fict_rec,VERT,-,DOOR,BIDIR,fictitious,SC_fictit,ANOTHER,02,04  #   2 ||< fict_rec:general
 *surf,pt_rec_a,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,02,03  #   3 ||< pt_rec_a:general
 *surf,pt_recp_a,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,03,04  #   4 ||< pt_recp_a:conference
-*surf,fict_open,VERT,-,DOOR,BIDIR,fict,SC_fictit,ANOTHER,03,03  #   5 ||< fict_open:conference
+*surf,fict_open,VERT,-,DOOR,BIDIR,fictitious,SC_fictit,ANOTHER,03,03  #   5 ||< fict_open:conference
 *surf,pt_recp_b,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,03,02  #   6 ||< pt_recp_b:conference
 *surf,spandral,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   7 ||< external
 *surf,vent,VERT,spandral,F-FRAME,OPEN,insul_frame,OPAQUE,EXTERIOR,0,0  #   8 ||< external

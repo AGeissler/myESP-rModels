@@ -57,8 +57,8 @@ manager describes cellular office on left
 *surf,part_frame,VERT,-,-,-,insul_frame,OPAQUE,ANOTHER,03,08  #   2 ||< part_frame:corridor
 *surf,door,VERT,-,-,-,door,OPAQUE,ANOTHER,03,06  #   3 ||< door:corridor
 *surf,pt_other,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,SIMILAR,00,00  #   4 ||< identical environment
-*surf,ceiling,CEIL,-,-,-,ceiling_scrd,OPAQUE,ANOTHER,05,06  #   5 ||< floor_ma:ceiling_slb
-*surf,floor,FLOR,-,-,-,screed,OPAQUE,ANOTHER,04,06  #   6 ||< floor_ma:floor
+*surf,ceiling,CEIL,-,-,-,upper_scrd,OPAQUE,ANOTHER,05,06  #   5 ||< floor_ma:ceiling_slb
+*surf,floor,FLOR,-,-,-,slate_screed,OPAQUE,ANOTHER,04,06  #   6 ||< floor_ma:floor
 *surf,spandral,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   7 ||< external
 *surf,frame,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   8 ||< external
 *surf,glazing,VERT,-,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #   9 ||< external

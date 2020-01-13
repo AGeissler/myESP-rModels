@@ -102,7 +102,7 @@ Dispersed pump demands included.
  
 Databases associated with the model:
  pressure distributions : ../dbs/Supermarket.pressuredb
- standard materials     : material.db4.a
+ standard materials     : material.db
  constructions          : ../dbs/Supermarket_ncm.constrdb
  plant components       : ../dbs/Supermarket.plantdb
  event profiles         : ../dbs/Supermarket.eventdb.a

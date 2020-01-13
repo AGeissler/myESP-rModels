@@ -39,15 +39,15 @@ floor_below is a thin zone representing ceiling void below
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,edge_s,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   1 ||< external
-*surf,edge_e,VERT,-,-,-,structure,OPAQUE,SIMILAR,00,00  #   2 ||< identical environment
-*surf,edge_n,VERT,-,-,-,structure,OPAQUE,SIMILAR,00,00  #   3 ||< identical environment
-*surf,edge_w,VERT,-,-,-,structure,OPAQUE,SIMILAR,00,00  #   4 ||< identical environment
+*surf,edge_s,VERT,-,-,-,brk_aer_block_wall,OPAQUE,EXTERIOR,0,0  #   1 ||< external
+*surf,edge_e,VERT,-,-,-,structure100mm,OPAQUE,SIMILAR,00,00  #   2 ||< identical environment
+*surf,edge_n,VERT,-,-,-,structure100mm,OPAQUE,SIMILAR,00,00  #   3 ||< identical environment
+*surf,edge_w,VERT,-,-,-,structure100mm,OPAQUE,SIMILAR,00,00  #   4 ||< identical environment
 *surf,Surf-6,FLOR,-,-,-,ceiling_rev,OPAQUE,CONSTANT,20,00  #   5 ||< constant @ 20dC &   0W rad
-*surf,floor_ma,CEIL,-,-,-,structure,OPAQUE,ANOTHER,01,06  #   6 ||< floor:manager_a
-*surf,floor_mb,CEIL,-,-,-,structure,OPAQUE,ANOTHER,02,06  #   7 ||< floor:manager_b
-*surf,floor_cor,CEIL,-,-,-,structure,OPAQUE,ANOTHER,03,05  #   8 ||< floor:corridor
-*surf,filler,CEIL,-,-,-,structure,OPAQUE,ADIABATIC,0,0  #   9 ||< adiabatic
+*surf,floor_ma,CEIL,-,-,-,structure100mm,OPAQUE,ANOTHER,01,06  #   6 ||< floor:manager_a
+*surf,floor_mb,CEIL,-,-,-,structure100mm,OPAQUE,ANOTHER,02,06  #   7 ||< floor:manager_b
+*surf,floor_cor,CEIL,-,-,-,structure100mm,OPAQUE,ANOTHER,03,05  #   8 ||< floor:corridor
+*surf,filler,CEIL,-,-,-,structure100mm,OPAQUE,ADIABATIC,0,0  #   9 ||< adiabatic
 # 
 *insol,3,0,0,0  # default insolation distribution
 # 

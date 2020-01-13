@@ -1,6 +1,7 @@
 *HC_CTL for zone rad_br2_l
-*Date,Thu Jan 17 14:35:24 2019
-  1 # number control intervals
+*Date,Mon Nov 18 12:01:34 2019
+*Days,  1
+  1 # number control intervals for all day types
  12 # number of surfaces
 # (face_l right_l back_al back_bl fin_al fin_bl fin_cl fin_dl back_cl leftl rad_top_l rad_base_l)
   0.00    24.00 # start and end time of interval

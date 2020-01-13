@@ -39,11 +39,11 @@ ceiling_abv is a suspended ceiling above occupied space
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
-*surf,edge_s,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   1 ||< external
-*surf,edge_e,VERT,-,-,-,structure,OPAQUE,SIMILAR,00,00  #   2 ||< identical environment
-*surf,edge_n,VERT,-,-,-,structure,OPAQUE,SIMILAR,00,00  #   3 ||< identical environment
-*surf,edge_w,VERT,-,-,-,structure,OPAQUE,SIMILAR,00,00  #   4 ||< identical environment
-*surf,upper,CEIL,-,-,-,structure,OPAQUE,ANOTHER,06,01  #   5 ||< base:boundary_up
+*surf,edge_s,VERT,-,-,-,brk_aer_block_wall,OPAQUE,EXTERIOR,0,0  #   1 ||< external
+*surf,edge_e,VERT,-,-,-,structure100mm,OPAQUE,SIMILAR,00,00  #   2 ||< identical environment
+*surf,edge_n,VERT,-,-,-,structure100mm,OPAQUE,SIMILAR,00,00  #   3 ||< identical environment
+*surf,edge_w,VERT,-,-,-,structure100mm,OPAQUE,SIMILAR,00,00  #   4 ||< identical environment
+*surf,upper,CEIL,-,-,-,structure100mm,OPAQUE,ANOTHER,06,01  #   5 ||< base:boundary_up
 *surf,floor_ma,FLOR,-,-,-,ceiling_rev,OPAQUE,ANOTHER,01,05  #   6 ||< ceiling:manager_a
 *surf,floor_mb,FLOR,-,-,-,ceiling_rev,OPAQUE,ANOTHER,02,05  #   7 ||< ceiling:manager_b
 *surf,floor_cor,FLOR,-,-,-,ceiling_rev,OPAQUE,ANOTHER,03,04  #   8 ||< ceiling:corridor

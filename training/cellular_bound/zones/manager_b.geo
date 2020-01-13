@@ -1,5 +1,5 @@
 *Geometry 1.1,GEN,manager_b # tag version, format, zone name
-*date Wed Aug 22 15:39:22 2007  # latest file modification 
+*date Tue Dec  3 09:51:27 2019  # latest file modification 
 manager_b describes right office
 # tag, X co-ord, Y co-ord, Z co-ord
 *vertex,6.10000,0.00000,0.00000  #   1
@@ -34,22 +34,22 @@ manager_b describes right office
 *vertex,5.70000,4.50000,2.90000  #  30
 # 
 # tag, number of vertices followed by list of associated vert
-*edges,5,3,2,12,7,8  #  1
-*edges,11,4,3,19,20,21,22,19,3,8,9,29  #  2
-*edges,4,23,4,29,30  #  3
-*edges,4,25,5,10,27  #  4
-*edges,8,7,6,28,27,10,24,9,8  #  5
-*edges,8,26,1,2,3,4,23,5,25  #  6
-*edges,6,2,1,11,13,14,12  #  7
-*edges,12,13,11,15,16,17,18,15,11,6,7,12,14  #  8
-*edges,4,16,15,18,17  #  9
-*edges,4,20,19,22,21  # 10
-*edges,7,5,23,30,29,9,24,10  # 11
-*edges,4,26,25,27,28  # 12
-*edges,5,1,26,28,6,11  # 13
+*edges,5,3,2,12,7,8  #   1
+*edges,11,4,3,19,20,21,22,19,3,8,9,29  #   2
+*edges,4,23,4,29,30  #   3
+*edges,4,25,5,10,27  #   4
+*edges,8,7,6,28,27,10,24,9,8  #   5
+*edges,8,26,1,2,3,4,23,5,25  #   6
+*edges,6,2,1,11,13,14,12  #   7
+*edges,12,13,11,15,16,17,18,15,11,6,7,12,14  #   8
+*edges,4,16,15,18,17  #   9
+*edges,4,20,19,22,21  #  10
+*edges,7,5,23,30,29,9,24,10  #  11
+*edges,4,26,25,27,28  #  12
+*edges,5,1,26,28,6,11  #  13
 # 
 # surf attributes:
-#  surf name, surf position VERT/CIIL/FLOR/SLOP/UNKN
+#  surf name, surf position VERT/CEIL/FLOR/SLOP/UNKN
 #  child of (surface name), useage (pair of tags) 
 #  construction name, optical name
 #  boundary condition tag followed by two data items
@@ -58,10 +58,10 @@ manager_b describes right office
 *surf,door,VERT,-,-,-,door,OPAQUE,ANOTHER,03,11  #   3 ||< door_b:corridor
 *surf,pt_other,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,SIMILAR,00,00  #   4 ||< identical environment
 *surf,ceiling,CEIL,-,-,-,ceiling,OPAQUE,ANOTHER,05,07  #   5 ||< floor_mb:ceiling_abv
-*surf,floor,FLOR,-,-,-,structure,OPAQUE,ANOTHER,04,07  #   6 ||< floor_mb:floor_below
-*surf,spandral,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   7 ||< external
-*surf,frame,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,0,0  #   8 ||< external
-*surf,glazing,VERT,frame,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,0,0  #   9 ||< external
+*surf,floor,FLOR,-,-,-,structure100mm,OPAQUE,ANOTHER,04,07  #   6 ||< floor_mb:floor_below
+*surf,spandral,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,00,000  #   7 ||< external
+*surf,frame,VERT,-,-,-,insul_frame,OPAQUE,EXTERIOR,00,000  #   8 ||< external
+*surf,glazing,VERT,frame,-,-,dbl_glz,DCF7671_06nb,EXTERIOR,00,000  #   9 ||< external
 *surf,part_glaz,VERT,part_frame,-,-,dbl_glz,DCF7671_06nb,ANOTHER,03,13  #  10 ||< part_glazb:corridor
 *surf,ptn_corid,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,ANOTHER,03,12  #  11 ||< ptn_coridb:corridor
 *surf,pt_other_a,VERT,-,-,-,gyp_gyp_ptn,OPAQUE,SIMILAR,00,00  #  12 ||< identical environment

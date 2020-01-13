@@ -1,5 +1,5 @@
 *Operations 2.1
-*date Sat Dec  7 18:20:25 2013  # latest file modification 
+*date Tue Dec  3 12:02:14 2019  # latest file modification 
 # operations of manager_b defined in: 
 # ../zones/manager_b.opr
 manager_b occupancy has some diversity of occupancy lights at 10W/m2 and small power on weekdays at 5W/m2
@@ -23,6 +23,7 @@ manager_b occupancy has some diversity of occupancy lights at 10W/m2 and small p
 *end_type 
     13   # number of casual gains in day type: weekdays    
 # slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
    1,   0,   7,      0.0,      0.0,  0.500,  0.500
    1,   7,   8,     20.0,     10.0,  0.600,  0.400
    1,   8,   9,     60.0,     30.0,  0.600,  0.400
@@ -38,6 +39,7 @@ manager_b occupancy has some diversity of occupancy lights at 10W/m2 and small p
   -3,  18,  24,      0.0,      0.0,  0.500,  0.500
     11   # number of casual gains in day type: saturday    
 # slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
    1,   0,   7,      0.0,      0.0,  0.500,  0.500
    1,   7,   8,     20.0,     10.0,  0.500,  0.500
    1,   8,   9,     60.0,     30.0,  0.500,  0.500
@@ -51,5 +53,6 @@ manager_b occupancy has some diversity of occupancy lights at 10W/m2 and small p
   -3,   0,  24,      0.0,      0.0,  0.500,  0.500
      2   # number of casual gains in day type: sunday      
 # slot, period, sensible, latent, rad_frac, conv_frac
+# slot, period, nb men, nb women, nb child, metabolic clo, air vel, rad_frac, conv_frac
   -2,   0,  24,      0.0,      0.0,  0.500,  0.500
   -3,   0,  24,      0.0,      0.0,  0.500,  0.500

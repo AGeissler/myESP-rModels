@@ -1,5 +1,5 @@
 *connections for 2br_tt_flat_ave_bc
-*Date Wed Dec  7 10:18:10 2016
+*Date Wed Dec  4 09:35:37 2019
      44   # number of connections
    1   1   0   0   0  #    1 right_facade in livdinkit is External
    1   2   1   0   0  #    2 other in livdinkit >|< Identical environment

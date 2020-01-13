@@ -1,4 +1,5 @@
 #!/bin/sh
+# for use with Linux
 RESFILE=$1
 VERSION=$2
 $VERSION/res -file $RESFILE -mode text<<XXX
@@ -29,16 +30,14 @@ f # zone flux
 a # infiltration
 f
 b # ventilation
-m
+k
 a # real power
 k
 b # reactive power
 j
 b # convective casual gains
--
 j
 c # radiant casual gains
--
 d # solar processes
 a # entering from outside
 d
@@ -46,39 +45,30 @@ c # solar absorbed
 i # zone rh
 j # casual gains
 a # all
--
 j
 b # convective portion
--
 j
 c # radiant portion
--
 j
-e # total occupant gain
--
+d # total occupant gain
 j
-i # total lighting gain
--
+e # total lighting gain
 j
-m # total small power
--
+f # total small power
 -
 -
 c # timestep reports
 g # perf metrics
 j # casual
-e # total occupant
--
+d # total occupant
 j
-i # total lighting
--
+e # total lighting
 j
-m # total small power
--
+f # total small power
 ! # list data
 -
 -
-d
+d # enquire
 f # energy delivered
 g # casual gains distrib
 h # zone energy balance

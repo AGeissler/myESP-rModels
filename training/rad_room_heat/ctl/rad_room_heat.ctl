@@ -7,7 +7,7 @@ The aux sensor control logic only works for heating. If room details change it m
     5    0    0    0  # sensor data
 # actuates the air point in rad_400.
     5    0    0  # actuator data
-    1 # No. day types
+    1  # all daytypes
     1  365  # valid Sun-01-Jan - Sun-31-Dec
      1  # No. of periods in day: weekdays    
     0   19   0.000  # ctl type, law (senses dry bulb temperature in one_bed_400.), start @
@@ -18,7 +18,7 @@ The aux sensor control logic only works for heating. If room details change it m
     6    0    0    0  # sensor data
 # actuates the air point in rad_600.
     6    0    0  # actuator data
-    1 # No. day types
+    1  # all daytypes
     1  365  # valid Sun-01-Jan - Sun-31-Dec
      1  # No. of periods in day: weekdays    
     0   19   0.000  # ctl type, law (senses dry bulb temperature in one_bed_400.), start @

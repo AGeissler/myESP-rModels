@@ -1,7 +1,8 @@
 *HC_CTL for zone bipvt2
-*Date,Mon Jul  6 18:45:42 2009
-   1 # number control intervals
-   6 # number of surfaces
+*Date,Mon Nov 18 12:01:34 2019
+*Days,  1
+  1 # number control intervals for all day types
+  6 # number of surfaces
 # (Bottom Top Inlet SideE Outlet SideW)
   0.00    24.00 # start and end time of interval
    5 # bipv/t calculation control type

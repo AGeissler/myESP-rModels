@@ -58,7 +58,7 @@ ceil_void is a 0.5m ceiling void over offices
 *surf,ceiling,FLOR,-,-,-,ceiling_rev,OPAQUE,ANOTHER,02,07  #   2 ||< ceiling:general
 *surf,ceil_conff,FLOR,-,-,-,ceiling_rev,OPAQUE,ANOTHER,03,05  #   3 ||< ceiling:conference
 *surf,ceil_rec,FLOR,-,-,-,ceiling_rev,OPAQUE,ANOTHER,04,15  #   4 ||< desk_base:reception
-*surf,structure,CEIL,-,-,-,conc_250,OPAQUE,SIMILAR,00,00  #   5 ||< identical environment
+*surf,structure,CEIL,-,-,-,conc_slab_250mm,OPAQUE,SIMILAR,00,00  #   5 ||< identical environment
 *surf,south_edge,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   6 ||< external
 *surf,east_edge,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   7 ||< external
 *surf,north_edge,VERT,-,-,-,extern_wall,OPAQUE,EXTERIOR,0,0  #   8 ||< external
