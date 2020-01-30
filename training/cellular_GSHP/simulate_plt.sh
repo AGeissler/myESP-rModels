@@ -8,7 +8,7 @@
 #
 #  The script <simulate> expects nine arguments:
 #    1. configuration file name (with relative path)
-#    2. results file name
+#    2. results file name (w/o extension)
 #    3. - 6. start and end days for simulation period
 #    7. number of days for pre-simulation period
 #    8. simulation time steps per hour
@@ -23,10 +23,6 @@ EM=$6
 PRE=$7
 BTSTEP=$8
 PTSTEP=$9
-
-# strip results file name from extension ...
-#set RESULTSROOT = ($RESULTS:as/./ /)  ??
-#set RESULTSROOT=`echo $RESULTS | awk '{split($0,a,"."); print a[1]}'`
 
 PTSPH=`echo "scale = 0 ; $BTSTEP*$PTSTEP" | bc`
 
@@ -46,10 +42,8 @@ $PRE
 $BTSTEP
 $PTSTEP
 n  # hourly results integration?
-*  # set save level 3
-*  # set save level 4
 s  # invoke simulation
-y  # does a control strategy (i.e. file) exist?
+   # accept control file
 Run: $RESULTS
 y
 y
@@ -58,15 +52,13 @@ y
 XXX
 
 # Postprocessing
-CPUTIME=$(grep -ai "Simulation cpu runtime" "${RESULTS}_bps.scratch")
-XMLTIME=$(grep -ai "XML postprocessor cpu runtime" "${RESULTS}_bps.scratch")
-#CPUTIME=`grep "Simulation cpu runtime" ${CONFIG}.scratch`
-#XMLTIME=`grep "XML postprocessor cpu runtime" ${CONFIG}.scratch`
+CPUTIME=`grep -a "Simulation cpu runtime" ${RESULTS}_bps.scratch`
+XMLTIME=`grep -a "XML postprocessor cpu runtime" ${RESULTS}_bps.scratch`
 #FAILED=`grep -c "Month  7" ${CONFIG}.scratch`
 #FRACTION=`echo "scale = 2 ; 100* $FAILED / (24*7*$TSTEP)" | bc`
-echo "   $CPUTIME"
-echo "   $XMLTIME"
-echo " "
+
+echo "   CPU time: $CPUTIME"
+echo "   XML time: $XMLTIME"
 #echo "Timesteps failed: $FAILED, fraction of simulation time steps: $FRACTION %" > convergence-failed.lst
 #echo "===== convergence failure timestep list =======" >> convergence-failed.lst
 #grep "Month  7" ${CONFIG}.scratch >> convergence-failed.lst
@@ -74,7 +66,6 @@ echo " "
 
 unset CONFIG
 unset RESULTS
-#unset RESULTSROOT
 unset SD
 unset SM
 unset ED
