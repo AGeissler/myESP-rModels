@@ -10,7 +10,7 @@ res_temp_hours_below.sh res_temp_hours_above.sh"
 # main folder (e.g. /Leadenhall/). Each variant is completely described in a subfolder
 # "var" (e.g. "Base") and the configuration file has the same name (e.g. "base.cfg").
 #VARLIST="cellular_GSHP cellular_GSHP2n"
-VARLIST="cellular_GSHP"
+VARLIST="cellular_icGSHP"
 
 # Construction list
 #TMCLIST="mit ohne"
