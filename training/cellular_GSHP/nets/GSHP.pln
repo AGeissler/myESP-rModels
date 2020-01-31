@@ -56,7 +56,7 @@ Cellular office heating with ground source heat pump, floor heating
 #->   3, Slab-on-grade hydronic floor; 1 node model                              
   sl_manager_a      63
     0        # Component has   0 control variable(s).
-    9
+   14
        1.0000     #   1 Number of circuits (integer)                                    
       0.10000E-01 #   2 Inside diameter of pipe (m)                                     
       0.12000E-01 #   3 Outside diameter of pipe (m)                                    
@@ -66,10 +66,15 @@ Cellular office heating with ground source heat pump, floor heating
        1.0000     #   7 Served zone number (integer)                                    
        6.0000     #   8 Zone surface number (integer)                                   
        6.0000     #   9 Injection node number (integer)                                 
+        0.000     #  10 Insulation layer (integer)
+       1.0000     #  11 Under Relaxation factor
+       0.0000     #  12 Maximum number of iterations (integer)
+       1.0000     #  13 Flag for model. 1 = Laouadi Model, 2 = Fin model for pipe in subfloor (e.g. Warmboard)
+       50.000     #  14 Amount of finite difference nodes for pipe-in-subfloor model
 #->   4, Slab-on-grade hydronic floor; 1 node model                              
   sl_manager_b      63
     0        # Component has   0 control variable(s).
-    9
+   14
        1.0000     #   1 Number of circuits (integer)                                    
       0.10000E-01 #   2 Inside diameter of pipe (m)                                     
       0.12000E-01 #   3 Outside diameter of pipe (m)                                    
@@ -79,6 +84,11 @@ Cellular office heating with ground source heat pump, floor heating
        2.0000     #   7 Served zone number (integer)                                    
        6.0000     #   8 Zone surface number (integer)                                   
        6.0000     #   9 Injection node number (integer)                                 
+        0.000     #  10 Insulation layer (integer)
+       1.0000     #  11 Under Relaxation factor
+       0.0000     #  12 Maximum number of iterations (integer)
+       1.0000     #  13 Flag for model. 1 = Laouadi Model, 2 = Fin model for pipe in subfloor (e.g. Warmboard)
+       50.000     #  14 Amount of finite difference nodes for pipe-in-subfloor model
 #->   5, WCH 3-port valve; 3 node model; flow divert control w/ flow limiter
   trv_manager_a    115
     1        # Component has   1 control variable(s).
