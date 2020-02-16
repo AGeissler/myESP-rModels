@@ -1,10 +1,19 @@
-#!/bin/sh
+#!/bin/bash
 #
 # Run a series of simulations in "batch" mode
 
+Arg1=$1
+
+if [[ -n "$Arg1" ]]; then
+  SIMU="FALSE"
+else
+  SIMU="TRUE"
+fi
+
 # Following shell scripts need to be copied to the cfg-folder:
 TOOLLIST="QA_report.sh simulate_plt.sh \
-res_temp_hours_below.sh res_temp_hours_above.sh"
+          res_temp_hours_below.sh res_temp_hours_above.sh \
+          res_hp_on-off.sh plot_hp_on-off.r"
 
 # Blank-separated list of model variants to be evaluated. Call this script from the model
 # main folder (e.g. /Leadenhall/). Each variant is completely described in a subfolder
@@ -36,6 +45,8 @@ do
 
   cd ./cfg
 
+  [ ! -d ./${VAR}_scratchfiles ] && mkdir ${VAR}_scratchfiles
+
   for TMC in $TMCLIST
   do
 
@@ -55,27 +66,55 @@ do
                   TM=2;;
           esac
 
-          # Give message about current simulation set prior to simulation
-          echo " "
-#          echo "== Simulating case $VAR with $ROT rotation from original orientation"
-          echo "== Simulating case $VAR "
-          echo "   for period $PER"
-
           # Build file name for simulation case
           theFile="${VAR}_${TMC}_${PER}"
 
-          # remove old results and contents files
-          # ... avoid error messages for non-existent files ...
-          [ -f ./${VAR}.scratch ] && rm ./${VAR}.scratch
-          [ -f ./${theFile}.res ] && rm ./${theFile}.res
-          [ -f ./${theFile}.plr ] && rm ./${theFile}.plr
-          [ -f ./${theFile}.contents ] && rm ./${theFile}.contents
+          # Give message about current simulation set prior to simulation
+          RightNow=`date`
+          echo " "
+          echo "=========================================== "
+          if [ $SIMU == "TRUE" ]; then
+            echo "== Simulating case $theFile, $RightNow "
+          else
+            echo "== Evaluating case $theFile via R "
+          fi
+          echo "=========================================== "
+          echo "   for period $PER"
 
-          . ./QA_report.sh $VAR ${theFile}.contents
-          . ./simulate_plt.sh $VAR ${theFile} $FD $FM $TD $TM $PP $TSTEP $PSTEP
+#=== start simulate block
+          if [ $SIMU == "TRUE" ]; then
+
+            # remove old results and contents files
+            # ... avoid error messages for non-existent files ...
+            [ -f ./${VAR}.scratch ] && rm ./${VAR}.scratch
+            [ -f ./${theFile}.res ] && rm ./${theFile}.res
+            [ -f ./${theFile}.plr ] && rm ./${theFile}.plr
+            [ -f ./${theFile}.contents ] && rm ./${theFile}.contents
+
+            . ./QA_report.sh $VAR ${theFile}.contents
+            . ./simulate_plt.sh $VAR ${theFile} $FD $FM $TD $TM $PP $TSTEP $PSTEP
+
+            [ -f ${VAR}.csv ] && mv ${VAR}.csv ${theFile}.csv
+
+            # Create subdirectory for current run and move all corresponding
+            # files there.
+            echo "   Now moving all created files to subdirectory ${theFile} ..."
+            if [ -d ${theFile} ]; then
+              rm -fr ${theFile}
+            fi
+            mkdir ${theFile}
+            mv ${theFile}*.* ${theFile}
+#            mv *.scratch ${VAR}_scratchfiles
+            mv out.xml ${theFile}
+            echo "   ... done"
+            echo " "
+
+          fi # closes simulation block starting line 163
+#=== end simulate block
+
+          . ./res_hp_on-off.sh ${theFile}/${theFile}
+
 #          . ./res_ach.sh ${theFile} ${theFile}_ach.dat
-
-          [ -f ${VAR}.csv ] && mv ${VAR}.csv ${theFile}.csv
 
           # Extract hours below (winter case)
 #          . ./res_temp_hours_below.sh ${theFile}
@@ -83,12 +122,14 @@ do
           # Extract hours above (summer case)
 #          . ./res_temp_hours_above.sh ${theFile}
 
+          echo " "
+          ./plot_hp_on-off.r ${theFile}/${theFile}_hp_on-off.dat
 
         done # current PER / complete list
 
         echo "  "
 
-   done # current TMC / complete list
+    done # current TMC / complete list
 
   # Clean up
   for TOOL in $TOOLLIST
@@ -97,6 +138,7 @@ do
   done
 
 #  cp ../zones/${sZONE}_mit.tmc ../zones/${sZONE}.tmc
+  [ -f fort.* ] && rm fort.*
 
   cd ..
 
