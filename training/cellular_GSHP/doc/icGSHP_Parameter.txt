@@ -1,0 +1,50 @@
+C Node 1 represents the condenser heat exchanger and couples to the hydronic
+C heating circuit. The device has an internal pump and so an explicit pump
+C model is not needed in system models containing this component.
+C
+C Two "COP" models are available.
+C
+C Model 1, "simple", is basically for testing. With this mode, the icGSHP
+C can be used with very limited input data as follows.
+C   HP_0(1)     0 % heating power for nominal SH temperature (kW)
+C   HP_0(2)   100 % heating power for nominal SH temperature (kW)
+C   HP_0(3)     0 % cooling power for nominal SH temperature (kW)
+C   HP_0(4)   100 % cooling power for nominal SH temperature (kW)
+C   HP_0(5)     0 % heating power for nominal DHW temperature (kW)
+C   HP_0(6)   100 % heating power for nominal DHW temperature (kW)
+C   HP_100(1)   0 % cooling power for nominal DHW temperature (kW)
+C   HP_100(2) 100 % cooling power for nominal DHW temperature (kW)
+C Note that both inverter control modes can be used with this simplified model,
+C however, source temperature dependency is ignored and thus the HP only
+C very crudely approximated.
+C
+C Model 2, is not available, currently!
+C
+C Model 3 + 4, spline and polynomial interpolations of power output
+C respectively. These modes expect a data file <<componentname>>.hpd
+C in the same subdirectory as the .pln file itself.
+C The data file must contain following data in the given structure:
+C performance data file, containing a header line and three columns of
+C data. NX and NY are the number of data points for tgrnd and tfeed,
+C respectively.
+C
+C Format:
+C NX, NY
+C Tgrnd1,  Tfeed1,  HPheat0-1, HPheat100-1, HPcool0-1, HPcool100-1
+C Tgrnd1,  Tfeed2,  HPheat0-2, HPheat100-2, HPcool0-2, HPcool100-2
+C ...
+C Tgrnd1,  TfeedNY, HPheat0-N, HPheat100-N, HPcool0-N, HPcool100-N
+C Tgrnd2,  Tfeed1,  HPheat0-1, HPheat100-1, HPcool0-1, HPcool100-1
+C ...
+C ...
+C TgrndNX, TfeedNY, HPheat0-N, HPheat100-N, HPcool0-N, HPcool100-N
+C
+C The R-script ../doc/plot_icGSHP_Perfdata.r can be used as basis for the 
+C generation of the appropriate data file (currently generates data for a
+C "cta Optiheat Inverta Economy Compact OH I 9ec".
+C
+C This particular device model is suitable for ON/OFF type control in control
+C mode 1 and PI-type control in control mode 2. The model internally
+C controls the water outlet temperature and ambient temperature compensation
+C can be applied [linear model].
+C
