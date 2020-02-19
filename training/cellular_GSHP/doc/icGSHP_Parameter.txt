@@ -45,6 +45,9 @@ C "cta Optiheat Inverta Economy Compact OH I 9ec".
 C
 C This particular device model is suitable for ON/OFF type control in control
 C mode 1 and PI-type control in control mode 2. The model internally
-C controls the water outlet temperature and ambient temperature compensation
-C can be applied [linear model].
+C controls the compressor frequency in mode 1. Ambient temperature compensation
+C for the space heating return temperature can be applied [linear model].
+C
+C Control parameter number three (3) is the "preference signal":
+C   0 space heat, 1 DHW high, 2 DHW low
 C

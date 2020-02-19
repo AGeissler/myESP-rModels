@@ -7,7 +7,7 @@ Cellular office heating with inverter control ground source heat pump, f
   icGSHP           126
     3        # Component has   3 control variable(s).
    0.00000000       0.00000000       0.00000000    
-   49     5
+   50     5
         25.00     #   1 Component total mass (kg)
        2000.0     #   2 Mass weighted average specific heat (J/kgK)
        1.6000     #   3 Heat loss modulus (W/K)
@@ -43,20 +43,21 @@ Cellular office heating with inverter control ground source heat pump, f
        10.000     #  33 Controller power (W)
        1.0000     #  34 Controller pf (-)
       0.92800     #  35 Compressor pf (-)
-       35.000     #  36 Tout max SH (degC)
-       34.000     #  37 Tin max SH (degC)
-       30.000     #  38 Nominal water return temperature SH (Deg C)
-       60.000     #  39 Tout max DHW (degC)
-       55.000     #  40 Tin max DHW (degC)
-       45.000     #  41 Nominal water return temperature for DHW (degC)
-       4.0000     #  42 Nominal water return deadband (SH and DHW, Deg C)
-       1.0000     #  43 Ambient air temp compensation on/off (-)
-       -8.0000     #  44 Low amb. air temperature for temp compensation [Deg C]
-       15.000     #  45 High amb. air temperature for temp compensation [Deg C]
-     -0.430000     #  46 Temp compensation gradient c1 (-)
-       15.000     #  47 Heat pump lock out time (min)
-       2.0000     #  48 Ground source model [1 - standard profile 2 - user profile 3 - f(dep
-       3.0000     #  49 Model coef g0 [1 & 2 - profile number 3 - depth in m]
+       35.000     #  36 Tout SH (degC)
+       30.000     #  37 Nominal return temperature SH (Deg C)
+       1.0000     #  38 Nominal return deadband SH (Deg C)
+       1.0000     #  39 Ambient air temp compensation on/off (-)
+      -8.0000     #  40 Low amb. air temperature for temp compensation [Deg C]
+       15.000     #  41 High amb. air temperature for temp compensation [Deg C]
+     -0.43000     #  42 Temp compensation gradient c1 (-)
+       65.000     #  43 Tout DHW high (degC)
+       60.000     #  44 Nominal return temperature DHW high (degC)
+       50.000     #  45 Tout DHW low (degC)
+       45.000     #  46 Nominal return temperature DHW low (degC)
+       5.0000     #  47 Nominal return deadband DHW (Deg C)
+       15.000     #  48 Heat pump lock out time (min)
+       2.0000     #  49 Ground source model [1 - std. profile 2 - user profile 3 - f(depth)]
+       3.0000     #  50 Model coef g0 [1 & 2 - profile number 3 - depth in m]
 # Component electrical details.
   0.700   1      2.000    230.000   1
 #->   2, WCH pipe; 1 node model                                                  
