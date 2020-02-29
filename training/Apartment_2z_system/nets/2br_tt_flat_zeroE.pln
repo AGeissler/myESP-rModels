@@ -104,7 +104,7 @@ ESP-r plant file version 2 written on: Fri Sep  6 15:27:37 2013
 #->   6, Stochastic hot water draw connecting to WCH system; 1 node model        
   DHW_draw         105
     0        # Component has   0 control variable(s).
-   47
+   49
        120.00     #   1 Nominal daily hot water draw (l)                                
        10.000     #   2 Seasonal variation of hot water draw (%)                        
        28.000     #   3 Phase shift of seasonal variation (W/K)                         
@@ -152,6 +152,8 @@ ESP-r plant file version 2 written on: Fri Sep  6 15:27:37 2013
        1.0000     #  45 Draw weekday probability modifier (-)                           
        1.0000     #  46 Draw weekend probability modifier (-)                           
        1234.0     #  47 Random number generator seed (-)                                
+       1.0000     #  48 Ground source model [1 - std. profile 2 - user profile 3 - f(dep
+       1.0000     #  49 Model coef g0 [1 & 2 - profile number 3 - depth in m]           
 #->   7, WCH pipe; 1 node model                                                  
   flow_loss         13
     0        # Component has   0 control variable(s).
