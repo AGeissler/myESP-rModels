@@ -18,7 +18,7 @@ cd ../cfg
 echo "  "
 pwd
 echo "  "
-$VERSION/prj -mode text -file test_box_a.cfg<<XXX
+$VERSION/prj -mode script -file test_box_a.cfg<<XXX
 b # database management
 e # MLC
 a # browse
@@ -29,21 +29,21 @@ acu_gyp_ptn
 l # change layer
 y
 f # plaster
-h # white gyp
+q # white gyp
 y
 24
 !
 b # append
 y
-o # insul
-a # glass fibre
+k # insul
+u # glasswool
 y
 50
 !
 b # append
 y
 f # plaster
-h # white gyp
+q # white gyp
 y
 24
 -
@@ -57,8 +57,7 @@ apt_conc_cl
 l # change layer
 y
 d # wood
-0
-u # parquet
+n # parquet
 y
 20
 !
@@ -79,14 +78,13 @@ y
 b # append
 y
 b # concrete
-l # heavy
+n # heavy
 y
 150
 !
 b # append
 y
-0
-r # gaps
+q # gaps
 a
 y
 a
@@ -98,7 +96,7 @@ a
 b # append
 y
 h # tiles
-j # ceiling mine
+c # ceiling mine
 y
 12.5
 -
@@ -109,7 +107,7 @@ e # copy invert
 0 # page
 0 # page
 f # last page
-w # apt_conc_cl
+d # apt_conc_cl
 -
 apt_conc_fl
 apartment concrete floor
@@ -122,7 +120,7 @@ y
 -
 -
 -
-y
+y  # update file name
 -
 XXX
 cd ../..

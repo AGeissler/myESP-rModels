@@ -1,12 +1,12 @@
-ESP-r plant file version 2 written on: Sun Aug 12 17:44:03 2018
+ESP-r plant file version 2 written on: Wed Jan 22 15:21:47 2020
 # Project title:
 Cellular office heating with ground source heat pump, floor heating     
 # Total no. of specified components and simulation type
    12    3
 #->   1, Ground Source Heat Pump connecting to WCH system; 2 node model          
   GSHP             114
-    3        # Component has   1 control variable(s).
-   0.00000000  0.0000000  0.00000000   
+    3        # Component has   3 control variable(s).
+   0.00000000       0.00000000       0.00000000    
    34     5
        110.00     #   1 Component total mass (kg)                                       
        2000.0     #   2 Mass weighted average specific heat (J/kgK)                     
@@ -39,7 +39,7 @@ Cellular office heating with ground source heat pump, floor heating
        72.000     #  29 BrinePump rating (W)                                            
       0.90000     #  30 BrinePump pf (-)                                                
       0.23890     #  31 BrineFlowrate at rated brine pump power (l/s)                   
-       60.000     #  32 Nominal water return temperature for DHW                        
+       60.000     #  32 Nominal water return temperature for DHW (degC)                 
        65.000     #  33 Tout max DHW (degC)                                             
        61.000     #  34 Tin max DHW (degC)                                              
 # Component electrical details.
@@ -67,11 +67,11 @@ Cellular office heating with ground source heat pump, floor heating
        1.0000     #   7 Served zone number (integer)                                    
        6.0000     #   8 Zone surface number (integer)                                   
        6.0000     #   9 Injection node number (integer)                                 
-        0.000     #  10 Insulation layer (integer)
-       1.0000     #  11 Under Relaxation factor
-       0.0000     #  12 Maximum number of iterations (integer)
-       1.0000     #  13 Flag for model. 1 = Laouadi Model, 2 = Fin model for pipe in subfloor (e.g. Warmboard)
-       50.000     #  14 Amount of finite difference nodes for pipe-in-subfloor model
+       0.0000     #  10 Insulation layer (integer)                                      
+      0.50000     #  11 Under Relaxation factor                                         
+       100.00     #  12 Maximum number of iterations (integer)                          
+       1.0000     #  13 Flag for model. 1 = Laouadi Model, 2 = Fin model for pipe in sub
+       20.000     #  14 Amount of finite difference nodes for pipe-in-subfloor model    
 #->   4, Slab-on-grade hydronic floor; 1 node model                              
   sl_manager_b      63
     0        # Component has   0 control variable(s).
@@ -85,12 +85,12 @@ Cellular office heating with ground source heat pump, floor heating
        2.0000     #   7 Served zone number (integer)                                    
        6.0000     #   8 Zone surface number (integer)                                   
        6.0000     #   9 Injection node number (integer)                                 
-        0.000     #  10 Insulation layer (integer)
-       1.0000     #  11 Under Relaxation factor
-       0.0000     #  12 Maximum number of iterations (integer)
-       1.0000     #  13 Flag for model. 1 = Laouadi Model, 2 = Fin model for pipe in subfloor (e.g. Warmboard)
-       50.000     #  14 Amount of finite difference nodes for pipe-in-subfloor model
-#->   5, WCH 3-port valve; 3 node model; flow divert control w/ flow limiter
+       0.0000     #  10 Insulation layer (integer)                                      
+      0.50000     #  11 Under Relaxation factor                                         
+       100.00     #  12 Maximum number of iterations (integer)                          
+       1.0000     #  13 Flag for model. 1 = Laouadi Model, 2 = Fin model for pipe in sub
+       20.000     #  14 Amount of finite difference nodes for pipe-in-subfloor model    
+#->   5, WCH 3-port valve; 3 node model; flow divert control with flow limiter   
   trv_manager_a    115
     1        # Component has   1 control variable(s).
    0.00000000    
@@ -98,8 +98,8 @@ Cellular office heating with ground source heat pump, floor heating
        1.0000     #   1 Component total mass (kg)                                       
        500.00     #   2 Mass weighted average specific heat (J/kgK)                     
       0.25000     #   3 UA modulus (W/K)                                                
-      0.75000E-01 #   4 Maximum flow setpoint (l/s)
-#->   6, WCH 3-port valve; 3 node model; flow divert control w/ flow limiter
+      0.75000E-01 #   4 Setpoint (l/s)                                                  
+#->   6, WCH 3-port valve; 3 node model; flow divert control with flow limiter   
   trv_manager_b    115
     1        # Component has   1 control variable(s).
    0.00000000    
@@ -107,7 +107,7 @@ Cellular office heating with ground source heat pump, floor heating
        1.0000     #   1 Component total mass (kg)                                       
        500.00     #   2 Mass weighted average specific heat (J/kgK)                     
       0.25000     #   3 UA modulus (W/K)                                                
-      0.75000E-01 #   4 Maximum flow setpoint (l/s)
+      0.75000E-01 #   4 Setpoint (l/s)                                                  
 #->   7, WCH pipe converging 2-leg junction; 1 node model                        
   con_manager_b     14
     0        # Component has   0 control variable(s).

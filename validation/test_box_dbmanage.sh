@@ -11,7 +11,7 @@ cd test_box/cfg
 echo "  "
 pwd
 echo "  "
-$VERSION/prj -mode text -file test_box.cfg<<XXX
+$VERSION/prj -mode script -file test_box.cfg<<XXX
 b # database management
 - 
 s # save as

@@ -5,7 +5,7 @@ VERSION=$1
 echo "  "
 pwd
 echo "  "
-$VERSION/prj -mode text<<XXX
+$VERSION/prj -mode script<<XXX
 e # create new
 test_box
 a test model via script input
@@ -14,8 +14,8 @@ n # no edit
 n # no images
 52.0
 1.0
+50    # altitude
 2008  # year
-b
 r     # save
 -
 XXX

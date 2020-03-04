@@ -25,7 +25,6 @@ a # choose box
 f # attributes
 h # front glaze
 h # USE
-0 # page
 s # window
 -
 b # crack
@@ -46,6 +45,9 @@ c # scan attributes
 
 
 minimal network with door crack frame vent crack
+0.34  # discharge coef FrVez01:007
+0.015 # door undercut m
+0.5   # door undercut coef
 a # accept
 ../nets/test_box_m.3dafn
 n # summary

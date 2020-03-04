@@ -14,18 +14,18 @@ cd ../cfg
 echo "  "
 pwd
 echo "  "
-$VERSION/prj -mode text -file test_box_a.cfg<<XXX
+$VERSION/prj -mode script -file test_box_a.cfg<<XXX
 b # database management
 e # MLC
 a # browse
 d # glazing category
 1 # add
 a # at end of list
-single_glazing
+single_glazing_a
 l # select the layer
 y # confirm
 m # glass cat
-c # clear float
+b # clear float
 y # use it
 6 # thickness
 e # type
@@ -44,14 +44,13 @@ conc_pla_ptn
 l # change to plaster
 y
 f # plaster
-a # dense plaster
+b # dense plaster
 y
 20
 !
 b # append
 y
-0 # page
-r # gaps
+q # gaps
 a # air gap
 y
 a # accept
@@ -63,14 +62,13 @@ a # accept
 b # append
 y
 b # concrete
-l # heavy mix
+n # heavy mix
 y
 150
 !
 b # append
 y
-0 # page
-r # gaps
+q # gaps
 a # air gap
 y
 a # accept
@@ -82,7 +80,7 @@ a # accept
 b # append
 y
 f # plaster
-a # dense plaster
+b # dense plaster
 y
 20
 -

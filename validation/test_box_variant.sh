@@ -14,7 +14,7 @@ cd test_box/cfg
 echo "Opening test_box_m.cfg..."
 pwd
 echo "  "
-$VERSION/prj -mode text -file test_box_m.cfg<<XXX
+$VERSION/prj -mode script -file test_box_m.cfg<<XXX
 j # variant
 edsur
 editing of geometry
