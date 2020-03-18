@@ -2,7 +2,7 @@ C Node 1 represents the condenser heat exchanger and couples to the hydronic
 C heating circuit. The device has an internal pump and so an explicit pump
 C model is not needed in system models containing this component.
 C
-C Two "COP" models are available.
+C Four "COP" models are available.
 C
 C Model 1, "simple", is basically for testing. With this mode, the icGSHP
 C can be used with very limited input data as follows.
