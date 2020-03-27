@@ -8,7 +8,7 @@
 #
 
 ######### GSHP ############### read all data with GSHP and climate
-grx <- glob2rx("plant.GSHP.misc.*")
+grx <- glob2rx("plant.icGSHP.misc.*")
 grx1 <- glob2rx("climate.*")
 grx2 <- glob2rx("plant.DHW.tank.*")
 mv_GSHP<-movable[,c("building.time.present..hours.","building.day.number.present..days.","thedate",
@@ -26,11 +26,11 @@ colnames(mv_GSHP)<-c("hour","day","thedate",sapply(strsplit(colnames(mv_GSHP[4:l
 
                                
 # [1] "hour"                                  "day"                                  
-# [3] "thedate"                               "GSHP_misc_data_COP__"                 
-# [5] "GSHP_misc_data_CallForHeat__"          "GSHP_misc_data_DeviceONOFF__"         
-# [7] "GSHP_misc_data_Heat_Out_"              "GSHP_misc_data_Real_Power_"           
-# [9] "GSHP_misc_data_RelCompFreq__"          "GSHP_misc_data_Return_T_SP"           
-#[11] "GSHP_misc_data_Tambient__degC"         "dry_bulb_temperature__oC_NA"          
+# [3] "thedate"                               "icGSHP_misc_data_COP__"
+# [5] "icGSHP_misc_data_CallForHeat__"          "icGSHP_misc_data_DeviceONOFF__"
+# [7] "icGSHP_misc_data_Heat_Out_"              "icGSHP_misc_data_Real_Power_"
+# [9] "icGSHP_misc_data_RelCompFreq__"          "icGSHP_misc_data_Return_T_SP"
+#[11] "icGSHP_misc_data_Tambient__degC"         "dry_bulb_temperature__oC_NA"
 #[13] "solar_diffuse_horizontal_radiation__W" "solar_direct_normal_radiation__W"     
 #[15] "wind_direction__degrees_NA_NA"         "wind_velocity__m_s_NA" 
 #[17] "DHW_tank_misc_data_average_temperature__C_"    
@@ -44,50 +44,50 @@ colnames(mv_GSHP)<-c("hour","day","thedate",sapply(strsplit(colnames(mv_GSHP[4:l
 #[25] "DHW_tank_node_2_water_flow"    
 
 ##### calculate the mean of frequency for DHW und HP
-meanfreqHP<- mean(mv_GSHP$GSHP_misc_data_RelCompFreq__[
-                       mv_GSHP[,"GSHP_misc_data_CallForHeat__"] == 1 &
-                       mv_GSHP[,"GSHP_misc_data_DeviceONOFF__"] == 1 ], na.rm = T)
+meanfreqHP<- mean(mv_GSHP$icGSHP_misc_data_RelCompFreq__[
+                       mv_GSHP[,"icGSHP_misc_data_CallForHeat__"] == 1 &
+                       mv_GSHP[,"icGSHP_misc_data_DeviceONOFF__"] == 1 ], na.rm = T)
 
-meanfreqDHW<-mean(mv_GSHP$GSHP_misc_data_RelCompFreq__[
-                       mv_GSHP[,"GSHP_misc_data_CallForHeat__"] == 2 &
-                       mv_GSHP[,"GSHP_misc_data_DeviceONOFF__"] == 1], na.rm = T)
+meanfreqDHW<-mean(mv_GSHP$icGSHP_misc_data_RelCompFreq__[
+                       mv_GSHP[,"icGSHP_misc_data_CallForHeat__"] == 2 &
+                       mv_GSHP[,"icGSHP_misc_data_DeviceONOFF__"] == 1], na.rm = T)
 
 
 ##### calculate the mean COP for DHW und HP (Min/Max/mean)
-meanCOPHP<- mean(mv_GSHP$GSHP_misc_data_COP__[
-                       mv_GSHP[,"GSHP_misc_data_CallForHeat__"] == 1 &
-                       mv_GSHP[,"GSHP_misc_data_DeviceONOFF__"] == 1 ], na.rm = T)
+meanCOPHP<- mean(mv_GSHP$icGSHP_misc_data_COP__[
+                       mv_GSHP[,"icGSHP_misc_data_CallForHeat__"] == 1 &
+                       mv_GSHP[,"icGSHP_misc_data_DeviceONOFF__"] == 1 ], na.rm = T)
 
-minmaxCOPHP<-range(mv_GSHP$GSHP_misc_data_COP__[
-                       mv_GSHP[,"GSHP_misc_data_CallForHeat__"] == 1 &
-                       mv_GSHP[,"GSHP_misc_data_DeviceONOFF__"] == 1 ], na.rm = T)
+minmaxCOPHP<-range(mv_GSHP$icGSHP_misc_data_COP__[
+                       mv_GSHP[,"icGSHP_misc_data_CallForHeat__"] == 1 &
+                       mv_GSHP[,"icGSHP_misc_data_DeviceONOFF__"] == 1 ], na.rm = T)
 
-meanCOPDHW<-mean(mv_GSHP$GSHP_misc_data_COP__[
-                       mv_GSHP[,"GSHP_misc_data_CallForHeat__"] == 2 &
-                       mv_GSHP[,"GSHP_misc_data_DeviceONOFF__"] == 1], na.rm = T)
-minmaxCOPDHW<-range(mv_GSHP$GSHP_misc_data_COP__[
-                       mv_GSHP[,"GSHP_misc_data_CallForHeat__"] == 2 &
-                       mv_GSHP[,"GSHP_misc_data_DeviceONOFF__"] == 1], na.rm = T)
+meanCOPDHW<-mean(mv_GSHP$icGSHP_misc_data_COP__[
+                       mv_GSHP[,"icGSHP_misc_data_CallForHeat__"] == 2 &
+                       mv_GSHP[,"icGSHP_misc_data_DeviceONOFF__"] == 1], na.rm = T)
+minmaxCOPDHW<-range(mv_GSHP$icGSHP_misc_data_COP__[
+                       mv_GSHP[,"icGSHP_misc_data_CallForHeat__"] == 2 &
+                       mv_GSHP[,"icGSHP_misc_data_DeviceONOFF__"] == 1], na.rm = T)
 
 
 
 ##### calculate the heat power for DHW und HP (Min/Max/mean) in [kW]
 
-meanHeatHP<- mean(mv_GSHP$GSHP_misc_data_Heat_Out_[
-                       mv_GSHP[,"GSHP_misc_data_CallForHeat__"] == 1 &
-                       mv_GSHP[,"GSHP_misc_data_DeviceONOFF__"] == 1 ], na.rm = T)/1000
+meanHeatHP<- mean(mv_GSHP$icGSHP_misc_data_Heat_Out_[
+                       mv_GSHP[,"icGSHP_misc_data_CallForHeat__"] == 1 &
+                       mv_GSHP[,"icGSHP_misc_data_DeviceONOFF__"] == 1 ], na.rm = T)/1000
 
-minmaxHeatHP<-range(mv_GSHP$GSHP_misc_data_Heat_Out_[
-                       mv_GSHP[,"GSHP_misc_data_CallForHeat__"] == 1 &
-                       mv_GSHP[,"GSHP_misc_data_DeviceONOFF__"] == 1 ], na.rm = T)/1000
+minmaxHeatHP<-range(mv_GSHP$icGSHP_misc_data_Heat_Out_[
+                       mv_GSHP[,"icGSHP_misc_data_CallForHeat__"] == 1 &
+                       mv_GSHP[,"icGSHP_misc_data_DeviceONOFF__"] == 1 ], na.rm = T)/1000
 
-meanHeatDHW<-mean(mv_GSHP$GSHP_misc_data_Heat_Out_[
-                       mv_GSHP[,"GSHP_misc_data_CallForHeat__"] == 2 &
-                       mv_GSHP[,"GSHP_misc_data_DeviceONOFF__"] == 1 ], na.rm = T)/1000
+meanHeatDHW<-mean(mv_GSHP$icGSHP_misc_data_Heat_Out_[
+                       mv_GSHP[,"icGSHP_misc_data_CallForHeat__"] == 2 &
+                       mv_GSHP[,"icGSHP_misc_data_DeviceONOFF__"] == 1 ], na.rm = T)/1000
 
-minmaxHeatDHW<-range(mv_GSHP$GSHP_misc_data_Heat_Out_[
-                       mv_GSHP[,"GSHP_misc_data_CallForHeat__"] == 2 &
-                       mv_GSHP[,"GSHP_misc_data_DeviceONOFF__"] == 1 ], na.rm = T)/1000
+minmaxHeatDHW<-range(mv_GSHP$icGSHP_misc_data_Heat_Out_[
+                       mv_GSHP[,"icGSHP_misc_data_CallForHeat__"] == 2 &
+                       mv_GSHP[,"icGSHP_misc_data_DeviceONOFF__"] == 1 ], na.rm = T)/1000
 
 
 #heatDHW<-mv_GSHP$GSHP_misc_data_Heat_Out_[
@@ -101,14 +101,14 @@ minmaxHeatDHW<-range(mv_GSHP$GSHP_misc_data_Heat_Out_[
 #                       ((GSHP_misc_data_CallForHeat__ == 2) &
 #                        (GSHP_misc_data_DeviceONOFF__ == 1))] <- GSHP_misc_data_Heat_Out_,)
 
-heatDHW<-ifelse(mv_GSHP[,"GSHP_misc_data_CallForHeat__"] == 2 &
-                mv_GSHP[,"GSHP_misc_data_DeviceONOFF__"] == 1, mv_GSHP$GSHP_misc_data_Heat_Out_, 0)
+heatDHW<-ifelse(mv_GSHP[,"icGSHP_misc_data_CallForHeat__"] == 2 &
+                mv_GSHP[,"icGSHP_misc_data_DeviceONOFF__"] == 1, mv_GSHP$icGSHP_misc_data_Heat_Out_, 0)
 
-heatSH<-ifelse(mv_GSHP[,"GSHP_misc_data_CallForHeat__"] == 1 &
-                mv_GSHP[,"GSHP_misc_data_DeviceONOFF__"] == 1, mv_GSHP$GSHP_misc_data_Heat_Out_, 0)
+heatSH<-ifelse(mv_GSHP[,"icGSHP_misc_data_CallForHeat__"] == 1 &
+                mv_GSHP[,"icGSHP_misc_data_DeviceONOFF__"] == 1, mv_GSHP$icGSHP_misc_data_Heat_Out_, 0)
 
-DHW_on<-ifelse(mv_GSHP[,"GSHP_misc_data_CallForHeat__"] == 2 &
-               mv_GSHP[,"GSHP_misc_data_DeviceONOFF__"] == 1, mv_GSHP$GSHP_misc_data_CallForHeat__, 0)
+DHW_on<-ifelse(mv_GSHP[,"icGSHP_misc_data_CallForHeat__"] == 2 &
+               mv_GSHP[,"icGSHP_misc_data_DeviceONOFF__"] == 1, mv_GSHP$icGSHP_misc_data_CallForHeat__, 0)
 
 ## Generate x1 factor for placing N figures
 # Nfig=2
@@ -162,9 +162,9 @@ plot(datetime,mv_GSHP$dry_bulb_temperature__oC_NA,
                     las=1, type = "l", lwd=0.25, col="orange")
 
 ##### Plot Device_ON_OFF.
-ylim<-range(mv_GSHP$GSHP_misc_data_DeviceONOFF__)
+ylim<-range(mv_GSHP$icGSHP_misc_data_DeviceONOFF__)
 
-plot(datetime,mv_GSHP$GSHP_misc_data_DeviceONOFF__,
+plot(datetime,mv_GSHP$icGSHP_misc_data_DeviceONOFF__,
                     main="", xlab="Datum",
                     ylim=ylim, xlim=xlim, # log="y",
                     ylab=expression(paste("Device_ON_OFF [-]")),
@@ -175,9 +175,9 @@ plot(datetime,mv_GSHP$GSHP_misc_data_DeviceONOFF__,
 GlobalSolar<-mv_GSHP[,"solar_diffuse_horizontal_radiation__W"]+mv_GSHP[,"solar_direct_normal_radiation__W"]
 GlobalSolar<-GlobalSolar/max(GlobalSolar)
 
-ylim<-range(mv_GSHP$GSHP_misc_data_CallForHeat__)
+ylim<-range(mv_GSHP$icGSHP_misc_data_CallForHeat__)
 
-plot(datetime,mv_GSHP$GSHP_misc_data_CallForHeat__,
+plot(datetime,mv_GSHP$icGSHP_misc_data_CallForHeat__,
                     main="", xlab="Datum",
                     ylim=ylim, xlim=xlim, # log="y",
                     ylab=expression(paste("CallForHeat [-]")),

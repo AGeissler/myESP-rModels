@@ -10,41 +10,12 @@
 # Expects (at least) 1 parameter(s) on call!
 #   <file(s)>  The results file (.dat)
 #
-library(tools)
 library(data.table)    # Provides fread() and setDT()
 library(accelerometry) # Provides rle2()
 
-args = commandArgs(trailingOnly=TRUE)
-
-# Test if there is (at least) one argument: if not, return an error
-if (length(args)==0) {
-  stop("** Input file name must be supplied (input file).n", call.=FALSE)
-}
-##else if (length(args)==1) {
-##  # default output file
-##  args[2] = "out.txt"
-##}
-
-writeLines(" ")
-cat("   Evaluating HP, reading input file")
-
-##filenam <- strsplit(args[1], "\\.")[[1]]
-file_base <- file_path_sans_ext(args[1])
-outputfile <- paste(file_base,".png", sep="")
-
-## Datei einlesen incl. Spaltenkšpfen
-if (length(args)==1) {
-    cat(" ...")
-    hp_on_off<-fread(file=args[1], skip=3, header=FALSE)
-    colnames(hp_on_off)<-c("time","Q","CfH")
-} else {
-    cat("s ...")
-    hp1<-fread(file=args[1], skip=3, header=FALSE)
-    hp2<-fread(file=args[2], skip=3, header=FALSE)
-
-    hp_on_off<-rbind(hp2,hp1)
-    colnames(hp_on_off)<-c("time","Q","CfH")
-}
+hp_on_off<-fread(file=paste0(file_base,"_hp_on-off.dat"),
+                 skip=3, header=FALSE)
+colnames(hp_on_off)<-c("time","Q","CfH")
 
 writeLines(" done.")
 
@@ -183,7 +154,3 @@ if (bAddErrorbars) {
 }
 
 writeLines(" ... done.")
-writeLines(" ")
-
-# Clean up (?)
-rm(list = ls(all.names = TRUE))

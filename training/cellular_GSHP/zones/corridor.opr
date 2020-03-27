@@ -3,11 +3,17 @@
 # operations of corridor defined in: 
 # ../zones/corridor.opr
 half a person and 50-100W lighting weekdays 10W weekends with electrical properties
-# control(no control of air flow  ), low mid & high setpoints 
+# control(no control of air flow  ), low mid & high setpoints
    0     0.000     0.000     0.000
-     0   # number of flow periods in day type: weekdays    
-     0   # number of flow periods in day type: saturday    
-     0   # number of flow periods in day type: sunday      
+     1   # number of flow periods in day type: weekdays
+# start, stop, infil, ventil, source, data
+   0, 24,    0.230    0.000    0    0.000
+     1   # number of flow periods in day type: saturday
+# start, stop, infil, ventil, source, data
+   0, 24,    0.230    0.000    0    0.000
+     1   # number of flow periods in day type: sunday
+# start, stop, infil, ventil, source, data
+   0, 24,    0.130    0.000    0    0.000
 *casual
 half a person and 50-100W lighting weekdays 10W weekends with electrical properties
 # casual user-label type-key-word slot attributes

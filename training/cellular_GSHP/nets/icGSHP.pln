@@ -1,8 +1,8 @@
 ESP-r plant file version 2 written on: Fri Jan 31 10:25:48 2020
 # Project title:
-Cellular office heating with inverter control ground source heat pump, f
+Cellular office heating, inverter control GSHP, DHW Tank
 # Total no. of specified components and simulation type
-    9    3
+   13    3
 #->   1, inverter controlled GSHP connecting to WCH system; 1 node model         
   icGSHP           126
     3        # Component has   3 control variable(s).
@@ -61,7 +61,22 @@ Cellular office heating with inverter control ground source heat pump, f
        4.0000     #  51 Model coef g0 [1 & 2 - profile number 3 - depth in m]           
 # Component electrical details.
   0.700   1      2.000    230.000   1
-#->   2, WCH pipe; 1 node model                                                  
+#->   2, WCH 3-port valve; 3 node model; flow divert control                     
+  trv_SH_DHW_VL    112
+    1        # Component has   1 control variable(s).
+   1.00000000    
+    3
+       2.0000     #   1 Component total mass (kg)                                       
+       2250.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.25000E-01 #   3 UA modulus (W/K)                                                
+#->   3, WCH pipe converging 2-leg junction; 1 node model                        
+  con_SH_DHW_RL     14
+    0        # Component has   0 control variable(s).
+    3
+       2.0000     #   1 Component total mass (kg)                                       
+       2250.0     #   2 Mass weighted average specific heat (J/kgK)                     
+      0.20000E-01 #   3 UA modulus from wall to environment (W/K)                       
+#->   4, WCH pipe; 1 node model                                                  
   pi_VL             13
     0        # Component has   0 control variable(s).
     6
@@ -71,7 +86,7 @@ Cellular office heating with inverter control ground source heat pump, f
       0.70000E-02 #   4 Hydraulic diameter of pipe (m)                                  
        6.0000     #   5 Length of pipe section (m)                                      
       0.90800E-03 #   6 Cross sectional face area (m^2)                                 
-#->   3, Slab-on-grade hydronic floor; 1 node model                              
+#->   5, Slab-on-grade hydronic floor; 1 node model                              
   sl_manager_a      63
     0        # Component has   0 control variable(s).
    14
@@ -89,7 +104,7 @@ Cellular office heating with inverter control ground source heat pump, f
        0.0000     #  12 Maximum number of iterations (integer)                          
        1.0000     #  13 Flag for model. 1 = Laouadi Model, 2 = Fin model for pipe in sub
        50.000     #  14 Amount of finite difference nodes for pipe-in-subfloor model    
-#->   4, Slab-on-grade hydronic floor; 1 node model                              
+#->   6, Slab-on-grade hydronic floor; 1 node model                              
   sl_manager_b      63
     0        # Component has   0 control variable(s).
    14
@@ -107,7 +122,7 @@ Cellular office heating with inverter control ground source heat pump, f
        0.0000     #  12 Maximum number of iterations (integer)                          
        1.0000     #  13 Flag for model. 1 = Laouadi Model, 2 = Fin model for pipe in sub
        50.000     #  14 Amount of finite difference nodes for pipe-in-subfloor model    
-#->   5, WCH 3-port valve; 3 node model; flow divert control with flow limiter   
+#->   7, WCH 3-port valve; 3 node model; flow divert control with flow limiter   
   trv_manager_a    115
     1        # Component has   1 control variable(s).
    0.00000000    
@@ -116,7 +131,7 @@ Cellular office heating with inverter control ground source heat pump, f
        500.00     #   2 Mass weighted average specific heat (J/kgK)                     
       0.25000     #   3 UA modulus (W/K)                                                
       0.75000E-01 #   4 Setpoint (l/s)                                                  
-#->   6, WCH 3-port valve; 3 node model; flow divert control with flow limiter   
+#->   8, WCH 3-port valve; 3 node model; flow divert control with flow limiter   
   trv_manager_b    115
     1        # Component has   1 control variable(s).
    0.00000000    
@@ -125,21 +140,21 @@ Cellular office heating with inverter control ground source heat pump, f
        500.00     #   2 Mass weighted average specific heat (J/kgK)                     
       0.25000     #   3 UA modulus (W/K)                                                
       0.75000E-01 #   4 Setpoint (l/s)                                                  
-#->   7, WCH pipe converging 2-leg junction; 1 node model                        
+#->   9, WCH pipe converging 2-leg junction; 1 node model                        
   con_manager_b     14
     0        # Component has   0 control variable(s).
     3
       0.50000     #   1 Component total mass (kg)                                       
        2250.0     #   2 Mass weighted average specific heat (J/kgK)                     
       0.20000E-01 #   3 UA modulus from wall to environment (W/K)                       
-#->   8, WCH pipe converging 2-leg junction; 1 node model                        
+#->  10, WCH pipe converging 2-leg junction; 1 node model                        
   con_manager_a     14
     0        # Component has   0 control variable(s).
     3
       0.50000     #   1 Component total mass (kg)                                       
        2250.0     #   2 Mass weighted average specific heat (J/kgK)                     
       0.20000E-01 #   3 UA modulus from wall to environment (W/K)                       
-#->   9, WCH pipe; 1 node model                                                  
+#->  11, WCH pipe; 1 node model                                                  
   pi_RL             13
     0        # Component has   0 control variable(s).
     6
@@ -149,25 +164,109 @@ Cellular office heating with inverter control ground source heat pump, f
       0.70000E-02 #   4 Hydraulic diameter of pipe (m)                                  
        6.0000     #   5 Length of pipe section (m)                                      
       0.90800E-03 #   6 Cross sectional face area (m^2)                                 
+#->  12, Stratified tank with 1 immersed HX; 2 node model                        
+  DHW_tank         103
+    0        # Component has   0 control variable(s).
+   18
+      0.7900     #   1 Tank volume (m3)                                                
+       1.7650     #   2 Tank height (m)                                                 
+      -1.0000     #   3 Tank perimeter (m; -1 if cylindrical)                           
+      0.17500     #   4 Height of flow inlet (m)                                        
+       1.7650     #   5 Height of flow outlet (m)                                       
+      0.10000     #   6 Tank heat loss coefficient (W/m2-K)                             
+       0.0000     #   7 Additional destratification conductivity (W/m-K)                
+       20.000     #   8 Number of nodes                                                 
+       5.0000     #   9 Internal time steps per simulation time step                    
+       50.000     #  10 Initial temperature of tank (C)                                 
+       100.00     #  11 Boiling temperature of fluid (C)                                
+       1.5000     #  12 Height of immersed HX inlet (m)                                 
+      0.17500     #  13 Height of immersed HX outlet (m)                                
+      0.41000E-01 #  14 Inside diameter of immersed HX coil (m)                         
+      0.45000E-01 #  15 Outside diameter of immersed HX coil (m)                        
+      0.55000     #  16 Diameter of immersed HX coil (m)                                
+      0.49000E-01 #  17 Pitch of immersed HX coil (distance from one loop to the next) (
+       40.000     #  18 Thermal conductivity of immersed HX coil material (W/m/K)       
+#->  13, Stochastic hot water draw connecting to WCH system; 1 node model        
+  DHW_draw         105
+    0        # Component has   0 control variable(s).
+   49
+       175.00     #   1 Nominal daily hot water draw (l)                                
+       10.000     #   2 Seasonal variation of hot water draw (%)                        
+       28.000     #   3 Phase shift of seasonal variation (W/K)                         
+       3.0000     #   4 Number of holiday periods                                       
+       1.0000     #   5 Holiday period [1] start DOY                                    
+       3.0000     #   6 Holiday period [1] end DOY                                      
+       184.00     #   7 Holiday period [2] start DOY                                    
+       198.00     #   8 Holiday period [2] end DOY                                      
+       353.00     #   9 Holiday period [3] start DOY                                    
+       365.00     #  10 Holiday period [3] end DOY                                      
+       5.0000     #  11 Number of concurrent draw periods (start@0.0)                   
+       0.0000     #  12 Draw period start time                                          
+       5.0000     #  13 Fraction of daily draw taken in period (%)                      
+       6.0000     #  14 Draw period start time                                          
+       50.000     #  15 Fraction of daily draw taken in period (%)                      
+       9.0000     #  16 Draw period start time                                          
+       5.0000     #  17 Fraction of daily draw taken in period (%)                      
+       17.000     #  18 Draw period start time                                          
+       35.000     #  19 Fraction of daily draw taken in period (%)                      
+       23.000     #  20 Draw period start time                                          
+       5.0000     #  21 Fraction of daily draw taken in period (%)                      
+       4.0000     #  22 Number of distinct draw types (-)                               
+       14.000     #  23 Fraction of daily draw for this type (%)                        
+       1.0000     #  24 Draw volume flow rate (l/min)                                   
+       2.0000     #  25 Flow rate standard deviation (l/min)                            
+       1.0000     #  26 Nominal duration (min)                                          
+       1.0000     #  27 Draw weekday probability modifier (-)                           
+       1.0000     #  28 Draw weekend probability modifier (-)                           
+       36.000     #  29 Fraction of daily draw for this type (%)                        
+       6.0000     #  30 Draw volume flow rate (l/min)                                   
+       2.0000     #  31 Flow rate standard deviation (l/min)                            
+       1.0000     #  32 Nominal duration (min)                                          
+       1.0000     #  33 Draw weekday probability modifier (-)                           
+       1.0000     #  34 Draw weekend probability modifier (-)                           
+       10.000     #  35 Fraction of daily draw for this type (%)                        
+       12.000     #  36 Draw volume flow rate (l/min)                                   
+      0.20000     #  37 Flow rate standard deviation (l/min)                            
+       10.000     #  38 Nominal duration (min)                                          
+      0.70000     #  39 Draw weekday probability modifier (-)                           
+       1.4000     #  40 Draw weekend probability modifier (-)                           
+       40.000     #  41 Fraction of daily draw for this type (%)                        
+       8.0000     #  42 Draw volume flow rate (l/min)                                   
+      0.40000     #  43 Flow rate standard deviation (l/min)                            
+       5.0000     #  44 Nominal duration (min)                                          
+       1.0000     #  45 Draw weekday probability modifier (-)                           
+       1.0000     #  46 Draw weekend probability modifier (-)                           
+       1234.0     #  47 Random number generator seed (-)                                
+       2.0000     #  48 Ground source model [1 - std. profile 2 - user profile 3 - f(dep
+       5.0000     #  49 Model coef g0 [1 & 2 - profile number 3 - depth in m]           
 # The following is a list of component connections.
- 11          # Total number of connections
+ 17          # Total number of connections
 # receiving       node  conncn sending          node  diversion  suppl1   suppl2
 # component              type  component                ratio
-  pi_VL             1     3     icGSHP            1    1.000                 #  1
-  trv_manager_a     1     3     pi_VL             1    1.000                 #  2
-  sl_manager_a      1     3     trv_manager_a     2    1.000                 #  3
-  trv_manager_b     1     3     trv_manager_a     3    1.000                 #  4
-  sl_manager_b      1     3     trv_manager_b     2    1.000                 #  5
-  con_manager_b     1     3     trv_manager_b     3    1.000                 #  6
-  con_manager_b     1     3     sl_manager_b      1    1.000                 #  7
-  con_manager_a     1     3     con_manager_b     1    1.000                 #  8
-  con_manager_a     1     3     sl_manager_a      1    1.000                 #  9
-  pi_RL             1     3     con_manager_a     1    1.000                 # 10
-  icGSHP            1     3     pi_RL             1    1.000                 # 11
+  trv_SH_DHW_VL     1     3     icGSHP            1    1.000                 #  1
+  icGSHP            1     3     con_SH_DHW_RL     1    1.000                 #  2
+  pi_VL             1     3     trv_SH_DHW_VL     2    1.000                 #  3
+  trv_manager_a     1     3     pi_VL             1    1.000                 #  4
+  sl_manager_a      1     3     trv_manager_a     2    1.000                 #  5
+  trv_manager_b     1     3     trv_manager_a     3    1.000                 #  6
+  sl_manager_b      1     3     trv_manager_b     2    1.000                 #  7
+  con_manager_b     1     3     trv_manager_b     3    1.000                 #  8
+  con_manager_b     1     3     sl_manager_b      1    1.000                 #  9
+  con_manager_a     1     3     con_manager_b     1    1.000                 # 10
+  con_manager_a     1     3     sl_manager_a      1    1.000                 # 11
+  pi_RL             1     3     con_manager_a     1    1.000                 # 12
+  con_SH_DHW_RL     1     3     pi_RL             1    1.000                 # 13
+  con_SH_DHW_RL     1     3     DHW_tank          1    1.000                 # 14
+  DHW_tank          1     3     trv_SH_DHW_VL     3    1.000                 # 15
+  DHW_draw          1     3     DHW_tank          2    1.000                 # 16
+  DHW_tank          2     3     DHW_draw          1    1.000                 # 17
 # The following is a list of containment temperatures.
-  7          # Total number of containments
+ 10          # Total number of containments
 # Component       cont type        suppl1     suppl2    suppl3
   icGSHP              3             3.00000   0.00000   0.00000
+  DHW_tank            3             3.00000   0.00000   0.00000
+  con_SH_DHW_RL       3             3.00000   0.00000   0.00000
+  trv_SH_DHW_VL       3             3.00000   0.00000   0.00000
   pi_VL               3             3.00000   0.00000   0.00000
   pi_RL               3             3.00000   0.00000   0.00000
   con_manager_b       3             2.00000   0.00000   0.00000

@@ -11,9 +11,9 @@ else
 fi
 
 # Following shell scripts need to be copied to the cfg-folder:
-TOOLLIST="QA_report.sh simulate_plt.sh \
-          res_temp_hours_below.sh res_temp_hours_above.sh \
-          res_hp_on-off.sh plot_hp_on-off.r"
+TOOLLIST="gen_bcData.r QA_report.sh simulate_plt.sh \
+          plot_mult_R_evaluations.r res_hp_on-off.sh plot_hp_on-off.r \
+          plot_DHW_maps.r plot_DHW_onoff.r"
 
 # Blank-separated list of model variants to be evaluated. Call this script from the model
 # main folder (e.g. /Leadenhall/). Each variant is completely described in a subfolder
@@ -26,13 +26,12 @@ VARLIST="cellular_icGSHP"
 TMCLIST="mit"
 
 # Simulation periods ...
-#PERLIST="per1 per2"
-PERLIST="per2"
+#PERLIST="per1 per2 per3"
+PERLIST="per3"
 
 # Set building simulation time steps and pre-simulation period for all cases
-TSTEP=10
-PSTEP=6
-PP=8
+TSTEP=12
+PSTEP=5
 
 # Run simulation cases
 for VAR in $VARLIST
@@ -59,17 +58,29 @@ do
             per1) FD=2
                   FM=7
                   TD=9
-                  TM=7;;
+                  TM=7
+                  PP=8
+                  YEAR=2015;;
             per2) FD=6
                   FM=2
                   TD=12
-                  TM=2;;
+                  TM=2
+                  PP=8
+                  YEAR=2015;;
+            per3) FD=4
+                  FM=1
+                  TD=28
+                  TM=2
+                  PP=3
+                  YEAR=2015;;
           esac
 
           # Build file name for simulation case
-          theFile="${VAR}_${TMC}_${PER}"
+          BCD="HTNT"
+          theFile="${VAR}_${TMC}_${BCD}_${PER}"
 
           # Give message about current simulation set prior to simulation
+          dt=`date "+%Y-%m-%d %H:%M:%S"`
           RightNow=`date`
           echo " "
           echo "=========================================== "
@@ -79,7 +90,8 @@ do
             echo "== Evaluating case $theFile via R "
           fi
           echo "=========================================== "
-          echo "   for period $PER"
+          echo "     - for period $PER ($FD.$FM. to $TD.$TM.)"
+          echo " "
 
 #=== start simulate block
           if [ $SIMU == "TRUE" ]; then
@@ -90,6 +102,25 @@ do
             [ -f ./${theFile}.res ] && rm ./${theFile}.res
             [ -f ./${theFile}.plr ] && rm ./${theFile}.plr
             [ -f ./${theFile}.contents ] && rm ./${theFile}.contents
+
+            # Create boundary file w/ minute TS from BCD w/ 15 min TS
+            # while also extending for PP. Then set name in .cfg.
+            ./gen_bcData.r $FD $FM $TD $TM $PP $YEAR $TSTEP ../dbs/${BCD}.bcd
+
+            # Set boundary data file.
+            echo "   Setting boundary data file to ../dbs/${BCD}.asc ..."
+            new_bcd="../dbs/${BCD}.asc"
+            cp ${VAR}.cfg temp.cfg
+
+            if [[ "$OSTYPE" == "darwin"* ]]; then
+              # Mac OSX
+              gsed '/Boundary/!b;n;c'"${new_bcd}"'' temp.cfg > ${VAR}.cfg
+            else
+              # Assume "all others" are Linux ...
+              sed '/Boundary/!b;n;c'"${new_bcd}"'' temp.cfg > ${VAR}.cfg
+            fi
+
+            rm temp.cfg
 
             . ./QA_report.sh $VAR ${theFile}.contents
             . ./simulate_plt.sh $VAR ${theFile} $FD $FM $TD $TM $PP $TSTEP $PSTEP
@@ -114,16 +145,8 @@ do
 
           . ./res_hp_on-off.sh ${theFile}/${theFile}
 
-#          . ./res_ach.sh ${theFile} ${theFile}_ach.dat
-
-          # Extract hours below (winter case)
-#          . ./res_temp_hours_below.sh ${theFile}
-
-          # Extract hours above (summer case)
-#          . ./res_temp_hours_above.sh ${theFile}
-
           echo " "
-          ./plot_hp_on-off.r ${theFile}/${theFile}_hp_on-off.dat
+          ./plot_mult_R_evaluations.r ${theFile}/${theFile}.csv $TSTEP "$dt"
 
         done # current PER / complete list
 
@@ -138,7 +161,10 @@ do
   done
 
 #  cp ../zones/${sZONE}_mit.tmc ../zones/${sZONE}.tmc
-  [ -f fort.* ] && rm fort.*
+  for f in ./fort.*; do
+      [ -e "$f" ] && rm ./fort.*
+      break
+  done
 
   cd ..
 

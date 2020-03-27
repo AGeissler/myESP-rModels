@@ -26,10 +26,11 @@ PTSTEP=$9
 
 PTSPH=`echo "scale = 0 ; $BTSTEP*$PTSTEP" | bc`
 
-echo "   Run bps with $CONFIG, results: ${RESULTS}.res,"
-echo "   plant results: ${RESULTS}.plr. "
+echo "   Run bps with         ${CONFIG}.cfg: "
+echo "      Results:          ${RESULTS}.res,"
+echo "      Plant results:    ${RESULTS}.plr. "
 echo "   Simulation period ${SD}.${SM} to ${ED}.${EM}, startup $PRE days,"
-echo "   with ${BTSTEP} ts/h for building and ${PTSPH} ts/h for plant ... "
+echo "      using ${BTSTEP} ts/h for building and ${PTSPH} ts/h for plant ... "
 
 bps -file ${CONFIG}.cfg -mode text > ${RESULTS}_bps.scratch <<XXX
 

@@ -39,31 +39,13 @@ cat("   R postprocessing, reading input file")
 ##filenam <- strsplit(args[1], "\\.")[[1]]
 file_base <- file_path_sans_ext(args[1])
 
-## setz_3530_6563_5048_HTNT_SP2021_year/setz_3530_6563_5048_HTNT_SP2021_year.csv
+## cellular_icGSHP_mit_HTNT_per2
 parm<-strsplit(args[1],"/")[[1]]
 
 ## setz_3530_6563_5048_HTNT_SP2021_year.csv
 parm<-strsplit(parm[2],"_")[[1]]
 
-## Create data frame for current variant (this adds one line to the
-## data file before closing the file.
-cn<-c("RunDate","SimStart","SimEnd","TSPH",
-      "SPSH", "SPDHWhigh", "SPDHWlow", "Scheme", "Control",
-      "SHDemand","DHWDemand","SH.hours","DHW.hours",
-      "SHCost.spot","DHWCost.spot",
-      "meanCOP.SH","meanCOP.DHW")
-
-NDAT<-length(cn)
-SetzDF <- data.frame(matrix(ncol = NDAT, nrow = 1))
-
-colnames(SetzDF) <- cn
-SetzDF$SPSH     <-as.character(parm[2])
-SetzDF$SPDHWhigh<-as.character(parm[3])
-SetzDF$SPDHWlow <-as.character(parm[4])
-SetzDF$Scheme   <-as.character(parm[5])
-SetzDF$Control  <-as.character(parm[6])
-
-SCHEME<-as.character(parm[5])
+SCHEME<-as.character(parm[4])
 
 ## Datei(en) einlesen incl. Spaltenkoepfen
 if (length(args)==3) {
@@ -83,11 +65,6 @@ if (length(args)==3) {
     mv2[,"thedate"]<-as.Date(mv2$building.day.number.present..days.-1,origin = "2014-01-01")
     movable<-rbind(mv2,mv1)
 }
-
-SetzDF$RunDate <-simDate
-SetzDF$TSPH    <-TSTEP
-SetzDF$SimStart<-as.character(min(as.Date(movable$thedate)))
-SetzDF$SimEnd  <-as.character(max(as.Date(movable$thedate)))
 
 writeLines(" done.")
 
@@ -115,17 +92,17 @@ if (!is.na(grep("plant.DHW",names(movable))[1])) {
     bDHW<-F
 }
 
-bzoneTmaps<-T
+bzoneTmaps<-F
 bzoneTstats<-F
 bplantTstats<-F
 bSolRad<-F
 bMultStat<-F
 bslabQmaps<-F
 bPVeff<-F
-bPV<-T
-bGSHP<-T
-btrv_ff<-T
-bSHD<-T
+bPV<-F
+bGSHP<-F
+btrv_ff<-F
+bSHD<-F
 
 ## Choose if fixed scales should be used
 bFixedScales<-F
@@ -251,14 +228,6 @@ if (btrv_ff==T) {
 cat("   Evaluating HP, reading input file")
 outputfile <- paste(file_base,"_hp_on-off.png", sep="")
 source("plot_hp_on-off.r")
-
-cat("   Writing summary data to central file ...")
-suppressWarnings(write.table(SetzDF, "../DataContainer.csv", sep = ",",
-                    row.names = FALSE,
-                    col.names = !file.exists("../DataContainer.csv"),
-                    quote = FALSE,
-                    append = T))
-writeLines(" done.")
 
 writeLines(" ")
 

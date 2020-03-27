@@ -1,7 +1,8 @@
-Control Setz for design process; plant and CFC
+Control cellular_GSHP; plant and CFC
 * Plant
-UK-DE: GSHP - with DHW_tank; Plant control w/ air temp sensors and on-off valves.
-  23  # No. of loops
+icGSHP with DHW_tank; Plant control w/ air-t sens; on-off valves and BCD
+   7  # No. of loops
+* Control loops    1
 # senses dry bulb temperature in manager_a.
     1    0    0    0    0  # sensor 
 # plant component   5:trv_manager_a @ node no.  1
@@ -23,48 +24,40 @@ UK-DE: GSHP - with DHW_tank; Plant control w/ air temp sensors and on-off valves
    12    8   0.000  # ctl type, law (On-Off control.), start @
       7.  # No. of data items
   1.00000 20.00000 21.00000 1.00000 0.00000 0.00000 0.00000
-
-
 * Control loops    3
 # reads measurements from a boundry data file.
    -5    1    0    0    0  # sensor 
-# plant component   1:GSHP @ node no.  1
+# plant component   1:icGSHP @ node no.  1
    -1    1    1    0  # actuator 
     1  # all daytypes
     1  365  # valid Thu-01-Jan - Thu-31-Dec
      1  # No. of periods in day: weekdays_100
     0    6   0.000  # ctl type, law (Null controller.), start @
       0.  # No. of data items
-
-
 * Control loops    4
 # reads measurements from a boundry data file.
    -5    2    0    0    0  # sensor 
-# plant component   1:GSHP @ node no.  2
+# plant component   1:icGSHP @ node no.  2
    -1    1    2    0  # actuator 
     1  # all daytypes
     1  365  # valid Thu-01-Jan - Thu-31-Dec
      1  # No. of periods in day: weekdays_100
     0    6   0.000  # ctl type, law (Null controller.), start @
       0.  # No. of data items
-
-
 * Control loops    5
 # reads measurements from a boundry data file.
    -5    2    0    0    0  # sensor 
-# plant component   1:GSHP @ node no.  3
+# plant component   1:icGSHP @ node no.  3
    -1    1    3    0  # actuator 
     1  # all daytypes
     1  365  # valid Thu-01-Jan - Thu-31-Dec
      1  # No. of periods in day: weekdays_100
     0    6   0.000  # ctl type, law (Null controller.), start @
       0.  # No. of data items
-
-
 * Control loops    6
-# senses var in compt.  1:GSHP @ node no.  1
+# senses var in compt.  1:icGSHP @ node no.  1
    -1    1    1    0    0  # sensor 
-# plant component   1:GSHP @ node no.  1
+# plant component   1:icGSHP @ node no.  1
    -1    1    1    0  # actuator 
     1  # all daytypes
     1  365  # valid Thu-01-Jan - Thu-31-Dec
@@ -72,21 +65,16 @@ UK-DE: GSHP - with DHW_tank; Plant control w/ air temp sensors and on-off valves
    41   14   0.000  # ctl type, law (Multi-sensor), start @
       9.  # No. of data items
   1.00000 1.00000 2.00000 2.00000 3.00000 1.00000 0.00000 1.00000 0.00000
-
-
 * Control loops    7
 # reads measurements from a boundry data file.
    -5    3    0    0    0  # sensor 
-# plant component  10:trv_SH_DHW_VL @ node no.  1
+# plant component   2:trv_SH_DHW_VL @ node no.  1
    -1   10    1    0  # actuator 
     1  # all daytypes
     1  365  # valid Thu-01-Jan - Thu-31-Dec
      1  # No. of periods in day: weekdays_100
     0    6   0.000  # ctl type, law (Null controller.), start @
       0.  # No. of data items
-
-
-
 * CFC
 Sense total solar on frame, control manager_a by 3 angles and manager_b by cut off.
    2  # No. of functions

@@ -7,13 +7,13 @@ manager a has some diversity of occupancy  lights at 10W/m2 and small power on w
    0     0.000     0.000     0.000
      1   # number of flow periods in day type: weekdays    
 # start, stop, infil, ventil, source, data
-   0, 24,    0.330    0.000    0    0.000
+   0, 24,    0.530    0.000    0    0.000
      1   # number of flow periods in day type: saturday    
 # start, stop, infil, ventil, source, data
-   0, 24,    0.330    0.000    0    0.000
+   0, 24,    0.530    0.000    0    0.000
      1   # number of flow periods in day type: sunday      
 # start, stop, infil, ventil, source, data
-   0, 24,    0.330    0.000    0    0.000
+   0, 24,    0.530    0.000    0    0.000
 *casual
 manager a has some diversity of occupancy  lights at 10W/m2 and small power on weekdays at 5W/m2
 # casual user-label type-key-word slot attributes
