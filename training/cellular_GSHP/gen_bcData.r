@@ -32,7 +32,6 @@ if (length(args)<8) {
   stop("** 8 arguments must be supplied:\n   FD,FM,TD,TM,PP,YYYY,TSTEP and file!", call.=FALSE)
 }
 
-
 infile<-args[8]
 outfile<-file_path_sans_ext(args[8])
 
@@ -59,59 +58,55 @@ fsim<-from
 from<-as.Date(from)-PP
 to  <-paste0(YYYY,"-",sprintf("%02d",TM),"-",sprintf("%02d",TD))
 
-## Create sequence of days with full runtime dates and 15 min intervals.
-days<-seq.Date(from = as.Date(from), to = as.Date(to), by = 'days')
-datetime <- merge(days, chron(time = paste(hm15$x, ':', hm15$y, ':', 0)))
-colnames(datetime) <- c('date', 'time')
-datetime$dt <- as.POSIXct(paste(datetime$date, datetime$time))
-datetime <- datetime[order(datetime$dt), ]
-row.names(datetime) <- NULL
-
-## Create full year of dates with 15min TS.
+## Create full year of dates y-m-d with 15min TS.
 fromY<-paste0(YYYY,"-",sprintf("%02d", 1),"-",sprintf("%02d", 1))
 toY  <-paste0(YYYY,"-",sprintf("%02d",12),"-",sprintf("%02d",31))
 
-## Create sequence of full year with 15min TS.
-days<-seq.Date(from = as.Date(fromY), to = as.Date(toY), by = 'days')
-datetimeY <- merge(days, chron(time = paste(hm15$x, ':', hm15$y, ':', 0)), all.y=TRUE)
-colnames(datetimeY) <- c('date', 'time')
-datetimeY$dt <- as.POSIXct(paste(datetimeY$date, datetimeY$time), tz = "UTC", "%Y-%m-%d %H:%M:%OS")
-datetimeY <- datetimeY[order(datetimeY$dt), ]
-row.names(datetimeY) <- NULL
+days   <- seq.Date(from = as.Date(fromY),
+                     to = as.Date(  toY), by = 'days')
+dtYear <- merge(days, chron(time = paste(hm15$x, ':', hm15$y, ':', 0)), all.y=TRUE)
+colnames(dtYear) <- c('date', 'time')
+dtYear$dt <- as.POSIXct(paste(dtYear$date, dtYear$time), tz = "UTC", "%Y-%m-%d %H:%M:%OS")
+dtYear <- dtYear[order(dtYear$dt), ]
+row.names(dtYear) <- NULL
 
 ## Create sequence of with simulation period dates and TS.
-days<-seq.Date(from = as.Date(fsim), to = as.Date(to), by = 'days')
-datetimeSim <- merge(days, chron(time = paste(hmTS$x, ':', hmTS$y, ':', 0)), all.y=TRUE)
-colnames(datetimeSim) <- c('date', 'time')
-datetimeSim$dt <- as.POSIXct(paste(datetimeSim$date, datetimeSim$time), tz = "UTC", "%Y-%m-%d %H:%M:%OS")
-datetimeSim <- datetimeSim[order(datetimeSim$dt), ]
-row.names(datetimeSim) <- NULL
-dt_TS<-as.data.frame(as.numeric(datetimeSim$dt))
+days  <- seq.Date(from = as.Date(fsim),
+                    to = as.Date(  to), by = 'days')
+dtSim <- merge(days, chron(time = paste(hmTS$x, ':', hmTS$y, ':', 0)), all.y=TRUE)
+colnames(dtSim) <- c('date', 'time')
+dtSim$dt <- as.POSIXct(paste(dtSim$date, dtSim$time), tz = "UTC", "%Y-%m-%d %H:%M:%OS")
+dtSim <- dtSim[order(dtSim$dt), ]
+row.names(dtSim) <- NULL
+dt_TS<-as.data.frame(as.numeric(dtSim$dt))
 colnames(dt_TS)<-c('TS')
 
-minSim<-as.numeric(min(datetimeSim$dt))
-maxSim<-as.numeric(max(datetimeSim$dt))
+minSim<-as.numeric(min(dtSim$dt))
+maxSim<-as.numeric(max(dtSim$dt))
 
-## Read data file (full year in 15 min timesteps)
 
+## Read <file>.bcd data file (full year in 15 min timesteps)
 input <- file(args[8], 'r')
-## Read first line to avoid issues with header.
-main <- readLines(input, n = 22)
-## Now read data, force default Vx header line,
-DATA <- read.csv(input, sep=",", fileEncoding="UTF-8", header=FALSE, stringsAsFactors = F)
-DATA<-DATA[-nrow(DATA),]
+main  <- readLines(input, n = 22)      # Spool over file header
+DATA <- read.csv(input, sep=",",       # Now read csv data.
+                 fileEncoding="UTF-8",
+                 header=FALSE,         # Force default Vx header line.
+                 stringsAsFactors = F)
+DATA <- DATA[-nrow(DATA),]             # Remove last line "*data_end".
 
 ## Add (numeric) time column to DATA
-DATA<-cbind(datetimeY$dt,DATA)
+DATA<-cbind(dtYear$dt,DATA)
 colnames(DATA)[1]<-"date"
 
+## Create copy as "simulation period data" and subset to actual
+## simulation period.
 SimDATA<-DATA
 SimDATA$date<-as.numeric(SimDATA$date)
 SimDATA<-subset(SimDATA, date>=minSim & date<=maxSim)
 
 ## If pre-simulation is in prior year copy appropriate "end of year"
 ## data to beginning to cover pre-simulation period.
-if (as.POSIXlt(as.Date(from)-PP)$year-as.POSIXlt(fromY)$year < 0) {
+if (as.POSIXlt(as.Date(from))$year-as.POSIXlt(fromY)$year < 0) {
   # Set "copy from" date value.
   cfrom<-from
   year(cfrom)<-year(to)
@@ -120,7 +115,7 @@ if (as.POSIXlt(as.Date(from)-PP)$year-as.POSIXlt(fromY)$year < 0) {
   DATA_PP<-DATA[DATA$date >= paste(cfrom,"00:00:00"),]
   year(DATA_PP$date)<-year(as.Date(from))
   
-  # Extend data by pre-simulation period.
+  # Extend 15 min data by pre-simulation period.
   DATA<-rbind(DATA_PP,DATA)
   row.names(DATA)<-NULL
   
@@ -129,8 +124,9 @@ if (as.POSIXlt(as.Date(from)-PP)$year-as.POSIXlt(fromY)$year < 0) {
   # Don't do anything, here. Dummy command to avoid "NULL" output.
 }
 
-## Create minute sequence for corresponding period.
-days<-seq.Date(from = as.Date(from), to = as.Date(toY), by = 'days')
+## Create minute sequence for simulation period including pre-simulation.
+days   <- seq.Date(from = as.Date(from),
+                     to = as.Date( toY), by = 'days')
 dt_min <- merge(days, chron(time = paste0(hm01$x, ':', hm01$y, ':', 0)), all.y=TRUE)
 colnames(dt_min) <- c('date', 'time')
 

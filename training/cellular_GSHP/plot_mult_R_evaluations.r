@@ -45,7 +45,7 @@ parm<-strsplit(args[1],"/")[[1]]
 ## setz_3530_6563_5048_HTNT_SP2021_year.csv
 parm<-strsplit(parm[2],"_")[[1]]
 
-SCHEME<-as.character(parm[4])
+SCHEME<-as.character(parm[3])
 
 ## Datei(en) einlesen incl. Spaltenkoepfen
 if (length(args)==3) {

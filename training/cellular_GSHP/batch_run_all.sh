@@ -18,7 +18,7 @@ TOOLLIST="gen_bcData.r QA_report.sh simulate_plt.sh \
 # Blank-separated list of model variants to be evaluated. Call this script from the model
 # main folder (e.g. /Leadenhall/). Each variant is completely described in a subfolder
 # "var" (e.g. "Base") and the configuration file has the same name (e.g. "base.cfg").
-#VARLIST="cellular_GSHP cellular_GSHP2n"
+#VARLIST="cellular_GSHP cellular_GSHP2n cellular_icGSHP"
 VARLIST="cellular_icGSHP"
 
 # Construction list
@@ -76,8 +76,14 @@ do
           esac
 
           # Build file name for simulation case
-          BCD="HTNT"
-          theFile="${VAR}_${TMC}_${BCD}_${PER}"
+          IFS='_' read -r -a varnam <<< "$VAR"
+
+          if [ ${varnam[1]} == "icGSHP" ]; then
+            BCD="HTNT"
+            theFile="${varnam[1]}_${TMC}_${BCD}_${PER}"
+          else
+            theFile="${varnam[1]}_${TMC}_${PER}"
+          fi
 
           # Give message about current simulation set prior to simulation
           dt=`date "+%Y-%m-%d %H:%M:%S"`
