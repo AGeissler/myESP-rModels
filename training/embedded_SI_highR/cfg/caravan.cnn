@@ -1,0 +1,18 @@
+*connections for caravan
+*Date Thu Oct 15 23:55:53 2020
+     15  # number of connections
+   1   1   0   0   0  #    1 front in main is External
+   1   2   0   0   0  #    2 left in main is External
+   1   3   0   0   0  #    3 back in main is External
+   1   4   0   0   0  #    4 right in main is External
+   1   5   0   0   0  #    5 roof in main is External
+   1   6   0   0   0  #    6 floor in main is External
+   1   7   0   0   0  #    7 framefront in main is External
+   1   8   0   0   0  #    8 fromeright in main is External
+   1   9   0   0   0  #    9 frameleft in main is External
+   1  10   0   0   0  #   10 frameback in main is External
+   1  11   0   0   0  #   11 frameroof in main is External
+   1  12   0   0   0  #   12 framefloor in main is External
+   1  13   0   0   0  #   13 door in main is External
+   1  14   3   1  15  #   14 indoorfront in main >|< indoorback in main
+   1  15   3   1  14  #   15 indoorback in main >|< indoorfront in main

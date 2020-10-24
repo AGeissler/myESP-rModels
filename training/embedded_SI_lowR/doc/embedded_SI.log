@@ -1,0 +1,15 @@
+This model describes an L-shaped office comprising 7 walls, 1 ceiling,
+1 floor, 3 doors and 2 windows with shading/insolation determined at
+simulation time. The zone is conditioned via a convective heating
+system and ideal controller. The external obstructions represent adjacent
+buildings and vegetation. The model comprises the following files.
+
+embedded_SI.cfg   model configuration
+embedded_SI.ctl   control system
+embedded_SI.log   project notes (this file)
+office.geo       zone geometry
+office.con       zone construction
+office.opr       zone schedules
+office.tmc       zone transparent properties
+office.obs       zone obstructions file
+

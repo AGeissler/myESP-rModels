@@ -1,0 +1,307 @@
+*CONSTRUCTIONS,1.0 # multilayer constructions
+*Text
+No documentation included (yet)
+*End_text
+*date,Tue Apr  7 14:48:32 2020
+*Category,general constructions,general constructions,Category general constructions includes all of the MLC constructions in the file.
+#
+*item,extern_wall,extern_wall # tag name menu entry
+*itemdoc,extern_wall is brick skin over insulated blockwork
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,6,0.1000,Lt brown brick : Light brown brick (inorganic-porous)
+*layer,211,0.1500,glasswool : Glasswool (generic) (non-hygroscopic)
+*layer,0,0.0500,gap  0.170 0.170 0.170
+*layer,22,0.1000,aerated conc block : Aerated concrete block (inorganic-porous)
+*layer,108,0.0120,white gypboard : White painted Gypboard (inorganic-porous)
+*end_item
+*item,insul_frame,insul_frame # tag name menu entry
+*itemdoc,insul_frame is a metal panel with 80mm insulation
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,46,0.0040,grey cotd alum : Grey coated aluminium
+*layer,281,0.0800,glass fibre quilt : Glass Fibre Quilt (non-hygroscopic)
+*layer,46,0.0040,grey cotd alum : Grey coated aluminium
+*end_item
+*item,door,door # tag name menu entry
+*itemdoc,door is a solid wood door
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,69,0.0250,oak : Oak (radial cut)
+*end_item
+*item,mass_part,mass_part # tag name menu entry
+*itemdoc,mass_part is 240mm of blockwork
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,35,0.2400,block white ptd : block white painted inner (3% mc)
+*end_item
+*item,fict,fict # tag name menu entry
+*itemdoc,fict has little mass and high transmission
+*incat,general constructions
+*type,TRAN,SC_fictit,SYMMETRIC
+*layer,245,0.0060,fict : fictitious material (almost not there) with matching single laye
+*end_item
+*item,dbl_glz,dbl_glz # tag name menu entry
+*itemdoc,dbl_glz is a commercial double glazing
+*incat,general constructions
+*type,TRAN,DCF7671_06nb,SYMMETRIC
+*layer,242,0.0060,plate glass : Plate glass with placeholder single layer optics
+*layer,0,0.0120,gap  0.170 0.170 0.170
+*layer,242,0.0060,plate glass : Plate glass with placeholder single layer optics
+*end_item
+*item,roof,roof # tag name menu entry
+*itemdoc,roof is an insulated metal panel
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,43,0.0030,aluminium : Aluminium
+*layer,0,0.0250,gap  0.170 0.170 0.170
+*layer,281,0.0800,glass fibre quilt : Glass Fibre Quilt (non-hygroscopic)
+*layer,43,0.0030,aluminium : Aluminium
+*end_item
+*item,susp_floor,susp_floor # tag name menu entry
+*itemdoc,susp_floor is carpet over concrete looking from below
+*incat,general constructions
+*type,OPAQ,OPAQUE,susp_flr_re
+*layer,221,0.0060,Wilton : Wilton weave wool carpet (organic-hygroscopic)
+*layer,67,0.0190,chipboard : Chipboard
+*layer,0,0.0500,gap  0.170 0.170 0.170
+*layer,32,0.1400,heavy mix concrete : Heavy mix concrete
+*layer,42,0.0040,steel : Steel
+*end_item
+*item,susp_flr_re,susp_flr_re # tag name menu entry
+*itemdoc,susp_flr_re is carpet over concrete looking from above
+*incat,general constructions
+*type,OPAQ,OPAQUE,susp_floor
+*layer,42,0.0040,steel : Steel
+*layer,32,0.1400,heavy mix concrete : Heavy mix concrete
+*layer,0,0.0500,gap  0.170 0.170 0.170
+*layer,67,0.0190,chipboard : Chipboard
+*layer,221,0.0060,Wilton : Wilton weave wool carpet (organic-hygroscopic)
+*end_item
+*item,ceiling,ceiling # tag name menu entry
+*itemdoc,ceiling is an accoustic ceiling looking from below
+*incat,general constructions
+*type,OPAQ,OPAQUE,ceiling_rev
+*layer,211,0.1000,glasswool : Glasswool (generic) (non-hygroscopic)
+*layer,150,0.0100,ceiling mineral : Ceiling acoustic tile (mineral fibre based)
+*end_item
+*item,ceiling_rev,ceiling_rev # tag name menu entry
+*itemdoc,ceiling_rev is an acoustic ceiling looking from void
+*incat,general constructions
+*type,OPAQ,OPAQUE,ceiling
+*layer,150,0.0100,ceiling mineral : Ceiling acoustic tile (mineral fibre based)
+*layer,211,0.1000,glasswool : Glasswool (generic) (non-hygroscopic)
+*end_item
+*item,gyp_blk_ptn,gyp_blk_ptn # tag name menu entry
+*itemdoc,gyp_blk_ptn is block partition skinned in gypboard
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,108,0.0130,white gypboard : White painted Gypboard (inorganic-porous)
+*layer,0,0.0500,gap  0.170 0.170 0.170
+*layer,28,0.1000,block inner : Block inner (3% mc)
+*layer,0,0.0500,gap  0.170 0.170 0.170
+*layer,108,0.0130,white gypboard : White painted Gypboard (inorganic-porous)
+*end_item
+*item,gyp_gyp_ptn,gyp_gyp_ptn # tag name menu entry
+*itemdoc,gyp_gyp_ptn is lightweight gypboard partition
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,108,0.0120,white gypboard : White painted Gypboard (inorganic-porous)
+*layer,0,0.0500,gap  0.170 0.170 0.170
+*layer,108,0.0120,white gypboard : White painted Gypboard (inorganic-porous)
+*end_item
+*item,fictitious,fictitious # tag name menu entry
+*itemdoc,fictitious has little mass and high transmission
+*incat,general constructions
+*type,TRAN,SC_fictit,SYMMETRIC
+*layer,245,0.0040,fict : fictitious material (almost not there) with matching single laye
+*end_item
+*item,raised_flr32,raised_flr32 # tag name menu entry
+*itemdoc,raised_flr32 is raised floor system
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,42,0.0020,steel : Steel
+*layer,91,0.0280,HighDensityParticleBd : HDF based on info in Handbook of Heat Transfer
+*layer,42,0.0020,steel : Steel
+*end_item
+*item,top_pln,top_pln # tag name menu entry
+*itemdoc,top_pln is a carpeted raised floor system looking from void
+*incat,general constructions
+*type,OPAQ,OPAQUE,flr_ov_pln
+*layer,228,0.0050,grey loop pile : Grey loop pile synthetic carpet (non-hygroscopic)
+*layer,42,0.0020,steel : Steel
+*layer,91,0.0280,HighDensityParticleBd : HDF based on info in Handbook of Heat Transfer
+*layer,42,0.0020,steel : Steel
+*end_item
+*item,flr_ov_pln,flr_ov_pln # tag name menu entry
+*itemdoc,flr_ov_pln is a carpeted raised floor system looking from room
+*incat,general constructions
+*type,OPAQ,OPAQUE,top_pln
+*layer,42,0.0020,steel : Steel
+*layer,91,0.0280,HighDensityParticleBd : HDF based on info in Handbook of Heat Transfer
+*layer,42,0.0020,steel : Steel
+*layer,228,0.0050,grey loop pile : Grey loop pile synthetic carpet (non-hygroscopic)
+*end_item
+*item,slab_275,slab_275 # tag name menu entry
+*itemdoc,slab_275 is a 275mm concrete slab
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,34,0.2750,white ptd concrete : White painted heavy mix concrete
+*end_item
+*item,conc_250,conc_250 # tag name menu entry
+*itemdoc,conc_250 is a 250mm concrete slab
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,34,0.2500,white ptd concrete : White painted heavy mix concrete
+*end_item
+*item,ceil_raised,ceil_raised # tag name menu entry
+*itemdoc,ceil_raised is combined structure and raised floor looking from below
+*incat,general constructions
+*type,OPAQ,OPAQUE,flr_raised
+*layer,228,0.0050,grey loop pile : Grey loop pile synthetic carpet (non-hygroscopic)
+*layer,42,0.0020,steel : Steel
+*layer,91,0.0280,HighDensityParticleBd : HDF based on info in Handbook of Heat Transfer
+*layer,42,0.0020,steel : Steel
+*layer,0,0.4500,gap  0.170 0.170 0.170
+*layer,34,0.2750,white ptd concrete : White painted heavy mix concrete
+*end_item
+*item,flr_raised,flr_raised # tag name menu entry
+*itemdoc,flr_raised is a combined structure and raised floor looking from room
+*incat,general constructions
+*type,OPAQ,OPAQUE,ceil_raised
+*layer,34,0.2750,white ptd concrete : White painted heavy mix concrete
+*layer,0,0.4500,gap  0.170 0.170 0.170
+*layer,42,0.0020,steel : Steel
+*layer,91,0.0280,HighDensityParticleBd : HDF based on info in Handbook of Heat Transfer
+*layer,42,0.0020,steel : Steel
+*layer,228,0.0050,grey loop pile : Grey loop pile synthetic carpet (non-hygroscopic)
+*end_item
+*item,ceil_un_pln,ceil_un_pln # tag name menu entry
+*itemdoc,ceil_un_pln is a 275mm concrete structure
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,34,0.2750,white ptd concrete : White painted heavy mix concrete
+*end_item
+*item,spandrel_x,spandrel_x # tag name menu entry
+*itemdoc,spandrel_x is a double glazed spandrel
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,243,0.0060,clear float : clear float glass with optics from UK national method dat
+*layer,0,0.0120,gap  0.170 0.170 0.170
+*layer,243,0.0060,clear float : clear float glass with optics from UK national method dat
+*layer,0,0.1010,gap  0.200 0.200 0.200
+*layer,42,0.0012,steel : Steel
+*layer,211,0.0400,glasswool : Glasswool (generic) (non-hygroscopic)
+*layer,42,0.0010,steel : Steel
+*end_item
+*item,steel_pl_3mm,steel_pl_3mm # tag name menu entry
+*itemdoc,steel_pl_3mm is a 3mm white steel panel
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,45,0.0030,white ptd steel : White painted steel
+*end_item
+*item,collector_pl,collector_pl # tag name menu entry
+*itemdoc,collector_pl is a dark coated copper panel
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,50,0.0030,black_coated_copper : black_coated_copper coated for solar absorption e
+*end_item
+*item,sensor_case,sensor_case # tag name menu entry
+*itemdoc,sensor_case is an equipment case made of ABS
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,175,0.0017,ABS_case : ABS case (Acrylonitrile Butadiene Styrene) (www.matweb.com)
+*end_item
+*item,circuit_bd,circuit_bd # tag name menu entry
+*itemdoc,circuit_bd   is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,307,0.0017,pcb-board : pcb-board based on FR4 with a thin layer of copper from Sol
+*end_item
+*item,NiMH_battery,NiMH_battery # tag name menu entry
+*itemdoc,NiMH_battery repressents a battery within a device
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,308,0.0140,NiMH_battery : NiMH_battery electrolite and case from Journal Power Sou
+*end_item
+*item,upholstery,upholstery # tag name menu entry
+*itemdoc,upholstery is wool materials for furniture
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,223,0.0050,wool felt underlay : Wool felt underlay (organic-hygroscopic)
+*layer,222,0.0250,sheeps wool : Sheeps wool (simulated)
+*layer,223,0.0050,wool felt underlay : Wool felt underlay (organic-hygroscopic)
+*end_item
+*item,corian_count,corian_count # tag name menu entry
+*itemdoc,corian_count is a ...
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,330,0.0200,corian : corian is a solid homogeneous non-porous surfacing of natural
+*end_item
+*item,shelves_20mm,shelves_20mm # tag name menu entry
+*itemdoc,shelves_20mm is wood shelving
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,93,0.0200,oak_light_stained : oak_light_stained (copy of oak)
+*end_item
+*item,IT_case,IT_case # tag name menu entry
+*itemdoc,IT_case is a dark ABS case for equipment
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,176,0.0027,dark_abs_case : dark_abs_case dark grey ABS (Acrylonitrile Butadiene St
+*end_item
+*item,furn_wd10mm,furn_wd10mm # tag name menu entry
+*itemdoc,furn_wd10mm is a 10mm wood for furniture
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,69,0.0100,oak : Oak (radial cut)
+*end_item
+*item,steel_gr_3mm,steel_gr_3mm # tag name menu entry
+*itemdoc,steel_gr_3mm is a 3mm beige steel panel
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,44,0.0030,beige ptd steel : Beige painted steel
+*end_item
+*item,PH_alu_frame,PH_alu_frame # tag name menu entry
+*itemdoc,PH_alu_frame is a set of layers representing a PH framing system
+*incat,general constructions
+*type,OPAQ,OPAQUE,NONSYMMETRIC
+*layer,46,0.0030,grey cotd alum : Grey coated aluminium
+*layer,0,0.0080,gap  0.060 0.060 0.060
+*layer,43,0.0030,aluminium : Aluminium
+*layer,0,0.0080,gap  0.060 0.060 0.060
+*layer,43,0.0030,aluminium : Aluminium
+*layer,290,0.0400,EPS k 0.05 : EPS k=0.05 (non-hygroscopic)
+*layer,43,0.0030,aluminium : Aluminium
+*layer,0,0.0080,gap  0.060 0.060 0.060
+*layer,46,0.0030,grey cotd alum : Grey coated aluminium
+*end_item
+*item,file_papers,file_papers # tag name menu entry
+*itemdoc,file_papers  represents paper within a filing cabinet
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,309,0.1000,book_paper : book_paper .72 g/cc from paperonweb.com and engineering to
+*layer,310,0.1000,news_paper : news_paper .62g/cc on paperonweb.com engineering toolbox o
+*layer,309,0.1000,book_paper : book_paper .72 g/cc from paperonweb.com and engineering to
+*end_item
+*item,booksonshlf,booksonshlf # tag name menu entry
+*itemdoc,booksonshlf represents paper-back books on a shelf
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,309,0.2100,book_paper : book_paper .72 g/cc from paperonweb.com and engineering to
+*end_item
+*item,stuffonshelf,stuffonshelf # tag name menu entry
+*itemdoc,stuffonshelf repreents a mix of papter types on a shelf
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,311,0.2100,shelf_clutter : shelf_clutter mix of books magazines papers on typical
+*end_item
+*item,hvac_case,hvac insulated case # tag name menu entry
+*itemdoc,steel case for HVAC with 25mm insulation
+*incat,general constructions
+*type,OPAQ,OPAQUE,SYMMETRIC
+*layer,42,0.0030,steel : Steel
+*layer,292,0.0250,Min wool quilt k 0.05 tb : Quilt (Min wool quilt k=0.05) (non-hygroscop
+*layer,42,0.0030,steel : Steel
+*end_item
+*db_end

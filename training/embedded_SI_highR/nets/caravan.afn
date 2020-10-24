@@ -1,0 +1,19 @@
+    3    4    4    0.500    (nodes, components, connections, wind reduction)
+ Node         Fld. Type   Height    Temperature    Data_1       Data_2
+ main            1    0   2.2000       20.000       1.0000       16.800    
+ door            1    3   2.0000       20.000       14.000       180.00    
+ front           1    3   2.1000       20.000       14.000       180.00    
+ Component    Type C+ L+ Description
+ door          130  5  0 Specific air flow door              m = rho.f(W,H,dP)       
+   1.00000000      0.800000012       2.00000000       1.20000005      0.600000024    
+ doorbig       130  5  0 Specific air flow door              m = rho.f(W,H,dP)       
+   1.00000000       2.09999990       2.40000010       1.20000005      0.600000024    
+ doorcrack     120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       5.00000024E-04   5.59999990    
+ bigcrack      120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       5.00000024E-04   13.6000004    
+ +Node         dHght   -Node         dHght   via Component
+ main         -0.100   door          0.100   door                                    
+ main         -0.100   door          0.100   doorcrack                               
+ main         -0.050   front         0.050   doorbig                                 
+ main         -0.050   front         0.050   bigcrack                                

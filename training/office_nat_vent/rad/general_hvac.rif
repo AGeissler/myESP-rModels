@@ -1,0 +1,22 @@
+# Radiance RIF file: general_hvac.rif
+#e2r_gen_view   1  2
+#e2r_glaz_type   1
+view= along2 -vtv -vp   11.9    3.5    1.3 -vd -1.000  0.000  0.000 -vu  0.00 0.00 1.00 -vh 100.0 -vv  60.0 -vs 0 -vl 0 -vo 0 -va 0
+scene= general_hvac.sky
+scene= general_hvac-glz.rad
+scene= general_hvac.mat
+scene= general_hvac-out.rad
+scene= general_hvac-in.rad
+UP= Z
+QUALITY= Medium
+DETAIL= High  
+VARIABILITY= High  
+RESOLUTION=  1000
+INDIRECT=  2
+PENUMBRAS= True 
+REPORT=    1
+render= -av  1.2800  1.2800  1.2800
+ZONE= Interior     0.00   12.00    0.00    6.00    0.00    3.00
+OPTFILE= general_hvac.opt
+OCTREE= general_hvac.oct
+PICTURE= general_hvac

@@ -1,0 +1,22 @@
+# Radiance RIF file: examination_Intern.rif
+#e2r_gen_view   1  2
+#e2r_glaz_type   1
+view= exam -vtv -vp    0.2    2.0    1.5 -vd  0.985  0.174  0.000 -vu  0.00 0.00 1.00 -vh 130.0 -vv 120.0 -vs 0 -vl 0 -vo 0 -va 0
+scene= examination_Intern.sky
+scene= examination_Intern-glz.rad
+scene= examination_Intern.mat
+scene= examination_Intern-out.rad
+scene= examination_Intern-in.rad
+UP= Z
+QUALITY= Medium
+DETAIL= Medium
+VARIABILITY= High  
+RESOLUTION=   500
+INDIRECT=  1
+PENUMBRAS= False
+REPORT=    1
+render= -av  0.6200  0.6200  0.6200
+ZONE= Interior     0.00    4.00    0.00    4.00    0.00    4.50
+OPTFILE= examination_Intern.opt
+OCTREE= examination_Intern.oct
+PICTURE= examination_Intern

@@ -14,6 +14,7 @@ h # heating cooling
 g # all sensible and latent
 -
 l # monthly stats
+- # default layout
 b # nearest 100wh
 c # hours above
 b # temperatures

@@ -1,7 +1,7 @@
 # Radiance RIF file: cellular_shd_Extern.rif
 #e2r_gen_view   0 -1
 #e2r_glaz_type   1
-view= def -vtv -vp   -42.200 -161.300   44.600 -vd   0.2586  0.9344 -0.2451 -vu 0 0 1 -vh    2.6 -vv    2.6 -vs 0 -vl 0
+view= from_sw -vtv -vp   45.3 -162.0   44.6 -vd -0.242  0.939 -0.245 -vu  0.00 0.00 1.00 -vh   3.6 -vv   3.2 -vs 0 -vl 0 -vo 0 -va 0
 scene= cellular_shd_Extern.sky
 scene= cellular_shd_Extern-glz.rad
 scene= cellular_shd_Extern.mat
@@ -11,11 +11,11 @@ UP= Z
 QUALITY= Medium
 DETAIL= Medium
 VARIABILITY= High  
-RESOLUTION=   600
+RESOLUTION=   800
 INDIRECT=  2
-PENUMBRAS= True 
+PENUMBRAS= False
 REPORT=    1
-render=  -av 15.3000 15.3000 15.3000
+render= -av 12.8000 12.8000 12.8000
 ZONE= Exterior   -10.49   16.59  -11.31   15.76    0.00   13.54
 OPTFILE= cellular_shd_Extern.opt
 OCTREE= cellular_shd_Extern.oct

@@ -1,0 +1,368 @@
+*connections for office_vent_hvac_infil
+*Date Wed Apr 22 10:39:19 2020
+    365   # number of connections
+   1   1   3   2   2  #    1 pt_general in manager >|< pt_mgrs in general
+   1   2   3   2  13  #    2 part_frame in manager >|< part_frame in general
+   1   3   3   2   1  #    3 door in manager >|< door in general
+   1   4   1   0   0  #    4 pt_other in manager >|< Identical environment
+   1   5   3   5   8  #    5 ceiling in manager >|< ceiling in ceil_void
+   1   6   3   7   1  #    6 floor in manager >|< man_floor in floor_void
+   1   7   0   0   0  #    7 spandral in manager is External
+   1   8   0   0   0  #    8 vent in manager is External
+   1   9   0   0   0  #    9 frame in manager is External
+   1  10   0   0   0  #   10 glazing in manager is External
+   1  11   3   2  14  #   11 part_glaz in manager >|< part_glaz in general
+   1  12   3   1  13  #   12 adesk_t in manager >|< adesk_t_ in manager
+   1  13   3   1  12  #   13 adesk_t_ in manager >|< adesk_t in manager
+   1  14   3   1  15  #   14 bdesk_t in manager >|< bdesk_t_ in manager
+   1  15   3   1  14  #   15 bdesk_t_ in manager >|< bdesk_t in manager
+   1  16   3   1  17  #   16 aseat in manager >|< aseat_ in manager
+   1  17   3   1  16  #   17 aseat_ in manager >|< aseat in manager
+   1  18   3   1  19  #   18 astback in manager >|< astback_ in manager
+   1  19   3   1  18  #   19 astback_ in manager >|< astback in manager
+   1  20   3   1  21  #   20 cseat_mass in manager >|< cseat_mass_ in manager
+   1  21   3   1  20  #   21 cseat_mass_ in manager >|< cseat_mass in manager
+   1  22   3   1  23  #   22 carm_mass_l in manager >|< carm_mass_l_ in manager
+   1  23   3   1  22  #   23 carm_mass_l_ in manager >|< carm_mass_l in manager
+   1  24   3   1  25  #   24 carm_mass_r in manager >|< carm_mass_r_ in manager
+   1  25   3   1  24  #   25 carm_mass_r_ in manager >|< carm_mass_r in manager
+   1  26   3   1  27  #   26 dt_top in manager >|< dt_top_ in manager
+   1  27   3   1  26  #   27 dt_top_ in manager >|< dt_top in manager
+   1  28   3   1  29  #   28 dct_shelf in manager >|< dct_shelf_ in manager
+   1  29   3   1  28  #   29 dct_shelf_ in manager >|< dct_shelf in manager
+   1  30   3   1  31  #   30 abil_lft in manager >|< abil_lft_ in manager
+   1  31   3   1  30  #   31 abil_lft_ in manager >|< abil_lft in manager
+   1  32   3   1  33  #   32 abil_rt in manager >|< abil_rt_ in manager
+   1  33   3   1  32  #   33 abil_rt_ in manager >|< abil_rt in manager
+   1  34   3   1  35  #   34 abooks in manager >|< abooks_ in manager
+   1  35   3   1  34  #   35 abooks_ in manager >|< abooks in manager
+   1  36   3   1  37  #   36 ccab_lf in manager >|< ccab_lf_ in manager
+   1  37   3   1  36  #   37 ccab_lf_ in manager >|< ccab_lf in manager
+   1  38   3   1  39  #   38 ccab_rt in manager >|< ccab_rt_ in manager
+   1  39   3   1  38  #   39 ccab_rt_ in manager >|< ccab_rt in manager
+   1  40   3   1  41  #   40 ccab_fr in manager >|< ccab_fr_ in manager
+   1  41   3   1  40  #   41 ccab_fr_ in manager >|< ccab_fr in manager
+   1  42   3   1  43  #   42 cpaper_fr in manager >|< cpaper_fr_ in manager
+   1  43   3   1  42  #   43 cpaper_fr_ in manager >|< cpaper_fr in manager
+   1  44   3   5   9  #   44 office_inlet in manager >|< office_inlet in ceil_void
+   1  45   3   5  10  #   45 office_ret in manager >|< office_ret in ceil_void
+   2   1   3   1   3  #   46 door in general >|< door in manager
+   2   2   3   1   1  #   47 pt_mgrs in general >|< pt_general in manager
+   2   3   3   4   3  #   48 pt_rec_a in general >|< pt_rec_a in reception
+   2   4   3   4   2  #   49 fict_rec in general >|< fict_rec in reception
+   2   5   1   0   0  #   50 pt_core_a in general >|< Identical environment
+   2   6   1   0   0  #   51 fire_door in general >|< Identical environment
+   2   7   3   5  11  #   52 ceiling in general >|< ceiling_gen in ceil_void
+   2   8   3   7   2  #   53 floor in general >|< gen_floor in floor_void
+   2   9   0   0   0  #   54 spandral in general is External
+   2  10   0   0   0  #   55 vent in general is External
+   2  11   0   0   0  #   56 frame in general is External
+   2  12   0   0   0  #   57 glazing in general is External
+   2  13   3   1   2  #   58 part_frame in general >|< part_frame in manager
+   2  14   3   1  11  #   59 part_glaz in general >|< part_glaz in manager
+   2  15   0   0   0  #   60 spandral_a in general is External
+   2  16   0   0   0  #   61 vent_a in general is External
+   2  17   0   0   0  #   62 frame_a in general is External
+   2  18   0   0   0  #   63 glazing_a in general is External
+   2  19   0   0   0  #   64 spandral_b in general is External
+   2  20   0   0   0  #   65 vent_b in general is External
+   2  21   0   0   0  #   66 frame_b in general is External
+   2  22   0   0   0  #   67 glazing_b in general is External
+   2  23   0   0   0  #   68 spandral_c in general is External
+   2  24   0   0   0  #   69 vent_c in general is External
+   2  25   0   0   0  #   70 frame_c in general is External
+   2  26   0   0   0  #   71 glazing_c in general is External
+   2  27   0   0   0  #   72 spandral_d in general is External
+   2  28   0   0   0  #   73 vent_d in general is External
+   2  29   0   0   0  #   74 frame_d in general is External
+   2  30   0   0   0  #   75 glazing_d in general is External
+   2  31   3   2  32  #   76 adesk_t in general >|< adesk_t_ in general
+   2  32   3   2  31  #   77 adesk_t_ in general >|< adesk_t in general
+   2  33   3   2  34  #   78 bdesk_t in general >|< bdesk_t_ in general
+   2  34   3   2  33  #   79 bdesk_t_ in general >|< bdesk_t in general
+   2  35   3   2  36  #   80 cdesk_t in general >|< cdesk_t_ in general
+   2  36   3   2  35  #   81 cdesk_t_ in general >|< cdesk_t in general
+   2  37   3   2  38  #   82 ddesk_t in general >|< ddesk_t_ in general
+   2  38   3   2  37  #   83 ddesk_t_ in general >|< ddesk_t in general
+   2  39   3   2  40  #   84 edesk_t in general >|< edesk_t_ in general
+   2  40   3   2  39  #   85 edesk_t_ in general >|< edesk_t in general
+   2  41   3   2  42  #   86 fdesk_t in general >|< fdesk_t_ in general
+   2  42   3   2  41  #   87 fdesk_t_ in general >|< fdesk_t in general
+   2  43   3   2  44  #   88 gdesk_t in general >|< gdesk_t_ in general
+   2  44   3   2  43  #   89 gdesk_t_ in general >|< gdesk_t in general
+   2  45   3   2  46  #   90 aseat in general >|< aseat_ in general
+   2  46   3   2  45  #   91 aseat_ in general >|< aseat in general
+   2  47   3   2  48  #   92 astback in general >|< astback_ in general
+   2  48   3   2  47  #   93 astback_ in general >|< astback in general
+   2  49   3   2  50  #   94 bseat in general >|< bseat_ in general
+   2  50   3   2  49  #   95 bseat_ in general >|< bseat in general
+   2  51   3   2  52  #   96 bstback in general >|< bstback_ in general
+   2  52   3   2  51  #   97 bstback_ in general >|< bstback in general
+   2  53   3   2  54  #   98 cseat in general >|< cseat_ in general
+   2  54   3   2  53  #   99 cseat_ in general >|< cseat in general
+   2  55   3   2  56  #  100 cstback in general >|< cstback_ in general
+   2  56   3   2  55  #  101 cstback_ in general >|< cstback in general
+   2  57   3   2  58  #  102 dseat in general >|< dseat_ in general
+   2  58   3   2  57  #  103 dseat_ in general >|< dseat in general
+   2  59   3   2  60  #  104 dstback in general >|< dstback_ in general
+   2  60   3   2  59  #  105 dstback_ in general >|< dstback in general
+   2  61   3   2  62  #  106 hdesk_t in general >|< hdesk_t_ in general
+   2  62   3   2  61  #  107 hdesk_t_ in general >|< hdesk_t in general
+   2  63   3   2  64  #  108 eseat in general >|< eseat_ in general
+   2  64   3   2  63  #  109 eseat_ in general >|< eseat in general
+   2  65   3   2  66  #  110 estback in general >|< estback_ in general
+   2  66   3   2  65  #  111 estback_ in general >|< estback in general
+   2  67   3   2  68  #  112 acab_lf in general >|< acab_lf_ in general
+   2  68   3   2  67  #  113 acab_lf_ in general >|< acab_lf in general
+   2  69   3   2  70  #  114 acab_rt in general >|< acab_rt_ in general
+   2  70   3   2  69  #  115 acab_rt_ in general >|< acab_rt in general
+   2  71   3   2  72  #  116 acab_fr in general >|< acab_fr_ in general
+   2  72   3   2  71  #  117 acab_fr_ in general >|< acab_fr in general
+   2  73   3   2  74  #  118 abil_lft in general >|< abil_lft_ in general
+   2  74   3   2  73  #  119 abil_lft_ in general >|< abil_lft in general
+   2  75   3   2  76  #  120 abil_rt in general >|< abil_rt_ in general
+   2  76   3   2  75  #  121 abil_rt_ in general >|< abil_rt in general
+   2  77   3   2  78  #  122 abooks in general >|< abooks_ in general
+   2  78   3   2  77  #  123 abooks_ in general >|< abooks in general
+   2  79   3   2  80  #  124 bbil_lft in general >|< bbil_lft_ in general
+   2  80   3   2  79  #  125 bbil_lft_ in general >|< bbil_lft in general
+   2  81   3   2  82  #  126 bbil_rt in general >|< bbil_rt_ in general
+   2  82   3   2  81  #  127 bbil_rt_ in general >|< bbil_rt in general
+   2  83   3   2  84  #  128 bbooks in general >|< bbooks_ in general
+   2  84   3   2  83  #  129 bbooks_ in general >|< bbooks in general
+   2  85   3   2  86  #  130 bcab_lf in general >|< bcab_lf_ in general
+   2  86   3   2  85  #  131 bcab_lf_ in general >|< bcab_lf in general
+   2  87   3   2  88  #  132 bcab_rt in general >|< bcab_rt_ in general
+   2  88   3   2  87  #  133 bcab_rt_ in general >|< bcab_rt in general
+   2  89   3   2  90  #  134 bcab_fr in general >|< bcab_fr_ in general
+   2  90   3   2  89  #  135 bcab_fr_ in general >|< bcab_fr in general
+   2  91   3   5  12  #  136 op_a_inlet in general >|< op_a_inlet in ceil_void
+   2  92   3   5  13  #  137 op_b_inlet in general >|< op_b_inlet in ceil_void
+   2  93   3   5  14  #  138 op_a_return in general >|< op_a_return in ceil_void
+   2  94   3   5  15  #  139 op_b_return in general >|< op_b_return in ceil_void
+   3   1   1   0   0  #  140 pt_next_off in conference >|< Identical environment
+   3   2   3   4   6  #  141 pt_recp_b in conference >|< pt_recp_b in reception
+   3   3   3   4   5  #  142 fict_open in conference >|< fict_open in reception
+   3   4   3   4   4  #  143 pt_recp_a in conference >|< pt_recp_a in reception
+   3   5   3   5  16  #  144 ceiling in conference >|< ceiling_conf in ceil_void
+   3   6   3   7   3  #  145 floor in conference >|< conf_floor in floor_void
+   3   7   0   0   0  #  146 spandral in conference is External
+   3   8   0   0   0  #  147 vent in conference is External
+   3   9   0   0   0  #  148 frame in conference is External
+   3  10   0   0   0  #  149 glazing in conference is External
+   3  11   0   0   0  #  150 spandral_a in conference is External
+   3  12   0   0   0  #  151 vent_a in conference is External
+   3  13   0   0   0  #  152 frame_a in conference is External
+   3  14   0   0   0  #  153 glazing_a in conference is External
+   3  15   0   0   0  #  154 spandral_b in conference is External
+   3  16   0   0   0  #  155 vent_b in conference is External
+   3  17   0   0   0  #  156 frame_b in conference is External
+   3  18   0   0   0  #  157 glazing_b in conference is External
+   3  19   0   0   0  #  158 spandral_c in conference is External
+   3  20   0   0   0  #  159 vent_c in conference is External
+   3  21   0   0   0  #  160 frame_c in conference is External
+   3  22   0   0   0  #  161 glazing_c in conference is External
+   3  23   0   0   0  #  162 spandral_d in conference is External
+   3  24   0   0   0  #  163 vent_d in conference is External
+   3  25   0   0   0  #  164 frame_d in conference is External
+   3  26   0   0   0  #  165 glazing_d in conference is External
+   3  27   3   3  28  #  166 aseat in conference >|< aseat_ in conference
+   3  28   3   3  27  #  167 aseat_ in conference >|< aseat in conference
+   3  29   3   3  30  #  168 astback in conference >|< astback_ in conference
+   3  30   3   3  29  #  169 astback_ in conference >|< astback in conference
+   3  31   3   3  32  #  170 bseat in conference >|< bseat_ in conference
+   3  32   3   3  31  #  171 bseat_ in conference >|< bseat in conference
+   3  33   3   3  34  #  172 bstback in conference >|< bstback_ in conference
+   3  34   3   3  33  #  173 bstback_ in conference >|< bstback in conference
+   3  35   3   3  36  #  174 cseat in conference >|< cseat_ in conference
+   3  36   3   3  35  #  175 cseat_ in conference >|< cseat in conference
+   3  37   3   3  38  #  176 cstback in conference >|< cstback_ in conference
+   3  38   3   3  37  #  177 cstback_ in conference >|< cstback in conference
+   3  39   3   3  40  #  178 dseat in conference >|< dseat_ in conference
+   3  40   3   3  39  #  179 dseat_ in conference >|< dseat in conference
+   3  41   3   3  42  #  180 dstback in conference >|< dstback_ in conference
+   3  42   3   3  41  #  181 dstback_ in conference >|< dstback in conference
+   3  43   3   3  44  #  182 table in conference >|< table_ in conference
+   3  44   3   3  43  #  183 table_ in conference >|< table in conference
+   3  45   3   3  46  #  184 eseat in conference >|< eseat_ in conference
+   3  46   3   3  45  #  185 eseat_ in conference >|< eseat in conference
+   3  47   3   3  48  #  186 estback in conference >|< estback_ in conference
+   3  48   3   3  47  #  187 estback_ in conference >|< estback in conference
+   3  49   3   3  50  #  188 fdesk_t in conference >|< fdesk_t_ in conference
+   3  50   3   3  49  #  189 fdesk_t_ in conference >|< fdesk_t in conference
+   3  51   3   3  52  #  190 abil_lft in conference >|< abil_lft_ in conference
+   3  52   3   3  51  #  191 abil_lft_ in conference >|< abil_lft in conference
+   3  53   3   3  54  #  192 abil_rt in conference >|< abil_rt_ in conference
+   3  54   3   3  53  #  193 abil_rt_ in conference >|< abil_rt in conference
+   3  55   3   3  56  #  194 abooks in conference >|< abooks_ in conference
+   3  56   3   3  55  #  195 abooks_ in conference >|< abooks in conference
+   3  57   3   3  58  #  196 bbil_lft in conference >|< bbil_lft_ in conference
+   3  58   3   3  57  #  197 bbil_lft_ in conference >|< bbil_lft in conference
+   3  59   3   3  60  #  198 bbil_rt in conference >|< bbil_rt_ in conference
+   3  60   3   3  59  #  199 bbil_rt_ in conference >|< bbil_rt in conference
+   3  61   3   3  62  #  200 bbooks in conference >|< bbooks_ in conference
+   3  62   3   3  61  #  201 bbooks_ in conference >|< bbooks in conference
+   3  63   3   3  64  #  202 cbil_lft in conference >|< cbil_lft_ in conference
+   3  64   3   3  63  #  203 cbil_lft_ in conference >|< cbil_lft in conference
+   3  65   3   3  66  #  204 cbil_rt in conference >|< cbil_rt_ in conference
+   3  66   3   3  65  #  205 cbil_rt_ in conference >|< cbil_rt in conference
+   3  67   3   3  68  #  206 cbooks in conference >|< cbooks_ in conference
+   3  68   3   3  67  #  207 cbooks_ in conference >|< cbooks in conference
+   3  69   3   5  17  #  208 conf_return in conference >|< conf_return in ceil_void
+   3  70   3   5  18  #  209 conf_inlet in conference >|< conf_inlet in ceil_void
+   4   1   1   0   0  #  210 pt_core_a in reception >|< Identical environment
+   4   2   3   2   4  #  211 fict_rec in reception >|< fict_rec in general
+   4   3   3   2   3  #  212 pt_rec_a in reception >|< pt_rec_a in general
+   4   4   3   3   4  #  213 pt_recp_a in reception >|< pt_recp_a in conference
+   4   5   3   3   3  #  214 fict_open in reception >|< fict_open in conference
+   4   6   3   3   2  #  215 pt_recp_b in reception >|< pt_recp_b in conference
+   4   7   0   0   0  #  216 spandral in reception is External
+   4   8   0   0   0  #  217 vent in reception is External
+   4   9   0   0   0  #  218 frame in reception is External
+   4  10   0   0   0  #  219 glazing in reception is External
+   4  11   0   0   0  #  220 spandral_a in reception is External
+   4  12   0   0   0  #  221 vent_a in reception is External
+   4  13   0   0   0  #  222 frame_a in reception is External
+   4  14   0   0   0  #  223 glazing_a in reception is External
+   4  15   3   5  19  #  224 ceiling in reception >|< ceiling_recp in ceil_void
+   4  16   3   7   4  #  225 floor in reception >|< recep_floor in floor_void
+   4  17   3   4  18  #  226 aseat_mass in reception >|< aseat_mass_ in reception
+   4  18   3   4  17  #  227 aseat_mass_ in reception >|< aseat_mass in reception
+   4  19   3   4  20  #  228 aarm_mass_l in reception >|< aarm_mass_l_ in reception
+   4  20   3   4  19  #  229 aarm_mass_l_ in reception >|< aarm_mass_l in reception
+   4  21   3   4  22  #  230 aarm_mass_r in reception >|< aarm_mass_r_ in reception
+   4  22   3   4  21  #  231 aarm_mass_r_ in reception >|< aarm_mass_r in reception
+   4  23   3   4  24  #  232 bseat_mass in reception >|< bseat_mass_ in reception
+   4  24   3   4  23  #  233 bseat_mass_ in reception >|< bseat_mass in reception
+   4  25   3   4  26  #  234 barm_mass_l in reception >|< barm_mass_l_ in reception
+   4  26   3   4  25  #  235 barm_mass_l_ in reception >|< barm_mass_l in reception
+   4  27   3   4  28  #  236 barm_mass_r in reception >|< barm_mass_r_ in reception
+   4  28   3   4  27  #  237 barm_mass_r_ in reception >|< barm_mass_r in reception
+   4  29   3   4  30  #  238 at_top in reception >|< at_top_ in reception
+   4  30   3   4  29  #  239 at_top_ in reception >|< at_top in reception
+   4  31   3   4  32  #  240 act_shelf in reception >|< act_shelf_ in reception
+   4  32   3   4  31  #  241 act_shelf_ in reception >|< act_shelf in reception
+   4  33   3   4  34  #  242 adesk_t in reception >|< adesk_t_ in reception
+   4  34   3   4  33  #  243 adesk_t_ in reception >|< adesk_t in reception
+   4  35   3   4  36  #  244 bdesk_t in reception >|< bdesk_t_ in reception
+   4  36   3   4  35  #  245 bdesk_t_ in reception >|< bdesk_t in reception
+   4  37   3   4  38  #  246 aseat in reception >|< aseat_ in reception
+   4  38   3   4  37  #  247 aseat_ in reception >|< aseat in reception
+   4  39   3   4  40  #  248 astback in reception >|< astback_ in reception
+   4  40   3   4  39  #  249 astback_ in reception >|< astback in reception
+   4  41   3   4  42  #  250 acase in reception >|< acase_ in reception
+   4  42   3   4  41  #  251 acase_ in reception >|< acase in reception
+   4  43   3   4  44  #  252 acircuit in reception >|< acircuit_ in reception
+   4  44   3   4  43  #  253 acircuit_ in reception >|< acircuit in reception
+   4  45   3   4  46  #  254 acab_lf in reception >|< acab_lf_ in reception
+   4  46   3   4  45  #  255 acab_lf_ in reception >|< acab_lf in reception
+   4  47   3   4  48  #  256 acab_rt in reception >|< acab_rt_ in reception
+   4  48   3   4  47  #  257 acab_rt_ in reception >|< acab_rt in reception
+   4  49   3   4  50  #  258 acab_fr in reception >|< acab_fr_ in reception
+   4  50   3   4  49  #  259 acab_fr_ in reception >|< acab_fr in reception
+   4  51   3   4  52  #  260 bcab_lf in reception >|< bcab_lf_ in reception
+   4  52   3   4  51  #  261 bcab_lf_ in reception >|< bcab_lf in reception
+   4  53   3   4  54  #  262 bcab_rt in reception >|< bcab_rt_ in reception
+   4  54   3   4  53  #  263 bcab_rt_ in reception >|< bcab_rt in reception
+   4  55   3   4  56  #  264 bcab_fr in reception >|< bcab_fr_ in reception
+   4  56   3   4  55  #  265 bcab_fr_ in reception >|< bcab_fr in reception
+   4  57   3   4  58  #  266 ccab_lf in reception >|< ccab_lf_ in reception
+   4  58   3   4  57  #  267 ccab_lf_ in reception >|< ccab_lf in reception
+   4  59   3   4  60  #  268 ccab_rt in reception >|< ccab_rt_ in reception
+   4  60   3   4  59  #  269 ccab_rt_ in reception >|< ccab_rt in reception
+   4  61   3   4  62  #  270 ccab_fr in reception >|< ccab_fr_ in reception
+   4  62   3   4  61  #  271 ccab_fr_ in reception >|< ccab_fr in reception
+   4  63   3   4  64  #  272 dcab_lf in reception >|< dcab_lf_ in reception
+   4  64   3   4  63  #  273 dcab_lf_ in reception >|< dcab_lf in reception
+   4  65   3   4  66  #  274 dcab_rt in reception >|< dcab_rt_ in reception
+   4  66   3   4  65  #  275 dcab_rt_ in reception >|< dcab_rt in reception
+   4  67   3   4  68  #  276 dcab_fr in reception >|< dcab_fr_ in reception
+   4  68   3   4  67  #  277 dcab_fr_ in reception >|< dcab_fr in reception
+   4  69   3   4  70  #  278 ecab_lf in reception >|< ecab_lf_ in reception
+   4  70   3   4  69  #  279 ecab_lf_ in reception >|< ecab_lf in reception
+   4  71   3   4  72  #  280 ecab_rt in reception >|< ecab_rt_ in reception
+   4  72   3   4  71  #  281 ecab_rt_ in reception >|< ecab_rt in reception
+   4  73   3   4  74  #  282 ecab_fr in reception >|< ecab_fr_ in reception
+   4  74   3   4  73  #  283 ecab_fr_ in reception >|< ecab_fr in reception
+   4  75   3   5  23  #  284 recep_a_ret in reception >|< recep_a_ret in ceil_void
+   4  76   3   5  22  #  285 recep_b_ret in reception >|< recep_b_ret in ceil_void
+   4  77   3   5  21  #  286 recep_a_inle in reception >|< recep_a_inle in ceil_void
+   4  78   3   5  20  #  287 recep_b_inle in reception >|< recep_b_inle in ceil_void
+   5   1   1   0   0  #  288 structure in ceil_void >|< Identical environment
+   5   2   0   0   0  #  289 south_edge in ceil_void is External
+   5   3   0   0   0  #  290 east_edge in ceil_void is External
+   5   4   0   0   0  #  291 north_edge in ceil_void is External
+   5   5   1   0   0  #  292 core_b in ceil_void >|< Identical environment
+   5   6   1   0   0  #  293 core_a in ceil_void >|< Identical environment
+   5   7   1   0   0  #  294 core_c in ceil_void >|< Identical environment
+   5   8   3   1   5  #  295 ceiling in ceil_void >|< ceiling in manager
+   5   9   3   1  44  #  296 office_inlet in ceil_void >|< office_inlet in manager
+   5  10   3   1  45  #  297 office_ret in ceil_void >|< office_ret in manager
+   5  11   3   2   7  #  298 ceiling_gen in ceil_void >|< ceiling in general
+   5  12   3   2  91  #  299 op_a_inlet in ceil_void >|< op_a_inlet in general
+   5  13   3   2  92  #  300 op_b_inlet in ceil_void >|< op_b_inlet in general
+   5  14   3   2  93  #  301 op_a_return in ceil_void >|< op_a_return in general
+   5  15   3   2  94  #  302 op_b_return in ceil_void >|< op_b_return in general
+   5  16   3   3   5  #  303 ceiling_conf in ceil_void >|< ceiling in conference
+   5  17   3   3  69  #  304 conf_return in ceil_void >|< conf_return in conference
+   5  18   3   3  70  #  305 conf_inlet in ceil_void >|< conf_inlet in conference
+   5  19   3   4  15  #  306 ceiling_recp in ceil_void >|< ceiling in reception
+   5  20   3   4  78  #  307 recep_b_inle in ceil_void >|< recep_b_inle in reception
+   5  21   3   4  77  #  308 recep_a_inle in ceil_void >|< recep_a_inle in reception
+   5  22   3   4  76  #  309 recep_b_ret in ceil_void >|< recep_b_ret in reception
+   5  23   3   4  75  #  310 recep_a_ret in ceil_void >|< recep_a_ret in reception
+   5  24   3   6   1  #  311 mb_o_front in ceil_void >|< mb_o_front in mix_op_man
+   5  25   3   6   2  #  312 mb_o_right in ceil_void >|< mb_o_right in mix_op_man
+   5  26   3   6   3  #  313 mb_o_back in ceil_void >|< mb_o_back in mix_op_man
+   5  27   3   6   4  #  314 mb_o_left in ceil_void >|< mb_o_left in mix_op_man
+   5  28   3   6   5  #  315 mb_o_top in ceil_void >|< mb_o_top in mix_op_man
+   5  29   3   6   6  #  316 mb_o_base in ceil_void >|< mb_o_base in mix_op_man
+   5  30   3   9   1  #  317 mb_r_front in ceil_void >|< mb_o_front in mb_recep
+   5  31   3   9   2  #  318 mb_r_right in ceil_void >|< mb_o_right in mb_recep
+   5  32   3   9   3  #  319 mb_r_back in ceil_void >|< mb_o_back in mb_recep
+   5  33   3   9   4  #  320 mb_r_left in ceil_void >|< mb_o_left in mb_recep
+   5  34   3   9   5  #  321 mb_r_top in ceil_void >|< mb_o_top in mb_recep
+   5  35   3   9   6  #  322 mb_r_base in ceil_void >|< mb_o_base in mb_recep
+   5  36   3  10   1  #  323 mb_c_front in ceil_void >|< mb_o_front in mb_conf
+   5  37   3  10   2  #  324 mb_c_right in ceil_void >|< mb_o_right in mb_conf
+   5  38   3  10   3  #  325 mb_c_back in ceil_void >|< mb_o_back in mb_conf
+   5  39   3  10   4  #  326 mb_c_left in ceil_void >|< mb_o_left in mb_conf
+   5  40   3  10   5  #  327 mb_c_top in ceil_void >|< mb_o_top in mb_conf
+   5  41   3  10   6  #  328 mb_c_base in ceil_void >|< mb_o_base in mb_conf
+   6   1   3   5  24  #  329 mb_o_front in mix_op_man >|< mb_o_front in ceil_void
+   6   2   3   5  25  #  330 mb_o_right in mix_op_man >|< mb_o_right in ceil_void
+   6   3   3   5  26  #  331 mb_o_back in mix_op_man >|< mb_o_back in ceil_void
+   6   4   3   5  27  #  332 mb_o_left in mix_op_man >|< mb_o_left in ceil_void
+   6   5   3   5  28  #  333 mb_o_top in mix_op_man >|< mb_o_top in ceil_void
+   6   6   3   5  29  #  334 mb_o_base in mix_op_man >|< mb_o_base in ceil_void
+   7   1   3   1   6  #  335 man_floor in floor_void >|< floor in manager
+   7   2   3   2   8  #  336 gen_floor in floor_void >|< floor in general
+   7   3   3   3   6  #  337 conf_floor in floor_void >|< floor in conference
+   7   4   3   4  16  #  338 recep_floor in floor_void >|< floor in reception
+   7   5   0   0   0  #  339 front in floor_void is External
+   7   6   0   0   0  #  340 right in floor_void is External
+   7   7   0   0   0  #  341 back in floor_void is External
+   7   8   1   0   0  #  342 left_a in floor_void >|< Identical environment
+   7   9   1   0   0  #  343 back_a in floor_void >|< Identical environment
+   7  10   1   0   0  #  344 left_b in floor_void >|< Identical environment
+   7  11   3   8   1  #  345 Base in floor_void >|< structure in ceiling_belo
+   8   1   3   7  11  #  346 structure in ceiling_belo >|< Base in floor_void
+   8   2   0   0   0  #  347 front in ceiling_belo is External
+   8   3   0   0   0  #  348 right in ceiling_belo is External
+   8   4   0   0   0  #  349 back in ceiling_belo is External
+   8   5   1   0   0  #  350 left_a in ceiling_belo >|< Identical environment
+   8   6   1   0   0  #  351 back_a in ceiling_belo >|< Identical environment
+   8   7   1   0   0  #  352 left_b in ceiling_belo >|< Identical environment
+   8   8   1   0   0  #  353 Base in ceiling_belo >|< Identical environment
+   9   1   3   5  30  #  354 mb_o_front in mb_recep >|< mb_r_front in ceil_void
+   9   2   3   5  31  #  355 mb_o_right in mb_recep >|< mb_r_right in ceil_void
+   9   3   3   5  32  #  356 mb_o_back in mb_recep >|< mb_r_back in ceil_void
+   9   4   3   5  33  #  357 mb_o_left in mb_recep >|< mb_r_left in ceil_void
+   9   5   3   5  34  #  358 mb_o_top in mb_recep >|< mb_r_top in ceil_void
+   9   6   3   5  35  #  359 mb_o_base in mb_recep >|< mb_r_base in ceil_void
+  10   1   3   5  36  #  360 mb_o_front in mb_conf >|< mb_c_front in ceil_void
+  10   2   3   5  37  #  361 mb_o_right in mb_conf >|< mb_c_right in ceil_void
+  10   3   3   5  38  #  362 mb_o_back in mb_conf >|< mb_c_back in ceil_void
+  10   4   3   5  39  #  363 mb_o_left in mb_conf >|< mb_c_left in ceil_void
+  10   5   3   5  40  #  364 mb_o_top in mb_conf >|< mb_c_top in ceil_void
+  10   6   3   5  41  #  365 mb_o_base in mb_conf >|< mb_c_base in ceil_void

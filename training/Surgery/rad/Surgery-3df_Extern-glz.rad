@@ -1,0 +1,127 @@
+# Radiance glazing definitions
+# (first line of file must not be edited)
+  
+void  glass  unknown_glz
+0 
+0 
+3    0.87    0.87    0.87
+  
+void glass d_glz
+0 
+0 
+3    0.83  0.83  0.83
+  
+void glass dbl_glz
+0 
+0 
+3    0.83  0.83  0.83
+  
+void glass Not_DisplayG
+0 
+0 
+3    0.75  0.75  0.75
+  
+void glass window_Not_G
+0 
+0 
+3    0.75  0.75  0.75
+  
+void glass window_Typ_G
+0 
+0 
+3    0.59  0.59  0.59
+  
+void glass internal_glz
+0 
+0 
+3    0.75  0.75  0.75
+  
+void glass switched_gl
+0 
+0 
+3    0.83  0.83  0.83
+  
+void glass fictitious
+0 
+0 
+3    1.08  1.08  1.08
+  
+void glass single_glaz
+0 
+0 
+3    0.95  0.95  0.95
+  
+void glass tripglz_1.8
+0 
+0 
+3    0.77  0.77  0.77
+  
+void glass tripglz_1.08
+0 
+0 
+3    0.67  0.67  0.67
+  
+void glass tripglz_089
+0 
+0 
+3    0.67  0.67  0.67
+  
+void glass PV_constr
+0 
+0 
+3    0.02  0.02  0.02
+  
+void glass ccht_window
+0 
+0 
+3    0.97  0.97  0.97
+  
+void glass single_glazing
+0 
+0 
+3    0.95  0.95  0.95
+  
+# reception Surface defs..
+  
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  reception:south_glaze
+0 
+0 
+ 12
+    4.60000    0.00000    2.65000
+    7.40000    0.00000    2.65000
+    7.40000    0.00000    2.10000
+    4.60000    0.00000    2.10000
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  reception:north_glaze
+0 
+0 
+ 12
+    7.40000    7.00000    2.65000
+    4.60000    7.00000    2.65000
+    4.60000    7.00000    2.10000
+    7.40000    7.00000    2.10000
+# examination Surface defs..
+  
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  examination:north_glz
+0 
+0 
+ 12
+    3.78885    4.00000    4.42082
+    0.21115    4.00000    4.42082
+    0.21115    4.00000    3.07918
+    3.78885    4.00000    3.07918
+  
+#@mkillum e=dbl_glz d=48 s=32
+dbl_glz  polygon  examination:south_glaze
+0 
+0 
+ 12
+    0.60000    0.00000    2.65000
+    3.40000    0.00000    2.65000
+    3.40000    0.00000    2.10000
+    0.60000    0.00000    2.10000

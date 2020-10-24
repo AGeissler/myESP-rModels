@@ -4,16 +4,17 @@
 # Script to generate non-primitive support files for SAPP models
 # This script can be run with the following arguments 
 
-# automatic    = automatically generates all support files ,climate files
+# automatic    = automatically generates all model files, weather files
 #                and scripts to run on super-computer 
 
-# model        = automatically generates all support files and not
-#                climate files
+# model        = automatically generates all model files but not
+#                weather files
 
-# climate      = looks for climate files in standard location and copies
+# climate      = looks for weather files in standard location and copies
 #                ascii version for making up SPSS input files
 
 # hpc          = generates scripts to run on super-computer
+
 # no arguments = prompts user for action 
 arg='null'
 arg_1='null'
@@ -40,7 +41,7 @@ if [ $arg == 'null' ] ; then
   echo 'Interactivelly [i]'
   echo 'Abort [any other key]'
   echo 'Note that automatic will perform'
-  echo 'both model and climate specific tasks'
+  echo 'both model and weather related tasks'
   read B
   arg_1='automatic' # init
   if [ $B == 'a' ] ; then
@@ -317,7 +318,7 @@ fi
 ############################
 ## Climate Specific Tasks ##
 ############################
-# Copies climate files from location where ESP-r is installed to ../dbs
+# Copies weather files from location where ESP-r is installed to ../dbs
 # Makes ascii versions of the above copied binary files
 # Makes summary climate information file for all the climates
 # Finally it deletes the ascii files
@@ -362,7 +363,7 @@ y
 XXX
     done
 
-    # Now generate climate summary file i.e. looks at every file with a
+    # Now generate weather summary file, i.e. look at every file with a
     # clm.a extension and write the following summary data to file 
     # clm.summary.data.a
     # clm.a file name
@@ -439,7 +440,7 @@ XXX
 fi
 
 ###################################
-## Super computer Specific Tasks ##
+## Super computer specific Tasks ##
 ###################################
 # Change file names in hpc-run.sh and check.hpc.sh and rewrite these as
 # individual scripts that can be run on the HPC

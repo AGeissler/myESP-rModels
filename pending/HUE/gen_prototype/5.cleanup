@@ -73,12 +73,12 @@ else
     fi
   fi
 fi
-echo "Remove results.file ? [y/n]"
+echo "Remove results.file? [y/n]"
 read B
 if [ $B == 'y' ] ; then
   rm -fr ../results/results.file
 fi
-echo "Remove raw results database ? [y/n]"
+echo "Remove raw results database? [y/n]"
 read B
 if [ $B == 'y' ] ; then
   rm -fr ../results/RRDB*

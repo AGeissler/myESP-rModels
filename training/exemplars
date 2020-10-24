@@ -6,7 +6,7 @@
 *group	simple
 *help	Models demonstrating basic ESP-r functionality.
 *item
-*name	Zone + convective heating & basic control
+*name	zone with convective heating & basic control
 *cfg	/opt/esp-r/training/simple/cfg/bld_simple.cfg
 *root	/opt/esp-r/training/simple
 *item
@@ -18,7 +18,15 @@
 *cfg	/opt/esp-r/training/simple/cfg/bld_simple_shd.cfg
 *root	/opt/esp-r/training/simple
 *item
-*name	Multi-zone + convective heating & basic control
+*name	... with dynamic shading (low reflectivity obstruction surfaces)
+*cfg	/opt/esp-r/training/embedded_SI_lowR/cfg/embedded_SI.cfg
+*root	/opt/esp-r/training/embedded_SI_lowR
+*item
+*name	... with dynamic shading (high reflectivity obstructions surfaces)
+*cfg	/opt/esp-r/training/embedded_SI_highR/cfg/caravan.cfg
+*root	/opt/esp-r/training/embedded_SI_highR
+*item
+*name	multi-zone with convective heating & basic control
 *cfg	/opt/esp-r/training/basic/cfg/bld_basic.cfg
 *root	/opt/esp-r/training/basic
 *item
@@ -26,7 +34,7 @@
 *cfg	/opt/esp-r/training/two-position_control/cfg/two-position_control.cfg
 *root	/opt/esp-r/training/two-position_control
 *item
-*name	... with window reveal & external shading
+*name	... with window reveal and external shading
 *cfg	/opt/esp-r/training/basic/cfg/bld_basic_shd.cfg
 *root	/opt/esp-r/training/basic
 *item
@@ -34,23 +42,23 @@
 *cfg	/opt/esp-r/training/basic/cfg/bld_basic_af1.cfg
 *root	/opt/esp-r/training/basic
 *item
-*name	... with scheduled infiltration & ventilation
+*name	... with scheduled infiltration and ventilation
 *cfg	/opt/esp-r/training/basic/cfg/bld_basic_af2.cfg
 *root	/opt/esp-r/training/basic
 *item
-*name	... with pre-heat controller
+*name	... with pre-heat control
 *cfg	/opt/esp-r/training/basic/cfg/bld_basic_prht.cfg
 *root	/opt/esp-r/training/basic
 *item
-*name	... with zone temperature matching ambient
+*name	... with zone temperature tracking ambient
 *cfg	/opt/esp-r/training/basic/cfg/bld_basic_tm1.cfg
 *root	/opt/esp-r/training/basic
 *item
-*name	... with zone temperature matching average of sensors
+*name	... with zone temperature tracking average of sensors
 *cfg	/opt/esp-r/training/basic/cfg/bld_basic_tm2.cfg
 *root	/opt/esp-r/training/basic
 *item
-*name	... with convective heating & PID control
+*name	... with convective heating and PID control
 *cfg	/opt/esp-r/training/pid/cfg/pid.cfg
 *root	/opt/esp-r/training/pid
 *item
@@ -65,13 +73,9 @@
 *group	technical features
 *help	Office model with various technical features.
 *item
-*name	Two offices and a passageway
+*name	two offices and a passageway
 *cfg	/opt/esp-r/training/cellular_shd/cfg/cellular_shd.cfg
 *root	/opt/esp-r/training/cellular_shd
-*item
-*name	... with high resolution and furniture mass
-*cfg	/opt/esp-r/training/cellular_furn/cfg/cellular_furn.cfg
-*root	/opt/esp-r/training/cellular_furn
 *item
 *name	... with natural ventilation
 *cfg	/opt/esp-r/training/cellular_various/cfg/cellular_natv.cfg
@@ -97,7 +101,7 @@
 *cfg	/opt/esp-r/training/cellular_various/cfg/cellular_contam_mv.cfg
 *root	/opt/esp-r/training/cellular_various
 *item
-*name	... with CO2 control of mechanical ventilation system
+*name	... with CO2 control of mechanical ventilation
 *cfg	/opt/esp-r/training/cellular_various/cfg/cellular_contam_mvctl.cfg
 *root	/opt/esp-r/training/cellular_various
 *item
@@ -117,7 +121,7 @@
 *cfg	/opt/esp-r/training/cellular_various/cfg/cellular_natv.cfg
 *root	/opt/esp-r/training/cellular_various
 *item
-*name	... with hybrid natural & mechanical ventilation
+*name	... with hybrid natural and mechanical ventilation
 *log    /opt/esp-r/training/cellular_hybrid/dbs/readme.txt
 *cfg	/opt/esp-r/training/cellular_hybrid/cfg/cellular_mctl.cfg
 *root	/opt/esp-r/training/cellular_hybrid
@@ -126,7 +130,7 @@
 *cfg	/opt/esp-r/training/cellular_various/cfg/cellular_hvac.cfg
 *root	/opt/esp-r/training/cellular_various
 *item
-*name	... with floor heating & chilled ceiling
+*name	... with floor heating and chilled ceiling
 *cfg	/opt/esp-r/training/cellular_flh/cfg/cellular_flh.cfg
 *root	/opt/esp-r/training/cellular_flh
 *item
@@ -162,11 +166,11 @@
 *cfg	/opt/esp-r/training/cellular_various/cfg/cellular_measured.cfg
 *root	/opt/esp-r/training/cellular_various
 *item
-*name	... using CFC complex fenistrations in facade
+*name	... using CFC complex facade fenestrations in 
 *cfg	/opt/esp-r/training/cellular_CFC/cfg/cellular_CFC.cfg
 *root	/opt/esp-r/training/cellular_CFC
 *item
-*name	... with stochastic occupant behaviour from obFMU
+*name	... with stochastic occupant behaviour using obFMU
 *cfg	/opt/esp-r/training/cellular_obFMU/cfg/cellular_obFMU.cfg
 *root	/opt/esp-r/training/cellular_obFMU
 *item
@@ -175,52 +179,28 @@
 *group	realistic scale
 *help	Set of relatively detailed models.
 *item
-*name	House with sun-space, summer operation
-*cfg	/opt/esp-r/training/sun_space/cfg/house_with_sunspace.cfg
-*root	/opt/esp-r/training/sun_space
-*item
-*name	House with solar ventilation pre-heat
-*cfg	/opt/esp-r/training/svph/cfg/linford.cfg
-*root	/opt/esp-r/training/svph
-*item
-*name	Comfort in hospital rooms with radiant pannel heating
+*name	comfort in hospital rooms with radiant pannel heating
 *cfg	/opt/esp-r/training/rad_room_heat/cfg/rad_rooms_heat.cfg
 *root	/opt/esp-r/training/rad_room_heat
 *item
-*name	High resolution house with zonal radiators and flow based WCH
+*name	high resolution house with network flow based WCH
 *cfg	/opt/esp-r/training/3BR_highres_wch_obj/cfg/3BR_det_obj3.cfg
 *root	/opt/esp-r/training/3BR_highres_wch_obj
 *item
 *group	real projects
 *help	Models created for use in real projects.
 *item
-*name	Office building section, Ottawa, Canada 
-*cfg	/opt/esp-r/training/office_vent/cfg/office_vent.cfg
-*root	/opt/esp-r/training/office_vent
+*name	office building section, Ottawa, Canada 
+*cfg	/opt/esp-r/training/office_nat_vent/cfg/office_vent_pre_nonet.cfg
+*root	/opt/esp-r/training/office_nat_vent
 *item
-*name	... with network air flow infiltration model
-*cfg	/opt/esp-r/training/office_vent/cfg/office_vent_netinf.cfg
-*root	/opt/esp-r/training/office_vent
+*name	... with network infiltration and HVAC
+*cfg	/opt/esp-r/training/office_nat_vent/cfg/office_vent_hvac_infil.cfg
+*root	/opt/esp-r/training/office_nat_vent
 *item
-*name	... with 3D network air flow infiltration model
-*cfg	/opt/esp-r/training/office_vent/cfg/office_vent_netinf_3d.cfg
-*root	/opt/esp-r/training/office_vent
-*item
-*name	... with graphic network air flow infiltration model
-*cfg	/opt/esp-r/training/office_vent/cfg/office_vent_netinfg.cfg
-*root	/opt/esp-r/training/office_vent
-*item
-*name	... with controlled facade vents
-*cfg	/opt/esp-r/training/office_vent/cfg/office_vent_ctl.cfg
-*root	/opt/esp-r/training/office_vent
-*item
-*name	... with 3D controlled facade vents
-*cfg	/opt/esp-r/training/office_vent/cfg/office_vent_netvent_ctl3d.cfg
-*root	/opt/esp-r/training/office_vent
-*item
-*name	Office building high-res, Ottawa, Canada 
-*cfg	/opt/esp-r/training/office_vent_pre/cfg/office_vent_pre_3D.cfg
-*root	/opt/esp-r/training/office_vent_pre
+*name	... with controlled facade vents and HVAC
+*cfg	/opt/esp-r/training/office_nat_vent/cfg/office_vent_pre_nv_hvac.cfg
+*root	/opt/esp-r/training/office_nat_vent
 *item
 *name	1930s rendered concrete block bungalow
 *cfg	/opt/esp-r/training/3BR_block_bungalow/cfg/3BR_block_bung_p1m_avg.cfg
@@ -230,8 +210,8 @@
 *cfg	/opt/esp-r/training/stone_simi_1890/cfg/stone_simi_1890.cfg
 *root	/opt/esp-r/training/stone_simi_1890
 *item
-*name	Four level shallow plan office building
-*cfg	/opt/esp-r/training/4level_office/cfg/office_4l_bc.cfg
+*name	multi-level shallow plan office building
+*cfg	/opt/esp-r/training/4level_office/cfg/office_4l_fin.cfg
 *root	/opt/esp-r/training/4level_office
 *item
 *label	___ Special focus models:
@@ -239,34 +219,30 @@
 *group	training workshops
 *help	Models associated with the ESP-r Cookbook.
 *item
-*name	Office for a doctor
-*cfg	/opt/esp-r/training/office_doctor/cfg/office_for_doctor.cfg
-*root	/opt/esp-r/training/office_doctor
+*name	medical centre with user imposed flows
+*cfg	/opt/esp-r/training/Surgery/cfg/Surgery.cfg
+*root	/opt/esp-r/training/Surgery
 *item
-*name	Office for a doctor + flow network
-*cfg	/opt/esp-r/training/office_doctor/cfg/office_for_doctor_flow.cfg
-*root	/opt/esp-r/training/office_doctor
+*name	medical centre with flow network
+*cfg	/opt/esp-r/training/Surgery/cfg/Surgery-3df.cfg
+*root	/opt/esp-r/training/Surgery
 *item
-*name	Office for a doctor + icon based flow network
-*cfg	/opt/esp-r/training/office_doctor/cfg/office_for_doctor_gflow.cfg
-*root	/opt/esp-r/training/office_doctor
-*item
-*name	Rooms to add explicit mechanical ventilation
+*name	rooms to add explicit mechanical ventilation
 *cfg	/opt/esp-r/training/plant/mech_vent_2izn/cfg/mech_vent_bc.cfg
 *root	/opt/esp-r/training/plant/mech_vent_2izn
 *item
-*name	Explicit mechanical ventilation + ON-OFF control
+*name	explicit mechanical ventilation with ON/OFF control
 *cfg	/opt/esp-r/training/plant/mech_vent_2izn/cfg/mech_vent_2z.cfg
 *root	/opt/esp-r/training/plant/mech_vent_2izn
 *item
-*name	Explicit mechanical ventventilation + proportional control
+*name	explicit mechanical ventventilation with proportional control
 *cfg	/opt/esp-r/training/plant/mech_vent_2izn/cfg/mech_vent_2zp.cfg
 *root	/opt/esp-r/training/plant/mech_vent_2izn
 *item
 *group	network ventilation
 *help	Models demonstrating nodal network fluid flow.
 *item
-*name	Zones with controlled window opening
+*name	zones with controlled window opening
 *cfg    /opt/esp-r/training/basic/cfg/bld_flow_ctl.cfg
 *root	/opt/esp-r/training/basic
 *item
@@ -274,26 +250,26 @@
 *cfg    /opt/esp-r/training/trombe_wall/cfg/trombe_wall_office_cr3d_ctl.cfg
 *root	/opt/esp-r/training/trombe_wall
 *item
-*name	Forced ventilation network with zonal air handler
+*name	forced ventilation network with zonal air handler
 *cfg    /opt/esp-r/training/cellular_hybrid/cfg/cellular_mctl.cfg
 *root	/opt/esp-r/training/cellular_hybrid
 *item
-*name	Flow network equivalent of blower-door test
+*name	flow network equivalent of blower-door test
 *cfg    /opt/esp-r/training/blower_test/cfg/blower_test.cfg
 *root	/opt/esp-r/training/blower_test
 *item
 *group	systems & control
 *help	Models demonstrating plant modelling.
 *item
-*name	Rudimentary mechanical ventilation system
+*name	rudimentary mechanical ventilation system
 *cfg	/opt/esp-r/training/plant/vent_simple/cfg/vent.cfg
 *root	/opt/esp-r/training/plant/vent_simple
 *item
-*name	Detailed mechanical ventilation system
+*name	detailed mechanical ventilation system
 *cfg	/opt/esp-r/training/plant/vent_detailed/cfg/vent_det.cfg
 *root	/opt/esp-r/training/plant/vent_detailed
 *item
-*name   Building & plant heating system, ON/OFF control
+*name   building and heating system with ON/OFF control
 *cfg    /opt/esp-r/training/plant/hvac_bas/cfg/bld_basic.cfg-onoff
 *root	/opt/esp-r/training/plant/hvac_bas
 *item
@@ -301,15 +277,15 @@
 *cfg    /opt/esp-r/training/plant/hvac_bas/cfg/bld_basic.cfg-pid
 *root	/opt/esp-r/training/plant/hvac_bas
 *item
-*name	Zone with air handling unit and humidity control
+*name	zone with air handling unit and humidity control
 *cfg	/opt/esp-r/training/plant/ahu/cfg/ahu_hum.cfg
 *root	/opt/esp-r/training/plant/ahu
 *item
-*name	... with wet central (WC) heating system & DHW draw
+*name	... with wet central heating system and DHW draw-off
 *cfg	/opt/esp-r/training/Apartment_2z_system/cfg/2br_tt_flat.cfg
 *root	/opt/esp-r/training/Apartment_2z_system
 *item
-*name	... with 2010 heating system & DHW draw-off
+*name	... with 2010 standard heating system and DHW draw-off
 *cfg	/opt/esp-r/training/Apartment_2z_system/cfg/2br_tt_flat_2010.cfg
 *root	/opt/esp-r/training/Apartment_2z_system
 *item
@@ -317,15 +293,15 @@
 *cfg    /opt/esp-r/training/plant/ahu/cfg/vent_recovery.cfg
 *root	/opt/esp-r/training/plant/ahu
 *item
-*name   Zones serviced by an active solar system
+*name   zones serviced by an active solar system
 *cfg    /opt/esp-r/training/plant/solar/cfg/systems.cfg
 *root	/opt/esp-r/training/plant/solar
 *item
-*name   Constant volume air conditioning system
+*name   constant volume air conditioning system
 *cfg    /opt/esp-r/training/plant/conv_ac_sys/heat.cfg
 *root	/opt/esp-r/training/plant/conv_ac_sys
 *item
-*name   Fan duct with zone reheat (Primitive Parts approach)
+*name   fan duct with zone reheat (Primitive Parts approach)
 *cfg    /opt/esp-r/training/plant/ac_pp/cfg/ac_PP.cfg
 *root	/opt/esp-r/training/plant/ac_pp
 *item
@@ -337,10 +313,10 @@
 *cfg    /opt/esp-r/training/plant/mixed_ac_sys/ahuPP.cfg
 *root	/opt/esp-r/training/plant/mixed_ac_sys
 *item
-*group  systems & network fluid flow
+*group  plant systems with network fluid flow
 *help	Models for integrated plant and network fluid flow.
 *item
-*name   Plant with damper controlled recirculation
+*name   plant with damper controlled recirculation
 *cfg    /opt/esp-r/training/plant/hvac_bas/cfg/bld_recirc.cfg-pid
 *root	/opt/esp-r/training/plant/hvac_bas
 *item
@@ -348,30 +324,30 @@
 *cfg    /opt/esp-r/training/plant/hvac_vav/cfg/office1VAV.cfg
 *root	/opt/esp-r/training/plant/hvac_vav
 *item
-*name   House with underfloor heating
+*name   house with underfloor heating
 *cfg    /opt/esp-r/training/plant/CaseStudy-RHC/cfg/rhc-plant.cfg
 *root	/opt/esp-r/training/plant/CaseStudy-RHC
 *item
 *group	construction-related issues
 *help	Models for construction process simulation.
 *item
-*name	Thermophysical property substitution
+*name	material thermophysical property substitution
 *cfg	/opt/esp-r/training/constr/tp_sub/cfg/bld_tp_sub.cfg
 *root	/opt/esp-r/training/constr/tp_sub
 *item
-*name	Passive House consruction
+*name	Passive House construction
 *cfg	/opt/esp-r/training/Apartment_2z_system/cfg/2br_tt_flat_ph.cfg
 *root	/opt/esp-r/training/Apartment_2z_system
 *item
-*name   Transparent insulation
+*name   transparent insulation
 *cfg    /opt/esp-r/training/constr/adapt/cfg/tim.cfg
 *root	/opt/esp-r/training/constr/adapt
 *item
-*name   Adaptive 1-D gridding
+*name   adaptive 1-D construction gridding
 *cfg    /opt/esp-r/training/constr/adapt/cfg/g1d.cfg
 *root	/opt/esp-r/training/constr/adapt
 *item
-*name   Adaptive 3-D gridding
+*name   adaptive 3-D construction gridding
 *cfg    /opt/esp-r/training/constr/adapt/cfg/g3d.cfg
 *root	/opt/esp-r/training/constr/adapt
 *item
@@ -379,22 +355,22 @@
 *cfg    /opt/esp-r/training/constr/adapt/cfg/grd.cfg
 *root	/opt/esp-r/training/constr/adapt
 *item
-*name   Construction moisture flow
+*name   construction moisture flow
 *cfg    /opt/esp-r/training/constr/adapt/cfg/mst.cfg
 *root	/opt/esp-r/training/constr/adapt
 *item
-*name   Mould growth
+*name   internal surface mould growth
 *cfg    /opt/esp-r/training/mould/cfg/mould.cfg
 *root	/opt/esp-r/training/mould
 *item
-*name   Mould infested house analysis
+*name   mould infested house analysis
 *cfg    /opt/esp-r/training/burdie/cfg/burdie.cfg
 *root	/opt/esp-r/training/burdie
 *item
 *group	windows and daylighting
 *help	Models focused on glazing system performance.
 *item
-*name	Office with various casual gain controls
+*name	office with various casual gain controls
 *cfg	/opt/esp-r/training/casual_gain_ctl/cfg/casual_gain_control.cfg
 *root	/opt/esp-r/training/casual_gain_ctl
 *item
@@ -402,7 +378,7 @@
 *cfg	/opt/esp-r/training/cg_ctl/daylit_coef/cfg/facade_60.cfg
 *root	/opt/esp-r/training/cg_ctl/daylit_coef
 *item
-*name	... with light levels via timestep Radiance coupling
+*name	... with light levels via Radiance coupling
 *cfg	/opt/esp-r/training/cg_ctl/daylit_coef/cfg/facade_coupling.cfg
 *root	/opt/esp-r/training/cg_ctl/daylit_coef
 *item
@@ -410,14 +386,14 @@
 *cfg	/opt/esp-r/training/el_chr_ctl/cfg/office.cfg
 *root	/opt/esp-r/training/el_chr_ctl
 *item
-*name	Model using temporal weather data
+*name	model using temporal weather data
 *cfg	/opt/esp-r/training/Temporal_Clm/Temporal_Clm_Test.cfg
 *root	/opt/esp-r/training/Temporal_Clm
 *item
 *group	fluid movement
 *help	Models with computational fluid dynamics enabled.
 *item
-*name   CFD only model, no buoyancy
+*name   standalone CFD model, no buoyancy
 *cfg    /opt/esp-r/training/CFD_room/cfg/CFD_room.cfg
 *root	/opt/esp-r/training/CFD_room
 *item
@@ -433,7 +409,7 @@
 *cfg    /opt/esp-r/training/CFD_room/cfg/CFD_room_blk.cfg
 *root	/opt/esp-r/training/CFD_room
 *item
-*name   Integrated building/CFD model
+*name   integrated building/CFD model
 *cfg    /opt/esp-r/training/CFD_room/cfg/CFD_room1.cfg
 *root	/opt/esp-r/training/CFD_room
 *item
@@ -445,30 +421,26 @@
 *cfg    /opt/esp-r/training/cfd/CFD_room/cfg/CFD_room_afn.cfg
 *root	/opt/esp-r/training/cfd/CFD_room
 *item
-*name   ... with dynamic occupant
+*name   ... with dynamic occupants
 *cfg    /opt/esp-r/training/cfd/CFD_room/cfg/CFD_room_occ.cfg
 *root	/opt/esp-r/training/cfd/CFD_room
 *item
-*name   Multi-zone CFD with building + network flow coupling
+*name   multi-zone CFD with building and network flow coupling
 *cfg    /opt/esp-r/training/cellular_cfd/cfg/cellular_cfd.cfg
 *root   /opt/esp-r/training/cellular_cfd
 *item
 *group	combined heat and power
 *help	Models for combined thermal and electrical modelling.
 *item
-*name   Photovoltaic facade, Elsa Building, Ispra, Italy 
+*name   office building with a photovoltaic facade 
 *cfg    /opt/esp-r/training/pv_facade/cfg/elsa.cfg
 *root	/opt/esp-r/training/pv_facade
 *item
-*name	Photovoltaic building facade
-*cfg	/usr/esru/Projects/Solar_h/CT336/cfg/Facade_mfs_c.cfg
-*root	/usr/esru/Projects/Solar_h/CT336
-*item
-*name   Engine-based CHP system
+*name   engine-based CHP system
 *cfg    /opt/esp-r/training/chp/unit/cfg/unit.cfg
 *root	/opt/esp-r/training/chp/unit
 *item
-*name   Sports centre with CHP
+*name   sports centre with CHP
 *cfg    /opt/esp-r/training/chp/sport_cen/cfg/sport_cen.cfg
 *root	/opt/esp-r/training/chp/sport_cen
 *end

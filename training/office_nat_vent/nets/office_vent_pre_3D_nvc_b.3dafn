@@ -1,0 +1,273 @@
+*Flow_network 1.0
+*Date,Fri Apr 10 16:31:29 2020
+*Doc,Hybrid facade natural ventilation scheme grills 50pc with HVAC zone mixing boxes
+*Domain,Flow,2  # domain for this network
+*windpressure,0.600  # wind speed reduction
+# tag name fluid type assoc zone & surface
+# position & data
+*node,manager,1,0,manager,-   # internal unknown pressure
+1.5150,2.2500,1.5000,20.0000,1.0000,40.5008  # position temp data
+*node,general,1,0,general,-   # internal unknown pressure
+6.0000,3.0000,1.5000,20.0000,1.0000,175.5035  # position temp data
+*node,conference,1,0,conference,-   # internal unknown pressure
+7.5000,15.0000,1.5000,20.0000,1.0000,141.7528  # position temp data
+*node,reception,1,0,reception,-   # internal unknown pressure
+7.5000,9.7500,1.5000,20.0000,1.0000,182.2536  # position temp data
+*node,ceil_void,1,0,ceil_void,-   # internal unknown pressure
+6.0000,9.0000,3.2500,20.0000,1.0000,89.4618  # position temp data
+*node,mix_op_man,1,0,mix_op_man,-   # internal unknown pressure
+4.5000,3.3000,3.2500,20.0000,1.0000,0.1800  # position temp data
+*node,floor_void,1,0,floor_void,-   # internal unknown pressure
+6.0000,9.0000,-0.1000,20.0000,1.0000,36.0007  # position temp data
+*node,ceiling_belo,1,0,ceiling_belo,-   # internal unknown pressure
+6.0000,9.0000,-0.3000,20.0000,1.0000,36.0007  # position temp data
+*node,mb_recep,1,0,mb_recep,-   # internal unknown pressure
+4.5000,9.3000,3.2500,20.0000,1.0000,0.1800  # position temp data
+*node,mb_conf,1,0,mb_conf,-   # internal unknown pressure
+4.5000,15.3000,3.2500,20.0000,1.0000,0.1800  # position temp data
+*node,BW-Op01:008,1,3,manager,vent   # boundary wind pressure
+1.5000,-0.9000,0.7000,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Op02:010,1,3,general,vent   # boundary wind pressure
+4.5000,-0.9000,0.7000,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Cr02:012,1,3,general,glazing   # boundary wind pressure
+4.5000,-0.9000,1.9500,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Op02:016,1,3,general,vent_a   # boundary wind pressure
+7.5000,-0.9000,0.7000,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Cr02:018,1,3,general,glazing_a   # boundary wind pressure
+7.5000,-0.9000,1.9500,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Op02:020,1,3,general,vent_b   # boundary wind pressure
+10.5000,-0.9000,0.7000,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Cr02:022,1,3,general,glazing_b   # boundary wind pressure
+10.5000,-0.9000,1.9500,0.0000,1.0000,180.0000  # position temp data
+*node,BW-Op02:024,1,3,general,vent_c   # boundary wind pressure
+12.9000,1.5000,0.7000,0.0000,1.0000,90.0000  # position temp data
+*node,BW-Cr02:026,1,3,general,glazing_c   # boundary wind pressure
+12.9000,1.5000,1.9500,0.0000,1.0000,90.0000  # position temp data
+*node,BW-Op02:028,1,3,general,vent_d   # boundary wind pressure
+12.9000,4.5000,0.7000,0.0000,1.0000,90.0000  # position temp data
+*node,BW-Cr02:030,1,3,general,glazing_d   # boundary wind pressure
+12.9000,4.5000,1.9500,0.0000,1.0000,90.0000  # position temp data
+*node,BW-Op03:008,1,3,conference,vent   # boundary wind pressure
+4.5000,18.9000,0.7000,0.0000,1.0000,0.0000  # position temp data
+*node,BW-Cr03:010,1,3,conference,glazing   # boundary wind pressure
+4.5000,18.9000,1.9500,0.0000,1.0000,0.0000  # position temp data
+*node,BW-Op03:012,1,3,conference,vent_a   # boundary wind pressure
+7.5000,18.9000,0.7000,0.0000,1.0000,0.0000  # position temp data
+*node,BW-Cr03:014,1,3,conference,glazing_a   # boundary wind pressure
+7.5000,18.9000,1.9500,0.0000,1.0000,0.0000  # position temp data
+*node,BW-Op03:016,1,3,conference,vent_b   # boundary wind pressure
+10.5000,18.9000,0.7000,0.0000,1.0000,0.0000  # position temp data
+*node,BW-Cr03:018,1,3,conference,glazing_b   # boundary wind pressure
+10.5000,18.9000,1.9500,0.0000,1.0000,0.0000  # position temp data
+*node,BW-Op03:020,1,3,conference,vent_c   # boundary wind pressure
+12.9000,16.5000,0.7000,0.0000,1.0000,90.0000  # position temp data
+*node,BW-Cr03:022,1,3,conference,glazing_c   # boundary wind pressure
+12.9000,16.5000,1.9500,0.0000,1.0000,90.0000  # position temp data
+*node,BW-Op03:024,1,3,conference,vent_d   # boundary wind pressure
+12.9000,13.5000,0.7000,0.0000,1.0000,90.0000  # position temp data
+*node,BW-Cr03:026,1,3,conference,glazing_d   # boundary wind pressure
+12.9000,13.5000,1.9500,0.0000,1.0000,90.0000  # position temp data
+*node,BW-Op04:008,1,3,reception,vent   # boundary wind pressure
+12.9000,7.5000,0.7000,0.0000,1.0000,90.0000  # position temp data
+*node,BW-Cr04:010,1,3,reception,glazing   # boundary wind pressure
+12.9000,7.5000,1.9500,0.0000,1.0000,90.0000  # position temp data
+*node,BW-Op04:012,1,3,reception,vent_a   # boundary wind pressure
+12.9000,10.5000,0.7000,0.0000,1.0000,90.0000  # position temp data
+*node,BW-Cr04:014,1,3,reception,glazing_a   # boundary wind pressure
+12.9000,10.5000,1.9500,0.0000,1.0000,90.0000  # position temp data
+*node,BW-Ve07:007,1,3,floor_void,back   # boundary wind pressure
+7.5000,18.9000,0.0000,0.0000,1.0000,0.0000  # position temp data
+*node,BW-Ve08:004,1,3,ceiling_belo,back   # boundary wind pressure
+7.5000,18.9000,-0.2000,0.0000,1.0000,0.0000  # position temp data
+# tag name assoc zone & surface type C+ L+
+# start&end positions  description
+# data
+*cmp,DABiz01:003,manager,door,130,5,0
+0,0.5000,4.5000,1.5000,Specific air flow door              m = rho.f(W,H,dP)       
+1.00000000,0.100000001,3.00000000,1.50000000,0.500000000  # Fluid width height ref ht discharge factor
+*cmp,BiCrz01:003,manager,door,120,3,0
+0,0.5000,4.5000,0.0000,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,2.00000009E-03,8.00000000  # Fluid crack width(m) crack length(m)
+*cmp,GrOpz01:008,manager,vent, 40,3,0
+0,1.5000,0.0000,0.7000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.2,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,GrMEI01:044,manager,office_inlet, 30,2,0
+0,1.7000,1.2000,3.0000,Constant vol. flow rate component   m = rho.a               
+1.00000000,5.61111122E-02  # Fluid flow rate (m^3/s)
+*cmp,GrOpz01:045,manager,office_ret, 40,3,0
+0,1.7000,3.7000,3.0000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,1.59999859E-01,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,FABiz02:004,general,fict_rec,130,5,0
+0,6.0000,6.0000,1.5000,Specific air flow door              m = rho.f(W,H,dP)       
+1.00000000,0.100000001,3.00000000,1.50000000,0.500000000  # Fluid width height ref ht discharge factor
+*cmp,GrOpz02:010,general,vent, 40,3,0
+0,4.5000,0.0000,0.7000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.2,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiCrz02:012,general,glazing,120,3,0
+0,4.5000,0.0000,1.9500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,2.00000009E-03,9.40000057  # Fluid crack width(m) crack length(m)
+*cmp,GrOpz02:016,general,vent_a, 40,3,0
+0,7.5000,0.0000,0.7000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.2,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiCrz02:018,general,glazing_a,120,3,0
+0,7.5000,0.0000,1.9500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,2.00000009E-03,9.39999962  # Fluid crack width(m) crack length(m)
+*cmp,GrOpz02:020,general,vent_b, 40,3,0
+0,10.5000,0.0000,0.7000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.2,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiCrz02:022,general,glazing_b,120,3,0
+0,10.5000,0.0000,1.9500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,2.00000009E-03,9.39999866  # Fluid crack width(m) crack length(m)
+*cmp,GrOpz02:024,general,vent_c, 40,3,0
+0,12.0000,1.5000,0.7000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.2,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiCrz02:026,general,glazing_c,120,3,0
+0,12.0000,1.5000,1.9500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,2.00000009E-03,9.40000057  # Fluid crack width(m) crack length(m)
+*cmp,GrOpz02:028,general,vent_d, 40,3,0
+0,12.0000,4.5000,0.7000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.2,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiCrz02:030,general,glazing_d,120,3,0
+0,12.0000,4.5000,1.9500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,2.00000009E-03,9.40000057  # Fluid crack width(m) crack length(m)
+*cmp,GrMEI02:091,general,op_a_inlet, 30,2,0
+0,5.2000,1.7000,3.0000,Constant vol. flow rate component   m = rho.a               
+1.00000000,0.122500002  # Fluid flow rate (m^3/s)
+*cmp,GrMEI02:092,general,op_b_inlet, 30,2,0
+0,10.2000,1.7000,3.0000,Constant vol. flow rate component   m = rho.a               
+1.00000000,0.122500002  # Fluid flow rate (m^3/s)
+*cmp,GrOpz02:093,general,op_a_return, 40,3,0
+0,5.2000,4.7000,3.0000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,1.59999859E-01,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,GrOpz02:094,general,op_b_return, 40,3,0
+0,10.2000,4.7000,3.0000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,1.59999859E-01,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,FABiz03:003,conference,fict_open,130,5,0
+0,7.5000,12.7500,1.5000,Specific air flow door              m = rho.f(W,H,dP)       
+1.00000000,0.100000001,3.00000000,1.50000000,0.500000000  # Fluid width height ref ht discharge factor
+*cmp,GrOpz03:008,conference,vent, 40,3,0
+0,4.5000,18.0000,0.7000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.2,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiCrz03:010,conference,glazing,120,3,0
+0,4.5000,18.0000,1.9500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,2.00000009E-03,9.40000057  # Fluid crack width(m) crack length(m)
+*cmp,GrOpz03:012,conference,vent_a, 40,3,0
+0,7.5000,18.0000,0.7000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.2,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiCrz03:014,conference,glazing_a,120,3,0
+0,7.5000,18.0000,1.9500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,2.00000009E-03,9.39999962  # Fluid crack width(m) crack length(m)
+*cmp,GrOpz03:016,conference,vent_b, 40,3,0
+0,10.5000,18.0000,0.7000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.2,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiCrz03:018,conference,glazing_b,120,3,0
+0,10.5000,18.0000,1.9500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,2.00000009E-03,9.39999866  # Fluid crack width(m) crack length(m)
+*cmp,GrOpz03:020,conference,vent_c, 40,3,0
+0,12.0000,16.5000,0.7000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.2,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiCrz03:022,conference,glazing_c,120,3,0
+0,12.0000,16.5000,1.9500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,2.00000009E-03,9.39999866  # Fluid crack width(m) crack length(m)
+*cmp,GrOpz03:024,conference,vent_d, 40,3,0
+0,12.0000,13.5000,0.7000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.2,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiCrz03:026,conference,glazing_d,120,3,0
+0,12.0000,13.5000,1.9500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,2.00000009E-03,9.39999866  # Fluid crack width(m) crack length(m)
+*cmp,GrOpz03:069,conference,conf_return, 40,3,0
+0,5.2000,14.7000,3.0000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,1.59996040E-01,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,GrMEI03:070,conference,conf_inlet, 30,2,0
+0,10.2000,14.7000,3.0000,Constant vol. flow rate component   m = rho.a               
+1.00000000,0.197222218  # Fluid flow rate (m^3/s)
+*cmp,GrOpz04:008,reception,vent, 40,3,0
+0,12.0000,7.5000,0.7000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.2,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiCrz04:010,reception,glazing,120,3,0
+0,12.0000,7.5000,1.9500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,2.00000009E-03,9.39999962  # Fluid crack width(m) crack length(m)
+*cmp,GrOpz04:012,reception,vent_a, 40,3,0
+0,12.0000,10.5000,0.7000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,0.2,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,WiCrz04:014,reception,glazing_a,120,3,0
+0,12.0000,10.5000,1.9500,Specific air flow crack             m = rho.f(W,L,dP)       
+1.00000000,2.00000009E-03,9.39999866  # Fluid crack width(m) crack length(m)
+*cmp,GrOpz04:075,reception,recep_a_ret, 40,3,0
+0,5.2000,7.7000,3.0000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,1.59999859E-01,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,GrOpz04:076,reception,recep_b_ret, 40,3,0
+0,5.2000,10.7000,3.0000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,1.59999859E-01,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,GrMEI04:077,reception,recep_a_inle, 30,2,0
+0,10.2000,7.7000,3.0000,Constant vol. flow rate component   m = rho.a               
+1.00000000,0.126388893  # Fluid flow rate (m^3/s)
+*cmp,GrMEI04:078,reception,recep_b_inle, 30,2,0
+0,10.2000,10.7000,3.0000,Constant vol. flow rate component   m = rho.a               
+1.00000000,0.126388893  # Fluid flow rate (m^3/s)
+*cmp,GrOpz05:027,ceil_void,mb_o_left, 40,3,0
+0,4.0000,3.3000,3.2500,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,1.79999359E-01,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,GrOpz05:033,ceil_void,mb_r_left, 40,3,0
+0,4.0000,9.3000,3.2500,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,1.80001259E-01,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,GrOpz05:039,ceil_void,mb_c_left, 40,3,0
+0,4.0000,15.3000,3.2500,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,1.80000309E-01,0.649999976  # Fluid opening area (m^2) discharge factor (-)
+*cmp,FrVez07:007,floor_void,back, 40,3,0
+0,7.5000,18.0000,0.0000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,1.04999999E-02,0.340000004  # Fluid opening area (m^2) discharge factor (-)
+*cmp,FrVez08:004,ceiling_belo,back, 40,3,0
+0,7.5000,18.0000,-0.2000,Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+1.00000000,1.04999999E-02,0.340000004  # Fluid opening area (m^2) discharge factor (-)
+# connection +node deltaZ  -node deltaZ via component
+*cnn,manager,  0.000,general,  0.000,DABiz01:003
+*cnn,BW-Op01:008,  0.000,manager, -0.800,GrOpz01:008
+*cnn,mix_op_man, -0.250,manager,  1.500,GrMEI01:044
+*cnn,manager,  1.500,ceil_void, -0.250,GrOpz01:045
+*cnn,general,  0.000,reception,  0.000,FABiz02:004
+*cnn,BW-Op02:010,  0.000,general, -0.800,GrOpz02:010
+*cnn,BW-Cr02:012,  0.000,general,  0.450,WiCrz02:012
+*cnn,BW-Op02:016,  0.000,general, -0.800,GrOpz02:016
+*cnn,BW-Cr02:018,  0.000,general,  0.450,WiCrz02:018
+*cnn,BW-Op02:020,  0.000,general, -0.800,GrOpz02:020
+*cnn,BW-Cr02:022,  0.000,general,  0.450,WiCrz02:022
+*cnn,BW-Op02:024,  0.000,general, -0.800,GrOpz02:024
+*cnn,BW-Cr02:026,  0.000,general,  0.450,WiCrz02:026
+*cnn,BW-Op02:028,  0.000,general, -0.800,GrOpz02:028
+*cnn,BW-Cr02:030,  0.000,general,  0.450,WiCrz02:030
+*cnn,mix_op_man, -0.250,general,  1.500,GrMEI02:091
+*cnn,mix_op_man, -0.250,general,  1.500,GrMEI02:092
+*cnn,general,  1.500,ceil_void, -0.250,GrOpz02:093
+*cnn,general,  1.500,ceil_void, -0.250,GrOpz02:094
+*cnn,conference,  0.000,reception,  0.000,FABiz03:003
+*cnn,BW-Op03:008,  0.000,conference, -0.800,GrOpz03:008
+*cnn,BW-Cr03:010,  0.000,conference,  0.450,WiCrz03:010
+*cnn,BW-Op03:012,  0.000,conference, -0.800,GrOpz03:012
+*cnn,BW-Cr03:014,  0.000,conference,  0.450,WiCrz03:014
+*cnn,BW-Op03:016,  0.000,conference, -0.800,GrOpz03:016
+*cnn,BW-Cr03:018,  0.000,conference,  0.450,WiCrz03:018
+*cnn,BW-Op03:020,  0.000,conference, -0.800,GrOpz03:020
+*cnn,BW-Cr03:022,  0.000,conference,  0.450,WiCrz03:022
+*cnn,BW-Op03:024,  0.000,conference, -0.800,GrOpz03:024
+*cnn,BW-Cr03:026,  0.000,conference,  0.450,WiCrz03:026
+*cnn,conference,  1.500,ceil_void, -0.250,GrOpz03:069
+*cnn,mb_conf, -0.250,conference,  1.500,GrMEI03:070
+*cnn,BW-Op04:008,  0.000,reception, -0.800,GrOpz04:008
+*cnn,BW-Cr04:010,  0.000,reception,  0.450,WiCrz04:010
+*cnn,BW-Op04:012,  0.000,reception, -0.800,GrOpz04:012
+*cnn,BW-Cr04:014,  0.000,reception,  0.450,WiCrz04:014
+*cnn,reception,  1.500,ceil_void, -0.250,GrOpz04:075
+*cnn,reception,  1.500,ceil_void, -0.250,GrOpz04:076
+*cnn,mb_recep, -0.250,reception,  1.500,GrMEI04:077
+*cnn,mb_recep, -0.250,reception,  1.500,GrMEI04:078
+*cnn,ceil_void,  0.000,mix_op_man,  0.000,GrOpz05:027
+*cnn,ceil_void,  0.000,mb_recep,  0.000,GrOpz05:033
+*cnn,ceil_void,  0.000,mb_conf,  0.000,GrOpz05:039
+*cnn,BW-Ve07:007,  0.000,floor_void,  0.100,FrVez07:007
+*cnn,BW-Ve08:004,  0.000,ceiling_belo,  0.100,FrVez08:004
+*IPSMOD 0  # stack calc
+*MFBSNC 0  # timing
+*MSLVTP 0  # flow solution
+*MFTRAC 0  # trace level
+*End_network

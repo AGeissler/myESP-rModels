@@ -1,0 +1,35 @@
+Description: Office model for network flow studies
+In folder: office_nat_vent
+By: jon
+Date: Wed April 22 10:40:36 2020
+For: Training
+Project reference: 
+Notes: 
+_____________________________
+ 
+The Office_nat_vent folder contains a series of high resolution
+office models focused on a portion of an office block. They
+explore natural ventilation issues. The configuration
+files are as follows:
+
+office_vent_pre_nonet.cfg - base case model with scheduled
+infiltration and ideal controls.
+
+office_vent_hvac_infil.cfg - model with infiltration-only
+facade leakage and active HVAC zone environmental controls.
+
+office_vent_pre_nvc.cfg - model with facade vents controlled
+for natural ventilation and which HVAC zone environmental
+controls with constant fans.
+
+office_vent_pre_nv_hvac.cfg - model with hybrid natural 
+ventilation control of facade with controlled HVAC fans.
+
+office_vent_pre_nv_hvac_3k.cfg - as _nv_hvac.cfg but
+with capacity in HVAC zones constrained to 3kW.
+
+The April pre-defined assessments are best for demonstrating
+the interaction between a natural ventilation scheme and an
+air based environmental control regime.
+
+

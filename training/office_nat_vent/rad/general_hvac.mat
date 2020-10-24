@@ -1,0 +1,478 @@
+# Radiance opaque material definitions.
+# (first line of file must not be edited)
+  
+# use this for fine surface finish 
+void brightfunc fin_in
+4 dirt dirt.cal -s 0.005
+0 
+1 0.05
+  
+void texfunc fin_ex
+6 cdx cdy cdz adobe.cal -s 0.02
+0 
+1 0.01
+  
+# use this for medium surface finish 
+void brightfunc min_in
+4 dirt dirt.cal -s 0.01
+0 
+1 0.05
+  
+void texfunc min_ex
+6 cdx cdy cdz adobe.cal -s 0.03
+0 
+1 0.015
+  
+# use this for rough surface finish 
+void brightfunc rin_in
+4 dirt dirt.cal -s 0.05
+0 
+1 0.05
+  
+void texfunc rin_ex
+6 cdx cdy cdz adobe.cal -s 0.05
+0 
+1 0.05
+  
+void plastic rc_ex_unknown
+0 
+0 
+5  0.50 0.50 0.50 0 0 
+  
+void plastic rc_in_unknown
+0 
+0 
+5  0.50 0.50 0.50 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_extern_wall
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_extern_wall
+0 
+0 
+5  0.78 0.78 0.78 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_insul_frame
+0 
+0 
+5  0.28 0.28 0.28 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_insul_frame
+0 
+0 
+5  0.28 0.28 0.28 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_door
+0 
+0 
+5  0.35 0.35 0.35 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_door
+0 
+0 
+5  0.35 0.35 0.35 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_mass_part
+0 
+0 
+5  0.75 0.75 0.75 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_mass_part
+0 
+0 
+5  0.75 0.75 0.75 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_roof
+0 
+0 
+5  0.80 0.80 0.80 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_roof
+0 
+0 
+5  0.80 0.80 0.80 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_susp_floor
+0 
+0 
+5  0.40 0.40 0.40 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_susp_floor
+0 
+0 
+5  0.80 0.80 0.80 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_susp_flr_re
+0 
+0 
+5  0.80 0.80 0.80 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_susp_flr_re
+0 
+0 
+5  0.40 0.40 0.40 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_ceiling
+0 
+0 
+5  0.70 0.70 0.70 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_ceiling
+0 
+0 
+5  0.40 0.40 0.40 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_ceiling_rev
+0 
+0 
+5  0.40 0.40 0.40 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_ceiling_rev
+0 
+0 
+5  0.70 0.70 0.70 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_gyp_blk_ptn
+0 
+0 
+5  0.78 0.78 0.78 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_gyp_blk_ptn
+0 
+0 
+5  0.78 0.78 0.78 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_gyp_gyp_ptn
+0 
+0 
+5  0.78 0.78 0.78 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_gyp_gyp_ptn
+0 
+0 
+5  0.78 0.78 0.78 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_raised_flr32
+0 
+0 
+5  0.80 0.80 0.80 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_raised_flr32
+0 
+0 
+5  0.80 0.80 0.80 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_top_pln
+0 
+0 
+5  0.15 0.15 0.15 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_top_pln
+0 
+0 
+5  0.80 0.80 0.80 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_flr_ov_pln
+0 
+0 
+5  0.80 0.80 0.80 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_flr_ov_pln
+0 
+0 
+5  0.15 0.15 0.15 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_slab_275
+0 
+0 
+5  0.79 0.79 0.79 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_slab_275
+0 
+0 
+5  0.79 0.79 0.79 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_conc_250
+0 
+0 
+5  0.79 0.79 0.79 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_conc_250
+0 
+0 
+5  0.79 0.79 0.79 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_ceil_raised
+0 
+0 
+5  0.15 0.15 0.15 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_ceil_raised
+0 
+0 
+5  0.79 0.79 0.79 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_flr_raised
+0 
+0 
+5  0.79 0.79 0.79 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_flr_raised
+0 
+0 
+5  0.15 0.15 0.15 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_ceil_un_pln
+0 
+0 
+5  0.79 0.79 0.79 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_ceil_un_pln
+0 
+0 
+5  0.79 0.79 0.79 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_spandrel_x
+0 
+0 
+5  0.95 0.95 0.95 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_spandrel_x
+0 
+0 
+5  0.80 0.80 0.80 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_steel_pl_3mm
+0 
+0 
+5  0.70 0.70 0.70 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_steel_pl_3mm
+0 
+0 
+5  0.70 0.70 0.70 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_collector_pl
+0 
+0 
+5  0.04 0.04 0.04 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_collector_pl
+0 
+0 
+5  0.04 0.04 0.04 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_sensor_case
+0 
+0 
+5  0.40 0.40 0.40 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_sensor_case
+0 
+0 
+5  0.40 0.40 0.40 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_circuit_bd
+0 
+0 
+5  0.25 0.25 0.25 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_circuit_bd
+0 
+0 
+5  0.25 0.25 0.25 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_NiMH_battery
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_NiMH_battery
+0 
+0 
+5  0.30 0.30 0.30 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_upholstery
+0 
+0 
+5  0.35 0.35 0.35 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_upholstery
+0 
+0 
+5  0.35 0.35 0.35 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_corian_count
+0 
+0 
+5  0.60 0.60 0.60 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_corian_count
+0 
+0 
+5  0.60 0.60 0.60 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_shelves_20mm
+0 
+0 
+5  0.55 0.55 0.55 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_shelves_20mm
+0 
+0 
+5  0.55 0.55 0.55 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_IT_case
+0 
+0 
+5  0.10 0.10 0.10 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_IT_case
+0 
+0 
+5  0.10 0.10 0.10 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_furn_wd10mm
+0 
+0 
+5  0.35 0.35 0.35 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_furn_wd10mm
+0 
+0 
+5  0.35 0.35 0.35 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_steel_gr_3mm
+0 
+0 
+5  0.55 0.55 0.55 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_steel_gr_3mm
+0 
+0 
+5  0.55 0.55 0.55 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_PH_alu_frame
+0 
+0 
+5  0.28 0.28 0.28 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_PH_alu_frame
+0 
+0 
+5  0.28 0.28 0.28 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_file_papers
+0 
+0 
+5  0.35 0.35 0.35 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_file_papers
+0 
+0 
+5  0.35 0.35 0.35 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_booksonshlf
+0 
+0 
+5  0.35 0.35 0.35 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_booksonshlf
+0 
+0 
+5  0.35 0.35 0.35 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_stuffonshelf
+0 
+0 
+5  0.40 0.40 0.40 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_stuffonshelf
+0 
+0 
+5  0.40 0.40 0.40 0 0 
+  
+# External MLC Colours... 
+fin_ex plastic rc_ex_hvac_case
+0 
+0 
+5  0.80 0.80 0.80 0 0 
+  
+# Internal MLC Colours... 
+fin_in plastic rc_in_hvac_case
+0 
+0 
+5  0.80 0.80 0.80 0 0 
+  

@@ -1,0 +1,16 @@
+*ESP-r visualisation scene configuration file.
+Sun May 17 12:45:03 2020 # latest file modification.
+  2 # No. of scenes
+# Scene number  1
+*rnm Surgery-3df_Extern.rif                      # Rif name
+*srt Surgery-3df_Extern                          # Scene root
+*rde Scene of Surgery-3df for External analysis. # Description
+*rpu External                                    # Intended use
+*sceneEND
+# Scene number  2
+*rnm examination_Intern.rif                      # Rif name
+*srt examination_Intern                          # Scene root
+*rde Scene of examination for Internal analysis. # Description
+*rpu Internal                                    # Intended use
+*sceneEND
+*end

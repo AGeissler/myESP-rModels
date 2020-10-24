@@ -1,0 +1,63 @@
+multi-sensors in the hvac mixers vs rooms below
+* Building
+no zone control description supplied
+   4  # No. of functions
+* Control function    1
+# senses dry bulb temperature in mix_op_man.
+    6    0    0    0  # sensor data
+# actuates the air point in mix_op_man.
+    6    0    0  # actuator data
+    1  # all daytypes
+    1  365  # valid Wed-01-Jan - Wed-31-Dec
+     3  # No. of periods in day: weekday     
+    0    2   0.000  # ctl type, law (free floating), start @
+      0.  # No. of data items
+    0   19   7.000  # ctl type, law (senses dry bulb temperature in general.), start @
+     19.  # No. of data items
+  3000.000 0.000 3000.000 0.000 50.000 14.000 2.000 1.000 0.000 0.000 0.000 20.000 25.000 2.000 0.000 0.000 0.000 20.000
+  25.000
+    0    2  18.000  # ctl type, law (free floating), start @
+      0.  # No. of data items
+* Control function    2
+# senses dry bulb temperature in mb_recep.
+    9    0    0    0  # sensor data
+# actuates the air point in mb_recep.
+    9    0    0  # actuator data
+    1  # all daytypes
+    1  365  # valid Wed-01-Jan - Wed-31-Dec
+     3  # No. of periods in day: weekday     
+    0    2   0.000  # ctl type, law (free floating), start @
+      0.  # No. of data items
+    0   19   7.000  # ctl type, law (senses dry bulb temperature in reception.), start @
+     13.  # No. of data items
+  3000.000 0.000 3000.000 0.000 50.000 14.000 1.000 4.000 0.000 0.000 0.000 20.000 25.000
+    0    2  18.000  # ctl type, law (free floating), start @
+      0.  # No. of data items
+* Control function    3
+# senses dry bulb temperature in mb_conf.
+   10    0    0    0  # sensor data
+# actuates the air point in mb_conf.
+   10    0    0  # actuator data
+    1  # all daytypes
+    1  365  # valid Wed-01-Jan - Wed-31-Dec
+     3  # No. of periods in day: weekday     
+    0    2   0.000  # ctl type, law (free floating), start @
+      0.  # No. of data items
+    0   19   7.000  # ctl type, law (senses dry bulb temperature in conference.), start @
+     13.  # No. of data items
+  3000.000 0.000 3000.000 0.000 50.000 14.000 1.000 3.000 0.000 0.000 0.000 20.000 25.000
+    0    2  18.000  # ctl type, law (free floating), start @
+      0.  # No. of data items
+* Control function    4
+# senses dry bulb temperature in ceiling_belo.
+    8    0    0    0  # sensor data
+# actuates the air point in ceiling_belo.
+    8    0    0  # actuator data
+    1  # all daytypes
+    1  365  # valid Wed-01-Jan - Wed-31-Dec
+     1  # No. of periods in day: weekday     
+    0   11   0.000  # ctl type, law (senses dry bulb temperature in ceil_void.), start @
+     12.  # No. of data items
+  3000.000 0.000 3000.000 0.000 1.000 3.000 5.000 0.000 0.000 0.000 1.000 1.000
+# Function:Zone links
+ 0,0,0,0,0,1,0,4,2,3

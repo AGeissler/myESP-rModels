@@ -1,0 +1,2669 @@
+# Radiance exterior composition file 
+# (first line of file must not be edited)
+  
+# standard sky and ground 
+# BEWARE: the RGB figures in the glow
+#   definitions must integrate to one.
+# define sky... 
+  
+skyfunc glow sky_glow
+0  
+0  
+4 .986 .986 1.202  0 
+  
+sky_glow source sky
+0  
+0  
+4 0 0 1 180  
+  
+# define ground... 
+skyfunc glow ground_glow
+0  
+0  
+4 1.276 .957 .319  0 
+  
+ground_glow source ground
+0  
+0  
+4 0 0 -1 180  
+  
+void brightfunc mud
+4 dirt dirt.cal -s 0.5
+0 
+1 0.3
+ 
+mud plastic ground_mat  
+0  
+0  
+5  0.26 0.19 0.06 0 0 
+  
+ground_mat ring groundplane 
+0  
+0  
+8     6.6    8.4 -0.01  0. 0. 1. 0.    46.3
+ 
+ 
+# diffuse light sources follow... 
+# derived from lampcolor WHITE 
+# diffuse 800 lum 50mm diam bulb
+void light 800lum-bulb 
+0 
+0 
+3 181.132831 181.132842 181.132842 
+# diffuse 1000 lum 50mm diam bulb 
+void light 1klum-bulb 
+0 
+0 
+3 226.416039 226.416053 226.416053
+# diffuse 1200 lum 50mm halogin bulb 
+void light 1.2klum-bulb 
+0 
+0 
+3 271.699247 271.699263 271.699263
+# diffuse 2000 lum 50mm bulb 
+void light 2klum-bulb 
+0 
+0 
+3 452.832079 452.832106 452.832106
+# diffuse 1000 lum 100mmx100mm surf
+void light 1klum100mmsq 
+0 
+0 
+3 177.826741 177.826752 177.826752 
+# diffuse 1000 lumin 200mmx200mm surf
+void light 1klum200mmsq 
+0 
+0 
+3 44.456685 44.456688 44.456688 
+# diffuse 2000 lumin 200mmx200mm surf
+void light 2klum200mmsq 
+0 
+0 
+3 88.913371 88.913376 88.913376 
+# diffuse 3240 lumin 1.2m x 0.3m surface 
+void light 3.2klumpanel 
+0 
+0 
+3 16.004407 16.004408 16.004408 
+ 
+# other definitions of outside follow... 
+# manager Surface defs..
+  
+# Obstruction defs... 
+  
+!genbox rc_ex_unknown  ob1    3.000    0.020    0.300 | xform -rz     0.000 -t     0.000   -0.100    3.100
+ 
+!genbox rc_ex_unknown  ob2    3.000    0.020    0.250 | xform -rz     0.000 -t     0.000   -0.300    3.100
+ 
+!genbox rc_ex_unknown  ob3    3.000    0.020    0.220 | xform -rz     0.000 -t     0.000   -0.500    3.100
+ 
+!genbox rc_ex_unknown  ob4    3.000    0.020    0.200 | xform -rz     0.000 -t     0.000   -0.700    3.100
+ 
+!genbox rc_ex_unknown  ob5    3.000    0.020    0.200 | xform -rz     0.000 -t     0.000   -0.900    3.100
+ 
+!genbox rc_ex_unknown  ob6    3.000    0.020    0.200 | xform -rz     0.000 -t     0.000   -1.100    3.100
+ 
+# visual object defs... 
+  
+!genbox rc_ex_door  adesk_top    0.600    2.000    0.025 | xform -rz     0.000 -t     0.200    0.200    0.690
+ 
+!genbox rc_ex_steel_pl_3mm  adesk_leg_a    0.050    0.050    0.690 | xform -rz     0.000 -t     0.300    0.300    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  adesk_leg_b    0.050    0.050    0.690 | xform -rz     0.000 -t     0.700    0.300    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  adesk_leg_c    0.050    0.050    0.690 | xform -rz     0.000 -t     0.300    2.100    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  adesk_leg_d    0.050    0.050    0.690 | xform -rz     0.000 -t     0.700    2.100    0.000
+ 
+!genbox rc_ex_door  bdesk_top    0.600    2.000    0.025 | xform -rz   -90.000 -t     0.800    0.700    0.690
+ 
+!genbox rc_ex_steel_pl_3mm  bdesk_leg_a    0.050    0.050    0.690 | xform -rz   -90.000 -t     0.900    0.600    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  bdesk_leg_b    0.050    0.050    0.690 | xform -rz   -90.000 -t     0.900    0.200    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  bdesk_leg_c    0.050    0.050    0.690 | xform -rz   -90.000 -t     2.700    0.600    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  bdesk_leg_d    0.050    0.050    0.690 | xform -rz   -90.000 -t     2.700    0.200    0.000
+ 
+!genbox rc_ex_upholstery  aseat    0.480    0.450    0.060 | xform -rz   -20.000 -t     1.312    0.960    0.500
+ 
+!genbox rc_ex_upholstery  ar_arm    0.090    0.230    0.025 | xform -rz   -20.000 -t     1.264    1.031    0.720
+ 
+!genbox rc_ex_upholstery  al_arm    0.090    0.230    0.025 | xform -rz   -20.000 -t     1.790    0.840    0.720
+ 
+rc_ex_upholstery                        polygon aseat_bk_1
+0 
+0 
+ 12
+    1.46630    1.38310    0.56000
+    1.91730    1.21890    0.56000
+    1.93250    1.26660    1.06000
+    1.48150    1.43070    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_2
+0 
+0 
+ 12
+    1.91730    1.21890    0.56000
+    1.93100    1.25650    0.56000
+    1.94620    1.30410    1.06000
+    1.93250    1.26660    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_3
+0 
+0 
+ 12
+    1.93100    1.25650    0.56000
+    1.48000    1.42060    0.56000
+    1.49520    1.46830    1.06000
+    1.94620    1.30410    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_4
+0 
+0 
+ 12
+    1.48000    1.42060    0.56000
+    1.46630    1.38310    0.56000
+    1.48150    1.43070    1.06000
+    1.49520    1.46830    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_5
+0 
+0 
+ 12
+    1.48150    1.43070    1.06000
+    1.93250    1.26660    1.06000
+    1.94620    1.30410    1.06000
+    1.49520    1.46830    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_6
+0 
+0 
+ 12
+    1.46630    1.38310    0.56000
+    1.48000    1.42060    0.56000
+    1.93100    1.25650    0.56000
+    1.91730    1.21890    0.56000
+  
+!genbox rc_ex_steel_gr_3mm  across_a    0.650    0.030    0.050 | xform -rz   -20.000 -t     1.311    1.205    0.080
+ 
+!genbox rc_ex_steel_gr_3mm  across_b    0.650    0.030    0.050 | xform -rz    70.000 -t     1.505    0.789    0.080
+ 
+!genbox rc_ex_PH_alu_frame  apost    0.080    0.080    0.400 | xform -rz   -20.000 -t     1.591    1.082    0.100
+ 
+!genbox rc_ex_steel_gr_3mm  ar_arm_rest    0.025    0.050    0.230 | xform -rz   -20.000 -t     1.374    1.129    0.500
+ 
+!genbox rc_ex_steel_gr_3mm  al_arm_rest    0.025    0.050    0.230 | xform -rz   -20.000 -t     1.825    0.965    0.500
+ 
+!genbox rc_ex_sensor_case  aroller_a    0.060    0.030    0.060 | xform -rz   -20.000 -t     1.311    1.205    0.000
+ 
+!genbox rc_ex_sensor_case  aroller_b    0.060    0.030    0.060 | xform -rz   -20.000 -t     1.880    0.998    0.000
+ 
+!genbox rc_ex_sensor_case  aroller_c    0.030    0.060    0.060 | xform -rz    70.000 -t     1.505    0.789    0.000
+ 
+!genbox rc_ex_sensor_case  aroller_d    0.030    0.060    0.060 | xform -rz    70.000 -t     1.726    1.395    0.000
+ 
+!genbox rc_ex_upholstery  carm_r    0.070    0.760    0.490 | xform -rz   -90.000 -t     2.200    3.080    0.210
+ 
+!genbox rc_ex_steel_gr_3mm  cleg_a    0.020    0.020    0.210 | xform -rz   -90.000 -t     2.240    4.180    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  cleg_b    0.020    0.020    0.210 | xform -rz   -90.000 -t     2.240    3.060    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  cleg_c    0.020    0.020    0.210 | xform -rz   -90.000 -t     2.930    4.180    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  cleg_d    0.020    0.020    0.210 | xform -rz   -90.000 -t     2.930    3.060    0.000
+ 
+rc_ex_upholstery                        polygon cback_1
+0 
+0 
+ 12
+    2.74000    4.12000    0.37000
+    2.74000    3.09000    0.37000
+    2.89000    3.09000    0.70000
+    2.89000    4.12000    0.70000
+  
+rc_ex_upholstery                        polygon cback_2
+0 
+0 
+ 12
+    2.74000    3.09000    0.37000
+    2.96000    3.09000    0.36000
+    2.96000    3.09000    0.70000
+    2.89000    3.09000    0.70000
+  
+rc_ex_upholstery                        polygon cback_3
+0 
+0 
+ 12
+    2.96000    3.09000    0.36000
+    2.96000    4.12000    0.36000
+    2.96000    4.12000    0.70000
+    2.96000    3.09000    0.70000
+  
+rc_ex_upholstery                        polygon cback_4
+0 
+0 
+ 12
+    2.96000    4.12000    0.36000
+    2.74000    4.12000    0.37000
+    2.89000    4.12000    0.70000
+    2.96000    4.12000    0.70000
+  
+rc_ex_upholstery                        polygon cback_5
+0 
+0 
+ 12
+    2.89000    4.12000    0.70000
+    2.89000    3.09000    0.70000
+    2.96000    3.09000    0.70000
+    2.96000    4.12000    0.70000
+  
+rc_ex_upholstery                        polygon cback_6
+0 
+0 
+ 12
+    2.74000    4.12000    0.37000
+    2.96000    4.12000    0.36000
+    2.96000    3.09000    0.36000
+    2.74000    3.09000    0.37000
+  
+rc_ex_upholstery                        polygon cseat_1
+0 
+0 
+ 12
+    2.20000    4.12000    0.21000
+    2.20000    3.09000    0.21000
+    2.20000    3.09000    0.39000
+    2.20000    4.12000    0.39000
+  
+rc_ex_upholstery                        polygon cseat_2
+0 
+0 
+ 12
+    2.20000    3.09000    0.21000
+    2.95000    3.09000    0.21000
+    2.95000    3.09000    0.36000
+    2.20000    3.09000    0.39000
+  
+rc_ex_upholstery                        polygon cseat_3
+0 
+0 
+ 12
+    2.95000    3.09000    0.21000
+    2.95000    4.12000    0.21000
+    2.95000    4.12000    0.36000
+    2.95000    3.09000    0.36000
+  
+rc_ex_upholstery                        polygon cseat_4
+0 
+0 
+ 12
+    2.95000    4.12000    0.21000
+    2.20000    4.12000    0.21000
+    2.20000    4.12000    0.39000
+    2.95000    4.12000    0.36000
+  
+rc_ex_upholstery                        polygon cseat_5
+0 
+0 
+ 12
+    2.20000    4.12000    0.39000
+    2.20000    3.09000    0.39000
+    2.95000    3.09000    0.36000
+    2.95000    4.12000    0.36000
+  
+rc_ex_upholstery                        polygon cseat_6
+0 
+0 
+ 12
+    2.20000    4.12000    0.21000
+    2.95000    4.12000    0.21000
+    2.95000    3.09000    0.21000
+    2.20000    3.09000    0.21000
+  
+!genbox rc_ex_shelves_20mm  dtbl_top    0.510    1.040    0.020 | xform -rz     0.000 -t     1.500    3.200    0.320
+ 
+!genbox rc_ex_furn_wd10mm  dtbl_shelf    0.340    0.830    0.020 | xform -rz     0.000 -t     1.590    3.310    0.100
+ 
+!genbox rc_ex_shelves_20mm  dleg_a    0.040    0.040    0.320 | xform -rz     0.000 -t     1.550    3.310    0.000
+ 
+!genbox rc_ex_shelves_20mm  dleg_b    0.040    0.040    0.320 | xform -rz     0.000 -t     1.920    3.310    0.000
+ 
+!genbox rc_ex_shelves_20mm  dleg_c    0.040    0.040    0.320 | xform -rz     0.000 -t     1.550    4.100    0.000
+ 
+!genbox rc_ex_shelves_20mm  dleg_d    0.040    0.040    0.320 | xform -rz     0.000 -t     1.920    4.100    0.000
+ 
+!genbox rc_ex_furn_wd10mm  aleft_ver    0.010    0.280    2.020 | xform -rz   -90.000 -t     2.700    2.600    0.000
+ 
+!genbox rc_ex_furn_wd10mm  aright_ver    0.010    0.280    2.020 | xform -rz   -90.000 -t     2.700    1.810    0.000
+ 
+!genbox rc_ex_furn_wd10mm  abil_bk    0.780    0.010    2.005 | xform -rz   -90.000 -t     2.970    2.600    0.000
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_a    0.780    0.270    0.010 | xform -rz   -90.000 -t     2.705    2.590    0.075
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_b    0.780    0.270    0.010 | xform -rz   -90.000 -t     2.705    2.590    0.515
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_c    0.780    0.270    0.010 | xform -rz   -90.000 -t     2.705    2.590    0.915
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_d    0.780    0.270    0.010 | xform -rz   -90.000 -t     2.705    2.590    1.405
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_e    0.780    0.270    0.010 | xform -rz   -90.000 -t     2.705    2.590    1.695
+ 
+!genbox rc_ex_furn_wd10mm  abil_top    0.780    0.270    0.010 | xform -rz   -90.000 -t     2.705    2.590    2.005
+ 
+!genbox rc_ex_furn_wd10mm  akick    0.780    0.010    0.060 | xform -rz   -90.000 -t     2.735    2.590    0.005
+ 
+!genbox rc_ex_stuffonshelf  alow_books    0.700    0.200    0.340 | xform -rz   -90.000 -t     2.760    2.560    0.060
+ 
+!genbox rc_ex_stuffonshelf  a2nd_books    0.700    0.200    0.320 | xform -rz   -90.000 -t     2.760    2.510    0.520
+ 
+!genbox rc_ex_booksonshlf  a3rd_books    0.650    0.200    0.320 | xform -rz   -90.000 -t     2.765    2.560    0.920
+ 
+!genbox rc_ex_booksonshlf  a4th_books    0.700    0.200    0.220 | xform -rz   -90.000 -t     2.760    2.530    1.420
+ 
+!genbox rc_ex_booksonshlf  atop_books    0.650    0.200    0.140 | xform -rz   -90.000 -t     2.765    2.510    1.720
+ 
+!genbox rc_ex_steel_pl_3mm  cf_cabinet    0.400    0.800    1.250 | xform -rz     0.000 -t     0.100    2.300    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_a    0.010    0.340    0.293 | xform -rz     0.000 -t     0.500    2.330    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_b    0.010    0.340    0.293 | xform -rz     0.000 -t     0.500    2.330    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_c    0.010    0.340    0.293 | xform -rz     0.000 -t     0.500    2.330    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_d    0.010    0.340    0.293 | xform -rz     0.000 -t     0.500    2.330    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_e    0.010    0.340    0.293 | xform -rz     0.000 -t     0.500    2.720    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_f    0.010    0.340    0.293 | xform -rz     0.000 -t     0.500    2.720    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_g    0.010    0.340    0.293 | xform -rz     0.000 -t     0.500    2.720    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_h    0.010    0.340    0.293 | xform -rz     0.000 -t     0.500    2.720    0.944
+ 
+# Outside zone Surface defs... 
+  
+rc_ex_extern_wall  polygon  manager:spandral
+0 
+0 
+ 24
+    0.00000   -0.00300    0.00000
+    3.00000   -0.00300    0.00000
+    3.00000   -0.00300    0.90000
+    2.00000   -0.00300    0.90000
+    2.00000   -0.00300    0.50000
+    1.00000   -0.00300    0.50000
+    1.00000   -0.00300    0.90000
+    0.00000   -0.00300    0.90000
+  
+rc_ex_insul_frame  polygon  manager:vent
+0 
+0 
+ 12
+    1.00000   -0.00300    0.50000
+    2.00000   -0.00300    0.50000
+    2.00000   -0.00300    0.90000
+    1.00000   -0.00300    0.90000
+  
+rc_ex_insul_frame  polygon  manager:frame
+0 
+0 
+ 36
+    0.00000   -0.00300    0.90000
+    1.00000   -0.00300    0.90000
+    2.00000   -0.00300    0.90000
+    3.00000   -0.00300    0.90000
+    3.00000   -0.00300    3.00000
+    0.00000   -0.00300    3.00000
+    0.00000   -0.00300    0.90000
+    0.10000   -0.00300    1.00000
+    0.10000   -0.00300    2.90000
+    2.90000   -0.00300    2.90000
+    2.90000   -0.00300    1.00000
+    0.10000   -0.00300    1.00000
+  
+# general Surface defs..
+  
+# Obstruction defs... 
+  
+!genbox rc_ex_unknown  sen_01    9.000    0.020    0.300 | xform -rz     0.000 -t     3.000   -0.100    3.100
+ 
+!genbox rc_ex_unknown  sen_02    9.000    0.020    0.250 | xform -rz     0.000 -t     3.000   -0.300    3.100
+ 
+!genbox rc_ex_unknown  sen_03    9.000    0.020    0.220 | xform -rz     0.000 -t     3.000   -0.500    3.100
+ 
+!genbox rc_ex_unknown  sen_04    9.000    0.020    0.200 | xform -rz     0.000 -t     3.000   -0.700    3.100
+ 
+!genbox rc_ex_unknown  sen_05    9.000    0.020    0.200 | xform -rz     0.000 -t     3.000   -0.900    3.100
+ 
+!genbox rc_ex_unknown  sen_06    9.000    0.020    0.200 | xform -rz     0.000 -t     3.000   -1.100    3.100
+ 
+!genbox rc_ex_unknown  eob1    6.000    0.020    0.300 | xform -rz    90.000 -t    12.100    0.100    3.100
+ 
+!genbox rc_ex_unknown  eob2    6.000    0.020    0.250 | xform -rz    90.000 -t    12.300    0.100    3.100
+ 
+!genbox rc_ex_unknown  eob3    6.000    0.020    0.220 | xform -rz    90.000 -t    12.500    0.100    3.100
+ 
+!genbox rc_ex_unknown  eob4    6.000    0.020    0.200 | xform -rz    90.000 -t    12.700    0.100    3.100
+ 
+!genbox rc_ex_unknown  eob5    6.000    0.020    0.200 | xform -rz    90.000 -t    12.900    0.100    3.100
+ 
+!genbox rc_ex_unknown  eob6    6.000    0.020    0.200 | xform -rz    90.000 -t    13.100    0.100    3.100
+ 
+# visual object defs... 
+  
+!genbox rc_ex_door  adesk_top    0.600    2.000    0.025 | xform -rz   -90.000 -t     3.100    0.700    0.690
+ 
+!genbox rc_ex_steel_pl_3mm  adesk_leg_a    0.050    0.050    0.690 | xform -rz   -90.000 -t     3.200    0.600    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  adesk_leg_b    0.050    0.050    0.690 | xform -rz   -90.000 -t     3.200    0.200    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  adesk_leg_c    0.050    0.050    0.690 | xform -rz   -90.000 -t     5.000    0.600    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  adesk_leg_d    0.050    0.050    0.690 | xform -rz   -90.000 -t     5.000    0.200    0.000
+ 
+!genbox rc_ex_door  bdesk_top    0.600    2.000    0.025 | xform -rz     0.000 -t     5.100    0.100    0.690
+ 
+!genbox rc_ex_steel_pl_3mm  bdesk_leg_a    0.050    0.050    0.690 | xform -rz     0.000 -t     5.200    0.200    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  bdesk_leg_b    0.050    0.050    0.690 | xform -rz     0.000 -t     5.600    0.200    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  bdesk_leg_c    0.050    0.050    0.690 | xform -rz     0.000 -t     5.200    2.000    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  bdesk_leg_d    0.050    0.050    0.690 | xform -rz     0.000 -t     5.600    2.000    0.000
+ 
+!genbox rc_ex_door  cdesk_top    0.600    2.000    0.025 | xform -rz     0.000 -t     6.000    0.100    0.690
+ 
+!genbox rc_ex_steel_pl_3mm  cdesk_leg_a    0.050    0.050    0.690 | xform -rz     0.000 -t     6.100    0.200    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  cdesk_leg_b    0.050    0.050    0.690 | xform -rz     0.000 -t     6.500    0.200    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  cdesk_leg_c    0.050    0.050    0.690 | xform -rz     0.000 -t     6.100    2.000    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  cdesk_leg_d    0.050    0.050    0.690 | xform -rz     0.000 -t     6.500    2.000    0.000
+ 
+!genbox rc_ex_door  ddesk_top    0.600    2.000    0.025 | xform -rz   -90.000 -t     6.600    0.700    0.690
+ 
+!genbox rc_ex_steel_pl_3mm  ddesk_leg_a    0.050    0.050    0.690 | xform -rz   -90.000 -t     6.700    0.600    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  ddesk_leg_b    0.050    0.050    0.690 | xform -rz   -90.000 -t     6.700    0.200    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  ddesk_leg_c    0.050    0.050    0.690 | xform -rz   -90.000 -t     8.500    0.600    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  ddesk_leg_d    0.050    0.050    0.690 | xform -rz   -90.000 -t     8.500    0.200    0.000
+ 
+!genbox rc_ex_door  edesk_top    0.600    2.000    0.025 | xform -rz     0.000 -t    11.300    0.100    0.690
+ 
+!genbox rc_ex_steel_pl_3mm  edesk_leg_a    0.050    0.050    0.690 | xform -rz     0.000 -t    11.400    0.200    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  edesk_leg_b    0.050    0.050    0.690 | xform -rz     0.000 -t    11.800    0.200    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  edesk_leg_c    0.050    0.050    0.690 | xform -rz     0.000 -t    11.400    2.000    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  edesk_leg_d    0.050    0.050    0.690 | xform -rz     0.000 -t    11.800    2.000    0.000
+ 
+!genbox rc_ex_door  fdesk_top    0.600    2.000    0.025 | xform -rz   -90.000 -t     9.300    0.700    0.690
+ 
+!genbox rc_ex_steel_pl_3mm  fdesk_leg_a    0.050    0.050    0.690 | xform -rz   -90.000 -t     9.400    0.600    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  fdesk_leg_b    0.050    0.050    0.690 | xform -rz   -90.000 -t     9.400    0.200    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  fdesk_leg_c    0.050    0.050    0.690 | xform -rz   -90.000 -t    11.200    0.600    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  fdesk_leg_d    0.050    0.050    0.690 | xform -rz   -90.000 -t    11.200    0.200    0.000
+ 
+!genbox rc_ex_door  gdesk_top    0.600    2.000    0.025 | xform -rz     0.000 -t    11.300    3.000    0.690
+ 
+!genbox rc_ex_steel_pl_3mm  gdesk_leg_a    0.050    0.050    0.690 | xform -rz     0.000 -t    11.400    3.100    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  gdesk_leg_b    0.050    0.050    0.690 | xform -rz     0.000 -t    11.800    3.100    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  gdesk_leg_c    0.050    0.050    0.690 | xform -rz     0.000 -t    11.400    4.900    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  gdesk_leg_d    0.050    0.050    0.690 | xform -rz     0.000 -t    11.800    4.900    0.000
+ 
+!genbox rc_ex_upholstery  aseat    0.480    0.450    0.060 | xform -rz     0.000 -t     4.085    1.695    0.500
+ 
+!genbox rc_ex_upholstery  ar_arm    0.090    0.230    0.025 | xform -rz     0.000 -t     4.015    1.745    0.720
+ 
+!genbox rc_ex_upholstery  al_arm    0.090    0.230    0.025 | xform -rz     0.000 -t     4.575    1.745    0.720
+ 
+rc_ex_upholstery                        polygon aseat_bk_1
+0 
+0 
+ 12
+    4.08500    2.14500    0.56000
+    4.56500    2.14500    0.56000
+    4.56300    2.19500    1.06000
+    4.08300    2.19500    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_2
+0 
+0 
+ 12
+    4.56500    2.14500    0.56000
+    4.56500    2.18500    0.56000
+    4.56300    2.23500    1.06000
+    4.56300    2.19500    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_3
+0 
+0 
+ 12
+    4.56500    2.18500    0.56000
+    4.08500    2.18500    0.56000
+    4.08300    2.23500    1.06000
+    4.56300    2.23500    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_4
+0 
+0 
+ 12
+    4.08500    2.18500    0.56000
+    4.08500    2.14500    0.56000
+    4.08300    2.19500    1.06000
+    4.08300    2.23500    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_5
+0 
+0 
+ 12
+    4.08300    2.19500    1.06000
+    4.56300    2.19500    1.06000
+    4.56300    2.23500    1.06000
+    4.08300    2.23500    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_6
+0 
+0 
+ 12
+    4.08500    2.14500    0.56000
+    4.08500    2.18500    0.56000
+    4.56500    2.18500    0.56000
+    4.56500    2.14500    0.56000
+  
+!genbox rc_ex_steel_gr_3mm  across_a    0.650    0.030    0.050 | xform -rz     0.000 -t     4.000    1.925    0.080
+ 
+!genbox rc_ex_steel_gr_3mm  across_b    0.650    0.030    0.050 | xform -rz    90.000 -t     4.325    1.600    0.080
+ 
+!genbox rc_ex_PH_alu_frame  apost    0.080    0.080    0.400 | xform -rz     0.000 -t     4.305    1.905    0.100
+ 
+!genbox rc_ex_steel_gr_3mm  ar_arm_rest    0.025    0.050    0.230 | xform -rz     0.000 -t     4.085    1.875    0.500
+ 
+!genbox rc_ex_steel_gr_3mm  al_arm_rest    0.025    0.050    0.230 | xform -rz     0.000 -t     4.565    1.875    0.500
+ 
+!genbox rc_ex_sensor_case  aroller_a    0.060    0.030    0.060 | xform -rz     0.000 -t     4.000    1.925    0.000
+ 
+!genbox rc_ex_sensor_case  aroller_b    0.060    0.030    0.060 | xform -rz     0.000 -t     4.605    1.925    0.000
+ 
+!genbox rc_ex_sensor_case  aroller_c    0.030    0.060    0.060 | xform -rz    90.000 -t     4.325    1.600    0.000
+ 
+!genbox rc_ex_sensor_case  aroller_d    0.030    0.060    0.060 | xform -rz    90.000 -t     4.325    2.245    0.000
+ 
+!genbox rc_ex_upholstery  bseat    0.480    0.450    0.060 | xform -rz   -20.000 -t     7.112    1.360    0.500
+ 
+!genbox rc_ex_upholstery  br_arm    0.090    0.230    0.025 | xform -rz   -20.000 -t     7.064    1.431    0.720
+ 
+!genbox rc_ex_upholstery  bl_arm    0.090    0.230    0.025 | xform -rz   -20.000 -t     7.590    1.240    0.720
+ 
+rc_ex_upholstery                        polygon bseat_bk_1
+0 
+0 
+ 12
+    7.26630    1.78310    0.56000
+    7.71730    1.61890    0.56000
+    7.73250    1.66660    1.06000
+    7.28150    1.83070    1.06000
+  
+rc_ex_upholstery                        polygon bseat_bk_2
+0 
+0 
+ 12
+    7.71730    1.61890    0.56000
+    7.73100    1.65650    0.56000
+    7.74620    1.70410    1.06000
+    7.73250    1.66660    1.06000
+  
+rc_ex_upholstery                        polygon bseat_bk_3
+0 
+0 
+ 12
+    7.73100    1.65650    0.56000
+    7.28000    1.82060    0.56000
+    7.29520    1.86830    1.06000
+    7.74620    1.70410    1.06000
+  
+rc_ex_upholstery                        polygon bseat_bk_4
+0 
+0 
+ 12
+    7.28000    1.82060    0.56000
+    7.26630    1.78310    0.56000
+    7.28150    1.83070    1.06000
+    7.29520    1.86830    1.06000
+  
+rc_ex_upholstery                        polygon bseat_bk_5
+0 
+0 
+ 12
+    7.28150    1.83070    1.06000
+    7.73250    1.66660    1.06000
+    7.74620    1.70410    1.06000
+    7.29520    1.86830    1.06000
+  
+rc_ex_upholstery                        polygon bseat_bk_6
+0 
+0 
+ 12
+    7.26630    1.78310    0.56000
+    7.28000    1.82060    0.56000
+    7.73100    1.65650    0.56000
+    7.71730    1.61890    0.56000
+  
+!genbox rc_ex_steel_gr_3mm  bcross_a    0.650    0.030    0.050 | xform -rz   -20.000 -t     7.111    1.605    0.080
+ 
+!genbox rc_ex_steel_gr_3mm  bcross_b    0.650    0.030    0.050 | xform -rz    70.000 -t     7.305    1.189    0.080
+ 
+!genbox rc_ex_PH_alu_frame  bpost    0.080    0.080    0.400 | xform -rz   -20.000 -t     7.391    1.482    0.100
+ 
+!genbox rc_ex_steel_gr_3mm  br_arm_rest    0.025    0.050    0.230 | xform -rz   -20.000 -t     7.174    1.529    0.500
+ 
+!genbox rc_ex_steel_gr_3mm  bl_arm_rest    0.025    0.050    0.230 | xform -rz   -20.000 -t     7.625    1.365    0.500
+ 
+!genbox rc_ex_sensor_case  broller_a    0.060    0.030    0.060 | xform -rz   -20.000 -t     7.111    1.605    0.000
+ 
+!genbox rc_ex_sensor_case  broller_b    0.060    0.030    0.060 | xform -rz   -20.000 -t     7.680    1.398    0.000
+ 
+!genbox rc_ex_sensor_case  broller_c    0.030    0.060    0.060 | xform -rz    70.000 -t     7.305    1.189    0.000
+ 
+!genbox rc_ex_sensor_case  broller_d    0.030    0.060    0.060 | xform -rz    70.000 -t     7.526    1.795    0.000
+ 
+!genbox rc_ex_upholstery  cseat    0.480    0.450    0.060 | xform -rz    20.000 -t     8.047    1.518    0.500
+ 
+!genbox rc_ex_upholstery  cr_arm    0.090    0.230    0.025 | xform -rz    20.000 -t     7.964    1.541    0.720
+ 
+!genbox rc_ex_upholstery  cl_arm    0.090    0.230    0.025 | xform -rz    20.000 -t     8.491    1.733    0.720
+ 
+rc_ex_upholstery                        polygon cseat_bk_1
+0 
+0 
+ 12
+    7.89350    1.94120    0.56000
+    8.34450    2.10540    0.56000
+    8.32550    2.15170    1.06000
+    7.87450    1.98750    1.06000
+  
+rc_ex_upholstery                        polygon cseat_bk_2
+0 
+0 
+ 12
+    8.34450    2.10540    0.56000
+    8.33080    2.14300    0.56000
+    8.31190    2.18930    1.06000
+    8.32550    2.15170    1.06000
+  
+rc_ex_upholstery                        polygon cseat_bk_3
+0 
+0 
+ 12
+    8.33080    2.14300    0.56000
+    7.87980    1.97880    0.56000
+    7.86080    2.02510    1.06000
+    8.31190    2.18930    1.06000
+  
+rc_ex_upholstery                        polygon cseat_bk_4
+0 
+0 
+ 12
+    7.87980    1.97880    0.56000
+    7.89350    1.94120    0.56000
+    7.87450    1.98750    1.06000
+    7.86080    2.02510    1.06000
+  
+rc_ex_upholstery                        polygon cseat_bk_5
+0 
+0 
+ 12
+    7.87450    1.98750    1.06000
+    8.32550    2.15170    1.06000
+    8.31190    2.18930    1.06000
+    7.86080    2.02510    1.06000
+  
+rc_ex_upholstery                        polygon cseat_bk_6
+0 
+0 
+ 12
+    7.89350    1.94120    0.56000
+    7.87980    1.97880    0.56000
+    8.33080    2.14300    0.56000
+    8.34450    2.10540    0.56000
+  
+!genbox rc_ex_steel_gr_3mm  ccross_a    0.650    0.030    0.050 | xform -rz    20.000 -t     7.889    1.705    0.080
+ 
+!genbox rc_ex_steel_gr_3mm  ccross_b    0.650    0.030    0.050 | xform -rz   110.000 -t     8.305    1.511    0.080
+ 
+!genbox rc_ex_PH_alu_frame  cpost    0.080    0.080    0.400 | xform -rz    20.000 -t     8.182    1.791    0.100
+ 
+!genbox rc_ex_steel_gr_3mm  cr_arm_rest    0.025    0.050    0.230 | xform -rz    20.000 -t     7.986    1.688    0.500
+ 
+!genbox rc_ex_steel_gr_3mm  cl_arm_rest    0.025    0.050    0.230 | xform -rz    20.000 -t     8.437    1.852    0.500
+ 
+!genbox rc_ex_sensor_case  croller_a    0.060    0.030    0.060 | xform -rz    20.000 -t     7.889    1.705    0.000
+ 
+!genbox rc_ex_sensor_case  croller_b    0.060    0.030    0.060 | xform -rz    20.000 -t     8.457    1.912    0.000
+ 
+!genbox rc_ex_sensor_case  croller_c    0.030    0.060    0.060 | xform -rz   110.000 -t     8.305    1.511    0.000
+ 
+!genbox rc_ex_sensor_case  croller_d    0.030    0.060    0.060 | xform -rz   110.000 -t     8.085    2.117    0.000
+ 
+!genbox rc_ex_upholstery  dseat    0.480    0.450    0.060 | xform -rz    30.000 -t    10.026    1.325    0.500
+ 
+!genbox rc_ex_upholstery  dr_arm    0.090    0.230    0.025 | xform -rz    30.000 -t     9.941    1.333    0.720
+ 
+!genbox rc_ex_upholstery  dl_arm    0.090    0.230    0.025 | xform -rz    30.000 -t    10.425    1.613    0.720
+ 
+rc_ex_upholstery                        polygon dseat_bk_1
+0 
+0 
+ 12
+    9.80110    1.71450    0.56000
+   10.21680    1.95450    0.56000
+   10.19010    1.99680    1.06000
+    9.77440    1.75680    1.06000
+  
+rc_ex_upholstery                        polygon dseat_bk_2
+0 
+0 
+ 12
+   10.21680    1.95450    0.56000
+   10.19680    1.98910    0.56000
+   10.17010    2.03140    1.06000
+   10.19010    1.99680    1.06000
+  
+rc_ex_upholstery                        polygon dseat_bk_3
+0 
+0 
+ 12
+   10.19680    1.98910    0.56000
+    9.78110    1.74910    0.56000
+    9.75440    1.79140    1.06000
+   10.17010    2.03140    1.06000
+  
+rc_ex_upholstery                        polygon dseat_bk_4
+0 
+0 
+ 12
+    9.78110    1.74910    0.56000
+    9.80110    1.71450    0.56000
+    9.77440    1.75680    1.06000
+    9.75440    1.79140    1.06000
+  
+rc_ex_upholstery                        polygon dseat_bk_5
+0 
+0 
+ 12
+    9.77440    1.75680    1.06000
+   10.19010    1.99680    1.06000
+   10.17010    2.03140    1.06000
+    9.75440    1.79140    1.06000
+  
+rc_ex_upholstery                        polygon dseat_bk_6
+0 
+0 
+ 12
+    9.80110    1.71450    0.56000
+    9.78110    1.74910    0.56000
+   10.19680    1.98910    0.56000
+   10.21680    1.95450    0.56000
+  
+!genbox rc_ex_steel_gr_3mm  dcross_a    0.650    0.030    0.050 | xform -rz    30.000 -t     9.837    1.482    0.080
+ 
+!genbox rc_ex_steel_gr_3mm  dcross_b    0.650    0.030    0.050 | xform -rz   120.000 -t    10.281    1.362    0.080
+ 
+!genbox rc_ex_PH_alu_frame  dpost    0.080    0.080    0.400 | xform -rz    30.000 -t    10.112    1.617    0.100
+ 
+!genbox rc_ex_steel_gr_3mm  dr_arm_rest    0.025    0.050    0.230 | xform -rz    30.000 -t     9.936    1.481    0.500
+ 
+!genbox rc_ex_steel_gr_3mm  dl_arm_rest    0.025    0.050    0.230 | xform -rz    30.000 -t    10.352    1.721    0.500
+ 
+!genbox rc_ex_sensor_case  droller_a    0.060    0.030    0.060 | xform -rz    30.000 -t     9.837    1.482    0.000
+ 
+!genbox rc_ex_sensor_case  droller_b    0.060    0.030    0.060 | xform -rz    30.000 -t    10.361    1.784    0.000
+ 
+!genbox rc_ex_sensor_case  droller_c    0.030    0.060    0.060 | xform -rz   120.000 -t    10.281    1.362    0.000
+ 
+!genbox rc_ex_sensor_case  droller_d    0.030    0.060    0.060 | xform -rz   120.000 -t     9.959    1.921    0.000
+ 
+!genbox rc_ex_door  gdesk_top    0.600    2.000    0.025 | xform -rz   -90.000 -t     9.200    3.600    0.690
+ 
+!genbox rc_ex_steel_pl_3mm  gdesk_leg_a    0.050    0.050    0.690 | xform -rz   -90.000 -t     9.300    3.500    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  gdesk_leg_b    0.050    0.050    0.690 | xform -rz   -90.000 -t     9.300    3.100    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  gdesk_leg_c    0.050    0.050    0.690 | xform -rz   -90.000 -t    11.100    3.500    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  gdesk_leg_d    0.050    0.050    0.690 | xform -rz   -90.000 -t    11.100    3.100    0.000
+ 
+!genbox rc_ex_upholstery  eseat    0.480    0.450    0.060 | xform -rz     0.000 -t     9.885    3.995    0.500
+ 
+!genbox rc_ex_upholstery  er_arm    0.090    0.230    0.025 | xform -rz     0.000 -t     9.815    4.045    0.720
+ 
+!genbox rc_ex_upholstery  el_arm    0.090    0.230    0.025 | xform -rz     0.000 -t    10.375    4.045    0.720
+ 
+rc_ex_upholstery                        polygon eseat_bk_1
+0 
+0 
+ 12
+    9.88500    4.44500    0.56000
+   10.36500    4.44500    0.56000
+   10.36300    4.49500    1.06000
+    9.88300    4.49500    1.06000
+  
+rc_ex_upholstery                        polygon eseat_bk_2
+0 
+0 
+ 12
+   10.36500    4.44500    0.56000
+   10.36500    4.48500    0.56000
+   10.36300    4.53500    1.06000
+   10.36300    4.49500    1.06000
+  
+rc_ex_upholstery                        polygon eseat_bk_3
+0 
+0 
+ 12
+   10.36500    4.48500    0.56000
+    9.88500    4.48500    0.56000
+    9.88300    4.53500    1.06000
+   10.36300    4.53500    1.06000
+  
+rc_ex_upholstery                        polygon eseat_bk_4
+0 
+0 
+ 12
+    9.88500    4.48500    0.56000
+    9.88500    4.44500    0.56000
+    9.88300    4.49500    1.06000
+    9.88300    4.53500    1.06000
+  
+rc_ex_upholstery                        polygon eseat_bk_5
+0 
+0 
+ 12
+    9.88300    4.49500    1.06000
+   10.36300    4.49500    1.06000
+   10.36300    4.53500    1.06000
+    9.88300    4.53500    1.06000
+  
+rc_ex_upholstery                        polygon eseat_bk_6
+0 
+0 
+ 12
+    9.88500    4.44500    0.56000
+    9.88500    4.48500    0.56000
+   10.36500    4.48500    0.56000
+   10.36500    4.44500    0.56000
+  
+!genbox rc_ex_steel_gr_3mm  ecross_a    0.650    0.030    0.050 | xform -rz     0.000 -t     9.800    4.225    0.080
+ 
+!genbox rc_ex_steel_gr_3mm  ecross_b    0.650    0.030    0.050 | xform -rz    90.000 -t    10.125    3.900    0.080
+ 
+!genbox rc_ex_PH_alu_frame  epost    0.080    0.080    0.400 | xform -rz     0.000 -t    10.105    4.205    0.100
+ 
+!genbox rc_ex_steel_gr_3mm  er_arm_rest    0.025    0.050    0.230 | xform -rz     0.000 -t     9.885    4.175    0.500
+ 
+!genbox rc_ex_steel_gr_3mm  el_arm_rest    0.025    0.050    0.230 | xform -rz     0.000 -t    10.365    4.175    0.500
+ 
+!genbox rc_ex_sensor_case  eroller_a    0.060    0.030    0.060 | xform -rz     0.000 -t     9.800    4.225    0.000
+ 
+!genbox rc_ex_sensor_case  eroller_b    0.060    0.030    0.060 | xform -rz     0.000 -t    10.405    4.225    0.000
+ 
+!genbox rc_ex_sensor_case  eroller_c    0.030    0.060    0.060 | xform -rz    90.000 -t    10.125    3.900    0.000
+ 
+!genbox rc_ex_sensor_case  eroller_d    0.030    0.060    0.060 | xform -rz    90.000 -t    10.125    4.545    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  af_cabinet    0.400    1.200    1.250 | xform -rz     0.000 -t     3.110    2.600    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_a    0.010    0.340    0.293 | xform -rz     0.000 -t     3.510    2.630    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_b    0.010    0.340    0.293 | xform -rz     0.000 -t     3.510    2.630    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_c    0.010    0.340    0.293 | xform -rz     0.000 -t     3.510    2.630    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_d    0.010    0.340    0.293 | xform -rz     0.000 -t     3.510    2.630    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_e    0.010    0.340    0.293 | xform -rz     0.000 -t     3.510    3.020    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_f    0.010    0.340    0.293 | xform -rz     0.000 -t     3.510    3.020    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_g    0.010    0.340    0.293 | xform -rz     0.000 -t     3.510    3.020    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_h    0.010    0.340    0.293 | xform -rz     0.000 -t     3.510    3.020    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_i    0.010    0.340    0.293 | xform -rz     0.000 -t     3.510    3.410    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_j    0.010    0.340    0.293 | xform -rz     0.000 -t     3.510    3.410    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_k    0.010    0.340    0.293 | xform -rz     0.000 -t     3.510    3.410    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_l    0.010    0.340    0.293 | xform -rz     0.000 -t     3.510    3.410    0.944
+ 
+!genbox rc_ex_furn_wd10mm  aleft_ver    0.010    0.280    2.020 | xform -rz     0.000 -t     9.100    5.700    0.000
+ 
+!genbox rc_ex_furn_wd10mm  aright_ver    0.010    0.280    2.020 | xform -rz     0.000 -t     9.890    5.700    0.000
+ 
+!genbox rc_ex_furn_wd10mm  abil_bk    0.780    0.010    2.005 | xform -rz     0.000 -t     9.100    5.970    0.000
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_a    0.780    0.270    0.010 | xform -rz     0.000 -t     9.110    5.705    0.075
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_b    0.780    0.270    0.010 | xform -rz     0.000 -t     9.110    5.705    0.515
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_c    0.780    0.270    0.010 | xform -rz     0.000 -t     9.110    5.705    0.915
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_d    0.780    0.270    0.010 | xform -rz     0.000 -t     9.110    5.705    1.405
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_e    0.780    0.270    0.010 | xform -rz     0.000 -t     9.110    5.705    1.695
+ 
+!genbox rc_ex_furn_wd10mm  abil_top    0.780    0.270    0.010 | xform -rz     0.000 -t     9.110    5.705    2.005
+ 
+!genbox rc_ex_furn_wd10mm  akick    0.780    0.010    0.060 | xform -rz     0.000 -t     9.110    5.735    0.005
+ 
+!genbox rc_ex_stuffonshelf  alow_books    0.700    0.200    0.340 | xform -rz     0.000 -t     9.140    5.760    0.060
+ 
+!genbox rc_ex_stuffonshelf  a2nd_books    0.700    0.200    0.320 | xform -rz     0.000 -t     9.190    5.760    0.520
+ 
+!genbox rc_ex_booksonshlf  a3rd_books    0.650    0.200    0.320 | xform -rz     0.000 -t     9.140    5.765    0.920
+ 
+!genbox rc_ex_booksonshlf  a4th_books    0.700    0.200    0.220 | xform -rz     0.000 -t     9.170    5.760    1.420
+ 
+!genbox rc_ex_booksonshlf  atop_books    0.650    0.200    0.140 | xform -rz     0.000 -t     9.190    5.765    1.720
+ 
+!genbox rc_ex_furn_wd10mm  bleft_ver    0.010    0.280    2.020 | xform -rz     0.000 -t    10.000    5.700    0.000
+ 
+!genbox rc_ex_furn_wd10mm  bright_ver    0.010    0.280    2.020 | xform -rz     0.000 -t    10.790    5.700    0.000
+ 
+!genbox rc_ex_furn_wd10mm  bbil_bk    0.780    0.010    2.005 | xform -rz     0.000 -t    10.000    5.970    0.000
+ 
+!genbox rc_ex_furn_wd10mm  bshelf_a    0.780    0.270    0.010 | xform -rz     0.000 -t    10.010    5.705    0.075
+ 
+!genbox rc_ex_furn_wd10mm  bshelf_b    0.780    0.270    0.010 | xform -rz     0.000 -t    10.010    5.705    0.515
+ 
+!genbox rc_ex_furn_wd10mm  bshelf_c    0.780    0.270    0.010 | xform -rz     0.000 -t    10.010    5.705    0.915
+ 
+!genbox rc_ex_furn_wd10mm  bshelf_d    0.780    0.270    0.010 | xform -rz     0.000 -t    10.010    5.705    1.405
+ 
+!genbox rc_ex_furn_wd10mm  bshelf_e    0.780    0.270    0.010 | xform -rz     0.000 -t    10.010    5.705    1.695
+ 
+!genbox rc_ex_furn_wd10mm  bbil_top    0.780    0.270    0.010 | xform -rz     0.000 -t    10.010    5.705    2.005
+ 
+!genbox rc_ex_furn_wd10mm  bkick    0.780    0.010    0.060 | xform -rz     0.000 -t    10.010    5.735    0.005
+ 
+!genbox rc_ex_stuffonshelf  blow_books    0.700    0.200    0.340 | xform -rz     0.000 -t    10.040    5.760    0.060
+ 
+!genbox rc_ex_stuffonshelf  b2nd_books    0.700    0.200    0.320 | xform -rz     0.000 -t    10.090    5.760    0.520
+ 
+!genbox rc_ex_booksonshlf  b3rd_books    0.650    0.200    0.320 | xform -rz     0.000 -t    10.040    5.765    0.920
+ 
+!genbox rc_ex_booksonshlf  b4th_books    0.700    0.200    0.220 | xform -rz     0.000 -t    10.070    5.760    1.420
+ 
+!genbox rc_ex_booksonshlf  btop_books    0.650    0.200    0.140 | xform -rz     0.000 -t    10.090    5.765    1.720
+ 
+!genbox rc_ex_steel_pl_3mm  bf_cabinet    0.400    1.200    1.250 | xform -rz   -90.000 -t     7.000    3.400    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_a    0.010    0.340    0.293 | xform -rz   -90.000 -t     7.030    3.000    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_b    0.010    0.340    0.293 | xform -rz   -90.000 -t     7.030    3.000    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_c    0.010    0.340    0.293 | xform -rz   -90.000 -t     7.030    3.000    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_d    0.010    0.340    0.293 | xform -rz   -90.000 -t     7.030    3.000    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_e    0.010    0.340    0.293 | xform -rz   -90.000 -t     7.420    3.000    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_f    0.010    0.340    0.293 | xform -rz   -90.000 -t     7.420    3.000    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_g    0.010    0.340    0.293 | xform -rz   -90.000 -t     7.420    3.000    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_h    0.010    0.340    0.293 | xform -rz   -90.000 -t     7.420    3.000    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_i    0.010    0.340    0.293 | xform -rz   -90.000 -t     7.810    3.000    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_j    0.010    0.340    0.293 | xform -rz   -90.000 -t     7.810    3.000    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_k    0.010    0.340    0.293 | xform -rz   -90.000 -t     7.810    3.000    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_l    0.010    0.340    0.293 | xform -rz   -90.000 -t     7.810    3.000    0.944
+ 
+# Outside zone Surface defs... 
+  
+rc_ex_extern_wall  polygon  general:spandral
+0 
+0 
+ 24
+    3.00000   -0.00300    0.00000
+    6.00000   -0.00300    0.00000
+    6.00000   -0.00300    0.90000
+    5.00000   -0.00300    0.90000
+    5.00000   -0.00300    0.50000
+    4.00000   -0.00300    0.50000
+    4.00000   -0.00300    0.90000
+    3.00000   -0.00300    0.90000
+  
+rc_ex_insul_frame  polygon  general:vent
+0 
+0 
+ 12
+    4.00000   -0.00300    0.50000
+    5.00000   -0.00300    0.50000
+    5.00000   -0.00300    0.90000
+    4.00000   -0.00300    0.90000
+  
+rc_ex_insul_frame  polygon  general:frame
+0 
+0 
+ 36
+    3.00000   -0.00300    0.90000
+    4.00000   -0.00300    0.90000
+    5.00000   -0.00300    0.90000
+    6.00000   -0.00300    0.90000
+    6.00000   -0.00300    3.00000
+    3.00000   -0.00300    3.00000
+    3.00000   -0.00300    0.90000
+    3.10000   -0.00300    1.00000
+    3.10000   -0.00300    2.90000
+    5.90000   -0.00300    2.90000
+    5.90000   -0.00300    1.00000
+    3.10000   -0.00300    1.00000
+  
+rc_ex_extern_wall  polygon  general:spandral_a
+0 
+0 
+ 24
+    6.00000   -0.00300    0.00000
+    9.00000   -0.00300    0.00000
+    9.00000   -0.00300    0.90000
+    8.00000   -0.00300    0.90000
+    8.00000   -0.00300    0.50000
+    7.00000   -0.00300    0.50000
+    7.00000   -0.00300    0.90000
+    6.00000   -0.00300    0.90000
+  
+rc_ex_insul_frame  polygon  general:vent_a
+0 
+0 
+ 12
+    7.00000   -0.00300    0.50000
+    8.00000   -0.00300    0.50000
+    8.00000   -0.00300    0.90000
+    7.00000   -0.00300    0.90000
+  
+rc_ex_insul_frame  polygon  general:frame_a
+0 
+0 
+ 36
+    6.00000   -0.00300    0.90000
+    7.00000   -0.00300    0.90000
+    8.00000   -0.00300    0.90000
+    9.00000   -0.00300    0.90000
+    9.00000   -0.00300    3.00000
+    6.00000   -0.00300    3.00000
+    6.00000   -0.00300    0.90000
+    6.10000   -0.00300    1.00000
+    6.10000   -0.00300    2.90000
+    8.90000   -0.00300    2.90000
+    8.90000   -0.00300    1.00000
+    6.10000   -0.00300    1.00000
+  
+rc_ex_extern_wall  polygon  general:spandral_b
+0 
+0 
+ 24
+    9.00000   -0.00300    0.00000
+   12.00000   -0.00300    0.00000
+   12.00000   -0.00300    0.90000
+   11.00000   -0.00300    0.90000
+   11.00000   -0.00300    0.50000
+   10.00000   -0.00300    0.50000
+   10.00000   -0.00300    0.90000
+    9.00000   -0.00300    0.90000
+  
+rc_ex_insul_frame  polygon  general:vent_b
+0 
+0 
+ 12
+   10.00000   -0.00300    0.50000
+   11.00000   -0.00300    0.50000
+   11.00000   -0.00300    0.90000
+   10.00000   -0.00300    0.90000
+  
+rc_ex_insul_frame  polygon  general:frame_b
+0 
+0 
+ 36
+    9.00000   -0.00300    0.90000
+   10.00000   -0.00300    0.90000
+   11.00000   -0.00300    0.90000
+   12.00000   -0.00300    0.90000
+   12.00000   -0.00300    3.00000
+    9.00000   -0.00300    3.00000
+    9.00000   -0.00300    0.90000
+    9.10000   -0.00300    1.00000
+    9.10000   -0.00300    2.90000
+   11.90000   -0.00300    2.90000
+   11.90000   -0.00300    1.00000
+    9.10000   -0.00300    1.00000
+  
+rc_ex_extern_wall  polygon  general:spandral_c
+0 
+0 
+ 24
+   12.00300    0.00000    0.00000
+   12.00300    3.00000    0.00000
+   12.00300    3.00000    0.90000
+   12.00300    2.00000    0.90000
+   12.00300    2.00000    0.50000
+   12.00300    1.00000    0.50000
+   12.00300    1.00000    0.90000
+   12.00300    0.00000    0.90000
+  
+rc_ex_insul_frame  polygon  general:vent_c
+0 
+0 
+ 12
+   12.00300    1.00000    0.50000
+   12.00300    2.00000    0.50000
+   12.00300    2.00000    0.90000
+   12.00300    1.00000    0.90000
+  
+rc_ex_insul_frame  polygon  general:frame_c
+0 
+0 
+ 36
+   12.00300    0.00000    0.90000
+   12.00300    1.00000    0.90000
+   12.00300    2.00000    0.90000
+   12.00300    3.00000    0.90000
+   12.00300    3.00000    3.00000
+   12.00300    0.00000    3.00000
+   12.00300    0.00000    0.90000
+   12.00300    0.10000    1.00000
+   12.00300    0.10000    2.90000
+   12.00300    2.90000    2.90000
+   12.00300    2.90000    1.00000
+   12.00300    0.10000    1.00000
+  
+rc_ex_extern_wall  polygon  general:spandral_d
+0 
+0 
+ 24
+   12.00300    3.00000    0.00000
+   12.00300    6.00000    0.00000
+   12.00300    6.00000    0.90000
+   12.00300    5.00000    0.90000
+   12.00300    5.00000    0.50000
+   12.00300    4.00000    0.50000
+   12.00300    4.00000    0.90000
+   12.00300    3.00000    0.90000
+  
+rc_ex_insul_frame  polygon  general:vent_d
+0 
+0 
+ 12
+   12.00300    4.00000    0.50000
+   12.00300    5.00000    0.50000
+   12.00300    5.00000    0.90000
+   12.00300    4.00000    0.90000
+  
+rc_ex_insul_frame  polygon  general:frame_d
+0 
+0 
+ 36
+   12.00300    3.00000    0.90000
+   12.00300    4.00000    0.90000
+   12.00300    5.00000    0.90000
+   12.00300    6.00000    0.90000
+   12.00300    6.00000    3.00000
+   12.00300    3.00000    3.00000
+   12.00300    3.00000    0.90000
+   12.00300    3.10000    1.00000
+   12.00300    3.10000    2.90000
+   12.00300    5.90000    2.90000
+   12.00300    5.90000    1.00000
+   12.00300    3.10000    1.00000
+  
+# conference Surface defs..
+  
+# Obstruction defs... 
+  
+!genbox rc_ex_unknown  eob1    6.000    0.020    0.300 | xform -rz    90.000 -t    12.100   12.000    3.100
+ 
+!genbox rc_ex_unknown  eob2    6.000    0.020    0.250 | xform -rz    90.000 -t    12.300   12.000    3.100
+ 
+!genbox rc_ex_unknown  eob3    6.000    0.020    0.220 | xform -rz    90.000 -t    12.500   12.000    3.100
+ 
+!genbox rc_ex_unknown  eob4    6.000    0.020    0.200 | xform -rz    90.000 -t    12.700   12.000    3.100
+ 
+!genbox rc_ex_unknown  eob5    6.000    0.020    0.200 | xform -rz    90.000 -t    12.900   12.000    3.100
+ 
+!genbox rc_ex_unknown  eob6    6.000    0.020    0.200 | xform -rz    90.000 -t    13.100   12.000    3.100
+ 
+# visual object defs... 
+  
+!genbox rc_ex_upholstery  aseat    0.480    0.450    0.060 | xform -rz     0.000 -t     6.285   17.295    0.500
+ 
+!genbox rc_ex_upholstery  ar_arm    0.090    0.230    0.025 | xform -rz     0.000 -t     6.215   17.345    0.720
+ 
+!genbox rc_ex_upholstery  al_arm    0.090    0.230    0.025 | xform -rz     0.000 -t     6.775   17.345    0.720
+ 
+rc_ex_upholstery                        polygon aseat_bk_1
+0 
+0 
+ 12
+    6.28500   17.74500    0.56000
+    6.76500   17.74500    0.56000
+    6.76300   17.79500    1.06000
+    6.28300   17.79500    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_2
+0 
+0 
+ 12
+    6.76500   17.74500    0.56000
+    6.76500   17.78500    0.56000
+    6.76300   17.83500    1.06000
+    6.76300   17.79500    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_3
+0 
+0 
+ 12
+    6.76500   17.78500    0.56000
+    6.28500   17.78500    0.56000
+    6.28300   17.83500    1.06000
+    6.76300   17.83500    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_4
+0 
+0 
+ 12
+    6.28500   17.78500    0.56000
+    6.28500   17.74500    0.56000
+    6.28300   17.79500    1.06000
+    6.28300   17.83500    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_5
+0 
+0 
+ 12
+    6.28300   17.79500    1.06000
+    6.76300   17.79500    1.06000
+    6.76300   17.83500    1.06000
+    6.28300   17.83500    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_6
+0 
+0 
+ 12
+    6.28500   17.74500    0.56000
+    6.28500   17.78500    0.56000
+    6.76500   17.78500    0.56000
+    6.76500   17.74500    0.56000
+  
+!genbox rc_ex_steel_gr_3mm  across_a    0.650    0.030    0.050 | xform -rz     0.000 -t     6.200   17.525    0.080
+ 
+!genbox rc_ex_steel_gr_3mm  across_b    0.650    0.030    0.050 | xform -rz    90.000 -t     6.525   17.200    0.080
+ 
+!genbox rc_ex_PH_alu_frame  apost    0.080    0.080    0.400 | xform -rz     0.000 -t     6.505   17.505    0.100
+ 
+!genbox rc_ex_steel_gr_3mm  ar_arm_rest    0.025    0.050    0.230 | xform -rz     0.000 -t     6.285   17.475    0.500
+ 
+!genbox rc_ex_steel_gr_3mm  al_arm_rest    0.025    0.050    0.230 | xform -rz     0.000 -t     6.765   17.475    0.500
+ 
+!genbox rc_ex_sensor_case  aroller_a    0.060    0.030    0.060 | xform -rz     0.000 -t     6.200   17.525    0.000
+ 
+!genbox rc_ex_sensor_case  aroller_b    0.060    0.030    0.060 | xform -rz     0.000 -t     6.805   17.525    0.000
+ 
+!genbox rc_ex_sensor_case  aroller_c    0.030    0.060    0.060 | xform -rz    90.000 -t     6.525   17.200    0.000
+ 
+!genbox rc_ex_sensor_case  aroller_d    0.030    0.060    0.060 | xform -rz    90.000 -t     6.525   17.845    0.000
+ 
+!genbox rc_ex_upholstery  bseat    0.480    0.450    0.060 | xform -rz     0.000 -t     7.285   17.295    0.500
+ 
+!genbox rc_ex_upholstery  br_arm    0.090    0.230    0.025 | xform -rz     0.000 -t     7.215   17.345    0.720
+ 
+!genbox rc_ex_upholstery  bl_arm    0.090    0.230    0.025 | xform -rz     0.000 -t     7.775   17.345    0.720
+ 
+rc_ex_upholstery                        polygon bseat_bk_1
+0 
+0 
+ 12
+    7.28500   17.74500    0.56000
+    7.76500   17.74500    0.56000
+    7.76300   17.79500    1.06000
+    7.28300   17.79500    1.06000
+  
+rc_ex_upholstery                        polygon bseat_bk_2
+0 
+0 
+ 12
+    7.76500   17.74500    0.56000
+    7.76500   17.78500    0.56000
+    7.76300   17.83500    1.06000
+    7.76300   17.79500    1.06000
+  
+rc_ex_upholstery                        polygon bseat_bk_3
+0 
+0 
+ 12
+    7.76500   17.78500    0.56000
+    7.28500   17.78500    0.56000
+    7.28300   17.83500    1.06000
+    7.76300   17.83500    1.06000
+  
+rc_ex_upholstery                        polygon bseat_bk_4
+0 
+0 
+ 12
+    7.28500   17.78500    0.56000
+    7.28500   17.74500    0.56000
+    7.28300   17.79500    1.06000
+    7.28300   17.83500    1.06000
+  
+rc_ex_upholstery                        polygon bseat_bk_5
+0 
+0 
+ 12
+    7.28300   17.79500    1.06000
+    7.76300   17.79500    1.06000
+    7.76300   17.83500    1.06000
+    7.28300   17.83500    1.06000
+  
+rc_ex_upholstery                        polygon bseat_bk_6
+0 
+0 
+ 12
+    7.28500   17.74500    0.56000
+    7.28500   17.78500    0.56000
+    7.76500   17.78500    0.56000
+    7.76500   17.74500    0.56000
+  
+!genbox rc_ex_steel_gr_3mm  bcross_a    0.650    0.030    0.050 | xform -rz     0.000 -t     7.200   17.525    0.080
+ 
+!genbox rc_ex_steel_gr_3mm  bcross_b    0.650    0.030    0.050 | xform -rz    90.000 -t     7.525   17.200    0.080
+ 
+!genbox rc_ex_PH_alu_frame  bpost    0.080    0.080    0.400 | xform -rz     0.000 -t     7.505   17.505    0.100
+ 
+!genbox rc_ex_steel_gr_3mm  br_arm_rest    0.025    0.050    0.230 | xform -rz     0.000 -t     7.285   17.475    0.500
+ 
+!genbox rc_ex_steel_gr_3mm  bl_arm_rest    0.025    0.050    0.230 | xform -rz     0.000 -t     7.765   17.475    0.500
+ 
+!genbox rc_ex_sensor_case  broller_a    0.060    0.030    0.060 | xform -rz     0.000 -t     7.200   17.525    0.000
+ 
+!genbox rc_ex_sensor_case  broller_b    0.060    0.030    0.060 | xform -rz     0.000 -t     7.805   17.525    0.000
+ 
+!genbox rc_ex_sensor_case  broller_c    0.030    0.060    0.060 | xform -rz    90.000 -t     7.525   17.200    0.000
+ 
+!genbox rc_ex_sensor_case  broller_d    0.030    0.060    0.060 | xform -rz    90.000 -t     7.525   17.845    0.000
+ 
+!genbox rc_ex_upholstery  cseat    0.480    0.450    0.060 | xform -rz    10.000 -t     8.467   17.208    0.500
+ 
+!genbox rc_ex_upholstery  cr_arm    0.090    0.230    0.025 | xform -rz    10.000 -t     8.390   17.245    0.720
+ 
+!genbox rc_ex_upholstery  cl_arm    0.090    0.230    0.025 | xform -rz    10.000 -t     8.941   17.343    0.720
+ 
+rc_ex_upholstery                        polygon cseat_bk_1
+0 
+0 
+ 12
+    8.38910   17.65150    0.56000
+    8.86180   17.73480    0.56000
+    8.85110   17.78370    1.06000
+    8.37840   17.70040    1.06000
+  
+rc_ex_upholstery                        polygon cseat_bk_2
+0 
+0 
+ 12
+    8.86180   17.73480    0.56000
+    8.85480   17.77420    0.56000
+    8.84420   17.82310    1.06000
+    8.85110   17.78370    1.06000
+  
+rc_ex_upholstery                        polygon cseat_bk_3
+0 
+0 
+ 12
+    8.85480   17.77420    0.56000
+    8.38210   17.69090    0.56000
+    8.37150   17.73980    1.06000
+    8.84420   17.82310    1.06000
+  
+rc_ex_upholstery                        polygon cseat_bk_4
+0 
+0 
+ 12
+    8.38210   17.69090    0.56000
+    8.38910   17.65150    0.56000
+    8.37840   17.70040    1.06000
+    8.37150   17.73980    1.06000
+  
+rc_ex_upholstery                        polygon cseat_bk_5
+0 
+0 
+ 12
+    8.37840   17.70040    1.06000
+    8.85110   17.78370    1.06000
+    8.84420   17.82310    1.06000
+    8.37150   17.73980    1.06000
+  
+rc_ex_upholstery                        polygon cseat_bk_6
+0 
+0 
+ 12
+    8.38910   17.65150    0.56000
+    8.38210   17.69090    0.56000
+    8.85480   17.77420    0.56000
+    8.86180   17.73480    0.56000
+  
+!genbox rc_ex_steel_gr_3mm  ccross_a    0.650    0.030    0.050 | xform -rz    10.000 -t     8.344   17.420    0.080
+ 
+!genbox rc_ex_steel_gr_3mm  ccross_b    0.650    0.030    0.050 | xform -rz   100.000 -t     8.720   17.156    0.080
+ 
+!genbox rc_ex_PH_alu_frame  cpost    0.080    0.080    0.400 | xform -rz    10.000 -t     8.647   17.453    0.100
+ 
+!genbox rc_ex_steel_gr_3mm  cr_arm_rest    0.025    0.050    0.230 | xform -rz    10.000 -t     8.436   17.386    0.500
+ 
+!genbox rc_ex_steel_gr_3mm  cl_arm_rest    0.025    0.050    0.230 | xform -rz    10.000 -t     8.909   17.469    0.500
+ 
+!genbox rc_ex_sensor_case  croller_a    0.060    0.030    0.060 | xform -rz    10.000 -t     8.344   17.420    0.000
+ 
+!genbox rc_ex_sensor_case  croller_b    0.060    0.030    0.060 | xform -rz    10.000 -t     8.939   17.525    0.000
+ 
+!genbox rc_ex_sensor_case  croller_c    0.030    0.060    0.060 | xform -rz   100.000 -t     8.720   17.156    0.000
+ 
+!genbox rc_ex_sensor_case  croller_d    0.030    0.060    0.060 | xform -rz   100.000 -t     8.608   17.792    0.000
+ 
+!genbox rc_ex_upholstery  dseat    0.480    0.450    0.060 | xform -rz   -20.000 -t     9.712   17.060    0.500
+ 
+!genbox rc_ex_upholstery  dr_arm    0.090    0.230    0.025 | xform -rz   -20.000 -t     9.664   17.131    0.720
+ 
+!genbox rc_ex_upholstery  dl_arm    0.090    0.230    0.025 | xform -rz   -20.000 -t    10.190   16.940    0.720
+ 
+rc_ex_upholstery                        polygon dseat_bk_1
+0 
+0 
+ 12
+    9.86630   17.48310    0.56000
+   10.31730   17.31890    0.56000
+   10.33250   17.36660    1.06000
+    9.88150   17.53070    1.06000
+  
+rc_ex_upholstery                        polygon dseat_bk_2
+0 
+0 
+ 12
+   10.31730   17.31890    0.56000
+   10.33100   17.35650    0.56000
+   10.34620   17.40410    1.06000
+   10.33250   17.36660    1.06000
+  
+rc_ex_upholstery                        polygon dseat_bk_3
+0 
+0 
+ 12
+   10.33100   17.35650    0.56000
+    9.88000   17.52060    0.56000
+    9.89520   17.56830    1.06000
+   10.34620   17.40410    1.06000
+  
+rc_ex_upholstery                        polygon dseat_bk_4
+0 
+0 
+ 12
+    9.88000   17.52060    0.56000
+    9.86630   17.48310    0.56000
+    9.88150   17.53070    1.06000
+    9.89520   17.56830    1.06000
+  
+rc_ex_upholstery                        polygon dseat_bk_5
+0 
+0 
+ 12
+    9.88150   17.53070    1.06000
+   10.33250   17.36660    1.06000
+   10.34620   17.40410    1.06000
+    9.89520   17.56830    1.06000
+  
+rc_ex_upholstery                        polygon dseat_bk_6
+0 
+0 
+ 12
+    9.86630   17.48310    0.56000
+    9.88000   17.52060    0.56000
+   10.33100   17.35650    0.56000
+   10.31730   17.31890    0.56000
+  
+!genbox rc_ex_steel_gr_3mm  dcross_a    0.650    0.030    0.050 | xform -rz   -20.000 -t     9.711   17.305    0.080
+ 
+!genbox rc_ex_steel_gr_3mm  dcross_b    0.650    0.030    0.050 | xform -rz    70.000 -t     9.905   16.889    0.080
+ 
+!genbox rc_ex_PH_alu_frame  dpost    0.080    0.080    0.400 | xform -rz   -20.000 -t     9.991   17.182    0.100
+ 
+!genbox rc_ex_steel_gr_3mm  dr_arm_rest    0.025    0.050    0.230 | xform -rz   -20.000 -t     9.774   17.229    0.500
+ 
+!genbox rc_ex_steel_gr_3mm  dl_arm_rest    0.025    0.050    0.230 | xform -rz   -20.000 -t    10.225   17.065    0.500
+ 
+!genbox rc_ex_sensor_case  droller_a    0.060    0.030    0.060 | xform -rz   -20.000 -t     9.711   17.305    0.000
+ 
+!genbox rc_ex_sensor_case  droller_b    0.060    0.030    0.060 | xform -rz   -20.000 -t    10.280   17.098    0.000
+ 
+!genbox rc_ex_sensor_case  droller_c    0.030    0.060    0.060 | xform -rz    70.000 -t     9.905   16.889    0.000
+ 
+!genbox rc_ex_sensor_case  droller_d    0.030    0.060    0.060 | xform -rz    70.000 -t    10.126   17.495    0.000
+ 
+!genbox rc_ex_door  conf_table    3.900    1.700    0.030 | xform -rz     0.000 -t     5.950   15.450    0.670
+ 
+!genbox rc_ex_upholstery  eseat    0.480    0.450    0.060 | xform -rz  -100.000 -t     9.679   14.900    0.500
+ 
+!genbox rc_ex_upholstery  er_arm    0.090    0.230    0.025 | xform -rz  -100.000 -t     9.740   14.960    0.720
+ 
+!genbox rc_ex_upholstery  el_arm    0.090    0.230    0.025 | xform -rz  -100.000 -t     9.643   14.409    0.720
+ 
+rc_ex_upholstery                        polygon eseat_bk_1
+0 
+0 
+ 12
+   10.12200   14.82170    0.56000
+   10.03860   14.34890    0.56000
+   10.08820   14.34220    1.06000
+   10.17150   14.81490    1.06000
+  
+rc_ex_upholstery                        polygon eseat_bk_2
+0 
+0 
+ 12
+   10.03860   14.34890    0.56000
+   10.07800   14.34200    0.56000
+   10.12760   14.33530    1.06000
+   10.08820   14.34220    1.06000
+  
+rc_ex_upholstery                        polygon eseat_bk_3
+0 
+0 
+ 12
+   10.07800   14.34200    0.56000
+   10.16140   14.81470    0.56000
+   10.21090   14.80800    1.06000
+   10.12760   14.33530    1.06000
+  
+rc_ex_upholstery                        polygon eseat_bk_4
+0 
+0 
+ 12
+   10.16140   14.81470    0.56000
+   10.12200   14.82170    0.56000
+   10.17150   14.81490    1.06000
+   10.21090   14.80800    1.06000
+  
+rc_ex_upholstery                        polygon eseat_bk_5
+0 
+0 
+ 12
+   10.17150   14.81490    1.06000
+   10.08820   14.34220    1.06000
+   10.12760   14.33530    1.06000
+   10.21090   14.80800    1.06000
+  
+rc_ex_upholstery                        polygon eseat_bk_6
+0 
+0 
+ 12
+   10.12200   14.82170    0.56000
+   10.16140   14.81470    0.56000
+   10.07800   14.34200    0.56000
+   10.03860   14.34890    0.56000
+  
+!genbox rc_ex_steel_gr_3mm  ecross_a    0.650    0.030    0.050 | xform -rz  -100.000 -t     9.920   14.944    0.080
+ 
+!genbox rc_ex_steel_gr_3mm  ecross_b    0.650    0.030    0.050 | xform -rz   -10.000 -t     9.544   14.680    0.080
+ 
+!genbox rc_ex_PH_alu_frame  epost    0.080    0.080    0.400 | xform -rz  -100.000 -t     9.847   14.647    0.100
+ 
+!genbox rc_ex_steel_gr_3mm  er_arm_rest    0.025    0.050    0.230 | xform -rz  -100.000 -t     9.856   14.868    0.500
+ 
+!genbox rc_ex_steel_gr_3mm  el_arm_rest    0.025    0.050    0.230 | xform -rz  -100.000 -t     9.773   14.396    0.500
+ 
+!genbox rc_ex_sensor_case  eroller_a    0.060    0.030    0.060 | xform -rz  -100.000 -t     9.920   14.944    0.000
+ 
+!genbox rc_ex_sensor_case  eroller_b    0.060    0.030    0.060 | xform -rz  -100.000 -t     9.815   14.348    0.000
+ 
+!genbox rc_ex_sensor_case  eroller_c    0.030    0.060    0.060 | xform -rz   -10.000 -t     9.544   14.680    0.000
+ 
+!genbox rc_ex_sensor_case  eroller_d    0.030    0.060    0.060 | xform -rz   -10.000 -t    10.179   14.568    0.000
+ 
+!genbox rc_ex_corian_count  fdesk_top    0.600    1.600    0.025 | xform -rz   -90.000 -t     9.200   12.700    0.690
+ 
+!genbox rc_ex_steel_pl_3mm  fdesk_leg_a    0.050    0.050    0.690 | xform -rz   -90.000 -t     9.300   12.600    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  fdesk_leg_b    0.050    0.050    0.690 | xform -rz   -90.000 -t     9.300   12.200    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  fdesk_leg_c    0.050    0.050    0.690 | xform -rz   -90.000 -t    10.700   12.600    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  fdesk_leg_d    0.050    0.050    0.690 | xform -rz   -90.000 -t    10.700   12.200    0.000
+ 
+!genbox rc_ex_furn_wd10mm  aleft_ver    0.010    0.280    2.020 | xform -rz    90.000 -t     3.400   13.600    0.000
+ 
+!genbox rc_ex_furn_wd10mm  aright_ver    0.010    0.280    2.020 | xform -rz    90.000 -t     3.400   14.390    0.000
+ 
+!genbox rc_ex_furn_wd10mm  abil_bk    0.780    0.010    2.005 | xform -rz    90.000 -t     3.130   13.600    0.000
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_a    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   13.610    0.075
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_b    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   13.610    0.515
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_c    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   13.610    0.915
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_d    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   13.610    1.405
+ 
+!genbox rc_ex_furn_wd10mm  ashelf_e    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   13.610    1.695
+ 
+!genbox rc_ex_furn_wd10mm  abil_top    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   13.610    2.005
+ 
+!genbox rc_ex_furn_wd10mm  akick    0.780    0.010    0.060 | xform -rz    90.000 -t     3.365   13.610    0.005
+ 
+!genbox rc_ex_stuffonshelf  alow_books    0.700    0.200    0.340 | xform -rz    90.000 -t     3.340   13.640    0.060
+ 
+!genbox rc_ex_stuffonshelf  a2nd_books    0.700    0.200    0.320 | xform -rz    90.000 -t     3.340   13.690    0.520
+ 
+!genbox rc_ex_booksonshlf  a3rd_books    0.650    0.200    0.320 | xform -rz    90.000 -t     3.335   13.640    0.920
+ 
+!genbox rc_ex_booksonshlf  a4th_books    0.700    0.200    0.220 | xform -rz    90.000 -t     3.340   13.670    1.420
+ 
+!genbox rc_ex_booksonshlf  atop_books    0.650    0.200    0.140 | xform -rz    90.000 -t     3.335   13.690    1.720
+ 
+!genbox rc_ex_furn_wd10mm  bleft_ver    0.010    0.280    2.020 | xform -rz    90.000 -t     3.400   14.500    0.000
+ 
+!genbox rc_ex_furn_wd10mm  bright_ver    0.010    0.280    2.020 | xform -rz    90.000 -t     3.400   15.290    0.000
+ 
+!genbox rc_ex_furn_wd10mm  bbil_bk    0.780    0.010    2.005 | xform -rz    90.000 -t     3.130   14.500    0.000
+ 
+!genbox rc_ex_furn_wd10mm  bshelf_a    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   14.510    0.075
+ 
+!genbox rc_ex_furn_wd10mm  bshelf_b    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   14.510    0.515
+ 
+!genbox rc_ex_furn_wd10mm  bshelf_c    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   14.510    0.915
+ 
+!genbox rc_ex_furn_wd10mm  bshelf_d    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   14.510    1.405
+ 
+!genbox rc_ex_furn_wd10mm  bshelf_e    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   14.510    1.695
+ 
+!genbox rc_ex_furn_wd10mm  bbil_top    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   14.510    2.005
+ 
+!genbox rc_ex_furn_wd10mm  bkick    0.780    0.010    0.060 | xform -rz    90.000 -t     3.365   14.510    0.005
+ 
+!genbox rc_ex_stuffonshelf  blow_books    0.700    0.200    0.340 | xform -rz    90.000 -t     3.340   14.540    0.060
+ 
+!genbox rc_ex_stuffonshelf  b2nd_books    0.700    0.200    0.320 | xform -rz    90.000 -t     3.340   14.590    0.520
+ 
+!genbox rc_ex_booksonshlf  b3rd_books    0.650    0.200    0.320 | xform -rz    90.000 -t     3.335   14.540    0.920
+ 
+!genbox rc_ex_booksonshlf  b4th_books    0.700    0.200    0.220 | xform -rz    90.000 -t     3.340   14.570    1.420
+ 
+!genbox rc_ex_booksonshlf  btop_books    0.650    0.200    0.140 | xform -rz    90.000 -t     3.335   14.590    1.720
+ 
+!genbox rc_ex_furn_wd10mm  cleft_ver    0.010    0.280    2.020 | xform -rz    90.000 -t     3.400   15.400    0.000
+ 
+!genbox rc_ex_furn_wd10mm  cright_ver    0.010    0.280    2.020 | xform -rz    90.000 -t     3.400   16.190    0.000
+ 
+!genbox rc_ex_furn_wd10mm  cbil_bk    0.780    0.010    2.005 | xform -rz    90.000 -t     3.130   15.400    0.000
+ 
+!genbox rc_ex_furn_wd10mm  cshelf_a    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   15.410    0.075
+ 
+!genbox rc_ex_furn_wd10mm  cshelf_b    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   15.410    0.515
+ 
+!genbox rc_ex_furn_wd10mm  cshelf_c    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   15.410    0.915
+ 
+!genbox rc_ex_furn_wd10mm  cshelf_d    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   15.410    1.405
+ 
+!genbox rc_ex_furn_wd10mm  cshelf_e    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   15.410    1.695
+ 
+!genbox rc_ex_furn_wd10mm  cbil_top    0.780    0.270    0.010 | xform -rz    90.000 -t     3.395   15.410    2.005
+ 
+!genbox rc_ex_furn_wd10mm  ckick    0.780    0.010    0.060 | xform -rz    90.000 -t     3.365   15.410    0.005
+ 
+!genbox rc_ex_stuffonshelf  clow_books    0.700    0.200    0.340 | xform -rz    90.000 -t     3.340   15.440    0.060
+ 
+!genbox rc_ex_stuffonshelf  c2nd_books    0.700    0.200    0.320 | xform -rz    90.000 -t     3.340   15.490    0.520
+ 
+!genbox rc_ex_booksonshlf  c3rd_books    0.650    0.200    0.320 | xform -rz    90.000 -t     3.335   15.440    0.920
+ 
+!genbox rc_ex_booksonshlf  c4th_books    0.700    0.200    0.220 | xform -rz    90.000 -t     3.340   15.470    1.420
+ 
+!genbox rc_ex_booksonshlf  ctop_books    0.650    0.200    0.140 | xform -rz    90.000 -t     3.335   15.490    1.720
+ 
+# Outside zone Surface defs... 
+  
+rc_ex_extern_wall  polygon  conference:spandral
+0 
+0 
+ 24
+    6.00000   18.00300    0.00000
+    3.00000   18.00300    0.00000
+    3.00000   18.00300    0.90000
+    4.00000   18.00300    0.90000
+    4.00000   18.00300    0.50000
+    5.00000   18.00300    0.50000
+    5.00000   18.00300    0.90000
+    6.00000   18.00300    0.90000
+  
+rc_ex_insul_frame  polygon  conference:vent
+0 
+0 
+ 12
+    5.00000   18.00300    0.50000
+    4.00000   18.00300    0.50000
+    4.00000   18.00300    0.90000
+    5.00000   18.00300    0.90000
+  
+rc_ex_insul_frame  polygon  conference:frame
+0 
+0 
+ 36
+    4.00000   18.00300    0.90000
+    3.00000   18.00300    0.90000
+    3.10000   18.00300    1.00000
+    5.90000   18.00300    1.00000
+    5.90000   18.00300    2.90000
+    3.10000   18.00300    2.90000
+    3.10000   18.00300    1.00000
+    3.00000   18.00300    0.90000
+    3.00000   18.00300    3.00000
+    6.00000   18.00300    3.00000
+    6.00000   18.00300    0.90000
+    5.00000   18.00300    0.90000
+  
+rc_ex_extern_wall  polygon  conference:spandral_a
+0 
+0 
+ 24
+    9.00000   18.00300    0.00000
+    6.00000   18.00300    0.00000
+    6.00000   18.00300    0.90000
+    7.00000   18.00300    0.90000
+    7.00000   18.00300    0.50000
+    8.00000   18.00300    0.50000
+    8.00000   18.00300    0.90000
+    9.00000   18.00300    0.90000
+  
+rc_ex_insul_frame  polygon  conference:vent_a
+0 
+0 
+ 12
+    8.00000   18.00300    0.50000
+    7.00000   18.00300    0.50000
+    7.00000   18.00300    0.90000
+    8.00000   18.00300    0.90000
+  
+rc_ex_insul_frame  polygon  conference:frame_a
+0 
+0 
+ 36
+    7.00000   18.00300    0.90000
+    6.00000   18.00300    0.90000
+    6.10000   18.00300    1.00000
+    8.90000   18.00300    1.00000
+    8.90000   18.00300    2.90000
+    6.10000   18.00300    2.90000
+    6.10000   18.00300    1.00000
+    6.00000   18.00300    0.90000
+    6.00000   18.00300    3.00000
+    9.00000   18.00300    3.00000
+    9.00000   18.00300    0.90000
+    8.00000   18.00300    0.90000
+  
+rc_ex_extern_wall  polygon  conference:spandral_b
+0 
+0 
+ 24
+   12.00000   18.00300    0.00000
+    9.00000   18.00300    0.00000
+    9.00000   18.00300    0.90000
+   10.00000   18.00300    0.90000
+   10.00000   18.00300    0.50000
+   11.00000   18.00300    0.50000
+   11.00000   18.00300    0.90000
+   12.00000   18.00300    0.90000
+  
+rc_ex_insul_frame  polygon  conference:vent_b
+0 
+0 
+ 12
+   11.00000   18.00300    0.50000
+   10.00000   18.00300    0.50000
+   10.00000   18.00300    0.90000
+   11.00000   18.00300    0.90000
+  
+rc_ex_insul_frame  polygon  conference:frame_b
+0 
+0 
+ 36
+   10.00000   18.00300    0.90000
+    9.00000   18.00300    0.90000
+    9.10000   18.00300    1.00000
+   11.90000   18.00300    1.00000
+   11.90000   18.00300    2.90000
+    9.10000   18.00300    2.90000
+    9.10000   18.00300    1.00000
+    9.00000   18.00300    0.90000
+    9.00000   18.00300    3.00000
+   12.00000   18.00300    3.00000
+   12.00000   18.00300    0.90000
+   11.00000   18.00300    0.90000
+  
+rc_ex_extern_wall  polygon  conference:spandral_c
+0 
+0 
+ 24
+   12.00300   15.00000    0.00000
+   12.00300   18.00000    0.00000
+   12.00300   18.00000    0.90000
+   12.00300   17.00000    0.90000
+   12.00300   17.00000    0.50000
+   12.00300   16.00000    0.50000
+   12.00300   16.00000    0.90000
+   12.00300   15.00000    0.90000
+  
+rc_ex_insul_frame  polygon  conference:vent_c
+0 
+0 
+ 12
+   12.00300   16.00000    0.50000
+   12.00300   17.00000    0.50000
+   12.00300   17.00000    0.90000
+   12.00300   16.00000    0.90000
+  
+rc_ex_insul_frame  polygon  conference:frame_c
+0 
+0 
+ 36
+   12.00300   17.00000    0.90000
+   12.00300   18.00000    0.90000
+   12.00300   17.90000    1.00000
+   12.00300   15.10000    1.00000
+   12.00300   15.10000    2.90000
+   12.00300   17.90000    2.90000
+   12.00300   17.90000    1.00000
+   12.00300   18.00000    0.90000
+   12.00300   18.00000    3.00000
+   12.00300   15.00000    3.00000
+   12.00300   15.00000    0.90000
+   12.00300   16.00000    0.90000
+  
+rc_ex_extern_wall  polygon  conference:spandral_d
+0 
+0 
+ 24
+   12.00300   12.00000    0.00000
+   12.00300   15.00000    0.00000
+   12.00300   15.00000    0.90000
+   12.00300   14.00000    0.90000
+   12.00300   14.00000    0.50000
+   12.00300   13.00000    0.50000
+   12.00300   13.00000    0.90000
+   12.00300   12.00000    0.90000
+  
+rc_ex_insul_frame  polygon  conference:vent_d
+0 
+0 
+ 12
+   12.00300   13.00000    0.50000
+   12.00300   14.00000    0.50000
+   12.00300   14.00000    0.90000
+   12.00300   13.00000    0.90000
+  
+rc_ex_insul_frame  polygon  conference:frame_d
+0 
+0 
+ 36
+   12.00300   14.00000    0.90000
+   12.00300   15.00000    0.90000
+   12.00300   14.90000    1.00000
+   12.00300   12.10000    1.00000
+   12.00300   12.10000    2.90000
+   12.00300   14.90000    2.90000
+   12.00300   14.90000    1.00000
+   12.00300   15.00000    0.90000
+   12.00300   15.00000    3.00000
+   12.00300   12.00000    3.00000
+   12.00300   12.00000    0.90000
+   12.00300   13.00000    0.90000
+  
+# reception Surface defs..
+  
+# Obstruction defs... 
+  
+!genbox rc_ex_unknown  eob1    6.000    0.020    0.300 | xform -rz    90.000 -t    12.100    6.000    3.100
+ 
+!genbox rc_ex_unknown  eob2    6.000    0.020    0.250 | xform -rz    90.000 -t    12.300    6.000    3.100
+ 
+!genbox rc_ex_unknown  eob3    6.000    0.020    0.220 | xform -rz    90.000 -t    12.500    6.000    3.100
+ 
+!genbox rc_ex_unknown  eob4    6.000    0.020    0.200 | xform -rz    90.000 -t    12.700    6.000    3.100
+ 
+!genbox rc_ex_unknown  eob5    6.000    0.020    0.200 | xform -rz    90.000 -t    12.900    6.000    3.100
+ 
+!genbox rc_ex_unknown  eob6    6.000    0.020    0.200 | xform -rz    90.000 -t    13.100    6.000    3.100
+ 
+# visual object defs... 
+  
+!genbox rc_ex_upholstery  aarm_l    0.070    0.760    0.490 | xform -rz     0.000 -t     9.200   11.200    0.210
+ 
+!genbox rc_ex_upholstery  aarm_r    0.070    0.760    0.490 | xform -rz     0.000 -t    10.320   11.200    0.210
+ 
+!genbox rc_ex_steel_gr_3mm  aleg_a    0.020    0.020    0.210 | xform -rz     0.000 -t     9.220   11.240    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  aleg_b    0.020    0.020    0.210 | xform -rz     0.000 -t    10.340   11.240    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  aleg_c    0.020    0.020    0.210 | xform -rz     0.000 -t     9.220   11.930    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  aleg_d    0.020    0.020    0.210 | xform -rz     0.000 -t    10.340   11.930    0.000
+ 
+rc_ex_upholstery                        polygon aback_1
+0 
+0 
+ 12
+    9.28000   11.74000    0.37000
+   10.31000   11.74000    0.37000
+   10.31000   11.89000    0.70000
+    9.28000   11.89000    0.70000
+  
+rc_ex_upholstery                        polygon aback_2
+0 
+0 
+ 12
+   10.31000   11.74000    0.37000
+   10.31000   11.96000    0.36000
+   10.31000   11.96000    0.70000
+   10.31000   11.89000    0.70000
+  
+rc_ex_upholstery                        polygon aback_3
+0 
+0 
+ 12
+   10.31000   11.96000    0.36000
+    9.28000   11.96000    0.36000
+    9.28000   11.96000    0.70000
+   10.31000   11.96000    0.70000
+  
+rc_ex_upholstery                        polygon aback_4
+0 
+0 
+ 12
+    9.28000   11.96000    0.36000
+    9.28000   11.74000    0.37000
+    9.28000   11.89000    0.70000
+    9.28000   11.96000    0.70000
+  
+rc_ex_upholstery                        polygon aback_5
+0 
+0 
+ 12
+    9.28000   11.89000    0.70000
+   10.31000   11.89000    0.70000
+   10.31000   11.96000    0.70000
+    9.28000   11.96000    0.70000
+  
+rc_ex_upholstery                        polygon aback_6
+0 
+0 
+ 12
+    9.28000   11.74000    0.37000
+    9.28000   11.96000    0.36000
+   10.31000   11.96000    0.36000
+   10.31000   11.74000    0.37000
+  
+rc_ex_upholstery                        polygon aseat_1
+0 
+0 
+ 12
+    9.28000   11.20000    0.21000
+   10.31000   11.20000    0.21000
+   10.31000   11.20000    0.39000
+    9.28000   11.20000    0.39000
+  
+rc_ex_upholstery                        polygon aseat_2
+0 
+0 
+ 12
+   10.31000   11.20000    0.21000
+   10.31000   11.95000    0.21000
+   10.31000   11.95000    0.36000
+   10.31000   11.20000    0.39000
+  
+rc_ex_upholstery                        polygon aseat_3
+0 
+0 
+ 12
+   10.31000   11.95000    0.21000
+    9.28000   11.95000    0.21000
+    9.28000   11.95000    0.36000
+   10.31000   11.95000    0.36000
+  
+rc_ex_upholstery                        polygon aseat_4
+0 
+0 
+ 12
+    9.28000   11.95000    0.21000
+    9.28000   11.20000    0.21000
+    9.28000   11.20000    0.39000
+    9.28000   11.95000    0.36000
+  
+rc_ex_upholstery                        polygon aseat_5
+0 
+0 
+ 12
+    9.28000   11.20000    0.39000
+   10.31000   11.20000    0.39000
+   10.31000   11.95000    0.36000
+    9.28000   11.95000    0.36000
+  
+rc_ex_upholstery                        polygon aseat_6
+0 
+0 
+ 12
+    9.28000   11.20000    0.21000
+    9.28000   11.95000    0.21000
+   10.31000   11.95000    0.21000
+   10.31000   11.20000    0.21000
+  
+!genbox rc_ex_upholstery  barm_l    0.070    0.760    0.490 | xform -rz     0.000 -t    10.500   11.200    0.210
+ 
+!genbox rc_ex_upholstery  barm_r    0.070    0.760    0.490 | xform -rz     0.000 -t    11.620   11.200    0.210
+ 
+!genbox rc_ex_steel_gr_3mm  bleg_a    0.020    0.020    0.210 | xform -rz     0.000 -t    10.520   11.240    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  bleg_b    0.020    0.020    0.210 | xform -rz     0.000 -t    11.640   11.240    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  bleg_c    0.020    0.020    0.210 | xform -rz     0.000 -t    10.520   11.930    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  bleg_d    0.020    0.020    0.210 | xform -rz     0.000 -t    11.640   11.930    0.000
+ 
+rc_ex_upholstery                        polygon bback_1
+0 
+0 
+ 12
+   10.58000   11.74000    0.37000
+   11.61000   11.74000    0.37000
+   11.61000   11.89000    0.70000
+   10.58000   11.89000    0.70000
+  
+rc_ex_upholstery                        polygon bback_2
+0 
+0 
+ 12
+   11.61000   11.74000    0.37000
+   11.61000   11.96000    0.36000
+   11.61000   11.96000    0.70000
+   11.61000   11.89000    0.70000
+  
+rc_ex_upholstery                        polygon bback_3
+0 
+0 
+ 12
+   11.61000   11.96000    0.36000
+   10.58000   11.96000    0.36000
+   10.58000   11.96000    0.70000
+   11.61000   11.96000    0.70000
+  
+rc_ex_upholstery                        polygon bback_4
+0 
+0 
+ 12
+   10.58000   11.96000    0.36000
+   10.58000   11.74000    0.37000
+   10.58000   11.89000    0.70000
+   10.58000   11.96000    0.70000
+  
+rc_ex_upholstery                        polygon bback_5
+0 
+0 
+ 12
+   10.58000   11.89000    0.70000
+   11.61000   11.89000    0.70000
+   11.61000   11.96000    0.70000
+   10.58000   11.96000    0.70000
+  
+rc_ex_upholstery                        polygon bback_6
+0 
+0 
+ 12
+   10.58000   11.74000    0.37000
+   10.58000   11.96000    0.36000
+   11.61000   11.96000    0.36000
+   11.61000   11.74000    0.37000
+  
+rc_ex_upholstery                        polygon bseat_1
+0 
+0 
+ 12
+   10.58000   11.20000    0.21000
+   11.61000   11.20000    0.21000
+   11.61000   11.20000    0.39000
+   10.58000   11.20000    0.39000
+  
+rc_ex_upholstery                        polygon bseat_2
+0 
+0 
+ 12
+   11.61000   11.20000    0.21000
+   11.61000   11.95000    0.21000
+   11.61000   11.95000    0.36000
+   11.61000   11.20000    0.39000
+  
+rc_ex_upholstery                        polygon bseat_3
+0 
+0 
+ 12
+   11.61000   11.95000    0.21000
+   10.58000   11.95000    0.21000
+   10.58000   11.95000    0.36000
+   11.61000   11.95000    0.36000
+  
+rc_ex_upholstery                        polygon bseat_4
+0 
+0 
+ 12
+   10.58000   11.95000    0.21000
+   10.58000   11.20000    0.21000
+   10.58000   11.20000    0.39000
+   10.58000   11.95000    0.36000
+  
+rc_ex_upholstery                        polygon bseat_5
+0 
+0 
+ 12
+   10.58000   11.20000    0.39000
+   11.61000   11.20000    0.39000
+   11.61000   11.95000    0.36000
+   10.58000   11.95000    0.36000
+  
+rc_ex_upholstery                        polygon bseat_6
+0 
+0 
+ 12
+   10.58000   11.20000    0.21000
+   10.58000   11.95000    0.21000
+   11.61000   11.95000    0.21000
+   11.61000   11.20000    0.21000
+  
+!genbox rc_ex_shelves_20mm  atbl_top    0.510    1.040    0.020 | xform -rz   -90.000 -t    10.000   10.600    0.320
+ 
+!genbox rc_ex_furn_wd10mm  atbl_shelf    0.340    0.830    0.020 | xform -rz   -90.000 -t    10.110   10.510    0.100
+ 
+!genbox rc_ex_shelves_20mm  aleg_a    0.040    0.040    0.320 | xform -rz   -90.000 -t    10.110   10.550    0.000
+ 
+!genbox rc_ex_shelves_20mm  aleg_b    0.040    0.040    0.320 | xform -rz   -90.000 -t    10.110   10.180    0.000
+ 
+!genbox rc_ex_shelves_20mm  aleg_c    0.040    0.040    0.320 | xform -rz   -90.000 -t    10.900   10.550    0.000
+ 
+!genbox rc_ex_shelves_20mm  aleg_d    0.040    0.040    0.320 | xform -rz   -90.000 -t    10.900   10.180    0.000
+ 
+!genbox rc_ex_door  adesk_top    0.600    2.000    0.025 | xform -rz     0.000 -t     9.200    6.100    0.690
+ 
+!genbox rc_ex_steel_pl_3mm  adesk_leg_a    0.050    0.050    0.690 | xform -rz     0.000 -t     9.300    6.200    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  adesk_leg_b    0.050    0.050    0.690 | xform -rz     0.000 -t     9.700    6.200    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  adesk_leg_c    0.050    0.050    0.690 | xform -rz     0.000 -t     9.300    8.000    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  adesk_leg_d    0.050    0.050    0.690 | xform -rz     0.000 -t     9.700    8.000    0.000
+ 
+!genbox rc_ex_door  bdesk_top    0.600    2.000    0.025 | xform -rz   -90.000 -t     9.800    6.800    0.690
+ 
+!genbox rc_ex_steel_pl_3mm  bdesk_leg_a    0.050    0.050    0.690 | xform -rz   -90.000 -t     9.900    6.700    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  bdesk_leg_b    0.050    0.050    0.690 | xform -rz   -90.000 -t     9.900    6.300    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  bdesk_leg_c    0.050    0.050    0.690 | xform -rz   -90.000 -t    11.700    6.700    0.000
+ 
+!genbox rc_ex_steel_pl_3mm  bdesk_leg_d    0.050    0.050    0.690 | xform -rz   -90.000 -t    11.700    6.300    0.000
+ 
+!genbox rc_ex_upholstery  aseat    0.480    0.450    0.060 | xform -rz   -40.000 -t    10.526    7.218    0.500
+ 
+!genbox rc_ex_upholstery  ar_arm    0.090    0.230    0.025 | xform -rz   -40.000 -t    10.505    7.301    0.720
+ 
+!genbox rc_ex_upholstery  al_arm    0.090    0.230    0.025 | xform -rz   -40.000 -t    10.934    6.942    0.720
+ 
+rc_ex_upholstery                        polygon aseat_bk_1
+0 
+0 
+ 12
+   10.81540    7.56290    0.56000
+   11.18310    7.25430    0.56000
+   11.21370    7.29390    1.06000
+   10.84600    7.60240    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_2
+0 
+0 
+ 12
+   11.18310    7.25430    0.56000
+   11.20880    7.28500    0.56000
+   11.23950    7.32450    1.06000
+   11.21370    7.29390    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_3
+0 
+0 
+ 12
+   11.20880    7.28500    0.56000
+   10.84110    7.59350    0.56000
+   10.87180    7.63310    1.06000
+   11.23950    7.32450    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_4
+0 
+0 
+ 12
+   10.84110    7.59350    0.56000
+   10.81540    7.56290    0.56000
+   10.84600    7.60240    1.06000
+   10.87180    7.63310    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_5
+0 
+0 
+ 12
+   10.84600    7.60240    1.06000
+   11.21370    7.29390    1.06000
+   11.23950    7.32450    1.06000
+   10.87180    7.63310    1.06000
+  
+rc_ex_upholstery                        polygon aseat_bk_6
+0 
+0 
+ 12
+   10.81540    7.56290    0.56000
+   10.84110    7.59350    0.56000
+   11.20880    7.28500    0.56000
+   11.18310    7.25430    0.56000
+  
+!genbox rc_ex_steel_gr_3mm  across_a    0.650    0.030    0.050 | xform -rz   -40.000 -t    10.609    7.449    0.080
+ 
+!genbox rc_ex_steel_gr_3mm  across_b    0.650    0.030    0.050 | xform -rz    50.000 -t    10.649    6.991    0.080
+ 
+!genbox rc_ex_PH_alu_frame  apost    0.080    0.080    0.400 | xform -rz   -40.000 -t    10.830    7.238    0.100
+ 
+!genbox rc_ex_steel_gr_3mm  ar_arm_rest    0.025    0.050    0.230 | xform -rz   -40.000 -t    10.642    7.356    0.500
+ 
+!genbox rc_ex_steel_gr_3mm  al_arm_rest    0.025    0.050    0.230 | xform -rz   -40.000 -t    11.010    7.048    0.500
+ 
+!genbox rc_ex_sensor_case  aroller_a    0.060    0.030    0.060 | xform -rz   -40.000 -t    10.609    7.449    0.000
+ 
+!genbox rc_ex_sensor_case  aroller_b    0.060    0.030    0.060 | xform -rz   -40.000 -t    11.072    7.060    0.000
+ 
+!genbox rc_ex_sensor_case  aroller_c    0.030    0.060    0.060 | xform -rz    50.000 -t    10.649    6.991    0.000
+ 
+!genbox rc_ex_sensor_case  aroller_d    0.030    0.060    0.060 | xform -rz    50.000 -t    11.064    7.485    0.000
+ 
+!genbox rc_ex_IT_case  adbase    0.300    0.100    0.020 | xform -rz    90.000 -t     9.400    7.115    0.700
+ 
+!genbox rc_ex_steel_pl_3mm  adstand    0.140    0.025    0.250 | xform -rz    90.000 -t     9.350    7.195    0.720
+ 
+!genbox rc_ex_IT_case  adlow_edge    0.520    0.030    0.020 | xform -rz    90.000 -t     9.380    7.000    0.900
+ 
+!genbox rc_ex_IT_case  adup_edge    0.520    0.030    0.020 | xform -rz    90.000 -t     9.380    7.000    1.190
+ 
+!genbox rc_ex_IT_case  adlft_edge    0.020    0.020    0.270 | xform -rz    90.000 -t     9.380    7.000    0.920
+ 
+!genbox rc_ex_IT_case  adrt_edge    0.020    0.030    0.270 | xform -rz    90.000 -t     9.380    7.500    0.920
+ 
+!genbox rc_ex_collector_pl  adscreen    0.480    0.040    0.270 | xform -rz    90.000 -t     9.365    7.020    0.920
+ 
+!genbox rc_ex_steel_pl_3mm  af_cabinet    0.400    1.200    1.250 | xform -rz   -90.000 -t     3.100    6.600    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_a    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.130    6.200    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_b    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.130    6.200    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_c    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.130    6.200    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_d    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.130    6.200    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_e    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.520    6.200    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_f    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.520    6.200    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_g    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.520    6.200    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_h    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.520    6.200    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_i    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.910    6.200    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_j    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.910    6.200    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_k    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.910    6.200    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  adrw_l    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.910    6.200    0.944
+ 
+!genbox rc_ex_steel_pl_3mm  bf_cabinet    0.400    1.200    1.250 | xform -rz   -90.000 -t     4.350    6.600    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_a    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.380    6.200    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_b    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.380    6.200    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_c    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.380    6.200    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_d    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.380    6.200    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_e    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.770    6.200    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_f    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.770    6.200    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_g    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.770    6.200    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_h    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.770    6.200    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_i    0.010    0.340    0.293 | xform -rz   -90.000 -t     5.160    6.200    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_j    0.010    0.340    0.293 | xform -rz   -90.000 -t     5.160    6.200    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_k    0.010    0.340    0.293 | xform -rz   -90.000 -t     5.160    6.200    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  bdrw_l    0.010    0.340    0.293 | xform -rz   -90.000 -t     5.160    6.200    0.944
+ 
+!genbox rc_ex_steel_pl_3mm  cf_cabinet    0.400    1.200    1.250 | xform -rz   -90.000 -t     5.600    6.600    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_a    0.010    0.340    0.293 | xform -rz   -90.000 -t     5.630    6.200    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_b    0.010    0.340    0.293 | xform -rz   -90.000 -t     5.630    6.200    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_c    0.010    0.340    0.293 | xform -rz   -90.000 -t     5.630    6.200    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_d    0.010    0.340    0.293 | xform -rz   -90.000 -t     5.630    6.200    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_e    0.010    0.340    0.293 | xform -rz   -90.000 -t     6.020    6.200    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_f    0.010    0.340    0.293 | xform -rz   -90.000 -t     6.020    6.200    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_g    0.010    0.340    0.293 | xform -rz   -90.000 -t     6.020    6.200    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_h    0.010    0.340    0.293 | xform -rz   -90.000 -t     6.020    6.200    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_i    0.010    0.340    0.293 | xform -rz   -90.000 -t     6.410    6.200    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_j    0.010    0.340    0.293 | xform -rz   -90.000 -t     6.410    6.200    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_k    0.010    0.340    0.293 | xform -rz   -90.000 -t     6.410    6.200    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  cdrw_l    0.010    0.340    0.293 | xform -rz   -90.000 -t     6.410    6.200    0.944
+ 
+!genbox rc_ex_steel_pl_3mm  df_cabinet    0.400    1.200    1.250 | xform -rz   -90.000 -t     3.100   13.400    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  ddrw_a    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.130   13.000    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  ddrw_b    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.130   13.000    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  ddrw_c    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.130   13.000    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  ddrw_d    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.130   13.000    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  ddrw_e    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.520   13.000    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  ddrw_f    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.520   13.000    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  ddrw_g    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.520   13.000    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  ddrw_h    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.520   13.000    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  ddrw_i    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.910   13.000    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  ddrw_j    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.910   13.000    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  ddrw_k    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.910   13.000    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  ddrw_l    0.010    0.340    0.293 | xform -rz   -90.000 -t     3.910   13.000    0.944
+ 
+!genbox rc_ex_steel_pl_3mm  ef_cabinet    0.400    1.200    1.250 | xform -rz   -90.000 -t     4.350   13.400    0.000
+ 
+!genbox rc_ex_steel_gr_3mm  edrw_a    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.380   13.000    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  edrw_b    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.380   13.000    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  edrw_c    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.380   13.000    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  edrw_d    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.380   13.000    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  edrw_e    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.770   13.000    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  edrw_f    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.770   13.000    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  edrw_g    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.770   13.000    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  edrw_h    0.010    0.340    0.293 | xform -rz   -90.000 -t     4.770   13.000    0.944
+ 
+!genbox rc_ex_steel_gr_3mm  edrw_i    0.010    0.340    0.293 | xform -rz   -90.000 -t     5.160   13.000    0.050
+ 
+!genbox rc_ex_steel_gr_3mm  edrw_j    0.010    0.340    0.293 | xform -rz   -90.000 -t     5.160   13.000    0.348
+ 
+!genbox rc_ex_steel_gr_3mm  edrw_k    0.010    0.340    0.293 | xform -rz   -90.000 -t     5.160   13.000    0.646
+ 
+!genbox rc_ex_steel_gr_3mm  edrw_l    0.010    0.340    0.293 | xform -rz   -90.000 -t     5.160   13.000    0.944
+ 
+# Outside zone Surface defs... 
+  
+rc_ex_extern_wall  polygon  reception:spandral
+0 
+0 
+ 24
+   12.00300    6.00000    0.00000
+   12.00300    9.00000    0.00000
+   12.00300    9.00000    0.90000
+   12.00300    8.00000    0.90000
+   12.00300    8.00000    0.50000
+   12.00300    7.00000    0.50000
+   12.00300    7.00000    0.90000
+   12.00300    6.00000    0.90000
+  
+rc_ex_insul_frame  polygon  reception:vent
+0 
+0 
+ 12
+   12.00300    7.00000    0.50000
+   12.00300    8.00000    0.50000
+   12.00300    8.00000    0.90000
+   12.00300    7.00000    0.90000
+  
+rc_ex_insul_frame  polygon  reception:frame
+0 
+0 
+ 36
+   12.00300    6.00000    0.90000
+   12.00300    7.00000    0.90000
+   12.00300    8.00000    0.90000
+   12.00300    9.00000    0.90000
+   12.00300    9.00000    3.00000
+   12.00300    6.00000    3.00000
+   12.00300    6.00000    0.90000
+   12.00300    6.10000    1.00000
+   12.00300    6.10000    2.90000
+   12.00300    8.90000    2.90000
+   12.00300    8.90000    1.00000
+   12.00300    6.10000    1.00000
+  
+rc_ex_extern_wall  polygon  reception:spandral_a
+0 
+0 
+ 24
+   12.00300    9.00000    0.00000
+   12.00300   12.00000    0.00000
+   12.00300   12.00000    0.90000
+   12.00300   11.00000    0.90000
+   12.00300   11.00000    0.50000
+   12.00300   10.00000    0.50000
+   12.00300   10.00000    0.90000
+   12.00300    9.00000    0.90000
+  
+rc_ex_insul_frame  polygon  reception:vent_a
+0 
+0 
+ 12
+   12.00300   10.00000    0.50000
+   12.00300   11.00000    0.50000
+   12.00300   11.00000    0.90000
+   12.00300   10.00000    0.90000
+  
+rc_ex_insul_frame  polygon  reception:frame_a
+0 
+0 
+ 36
+   12.00300    9.00000    0.90000
+   12.00300   10.00000    0.90000
+   12.00300   11.00000    0.90000
+   12.00300   12.00000    0.90000
+   12.00300   12.00000    3.00000
+   12.00300    9.00000    3.00000
+   12.00300    9.00000    0.90000
+   12.00300    9.10000    1.00000
+   12.00300    9.10000    2.90000
+   12.00300   11.90000    2.90000
+   12.00300   11.90000    1.00000
+   12.00300    9.10000    1.00000
+  
+# ceil_void Surface defs..
+  
+# Outside zone Surface defs... 
+  
+rc_ex_extern_wall  polygon  ceil_void:south_edge
+0 
+0 
+ 24
+    0.00000   -0.00300    3.00000
+    3.00000   -0.00300    3.00000
+    6.00000   -0.00300    3.00000
+    9.00000   -0.00300    3.00000
+   12.00000   -0.00300    3.00000
+   12.00000   -0.00300    3.50000
+    3.00000   -0.00300    3.50000
+    0.00000   -0.00300    3.50000
+  
+rc_ex_extern_wall  polygon  ceil_void:east_edge
+0 
+0 
+ 33
+   12.00300    0.00000    3.00000
+   12.00300    3.00000    3.00000
+   12.00300    6.00000    3.00000
+   12.00300    9.00000    3.00000
+   12.00300   12.00000    3.00000
+   12.00300   15.00000    3.00000
+   12.00300   18.00000    3.00000
+   12.00300   18.00000    3.50000
+   12.00300   12.00000    3.50000
+   12.00300    6.00000    3.50000
+   12.00300    0.00000    3.50000
+  
+rc_ex_extern_wall  polygon  ceil_void:north_edge
+0 
+0 
+ 18
+   12.00000   18.00300    3.00000
+    9.00000   18.00300    3.00000
+    6.00000   18.00300    3.00000
+    3.00000   18.00300    3.00000
+    3.00000   18.00300    3.50000
+   12.00000   18.00300    3.50000
+  
+# mix_op_man Surface defs..
+  
+# Outside zone Surface defs... 
+  
+# floor_void Surface defs..
+  
+# Outside zone Surface defs... 
+  
+rc_ex_extern_wall  polygon  floor_void:front
+0 
+0 
+ 24
+    3.00000   -0.00300   -0.20000
+   12.00000   -0.00300   -0.20000
+   12.00000   -0.00300    0.00000
+    9.00000   -0.00300    0.00000
+    6.00000   -0.00300    0.00000
+    3.00000   -0.00300    0.00000
+    0.00000   -0.00300    0.00000
+    0.00000   -0.00300   -0.20000
+  
+rc_ex_extern_wall  polygon  floor_void:right
+0 
+0 
+ 33
+   12.00300   12.00000   -0.20000
+   12.00300   18.00000   -0.20000
+   12.00300   18.00000    0.00000
+   12.00300   15.00000    0.00000
+   12.00300   12.00000    0.00000
+   12.00300    9.00000    0.00000
+   12.00300    6.00000    0.00000
+   12.00300    3.00000    0.00000
+   12.00300    0.00000    0.00000
+   12.00300    0.00000   -0.20000
+   12.00300    6.00000   -0.20000
+  
+rc_ex_extern_wall  polygon  floor_void:back
+0 
+0 
+ 18
+   12.00000   18.00300   -0.20000
+    3.00000   18.00300   -0.20000
+    3.00000   18.00300    0.00000
+    6.00000   18.00300    0.00000
+    9.00000   18.00300    0.00000
+   12.00000   18.00300    0.00000
+  
+# ceiling_belo Surface defs..
+  
+# Outside zone Surface defs... 
+  
+rc_ex_extern_wall  polygon  ceiling_belo:front
+0 
+0 
+ 18
+    3.00000   -0.00300   -0.40000
+   12.00000   -0.00300   -0.40000
+   12.00000   -0.00300   -0.20000
+    3.00000   -0.00300   -0.20000
+    0.00000   -0.00300   -0.20000
+    0.00000   -0.00300   -0.40000
+  
+rc_ex_extern_wall  polygon  ceiling_belo:right
+0 
+0 
+ 24
+   12.00300   12.00000   -0.40000
+   12.00300   18.00000   -0.40000
+   12.00300   18.00000   -0.20000
+   12.00300   12.00000   -0.20000
+   12.00300    6.00000   -0.20000
+   12.00300    0.00000   -0.20000
+   12.00300    0.00000   -0.40000
+   12.00300    6.00000   -0.40000
+  
+rc_ex_extern_wall  polygon  ceiling_belo:back
+0 
+0 
+ 12
+   12.00000   18.00300   -0.40000
+    3.00000   18.00300   -0.40000
+    3.00000   18.00300   -0.20000
+   12.00000   18.00300   -0.20000
+  
+# mb_recep Surface defs..
+  
+# Outside zone Surface defs... 
+  
+# mb_conf Surface defs..
+  
+# Outside zone Surface defs... 
+  

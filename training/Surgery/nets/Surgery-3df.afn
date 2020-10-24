@@ -1,0 +1,53 @@
+   12   11   11    0.000    (nodes, components, connections, wind reduction)
+ Node         Fld. Type   Height    Temperature    Data_1       Data_2
+ reception       1    0   1.5000       20.000       1.0000       120.00    
+ examination     1    0   2.2500       20.000       1.0000       60.001    
+ BW-Ve01:010     1    3   2.7500       0.0000       1.0000       180.00    
+ BW-Ve01:011     1    3   2.7500       0.0000       1.0000       0.0000    
+ BW-Uc01:013     1    3   0.0000       0.0000       1.0000       90.000    
+ BW-Cr01:014     1    3   2.3750       0.0000       1.0000       180.00    
+ BW-Cr01:015     1    3   2.3750       0.0000       1.0000       0.0000    
+ BW-Ve02:009     1    3   4.5000       0.0000       1.0000       360.00    
+ BW-Cr02:010     1    3   3.7500       0.0000       1.0000       0.0000    
+ BW-Ve02:011     1    3   2.7500       0.0000       1.0000       180.00    
+ BW-Cr02:012     1    3   2.3750       0.0000       1.0000       180.00    
+ BW-EX02:013     1    3   3.6500       0.0000       1.0000       90.000    
+ Component    Type C+ L+ Description
+ FrVez01:010    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ FrVez01:011    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ DoUcz01:012    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.49999997E-02  0.699999988    
+ DoUcz01:013    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.19999992E-02  0.699999988    
+ WiCrz01:014   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   6.70000076    
+ WiCrz01:015   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   6.70000076    
+ FrVez02:009    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ WiCrz02:010   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.83868027    
+ FrVez02:011    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ WiCrz02:012   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   6.70000076    
+ GrEXz02:013    30  2  0 Constant vol. flow rate component   m = rho.a               
+   1.00000000       3.33333351E-02
+ +Node         dHght   -Node         dHght   via Component
+ BW-Ve01:010   0.000   reception     1.250   FrVez01:010                             
+ BW-Ve01:011   0.000   reception     1.250   FrVez01:011                             
+ reception    -1.500   examination  -2.250   DoUcz01:012                             
+ BW-Uc01:013   0.000   reception    -1.500   DoUcz01:013                             
+ BW-Cr01:014   0.000   reception     0.875   WiCrz01:014                             
+ BW-Cr01:015   0.000   reception     0.875   WiCrz01:015                             
+ BW-Ve02:009   0.000   examination   2.250   FrVez02:009                             
+ BW-Cr02:010   0.000   examination   1.500   WiCrz02:010                             
+ BW-Ve02:011   0.000   examination   0.500   FrVez02:011                             
+ BW-Cr02:012   0.000   examination   0.125   WiCrz02:012                             
+ examination   0.000   BW-EX02:013   0.000   GrEXz02:013                             
+*IPSMOD 0  # stack calc
+*MFBSNC 0  # timing
+*MSLVTP 0  # flow solution
+*MFTRAC 0  # trace level

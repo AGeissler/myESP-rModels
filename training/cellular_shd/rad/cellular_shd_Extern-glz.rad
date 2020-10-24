@@ -6,15 +6,80 @@ void  glass  unknown_glz
 0 
 3    0.87    0.87    0.87
   
-void glass fict
+void glass d_glz
 0 
 0 
-3    1.08  1.08  1.08
+3    0.83  0.83  0.83
   
 void glass dbl_glz
 0 
 0 
 3    0.83  0.83  0.83
+  
+void glass Not_DisplayG
+0 
+0 
+3    0.75  0.75  0.75
+  
+void glass window_Not_G
+0 
+0 
+3    0.75  0.75  0.75
+  
+void glass window_Typ_G
+0 
+0 
+3    0.59  0.59  0.59
+  
+void glass internal_glz
+0 
+0 
+3    0.75  0.75  0.75
+  
+void glass switched_gl
+0 
+0 
+3    0.83  0.83  0.83
+  
+void glass fictitious
+0 
+0 
+3    1.08  1.08  1.08
+  
+void glass single_glaz
+0 
+0 
+3    0.95  0.95  0.95
+  
+void glass tripglz_1.8
+0 
+0 
+3    0.77  0.77  0.77
+  
+void glass tripglz_1.08
+0 
+0 
+3    0.67  0.67  0.67
+  
+void glass tripglz_089
+0 
+0 
+3    0.67  0.67  0.67
+  
+void glass PV_constr
+0 
+0 
+3    0.02  0.02  0.02
+  
+void glass ccht_window
+0 
+0 
+3    0.97  0.97  0.97
+  
+void glass single_glazing
+0 
+0 
+3    0.95  0.95  0.95
   
 # manager_a Surface defs..
   
@@ -63,8 +128,8 @@ dbl_glz  polygon  manager_b:part_glaz
 # corridor Surface defs..
   
   
-# skipping transparent surface: corridor:part_glaz                                                                           
+# skipping transparent surface: corridor:part_glaz                                                                          
   
   
-# skipping transparent surface: corridor:part_glazb                                                                          
+# skipping transparent surface: corridor:part_glazb                                                                         
   

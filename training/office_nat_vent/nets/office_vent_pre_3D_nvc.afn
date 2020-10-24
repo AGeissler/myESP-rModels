@@ -1,0 +1,182 @@
+   37   46   45    0.600    (nodes, components, connections, wind reduction)
+ Node         Fld. Type   Height    Temperature    Data_1       Data_2
+ manager         1    0   1.5000       20.000       1.0000       40.501    
+ general         1    0   1.5000       20.000       1.0000       175.50    
+ conference      1    0   1.5000       20.000       1.0000       141.75    
+ reception       1    0   1.5000       20.000       1.0000       182.25    
+ ceil_void       1    0   3.2500       20.000       1.0000       89.462    
+ mix_op_man      1    0   3.2500       20.000       1.0000      0.18000    
+ floor_void      1    0 -0.10000       20.000       1.0000       36.001    
+ ceiling_belo    1    0 -0.30000       20.000       1.0000       36.001    
+ mb_recep        1    0   3.2500       20.000       1.0000      0.18000    
+ mb_conf         1    0   3.2500       20.000       1.0000      0.18000    
+ BW-Op01:008     1    3  0.70000       0.0000       1.0000       180.00    
+ BW-Op02:010     1    3  0.70000       0.0000       1.0000       180.00    
+ BW-Cr02:012     1    3   1.9500       0.0000       1.0000       180.00    
+ BW-Op02:016     1    3  0.70000       0.0000       1.0000       180.00    
+ BW-Cr02:018     1    3   1.9500       0.0000       1.0000       180.00    
+ BW-Op02:020     1    3  0.70000       0.0000       1.0000       180.00    
+ BW-Cr02:022     1    3   1.9500       0.0000       1.0000       180.00    
+ BW-Op02:024     1    3  0.70000       0.0000       1.0000       90.000    
+ BW-Cr02:026     1    3   1.9500       0.0000       1.0000       90.000    
+ BW-Op02:028     1    3  0.70000       0.0000       1.0000       90.000    
+ BW-Cr02:030     1    3   1.9500       0.0000       1.0000       90.000    
+ BW-Op03:008     1    3  0.70000       0.0000       1.0000       0.0000    
+ BW-Cr03:010     1    3   1.9500       0.0000       1.0000       0.0000    
+ BW-Op03:012     1    3  0.70000       0.0000       1.0000       0.0000    
+ BW-Cr03:014     1    3   1.9500       0.0000       1.0000       0.0000    
+ BW-Op03:016     1    3  0.70000       0.0000       1.0000       0.0000    
+ BW-Cr03:018     1    3   1.9500       0.0000       1.0000       0.0000    
+ BW-Op03:020     1    3  0.70000       0.0000       1.0000       90.000    
+ BW-Cr03:022     1    3   1.9500       0.0000       1.0000       90.000    
+ BW-Op03:024     1    3  0.70000       0.0000       1.0000       90.000    
+ BW-Cr03:026     1    3   1.9500       0.0000       1.0000       90.000    
+ BW-Op04:008     1    3  0.70000       0.0000       1.0000       90.000    
+ BW-Cr04:010     1    3   1.9500       0.0000       1.0000       90.000    
+ BW-Op04:012     1    3  0.70000       0.0000       1.0000       90.000    
+ BW-Cr04:014     1    3   1.9500       0.0000       1.0000       90.000    
+ BW-Ve07:007     1    3   0.0000       0.0000       1.0000       0.0000    
+ BW-Ve08:004     1    3 -0.20000       0.0000       1.0000       0.0000    
+ Component    Type C+ L+ Description
+ DABiz01:003   130  5  0 Specific air flow door              m = rho.f(W,H,dP)       
+   1.00000000      0.100000001       3.00000000       1.50000000      0.500000000    
+ BiCrz01:003   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   8.00000000    
+ GrOpz01:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       8.00000038E-02  0.649999976    
+ GrMEI01:044    30  2  0 Constant vol. flow rate component   m = rho.a               
+   1.00000000       5.61111122E-02
+ GrOpz01:045    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.59999859E-01  0.649999976    
+ FABiz02:004   130  5  0 Specific air flow door              m = rho.f(W,H,dP)       
+   1.00000000      0.100000001       3.00000000       1.50000000      0.500000000    
+ GrOpz02:010    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       8.00000224E-02  0.649999976    
+ WiCrz02:012   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.40000057    
+ GrOpz02:016    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       8.00000224E-02  0.649999976    
+ WiCrz02:018   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999962    
+ GrOpz02:020    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       7.99999293E-02  0.649999976    
+ WiCrz02:022   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999866    
+ GrOpz02:024    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       8.00000038E-02  0.649999976    
+ WiCrz02:026   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.40000057    
+ GrOpz02:028    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       8.00000224E-02  0.649999976    
+ WiCrz02:030   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.40000057    
+ GrMEI02:091    30  2  0 Constant vol. flow rate component   m = rho.a               
+   1.00000000      0.122500002    
+ GrMEI02:092    30  2  0 Constant vol. flow rate component   m = rho.a               
+   1.00000000      0.122500002    
+ GrOpz02:093    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.59999859E-01  0.649999976    
+ GrOpz02:094    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.59999859E-01  0.649999976    
+ FABiz03:003   130  5  0 Specific air flow door              m = rho.f(W,H,dP)       
+   1.00000000      0.100000001       3.00000000       1.50000000      0.500000000    
+ GrOpz03:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       8.00000224E-02  0.649999976    
+ WiCrz03:010   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.40000057    
+ GrOpz03:012    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       8.00000224E-02  0.649999976    
+ WiCrz03:014   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999962    
+ GrOpz03:016    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       7.99999293E-02  0.649999976    
+ WiCrz03:018   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999866    
+ GrOpz03:020    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       7.99999293E-02  0.649999976    
+ WiCrz03:022   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999866    
+ GrOpz03:024    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       7.99999293E-02  0.649999976    
+ WiCrz03:026   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999866    
+ GrOpz03:069    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.59996040E-02  0.649999976    
+ GrMEI03:070    30  2  0 Constant vol. flow rate component   m = rho.a               
+   1.00000000      0.197222218    
+ GrOpz04:008    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       8.00000224E-02  0.649999976    
+ WiCrz04:010   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999962    
+ GrOpz04:012    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       7.99999293E-02  0.649999976    
+ WiCrz04:014   120  3  0 Specific air flow crack             m = rho.f(W,L,dP)       
+   1.00000000       2.00000009E-03   9.39999866    
+ GrOpz04:075    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.59999859E-01  0.649999976    
+ GrOpz04:076    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.59999859E-01  0.649999976    
+ GrMEI04:077    30  2  0 Constant vol. flow rate component   m = rho.a               
+   1.00000000      0.126388893    
+ GrMEI04:078    30  2  0 Constant vol. flow rate component   m = rho.a               
+   1.00000000      0.126388893    
+ GrOpz05:027    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.79999359E-01  0.649999976    
+ GrOpz05:033    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.80001259E-01  0.649999976    
+ GrOpz05:039    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.80000309E-01  0.649999976    
+ FrVez07:007    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ FrVez08:004    40  3  0 Common orifice flow component m = rho.f(Cd,A,rho,dP)        
+   1.00000000       1.04999999E-02  0.340000004    
+ +Node         dHght   -Node         dHght   via Component
+ manager       0.000   general       0.000   DABiz01:003                             
+ BW-Op01:008   0.000   manager      -0.800   GrOpz01:008                             
+ mix_op_man   -0.250   manager       1.500   GrMEI01:044                             
+ manager       1.500   ceil_void    -0.250   GrOpz01:045                             
+ general       0.000   reception     0.000   FABiz02:004                             
+ BW-Op02:010   0.000   general      -0.800   GrOpz02:010                             
+ BW-Cr02:012   0.000   general       0.450   WiCrz02:012                             
+ BW-Op02:016   0.000   general      -0.800   GrOpz02:016                             
+ BW-Cr02:018   0.000   general       0.450   WiCrz02:018                             
+ BW-Op02:020   0.000   general      -0.800   GrOpz02:020                             
+ BW-Cr02:022   0.000   general       0.450   WiCrz02:022                             
+ BW-Op02:024   0.000   general      -0.800   GrOpz02:024                             
+ BW-Cr02:026   0.000   general       0.450   WiCrz02:026                             
+ BW-Op02:028   0.000   general      -0.800   GrOpz02:028                             
+ BW-Cr02:030   0.000   general       0.450   WiCrz02:030                             
+ mix_op_man   -0.250   general       1.500   GrMEI02:091                             
+ mix_op_man   -0.250   general       1.500   GrMEI02:092                             
+ general       1.500   ceil_void    -0.250   GrOpz02:093                             
+ general       1.500   ceil_void    -0.250   GrOpz02:094                             
+ conference    0.000   reception     0.000   FABiz03:003                             
+ BW-Op03:008   0.000   conference   -0.800   GrOpz03:008                             
+ BW-Cr03:010   0.000   conference    0.450   WiCrz03:010                             
+ BW-Op03:012   0.000   conference   -0.800   GrOpz03:012                             
+ BW-Cr03:014   0.000   conference    0.450   WiCrz03:014                             
+ BW-Op03:016   0.000   conference   -0.800   GrOpz03:016                             
+ BW-Cr03:018   0.000   conference    0.450   WiCrz03:018                             
+ BW-Op03:020   0.000   conference   -0.800   GrOpz03:020                             
+ BW-Cr03:022   0.000   conference    0.450   WiCrz03:022                             
+ BW-Op03:024   0.000   conference   -0.800   GrOpz03:024                             
+ BW-Cr03:026   0.000   conference    0.450   WiCrz03:026                             
+ conference    1.500   ceil_void    -0.250   GrOpz03:069                             
+ mb_conf      -0.250   conference    1.500   GrMEI03:070                             
+ BW-Op04:008   0.000   reception    -0.800   GrOpz04:008                             
+ BW-Cr04:010   0.000   reception     0.450   WiCrz04:010                             
+ BW-Op04:012   0.000   reception    -0.800   GrOpz04:012                             
+ BW-Cr04:014   0.000   reception     0.450   WiCrz04:014                             
+ reception     1.500   ceil_void    -0.250   GrOpz04:075                             
+ reception     1.500   ceil_void    -0.250   GrOpz04:076                             
+ mb_recep     -0.250   reception     1.500   GrMEI04:077                             
+ mb_recep     -0.250   reception     1.500   GrMEI04:078                             
+ ceil_void     0.000   mix_op_man    0.000   GrOpz05:027                             
+ ceil_void     0.000   mb_recep      0.000   GrOpz05:033                             
+ ceil_void     0.000   mb_conf       0.000   GrOpz05:039                             
+ BW-Ve07:007   0.000   floor_void    0.100   FrVez07:007                             
+ BW-Ve08:004   0.000   ceiling_belo  0.100   FrVez08:004                             
+*IPSMOD 0  # stack calc
+*MFBSNC 0  # timing
+*MSLVTP 0  # flow solution
+*MFTRAC 0  # trace level

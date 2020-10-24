@@ -18,6 +18,7 @@ b # temperature
 e # resultant
 -
 l # monthly stats
+- # default layout
 a # nearest 100wh
 c # hours above
 b # temperatures

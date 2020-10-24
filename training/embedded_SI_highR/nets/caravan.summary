@@ -1,0 +1,53 @@
+*Synopsis,for_flow
+*Date,Tue Jul 28 21:28:15 2020
+*cfg,caravan.cfg
+*afn,../nets/caravan.afn
+*Pressures, 29
+1:1 exposed wall                        
+1:1 exposed roof <10deg                 
+1:1 exposed roof 10-30deg               
+1:1 exposed roof >30deg                 
+1:1 semi-exposed wall                   
+1:1 semi-exposed roof <10deg            
+1:1 semi-exposed roof 10-30deg          
+1:1 semi-exposed roof >30deg            
+1:1 sheltered wall                      
+1:1 sheltered roof <10deg               
+1:1 sheltered roof 10-30deg             
+1:1 sheltered roof >30deg               
+2:1 exposed long wall                   
+1:2 exposed short wall                  
+2:1 exposed roof <10deg                 
+2:1 exposed roof 10-30deg               
+2:1 exposed roof >30deg                 
+2:1 semi-exposed long wall              
+2:1 semi-exposed short wall             
+2:1 semi-exposed roof <10deg            
+2:1 semi-exposed roof 10-30deg          
+2:1 semi-exposed roof >30deg            
+2:1 sheltered long wall                 
+2:1 sheltered short wall                
+2:1 sheltered roof <10deg               
+2:1 sheltered roof 10-30deg             
+2:1 sheltered roof >30deg               
+1:1 exposed wall                        
+1:1 exposed roof no pitch               
+*End_Pressures
+*Zones,  1 # name, volume, centre @ XYZ
+main,30.0,2.500,1.250,2.200
+*End_Zones
+*Surfaces,  19 # connection, description, area, azimuth, elevation,  Z Min/COG/Max
+   1 front in main >|< External,main,front,8.960,180.000,0.000,1.000,2.100,3.400
+   2 left in main >|< External,main,left,5.400,90.000,0.000,1.000,2.200,3.400
+   3 back in main >|< External,main,back,10.800,0.000,0.000,1.000,2.200,3.400
+   4 right in main >|< External,main,right,5.400,270.000,0.000,1.000,2.200,3.400
+   5 roof in main >|< External,main,roof,11.250,0.000,90.000,3.400,3.400,3.400
+   6 floor in main >|< External,main,floor,11.250,0.000,-90.000,1.000,1.000,1.000
+   7 framefront in main >|< External,main,framefront,1.440,180.000,0.000,1.000,2.200,3.400
+  14 fromeright in main >|< External,main,fromeright,0.600,270.000,0.000,1.000,2.200,3.400
+  15 frameleft in main >|< External,main,frameleft,0.600,90.000,0.000,1.000,2.200,3.400
+  16 frameback in main >|< External,main,frameback,1.200,0.000,0.000,1.000,2.200,3.400
+  17 frameroof in main >|< External,main,frameroof,1.250,0.000,90.000,3.400,3.400,3.400
+  18 framefloor in main >|< External,main,framefloor,1.250,0.000,-90.000,1.000,1.000,1.000
+  19 door in main >|< External,main,door,1.600,180.000,0.000,1.000,2.000,3.000
+*End_Surfaces
